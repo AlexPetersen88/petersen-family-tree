@@ -43,11 +43,12 @@ function nameSize(short){
   while(size>13&&short.length*size*0.62>maxW)size-=0.5;
   return size;
 }
+const isCandidate=p=>/^CANDIDATE\b/i.test(p.status||'');
 const nodes={};
 PEOPLE.people.forEach(p=>{
   const {x,y}=pos[p.id];
   const short=shortName(p.name);
-  const status=isFamily(p)?'Family':'Records';
+  const status=isFamily(p)?'Family':isCandidate(p)?'Candidate':'Records';
   const g=el('g',{
     class:'node'+(isFamily(p)?' family':' records')+(p.living?' living':''),
     transform:`translate(${x-W/2},${y-H/2})`,
@@ -225,7 +226,7 @@ function show(id,opts={}){
   Object.values(nodes).forEach(n=>{n.classList.remove('sel');n.setAttribute('aria-pressed','false')});
   nodes[id].classList.add('sel');nodes[id].setAttribute('aria-pressed','true');
   const kids=new Set([...(p.children||[])]);PEOPLE.people.forEach(q=>(q.parents||[]).includes(id)&&kids.add(q.id));
-  const pills=(isFamily(p)?'<span class="pill f">Family-confirmed</span>':'<span class="pill r">Record-sourced · not confirmed by family</span>')+(isOrigin(p)?'<span class="pill f">Family-confirmed origin</span>':'')+(p.living?'<span class="pill l">LIVING</span>':'');
+  const pills=(isCandidate(p)?'<span class="pill r">Candidate · not proven</span>':isFamily(p)?'<span class="pill f">Family-confirmed</span>':'<span class="pill r">Record-sourced · not confirmed by family</span>')+(isOrigin(p)?'<span class="pill f">Family-confirmed origin</span>':'')+(p.living?'<span class="pill l">LIVING</span>':'');
   let h=`<h2 tabindex="-1">${esc(p.name)}</h2><div class="pills">${pills}</div>`;
   const facts=[],rels=[];
   const push=(list,t,v)=>{if(v)list.push(`<dt>${t}</dt><dd>${v}</dd>`)};

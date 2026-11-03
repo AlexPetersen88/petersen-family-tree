@@ -466,7 +466,7 @@ window.PEOPLE={
    "parents": [
     "P25"
    ],
-   "parentsNote": "Mother: Ane Marie \u2026datter of Vals\u00f8magle, unmarried servant. CONFLICT on patronymic: HMB baptism (S51) reads Clausdatter; death (S37) reads Klaus Datt.; KMB duplicate (S52) has interlinear correction Hansd. over a struck word. Father CANDIDATE only: Peder Johansen of Ringsted, 'udlagt' (named by mother) in S51/S52 \u2014 paternity not proven. No person cards created until conflict resolved. | 1847 confirmation (S56) reads 'U\u00e6gte S\u00f8n af Pigen Ane Marie Hansd. og udlagt Barnefader Peder Johansen \u2014 Pleiefader Huusm. Jens Nielsen i Skee': adds a 3rd reading (Hansd.) \u2014 CONFLICT still OPEN, not resolved. Foster father Jens Nielsen (Skee) = not a relative by any record seen. | 2026-11-03 pass 4: Mother card P25 created with BOTH variants (Clausdatter / Hansdatter). Move lists S59/S60 give 'Ane Marie Hansd., 28, tjenestepige' going to and from Ringsted in 1832/33, which leans toward Hansd. but the CONFLICT stays OPEN. Father: NO card. FT-1834 Ringsted landsogn has 2 married Peder Johansens (45; 34 Daglejer), CANDIDATES only (S62), no match proven. Foster parents: P26 Jens Nielsen, P27 Kirsten Johansdatter (S54\u2013S58); no kinship to the mother found.",
+   "parentsNote": "Mother: Ane Marie \u2026datter of Vals\u00f8magle, unmarried servant. CONFLICT on patronymic: HMB baptism (S51) reads Clausdatter; death (S37) reads Klaus Datt.; KMB duplicate (S52) has interlinear correction Hansd. over a struck word. Father CANDIDATE only: Peder Johansen of Ringsted, 'udlagt' (named by mother) in S51/S52 \u2014 paternity not proven. No person cards created until conflict resolved. | 1847 confirmation (S56) reads 'U\u00e6gte S\u00f8n af Pigen Ane Marie Hansd. og udlagt Barnefader Peder Johansen \u2014 Pleiefader Huusm. Jens Nielsen i Skee': adds a 3rd reading (Hansd.) \u2014 CONFLICT still OPEN, not resolved. Foster father Jens Nielsen (Skee) = not a relative by any record seen. | 2026-11-03 pass 4: Mother card P25 created with BOTH variants (Clausdatter / Hansdatter). Move lists S59/S60 give 'Ane Marie Hansd., 28, tjenestepige' going to and from Ringsted in 1832/33, which leans toward Hansd. but the CONFLICT stays OPEN. Father: NO card. FT-1834 Ringsted landsogn has 2 married Peder Johansens (45; 34 Daglejer), CANDIDATES only (S62), no match proven. Foster parents: P26 Jens Nielsen, P27 Kirsten Johansdatter (S54\u2013S58); no kinship to the mother found. | Pass 5: FT-1834 Ringsted town has CANDIDATE Ane Marie Hansdatter 27, unmarried servant, Sankt Hans Gade (S63), and CANDIDATE Peter Johansen 30, unmarried servant, same street (S64, card P28, not linked). Neither is proven.",
    "spouses": [
     {
      "id": "P19",
@@ -740,13 +740,15 @@ window.PEOPLE={
     "S52",
     "S56",
     "S59",
-    "S60"
+    "S60",
+    "S63"
    ],
    "status": "VERIFIED as mother of P18 (S51/S52/S56); patronymic CONFLICT OPEN",
    "residences": [
     "c. Nov 1832\u2013Jan 1833: left Haraldsted for Ringsted (S60, date LOW)",
     "30 Mar 1833: back in Haraldsted from Ringsted (S59)",
-    "1834: not in Vals\u00f8magle; later whereabouts unknown"
+    "1834: not in Vals\u00f8magle; later whereabouts unknown",
+    "1834-02-18: CANDIDATE: Ane Marie Hansdatter 27, ugift, Tjenestefolk (servant), Sankt Hans Gade, Ringsted k\u00f8bstad (S63); age 27 vs 28 in 1833 lists, so not proven"
    ],
    "notes": "Ane Bolette (baptism sponsor) is probably Knudsd., not a sister (S61); this is still a CONFLICT. Next: her baptism c. 1804\u201305 (before the 1814 book), Ringsted town FT-1834, and later move lists."
   },
@@ -797,6 +799,24 @@ window.PEOPLE={
    ],
    "status": "VERIFIED foster mother of P18 (in the household 1834\u201345)",
    "notes": "She shares the patronymic Johansdatter with alleged father Peder Johansen. A sibling link is UNVERIFIED speculation and is not asserted."
+  },
+  {
+   "id": "P28",
+   "name": "Peter (Peder) Johansen",
+   "birth": {
+    "date": "c. 1803\u201304 (30 in Feb 1834)",
+    "place": "UNVERIFIED"
+   },
+   "occupation": "Tjenestekarl (servant), Sankt Hans Gade, Ringsted k\u00f8bstad (S64)",
+   "parents": [],
+   "spouses": [],
+   "children": [],
+   "sources": [
+    "S64",
+    "S62"
+   ],
+   "status": "CANDIDATE ONLY: possible 'udlagt' (named) father of P18. NOT proven; not linked as parent",
+   "notes": "He is the only unmarried Peder/Peter Johansen in FT-1834 Ringsted town plus landsogn (the 2 landsogn men are married, S62). He is on the same street as the candidate mother (S63). Other Peder Johansens may have been in nearby parishes."
   }
  ]
 };
@@ -1296,6 +1316,22 @@ window.SOURCES={
    "https://api.rigsarkivet.dk/ao/v1/images/94166",
    "https://api.rigsarkivet.dk/ao/v1/images/94172"
   ]
+ },
+ "S63": {
+  "id": "S63",
+  "flag": "CANDIDATE",
+  "text": "Folket\u00e6lling 1834, K\u00f8bst\u00e6der, Sor\u00f8 amt, Ringsted k\u00f8bstad, Sankt Hans Gade, AO bsid=4462 img 10/11: \"Ane Marie Hansdatter, 27, ugift\", in the Tjenestefolk (servants) bracket with J\u00f8rgen Jensen 24, just before house No. 304 (Peder Reed 57): https://api.rigsarkivet.dk/ao/v1/images/112563",
+  "urls": [
+   "https://api.rigsarkivet.dk/ao/v1/images/112563"
+  ]
+ },
+ "S64": {
+  "id": "S64",
+  "flag": "CANDIDATE",
+  "text": "same census, Ringsted k\u00f8bstad, Sankt Hans Gade, p. 328, AO bsid=4462 img 1/11: \"Peter Johansen, 30, ugift\", in the Tjenestefolk (servants) bracket with Hans Sonnesen(?) 39: https://api.rigsarkivet.dk/ao/v1/images/112554",
+  "urls": [
+   "https://api.rigsarkivet.dk/ao/v1/images/112554"
+  ]
  }
 };
-window.SOURCE_NOTES=["Note: S5/S6 are transcriptions of government indexes, not originals. Underlying originals to pull on FamilySearch (free login): Minnesota Death Index 1908\u20132017; U.S. SSA Applications and Claims Index; BIRLS death file."];
+window.SOURCE_NOTES=["Note: S5/S6 are transcriptions of government indexes, not originals. Underlying originals to pull on FamilySearch (free login): Minnesota Death Index 1908\u20132017; U.S. SSA Applications and Claims Index; BIRLS death file.", "Note: FT-1834 Ringsted k\u00f8bstad was skimmed in full: bsids 4460 N\u00f8rregade, 4461 Sankt Bendts Gade, 4462 Sankt Hans Gade, 4463 S\u00f8gade, 4464 Torvet (33 images). It has 1 unmarried Peter/Peder Johansen and 1 Ane Marie Hansdatter of the right age. No Ane Marie Clausdatter was seen."];

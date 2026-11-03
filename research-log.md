@@ -160,3 +160,6 @@ Added RECORD-SOURCED (amber, not family-confirmed) cards from browser-pass-bjern
 ## 2026-11-03 — P18 mother and foster parents (S51–S62)
 76. Added P25 Ane Marie Hansdatter / Clausdatter as P18's mother (parents: [P25]). Both surname forms are on the card (altNames). Patronymic CONFLICT stays OPEN. Added P26 Jens Nielsen and P27 Kirsten Johansdatter as foster parents only (fosterParents: [P26, P27]), not blood kin. Peder Johansen still has no card; two 1834 Ringsted landsogn namesakes are candidates only (S62). Ane Bolette Knudsdatter (S61) is not added.
 77. Sources S51–S62 synced. Occupation, death, burial, and marriage of P18 unchanged. 1850 census: Hans is not in the Skee foster household (S58).
+
+## 2026-11-03 — candidate father card (S63–S64), not linked
+78. P28 Peter (Peder) Johansen added as CANDIDATE ONLY (S64, with the married landsogn namesakes in S62). Not in P18.parents or fosterParents; children empty. P25 cites a possible 1834 Ringsted town match, Ane Marie Hansdatter 27, unmarried servant, Sankt Hans Gade (S63); not proven. Surname conflict on P25 stays open. Foster parents remain P26 and P27.
