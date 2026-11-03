@@ -354,7 +354,7 @@ window.PEOPLE={
    },
    "death": {
     "date": "2007-06-29",
-    "place": "Wolfeboro, NH"
+    "place": "Wolfeboro, Carroll Co., NH"
    },
    "parents": [
     "P3",
@@ -367,11 +367,13 @@ window.PEOPLE={
     "S279",
     "S280",
     "S281",
-    "S284"
+    "S284",
+    "S287",
+    "S291"
    ],
    "status": "VERIFIED: obits S278 + S280; veterans burial S279",
-   "notes": "Mother Caroline (Schultz) per S278 obit = P4. USAF, Korean War era; aviation career (S278 HIGH). Rank US Air Force 1st Lt per S279 (MED). 'Family larger' lead CLOSED by MN Pack 11: five children. Iowa Darvin Arthur Petersen 1932\u20132014 (S284) is NOT this man.",
-   "burial": "Bethany Lutheran Cemetery, Morgan MN (S278/S279)",
+   "notes": "Mother Caroline (Schultz) per S278 obit = P4. USAF, Korean War era; aviation career (S278 HIGH). Rank US Air Force 1st Lt per S279 (MED). 'Family larger' lead CLOSED by MN Pack 11: five children. Iowa Darvin Arthur Petersen 1932\u20132014 (S284) is NOT this man. FAG 212639016 (S287 HIGH) links parents Elmer Hamilton \u00d7 Caroline Alvina Minnie (Schultz) = P3/P4 (middle names FAG secondary, MED); sibling Donald P1. MNHS death index OUT-OF-RANGE (ends 2001; S291).",
+   "burial": "Bethany Lutheran Church Cemetery, Morgan, Redwood Co. MN (S278/S279; FAG 212639016 S287 HIGH)",
    "spouses": [
     {
      "id": "P35",
@@ -431,7 +433,7 @@ window.PEOPLE={
    "name": "Randy Don Petersen",
    "birth": {
     "date": "1958-07-30",
-    "place": "MN"
+    "place": "Redwood Co. MN (FAG S289 / MNHS S290)"
    },
    "death": {
     "date": "1958-10-18",
@@ -443,10 +445,14 @@ window.PEOPLE={
    ],
    "sources": [
     "S18",
-    "S283"
+    "S283",
+    "S289",
+    "S290",
+    "S291"
    ],
-   "status": "VERIFIED: MN Death Index (S283) + FAG",
-   "notes": "MN death index lists mother maiden DOHRMANN (= P2)."
+   "status": "VERIFIED HIGH: MNHS death index cert 1958-MN-014557 (S290) + SortedByName (S283) + FAG (S289)",
+   "notes": "MN death index mother maiden DOHRMANN (= P2). MNHS cert 1958-MN-014557; paid image NOT ordered (needs Alex yes; orders paused to ~Nov 10). Birth index OUT-OF-RANGE (S291).",
+   "burial": "Redwood Falls Cemetery Association, Redwood Falls MN; inscription '2 1/2 Months' (FAG 191558269 S289 HIGH)"
   },
   {
    "id": "P2",
@@ -1281,10 +1287,11 @@ window.PEOPLE={
    "aka": "Amy",
    "birth": {
     "date": "1933-10-03",
-    "place": "rural Morgan, MN"
+    "place": "rural Morgan, MN (Redwood Co.; FAG S288)"
    },
    "death": {
-    "date": "2014-05-10"
+    "date": "2014-05-10",
+    "place": "Pownal, Cumberland Co., ME (FAG S288, MED-HIGH; new vs Pack 11)"
    },
    "spouses": [
     {
@@ -1303,10 +1310,13 @@ window.PEOPLE={
    "sources": [
     "S278",
     "S280",
-    "S281"
+    "S281",
+    "S288",
+    "S291"
    ],
    "status": "VERIFIED (obit S280)",
-   "notes": "Parents John & Dora (Hansen) per S280 \u2014 UNVERIFIED; no person cards created."
+   "notes": "Parents John & Dora per S280 obit; FAG S288 names Johannes Pilegaard 'John' Hansen (1898\u20131979) \u00d7 Dora Ellie (Hartmann) Hansen (1902\u20131985) \u2014 FAG secondary, UNVERIFIED for tree; no person cards created. Sibling Marie Dora Hansen Maas on FAG (UNVERIFIED, no card). MNHS death OUT-OF-RANGE (S291).",
+   "burial": "Bethany Lutheran Church Cemetery, Morgan, Redwood Co. MN (FAG 130109756 S288 HIGH)"
   },
   {
    "id": "P36",
@@ -3447,6 +3457,42 @@ window.SOURCES={
   "id": "S284",
   "flag": "NEG \u2014 not P11",
   "text": "Iowa Darvin Arthur Petersen, 1932\u20132014. Not merged with Darvin Wayne Petersen.",
+  "urls": []
+ },
+ "S287": {
+  "id": "S287",
+  "flag": "HIGH",
+  "text": "Find a Grave 212639016, Darvin Wayne Petersen, Bethany Lutheran Church Cemetery, Morgan, Minnesota. https://www.findagrave.com/memorial/212639016",
+  "urls": [
+   "https://www.findagrave.com/memorial/212639016"
+  ]
+ },
+ "S288": {
+  "id": "S288",
+  "flag": "HIGH",
+  "text": "Find a Grave 130109756, Anna Maye Petersen, Bethany Lutheran Church Cemetery, Morgan. Died 10 May 2014 in Pownal, Cumberland County, Maine. https://www.findagrave.com/memorial/130109756",
+  "urls": [
+   "https://www.findagrave.com/memorial/130109756"
+  ]
+ },
+ "S289": {
+  "id": "S289",
+  "flag": "HIGH",
+  "text": "Find a Grave 191558269, Randy Don Petersen, Redwood Falls Cemetery. Stone reads \"2 1/2 Months\". The cemetery is pinned; the grave row is not. https://www.findagrave.com/memorial/191558269",
+  "urls": [
+   "https://www.findagrave.com/memorial/191558269"
+  ]
+ },
+ "S290": {
+  "id": "S290",
+  "flag": "HIGH, index",
+  "text": "Minnesota Historical Society death index, Randy Don Petersen, certificate 1958-MN-014557. Dates match S283. The certificate image was not ordered.",
+  "urls": []
+ },
+ "S291": {
+  "id": "S291",
+  "flag": "NEG \u2014 not used",
+  "text": "Minnesota Historical Society death index ends in 2001, so it cannot cover Darvin (2007) or Anna Maye (2014). The birth index does not cover Randy Don. Not a conflicting record.",
   "urls": []
  }
 };

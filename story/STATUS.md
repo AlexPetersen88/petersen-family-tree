@@ -17,7 +17,7 @@ Updated: 2026-11-03 (America/Chicago)
 - Narrate only facts that are FAMILY-CONFIRMED, VERIFIED, or RECORD-SOURCED, each with a real S# cite from ../sources.md.
 - Omit CANDIDATE, probable, and inference claims, or mark them "Provisional."
 - Leave out open conflicts, or present both sides.
-- Leave out the living household (Tina, Ryder, Jayden, Maryana, Wesley). Donald's other living sons are also left out.
+- Leave out the living household (Tina, Ryder, Jayden, Maryana, Wesley). Donald's living sons (Rick, Mike, Chad, Bill) are named with spouse given names and residences only as of Janice's 2025 obituary (S282); no birth dates.
 - No invented scenes, dialogue, motives, or places. Say what is unknown.
 
 ## Deferred (not narrated as settled)
@@ -33,10 +33,11 @@ Updated: 2026-11-03 (America/Chicago)
 - Now narrated as open controversies (both sides): Maren birthplace MN vs DK (S27/S28 vs S29); Rasmus age 8 wks vs "12 Dage"(?) (S41/S43). Ethel maiden resolved Neubauer (S148/S149); Gent = mother's maiden (Kin Dig F).
 - Hans P. display locked (Alex standing): narrate Hans P. / Hans Peter. Death-name conflict OPEN per MN Pack 10: S145 newspaper "Hans P." vs S274 FS/MNHS index "Hans T." d. 1922-09-06, cert 011514 (image unseen). Alex's possible-typo note logged; no pick. 1922-09-06 CANDIDATE.
 - S273 "Hans R" 12 (1905) = Rudolph / 1900 Hans O.: CANDIDATE, not merged.
-- Dig 21 titles, Dig 40, Dig 41, Day B, and Brookville farm GPS: not folded. Nearby 1920 ED 182 Petersen households stay unlinked. Darvin's birth farm, living residences as map pins, and any Wolfeboro facility stay out.
+- Dig 21 titles, Dig 40, Dig 41, Dig 42, Day B, and Brookville farm GPS: not folded. Nearby 1920 ED 182 Petersen households stay unlinked. Darvin's birth farm, living residences as map pins, Wolfeboro facility, Pownal facility, Bethany and Redwood Falls grave rows, Hansen parents as person cards, and the 1957 Find a Grave marriage bio stay out.
 - P18 cause of death (LOW reading): not used. (1920 naturalization 1897 now narrated, S271.)
 
 ## Updates
+- 2026-11-03: MN Pack 11b folded (S287–S290) — Darvin and Anna Maye buried at Bethany Lutheran Church Cemetery, Morgan (churchyard same campus, grave rows not pinned). Anna Maye died 10 May 2014 in Pownal, Maine (town only). Randy Don buried at Redwood Falls Cemetery; stone "2 1/2 Months"; cemetery pin only. Dig 40/41/42, Hansen parents, and the 1957 marriage bio stay out.
 - 2026-11-03: MN Pack 11 folded (S278–S283) — Ch.4 Darvin: b. 28 Mar 1932 rural Evan; USAF/Korean War and aviation HIGH; 1st Lt MED from the burial listing only; m. Anna Maye Hansen 27 Jun 1954 Bethany Lutheran, Morgan; five children named, birth dates blank; d. 29 Jun 2007 Wolfeboro NH; burial Bethany Lutheran, Morgan. Anna Maye b. 3 Oct 1933 rural Morgan, d. 10 May 2014. Donald's sons are exactly Randy, Rick, Mike, Chad, and Bill. Randy Don 30 Jul–18 Oct 1958. Living places and spouse given names only as of Janice's 2025 obituary. Iowa Darvin (S284) not merged. Evan village, Bethany church, and Wolfeboro town pins only. Dig 40/41 OUT.
 - 2026-11-03: Dig 39 CLEAR folded — Ch.1: P34 Peder Johansen reinforced by S275 (Joh- not Jørg-); S268 FS "Peder Jørgensen" superseded as a mis-index; S276 Larsdatter noted once as a discarded eye-read. Hansdatter lock unchanged. Decision B / S64 unchanged. Dig 40 OUT.
 - 2026-11-03: MN Pack 10b folded (S272 image) — marriage at Redwood Falls, 11 Mar 1891; affidavit "Hans Peter Petersen" and license "Hans P. Peterson" on the same form; witnesses Niels Jensen and J. L. Byram by name only (not P7's father). Index-only / "page not opened" marriage wording removed. 1920, 1905 Hans R., and the open Hans P./Hans T. death conflict stay as in Pack 10.

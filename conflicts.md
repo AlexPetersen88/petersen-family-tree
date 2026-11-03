@@ -103,3 +103,9 @@
 - Donald Alvin Petersen (P1) had exactly five sons: Randy Don, Rick, Michael Don, Chad, and Bill (S282). No sixth son. Randy Don was born 30 Jul 1958 and died 18 Oct 1958 in Redwood County (S283). Living sons' towns and their spouses' given names are only as stated in Janice's 2025 obituary (S282).
 - Not merged: Iowa Darvin Arthur Petersen, 1932–2014 (S284).
 - Not folded: Dig 40, Dig 41, Day B, Dig 21, and any farm parcel, living-residence pin, or Wolfeboro facility.
+
+## MN Pack 11b (2026-11-03) — burials — Genealogist CLEAR
+- Darvin Wayne Petersen is buried in Bethany Lutheran Church Cemetery, Morgan (S287, with S278 and S279). Anna Maye Hansen Petersen is buried in the same cemetery (S288). The cemetery is the churchyard on the church campus (MED-HIGH). Grave rows are not pinned. No plot coordinates.
+- Anna Maye died 10 May 2014 in Pownal, Cumberland County, Maine (S288). Town pin only.
+- Randy Don Petersen is buried in Redwood Falls Cemetery. The stone reads "2 1/2 Months" (S289). Dates are corroborated by the Minnesota death index, certificate 1958-MN-014557 (S290). Cemetery location is pinned at 44.5510, -95.1000. His grave is not pinned.
+- Held out: Dig 40, Dig 41, Dig 42, Anna Maye's parents as person cards, and a 1957 Find a Grave marriage bio. S291 is only a note that those Minnesota indexes do not cover these years.

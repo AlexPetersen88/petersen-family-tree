@@ -104,3 +104,8 @@
 - S282 (HIGH): Janice E. Jacobsen obit re-fetch (= S1) + KLGR (S4): five sons Randy, Rick, Mike, Chad, Bill; 2025 survivors' residences: https://stephensfuneralservice.com/obituaries/janice-e-jacobsen/779/
 - S283 (HIGH): SortedByName MN Death Index, Randy Don Petersen b. 30 Jul 1958, d. 18 Oct 1958 Redwood Co, mother Dohrmann: https://sortedbyname.com/letter_p/petersen/index_591.html
 - S284 (NEG — noise): Iowa Darvin Arthur Petersen 1932–2014 ≠ Darvin Wayne; not merged.
+- S287 (HIGH): Find a Grave 212639016, Darvin Wayne Petersen, Bethany Lutheran Church Cemetery, Morgan MN.
+- S288 (HIGH): Find a Grave 130109756, Anna Maye Petersen, Bethany Lutheran Church Cemetery, Morgan MN; d. 10 May 2014 Pownal, Cumberland Co., Maine.
+- S289 (HIGH): Find a Grave 191558269, Randy Don Petersen, Redwood Falls Cemetery (Association); stone "2 1/2 Months".
+- S290 (HIGH, index): MNHS death index, Randy Don Petersen, cert 1958-MN-014557; dates corroborated (image not ordered).
+- S291 (NEG — noise): not used.

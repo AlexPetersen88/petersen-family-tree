@@ -162,7 +162,7 @@ PINS = [
         "phrases": ["Bethany Lutheran Church in Morgan"],
         "marks": ("44.4452",),
         "explicit": True,
-        "caption": "The church. The cemetery sharing these grounds is not fully confirmed, and the grave has not been checked.",
+        "caption": "The church. Burials are in this churchyard. Grave rows are not pinned.",
     },
     {
         "id": "wolfeboro",
@@ -174,6 +174,28 @@ PINS = [
         "marks": ("158909474", "43.5848"),
         "explicit": True,
         "caption": "The town only. No hospital or house.",
+    },
+    {
+        "id": "pownal-me",
+        "label": "Pownal, Maine",
+        "short": "Pownal",
+        "osm": "https://www.openstreetmap.org/relation/12171325",
+        "google": "https://www.google.com/maps/search/?api=1&query=43.8923,-70.1835",
+        "phrases": ["Pownal, Cumberland County, Maine"],
+        "marks": ("12171325", "43.8923"),
+        "explicit": True,
+        "caption": "The town only. No building or house.",
+    },
+    {
+        "id": "redwood-falls-cemetery",
+        "label": "Redwood Falls Cemetery",
+        "short": "Redwood Falls Cemetery",
+        "osm": "https://www.openstreetmap.org/?mlat=44.5510&mlon=-95.1000#map=17/44.5510/-95.1000",
+        "google": "https://www.google.com/maps/search/?api=1&query=44.5510,-95.1000",
+        "phrases": ["Redwood Falls Cemetery"],
+        "marks": ("44.5510",),
+        "explicit": True,
+        "caption": "The cemetery. Randy's stone has not been pinned.",
     },
 ]
 PIN_BY_ID = {pin["id"]: pin for pin in PINS}

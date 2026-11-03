@@ -597,3 +597,12 @@ Darvin Wayne (P11) and Donald's five sons. Dig 40 and Dig 41 are not in this pac
 - S282 (HIGH): Janice E. Jacobsen obituary, same text as S1, plus KLGR S4. Exactly five sons: Randy, Rick, Mike, Chad, Bill. Living sons' places and spouses' given names are as of this 2025 obituary only. https://stephensfuneralservice.com/obituaries/janice-e-jacobsen/779/
 - S283 (HIGH): Minnesota death index, Randy Don Petersen, born 30 Jul 1958, died 18 Oct 1958, Redwood County, mother Dohrmann. https://sortedbyname.com/letter_p/petersen/index_591.html
 - S284 (NEG — not P11): Iowa Darvin Arthur Petersen, 1932–2014. Not merged with Darvin Wayne Petersen.
+
+## MN Pack 11b (2026-11-03) — Genealogist CLEAR, S287–S290
+Burials for Darvin, Anna Maye, and Randy Don. No grave-row coordinates. Dig 40, Dig 41, and Dig 42 are not in this pack. Anna Maye's parents are not person cards. The 1957 Find a Grave marriage bio is not used.
+
+- S287 (HIGH): Find a Grave 212639016, Darvin Wayne Petersen, Bethany Lutheran Church Cemetery, Morgan, Minnesota. https://www.findagrave.com/memorial/212639016
+- S288 (HIGH): Find a Grave 130109756, Anna Maye Petersen, Bethany Lutheran Church Cemetery, Morgan. Died 10 May 2014 in Pownal, Cumberland County, Maine. https://www.findagrave.com/memorial/130109756
+- S289 (HIGH): Find a Grave 191558269, Randy Don Petersen, Redwood Falls Cemetery. Stone reads "2 1/2 Months". The cemetery is pinned; the grave row is not. https://www.findagrave.com/memorial/191558269
+- S290 (HIGH, index): Minnesota Historical Society death index, Randy Don Petersen, certificate 1958-MN-014557. Dates match S283. The certificate image was not ordered.
+- S291 (NEG — not used): Minnesota Historical Society death index ends in 2001, so it cannot cover Darvin (2007) or Anna Maye (2014). The birth index does not cover Randy Don. Not a conflicting record.
