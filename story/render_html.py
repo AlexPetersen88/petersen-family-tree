@@ -46,6 +46,13 @@ COMPANIONS = [
         "summary": "An easy-reading telling of the full chapters. Findings cleared by the Genealogist are told as plain fact.",
     },
     {
+        "md": "chapters/KIDS.md",
+        "html": "kids.html",
+        "short": "Kids",
+        "kicker": "Ages 9–11",
+        "summary": "The same cleared story, told for children. Uncertain points stay labeled.",
+    },
+    {
         "md": "chapters/CHANGE-LOG.md",
         "html": "change-log.html",
         "short": "Change log",
@@ -53,10 +60,75 @@ COMPANIONS = [
         "summary": "Genealogist-cleared additions and corrections folded into the story chapters, newest first.",
     },
 ]
-SRC_RE = re.compile(r"\bS\d+\b")
+SRC_RE = re.compile(r"\b[SK]\d+\b")
 URL_RE = re.compile(r"https://[^\s)<]+")
 CODE_RE = re.compile(r"`([^`]+)`")
 CHAPTER_RE = re.compile(r"Chapter ([1-4])")
+MAP_RE = re.compile(r"\[map\]\((https://[^)\s]+)\)")
+# Cleared HIGH visit pins only. Held pins (matr. 5a GPS, Sankt Hans Gade,
+# Brookville farm, Dig 21 / 1807 person-link) are intentionally absent.
+PINS = [
+    {
+        "id": "bjernede-kirke",
+        "label": "Bjernede Kirke",
+        "short": "Bjernede Kirke",
+        "osm": "https://www.openstreetmap.org/way/264012018",
+        "google": "https://www.google.com/maps/search/?api=1&query=Bjernede+Kirke+Bjernede+Kirkevej+1A+4180+Sor%C3%B8",
+        "phrases": ["Bjernede churchyard", "Bjernede Kirke", "Bjernede church"],
+        "marks": ("264012018",),
+    },
+    {
+        "id": "valsomagle",
+        "label": "Valsømagle",
+        "short": "Valsømagle",
+        "osm": "https://www.openstreetmap.org/node/9956361203",
+        "google": "https://www.google.com/maps?q=55.4933219,11.8213452",
+        "phrases": ["Walsøemagle", "Walsømagle", "Valsømagle", "Walsmagle"],
+        "marks": ("9956361203", "55.4933219"),
+    },
+    {
+        "id": "haraldsted-kirke",
+        "label": "Haraldsted Kirke and kirkegård",
+        "short": "Haraldsted Kirke",
+        "osm": "https://www.openstreetmap.org/way/264012020",
+        "google": "https://www.google.com/maps?q=55.4915324,11.7681618",
+        "phrases": [
+            "Haraldsted kirkegård",
+            "Haraldsted Kirkegaard",
+            "Haraldsted churchyard",
+            "Haraldsted Kirke",
+            "Haraldsted church",
+        ],
+        "marks": ("264012020", "55.4915324"),
+    },
+    {
+        "id": "dannebod",
+        "label": "Dannebod Cemetery",
+        "short": "Dannebod",
+        "osm": "https://www.openstreetmap.org/?mlat=44.31115&mlon=-94.89040#map=16/44.31115/-94.89040",
+        "google": "https://www.google.com/maps?q=44.31115,-94.89040",
+        "phrases": ["Dannebod Cemetery", "Dannebod"],
+        "marks": ("44.31115",),
+    },
+    {
+        "id": "praestegaard",
+        "label": "Haraldsted Præstegaarden",
+        "short": "Præstegaarden",
+        "osm": "https://www.openstreetmap.org/node/341232574",
+        "google": "https://www.google.com/maps?q=55.4910250,11.7692050",
+        "phrases": [
+            "Haraldsted Præstegaarden",
+            "Haraldsted Præstegård",
+            "Haraldsted parsonage",
+            "the parish parsonage",
+            "the parsonage",
+            "præstegård",
+        ],
+        "marks": ("341232574", "55.4910250"),
+        "candidate": True,
+    },
+]
+PIN_BY_ID = {pin["id"]: pin for pin in PINS}
 
 
 def known_ids(entries):
@@ -66,9 +138,9 @@ def known_ids(entries):
 def parse_sources(text):
     entries = []
     for line in text.splitlines():
-        if not line.startswith("- S"):
+        if not re.match(r"^- [SK]\d+", line):
             continue
-        match = re.match(r"^- (S\d+)\s*(.*)$", line)
+        match = re.match(r"^- ([SK]\d+)\s*(.*)$", line)
         if not match:
             raise SystemExit(f"Could not parse source line: {line[:80]}")
         sid, rest = match.group(1), match.group(2)
@@ -82,6 +154,8 @@ def parse_sources(text):
         elif rest.startswith(":"):
             body = rest[1:].lstrip()
         else:
+            body = rest
+        if not body.strip():
             raise SystemExit(f"Could not parse source body: {line[:80]}")
         entries.append({"id": sid, "note": note, "body": body})
     if not entries:
@@ -105,6 +179,153 @@ def parse_index(text):
     if len(items) != 4:
         raise SystemExit(f"Expected 4 index entries, found {len(items)}")
     return items
+
+
+def pin_for_url(url):
+    for pin in PINS:
+        if any(mark in url for mark in pin["marks"]):
+            return pin
+    return None
+
+
+def is_word(char):
+    return char.isalnum() or char in "øæåØÆÅ"
+
+
+def phrase_span(text, phrase):
+    hay = text.lower()
+    needle = phrase.lower()
+    start = 0
+    while True:
+        index = hay.find(needle, start)
+        if index < 0:
+            return None
+        before = text[index - 1] if index else " "
+        after_at = index + len(phrase)
+        after = text[after_at] if after_at < len(text) else " "
+        url_at = text.rfind("https://", 0, index)
+        inside_url = url_at >= 0 and " " not in text[url_at:index] and ")" not in text[url_at:index]
+        if not inside_url and not is_word(before) and not is_word(after):
+            return index, len(phrase)
+        start = index + 1
+
+
+def first_phrase_span(text, phrases):
+    best = None
+    for phrase in phrases:
+        found = phrase_span(text, phrase)
+        if not found:
+            continue
+        if best is None or found[0] < best[0] or (found[0] == best[0] and found[1] > best[1]):
+            best = found
+    return best
+
+
+def pins_linked_by_map(lines):
+    found = set()
+    for line in lines:
+        for match in MAP_RE.finditer(line):
+            pin = pin_for_url(match.group(1))
+            if not pin:
+                raise SystemExit(f"Map URL is not a cleared HIGH pin: {match.group(1)}")
+            found.add(pin["id"])
+    return found
+
+
+def sentence_end(text, after):
+    index = after
+    length = len(text)
+    closers = "\"')”’"
+    while index < length:
+        char = text[index]
+        if char in ".?!":
+            prev = text[index - 1] if index else ""
+            nxt = text[index + 1] if index + 1 < length else ""
+            if char == "." and prev.isdigit() and nxt.isdigit():
+                index += 1
+                continue
+            end = index + 1
+            while end < length and text[end] in closers:
+                end += 1
+            rest = text[end:].lstrip()
+            # "no." and similar abbreviations are followed by a comma or a lowercase word.
+            if char == "." and rest and (rest[0].islower() or rest[0] == ","):
+                index += 1
+                continue
+            return end
+        index += 1
+    return length
+
+
+def apply_maps(text, linked, injected):
+    """Put one HIGH-pin control at the end of the sentence that names it.
+
+    Buttons stay out of the middle of a sentence so the prose can be read straight through.
+    """
+    inserts = {}
+    maps = list(MAP_RE.finditer(text))
+
+    def stripped_index(orig_index):
+        shift = 0
+        for match in maps:
+            if match.end() <= orig_index:
+                shift += match.end() - match.start()
+            elif match.start() < orig_index:
+                return match.start() - shift
+        return orig_index - shift
+
+    for match in maps:
+        pin = pin_for_url(match.group(1))
+        if pin["id"] in injected:
+            continue
+        injected.add(pin["id"])
+        end = stripped_index(sentence_end(text, match.end()))
+        inserts.setdefault(end, []).append(pin["id"])
+
+    base = MAP_RE.sub("", text)
+    for pin in PINS:
+        if pin["id"] in linked or pin["id"] in injected:
+            continue
+        found = first_phrase_span(base, pin["phrases"])
+        if not found:
+            continue
+        injected.add(pin["id"])
+        end = sentence_end(base, found[0] + found[1])
+        inserts.setdefault(end, []).append(pin["id"])
+
+    if not inserts:
+        return base
+    pieces = []
+    last = 0
+    for index in sorted(inserts):
+        pieces.append(base[last:index])
+        for pin_id in inserts[index]:
+            pieces.append(f"\x00MAP{pin_id}\x00")
+        last = index
+    pieces.append(base[last:])
+    return "".join(pieces)
+
+
+def map_widget(pin):
+    label = html.escape(pin["label"])
+    group = f"Map links for {pin['label']}"
+    caption = ""
+    if pin.get("candidate"):
+        group = (
+            f"{pin['label']}. Place pin only. "
+            "The couple as parents is still a candidate, not proven."
+        )
+        caption = '<i class="map-caption">Parents still a candidate</i>'
+    osm = html.escape(pin["osm"])
+    google = html.escape(pin["google"])
+    return (
+        f'<span class="map-links" role="group" aria-label="{html.escape(group)}">'
+        f'<a class="map-link" href="{osm}" target="_blank" rel="noopener noreferrer" '
+        f'aria-label="Open map of {label} on OpenStreetMap">Map · {html.escape(pin["short"])}</a>'
+        f'<a class="map-link map-link-google" href="{google}" target="_blank" rel="noopener noreferrer" '
+        f'aria-label="Google Maps for {label}">Google</a>'
+        f"{caption}</span>"
+    )
 
 
 def inline(text, ids, link_chapters):
@@ -145,7 +366,14 @@ def inline(text, ids, link_chapters):
         else:
             repl = f"<code>{safe}</code>"
         text = text.replace(f"\x00CODE{i}\x00", repl)
-    return text
+
+    def maps(match):
+        pin = PIN_BY_ID.get(match.group(1))
+        if not pin:
+            raise SystemExit(f"Unknown map pin {match.group(1)}")
+        return map_widget(pin)
+
+    return re.sub(r"\x00MAP([a-z0-9-]+)\x00", maps, text)
 
 
 def paragraph_class(raw):
@@ -155,7 +383,24 @@ def paragraph_class(raw):
     return ""
 
 
-def render_blocks(lines, ids):
+def render_blocks(lines, ids, linked=None, injected=None):
+    if linked is None:
+        parts = []
+        section = []
+
+        def flush():
+            if not section:
+                return
+            parts.append(render_blocks(section, ids, pins_linked_by_map(section), set()))
+            section.clear()
+
+        for line in lines:
+            if line.startswith("## ") and section:
+                flush()
+            section.append(line)
+        flush()
+        return "\n".join(part for part in parts if part)
+
     html_parts = []
     i = 0
     while i < len(lines):
@@ -163,13 +408,23 @@ def render_blocks(lines, ids):
         if not line.strip():
             i += 1
             continue
+        if line.strip() == "---":
+            html_parts.append('<hr class="story-rule">')
+            i += 1
+            continue
+        if line.startswith("### "):
+            heading = apply_maps(line[4:].strip(), linked, injected)
+            html_parts.append(f"<h4>{inline(heading, ids, False)}</h4>")
+            i += 1
+            continue
         if line.startswith("## "):
             heading = line[3:].strip()
-            block = [f"<h3>{inline(heading, ids, False)}</h3>"]
+            mapped = apply_maps(heading, linked, injected)
+            block = [f"<h3>{inline(mapped, ids, False)}</h3>"]
             i += 1
             if heading == "What we do not know yet":
                 rest, i = collect_until_heading(lines, i)
-                inner = render_blocks(rest, ids)
+                inner = render_blocks(rest, ids, linked, injected)
                 html_parts.append(
                     '<section class="unknown">\n' + block[0] + "\n" + inner + "\n</section>"
                 )
@@ -179,12 +434,13 @@ def render_blocks(lines, ids):
         if line.startswith("- "):
             items = []
             while i < len(lines) and lines[i].startswith("- "):
-                raw = lines[i][2:]
+                raw = apply_maps(lines[i][2:], linked, injected)
                 items.append(f"<li{paragraph_class(lines[i])}>{inline(raw, ids, True)}</li>")
                 i += 1
             html_parts.append("<ul>\n" + "\n".join(items) + "\n</ul>")
             continue
-        html_parts.append(f"<p{paragraph_class(line)}>{inline(line, ids, True)}</p>")
+        mapped = apply_maps(line, linked, injected)
+        html_parts.append(f"<p{paragraph_class(line)}>{inline(mapped, ids, True)}</p>")
         i += 1
     return "\n".join(html_parts)
 
@@ -344,6 +600,17 @@ def companion_pager(index):
 
 
 def plain(text):
+    text = re.sub(r"\[map\]\([^)]*\)", "", text)
+    text = re.sub(r"^---+\s*$", " ", text, flags=re.M)
+    while True:
+        start = text.find('<span class="map-links"')
+        if start < 0:
+            break
+        end = text.find("</span>", start)
+        if end < 0:
+            break
+        text = text[:start] + text[end + len("</span>") :]
+    text = re.sub(r"<hr\b[^>]*>", " ", text)
     text = re.sub(r"<[^>]+>", "", text)
     text = html.unescape(text)
     text = text.replace("*", "").replace("`", "")
@@ -357,6 +624,63 @@ def article_text(document):
     if not match:
         raise SystemExit("Missing article")
     return plain(match.group(0))
+
+
+def assert_high_maps():
+    pages = [ROOT / chapter["html"] for chapter in CHAPTERS]
+    pages += [ROOT / comp["html"] for comp in COMPANIONS]
+    pages.append(ROOT / "source-key.html")
+    blob = "\n".join(path.read_text(encoding="utf-8") for path in pages)
+    for pin in PINS:
+        osm = html.escape(pin["osm"])
+        google = html.escape(pin["google"])
+        if osm not in blob:
+            raise SystemExit(f"Missing OSM link for {pin['label']}")
+        if google not in blob:
+            raise SystemExit(f"Missing Google link for {pin['label']}")
+    chapter_one = (ROOT / "01-hans-pedersen-childhood.html").read_text(encoding="utf-8")
+    chapter_two = (ROOT / "02-bjernede-parents-and-loss.html").read_text(encoding="utf-8")
+    if "Parents still a candidate" not in chapter_one:
+        raise SystemExit("Præstegaarden map is missing the candidate caption")
+    if "The world he was born into" not in chapter_one:
+        raise SystemExit("Chapter 1 era section missing")
+    if "The Denmark of their wedding" not in chapter_two:
+        raise SystemExit("Chapter 2 era section missing")
+    if "CANDIDATE" not in chapter_one or "Provisional" not in chapter_one:
+        raise SystemExit("Chapter 1 no longer labels the 1797 couple as a candidate")
+    for path in pages:
+        text = path.read_text(encoding="utf-8")
+        for coord in ("55.4597", "11.6419", "55.4683", "11.6530"):
+            if coord in text:
+                raise SystemExit(f"{path.name} contains held coordinate {coord}")
+        if "[map](" in text:
+            raise SystemExit(f"{path.name} still has a raw map markdown link")
+        high_names = (
+            "bjernede kirke",
+            "bjernede church",
+            "valsømagle",
+            "walsmagle",
+            "haraldsted kirke",
+            "haraldsted church",
+            "dannebod",
+            "præstegaard",
+            "parsonage",
+            "kirkegård",
+        )
+        for block in re.findall(r"<(?:p|li)[^>]*>[\s\S]*?</(?:p|li)>", text):
+            for marker in ("Sankt Hans Gade", "matr. no. 5", "Brookville church", "owned his farm"):
+                at = block.find(marker)
+                if at < 0:
+                    continue
+                rest = block[at + len(marker) :]
+                map_at = rest.find("map-links")
+                if map_at < 0:
+                    continue
+                between = rest[:map_at].lower()
+                widget = rest[map_at : map_at + 500].lower()
+                if any(name in between or name in widget for name in high_names):
+                    continue
+                raise SystemExit(f"{path.name} puts a map link on {marker}")
 
 
 def render():
@@ -388,12 +712,12 @@ def render():
             "</a>"
         )
     index_body = """<h2>Story</h2>
-<p class="lede">Four chapters, from Hans Pedersen of Skee to Alex, plus a short version and a change log. Uncertain points stay labeled. Living members of the current household are left out on purpose.</p>
+<p class="lede">Four chapters, from Hans Pedersen of Skee to Alex, plus a short version, a kids' telling, and a change log. Uncertain points stay labeled. Living members of the current household are left out on purpose.</p>
 <ol class="chapter-list">
 """ + "\n".join(cards) + """
 </ol>
-<section class="download-block" aria-label="Short version and change log">
-<h3>Short version and change log</h3>
+<section class="download-block" aria-label="Short versions and change log">
+<h3>Short versions and change log</h3>
 """ + "\n".join(companion_cards) + """
 </section>
 <p class="key-row"><a class="keylink" href="source-key.html">Source key</a></p>
@@ -414,6 +738,9 @@ def render():
         missing = set(SRC_RE.findall(raw)) - ids
         if missing:
             raise SystemExit(f"{chapter['md']} cites {sorted(missing)} with no source-key entry")
+        for held in ("Almisselem", "aftægt", "S207", "S213", "Dig 21"):
+            if held in raw:
+                raise SystemExit(f"{chapter['md']} contains held marker {held}")
         title, dek, body_lines = split_chapter(raw)
         dek_html = f'<p class="dek">{inline(dek, ids, True)}</p>\n' if dek else ""
         article = (
@@ -465,7 +792,7 @@ def render():
             if word in document:
                 raise SystemExit(f"Generated {comp['html']} contains {word}")
         cited = set(SRC_RE.findall(raw))
-        linked = set(re.findall(r"source-key\.html#(S\d+)", article))
+        linked = set(re.findall(r"source-key\.html#([SK]\d+)", article))
         if linked != cited & ids:
             raise SystemExit(
                 f"{comp['html']} cite links {sorted(linked)} != known cites {sorted(cited & ids)}"
@@ -486,7 +813,7 @@ def render():
         cards.append(
             f'<article class="src-card" id="{entry["id"]}">\n'
             f'<h3><span class="sid">{entry["id"]}</span>{note}</h3>\n'
-            f'<p>{inline(entry["body"], ids, False)}</p>\n'
+            f'<p>{inline(apply_maps(entry["body"], set(), set()), ids, False)}</p>\n'
             "</article>"
         )
     source_body = """<h2>Source key</h2>
@@ -503,6 +830,7 @@ def render():
         if word in source_html:
             raise SystemExit(f"Source key page contains {word}")
     (ROOT / "source-key.html").write_text(source_html, encoding="utf-8")
+    assert_high_maps()
     print(
         f"Rendered {len(CHAPTERS)} chapters, {len(COMPANIONS)} companions, index, and {len(entries)} sources."
     )

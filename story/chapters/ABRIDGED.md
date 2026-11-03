@@ -4,13 +4,15 @@
 
 ## 1. A Boy Called Hans Pedersen (1833–1847)
 
-Hans Pedersen was born on 25 February 1833 at Valsømagle, a village in Haraldsted parish on the Danish island of Zealand. He was baptized on Palm Sunday, 31 March, in Haraldsted church, about two miles from the village.
+Hans Pedersen was born on 25 February 1833 at Valsømagle, a village in Haraldsted parish on the Danish island of Zealand. He was baptized on Palm Sunday, 31 March, in Haraldsted church, about two miles from the village. Both places are still there: Valsømagle is a village you can walk through (no house is known for the birth), and Haraldsted church still stands in its churchyard.
 
-His mother was an unmarried servant girl from Valsømagle. Her name was Ane Marie Hansdatter. (One early baptism line was once read as Clausdatter; that reading has been set aside.) Who her parents were is still unknown. The baptism names Peder Johansen of Ringsted as the father the mother named, and the confirmation fourteen years later repeats it. No later record proves it. Ringsted lay about four miles away. In the 1834 census of Ringsted town, a maidservant (*tjenestepige*) named Ane Marie Hansdatter, 27, and a manservant (*tjenestekarl*) named Peter Johansen, 30, both unmarried, show up on the same street, Sankt Hans Gade. They may be the same two people, but that is not proven: they were not listed in the same household, and no marriage has been found.
+His mother was an unmarried servant girl from Valsømagle. Her name was Ane Marie Hansdatter. (One early baptism line was once read as Clausdatter; that reading has been set aside.) Who her parents were is still unknown. Researchers found one possible lead: in 1797 a Valsømagle widower, Hans Pedersen, and a young woman, Maren Hansdatter, were betrothed at the Haraldsted parsonage, which still stands beside the church, and married that October. They might be her parents, but that is only a candidate — her own baptism has not been found. The baptism names Peder Johansen of Ringsted as the father the mother named, and the confirmation fourteen years later repeats it. No later record proves it. Ringsted lay about four miles away. In the 1834 census of Ringsted town, a maidservant (*tjenestepige*) named Ane Marie Hansdatter, 27, and a manservant (*tjenestekarl*) named Peter Johansen, 30, both unmarried, show up on the same street, Sankt Hans Gade. They may be the same two people, but that is not proven: they were not listed in the same household, and no marriage has been found.
+
+When Hans was born, Denmark was still ruled by an absolute king; there would be no parliament until 1849. The law that had tied peasant men to their home estate had ended in 1788, and the farm fields around Ringsted had been split up and reshaped between about 1780 and 1810. Ringsted was the market town. Haraldsted was an old place: Duke Knud Lavard was murdered in the nearby forest in 1131, and pilgrims came there in the Middle Ages. Its thatched parsonage had been rebuilt after a fire in 1789.
 
 Hans did not grow up with his mother. By his first birthday he was a foster child in the village of Skee, three miles from where he was born. He lived in the cottage of Jens Nielsen, a cottager and wheelwright, and his wife Kirsten Johansdatter. The censuses of 1834, 1840, and 1845 all find him there, first as a foster child and then as a foster son. Years later Hans was a wheelwright himself. The records do not say who taught him, but he grew up in a wheelwright's home.
 
-On 11 April 1847 he was confirmed in Haraldsted church as "Hans Pedersen of Skee." The entry sums up his childhood in one line: his foster father Jens Nielsen of Skee, his mother Ane Marie Hansdatter, and the named father Peder Johansen.
+Confirmation had been required by law in Denmark since 1736. On 11 April 1847 he was confirmed in Haraldsted church as "Hans Pedersen of Skee." The entry sums up his childhood in one line: his foster father Jens Nielsen of Skee, his mother Ane Marie Hansdatter, and the named father Peder Johansen.
 
 By 1850 he had left the Skee household. The next twelve years are blank in the records.
 
@@ -18,9 +20,9 @@ By 1850 he had left the Skee household. The next twelve years are blank in the r
 
 On 14 October 1862 Hans, now a wheelwright, married Ane Rasmusdatter in Bjernede church, about eight miles from where he was born. She was born on 17 June 1843. Her parents have not been found.
 
-Their first son was born on 17 January 1863 and died the next day, before he was named. Their second son was born on 28 February 1864 and baptized in June as Hans Peder Pedersen. He is the Hans Peter who went to Minnesota. A third son, Rasmus, was born in December 1866 and died on 5 February 1867. The dates make him about eight weeks old, but the burial book seems to say twelve days.
+Their first son was born on 17 January 1863 and died the next day, before he was named. Their second son was born on 28 February 1864 and baptized in June as Hans Peder Pedersen. He is the Hans Peter who went to Minnesota. He was born in a war year: Denmark fought Prussia and Austria over Schleswig in 1864, Dybbøl fell on 18 April, and Denmark lost the duchies. No record says any man of the family served. Denmark had become a constitutional country in 1849, and the railway had reached Ringsted and Sorø in 1856. A third son, Rasmus, was born in December 1866 and died on 5 February 1867. The dates make him about eight weeks old, but the burial book seems to say twelve days.
 
-Seven months later, on 11 September 1867, the father died at 34 and was buried in Bjernede churchyard. Hans Peter was three and a half.
+Seven months later, on 11 September 1867, the father died at 34 and was buried in Bjernede churchyard, where baby Rasmus had been buried that winter. Bjernede church still stands — Zealand's only surviving round church, built in the 1100s; no grave from that time is known to survive. Hans Peter was three and a half.
 
 In 1870 the census shows Ane as a 27-year-old widow living in Bjernede with her son "Hans Peter Pedersen, 6." That spring she married Hans Rasmussen, a much older widower. They had two children, Rasmus Peter (1871) and Ane Marie (1874). Hans Peter was confirmed on Palm Sunday 1878, and in 1880 he was still living at home as a stepson, age 15.
 
@@ -34,7 +36,7 @@ He settled in Brookville Township, Redwood County, about 22 miles from Springfie
 
 By 1900 Hans was a farmer with five children. By 1910 he owned his farm, and by 1920 he ran it as a dairy farm. Together they had eight children: Nels, Rudolph (listed as Hans O. as a baby), Annie, Louis, Mary, Ethel Mathilda, Elmer, and Olga. Ethel married Werner Jensen in 1923 and died in 1929. Olga, the youngest, was born in 1911. Elmer, born on 24 March 1906 and first entered in the birth index as "Babe," carries our line.
 
-In September 1922 the local paper reported that Hans P. Petersen, 55, of Brookville Township, about two miles east of the Brookville church, had died suddenly of heart trouble in the afternoon while sitting in a chair. He had been ill for some time. He is buried at Dannebod Cemetery, the burial ground of the township's Danish church. Maren Sophia is buried there too, and her death is given as 1937.
+In September 1922 the local paper reported that Hans P. Petersen, 55, of Brookville Township, about two miles east of the Brookville church, had died suddenly of heart trouble in the afternoon while sitting in a chair. He had been ill for some time. He is buried at Dannebod Cemetery, the burial ground of the township's Danish church. Maren Sophia is buried there too, and her death is given as 1937. Both burials come from Find a Grave, a secondary source. The cemetery lies on 180th Street near Cobden, beside a marker for the old Fredsminde church. Where in the township the farm stood is not known.
 
 ## 4. From Elmer to Alex (1906–today)
 

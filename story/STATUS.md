@@ -11,6 +11,7 @@ Updated: 2026-11-03 (America/Chicago)
 
 ## Standing preferences
 - Alex (2026-11-03 via Coordinator): include Genealogist-cleared Danish class/occupation terms (tjenestepige, tjenestekarl, husmand, hjulmand, boelsmand…) as lived scene detail with S# cites; never invent titles. Enrich landed 2026-11-03 (Ch.1, Ch.3, Abridged, Kids); PDFs rebuilt.
+- Alex (2026-11-03 via Coordinator): Places Scout supplies visit pins — when a scene needs a farm/street/church/cemetery pin, @Places Scout (or Coordinator) with place + S#; weave geography only from pin cards + Genealogist-cleared facts. Dig 21 Indsidder/Almisselem/aftægt (S207) still CANDIDATE — not for story.
 
 ## Gate rules
 - Narrate only facts that are FAMILY-CONFIRMED, VERIFIED, or RECORD-SOURCED, each with a real S# cite from ../sources.md.
@@ -34,6 +35,8 @@ Updated: 2026-11-03 (America/Chicago)
 - P18 cause of death (LOW reading) and the 1920 naturalization year: not used.
 
 ## Updates
+- 2026-11-03: Era-context pack (1830s/1860s) CLEARED by Genealogist and folded: Ch.1 "The world he was born into" + confirmation 1736 note; Ch.2 "The Denmark of their wedding" + 1864 war beat (no service claim) + Bjernede Kirke K8/K9 + Gyrstinge K1; Abridged + Kids era colour; SOURCE-KEY K-block. Dig 21 Indsidder/Almisselem/aftægt still OUT; S207/S222 couple as P25 parents still CANDIDATE. Thin spots (farming calendar, roads, local school, Sorø Amt home front) omitted or UNVERIFIED. PDFs rebuilt + OneDrive refreshed.
+- 2026-11-03: Dig 24 S222 betrothal (Haraldsted Præstegaarden, 21 May 1797; m. 15 Oct 1797) folded into Ch.1/Abridged/Kids; couple → P25 parents CANDIDATE only (not locked). Dig 21 Indsidder/Almisselem/aftægt still OUT. Era-context later CLEARED and folded (see next entry). PDFs rebuilt + OneDrive refreshed.
 - 2026-11-03: Chapter 3 destination upgraded to Springfield, Minn. per Genealogist S83; P29/P30 grandparents still not narrated.
 - Standing publish: OneDrive PDF + Tree Site when Alex asked; refresh on new Genealogist approvals.
 
@@ -60,4 +63,6 @@ Updated: 2026-11-03 (America/Chicago)
 
 - 2026-11-03 Alex: KIDS.md + OneDrive Petersen-Family-Story-Kids.pdf (ages 9–11 edge-of-seat version from cleared facts).
 
-- 2026-11-03 Hansdatter lock folded (ch.1, ABRIDGED, KIDS, CHANGE-LOG, SOURCE-KEY); S63/S64 Sankt Hans Gade CANDIDATE beat added. PDFs + OneDrive refreshed. Awaiting Tree Site content PR.
+- 2026-11-03 Hansdatter lock folded (ch.1, ABRIDGED, KIDS, CHANGE-LOG, SOURCE-KEY); S63/S64 Sankt Hans Gade CANDIDATE beat added. PDFs + OneDrive refreshed.
+- 2026-11-03 Places Scout pins folded (Ch.1–3, Abridged, Kids; cards /workspace/genealogy/places/). Dig 21 / S213 still out. 5a hamlet-only; Sankt Hans Gade CANDIDATE; Brookville farm unplaced. Map links in prose; Tree Site map-link pass still later. PDFs + OneDrive refreshed.
+- 2026-11-03 Tree Site PR #13 merged and live: Ane Marie Hansdatter lock, Sankt Hans Gade CANDIDATE (tjenestepige/tjenestekarl), Ch.3 Tjenende(?) S83, story PDFs + Denmark Trip PDF. Map links held until Places Scout pin cards land. https://alexpetersen88.github.io/petersen-family-tree/story/
