@@ -1,38 +1,66 @@
-// Layout: one row per generation. Each marriage is a couple sitting side by side,
-// and the children of that marriage form one group centered under the couple bar.
+// Focus + siblings (concept B): the selected person, their parents, spouse(s),
+// children of those marriages, and siblings who share those parents.
+// Show full tree restores the complete couple-and-children layout.
 const ROOT='P6';
 const W=300,H=104,COUPLE_GAP=40,UNIT_GAP=64,ROOT_GAP=200,GY=200;
+function listedParents(id){return (P[id].parents||[]).filter(pid=>P[pid])}
+function parentKey(id){return listedParents(id).slice().sort().join('|')}
+function neighborhood(id){
+  const ids=new Set();
+  if(!P[id])return ids;
+  ids.add(id);
+  const parents=listedParents(id);
+  parents.forEach(pid=>ids.add(pid));
+  const spouses=(P[id].spouses||[]).map(s=>s.id).filter(sid=>sid&&P[sid]);
+  const spouseSet=new Set(spouses);
+  spouses.forEach(sid=>ids.add(sid));
+  const key=parents.slice().sort().join('|');
+  PEOPLE.people.forEach(q=>{
+    const ps=listedParents(q.id);
+    if(ps.includes(id)&&ps.every(pid=>pid===id||spouseSet.has(pid)))ids.add(q.id);
+    else if((P[id].children||[]).includes(q.id)){
+      const others=ps.filter(pid=>pid!==id);
+      if(!ps.length||(ps.includes(id)&&others.every(pid=>spouseSet.has(pid))))ids.add(q.id);
+    }
+    if(key&&parentKey(q.id)===key)ids.add(q.id);
+  });
+  return ids;
+}
+function computeLayout(allow, seed){
+  const ok=id=>!!P[id]&&(!allow||allow.has(id));
+  const everyone=()=>PEOPLE.people.filter(p=>ok(p.id));
 const gen={};
-function remember(id,g){if(!P[id])return;if(gen[id]===undefined||g<gen[id])gen[id]=g}
-function climb(id,g){if(!P[id])return;remember(id,g);
+function remember(id,g){if(!ok(id))return;if(gen[id]===undefined||g<gen[id])gen[id]=g}
+function climb(id,g){if(!ok(id))return;remember(id,g);
  (P[id].spouses||[]).forEach(s=>{if(s.id)remember(s.id,g)});
  (P[id].parents||[]).forEach(pid=>climb(pid,g-1))}
-climb(ROOT,0);
-function descend(id){if(!P[id]||gen[id]===undefined)return;const g=gen[id];
+const start=seed&&ok(seed)?seed:(ok(ROOT)?ROOT:(everyone()[0]&&everyone()[0].id));
+if(start)climb(start,0);
+function descend(id){if(!ok(id)||gen[id]===undefined)return;const g=gen[id];
  (P[id].spouses||[]).forEach(s=>{if(s.id)remember(s.id,g)});
  const kids=new Set();[id,...(P[id].spouses||[]).map(s=>s.id)].forEach(x=>P[x]&&(P[x].children||[]).forEach(c=>kids.add(c)));
- PEOPLE.people.forEach(q=>(q.parents||[]).includes(id)&&kids.add(q.id));
+ everyone().forEach(q=>(q.parents||[]).includes(id)&&kids.add(q.id));
  kids.forEach(c=>{if(gen[c]===undefined){remember(c,g+1);descend(c)}})}
 for(let n=0;n<4;n++)Object.keys(gen).slice().forEach(descend);
-function inTreeParents(id){return (P[id].parents||[]).filter(pid=>P[pid])}
+function inTreeParents(id){return (P[id].parents||[]).filter(pid=>ok(pid))}
 // Parents of someone already on the chart (in-laws the climb from P6 never reached)
 // sit one row above that person. Spouses share the row.
 for(let n=0;n<8;n++){
   let changed=false;
-  PEOPLE.people.forEach(p=>{
+  everyone().forEach(p=>{
     if(gen[p.id]===undefined)return;
     inTreeParents(p.id).forEach(pid=>{
       if(gen[pid]===undefined||gen[pid]>gen[p.id]-1){remember(pid,gen[p.id]-1);changed=true}
     });
   });
   Object.keys(gen).slice().forEach(id=>{(P[id].spouses||[]).forEach(s=>{
-    if(!s.id||!P[s.id]||gen[s.id]!==undefined)return;
+    if(!s.id||!ok(s.id)||gen[s.id]!==undefined)return;
     remember(s.id,gen[id]);changed=true;
   })});
   if(!changed)break;
 }
 const shift=Math.min(...Object.values(gen));if(shift)for(const id in gen)gen[id]-=shift;
-PEOPLE.people.forEach(p=>{if(gen[p.id]===undefined)gen[p.id]=0});
+everyone().forEach(p=>{if(gen[p.id]===undefined)gen[p.id]=0});
 function birthKey(id){
   const raw=P[id].birth;
   const s=typeof raw==='string'?raw:(raw&&raw.date)||'';
@@ -50,11 +78,11 @@ function reaches(id,goal){
   const seen=new Set();const stack=[id];
   while(stack.length){
     const cur=stack.pop();
-    if(!P[cur]||seen.has(cur))continue;
+    if(!ok(cur)||seen.has(cur))continue;
     seen.add(cur);
     if(cur===goal)return true;
-    const kids=new Set([...(P[cur].children||[])].filter(k=>P[k]));
-    PEOPLE.people.forEach(q=>{if(inTreeParents(q.id).includes(cur))kids.add(q.id)});
+    const kids=new Set([...(P[cur].children||[])].filter(k=>ok(k)));
+    everyone().forEach(q=>{if(inTreeParents(q.id).includes(cur))kids.add(q.id)});
     kids.forEach(k=>stack.push(k));
   }
   return false;
@@ -130,7 +158,7 @@ function claimsPrimaryChild(unit){
 }
 function isInlawAnchor(unit){
   if(claimsPrimaryChild(unit))return false;
-  return PEOPLE.people.some(p=>inTreeParents(p.id).some(pid=>unit.members.includes(pid)));
+  return everyone().some(p=>inTreeParents(p.id).some(pid=>unit.members.includes(pid)));
 }
 function extOf(posMap){
   const ext={};
@@ -324,7 +352,7 @@ function snapOutsideChildBands(unit){
   });
 }
 units.filter(isInlawAnchor).sort((a,b)=>a.gen-b.gen||(a.primary<b.primary?-1:1)).forEach(unit=>{
-  const kids=PEOPLE.people.filter(p=>pos[p.id]&&inTreeParents(p.id).some(pid=>unit.members.includes(pid)));
+  const kids=everyone().filter(p=>pos[p.id]&&inTreeParents(p.id).some(pid=>unit.members.includes(pid)));
   if(!kids.length)return;
   const local={};
   unit.members.forEach((id,i)=>{local[id]=i*(W+COUPLE_GAP)});
@@ -346,14 +374,54 @@ placedRoots.push({ext:seenExt});
 roots.filter(u=>!bloodRoot(u)).forEach(u=>placeRoot(u,ROOT_GAP,placedRoots));
 let edge=0;
 Object.keys(pos).forEach(id=>{edge=Math.max(edge,pos[id].x+W/2)});
-PEOPLE.people.forEach(p=>{
+everyone().forEach(p=>{
   if(pos[p.id])return;
   pos[p.id]={x:edge+ROOT_GAP+W/2,y:gen[p.id]*GY};
   edge=pos[p.id].x+W/2;
 });
+  return {gen, pos};
+}
+// The full-tree layout keeps siblings outside a wide child row so nobody sits
+// on top of a niece or nephew. In focus mode those siblings belong next to the
+// person, or a phone has to pan across empty space to find them.
+function tightenFocus(layout, focusId){
+  const {pos, gen}=layout;
+  if(!pos[focusId])return layout;
+  const spouses=(P[focusId].spouses||[]).map(s=>s.id).filter(id=>pos[id]&&gen[id]===gen[focusId]);
+  const block=[focusId,...spouses];
+  const key=parentKey(focusId);
+  if(!key)return layout;
+  const sibs=Object.keys(pos).filter(id=>!block.includes(id)&&gen[id]===gen[focusId]&&parentKey(id)===key);
+  if(!sibs.length)return layout;
+  const minX=Math.min(...block.map(id=>pos[id].x));
+  const maxX=Math.max(...block.map(id=>pos[id].x));
+  const left=sibs.filter(id=>pos[id].x<pos[focusId].x).sort((a,b)=>pos[a].x-pos[b].x);
+  const right=sibs.filter(id=>pos[id].x>=pos[focusId].x).sort((a,b)=>pos[a].x-pos[b].x);
+  let cursor=minX-W/2;
+  for(let i=left.length-1;i>=0;i--){
+    cursor-=UNIT_GAP+W;
+    pos[left[i]].x=cursor+W/2;
+  }
+  cursor=maxX+W/2;
+  right.forEach(id=>{
+    cursor+=UNIT_GAP;
+    pos[id].x=cursor+W/2;
+    cursor+=W;
+  });
+  return layout;
+}
+function layoutFocus(id){return tightenFocus(computeLayout(neighborhood(id), id), id)}
+let gen, pos, fullTree=false, layoutKey='';
+const fullLayout=computeLayout(null);
+function useLayout(next){gen=next.gen;pos=next.pos}
+useLayout(layoutFocus(ROOT));
+layoutKey=[...neighborhood(ROOT)].sort().join(',');
+function inTreeParents(id){return (P[id].parents||[]).filter(pid=>P[pid])}
 const NS='http://www.w3.org/2000/svg',vp=document.getElementById('vp');
 const el=(t,a,p=vp)=>{const e=document.createElementNS(NS,t);for(const k in a)e.setAttribute(k,a[k]);p.appendChild(e);return e};
+const linksG=el('g',{id:'links'});
 function drawTreeLinks(){
+  linksG.replaceChildren();
   const groups=new Map();
   PEOPLE.people.forEach(c=>{
     const ps=inTreeParents(c.id).filter(id=>pos[id]);
@@ -388,7 +456,7 @@ function drawTreeLinks(){
     kids.slice().sort((a,b)=>pos[a].x-pos[b].x).forEach(id=>{
       d+=` M${n(pos[id].x)},${n(busY)} V${n(pos[id].y-H/2)}`;
     });
-    el('path',{class:'edge',d});
+    el('path',{class:'edge',d},linksG);
   });
   const seen=new Set();
   PEOPLE.people.forEach(p=>{(p.spouses||[]).forEach(s=>{
@@ -398,7 +466,7 @@ function drawTreeLinks(){
     seen.add(key);
     const a=pos[p.id],b=pos[s.id];
     const y=(a.y+b.y)/2;
-    el('line',{class:'marr',x1:Math.min(a.x,b.x)+W/2,y1:y,x2:Math.max(a.x,b.x)-W/2,y2:y});
+    el('line',{class:'marr',x1:Math.min(a.x,b.x)+W/2,y1:y,x2:Math.max(a.x,b.x)-W/2,y2:y},linksG);
   })});
 }
 drawTreeLinks();
@@ -458,7 +526,8 @@ function addBadges(parent,parts){
 const nodes={};
 document.getElementById('svg').getBoundingClientRect();
 PEOPLE.people.forEach(p=>{
-  const {x,y}=pos[p.id];
+  const at=pos[p.id]||{x:0,y:0};
+  const x=at.x,y=at.y;
   const short=shortName(p.name);
   const kind=statusKind(p);
   const parts=[[kind,statusWord(kind)]];
@@ -473,6 +542,11 @@ PEOPLE.people.forEach(p=>{
   el('text',{class:'nm',x:W/2,y:32,'text-anchor':'middle','font-size':nameSize(short)},g).textContent=short;
   el('text',{class:'sub',x:W/2,y:52,'text-anchor':'middle','font-size':15},g).textContent=yrs(p);
   addBadges(g,parts);
+  if(!pos[p.id]){
+    g.style.display='none';
+    g.setAttribute('aria-hidden','true');
+    g.tabIndex=-1;
+  }
   g.addEventListener('click',e=>{e.stopPropagation();if(skipClick){skipClick=false;return}show(p.id,{focus:MOBILE()?'sheet':'node'})});
   g.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();skipClick=true;show(p.id,{focus:true})}});
   nodes[p.id]=g;
@@ -516,16 +590,124 @@ function desiredScale(box,id){
   const fit=(box.w*(mobile?0.92:0.8))/span;
   return Math.min(mobile?1.15:1.2,Math.max(mobile?0.34:0.42,fit));
 }
+function cardBounds(ids){
+  let minX=Infinity,maxX=-Infinity,minY=Infinity,maxY=-Infinity,n=0;
+  ids.forEach(id=>{
+    const p=pos[id];if(!p)return;n++;
+    minX=Math.min(minX,p.x-W/2);maxX=Math.max(maxX,p.x+W/2);
+    minY=Math.min(minY,p.y-H/2);maxY=Math.max(maxY,p.y+H/2);
+  });
+  if(!n)return null;
+  const pad=18;
+  return {x:(minX+maxX)/2,y:(minY+maxY)/2,span:maxX-minX+pad*2,height:maxY-minY+pad*2};
+}
+function siblingIds(id){
+  const key=parentKey(id);
+  if(!key)return [];
+  return Object.keys(pos).filter(q=>q!==id&&parentKey(q)===key);
+}
+// Fit the neighborhood when it stays readable. A wide child row would shrink
+// names to nothing on a phone, so then frame the couple with parents and
+// siblings, and keep the children row in view vertically.
+function focusPlan(id, box){
+  const mobile=MOBILE();
+  const maxK=mobile?1.15:1.2;
+  const floor=mobile?0.48:0.42;
+  const couple=focusFrame(id);
+  const all=cardBounds(Object.keys(pos));
+  const withSib=cardBounds([id,...mateIds(id),...listedParents(id),...siblingIds(id)]);
+  const withParents=cardBounds([id,...mateIds(id),...listedParents(id)]);
+  const fitW=span=>(box.w*(mobile?0.94:0.9))/span;
+  const fitH=(box.h*(mobile?0.9:0.86))/all.height;
+  const choose=bounds=>{
+    if(!bounds)return null;
+    const scale=Math.min(maxK, fitW(bounds.span), fitH);
+    if(scale<floor)return null;
+    return {k:scale,x:bounds.x,y:all.y};
+  };
+  // Widest readable slice first: everyone, then siblings beside the couple,
+  // then just the couple and the parents above them.
+  const picked=choose(all)||choose(withSib)||choose(withParents);
+  if(picked)return picked;
+  const under=Object.keys(pos).filter(q=>q===id||mateIds(id).includes(q)||listedParents(q).includes(id));
+  const stack=cardBounds(under.length?under:[id]);
+  const coupleK=Math.min(maxK,(box.w*(mobile?0.92:0.82))/couple.span);
+  const stackK=(box.h*(mobile?0.9:0.86))/stack.height;
+  let scale=coupleK;
+  if(stackK>=floor)scale=Math.min(coupleK, Math.max(floor, stackK));
+  scale=Math.max(mobile?0.46:0.4, Math.min(maxK, scale));
+  const bias=scale*stack.height>box.h*0.92;
+  return {k:scale,x:couple.x,y:bias?couple.y:stack.y,bias};
+}
 function viewPerson(id,opts={}){
   const p=pos[id];if(!p)return;
   const box=visibleBox();
   if((box.w<40||box.h<40)&&(opts._try||0)<8){requestAnimationFrame(()=>viewPerson(id,{...opts,_try:(opts._try||0)+1}));return}
   if(box.w<40)return;
-  const frame=focusFrame(id);
-  if(opts.force)k=desiredScale(box,id);
-  tx=box.w/2-k*frame.x;
-  ty=box.h*(MOBILE()?0.32:0.34)-k*frame.y;
+  const couple=focusFrame(id);
+  if(fullTree||!opts.force){
+    if(opts.force)k=desiredScale(box,id);
+    tx=box.w/2-k*couple.x;
+    ty=box.h*(MOBILE()?0.32:0.34)-k*couple.y;
+    apply();
+    return;
+  }
+  const plan=focusPlan(id, box);
+  k=plan.k;
+  tx=box.w/2-k*plan.x;
+  ty=plan.bias?box.h*(MOBILE()?0.34:0.36)-k*plan.y:box.h/2-k*plan.y;
   apply();
+}
+function paintLayout(){
+  drawTreeLinks();
+  let rescue=false;
+  PEOPLE.people.forEach(p=>{
+    const n=nodes[p.id];
+    if(!n)return;
+    const at=pos[p.id];
+    if(!at){
+      if(document.activeElement===n)rescue=true;
+      n.style.display='none';
+      n.setAttribute('aria-hidden','true');
+      n.tabIndex=-1;
+      return;
+    }
+    n.style.display='';
+    n.removeAttribute('aria-hidden');
+    n.tabIndex=0;
+    n.setAttribute('transform',`translate(${at.x-W/2},${at.y-H/2})`);
+  });
+  if(rescue&&selected&&nodes[selected])nodes[selected].focus({preventScroll:true});
+}
+function ensureLayout(id){
+  const key=fullTree?'full':[...neighborhood(id)].sort().join(',');
+  if(key===layoutKey)return;
+  layoutKey=key;
+  useLayout(fullTree?fullLayout:layoutFocus(id));
+  paintLayout();
+}
+function syncScope(){
+  const focusBtn=document.getElementById('scopefocus');
+  const fullBtn=document.getElementById('scopefull');
+  if(focusBtn)focusBtn.setAttribute('aria-pressed', String(!fullTree));
+  if(fullBtn)fullBtn.setAttribute('aria-pressed', String(fullTree));
+  const who=selected&&P[selected]?shortName(P[selected].name):'Hans Peter Petersen';
+  svg.setAttribute('aria-label', fullTree
+    ?'Petersen family tree, full tree'
+    :`Petersen family tree focused on ${who}. Showing parents, spouse, children, and siblings.`);
+  const status=document.getElementById('scopestatus');
+  if(status)status.textContent=fullTree
+    ?'Showing the full tree.'
+    :`Focus on ${who}. Showing parents, spouse, children, and siblings.`;
+}
+function setScope(full){
+  if(fullTree===!!full)return;
+  fullTree=!!full;
+  layoutKey='';
+  const id=selected||ROOT;
+  ensureLayout(id);
+  syncScope();
+  viewPerson(id,{force:true});
 }
 function zoom(f,cx,cy){
   const box=visibleBox();
@@ -597,6 +779,8 @@ function bindCtrl(id,fn){
 bindCtrl('zi',()=>zoom(1.25));
 bindCtrl('zo',()=>zoom(1/1.25));
 bindCtrl('zr',()=>viewPerson(selected||ROOT,{force:true}));
+bindCtrl('scopefocus',()=>setScope(false));
+bindCtrl('scopefull',()=>setScope(true));
 
 function syncInert(){
   const hide=MOBILE()&&!sheet.classList.contains('open');
@@ -676,7 +860,10 @@ function place(o){if(!o)return'';if(typeof o==='string')return esc(o);
  let h=bits.join(' · '); if(o.matchNote)h+=`<div class="relnote">${esc(o.matchNote)}</div>`; return h}
 function show(id,opts={}){
   const p=P[id];if(!p||!nodes[id])return;
+  const changed=selected!==id;
   selected=id;
+  ensureLayout(id);
+  syncScope();
   Object.values(nodes).forEach(n=>{n.classList.remove('sel');n.setAttribute('aria-pressed','false')});
   nodes[id].classList.add('sel');nodes[id].setAttribute('aria-pressed','true');
   const kids=new Set([...(p.children||[])]);PEOPLE.people.forEach(q=>(q.parents||[]).includes(id)&&kids.add(q.id));
@@ -731,7 +918,7 @@ function show(id,opts={}){
   if(opts.history!==false&&location.hash!=='#'+id)history.replaceState(null,'','#'+id);
   const openSheet=opts.sheet!==undefined?!!opts.sheet:true;
   setSheet(openSheet,{skipView:true,focusSheet:opts.focus==='sheet'||opts.focus===true});
-  viewPerson(id,{force:!!opts.force});
+  viewPerson(id,{force:!!opts.force||(!fullTree&&changed)});
   if(opts.focus==='node')nodes[id]?.focus({preventScroll:true});
 }
 panel.addEventListener('click',e=>{const a=e.target.closest('a.p');if(!a)return;e.preventDefault();show(a.dataset.id)});

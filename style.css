@@ -70,6 +70,13 @@ nav a.on:visited{color:var(--on-accent)}
   .banner-details summary::after{grid-column:2;grid-row:1 / span 2;align-self:center;margin:0}
 }
 .toolbar{position:relative;z-index:6;flex:none;display:flex;flex-wrap:wrap;align-items:center;gap:8px;padding:8px 16px;padding-left:max(16px,env(safe-area-inset-left));padding-right:max(16px,env(safe-area-inset-right));background:var(--card);border-bottom:1px solid var(--line)}
+.scope{display:flex;flex:1 1 auto;min-width:min(100%,18rem);border:1px solid var(--control);border-radius:999px;overflow:hidden;background:var(--bg)}
+.scope button{flex:1;touch-action:manipulation;min-height:var(--tap);padding:0 14px;border:0;border-radius:0;background:transparent;color:var(--ink);font:700 1rem/1.2 var(--sans);cursor:pointer;white-space:nowrap}
+.scope button+button{box-shadow:inset 1px 0 0 var(--control)}
+.scope button[aria-pressed="true"]{background:var(--accent);color:var(--on-accent)}
+.scope button:active{background:var(--card-2)}
+.scope button[aria-pressed="true"]:active{background:var(--accent-press)}
+.sr{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 .legend{position:relative}
 .legend summary{min-height:var(--tap);min-width:var(--tap);padding:0 16px;display:inline-flex;align-items:center;gap:8px;border-radius:999px;border:1px solid var(--control);background:var(--bg);color:var(--ink);font:700 1rem var(--sans);cursor:pointer;list-style:none;touch-action:manipulation}
 .legend summary::-webkit-details-marker{display:none}
@@ -94,8 +101,9 @@ main.stage{flex:1;min-height:0;display:flex;position:relative;overflow:hidden}
 @media (hover:hover) and (pointer:fine){
   #treewrap{cursor:grab}
   #treewrap.grabbing{cursor:grabbing}
-  .ctrl button:hover,.legend summary:hover{background:var(--card-2)}
+  .ctrl button:hover,.legend summary:hover,.scope button:hover{background:var(--card-2)}
   .legend[open] summary:hover{background:var(--accent-soft)}
+  .scope button[aria-pressed="true"]:hover{background:var(--accent-press)}
 }
 svg{width:100%;height:100%;display:block;touch-action:none;overflow:visible}
 svg text{font-family:var(--sans)}
@@ -178,6 +186,9 @@ tr:target{background:var(--records-soft);box-shadow:inset 0 0 0 2px var(--record
 .notes p,.notes li{font:400 1rem/1.5 var(--sans);color:var(--ink)}
 .notes h3{font-family:var(--serif);font-weight:600;font-size:1.125rem}
 .notes a{overflow-wrap:anywhere}
+@media (max-width:800px){
+  .scope{flex:1 1 100%;min-width:0}
+}
 @media (max-width:800px) and (min-height:501px){
   header{flex-wrap:wrap;row-gap:8px}
   header nav{flex:1 1 100%;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
