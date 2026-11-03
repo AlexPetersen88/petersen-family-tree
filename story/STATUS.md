@@ -17,14 +17,15 @@ Updated: 2026-11-03 (America/Chicago)
 - No invented scenes, dialogue, motives, or places. Say what is unknown.
 
 ## Deferred (not narrated as settled)
-- P28 Peder Johansen as father: not named.
-- P25 mother's patronymic (Clausdatter vs Hansdatter): she is called only "Ane Marie."
+- P28 Peder Johansen: named in story as *udlagt barnefader* from S51/S56; NOT narrated as proven father (Alex 2026-11-03 — controversy is part of the arc).
+- P25 mother's patronymic: both Clausdatter (S51) and Hansdatter/Hansd. (S52, S56, S59, S60) shown; conflict left open.
 - S67, S68, S69, S71 Ringsted baptisms: not used.
 - Rasmus Peter as the Sleepy Eye emigrant (S49): not used.
-- Rudolph = Hans O. (1893): marked as an open question.
+- Rudolph = Hans O. (1893): narrated as Genealogist date-match (S95), name change unexplained.
 - Stokholtshuse farmsite pin: not used.
 - Ane Marie Rasmussen (S45) = Ane Rasmusdatter: narrated with a "Provisional" label.
-- Matr. 5a as Hans Rasmussen's property since 1855, and Hans Peter's childhood on 5a: not used.
+- Matr. 5a since 1855, and Hans Peter's childhood on 5a: not used (ch.2 says house-level unproven).
+- Now narrated as open controversies (both sides): Maren birthplace MN vs DK (S27/S28 vs S29); Rasmus age 8 wks vs "12 Dage"(?) (S41/S43); Hans P. vs Hans T. (S145); Ethel Gent vs Neubauer (S89 vs S148/S149).
 - P18 cause of death (LOW reading) and the 1920 naturalization year: not used.
 
 ## Updates
@@ -40,3 +41,8 @@ Updated: 2026-11-03 (America/Chicago)
 - 2026-11-03 Genealogist Kin digs 4–5: keep Annie/Louis/Mary in Hans×Maren household (S103 FG incomplete ≠ second Hans). Maren FAG siblings (S102) optional secondary only — not folded. 1880 Nels still unfound; Maren 1937 still secondary.
 - 2026-11-03 Pack #7b: S145 death notice folded into ch.3. Exact day 1922-09-06 NOT proven; Hans P. vs Hans T. conflict left open. S146/S147 not narrated.
 - 2026-11-03 Kin Dig F: Ethel maiden RESOLVED Neubauer (S148/S149); Gent = mother's maiden. Ch.4 updated; S89 caution noted.
+- 2026-11-03 Tree Site: PR #6 merged (e7859bd) — story ch.1–4 (Pack #7b S145 + Kin Dig F Ethel Neubauer) live on Pages: https://alexpetersen88.github.io/petersen-family-tree/story/
+- 2026-11-03 Pack #8 S152: Ethel Mathilda marriage/death/funeral folded into ch.3. Hansen/Strodimier and S153–S155 / Dig 5 out.
+- 2026-11-03 Alex Narrative: sibling depth light unless arc needs it — trimmed Ethel Mathilda (S152) in ch.3 to birth/marriage/death only (dropped funeral/survivors detail).
+- 2026-11-03 Alex: name church-book controversies with finest cleared detail — Ch.1 now names Peder Johansen as udlagt father + both mother surnames; PDF refresh.
+- 2026-11-03 Alex finest-detail + miles pass: all ch.1–4 revised — straight-line OSM/Nominatim miles (Valsømagle–Haraldsted 2, –Skee 3, –Ringsted 4; Bjernede–Valsømagle 8, –Haraldsted 6, –Gyrstinge 3, –Copenhagen 40; Springfield–Redwood Falls 22, Morgan 13; Sleepy Eye–Redwood Falls 26, –Morgan 13); deed lease detail; place-name hops; S37 Hans Dat. reading; conflicts shown both sides. Sundown/Paxton: no pin, no miles. Ethel Mathilda kept light. PDF + OneDrive refreshed.

@@ -58,3 +58,8 @@
 - S149 (APPROVED index — P32): MNHS death — Ethel B. Dohrmann, d. 1994-06-07 Brown Co; b. 1911-11-27; mother's maiden GENT; cert 1994-MN-015182. https://www.mnhs.org/search/people
 - S150 (SECONDARY): Find a Grave 228250641, Ethel B Neubauer Dohrmann, 27 Nov 1911 – 7 Jun 1994, Home Cemetery Sleepy Eye; spouse Wesley (m. 1935). https://www.findagrave.com/memorial/228250641/ethel-b-dohrmann
 - S89 (RECORD-SOURCED FAG secondary — Janice’s father): Find a Grave 197091387, Wesley Edward Dohrmann, 6 Jun 1902 – 18 Apr 1981, Home Cemetery Sleepy Eye. Bio says “Married Ethel Gent” — maiden misstated; Gent = Ethel’s mother’s maiden (see S148/S149). https://www.findagrave.com/memorial/197091387/wesley-edward-dohrmann
+
+- S152 (APPROVED — newspaper): Redwood Gazette, 6 Nov 1929, p.5 — “FUNERAL THURSDAY FOR MRS. WERNER JENSEN.” Ethel Mathilda Petersen, b. Brookville Twp 15 Jan 1902; m. Werner Jensen 3 Jan 1923; d. Redwood Falls hospital 20 Oct 1929 after operation; funeral Hans Jensen home Brookville → Brookville Lutheran → church cemetery; Rev. H. Madsen Sleepy Eye. Mother Mrs. Hans Petersen, Olga, Elmer among survivors (cleared). Sister married names Hansen/Strodimier UNVERIFIED — not used. https://www.loc.gov/resource/sn85025570/1929-11-06/ed-1/?sp=5
+
+- S59: Haraldsted Sogn, Kontraministerialbog 1814–1842, Tilgangsliste 1833 no. 199: "Ane Marie Hansd., 28, Tjenestepige", came from Ringsted, dated "d. 30te Marts 1833". AO bsid=150801 img 398: https://api.rigsarkivet.dk/ao/v1/images/25012620
+- S60: same KMB, Afgangsliste 1832/33 no. 335: "Ane Marie Hansd., 28, [Tjenestepige] (do.)", moved to Ringsted; date column "do." (ditto), about Nov 1832 to Jan 1833 (LOW). AO bsid=150801 img 475: https://api.rigsarkivet.dk/ao/v1/images/25012697
