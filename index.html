@@ -1,14 +1,56 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Petersen Family Tree</title>
-<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="theme-color" content="#f3efe7" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#161411" media="(prefers-color-scheme: dark)">
-<link rel="stylesheet" href="style.css"></head><body class="tree">
-<header><div class="brand"><p class="eyebrow">Redwood County, Minnesota</p><h1>The Petersen Family</h1></div>
-<nav><a class="on" href="index.html">Tree</a><a href="sources.html">Sources</a></nav></header>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Petersen Family Tree</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light">
+<meta name="theme-color" content="#fffcf7">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="tree">
+<header>
+<div class="brand"><p class="eyebrow">Redwood County, Minnesota</p><h1>The Petersen Family</h1></div>
+<nav aria-label="Primary"><a class="on" href="index.html" aria-current="page">Tree</a><a href="sources.html">Sources</a></nav>
+</header>
 <div class="banner"></div>
-<main class="stage"><div id="treewrap"><svg id="svg"><g id="vp"></g></svg>
-<div class="ctrl"><button id="zi" type="button" aria-label="Zoom in">+</button><button id="zo" type="button" aria-label="Zoom out">−</button><button id="zr" type="button" aria-label="Reset view">⟲</button></div>
-<div class="legend">Drag or pinch. Tap a person. <b style="color:var(--green)">Green</b> = family-confirmed · <b style="color:var(--amber)">Amber</b> = record-sourced, not confirmed by family · dashed = living.</div></div>
-<aside id="sheet"><button id="sheetclose" class="sheetclose" type="button">Details</button>
-<div id="panel"><h2>Select a person</h2><p class="muted">Green cards are family-confirmed. Hans Peter Petersen was born 28 Feb 1864 in Bjernede, Sorø amt, Denmark (Alex, 2026-11-03) and immigrated in 1884. Amber cards are record-sourced and not confirmed by family, including his parents Hans Pedersen and Ane Rasmusdatter, stepfather Hans Rasmussen (birth year 1801 or 1831, unresolved), and the Bjernede siblings.</p></div></aside></main>
-<script src="data.js"></script><script src="common.js"></script><script src="tree.js"></script></body></html>
+<div class="toolbar">
+<details class="legend" id="legend">
+<summary>Key</summary>
+<div class="legend-body" id="legendbody">
+<p><span class="keychip family">Family</span> Family-confirmed</p>
+<p><span class="keychip records">Records</span> Record-sourced, not confirmed by family</p>
+<p><span class="keychip living">Dashed</span> Living person</p>
+<p class="legend-help">Drag or pinch to move. Tap a person for details.</p>
+</div>
+</details>
+<div class="ctrl" role="group" aria-label="Zoom">
+<button id="zo" type="button">Zoom out</button>
+<button id="zr" type="button">Fit</button>
+<button id="zi" type="button">Zoom in</button>
+</div>
+</div>
+<main class="stage">
+<div id="treewrap">
+<svg id="svg" aria-label="Petersen family tree"><g id="vp"></g></svg>
+</div>
+<aside id="sheet" aria-labelledby="sheetlabel">
+<div class="sheetbar" id="sheetbar">
+<button id="sheetclose" class="sheetclose" type="button" aria-expanded="false" aria-controls="panel" aria-label="Show details">
+<span class="handle" aria-hidden="true"></span>
+<span class="sheetline"><span id="sheetlabel">Tap a person</span><span id="sheetaction">Details</span></span>
+</button>
+</div>
+<div class="peek-spacer" aria-hidden="true"></div>
+<div id="panel">
+<h2>Select a person</h2>
+<p class="empty-cta">Tap a name on the tree to see dates, relatives, and sources.</p>
+</div>
+</aside>
+</main>
+<div id="safeprobe" aria-hidden="true"></div>
+<script src="data.js"></script>
+<script src="common.js"></script>
+<script src="tree.js"></script>
+</body>
+</html>

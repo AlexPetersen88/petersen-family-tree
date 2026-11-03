@@ -6,4 +6,23 @@ const yrs=p=>{if(p.living)return (p.birth&&p.birth.date?'b. '+yearOf(p.birth.dat
  return yearOf(p.birth&&p.birth.date)+'–'+yearOf(p.death&&p.death.date)};
 const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const BANNER='Research in progress. Hans Peter Petersen was born 28 Feb 1864 in Bjernede, Sorø amt, Denmark — family-confirmed origin (Alex, 2026-11-03) — and immigrated in 1884. His Danish parents Hans Pedersen and Ane Rasmusdatter, stepfather Hans Rasmussen, and the Bjernede siblings are record-sourced only and are not family-confirmed. Hans Rasmussen’s birth year 1801 vs 1831 is unresolved. Living people show only what Alex shared.';
-document.addEventListener('DOMContentLoaded',()=>{const b=document.querySelector('.banner');if(b)b.textContent=BANNER});
+document.addEventListener('DOMContentLoaded',()=>{
+  const b=document.querySelector('.banner');
+  if(!b)return;
+  const details=document.createElement('details');
+  details.className='banner-details';
+  details.open=!matchMedia('(max-width:800px)').matches;
+  const summary=document.createElement('summary');
+  const title=document.createElement('span');
+  title.className='banner-title';
+  title.textContent='Research in progress';
+  const hint=document.createElement('span');
+  hint.className='banner-hint';
+  hint.textContent='Family-confirmed vs record-sourced';
+  summary.append(title,hint);
+  const full=document.createElement('p');
+  full.className='banner-full';
+  full.textContent=BANNER;
+  details.append(summary,full);
+  b.replaceChildren(details);
+});
