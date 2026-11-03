@@ -1,18 +1,41 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><title>Sources · Petersen Family Tree</title>
-<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="theme-color" content="#f3efe7" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#161411" media="(prefers-color-scheme: dark)">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light">
+<meta name="theme-color" content="#fffcf7">
 <link rel="stylesheet" href="style.css"></head><body class="page">
+<div class="sticky-chrome">
 <header><div class="brand"><p class="eyebrow">Redwood County, Minnesota</p><h1>The Petersen Family</h1></div>
-<nav><a href="index.html">Tree</a><a class="on" href="sources.html">Sources</a></nav></header>
-<div class="banner"></div><div class="wrap"><h2>Sources &amp; citation log <span class="muted" style="font-size:.9rem">(updated 2026-11-03)</span></h2>
-<p class="lede muted">Find a Grave and index sites are secondary. Entries marked excluded, unrelated, or unconfirmed are kept for the record and are <b>not</b> linked to anyone.</p>
-<p class="lede muted">Hans Peter Petersen’s origin is <b>family-confirmed</b> (Alex, 2026-11-03, <b>S30</b>): born 28 Feb 1864 in Bjernede, Sorø amt, Denmark. His Danish parents, stepfather, and siblings stay <b>record-sourced only</b>. Ane’s 29 Jun 1883 death is entered as “Ane Marie Rasmussen,” wife for the second time of Hans Rasmussen, and is matched to Ane Rasmusdatter <b>by inference</b> (<b>S45</b>). Hans Rasmussen died about 2 Jul 1883, age 83; the birth year leans 1801 and he is not linked to a ~1833 candidate (<b>S46</b>). Rasmus Peter’s 1885 confirmation is record-sourced (<b>S47</b>); an 18 Jun 1889 emigration to Sleepy Eye, contract 4232 Y, is <b>candidate / unverified</b> (<b>S49</b>). Ane Marie’s 1888 confirmation names a foster father (<b>S48</b>); her fate after 1888 is unknown, and the baptism day is 10 Jan 1875 in one record and 11 Jan 1875 in the other.</p>
-<table><thead><tr><th>ID</th><th>Source</th><th>Cited for</th></tr></thead><tbody id="tb"></tbody></table><div id="notes" class="notes"></div></div>
+<nav aria-label="Primary"><a href="index.html">Tree</a><a class="on" href="sources.html" aria-current="page">Sources</a></nav></header>
+<div class="banner"></div>
+<a id="return" class="return-tree" hidden href="index.html">Back to the tree</a>
+</div>
+<main class="wrap"><h2>Sources &amp; citation log <span class="muted" style="font-size:.9rem">(updated 2026-11-03)</span></h2>
+<p class="lede">Find a Grave and index sites are secondary. Entries marked excluded, unrelated, or unconfirmed are kept for the record and are <b>not</b> linked to anyone.</p>
+<p class="lede">Hans Peter Petersen’s origin is <b>family-confirmed</b> (Alex, 2026-11-03, <b>S30</b>): born 28 Feb 1864 in Bjernede, Sorø amt, Denmark. His Danish parents, stepfather, and siblings stay <b>record-sourced only</b>. Ane’s 29 Jun 1883 death is entered as “Ane Marie Rasmussen,” wife for the second time of Hans Rasmussen, and is matched to Ane Rasmusdatter <b>by inference</b> (<b>S45</b>). Hans Rasmussen died about 2 Jul 1883, age 83; the birth year leans 1801 and he is not linked to a ~1833 candidate (<b>S46</b>). Rasmus Peter’s 1885 confirmation is record-sourced (<b>S47</b>); an 18 Jun 1889 emigration to Sleepy Eye, contract 4232 Y, is <b>candidate / unverified</b> (<b>S49</b>). Ane Marie’s 1888 confirmation names a foster father (<b>S48</b>); her fate after 1888 is unknown, and the baptism day is 10 Jan 1875 in one record and 11 Jan 1875 in the other.</p>
+<table><thead><tr><th>ID</th><th>Source</th><th>Cited for</th></tr></thead><tbody id="tb"></tbody></table><div id="notes" class="notes"></div></main>
 <script src="data.js"></script><script src="common.js"></script><script>
 const cites={};PEOPLE.people.forEach(p=>(p.sources||[]).forEach(s=>(cites[s]=cites[s]||[]).push(p)));
-tb.innerHTML=Object.values(SOURCES).map(S=>`<tr id="${S.id}"><td data-label="ID"><b>${S.id}</b>${S.flag?`<br><i class="muted">${esc(S.flag)}</i>`:''}</td><td data-label="Source">${esc(S.text.replace(/https?:\/\/[^\s)]+/g,'').replace(/:\s*$/,''))}<br>${S.urls.map(u=>`<a href="${esc(u)}" target="_blank" rel="noopener">${esc(u)}</a>`).join('<br>')||'<span class="muted">no URL in this file</span>'}</td><td data-label="Cited for">${(cites[S.id]||[]).map(p=>esc(p.name)).join('<br>')||'<span class="muted">—</span>'}</td></tr>`).join('');
-const direct=PEOPLE.people.flatMap(p=>(p.sources||[]).filter(s=>/^https?:/.test(s)).map(s=>`<li><a href="${esc(s)}" target="_blank">${esc(s)}</a> — ${esc(p.name)}</li>`));
-notes.innerHTML=SOURCE_NOTES.map(n=>`<p class="muted">${esc(n)}</p>`).join('')+(direct.length?`<h3 style="font-weight:560">Direct links cited on people</h3><ul>${direct.join('')}</ul>`:'');
-if(location.hash)document.querySelector(location.hash)?.scrollIntoView();
+const params=new URLSearchParams(location.search);
+const backId=params.get('person');
+const back=document.getElementById('return');
+if(back&&backId&&P[backId]){back.href='index.html#'+encodeURIComponent(backId);back.textContent='← Back to '+P[backId].name;back.hidden=false}
+tb.innerHTML=Object.values(SOURCES).map(S=>{
+  const text=esc(S.text.replace(/https?:\/\/[^\s)]+/g,'').replace(/:\s*$/,''));
+  const urls=(S.urls||[]).map(u=>`<a class="src-url" href="${esc(u)}" target="_blank" rel="noopener">${esc(u)}</a>`).join('')||'<span class="muted">no URL in this file</span>';
+  const who=(cites[S.id]||[]).map(p=>`<a class="who" href="index.html#${encodeURIComponent(p.id)}">${esc(p.name)}</a>`).join('')||'<span class="muted">—</span>';
+  const flag=S.flag?`<br><span class="flag">${esc(S.flag)}</span>`:'';
+  return `<tr id="${S.id}"><td data-label="ID"><b class="sid">${S.id}</b>${flag}</td><td data-label="Source">${text}${urls}</td><td data-label="Cited for">${who}</td></tr>`;
+}).join('');
+const direct=PEOPLE.people.flatMap(p=>(p.sources||[]).filter(s=>/^https?:/.test(s)).map(s=>`<li><a href="${esc(s)}" target="_blank" rel="noopener">${esc(s)}</a> — ${esc(p.name)}</li>`));
+notes.innerHTML=SOURCE_NOTES.map(n=>`<p>${esc(n)}</p>`).join('')+(direct.length?`<h3>Direct links cited on people</h3><ul>${direct.join('')}</ul>`:'');
+function revealHash(){
+  const hashId=location.hash.slice(1);
+  if(!hashId)return;
+  const target=document.getElementById(decodeURIComponent(hashId));
+  if(!target)return;
+  const chrome=document.querySelector('.sticky-chrome');
+  const top=target.getBoundingClientRect().top+window.scrollY-(chrome?chrome.offsetHeight:0)-12;
+  window.scrollTo(0,Math.max(0,top));
+}
+addEventListener('load',()=>requestAnimationFrame(revealHash));
 </script></body></html>
