@@ -42,3 +42,4 @@ Updated: 2026-11-03 (America/Chicago)
 - 2026-11-03 Kin Dig F: Ethel maiden RESOLVED Neubauer (S148/S149); Gent = mother's maiden. Ch.4 updated; S89 caution noted.
 - 2026-11-03 Tree Site: PR #6 merged (e7859bd) — story ch.1–4 (Pack #7b S145 + Kin Dig F Ethel Neubauer) live on Pages: https://alexpetersen88.github.io/petersen-family-tree/story/
 - 2026-11-03 Pack #8 S152: Ethel Mathilda marriage/death/funeral folded into ch.3. Hansen/Strodimier and S153–S155 / Dig 5 out.
+- 2026-11-03 Alex Narrative: sibling depth light unless arc needs it — trimmed Ethel Mathilda (S152) in ch.3 to birth/marriage/death only (dropped funeral/survivors detail).
