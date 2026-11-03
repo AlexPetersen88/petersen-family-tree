@@ -44,7 +44,7 @@
 - Hans Rasmussen P20 is NOT linked to the logged-not-to-use "Hans Rasmussen b. ~1833, son of Niels Rasmussen & Maren Hansdatter" candidate.
 - "2det Barn" on Hans Peter's baptism implies an earlier first child (b. ~1863–Feb 1864, apparently dead) — NOT FOUND (male deaths 1863 checked; female births/deaths 1863–64 not searched).
 - Rasmus Pedersen (P23): death found (S41), birth NOT found; age "12 Dage"(?) uncertain — probable full sibling only.
-- [BIRTHPLACE SUPERSEDED 2026-11-03 — Valsømagle, Haraldsted Sogn VERIFIED S51–S53. Mother's surname and the named father stay OPEN; see the childhood section below.] Hans Pedersen's mother "Ane Marie Hansdatter" (S37) LOW confidence; his father unknown; birthplace Valsømagle/Walsmagle LOW.
+- [BIRTHPLACE SUPERSEDED 2026-11-03 — Valsømagle, Haraldsted Sogn VERIFIED S51–S53. Mother's surname later LOCKED Hansdatter (see CLOSED below). The named father stays OPEN.] Hans Pedersen's mother "Ane Marie Hansdatter" (S37) LOW confidence; his father unknown; birthplace Valsømagle/Walsmagle LOW.
 - US link: no US document names Bjernede; identity rests on Alex's family confirmation (S30) of place + year. Parents are RECORD-SOURCED, not family-confirmed.
 
 ## 2026-11-03 — resume pass (S42–S44)
@@ -61,12 +61,12 @@
 - P21 Sleepy Eye emigrant (S49): OPEN — candidate only (age + Fuldby); needs US/Danish corroboration.
 - P22 Ane Marie after 1888: OPEN. Emigrant "Ane Marie" 23, Boslunde, 1895 NOT linked.
 
-## 2026-11-03 — Hans Pedersen (P18) childhood and parents (S51–S62) — birthplace verified; surnames NOT resolved
+## 2026-11-03 — Hans Pedersen (P18) childhood and parents (S51–S62) — birthplace verified; patronymic later LOCKED (see CLOSED)
 - Birth 25 Feb 1833, Valsømagle, Haraldsted Sogn: VERIFIED (S51, S52; parish context S53). Baptism Palm Sunday (31 Mar) 1833, Haraldsted, illegitimate (uægte): VERIFIED (S51, S52).
 - Childhood residences VERIFIED: foster son (pleiebarn / pleiesøn) in the Skee household of husmand/hjulmager Jens Nielsen and Kirsten Johansdatter — 1834 (S54), 1840 (S55), 1845 (S57). Not in that household in 1850 (S58). Confirmation 11 Apr 1847, Haraldsted, boys no. 3, names pleiefader Huusmand Jens Nielsen i Skee (S56).
-- Mother card P25, Ane Marie Hansdatter / Clausdatter, is the blood mother (parents: [P25]). Both surname variants stay on the card. OPEN — patronymic not resolved: S51 Clausdatter; S37 Klaus Datt.; S52 interlinear Hansd.; S56 / S59 / S60 Ane Marie Hansd. Move lists lean Hansd. The conflict stays open.
+- [PATRONYMIC SUPERSEDED 2026-11-03 — see CLOSED below. Do not read the rest of this bullet as the current name.] Mother card P25 is the blood mother (parents: [P25]). An earlier note kept both surname variants on the card and left the patronymic OPEN: S51 Clausdatter; S37 Klaus Datt.; S52 interlinear Hansd.; S56 / S59 / S60 Ane Marie Hansd. Display name is now Ane Marie Hansdatter. Clausdatter is a superseded wrong read, not the current name.
 - Foster cards P26 Jens Nielsen and P27 Kirsten Johansdatter are the Skee foster household only (fosterParents on P18). Not blood kin. No kinship to P25 was found.
-- OPEN / CANDIDATE only — father: Peder Johansen of Ringsted, udlagt in S51, S52, and S56. Not proven. Card P28, Peter (Peder) Johansen, is the unmarried servant on Sankt Hans Gade in the 1834 Ringsted town census (S64). He is not linked as P18’s father. The two married landsogn namesakes (S62) are also not matched. P25’s 1834 Ringsted town servant entry (S63) is a possible match only; age 27 vs 28, not proven.
+- OPEN / CANDIDATE only — father: Peder Johansen of Ringsted, udlagt in S51, S52, and S56. Not proven. Card P28, Peter (Peder) Johansen, is the unmarried servant on Sankt Hans Gade in the 1834 Ringsted town census (S64). He is not linked as P18’s father. The two married landsogn namesakes (S62) are also not matched. P25’s 1834 Ringsted town servant entry (S63) is a possible match only; age 27 vs 28, not proven. S63 and S64 were on the same street, not proven the same household. No marriage has been found. P28 is not locked as father.
 - OPEN — Ane Bolette, a baptism sponsor, is probably Ane Bolette Knudsdatter and not a sister of P25 (S61). Still a conflict; no card added.
 - OPEN — vaccination date: older marriage note says 29 Jun 1839; confirmation S56 says 29 Jun 1833 (Aschlund). Not resolved.
 
@@ -75,4 +75,10 @@
 - P25 CANDIDATE baptisms, NOT linked: S67 Ane Marie, daughter of Hans Larsen and Ane Chatarina Hansdatter, Ringsted, Wed 27 Jun 1804 (patronymic would be Hansdatter; age fits 28 in 1833). S69 illegitimate Anna Maria, daughter of Maren Hansdatter, bapt. 3 Dec 1802 (reading MEDIUM; age 30 in 1833, weaker fit). No Ane Marie Clausdatter in the Ringsted baptisms read (S70, S71, S72).
 - S73 FT-1834 Ringsted landsogn, Torped Bye houses 4–27: one Ane Marie Hansdatter, age 21, wife of Hans Jørgensen, house 11. Age does not fit (~30 expected), so NOT a match. No Ane Marie Clausdatter there.
 - P28 CANDIDATE baptisms, NOT linked: S68 Peder, son of Huusmand Johan Friderichsen of Torped and Maren Povls(?)datter, Sun 7 Oct 1804 (29, not 30, in Feb 1834). S71 Peter Johansen, bapt. 9 May 1803, son of Justitsraad Peter Johansen de Neergaard. Name and age fit the FT-1834 servant (S64) only; a gentry birth makes that identity doubtful. S72 (1805 baptisms) and S73 found no other Peder son of a Johan and no Peder Johansen ~30 in the Torped houses read. No record ties P28 to Hans's 1833 baptism.
-- Mother-surname CONFLICT (Clausdatter vs Hansdatter) stays OPEN.
+- [SUPERSEDED 2026-11-03 — see CLOSED below] Mother-surname CONFLICT (Clausdatter vs Hansdatter) stays OPEN.
+
+## CLOSED 2026-11-03 — P25 patronymic (Ane Marie Hansdatter)
+- Alex locked Ane Marie (P25) as **Hansdatter** in Genealogist chat (own words "lock it") after image review. **Clausdatter superseded** (S51/S37 treated as wrong read). Relates to S51–S52 (Dig 15–16), S189–S200 (Dig 18–20). Earlier "Clausdatter/Hansdatter OPEN" notes in sources.md, and the superseded bullets above, are closed by this lock. Evidence entries are unchanged. (Decision note in sources.md, 2026-11-03.)
+- Display name is Ane Marie Hansdatter (alt Hansd. / Hansdatter). Clausdatter may be noted once as a superseded wrong read. It is not the current name.
+- Parents of P25 are still unknown. No father named Hans and no mother have been added. Birth 23 Mar 1805 stays CANDIDATE (S189 confirmation only; not found baptised in Haraldsted, S193).
+- FT-1834 Ringsted købstad, Sankt Hans Gade: CANDIDATE Ane Marie Hansdatter (S63) and CANDIDATE Peter/Peder Johansen (S64 / P28) were on the same street, not proven the same household. Marriage not found. P28 is NOT locked as father (udlagt naming HIGH, paternity OPEN). S63/S64 stay CANDIDATE. The arrival gap and S189 stay as in sources.md.
