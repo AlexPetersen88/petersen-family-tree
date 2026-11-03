@@ -22,7 +22,10 @@ window.PEOPLE={
     "year": 1884,
     "yearsInUS_1900": 16,
     "naturalization": "Na",
-    "status": "VERIFIED 1900 census"
+    "status": "VERIFIED original Copenhagen Police register image S83 + index S34; 1900 census imm year",
+    "contract": "1015 Y",
+    "destination": "Springfield, Minn. (S83 VERIFIED original register; S34 index said Springfield USA)",
+    "occupation_emigrant": "Tjenende(?) (servant) \u2014 ditto reading MEDIUM (S83)"
    },
    "spouses": [
     {
@@ -55,7 +58,8 @@ window.PEOPLE={
     "S36",
     "S37",
     "S44",
-    "S50"
+    "S50",
+    "S83"
    ],
    "status": "VERIFIED: 1900 US census (imm. 1884, Na, b. Feb 1864 Denmark) + FAG parent of Elmer; origin Bjernede FAMILY-CONFIRMED 2026-11-03",
    "occupation_1900": "Farmer",
@@ -65,7 +69,7 @@ window.PEOPLE={
    "children_count": "8 children: 1910 census Maren 'mother of 7, 7 living' (S28) + Olga b. ~1911/12 (1920 census S29, FAG)",
    "residence_1910": "Brookville Twp, Redwood Co MN, ED 109 sheet 4A, dwelling/family 61 (S28); imm. 1884, Na; farmer, owns farm",
    "residence_1920": "Brookville Twp, Redwood Co MN, ED 182, dwelling 54 (S29); age 55, b. Denmark, Danish mother tongue, parents b. Denmark; imm./naturalization cols partly legible (naturalized yr reads ~1897, unverified)",
-   "denmarkOrigin": "RESOLVED 2026-11-03: Bjernede, Sor\u00f8 amt; b. 28 Feb 1864, bapt. 5 Jun 1864 (S31), confirmed 14 Apr 1878 (S32), 1880 census Bjernede stepson of Hans Rasmussen (S33, low-confidence), emigrated via Copenhagen 16 Apr 1884 age 20 to Springfield USA, contract 1015 Y (S34). Tinglev S21 WITHDRAWN.",
+   "denmarkOrigin": "RESOLVED 2026-11-03: Bjernede, Sor\u00f8 amt; b. 28 Feb 1864, bapt. 5 Jun 1864 (S31), confirmed 14 Apr 1878 (S32), 1880 census Bjernede stepson of Hans Rasmussen (S33, low-confidence), emigrated via Copenhagen 16 Apr 1884 age 20 to Springfield, Minn., contract 1015 Y (S34 index; S83 VERIFIED original register image \u2014 occupation Tjenende?/servant MEDIUM; no companions; ship not in register). Tinglev S21 WITHDRAWN.",
    "danishParents": "RECORD-SOURCED (not family-named): father Hans Pedersen (P18), hjulmand, b. 25 Feb 1833, d. 11 Sep 1867 bur. 17 Sep 1867 Bjernede age 34 (S36, S37); mother Ane Rasmusdatter (P19), b. 17 Jun 1843 Bjernede Lodsgaard(?), m. 14 Oct 1862 Bjernede (S36); she m2 Hans Rasmussen (P20) spring 1870 (S38). Alex confirmed origin place/year only.",
    "parents": [
     "P18",
@@ -124,10 +128,14 @@ window.PEOPLE={
    "id": "P8",
    "name": "Rudolph Hans Petersen",
    "birth": {
-    "date": "1893"
+    "date": "1893-05-08",
+    "place": "Minnesota",
+    "placeStatus": "VERIFIED MNHS death index S95 (b. 8 May 1893; mother JENSEN); matches 1900 Hans O. May 1893"
    },
    "death": {
-    "date": "1964"
+    "date": "1964-04-13",
+    "place": "Hennepin Co MN",
+    "status": "VERIFIED MNHS S95 cert 1964-MN-006734"
    },
    "parents": [
     "P6",
@@ -137,16 +145,19 @@ window.PEOPLE={
     "S15",
     "https://www.findagrave.com/memorial/183099171",
     "S27",
-    "S28"
+    "S28",
+    "S95"
    ],
-   "status": "FAG secondary; name conflict with 1900 Hans O. \u2014 see conflicts.md",
+   "status": "VERIFIED MNHS death S95 (mother JENSEN); = probable Hans O. 1900 / Rudolph H. 1910",
    "notes": " RESOLVED (probable): 1900 'Hans O.' b. May 1893 (S27) appears in the same household in 1910 as 'Rudolph H.', son, age 16 (S28) \u2014 same slot/age; FAG Rudolph Hans 1893\u20131964. Middle initial O in 1900 is unexplained."
   },
   {
    "id": "P9",
    "name": "Ethel Mathilda Petersen (Jensen)",
    "birth": {
-    "date": "1902"
+    "date": "1902-01-15",
+    "place": "Redwood Co MN",
+    "placeStatus": "VERIFIED MNHS birth index S92 (mother Jensen)"
    },
    "death": {
     "date": "1929"
@@ -156,15 +167,18 @@ window.PEOPLE={
     "P7"
    ],
    "sources": [
-    "S15"
+    "S15",
+    "S92"
    ],
-   "status": "FAG secondary"
+   "status": "VERIFIED birth MNHS S92; death 1929 still FAG/secondary pending"
   },
   {
    "id": "P10",
-   "name": "Olga Petersen",
+   "name": "Olga Margaret Petersen",
    "birth": {
-    "date": "1911"
+    "date": "1911-02-28",
+    "place": "Redwood Co MN",
+    "placeStatus": "VERIFIED MNHS birth index S93 (mother Jensen); middle name Margaret"
    },
    "death": {
     "date": "1935"
@@ -174,16 +188,18 @@ window.PEOPLE={
     "P7"
    ],
    "sources": [
-    "S15"
+    "S15",
+    "S93"
    ],
-   "status": "FAG secondary"
+   "status": "VERIFIED birth MNHS S93; death 1935 still FAG/secondary pending"
   },
   {
    "id": "P3",
    "name": "Elmer Hamilton Petersen",
    "birth": {
     "date": "1906-03-24",
-    "place": "Redwood Co MN"
+    "place": "Redwood Co MN",
+    "placeStatus": "VERIFIED MNHS birth index S94 as \u201cBabe\u201d Petersen (mother Jensen); = Elmer"
    },
    "death": {
     "date": "1964-10-24",
@@ -208,10 +224,12 @@ window.PEOPLE={
     "S14",
     "S15",
     "S5",
-    "S6"
+    "S6",
+    "S94"
    ],
    "status": "VERIFIED: MNHS death index 1964-MN-016272 (mother JENSEN) + FAG",
-   "familyConfirmed": "FAMILY-CONFIRMED via Michael Don Petersen (Alex's father), 2026-11-03: Elmer Hamilton Petersen's parents were Hans Peter Petersen and Maren Sophia (Jensen; 'Mary' on 1900 census). Public-record citations (FAG, MNHS, 1900 census) retained."
+   "familyConfirmed": "FAMILY-CONFIRMED via Michael Don Petersen (Alex's father), 2026-11-03: Elmer Hamilton Petersen's parents were Hans Peter Petersen and Maren Sophia (Jensen; 'Mary' on 1900 census). Public-record citations (FAG, MNHS, 1900 census) retained.",
+   "notes": "Birth registered as \u201cBabe\u201d Petersen (S94); date matches Elmer Hamilton."
   },
   {
    "id": "P4",
@@ -741,7 +759,12 @@ window.PEOPLE={
     "S56",
     "S59",
     "S60",
-    "S63"
+    "S63",
+    "S67",
+    "S69",
+    "S71",
+    "S72",
+    "S73"
    ],
    "status": "VERIFIED as mother of P18 (S51/S52/S56); patronymic CONFLICT OPEN",
    "residences": [
@@ -750,7 +773,7 @@ window.PEOPLE={
     "1834: not in Vals\u00f8magle; later whereabouts unknown",
     "1834-02-18: CANDIDATE: Ane Marie Hansdatter 27, ugift, Tjenestefolk (servant), Sankt Hans Gade, Ringsted k\u00f8bstad (S63); age 27 vs 28 in 1833 lists, so not proven"
    ],
-   "notes": "Ane Bolette (baptism sponsor) is probably Knudsd., not a sister (S61); this is still a CONFLICT. Next: her baptism c. 1804\u201305 (before the 1814 book), Ringsted town FT-1834, and later move lists."
+   "notes": "Ane Bolette (baptism sponsor) is probably Knudsd., not a sister (S61); this is still a CONFLICT. Next: her baptism c. 1804\u201305 (before the 1814 book), Ringsted town FT-1834, and later move lists. | Pass 7 CANDIDATE baptisms (NOT linked, identity unproven): S67 Ane Marie, dau. of Hans Larsen + Ane Chatarina Hansdatter, Ringsted, Wed 27 Jun 1804 (would be patronymic Hansdatter; age fits 28 in 1833). S69: illegitimate Anna Maria, dau. of Maren Hansdatter, bapt. 3 Dec 1802 (reading MEDIUM; age 30 in 1833, weaker fit). No Ane Marie Clausdatter seen in Ringsted baptisms Sep 1803\u2013Mar 1805. CONFLICT Clausdatter vs Hansdatter stays OPEN.\nPass 8 (2026-11-03): CANDIDATE/negative only. FT-1834 Ringsted landsogn (S73) Torped Bye houses 4-27 (imgs 3-7): one 'Ane Marie Hansdatter' age 21, wife of Hans J\u00f8rgensen, house 11 (img 5) - age does not fit (~30 expected) so NOT a match. No Ane Marie Clausdatter. 1803 Jan-Aug and 1805 baptisms (S71, S72): no Ane Marie Hansdatter/Clausdatter. Mother-surname conflict stays OPEN."
   },
   {
    "id": "P26",
@@ -813,10 +836,14 @@ window.PEOPLE={
    "children": [],
    "sources": [
     "S64",
-    "S62"
+    "S62",
+    "S68",
+    "S71",
+    "S72",
+    "S73"
    ],
    "status": "CANDIDATE ONLY: possible 'udlagt' (named) father of P18. NOT proven; not linked as parent",
-   "notes": "He is the only unmarried Peder/Peter Johansen in FT-1834 Ringsted town plus landsogn (the 2 landsogn men are married, S62). He is on the same street as the candidate mother (S63). Other Peder Johansens may have been in nearby parishes."
+   "notes": "He is the only unmarried Peder/Peter Johansen in FT-1834 Ringsted town plus landsogn (the 2 landsogn men are married, S62). He is on the same street as the candidate mother (S63). Other Peder Johansens may have been in nearby parishes. | Pass 7 CANDIDATE baptism (NOT linked, identity unproven): S68 Peder, son of Huusmand Johan Friderichsen of Torped + Maren Povls(?)datter, Ringsted, Sun 7 Oct 1804. That makes him 29, not 30, in Feb 1834. No other Peder son of a Johan in Ringsted legitimate baptisms Sep 1803\u2013Mar 1805 (Jan\u2013Aug 1803 not read).\nPass 8 (2026-11-03): CANDIDATE only. Baptism 9 May 1803 of 'Peter Johansen', son of Justitsraad Peter Johansen de Neergaard (S71, bsid 154779 img 187) - name/age fit to FT-1834 servant (S64) only; gentry birth makes identity doubtful; NOT linked. 1805 baptisms (S72): no Peder son of a Johan. FT-1834 Torped (S73): no Johan Friderichsen and no Peder Johansen ~30 in houses 4-27. Remains CANDIDATE; no record ties him to Hans's 1833 baptism."
   }
  ]
 };
@@ -1086,7 +1113,7 @@ window.SOURCES={
  "S34": {
   "id": "S34",
   "flag": null,
-  "text": "Copenhagen Police emigrant protocols (Udvandrerarkivet index), 16 Apr 1884: Hans Peter Petersen, Bjernede Sor\u00f8, age 20, dest. Springfield USA, contract 1015 Y: https://www.aalborgstadsarkiv.dk/UA.asp?UA=UAProtokol",
+  "text": "Copenhagen Police emigrant protocols (Udvandrerarkivet index), 16 Apr 1884: Hans Peter Petersen, Bjernede Sor\u00f8, age 20, dest. Springfield USA, contract 1015 Y: https://www.aalborgstadsarkiv.dk/UA.asp?UA=UAProtokol \u2014 original register image VERIFIED as S83 (dest. reads Springfield, Minn.)",
   "urls": [
    "https://www.aalborgstadsarkiv.dk/UA.asp?UA=UAProtokol"
   ]
@@ -1331,6 +1358,118 @@ window.SOURCES={
   "text": "same census, Ringsted k\u00f8bstad, Sankt Hans Gade, p. 328, AO bsid=4462 img 1/11: \"Peter Johansen, 30, ugift\", in the Tjenestefolk (servants) bracket with Hans Sonnesen(?) 39: https://api.rigsarkivet.dk/ao/v1/images/112554",
   "urls": [
    "https://api.rigsarkivet.dk/ao/v1/images/112554"
+  ]
+ },
+ "S65": {
+  "id": "S65",
+  "flag": "finding aid, no hit",
+  "text": "Ringsted Sogn Kontraministerialbog (church book, duplicate copy) J TA (tilgangs-/afgangslister = arrival/departure lists) 1834\u201349, AO bsid=154788; Tilgangsliste 1834 starts img 182 (folio 168), 1835 about img 200. The volume starts in 1834, so it does not cover the 1832/33 moves. Images 182\u2013190 skimmed: no certain reading of Ane Marie Hansd./Clausd. or Peter Johansen (UNVERIFIED negative): https://api.rigsarkivet.dk/ao/v1/billedviser/billed-reference-lister?bsid=154788",
+  "urls": [
+   "https://api.rigsarkivet.dk/ao/v1/billedviser/billed-reference-lister?bsid=154788"
+  ]
+ },
+ "S66": {
+  "id": "S66",
+  "flag": "finding aid, no hit",
+  "text": "Ringsted Sogn og Landsogn Enesteministerialbog (sole church book) FVD (births, marriages, deaths) 1741\u20131805, AO bsid=154779; legitimate baptisms c.1801\u201305 about img 183\u2013194, \"U\u00e6gte B\u00f8rn D\u00f8bte\" (illegitimate baptisms) about img 195\u2013205; the 1805\u201314 volume is bsid=154780. Not read reliably, so nothing was found or ruled out (UNVERIFIED): https://api.rigsarkivet.dk/ao/v1/billedviser/billed-reference-lister?bsid=154779",
+  "urls": [
+   "https://api.rigsarkivet.dk/ao/v1/billedviser/billed-reference-lister?bsid=154779"
+  ]
+ },
+ "S67": {
+  "id": "S67",
+  "flag": "CANDIDATE, P25",
+  "text": "Ringsted Sogn og Landsogn Enesteministerialbog (sole church book) FVD 1741\u20131805, AO bsid=154779 img 192 (right page, p. 268), D\u00f8bte (baptisms) 1804 no. 25: \"Onsdag d. 27de Junii ... Huulmand(?) Hans Larsen og Kone Ane Chatarina Hans Datter deres Datter til Daaben som blev kaldet Ane Marie.\" Witnesses incl. Hans Jensen, Peder R\u00f8d, Christopher Danielsen. Reading HIGH for names/date; occupation word MEDIUM. Image: https://api.rigsarkivet.dk/ao/v1/images/25834398 ; crop shots/p18-parents-foster-2026-11-03/b154779-img192-entry25-AneMarie-1804.png",
+  "urls": [
+   "https://api.rigsarkivet.dk/ao/v1/images/25834398"
+  ]
+ },
+ "S68": {
+  "id": "S68",
+  "flag": "CANDIDATE, P28",
+  "text": "same volume, img 193 (right page, p. 269), D\u00f8bte 1804 no. 34: \"Huusmand Johan Friderichsen fra Torped og Hustru Maren Povls(?) Datter ... S\u00f8ndag d. 7de October ... S\u00f8n ... kaldet Peder.\" Godparents incl. Povl Rasmussen's wife of Torped, Mads Jensen of Skjelleryd(?), Peder Pedersen of Sierslev(?). Names/date HIGH; mother's patronymic MEDIUM. Image: https://api.rigsarkivet.dk/ao/v1/images/25834399 ; crop b154779-img193-entry34-Peder-1804.png",
+  "urls": [
+   "https://api.rigsarkivet.dk/ao/v1/images/25834399"
+  ]
+ },
+ "S69": {
+  "id": "S69",
+  "flag": "CANDIDATE, weak, P25",
+  "text": "same volume, img 205 (left page), \"U\u00e6gte B\u00f8rn D\u00f8bte\" (illegitimate baptisms) 1802: \"Maren [Anna struck] Hansdatter ... u\u00e6gte Datter blev d\u00f8bt d. 3 Dec. og kaldet Anna Maria\"; the named father's name is only partly legible (\"...Jacobsen\"?) \u2014 UNREADABLE, not transcribed. Image: https://api.rigsarkivet.dk/ao/v1/images/25834411",
+  "urls": [
+   "https://api.rigsarkivet.dk/ao/v1/images/25834411"
+  ]
+ },
+ "S70": {
+  "id": "S70",
+  "flag": "negative",
+  "text": "same volume, legitimate baptisms read in full at full resolution for img 189\u2013194 (Sep 1803 \u2013 17 Mar 1805, where the volume ends; img ids 25834395\u201325834400) and the illegitimate section for 1802\u20131804 (img 205; 1804 has only Margrethe and Anders). No Ane Marie Clausdatter, no other Peder son of a Johan. NOT read: Jan\u2013Aug 1803 (img 186\u2013188) and 1805 onward (bsid 154780).",
+  "urls": []
+ },
+ "S71": {
+  "id": "S71",
+  "flag": "CANDIDATE",
+  "text": "Ringsted sogn KB, bsid=154779 img 187 (p. 263), 9 May 1803 baptism \"Peter Johansen\", son of Justitsraad Peter Johansen de Neergaard and Frue \u2026 de Neergaard: https://api.rigsarkivet.dk/ao/v1/images/25834393 ; viewer https://arkivalieronline.rigsarkivet.dk/da/billedviser?bsid=154779 . Negatives same volume imgs 186\u2013188 (Jan\u2013Aug 1803): no Ane Marie Hansdatter/Clausdatter; img 188 31 Jul 1803 godparent \"Johan Frid\u2026(?)\" of Torped (uncertain reading).",
+  "urls": [
+   "https://api.rigsarkivet.dk/ao/v1/images/25834393",
+   "https://arkivalieronline.rigsarkivet.dk/da/billedviser?bsid=154779"
+  ]
+ },
+ "S72": {
+  "id": "S72",
+  "flag": "negative",
+  "text": "Ringsted sogn KB, bsid=154780 imgs 3\u20137 (ids 25834521\u201325834525), baptisms 31 Mar 1805 \u2013 early Jan 1806: no Peder son of a Johan, no Ane Marie Hansdatter/Clausdatter. https://arkivalieronline.rigsarkivet.dk/da/billedviser?bsid=154780",
+  "urls": [
+   "https://arkivalieronline.rigsarkivet.dk/da/billedviser?bsid=154780"
+  ]
+ },
+ "S73": {
+  "id": "S73",
+  "flag": "negative",
+  "text": "FT-1834 Ringsted landsogn, bsid=2969 imgs 3\u20137 (ids 94156\u201394160), \"Torped Bye\" from house 4 (no new village heading seen through house 27): no Johan Friderichsen, no Peder/Peter Johansen ~30; house 11 Ane Marie Hansdatter 21 gift (img 5, https://api.rigsarkivet.dk/ao/v1/images/94158) \u2013 age mismatch.",
+  "urls": [
+   "https://api.rigsarkivet.dk/ao/v1/images/94158"
+  ]
+ },
+ "S83": {
+  "id": "S83",
+  "flag": "VERIFIED original \u2014 upgrades S34",
+  "text": "K\u00f8benhavns Politi (Copenhagen Police), 3. Politiinspektorat, Register over udvandrere. Indirekte (1869\u20131935), folder 1882\u20131884, bsid=612215, image 239/301 left page (p. 50), P-section 1884: \"Petersen, Hans Peter\"; Stilling (occupation) ditto = Tjenende(?) (servant); F\u00f8dested/sidste opholdssted (birthplace/last residence) \"Bjernede, Sor\u00f8\"; Alder (age) 20; Bestemmelsessted (destination) \"Springfield, Minn.\"; Kontrakt (contract) 1015 Y; Forevisningsdato (presentation date) 16/4 [1884]. Direct: https://api.rigsarkivet.dk/ao/v1/images/93241070 ; viewer https://arkivalieronline.rigsarkivet.dk/da/billedviser?epid=23522257 (folder 1882\u20131884, image 239). Ship/route NOT in this register. No companions on 1015 Y. Shots: kbhpol-indirekte-1882-84-img239-hans-peter-1015Y.jpg, kbhpol-img239-hans-peter-crop.jpg",
+  "urls": [
+   "https://api.rigsarkivet.dk/ao/v1/images/93241070",
+   "https://arkivalieronline.rigsarkivet.dk/da/billedviser?epid=23522257"
+  ]
+ },
+ "S92": {
+  "id": "S92",
+  "flag": "APPROVED index \u2014 P9",
+  "text": "MNHS birth \u2014 Ethel M. Petersen, b. 15 Jan 1902 Redwood Co; mother Jensen; cert 1902-21163. https://www.mnhs.org/search/people/record?uuid=8b1a886e-e6f0-4c6f-b9a7-d572c7a0f2aa&recordType=birth-records Confidence HIGH (mother Jensen + Redwood + fits sibling set).",
+  "urls": [
+   "https://www.mnhs.org/search/people/record?uuid=8b1a886e-e6f0-4c6f-b9a7-d572c7a0f2aa&recordType=birth-records"
+  ]
+ },
+ "S93": {
+  "id": "S93",
+  "flag": "APPROVED index \u2014 P10",
+  "text": "MNHS birth \u2014 Olga Margaret Petersen, b. 28 Feb 1911 Redwood Co; mother Jensen; cert 1911-21964 (middle name Margaret new). https://www.mnhs.org/search/people/record?uuid=ba40d979-971d-40a9-9c12-9f86dcbdce87&recordType=birth-records Confidence HIGH.",
+  "urls": [
+   "https://www.mnhs.org/search/people/record?uuid=ba40d979-971d-40a9-9c12-9f86dcbdce87&recordType=birth-records"
+  ]
+ },
+ "S94": {
+  "id": "S94",
+  "flag": "APPROVED index \u2014 P3 Elmer",
+  "text": "MNHS birth \u2014 \u201cBabe\u201d Petersen, b. 24 Mar 1906 Redwood Co; mother Jensen; cert 1906-21514 \u2014 date matches Elmer; unnamed-at-registration pattern. https://www.mnhs.org/search/people/record?uuid=4735dd80-74a7-405a-b003-e85e45211e63&recordType=birth-records Confidence HIGH = Elmer birth. Death already S14 1964-MN-016272.",
+  "urls": [
+   "https://www.mnhs.org/search/people/record?uuid=4735dd80-74a7-405a-b003-e85e45211e63&recordType=birth-records"
+  ]
+ },
+ "S95": {
+  "id": "S95",
+  "flag": "APPROVED index \u2014 P8",
+  "text": "MNHS death \u2014 Rudolph H. Petersen, b. 8 May 1893 MN; mother JENSEN; d. 13 Apr 1964 Hennepin Co; cert 1964-MN-006734. https://www.mnhs.org/search/people/record?uuid=3480d138-4a74-4be4-ba6d-7061b97c2ac5&recordType=death-records Confidence HIGH (mother Jensen + May 1893 matches 1900 Hans O. / Rudolph).",
+  "urls": [
+   "https://www.mnhs.org/search/people/record?uuid=3480d138-4a74-4be4-ba6d-7061b97c2ac5&recordType=death-records"
   ]
  }
 };

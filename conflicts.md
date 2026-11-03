@@ -69,3 +69,10 @@
 - OPEN / CANDIDATE only — father: Peder Johansen of Ringsted, udlagt in S51, S52, and S56. Not proven. Card P28, Peter (Peder) Johansen, is the unmarried servant on Sankt Hans Gade in the 1834 Ringsted town census (S64). He is not linked as P18’s father. The two married landsogn namesakes (S62) are also not matched. P25’s 1834 Ringsted town servant entry (S63) is a possible match only; age 27 vs 28, not proven.
 - OPEN — Ane Bolette, a baptism sponsor, is probably Ane Bolette Knudsdatter and not a sister of P25 (S61). Still a conflict; no card added.
 - OPEN — vaccination date: older marriage note says 29 Jun 1839; confirmation S56 says 29 Jun 1833 (Aschlund). Not resolved.
+
+## 2026-11-03 — Pass 7–8 (S67–S73) — candidates and negatives only; P28 still not linked
+- P25 and P28 notes cite these sources. No new person was added. P28 stays CANDIDATE and is not in P18's parents or foster parents. Foster parents remain P26 and P27, not blood kin.
+- P25 CANDIDATE baptisms, NOT linked: S67 Ane Marie, daughter of Hans Larsen and Ane Chatarina Hansdatter, Ringsted, Wed 27 Jun 1804 (patronymic would be Hansdatter; age fits 28 in 1833). S69 illegitimate Anna Maria, daughter of Maren Hansdatter, bapt. 3 Dec 1802 (reading MEDIUM; age 30 in 1833, weaker fit). No Ane Marie Clausdatter in the Ringsted baptisms read (S70, S71, S72).
+- S73 FT-1834 Ringsted landsogn, Torped Bye houses 4–27: one Ane Marie Hansdatter, age 21, wife of Hans Jørgensen, house 11. Age does not fit (~30 expected), so NOT a match. No Ane Marie Clausdatter there.
+- P28 CANDIDATE baptisms, NOT linked: S68 Peder, son of Huusmand Johan Friderichsen of Torped and Maren Povls(?)datter, Sun 7 Oct 1804 (29, not 30, in Feb 1834). S71 Peter Johansen, bapt. 9 May 1803, son of Justitsraad Peter Johansen de Neergaard. Name and age fit the FT-1834 servant (S64) only; a gentry birth makes that identity doubtful. S72 (1805 baptisms) and S73 found no other Peder son of a Johan and no Peder Johansen ~30 in the Torped houses read. No record ties P28 to Hans's 1833 baptism.
+- Mother-surname CONFLICT (Clausdatter vs Hansdatter) stays OPEN.
