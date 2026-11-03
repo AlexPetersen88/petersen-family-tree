@@ -199,8 +199,8 @@ window.PEOPLE={
    "name": "Ethel Mathilda Petersen (Jensen)",
    "birth": {
     "date": "1902-01-15",
-    "place": "Redwood Co MN",
-    "placeStatus": "VERIFIED MNHS birth index S92 (mother Jensen)"
+    "place": "Brookville Twp, Redwood Co MN",
+    "placeStatus": "VERIFIED MNHS birth index S92 (Redwood Co; mother Jensen); newspaper S152 (Brookville Twp)"
    },
    "death": {
     "date": "1929-10-20",
@@ -215,13 +215,10 @@ window.PEOPLE={
     "P7"
    ],
    "sources": [
-    "S15",
     "S92",
-    "S152",
-    "S155"
+    "S152"
    ],
-   "status": "VERIFIED birth MNHS S92 (corroborated by S152 obit); death 1929-10-20 APPROVED newspaper S152",
-   "funeral": "Thursday (headline; calendar date not stated in excerpt) at Hans Jensen home, Brookville; Brookville Lutheran church; burial church cemetery; Rev. H. Madsen of Sleepy Eye (S152)",
+   "status": "VERIFIED birth MNHS S92; marriage and death APPROVED newspaper S152",
    "spouses": [
     {
      "id": "P33",
@@ -230,8 +227,7 @@ window.PEOPLE={
       "S152"
      ]
     }
-   ],
-   "notes": " | S152 obit survivors as printed: mother Mrs. Hans Petersen of Brookville; brothers Nels Peterson (Cobden), Rudolph Petersen (Gilfillan), Louis Petersen (Golden Gate), Elmer Petersen (at home); sisters Mrs. Herman Hansen (Roberts WI), Mrs. Sam Strodimier (Circle MT), Olga Petersen (at home). Sister married names UNVERIFIED; not linked to P15/P17."
+   ]
   },
   {
    "id": "P10",

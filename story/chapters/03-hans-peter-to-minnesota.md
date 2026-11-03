@@ -8,11 +8,11 @@ On 16 April 1884, the Copenhagen Police emigration register recorded "Hans Peter
 
 He was about two months past his twentieth birthday (S31, S34). His father had died when he was three (S37). At the time he left, his mother and stepfather were already gone (S45, S46), but the 1884 sale of his stepfather's property was still months away (S50).
 
-The records do not show the route he took from his US arrival to Redwood County, Minnesota.
+Registration took place in Copenhagen, about 40 miles straight-line from Bjernede (S83). The register does not name a ship, a pier, or a route (S83). Springfield, the town he named as his destination, lies about 22 miles straight-line from Redwood Falls, the county seat of Redwood County, where he would farm. Morgan, the town whose newspaper later reported his death, is about 13 miles from Springfield (S83, S145). The records do not show how he travelled from his US arrival to Redwood County.
 
 ## Marriage to Maren Sophia Jensen, about 1891
 
-Hans Peter's wife was Maren Sophia Jensen. She was born in November 1872 in Minnesota (S27, S13). Her parents were Nels Peter Jensen and Anne Marie Hansen Jensen (S13). The 1910 census says the couple had been married 19 years, which puts the wedding in about 1891 (S28). No marriage record has been found yet.
+Hans Peter's wife was Maren Sophia Jensen. She was born in November 1872 (S13, S27). The censuses disagree on where: the 1900 and 1910 censuses say Minnesota (S27, S28), but the 1920 census says Denmark (S29). Find a Grave also says Minnesota (S13). The records lean two to one toward Minnesota, but this story leaves the question open. Her parents were Nels Peter Jensen and Anne Marie Hansen Jensen (S13). The 1910 census says the couple had been married 19 years, which puts the wedding in about 1891 (S28). No marriage record has been found yet.
 
 ## The farm in Brookville Township
 
@@ -20,7 +20,7 @@ Hans Peter's wife was Maren Sophia Jensen. She was born in November 1872 in Minn
 
 **1910.** On 23 April 1910, the family was still in Brookville Township. Hans P., 45, was a farmer who **owned his farm** (S28). Maren S., 37, born in Minnesota, was recorded as the mother of seven children, all seven living (S28). The children at home were Rudolph H. 16, Anna H. 15, Louis C. 13, Marie E. 11, Ethel M. 8, and Elmer H. 4 (S28).
 
-**1920.** In January 1920, Hans P., 55, born in Denmark with Danish as his mother tongue, still **owned his farm** in Brookville Township and was now described as a **dairy farmer** (S29). At home were Maren S., 47, and Anna H. 25, Ethel M. 17, Elmer H. 13, and Olga M. 8 (S29). This census gives Maren's birthplace as Denmark, but the 1900 and 1910 censuses both say Minnesota (S27, S28, S29).
+**1920.** In January 1920, Hans P., 55, born in Denmark with Danish as his mother tongue, still **owned his farm** in Brookville Township and was now described as a **dairy farmer** (S29). At home were Maren S., 47, and Anna H. 25, Ethel M. 17, Elmer H. 13, and Olga M. 8 (S29). This census gives Maren's birthplace as Denmark, but the 1900 and 1910 censuses both say Minnesota (S27, S28, S29); see above.
 
 ## The children
 
@@ -30,7 +30,7 @@ The children named in the records are:
 - **Annie (Anna) H.**, born January 1895 (S27, S28, S29)
 - **Louis C.**, born October 1896 (S27, S28)
 - **Mary S.**, born May 1898 (S27). The 1910 census lists a daughter "Marie E.," 11 (S28).
-- **Rudolph H. Petersen**, born 8 May 1893 in Minnesota; mother Jensen; died 13 April 1964 in Hennepin County (S95). He appears as "Rudolph H.," 16, in 1910 (S28). The 1900 census lists a son "Hans O.," born May 1893 (S27); Genealogist treats that as matching Rudolph’s MNHS dates (S95).
+- **Rudolph H. Petersen**, born 8 May 1893 in Minnesota; mother Jensen; died 13 April 1964 in Hennepin County (S95). He appears as "Rudolph H.," 16, in 1910 (S28). The 1900 census lists a son "Hans O.," born May 1893 (S27); Genealogist treats that as the same boy, because the birth month and year match Rudolph’s MNHS dates (S95). No record yet explains the change from Hans O. to Rudolph H., so the match rests on the dates.
 - **Ethel Mathilda Petersen**, born 15 January 1902 in Brookville Township (S92, S152); married Werner Jensen 3 January 1923; died 20 October 1929 (S152). She appears as Ethel M., 8, in 1910 (S28).
 - **Elmer Hamilton Petersen**, born 24 March 1906 in Redwood County. The Minnesota birth index registers him as "Babe" Petersen, mother Jensen (S94); later records use Elmer (S14, S15, S28). He is our line (Chapter 4).
 - **Olga Margaret Petersen**, born 28 February 1911 in Redwood County; mother Jensen (S93). She appears as Olga M., 8, in 1920 (S29). Death year 1935 is still from Find a Grave only (S15).
