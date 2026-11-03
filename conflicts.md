@@ -85,9 +85,15 @@
 - [SUPERSEDED for the father census identity by Decision B, 2026-11-03 ~3:33 PM CT — see sources.md decision note. This bullet is the pre-Decision-B reading.] P28 same-man question was later locked: P28 is the census alias of P34. S63 stays CANDIDATE. Biological paternity was not locked.
 
 ## MN Pack 10 (2026-11-03) — S271–S274 — Genealogist CLEAR
-- Marriage: Hans Peter Petersen × Mary S Jensen (= Maren Sophia), 11 Mar 1891, Redwood County (S272). The story cites the county and state indexes and does not describe a ceremony. people.json also keeps a Pack 10b image note: Redwood Falls; affidavit "Hans Peter Petersen"; license "Hans P. Peterson"; JP given name ~Edward Marsh (MED); witnesses Niels Jensen and J. L. Byram; no ages or parents. Witness Niels Jensen as father Nels Jensen (S217) is CANDIDATE ONLY, not merged.
+- Marriage (Pack 10b, image confirmed): Hans Peter Petersen × Mary S. Jensen (= Maren Sophia), 11 Mar 1891, at Redwood Falls (S272). The Redwood County marriage book page has been viewed (FamilySearch image 622 of 807, page 58). Affidavit spells "Hans Peter Petersen"; the license on the same form spells "Hans P. Peterson". Witnesses Niels Jensen and J. L. Byram are names only. Niels Jensen is not claimed as P7's father (CANDIDATE at most; not narrated). No ages or parents on the form. Officiant not used.
 - 1920 census image (S271; S29 companion, same Archive.org reel): farm owned and mortgaged (O M); dairy farm, own account (OA); immigrated 1884; naturalized 1897. Household number not picked: S271 reads dwelling 52 / family 54; the earlier S29 read said dwelling 54.
 - 1905 Minnesota state census (S273): Hans P. Petersen, 41; Maren S., 32; Niels A., 13; Hans R., 12; Anna H., 10. "Hans R." stays as written. Matching him to 1900 Hans O. or to Rudolph is CANDIDATE only, not a merge.
 - Death-name conflict OPEN, no pick. Newspaper S145 prints Hans **P.** Petersen. S274 (https://www.familysearch.org/ark:/61903/1:1:V4WB-GXM) restates the MNHS index: Hans **T.** Petersen, died 06 Sep 1922, Redwood, record 359351, certificate 011514/1922, no image. Same certificate as 1922-MN-011514, not independent second evidence. Display stays Hans P. / Hans Peter. The day 6 Sep 1922 stays CANDIDATE. Alex's note that "T." may be an index typo is logged, not adopted as a resolution.
-- Not folded with this pack: Dig 39 (S275/S276), the Peder Johansen vs Peder Jørgensen father-surname index, Dig 21, Day B, nearby 1920 ED 182 Petersen households, and any Brookville farm coordinate.
 - Decision B stands: P34 is the locked named father; S64 is the 1834 Sankt Hans Gade tjenestekarl, age about 30; P28 is the same-man alias; S63 stays CANDIDATE only.
+- Still out: Dig 21, Dig 40, Day B, nearby 1920 ED 182 Petersen households, and any Brookville farm coordinate.
+
+## Dig 39 (2026-11-03) — father surname CLOSED, Genealogist CLEAR
+- Alex (~4:02 PM CT): keep Peder Johansen and Hansdatter for the mother; lock them.
+- Winner: **Peder Johansen** (P34), supported by S275 (AO image, letter shapes Joh-, not Jørg-) plus S51, S52, S56, and the S267 index. Decision B (S64 / P28 same man) stands. Biological paternity is still not claimed. No marriage to P25.
+- **S268** FamilySearch "Peder Jørgensen" is SUPERSEDED as a mis-index, not a second father. S270's father line stayed unread and does not overturn S275.
+- Mother: Ane Marie Hansdatter LOCK unchanged. S276 Larsdatter is an alternate eye-read only, not adopted. Clausdatter stays superseded.

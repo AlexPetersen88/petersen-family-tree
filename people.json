@@ -37,7 +37,7 @@
    "spouses": [
     {
      "id": "P7",
-     "marriage": "11 Mar 1891"
+     "marriage": "11 Mar 1891, Redwood Falls"
     }
    ],
    "children": [
@@ -147,7 +147,7 @@
    "spouses": [
     {
      "id": "P6",
-     "marriage": "11 Mar 1891"
+     "marriage": "11 Mar 1891, Redwood Falls"
     }
    ],
    "children": [
@@ -584,7 +584,7 @@
     "P25",
     "P34"
    ],
-   "parentsNote": "Mother LOCKED: P25 Ane Marie Hansdatter (patronymic LOCKED). Father LOCKED (named/recorded): P34 Peder Johansen of Ringsted, udlagt Barnefader named by the mother — S51, S52 (1833 baptism), S56 (1847 confirmation); Alex 2026-11-03 via Tree Site. Biological paternity/DNA not claimed. P28/S64 (FT-1834 Peter Johansen, servant, Sankt Hans Gade) same-man LOCKED as P34 per Alex Decision B (~3:33 PM CT 2026-11-03); parent link stays P34 only. No marriage P25×P34. S63 (mother candidate same street) stays CANDIDATE. Foster father P26 Jens Nielsen (pleiefader, S56). | PRIOR NOTE: Mother: Ane Marie …datter of Valsømagle, unmarried servant. CONFLICT on patronymic: HMB baptism (S51) reads Clausdatter; death (S37) reads Klaus Datt.; KMB duplicate (S52) has interlinear correction Hansd. over a struck word. Father CANDIDATE only: Peder Johansen of Ringsted, 'udlagt' (named by mother) in S51/S52 — paternity not proven. No person cards created until conflict resolved. | 1847 confirmation (S56) reads 'Uægte Søn af Pigen Ane Marie Hansd. og udlagt Barnefader Peder Johansen — Pleiefader Huusm. Jens Nielsen i Skee': adds a 3rd reading (Hansd.) — CONFLICT still OPEN, not resolved. Foster father Jens Nielsen (Skee) = not a relative by any record seen. | 2026-11-03 pass 4: Mother card P25 created with BOTH variants (Clausdatter / Hansdatter). Move lists S59/S60 give 'Ane Marie Hansd., 28, tjenestepige' going to and from Ringsted in 1832/33, which leans toward Hansd. but the CONFLICT stays OPEN. Father: NO card. FT-1834 Ringsted landsogn has 2 married Peder Johansens (45; 34 Daglejer), CANDIDATES only (S62), no match proven. Foster parents: P26 Jens Nielsen, P27 Kirsten Johansdatter (S54–S58); no kinship to the mother found. | Pass 5: FT-1834 Ringsted town has CANDIDATE Ane Marie Hansdatter 27, unmarried servant, Sankt Hans Gade (S63), and CANDIDATE Peter Johansen 30, unmarried servant, same street (S64, card P28, not linked). Neither is proven.",
+   "parentsNote": "Mother LOCKED: P25 Ane Marie Hansdatter (patronymic LOCKED). Father LOCKED (named/recorded): P34 Peder Johansen of Ringsted, udlagt Barnefader named by the mother — S51, S52 (1833 baptism), S56 (1847 confirmation); Alex 2026-11-03 via Tree Site. Biological paternity/DNA not claimed. P28/S64 (FT-1834 Peter Johansen, servant, Sankt Hans Gade) same-man LOCKED as P34 per Alex Decision B (~3:33 PM CT 2026-11-03); parent link stays P34 only. No marriage P25×P34. S63 (mother candidate same street) stays CANDIDATE. Foster father P26 Jens Nielsen (pleiefader, S56). | PRIOR NOTE: Mother: Ane Marie …datter of Valsømagle, unmarried servant. CONFLICT on patronymic: HMB baptism (S51) reads Clausdatter; death (S37) reads Klaus Datt.; KMB duplicate (S52) has interlinear correction Hansd. over a struck word. Father CANDIDATE only: Peder Johansen of Ringsted, 'udlagt' (named by mother) in S51/S52 — paternity not proven. No person cards created until conflict resolved. | 1847 confirmation (S56) reads 'Uægte Søn af Pigen Ane Marie Hansd. og udlagt Barnefader Peder Johansen — Pleiefader Huusm. Jens Nielsen i Skee': adds a 3rd reading (Hansd.) — CONFLICT still OPEN, not resolved. Foster father Jens Nielsen (Skee) = not a relative by any record seen. | 2026-11-03 pass 4: Mother card P25 created with BOTH variants (Clausdatter / Hansdatter). Move lists S59/S60 give 'Ane Marie Hansd., 28, tjenestepige' going to and from Ringsted in 1832/33, which leans toward Hansd. but the CONFLICT stays OPEN. Father: NO card. FT-1834 Ringsted landsogn has 2 married Peder Johansens (45; 34 Daglejer), CANDIDATES only (S62), no match proven. Foster parents: P26 Jens Nielsen, P27 Kirsten Johansdatter (S54–S58); no kinship to the mother found. | Pass 5: FT-1834 Ringsted town has CANDIDATE Ane Marie Hansdatter 27, unmarried servant, Sankt Hans Gade (S63), and CANDIDATE Peter Johansen 30, unmarried servant, same street (S64, card P28, not linked). Neither is proven. | Dig 39 fold (Alex ~4:02 PM CT 2026-11-03, 'Keep Peder Johansena and hansdatter for mother. lock them'): father surname conflict CLOSED — Peder Johansen LOCK stands (S275 AO MED-HIGH); S268 FS 'Peder Jørgensen' SUPERSEDED as index error. Mother Hansdatter LOCK unchanged; Larsdatter (S276) alternate only.",
    "spouses": [
     {
      "id": "P19",
@@ -614,7 +614,12 @@
     "S59",
     "S60",
     "S62",
-    "S106"
+    "S106",
+    "S267",
+    "S268",
+    "S270",
+    "S275",
+    "S276"
    ],
    "status": "RECORD-SOURCED (Danish church book; not family-confirmed)",
    "notes": "Same man in marriage (S36) and death (S37): both give b. 25 Feb 1833. Vacc. 29 Jun 1839; confirmed after Jul 1847. Cause of death read 'Brystsyge/Lungebetændelse(?)' (LOW). Died when son Hans Peter was ~3½. Detail: shots/bjernede-family-2026-11-03/; browser-pass-bjernede-family.md Confirmed Haraldsted Kirke per S37 (entry not yet found). | NOTE: confirmation entry (S56) gives vacc. 29 Jun 1833, not 1839 — earlier '1839' may be a misreading; check S37. | 2026-11-03: mother's move chain — S106 Ringsted afgang 1833 no.5 → S59 Haraldsted tilgang 30 Mar 1833 (UNVERIFIED match; Hansdatter form). Mother patronymic conflict still OPEN.",
@@ -992,7 +997,8 @@
     "S260",
     "S261",
     "S262",
-    "S263"
+    "S263",
+    "S276"
    ],
    "status": "VERIFIED as mother of P18 (S51/S52/S56); patronymic LOCKED Hansdatter 2026-11-03 (Alex own words \"lock it\", Genealogist chat); Clausdatter SUPERSEDED",
    "residences": [
@@ -1229,10 +1235,13 @@
     "S51",
     "S52",
     "S56",
-    "S64"
+    "S64",
+    "S267",
+    "S270",
+    "S275"
    ],
    "status": "LOCKED recorded father (udlagt) of P18 — S51/S52/S56; census same-man LOCKED as P28/S64 per Alex Decision B 2026-11-03",
-   "notes": "Created 2026-11-03 per Alex decision via Tree Site chat (~3:14 PM CT): 'treat Peder Johansen as Hans Pedersen's father — mom named him and confirmation lists him'. Named as udlagt Barnefader (putative father named by the mother) in 1833 Haraldsted baptism (S51 HMB, S52 KMB) and repeated in 1847 confirmation (S56). Paternity by DNA NOT claimed. No marriage to P25 recorded or implied. Census identity OPEN: P28 (FT-1834 Peter Johansen, Sankt Hans Gade servant, S64) is a CANDIDATE only for being this man — NOT merged. | Alex Decision B (~3:33 PM CT 2026-11-03, relayed by Genealogy Coordinator): P28 (FT-1834 Peter Johansen, 30, ugift tjenestekarl, Sankt Hans Gade, S64) is the SAME MAN as P34 — census identity merged here. Supersedes 'census identity OPEN / NOT merged' above. Still NOT DNA/biological proof beyond udlagt naming. No marriage to P25 (spouses []). S63 Ane Marie Hansdatter on same street stays CANDIDATE for P25. P28 candidate baptisms S68/S71 remain UNLINKED CANDIDATES (not added).",
+   "notes": "Created 2026-11-03 per Alex decision via Tree Site chat (~3:14 PM CT): 'treat Peder Johansen as Hans Pedersen's father — mom named him and confirmation lists him'. Named as udlagt Barnefader (putative father named by the mother) in 1833 Haraldsted baptism (S51 HMB, S52 KMB) and repeated in 1847 confirmation (S56). Paternity by DNA NOT claimed. No marriage to P25 recorded or implied. Census identity OPEN: P28 (FT-1834 Peter Johansen, Sankt Hans Gade servant, S64) is a CANDIDATE only for being this man — NOT merged. | Alex Decision B (~3:33 PM CT 2026-11-03, relayed by Genealogy Coordinator): P28 (FT-1834 Peter Johansen, 30, ugift tjenestekarl, Sankt Hans Gade, S64) is the SAME MAN as P34 — census identity merged here. Supersedes 'census identity OPEN / NOT merged' above. Still NOT DNA/biological proof beyond udlagt naming. No marriage to P25 (spouses []). S63 Ane Marie Hansdatter on same street stays CANDIDATE for P25. P28 candidate baptisms S68/S71 remain UNLINKED CANDIDATES (not added). | Dig 39 fold (Alex ~4:02 PM CT 2026-11-03, 'Keep Peder Johansena and hansdatter for mother. lock them'): father surname conflict CLOSED — Peder Johansen LOCK stands (S275 AO MED-HIGH); S268 FS 'Peder Jørgensen' SUPERSEDED as index error. Mother Hansdatter LOCK unchanged; Larsdatter (S276) alternate only.",
    "occupation": "Tjenestekarl (servant), Sankt Hans Gade, Ringsted købstad, FT-1834 (S64)",
    "altNames": [
     "Peter Johansen (FT-1834, S64; census card P28)"

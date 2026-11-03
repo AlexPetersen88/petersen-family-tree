@@ -21,10 +21,9 @@ Updated: 2026-11-03 (America/Chicago)
 - No invented scenes, dialogue, motives, or places. Say what is unknown.
 
 ## Deferred (not narrated as settled)
-- P34 Peder Johansen of Ringsted: LOCKED recorded/named father (*udlagt barnefader*), S51/S52/S56 — Alex 2026-11-03 via Tree Site. Biological paternity/DNA NOT claimed; no P25×P34 marriage.
-- P34 Peder (Peter) Johansen: LOCKED named father (S51/S52/S56) + same man as FT-1834 Peter Johansen ~30, ugift, tjenestekarl, Sankt Hans Gade (S64) — Decision B 2026-11-03; P28 merged into P34. Biological paternity, P25×P34 marriage, S68/S71 baptisms: OUT.
-- P25 mother's patronymic: LOCKED Hansdatter 2026-11-03 (Clausdatter S51 superseded wrong read). Parents unknown; b. 23 Mar 1805 CANDIDATE only.
-- S63 Ane Marie Hansdatter 27 (Sankt Hans Gade 1834): CANDIDATE for P25 only; no co-residence/household claim. Dig 21 titles OUT. Ringsted May 1833 arrival still OPEN.
+- P34 Peder Johansen of Ringsted: LOCKED recorded/named father (*udlagt barnefader*), S51/S52/S56, reinforced by Dig 39 S275 (Joh-, not Jørg-). S268 FamilySearch "Peder Jørgensen" is SUPERSEDED as a mis-index. Decision B (Alex ~3:33 PM CT, 2026-11-03) locks him as the same man as FT-1834 Peter Johansen ~30, ugift, tjenestekarl on Sankt Hans Gade (S64). P28 is the census alias; the parent link is only P34→P18. Biological paternity/DNA not claimed. No marriage to P25. S68/S71 are not his baptisms.
+- P25 mother's patronymic: LOCKED Hansdatter 2026-11-03 (Clausdatter S51 superseded wrong read). Dig 39 S276 Larsdatter is a discarded alternate eye-read, not a mother form. Parents unknown; b. 23 Mar 1805 CANDIDATE only. Dig 40 baptism negative stays OUT.
+- S63 FT-1834 Ane Marie Hansdatter on Sankt Hans Gade: CANDIDATE only for P25. Do not say she and P34 lived on the same street, or shared a house, as fact. S64 is P34's street residence only. Dig 21 titles OUT. Ringsted May 1833 arrival still OPEN.
 - S67, S68, S69, S71 Ringsted baptisms: not used.
 - Rasmus Peter as the Sleepy Eye emigrant (S49): not used.
 - Rudolph = Hans O. (1893): narrated as Genealogist date-match (S95), name change unexplained.
@@ -34,10 +33,12 @@ Updated: 2026-11-03 (America/Chicago)
 - Now narrated as open controversies (both sides): Maren birthplace MN vs DK (S27/S28 vs S29); Rasmus age 8 wks vs "12 Dage"(?) (S41/S43). Ethel maiden resolved Neubauer (S148/S149); Gent = mother's maiden (Kin Dig F).
 - Hans P. display locked (Alex standing): narrate Hans P. / Hans Peter. Death-name conflict OPEN per MN Pack 10: S145 newspaper "Hans P." vs S274 FS/MNHS index "Hans T." d. 1922-09-06, cert 011514 (image unseen). Alex's possible-typo note logged; no pick. 1922-09-06 CANDIDATE.
 - S273 "Hans R" 12 (1905) = Rudolph / 1900 Hans O.: CANDIDATE, not merged.
-- Dig 39 (S275/S276), the Johansen vs Jørgensen father-surname index, Dig 21 titles, Day B, and Brookville farm GPS: not folded.
+- Dig 21 titles, Dig 40, Day B, and Brookville farm GPS: not folded. Nearby 1920 ED 182 Petersen households stay unlinked.
 - P18 cause of death (LOW reading): not used. (1920 naturalization 1897 now narrated, S271.)
 
 ## Updates
+- 2026-11-03: Dig 39 CLEAR folded — Ch.1: P34 Peder Johansen reinforced by S275 (Joh- not Jørg-); S268 FS "Peder Jørgensen" superseded as a mis-index; S276 Larsdatter noted once as a discarded eye-read. Hansdatter lock unchanged. Decision B / S64 unchanged. Dig 40 OUT.
+- 2026-11-03: MN Pack 10b folded (S272 image) — marriage at Redwood Falls, 11 Mar 1891; affidavit "Hans Peter Petersen" and license "Hans P. Peterson" on the same form; witnesses Niels Jensen and J. L. Byram by name only (not P7's father). Index-only / "page not opened" marriage wording removed. 1920, 1905 Hans R., and the open Hans P./Hans T. death conflict stay as in Pack 10.
 - 2026-11-03: MN Pack 10 folded (S271–S274) — Ch.3 marriage 11 Mar 1891 (S272), 1905 state census with Hans R. as written (S273), 1920 owned mortgaged / dairy own account / naturalized 1897 (S271; S29 companion), death P./T. conflict restated OPEN (S145/S274). Abridged, Kids, SOURCE-KEY, and CHANGE-LOG match. Decision B unchanged.
 - 2026-11-03: Tree Site PR #17 syncs the storyteller pack that already has both decisions. Decision B stays: P34 is the locked named father and the 1834 Sankt Hans Gade / Sct. Hansgade *tjenestekarl* (street pin 55.4445, 11.7908; no house). S63 stays CANDIDATE for P25. Decision 3 stays: S151 departure ~1 May 1833; Ringsted arrival gap open, no street or house. Dig 21 stays out.
 - 2026-11-03: Alex Decision 3 folded — S151 CLEARED for planning/story: P25 left Haraldsted → Ringsted ~1 May 1833 as tjenestepige (dest HIGH; with S59, S60/S106 loop). Ringsted arrival gap OPEN (S108/S157 NEG); no street/address invented. Dig J foster kinship UNVERIFIED; both Hans OPEN; P25 parents [] (S222 CANDIDATE); Dig 21 titles OUT. Ch.1, Abridged, Kids, SOURCE-KEY updated; PDFs rebuilt + OneDrive refreshed.

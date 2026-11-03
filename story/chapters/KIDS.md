@@ -103,7 +103,7 @@ He was already gone.
 
 Hans Peter made it. Every American census after that agrees he arrived in 1884.
 
-He settled in Brookville Township, Redwood County, Minnesota, about 22 miles from Springfield, the town he had named in Copenhagen. On March 11, 1891, he married Maren Sophia Jensen (the marriage record spells her "Mary S Jensen"), born in 1872, the daughter of Nels Peter Jensen and Anne Marie Hansen Jensen.
+He settled in Brookville Township, Redwood County, Minnesota, about 22 miles from Springfield, the town he had named in Copenhagen. On March 11, 1891, in the town of Redwood Falls, he married Maren Sophia Jensen (the marriage record spells her "Mary S. Jensen"). Two people signed as witnesses: Niels Jensen and J. L. Byram. Maren was born in 1872, the daughter of Nels Peter Jensen and Anne Marie Hansen Jensen.
 
 Then the farm grew, and so did the family.
 
