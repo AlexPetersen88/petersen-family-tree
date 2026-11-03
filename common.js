@@ -102,3 +102,40 @@ document.addEventListener('DOMContentLoaded',()=>{
   details.append(summary,full);
   b.replaceChildren(details);
 });
+const STORY_TOOLS_KEY='petersen-story-tools';
+function storyToolsTight(){return matchMedia('(max-width:800px), (max-height:700px)').matches}
+function storyToolsPref(){try{return localStorage.getItem(STORY_TOOLS_KEY)}catch(e){return null}}
+function storyToolsCollapsed(){
+  const saved=storyToolsPref();
+  if(saved==='hidden')return true;
+  if(saved==='shown')return false;
+  return storyToolsTight();
+}
+function applyStoryTools(collapsed){
+  const btn=document.getElementById('storytoolstoggle');
+  const tools=document.getElementById('storytools');
+  if(!btn||!tools)return;
+  document.documentElement.classList.toggle('story-tools-collapsed', !!collapsed);
+  btn.setAttribute('aria-expanded', collapsed?'false':'true');
+  if(collapsed){
+    if(tools.contains(document.activeElement))btn.focus();
+    tools.setAttribute('hidden','');
+  }else tools.removeAttribute('hidden');
+}
+function initStoryTools(){
+  const btn=document.getElementById('storytoolstoggle');
+  if(!btn||btn.dataset.ready)return;
+  btn.dataset.ready='1';
+  applyStoryTools(storyToolsCollapsed());
+  btn.addEventListener('click',()=>{
+    const hide=!document.documentElement.classList.contains('story-tools-collapsed');
+    try{localStorage.setItem(STORY_TOOLS_KEY, hide?'hidden':'shown')}catch(e){}
+    applyStoryTools(hide);
+  });
+  matchMedia('(max-width:800px), (max-height:700px)').addEventListener('change',()=>{
+    if(storyToolsPref())return;
+    applyStoryTools(storyToolsTight());
+  });
+  addEventListener('pageshow',()=>applyStoryTools(storyToolsCollapsed()));
+}
+initStoryTools();

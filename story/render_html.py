@@ -499,6 +499,8 @@ def chrome(current):
 <div class="brand"><p class="eyebrow">Redwood County, Minnesota</p><h1>The Petersen Family</h1></div>
 <nav aria-label="Primary"><a href="../index.html">Tree</a><a href="../sources.html">Sources</a><a{story_current} href="index.html">Story</a></nav>
 </header>
+<button type="button" class="story-tools-toggle" id="storytoolstoggle" aria-expanded="true" aria-controls="storytools"><span class="when-open">Hide tools</span><span class="when-closed">Show tools</span></button>
+<div id="storytools" class="story-tools">
 <div class="banner"></div>
 <nav class="story-jump" aria-label="Chapters">{''.join(links)}</nav>
 <nav class="story-companions" aria-label="Story companions">{''.join(companion_links)}</nav>
@@ -507,6 +509,10 @@ def chrome(current):
 <a href="../downloads/Petersen-Family-Story-Kids.pdf">Kids story PDF</a>
 <a href="../downloads/Denmark-Trip-Itinerary.pdf">Denmark trip PDF</a>
 </nav>
+</div>
+<script>
+(function(){{var c=document.documentElement.classList.contains("story-tools-collapsed"),b=document.getElementById("storytoolstoggle"),t=document.getElementById("storytools");if(b)b.setAttribute("aria-expanded",c?"false":"true");if(t){{if(c)t.setAttribute("hidden","");else t.removeAttribute("hidden")}}}})();
+</script>
 </div>"""
 
 
@@ -550,6 +556,9 @@ def page(title, current, body):
 <meta name="twitter:image" content="{SITE}/og.png">
 <link rel="canonical" href="{url}">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230C3B2E'/%3E%3C/svg%3E">
+<script>
+try{{var v=localStorage.getItem("petersen-story-tools");var tight=matchMedia("(max-width:800px), (max-height:700px)").matches;if(v==="hidden"||(v!=="shown"&&tight))document.documentElement.classList.add("story-tools-collapsed")}}catch(e){{}}
+</script>
 <link rel="stylesheet" href="../style.css">
 </head>
 <body class="page story">
