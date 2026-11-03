@@ -741,7 +741,12 @@
         "S56",
         "S59",
         "S60",
-        "S63"
+        "S63",
+        "S67",
+        "S69",
+        "S71",
+        "S72",
+        "S73"
       ],
       "status": "VERIFIED as mother of P18 (S51/S52/S56); patronymic CONFLICT OPEN",
       "residences": [
@@ -750,7 +755,7 @@
         "1834: not in Valsømagle; later whereabouts unknown",
         "1834-02-18: CANDIDATE: Ane Marie Hansdatter 27, ugift, Tjenestefolk (servant), Sankt Hans Gade, Ringsted købstad (S63); age 27 vs 28 in 1833 lists, so not proven"
       ],
-      "notes": "Ane Bolette (baptism sponsor) is probably Knudsd., not a sister (S61); this is still a CONFLICT. Next: her baptism c. 1804–05 (before the 1814 book), Ringsted town FT-1834, and later move lists."
+      "notes": "Ane Bolette (baptism sponsor) is probably Knudsd., not a sister (S61); this is still a CONFLICT. Next: her baptism c. 1804–05 (before the 1814 book), Ringsted town FT-1834, and later move lists. | Pass 7 CANDIDATE baptisms (NOT linked, identity unproven): S67 Ane Marie, dau. of Hans Larsen + Ane Chatarina Hansdatter, Ringsted, Wed 27 Jun 1804 (would be patronymic Hansdatter; age fits 28 in 1833). S69: illegitimate Anna Maria, dau. of Maren Hansdatter, bapt. 3 Dec 1802 (reading MEDIUM; age 30 in 1833, weaker fit). No Ane Marie Clausdatter seen in Ringsted baptisms Sep 1803–Mar 1805. CONFLICT Clausdatter vs Hansdatter stays OPEN.\nPass 8 (2026-11-03): CANDIDATE/negative only. FT-1834 Ringsted landsogn (S73) Torped Bye houses 4-27 (imgs 3-7): one 'Ane Marie Hansdatter' age 21, wife of Hans Jørgensen, house 11 (img 5) - age does not fit (~30 expected) so NOT a match. No Ane Marie Clausdatter. 1803 Jan-Aug and 1805 baptisms (S71, S72): no Ane Marie Hansdatter/Clausdatter. Mother-surname conflict stays OPEN."
     },
     {
       "id": "P26",
@@ -813,10 +818,14 @@
       "children": [],
       "sources": [
         "S64",
-        "S62"
+        "S62",
+        "S68",
+        "S71",
+        "S72",
+        "S73"
       ],
       "status": "CANDIDATE ONLY: possible 'udlagt' (named) father of P18. NOT proven; not linked as parent",
-      "notes": "He is the only unmarried Peder/Peter Johansen in FT-1834 Ringsted town plus landsogn (the 2 landsogn men are married, S62). He is on the same street as the candidate mother (S63). Other Peder Johansens may have been in nearby parishes."
+      "notes": "He is the only unmarried Peder/Peter Johansen in FT-1834 Ringsted town plus landsogn (the 2 landsogn men are married, S62). He is on the same street as the candidate mother (S63). Other Peder Johansens may have been in nearby parishes. | Pass 7 CANDIDATE baptism (NOT linked, identity unproven): S68 Peder, son of Huusmand Johan Friderichsen of Torped + Maren Povls(?)datter, Ringsted, Sun 7 Oct 1804. That makes him 29, not 30, in Feb 1834. No other Peder son of a Johan in Ringsted legitimate baptisms Sep 1803–Mar 1805 (Jan–Aug 1803 not read).\nPass 8 (2026-11-03): CANDIDATE only. Baptism 9 May 1803 of 'Peter Johansen', son of Justitsraad Peter Johansen de Neergaard (S71, bsid 154779 img 187) - name/age fit to FT-1834 servant (S64) only; gentry birth makes identity doubtful; NOT linked. 1805 baptisms (S72): no Peder son of a Johan. FT-1834 Torped (S73): no Johan Friderichsen and no Peder Johansen ~30 in houses 4-27. Remains CANDIDATE; no record ties him to Hans's 1833 baptism."
     }
   ]
 }

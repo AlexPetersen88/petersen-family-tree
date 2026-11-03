@@ -741,7 +741,12 @@ window.PEOPLE={
     "S56",
     "S59",
     "S60",
-    "S63"
+    "S63",
+    "S67",
+    "S69",
+    "S71",
+    "S72",
+    "S73"
    ],
    "status": "VERIFIED as mother of P18 (S51/S52/S56); patronymic CONFLICT OPEN",
    "residences": [
@@ -750,7 +755,7 @@ window.PEOPLE={
     "1834: not in Vals\u00f8magle; later whereabouts unknown",
     "1834-02-18: CANDIDATE: Ane Marie Hansdatter 27, ugift, Tjenestefolk (servant), Sankt Hans Gade, Ringsted k\u00f8bstad (S63); age 27 vs 28 in 1833 lists, so not proven"
    ],
-   "notes": "Ane Bolette (baptism sponsor) is probably Knudsd., not a sister (S61); this is still a CONFLICT. Next: her baptism c. 1804\u201305 (before the 1814 book), Ringsted town FT-1834, and later move lists."
+   "notes": "Ane Bolette (baptism sponsor) is probably Knudsd., not a sister (S61); this is still a CONFLICT. Next: her baptism c. 1804\u201305 (before the 1814 book), Ringsted town FT-1834, and later move lists. | Pass 7 CANDIDATE baptisms (NOT linked, identity unproven): S67 Ane Marie, dau. of Hans Larsen + Ane Chatarina Hansdatter, Ringsted, Wed 27 Jun 1804 (would be patronymic Hansdatter; age fits 28 in 1833). S69: illegitimate Anna Maria, dau. of Maren Hansdatter, bapt. 3 Dec 1802 (reading MEDIUM; age 30 in 1833, weaker fit). No Ane Marie Clausdatter seen in Ringsted baptisms Sep 1803\u2013Mar 1805. CONFLICT Clausdatter vs Hansdatter stays OPEN.\nPass 8 (2026-11-03): CANDIDATE/negative only. FT-1834 Ringsted landsogn (S73) Torped Bye houses 4-27 (imgs 3-7): one 'Ane Marie Hansdatter' age 21, wife of Hans J\u00f8rgensen, house 11 (img 5) - age does not fit (~30 expected) so NOT a match. No Ane Marie Clausdatter. 1803 Jan-Aug and 1805 baptisms (S71, S72): no Ane Marie Hansdatter/Clausdatter. Mother-surname conflict stays OPEN."
   },
   {
    "id": "P26",
@@ -813,10 +818,14 @@ window.PEOPLE={
    "children": [],
    "sources": [
     "S64",
-    "S62"
+    "S62",
+    "S68",
+    "S71",
+    "S72",
+    "S73"
    ],
    "status": "CANDIDATE ONLY: possible 'udlagt' (named) father of P18. NOT proven; not linked as parent",
-   "notes": "He is the only unmarried Peder/Peter Johansen in FT-1834 Ringsted town plus landsogn (the 2 landsogn men are married, S62). He is on the same street as the candidate mother (S63). Other Peder Johansens may have been in nearby parishes."
+   "notes": "He is the only unmarried Peder/Peter Johansen in FT-1834 Ringsted town plus landsogn (the 2 landsogn men are married, S62). He is on the same street as the candidate mother (S63). Other Peder Johansens may have been in nearby parishes. | Pass 7 CANDIDATE baptism (NOT linked, identity unproven): S68 Peder, son of Huusmand Johan Friderichsen of Torped + Maren Povls(?)datter, Ringsted, Sun 7 Oct 1804. That makes him 29, not 30, in Feb 1834. No other Peder son of a Johan in Ringsted legitimate baptisms Sep 1803\u2013Mar 1805 (Jan\u2013Aug 1803 not read).\nPass 8 (2026-11-03): CANDIDATE only. Baptism 9 May 1803 of 'Peter Johansen', son of Justitsraad Peter Johansen de Neergaard (S71, bsid 154779 img 187) - name/age fit to FT-1834 servant (S64) only; gentry birth makes identity doubtful; NOT linked. 1805 baptisms (S72): no Peder son of a Johan. FT-1834 Torped (S73): no Johan Friderichsen and no Peder Johansen ~30 in houses 4-27. Remains CANDIDATE; no record ties him to Hans's 1833 baptism."
   }
  ]
 };
@@ -1331,6 +1340,77 @@ window.SOURCES={
   "text": "same census, Ringsted k\u00f8bstad, Sankt Hans Gade, p. 328, AO bsid=4462 img 1/11: \"Peter Johansen, 30, ugift\", in the Tjenestefolk (servants) bracket with Hans Sonnesen(?) 39: https://api.rigsarkivet.dk/ao/v1/images/112554",
   "urls": [
    "https://api.rigsarkivet.dk/ao/v1/images/112554"
+  ]
+ },
+ "S65": {
+  "id": "S65",
+  "flag": "finding aid, no hit",
+  "text": "Ringsted Sogn Kontraministerialbog (church book, duplicate copy) J TA (tilgangs-/afgangslister = arrival/departure lists) 1834\u201349, AO bsid=154788; Tilgangsliste 1834 starts img 182 (folio 168), 1835 about img 200. The volume starts in 1834, so it does not cover the 1832/33 moves. Images 182\u2013190 skimmed: no certain reading of Ane Marie Hansd./Clausd. or Peter Johansen (UNVERIFIED negative): https://api.rigsarkivet.dk/ao/v1/billedviser/billed-reference-lister?bsid=154788",
+  "urls": [
+   "https://api.rigsarkivet.dk/ao/v1/billedviser/billed-reference-lister?bsid=154788"
+  ]
+ },
+ "S66": {
+  "id": "S66",
+  "flag": "finding aid, no hit",
+  "text": "Ringsted Sogn og Landsogn Enesteministerialbog (sole church book) FVD (births, marriages, deaths) 1741\u20131805, AO bsid=154779; legitimate baptisms c.1801\u201305 about img 183\u2013194, \"U\u00e6gte B\u00f8rn D\u00f8bte\" (illegitimate baptisms) about img 195\u2013205; the 1805\u201314 volume is bsid=154780. Not read reliably, so nothing was found or ruled out (UNVERIFIED): https://api.rigsarkivet.dk/ao/v1/billedviser/billed-reference-lister?bsid=154779",
+  "urls": [
+   "https://api.rigsarkivet.dk/ao/v1/billedviser/billed-reference-lister?bsid=154779"
+  ]
+ },
+ "S67": {
+  "id": "S67",
+  "flag": "CANDIDATE, P25",
+  "text": "Ringsted Sogn og Landsogn Enesteministerialbog (sole church book) FVD 1741\u20131805, AO bsid=154779 img 192 (right page, p. 268), D\u00f8bte (baptisms) 1804 no. 25: \"Onsdag d. 27de Junii ... Huulmand(?) Hans Larsen og Kone Ane Chatarina Hans Datter deres Datter til Daaben som blev kaldet Ane Marie.\" Witnesses incl. Hans Jensen, Peder R\u00f8d, Christopher Danielsen. Reading HIGH for names/date; occupation word MEDIUM. Image: https://api.rigsarkivet.dk/ao/v1/images/25834398 ; crop shots/p18-parents-foster-2026-11-03/b154779-img192-entry25-AneMarie-1804.png",
+  "urls": [
+   "https://api.rigsarkivet.dk/ao/v1/images/25834398"
+  ]
+ },
+ "S68": {
+  "id": "S68",
+  "flag": "CANDIDATE, P28",
+  "text": "same volume, img 193 (right page, p. 269), D\u00f8bte 1804 no. 34: \"Huusmand Johan Friderichsen fra Torped og Hustru Maren Povls(?) Datter ... S\u00f8ndag d. 7de October ... S\u00f8n ... kaldet Peder.\" Godparents incl. Povl Rasmussen's wife of Torped, Mads Jensen of Skjelleryd(?), Peder Pedersen of Sierslev(?). Names/date HIGH; mother's patronymic MEDIUM. Image: https://api.rigsarkivet.dk/ao/v1/images/25834399 ; crop b154779-img193-entry34-Peder-1804.png",
+  "urls": [
+   "https://api.rigsarkivet.dk/ao/v1/images/25834399"
+  ]
+ },
+ "S69": {
+  "id": "S69",
+  "flag": "CANDIDATE, weak, P25",
+  "text": "same volume, img 205 (left page), \"U\u00e6gte B\u00f8rn D\u00f8bte\" (illegitimate baptisms) 1802: \"Maren [Anna struck] Hansdatter ... u\u00e6gte Datter blev d\u00f8bt d. 3 Dec. og kaldet Anna Maria\"; the named father's name is only partly legible (\"...Jacobsen\"?) \u2014 UNREADABLE, not transcribed. Image: https://api.rigsarkivet.dk/ao/v1/images/25834411",
+  "urls": [
+   "https://api.rigsarkivet.dk/ao/v1/images/25834411"
+  ]
+ },
+ "S70": {
+  "id": "S70",
+  "flag": "negative",
+  "text": "same volume, legitimate baptisms read in full at full resolution for img 189\u2013194 (Sep 1803 \u2013 17 Mar 1805, where the volume ends; img ids 25834395\u201325834400) and the illegitimate section for 1802\u20131804 (img 205; 1804 has only Margrethe and Anders). No Ane Marie Clausdatter, no other Peder son of a Johan. NOT read: Jan\u2013Aug 1803 (img 186\u2013188) and 1805 onward (bsid 154780).",
+  "urls": []
+ },
+ "S71": {
+  "id": "S71",
+  "flag": "CANDIDATE",
+  "text": "Ringsted sogn KB, bsid=154779 img 187 (p. 263), 9 May 1803 baptism \"Peter Johansen\", son of Justitsraad Peter Johansen de Neergaard and Frue \u2026 de Neergaard: https://api.rigsarkivet.dk/ao/v1/images/25834393 ; viewer https://arkivalieronline.rigsarkivet.dk/da/billedviser?bsid=154779 . Negatives same volume imgs 186\u2013188 (Jan\u2013Aug 1803): no Ane Marie Hansdatter/Clausdatter; img 188 31 Jul 1803 godparent \"Johan Frid\u2026(?)\" of Torped (uncertain reading).",
+  "urls": [
+   "https://api.rigsarkivet.dk/ao/v1/images/25834393",
+   "https://arkivalieronline.rigsarkivet.dk/da/billedviser?bsid=154779"
+  ]
+ },
+ "S72": {
+  "id": "S72",
+  "flag": "negative",
+  "text": "Ringsted sogn KB, bsid=154780 imgs 3\u20137 (ids 25834521\u201325834525), baptisms 31 Mar 1805 \u2013 early Jan 1806: no Peder son of a Johan, no Ane Marie Hansdatter/Clausdatter. https://arkivalieronline.rigsarkivet.dk/da/billedviser?bsid=154780",
+  "urls": [
+   "https://arkivalieronline.rigsarkivet.dk/da/billedviser?bsid=154780"
+  ]
+ },
+ "S73": {
+  "id": "S73",
+  "flag": "negative",
+  "text": "FT-1834 Ringsted landsogn, bsid=2969 imgs 3\u20137 (ids 94156\u201394160), \"Torped Bye\" from house 4 (no new village heading seen through house 27): no Johan Friderichsen, no Peder/Peter Johansen ~30; house 11 Ane Marie Hansdatter 21 gift (img 5, https://api.rigsarkivet.dk/ao/v1/images/94158) \u2013 age mismatch.",
+  "urls": [
+   "https://api.rigsarkivet.dk/ao/v1/images/94158"
   ]
  }
 };
