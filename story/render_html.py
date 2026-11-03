@@ -218,15 +218,46 @@ def chrome(current):
 </div>"""
 
 
+SITE = "https://alexpetersen88.github.io/petersen-family-tree"
+SITE_DESC = "The Petersen family of Redwood County, Minnesota."
+
+
+def story_file(current):
+    if current == "index":
+        return "index.html"
+    if current == "source-key":
+        return "source-key.html"
+    return current
+
+
 def page(title, current, body):
+    url = f"{SITE}/story/{story_file(current)}"
+    safe_title = html.escape(title)
+    safe_desc = html.escape(SITE_DESC)
     return f"""<!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>{html.escape(title)}</title>
+<title>{safe_title}</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="color-scheme" content="light">
-<meta name="theme-color" content="#fffcf7">
+<meta name="color-scheme" content="light only">
+<meta name="theme-color" content="#FAF8F4">
+<meta name="description" content="{safe_desc}">
+<meta property="og:site_name" content="Petersen Family Tree">
+<meta property="og:title" content="{safe_title}">
+<meta property="og:description" content="{safe_desc}">
+<meta property="og:type" content="website">
+<meta property="og:url" content="{url}">
+<meta property="og:image" content="{SITE}/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="The Petersen Family, Redwood County, Minnesota">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{safe_title}">
+<meta name="twitter:description" content="{safe_desc}">
+<meta name="twitter:image" content="{SITE}/og.png">
+<link rel="canonical" href="{url}">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230C3B2E'/%3E%3C/svg%3E">
 <link rel="stylesheet" href="../style.css">
 </head>
 <body class="page story">

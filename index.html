@@ -4,8 +4,24 @@
 <meta charset="utf-8">
 <title>Petersen Family Tree</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="color-scheme" content="light">
-<meta name="theme-color" content="#fffcf7">
+<meta name="color-scheme" content="light only">
+<meta name="theme-color" content="#FAF8F4">
+<meta name="description" content="Family tree, sources, and story for the Petersens of Redwood County, Minnesota.">
+<meta property="og:site_name" content="Petersen Family Tree">
+<meta property="og:title" content="Petersen Family Tree">
+<meta property="og:description" content="Family tree, sources, and story for the Petersens of Redwood County, Minnesota.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://alexpetersen88.github.io/petersen-family-tree/">
+<meta property="og:image" content="https://alexpetersen88.github.io/petersen-family-tree/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="The Petersen Family, Redwood County, Minnesota">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Petersen Family Tree">
+<meta name="twitter:description" content="Family tree, sources, and story for the Petersens of Redwood County, Minnesota.">
+<meta name="twitter:image" content="https://alexpetersen88.github.io/petersen-family-tree/og.png">
+<link rel="canonical" href="https://alexpetersen88.github.io/petersen-family-tree/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230C3B2E'/%3E%3C/svg%3E">
 <link rel="stylesheet" href="style.css">
 </head>
 <body class="tree">
@@ -18,16 +34,17 @@
 <details class="legend" id="legend">
 <summary>Key</summary>
 <div class="legend-body" id="legendbody">
-<p><span class="keychip family">Family</span> Family-confirmed</p>
-<p><span class="keychip records">Records</span> Record-sourced, not confirmed by family</p>
-<p><span class="keychip living">Dashed</span> Living person</p>
-<p class="legend-help">Drag or pinch to move. Tap a person for details.</p>
+<p><span class="badge badge-family" data-badge="family"><span class="badge-label">Family</span></span> Family-confirmed</p>
+<p><span class="badge badge-records" data-badge="records"><span class="badge-label">Records</span></span> Record-sourced, not confirmed by family</p>
+<p><span class="badge badge-candidate" data-badge="candidate"><span class="badge-label">Candidate</span></span> Candidate, not proven</p>
+<p><span class="badge badge-living" data-badge="living"><span class="badge-label">Living</span></span> Living person</p>
+<p class="legend-help">Drag or pinch to move. Recenter and the zoom buttons work with a finger or a mouse. Tap a person for details.</p>
 </div>
 </details>
-<div class="ctrl" role="group" aria-label="Zoom">
-<button id="zo" type="button">Zoom out</button>
-<button id="zr" type="button">Fit</button>
-<button id="zi" type="button">Zoom in</button>
+<div class="ctrl" role="group" aria-label="Tree view">
+<button id="zo" type="button" aria-label="Zoom out"><svg class="ctrl-ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 12h12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
+<button id="zr" type="button" aria-label="Recenter on the selected person"><svg class="ctrl-ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="3.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 3v4M12 17v4M3 12h4M17 12h4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span class="ctrl-label">Recenter</span></button>
+<button id="zi" type="button" aria-label="Zoom in"><svg class="ctrl-ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 6v12M6 12h12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
 </div>
 </div>
 <main class="stage">
@@ -38,13 +55,16 @@
 <div class="sheetbar" id="sheetbar">
 <button id="sheetclose" class="sheetclose" type="button" aria-expanded="false" aria-controls="panel" aria-label="Show details">
 <span class="handle" aria-hidden="true"></span>
-<span class="sheetline"><span id="sheetlabel">Tap a person</span><span id="sheetaction">Details</span></span>
+<span class="sheetline"><span id="sheetlabel">Family tree</span><span id="sheetaction">Details</span></span>
 </button>
 </div>
 <div class="peek-spacer" aria-hidden="true"></div>
-<div id="panel">
-<h2>Select a person</h2>
-<p class="empty-cta">Tap a name on the tree to see dates, relatives, and sources.</p>
+<div id="panel" inert>
+<h2>Family tree</h2>
+<p class="empty-cta">Person details load with the tree.</p>
+</div>
+<div class="sheet-foot" id="sheetfoot" inert>
+<button id="sheetback" type="button">Back to tree</button>
 </div>
 </aside>
 </main>
