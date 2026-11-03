@@ -379,6 +379,33 @@ everyone().forEach(p=>{
   pos[p.id]={x:edge+ROOT_GAP+W/2,y:gen[p.id]*GY};
   edge=pos[p.id].x+W/2;
 });
+// Two recorded parents who are not a couple still sit above their child.
+// No marriage bar is drawn between them.
+function placeUnmarriedCoparents(){
+  const groups=new Map();
+  everyone().forEach(c=>{
+    const ps=inTreeParents(c.id);
+    if(ps.length!==2||!pos[c.id])return;
+    const joined=(P[ps[0]].spouses||[]).some(s=>s.id===ps[1])||(P[ps[1]].spouses||[]).some(s=>s.id===ps[0]);
+    if(joined)return;
+    const key=ps.slice().sort().join('|');
+    if(!groups.has(key))groups.set(key,{parents:ps,kids:[]});
+    groups.get(key).kids.push(c.id);
+  });
+  groups.forEach(({parents,kids})=>{
+    const order=(P[kids[0]].parents||[]).filter(id=>parents.includes(id));
+    const row=order.length===parents.length?order:parents.slice();
+    const target=kids.reduce((s,id)=>s+pos[id].x,0)/kids.length;
+    const step=W+UNIT_GAP;
+    const start=target-((row.length-1)*step)/2;
+    row.forEach((id,i)=>{
+      pos[id]={x:start+i*step,y:gen[id]*GY};
+    });
+    const dx=clearShift(row);
+    if(dx)shiftUnit(row,dx);
+  });
+}
+placeUnmarriedCoparents();
   return {gen, pos};
 }
 // The full-tree layout keeps siblings outside a wide child row so nobody sits
@@ -420,6 +447,11 @@ function inTreeParents(id){return (P[id].parents||[]).filter(pid=>P[pid])}
 const NS='http://www.w3.org/2000/svg',vp=document.getElementById('vp');
 const el=(t,a,p=vp)=>{const e=document.createElementNS(NS,t);for(const k in a)e.setAttribute(k,a[k]);p.appendChild(e);return e};
 const linksG=el('g',{id:'links'});
+function coupleParents(parents){
+  if(parents.length!==2)return false;
+  const a=parents[0],b=parents[1];
+  return (P[a].spouses||[]).some(s=>s.id===b)||(P[b].spouses||[]).some(s=>s.id===a);
+}
 function drawTreeLinks(){
   linksG.replaceChildren();
   const groups=new Map();
@@ -431,6 +463,25 @@ function drawTreeLinks(){
     groups.get(key).kids.push(c.id);
   });
   groups.forEach(({parents,kids})=>{
+    const n=v=>Math.round(v*10)/10;
+    if(parents.length>1&&!coupleParents(parents)){
+      const xs=kids.map(id=>pos[id].x).sort((a,b)=>a-b);
+      const childTop=Math.min(...kids.map(id=>pos[id].y))-H/2;
+      const parentBottom=Math.max(...parents.map(id=>pos[id].y))+H/2;
+      let busY=childTop-18;
+      const below=parentBottom+16;
+      if(busY<below+14)busY=(below+childTop)/2;
+      let d='';
+      parents.forEach(id=>{d+=`M${n(pos[id].x)},${n(pos[id].y+H/2)} V${n(busY)}`});
+      const span=[...parents.map(id=>pos[id].x),...xs];
+      const left=Math.min(...span),right=Math.max(...span);
+      if(right-left>0.5)d+=` M${n(left)},${n(busY)} H${n(right)}`;
+      kids.slice().sort((a,b)=>pos[a].x-pos[b].x).forEach(id=>{
+        d+=` M${n(pos[id].x)},${n(busY)} V${n(pos[id].y-H/2)}`;
+      });
+      el('path',{class:'edge',d},linksG);
+      return;
+    }
     const dropX=parents.reduce((s,id)=>s+pos[id].x,0)/parents.length;
     const parentY=parents.reduce((s,id)=>s+pos[id].y,0)/parents.length;
     const yStart=parents.length>1?parentY:parentY+H/2;
@@ -440,7 +491,6 @@ function drawTreeLinks(){
     const below=parentY+H/2+16;
     let busY=childTop-18;
     if(busY<below+14)busY=(below+childTop)/2;
-    const n=v=>Math.round(v*10)/10;
     // Leave the marriage bar downward, then cross to the children so a
     // neighboring couple does not look like the parent of this set.
     let d=`M${n(dropX)},${n(yStart)} V${n(Math.min(below,busY))}`;
@@ -924,8 +974,11 @@ function show(id,opts={}){
   if(p.death&&p.death.matchNote)narrative.push(`<p class="relnote">${esc(p.death.matchNote)}</p>`);
   if(p.emigrationCandidate)narrative.push(`<p class="relnote">${esc(p.emigrationCandidate)}</p>`);
   push(facts,'Confirmation',esc(p.confirmation));
-  push(facts,'Occupation',esc(p.occupation));
+  const streetPin=p.id==='P34'?highMapLinks(HIGH_PINS.find(pin=>pin.id==='sankt-hans-gade')):'';
+  push(facts,'Residence',esc(p.residence)+(p.id==='P34'&&p.residence?streetPin:''));
+  push(facts,'Occupation',esc(p.occupation)+(p.id==='P34'&&!p.residence?streetPin:''));
   push(rels,'Parents',(p.parents||[]).map(ref=>`<div class="rel">${link(ref)}${P[ref]&&!isFamily(P[ref])?' <span class="relnote">RECORD-SOURCED, not confirmed by family.</span>':''}</div>`).join(''));
+  if(p.sameAs&&P[p.sameAs])push(rels,'Same person',`${link(p.sameAs)} <span class="relnote">Census alias. Parent link stays on the named father.</span>`);
   push(rels,'Foster parents',(p.fosterParents||[]).map(ref=>`<div class="rel">${link(ref)} <span class="relnote">Foster, not a blood parent.</span></div>`).join(''));
   const fosterKids=PEOPLE.people.filter(q=>(q.fosterParents||[]).includes(id)).map(q=>q.id);
   push(rels,'Foster children',fosterKids.map(ref=>`<div class="rel">${link(ref)} <span class="relnote">Foster child, not blood kin.</span></div>`).join(''));
