@@ -13,7 +13,7 @@ function descend(id){if(!P[id]||gen[id]===undefined)return;const g=gen[id];
 for(let n=0;n<4;n++)Object.keys(gen).slice().forEach(descend);
 const shift=Math.min(...Object.values(gen));if(shift)for(const id in gen)gen[id]-=shift;
 PEOPLE.people.forEach(p=>{if(gen[p.id]===undefined){gen[p.id]=0;order.push(p.id)}});
-const W=300,H=90,GX=34,GY=162,pos={};const rows={};
+const W=300,H=104,GX=32,GY=176,pos={};const rows={};
 order.forEach(id=>(rows[gen[id]]=rows[gen[id]]||[]).push(id));
 Object.keys(rows).sort((a,b)=>a-b).forEach(g=>{const r=rows[g];
  const key=id=>{const ps=(P[id].parents||[]).filter(x=>pos[x]);if(ps.length)return ps.reduce((s,x)=>s+pos[x].x,0)/ps.length;
@@ -44,22 +44,67 @@ function nameSize(short){
   return size;
 }
 const isCandidate=p=>/^CANDIDATE\b/i.test(p.status||'');
+function statusKind(p){return isFamily(p)?'family':isCandidate(p)?'candidate':'records'}
+function statusWord(kind){return kind==='family'?'Family':kind==='candidate'?'Candidate':'Records'}
+function statusLong(kind){return kind==='family'?'Family-confirmed':kind==='candidate'?'Candidate, not proven':'Record-sourced, not confirmed by family'}
+function iconStroke(extra){return Object.assign({fill:'none',stroke:'currentColor','stroke-width':'1.6','stroke-linecap':'round','stroke-linejoin':'round'},extra)}
+function drawIcon(kind,parent,x,y){
+  const g=el('g',{class:'badge-ico',transform:`translate(${x} ${y})`},parent);
+  if(kind==='family'){
+    el('circle',iconStroke({cx:8,cy:8,r:6.25}),g);
+    el('path',iconStroke({d:'M4.8 8.2 7 10.3 11.3 5.6'}),g);
+  }else if(kind==='records'){
+    el('rect',iconStroke({x:3.2,y:2.2,width:9.6,height:11.6,rx:1.4}),g);
+    el('path',iconStroke({d:'M5.4 6.2h5.2M5.4 8.8h5.2M5.4 11.4h3.2'}),g);
+  }else if(kind==='candidate'){
+    el('circle',iconStroke({cx:8,cy:8,r:6.25}),g);
+    el('path',iconStroke({d:'M6.2 6.5a1.9 1.9 0 1 1 2.4 1.8c-.55.35-.85.75-.85 1.45'}),g);
+    el('circle',{cx:8,cy:11.8,r:.9,fill:'currentColor'},g);
+  }else{
+    el('circle',iconStroke({cx:8,cy:8,r:6.25,'stroke-dasharray':'2.4 2.1'}),g);
+  }
+}
+function textWidth(label,size){
+  const t=el('text',{'font-family':'system-ui,-apple-system,"Segoe UI",sans-serif','font-size':String(size),'font-weight':'700'},vp);
+  t.textContent=label;
+  let w=0;
+  try{w=t.getComputedTextLength()}catch(err){w=0}
+  t.remove();
+  return w>1?w:label.length*size*0.62;
+}
+function addBadges(parent,parts){
+  const icon=16,after=8,between=24,size=13,padX=8;
+  const widths=parts.map(([,label])=>icon+after+textWidth(label,size));
+  const total=widths.reduce((sum,w)=>sum+w,0)+between*(parts.length-1);
+  let x=(W-total)/2;
+  const y=72;
+  parts.forEach(([kind,label],i)=>{
+    const b=el('g',{class:'badge-svg'+(kind==='living'?' badge-living':'')},parent);
+    el('rect',{class:'badge-bg',x:x-padX,y:y-4,width:widths[i]+padX*2,height:24,rx:12},b);
+    drawIcon(kind,b,x,y);
+    el('text',{class:'status',x:x+icon+after,y:y+12.5,'font-size':size},b).textContent=label;
+    x+=widths[i]+between;
+  });
+}
 const nodes={};
+document.getElementById('svg').getBoundingClientRect();
 PEOPLE.people.forEach(p=>{
   const {x,y}=pos[p.id];
   const short=shortName(p.name);
-  const status=isFamily(p)?'Family':isCandidate(p)?'Candidate':'Records';
+  const kind=statusKind(p);
+  const parts=[[kind,statusWord(kind)]];
+  if(p.living)parts.push(['living','Living']);
   const g=el('g',{
-    class:'node'+(isFamily(p)?' family':' records')+(p.living?' living':''),
+    class:'node '+(kind==='family'?'family':'records')+(kind==='candidate'?' candidate':'')+(p.living?' living':''),
     transform:`translate(${x-W/2},${y-H/2})`,
     tabindex:'0',role:'button','aria-pressed':'false','data-id':p.id,
-    'aria-label':`${short}, ${yrs(p)}, ${status}${p.living?', living':''}`
+    'aria-label':`${short}, ${yrs(p)}, ${statusLong(kind)}${p.living?', living person':''}`
   });
   el('rect',{width:W,height:H,rx:16},g);
-  el('text',{class:'nm',x:W/2,y:30,'text-anchor':'middle','font-size':nameSize(short)},g).textContent=short;
+  el('text',{class:'nm',x:W/2,y:32,'text-anchor':'middle','font-size':nameSize(short)},g).textContent=short;
   el('text',{class:'sub',x:W/2,y:52,'text-anchor':'middle','font-size':15},g).textContent=yrs(p);
-  el('text',{class:'status',x:W/2,y:72,'text-anchor':'middle'},g).textContent=status;
-  g.addEventListener('click',e=>{e.stopPropagation();if(skipClick){skipClick=false;return}show(p.id)});
+  addBadges(g,parts);
+  g.addEventListener('click',e=>{e.stopPropagation();if(skipClick){skipClick=false;return}show(p.id,{focus:MOBILE()?'sheet':'node'})});
   g.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();skipClick=true;show(p.id,{focus:true})}});
   nodes[p.id]=g;
 });
@@ -164,26 +209,45 @@ function endPointer(e){
   wrap.classList.remove('grabbing');
   if(id||moved||wasPinch)skipClick=true;
   if(!id)return;
-  show(id);
-  nodes[id]?.focus({preventScroll:true});
+  show(id,{focus:MOBILE()?'sheet':'node'});
 }
 svg.addEventListener('pointerup',endPointer);svg.addEventListener('pointercancel',endPointer);
-document.getElementById('zi').addEventListener('click',()=>zoom(1.2));
-document.getElementById('zo').addEventListener('click',()=>zoom(1/1.2));
-document.getElementById('zr').addEventListener('click',()=>viewPerson(selected||ROOT,{force:true}));
+function bindCtrl(id,fn){
+  const button=document.getElementById(id);
+  if(!button)return;
+  button.addEventListener('click',e=>{e.preventDefault();e.stopPropagation();fn()});
+}
+bindCtrl('zi',()=>zoom(1.25));
+bindCtrl('zo',()=>zoom(1/1.25));
+bindCtrl('zr',()=>viewPerson(selected||ROOT,{force:true}));
 
 function syncInert(){
   const hide=MOBILE()&&!sheet.classList.contains('open');
-  if(hide)panel.setAttribute('inert','');else panel.removeAttribute('inert');
+  const foot=document.getElementById('sheetfoot');
+  if(hide){
+    panel.setAttribute('inert','');
+    foot?.setAttribute('inert','');
+  }else{
+    panel.removeAttribute('inert');
+    foot?.removeAttribute('inert');
+  }
 }
 function setSheet(open,opts={}){
+  const was=sheet.classList.contains('open');
   sheet.classList.toggle('open',open);
   sheetToggle.setAttribute('aria-expanded',String(open));
   sheetAction.textContent=open?'Close':'Details';
-  const who=sheetLabel.textContent||'Tap a person';
+  const who=sheetLabel.textContent||'Family tree';
   sheetToggle.setAttribute('aria-label',open?`Close details for ${who}`:`Show details for ${who}`);
+  if(selected)sheet.dataset.person=selected;
+  if(MOBILE()){
+    if(open){sheet.setAttribute('role','dialog');sheet.setAttribute('aria-modal','false')}
+    else{sheet.removeAttribute('role');sheet.removeAttribute('aria-modal')}
+  }else sheet.setAttribute('role','complementary');
   syncInert();
   if(!opts.skipView)viewPerson(selected||ROOT,{});
+  if(open&&!was&&opts.focusSheet)panel.querySelector('h2')?.focus({preventScroll:true});
+  if(!open&&was&&sheet.contains(document.activeElement))(nodes[selected]||sheetToggle).focus({preventScroll:true});
 }
 let sheetDrag=null;
 sheetToggle.addEventListener('pointerdown',e=>{
@@ -218,6 +282,7 @@ sheetToggle.addEventListener('click',()=>{
   if(!MOBILE())return;
   setSheet(!sheet.classList.contains('open'));
 });
+document.getElementById('sheetback')?.addEventListener('click',()=>setSheet(false));
 
 const link=x=>P[x]?`<a class="p" href="#${encodeURIComponent(x)}" data-id="${x}">${esc(P[x].name)}</a>`:esc(x)+' <span class="muted">(not in tree)</span>';
 function srcHtml(s,personId){
@@ -238,8 +303,11 @@ function show(id,opts={}){
   Object.values(nodes).forEach(n=>{n.classList.remove('sel');n.setAttribute('aria-pressed','false')});
   nodes[id].classList.add('sel');nodes[id].setAttribute('aria-pressed','true');
   const kids=new Set([...(p.children||[])]);PEOPLE.people.forEach(q=>(q.parents||[]).includes(id)&&kids.add(q.id));
-  const pills=(isCandidate(p)?'<span class="pill r">Candidate · not proven</span>':isFamily(p)?'<span class="pill f">Family-confirmed</span>':'<span class="pill r">Record-sourced · not confirmed by family</span>')+(isOrigin(p)?'<span class="pill f">Family-confirmed origin</span>':'')+(p.living?'<span class="pill l">LIVING</span>':'');
-  let h=`<h2 tabindex="-1">${esc(p.name)}</h2><div class="pills">${pills}</div>`;
+  const kind=statusKind(p);
+  const pills=[badgeHtml(kind,kind==='family'?'Family-confirmed':kind==='candidate'?'Candidate · not proven':'Record-sourced · not confirmed by family')];
+  if(isOrigin(p))pills.push(badgeHtml('family','Family-confirmed origin'));
+  if(p.living)pills.push(badgeHtml('living','Living'));
+  let h=`<h2 tabindex="-1">${esc(p.name)}</h2><div class="pills">${pills.join('')}</div>`;
   const facts=[],rels=[];
   const push=(list,t,v)=>{if(v)list.push(`<dt>${t}</dt><dd>${v}</dd>`)};
   if(Array.isArray(p.altNames)&&p.altNames.length)push(facts,'Name variants',p.altNames.map(esc).join('<br>'));
@@ -282,10 +350,12 @@ function show(id,opts={}){
   h+=`<p class="fineprint">ID ${esc(p.id)}. Double-check against primary records before relying on any of this.</p>`;
   panel.innerHTML=h;
   sheetLabel.textContent=shortName(p.name);
-  if(location.hash!=='#'+id)history.replaceState(null,'','#'+id);
-  setSheet(true,{skipView:true});
+  // #id is the person deep link Phase 2 person pages can take over.
+  if(opts.history!==false&&location.hash!=='#'+id)history.replaceState(null,'','#'+id);
+  const openSheet=opts.sheet!==undefined?!!opts.sheet:true;
+  setSheet(openSheet,{skipView:true,focusSheet:opts.focus==='sheet'||opts.focus===true});
   viewPerson(id,{force:!!opts.force});
-  if(opts.focus)panel.querySelector('h2')?.focus();
+  if(opts.focus==='node')nodes[id]?.focus({preventScroll:true});
 }
 panel.addEventListener('click',e=>{const a=e.target.closest('a.p');if(!a)return;e.preventDefault();show(a.dataset.id)});
 
@@ -298,7 +368,7 @@ addEventListener('keydown',e=>{
     return;
   }
   const inSheet=sheet.classList.contains('open')&&sheet.contains(e.target);
-  if(inSheet||e.target.closest?.('summary,a'))return;
+  if(inSheet||e.target.closest?.('summary,a,button,input,textarea,select'))return;
   if(e.key==='+'||e.key==='='){zoom(1.2);e.preventDefault()}
   else if(e.key==='-'||e.key==='_'){zoom(1/1.2);e.preventDefault()}
   else if(e.key==='0'){viewPerson(selected||ROOT,{force:true});e.preventDefault()}
@@ -315,10 +385,12 @@ addEventListener('resize',()=>{
   viewPerson(selected||ROOT,{force:jumped||!selected});
 });
 function boot(){
-  syncPeek();syncInert();
-  const id=decodeURIComponent(location.hash.replace(/^#/,''));
-  if(id&&P[id])show(id,{force:true});
+  syncPeek();
+  const raw=decodeURIComponent((location.hash||'').replace(/^#/,''));
+  const known=!!(raw&&P[raw]&&nodes[raw]);
+  const id=known?raw:(P[ROOT]&&nodes[ROOT]?ROOT:(PEOPLE.people.find(p=>nodes[p.id])||{}).id);
+  if(id)show(id,{force:true,sheet:known||!MOBILE(),focus:false,history:known});
   else viewPerson(ROOT,{force:true});
   lastW=svg.getBoundingClientRect().width;
 }
-requestAnimationFrame(boot);
+boot();
