@@ -59,12 +59,12 @@ PEOPLE.people.forEach(p=>{
   el('text',{class:'nm',x:W/2,y:30,'text-anchor':'middle','font-size':nameSize(short)},g).textContent=short;
   el('text',{class:'sub',x:W/2,y:52,'text-anchor':'middle','font-size':15},g).textContent=yrs(p);
   el('text',{class:'status',x:W/2,y:72,'text-anchor':'middle'},g).textContent=status;
-  g.addEventListener('click',e=>{e.stopPropagation();if(suppressClick){suppressClick=false;return}show(p.id)});
-  g.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();show(p.id,{focus:true})}});
+  g.addEventListener('click',e=>{e.stopPropagation();if(skipClick){skipClick=false;return}show(p.id)});
+  g.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();skipClick=true;show(p.id,{focus:true})}});
   nodes[p.id]=g;
 });
 
-let tx=0,ty=0,k=1,suppressClick=false,selected=null,lastW=0;
+let tx=0,ty=0,k=1,skipClick=false,selected=null,lastW=0;
 const svg=document.getElementById('svg'),wrap=document.getElementById('treewrap');
 const sheet=document.getElementById('sheet'),sheetToggle=document.getElementById('sheetclose');
 const sheetLabel=document.getElementById('sheetlabel'),sheetAction=document.getElementById('sheetaction');
@@ -112,18 +112,23 @@ function zoom(f,cx,cy){
   const s=nk/k;tx=cx-(cx-tx)*s;ty=cy-(cy-ty)*s;k=nk;apply();
 }
 svg.addEventListener('wheel',e=>{e.preventDefault();const r=svg.getBoundingClientRect();zoom(e.deltaY<0?1.12:1/1.12,e.clientX-r.left,e.clientY-r.top)},{passive:false});
-const pts=new Map();let drag=null,pinch=null;
+const pts=new Map();let drag=null,pinch=null,pressId=null,pinched=false;
+function nodeIdFrom(e){const n=e.target?.closest?.('.node');return n?.getAttribute('data-id')||null}
+// setPointerCapture retargets the later click to #svg, so a listener on the card never runs.
+// Remember the card from pointerdown and open it on pointerup unless this became a drag or pinch.
+svg.addEventListener('click',e=>{if(!skipClick)return;skipClick=false;e.stopPropagation()},true);
 svg.addEventListener('pointerdown',e=>{
   if(e.button!==undefined&&e.button!==0)return;
+  svg.setPointerCapture?.(e.pointerId);
   pts.set(e.pointerId,{x:e.clientX,y:e.clientY});
   if(pts.size===1){
-    drag={x:e.clientX-tx,y:e.clientY-ty,ox:e.clientX,oy:e.clientY,moved:false,id:e.target.closest?.('.node')?.dataset.id||''};
-    wrap.classList.add('grabbing');
+    pressId=nodeIdFrom(e);
+    drag={x:e.clientX-tx,y:e.clientY-ty,ox:e.clientX,oy:e.clientY,moved:false};
   }else if(pts.size===2){
-    drag=null;
+    drag=null;pressId=null;pinched=true;
+    wrap.classList.remove('grabbing');
     const [a,b]=[...pts.values()];
     pinch={dist:Math.hypot(a.x-b.x,a.y-b.y)||1,k,tx,ty};
-    for(const id of pts.keys())svg.setPointerCapture?.(id);
   }
 });
 svg.addEventListener('pointermove',e=>{
@@ -136,24 +141,31 @@ svg.addEventListener('pointermove',e=>{
     const r=svg.getBoundingClientRect();
     const px=(a.x+b.x)/2-r.left,py=(a.y+b.y)/2-r.top;
     const s=nk/pinch.k;
-    tx=px-(px-pinch.tx)*s;ty=py-(py-pinch.ty)*s;k=nk;apply();suppressClick=true;
+    tx=px-(px-pinch.tx)*s;ty=py-(py-pinch.ty)*s;k=nk;apply();
+    pressId=null;pinched=true;
   }else if(drag&&pts.size===1){
-    if(!drag.moved&&Math.hypot(e.clientX-drag.ox,e.clientY-drag.oy)>10){
-      drag.moved=true;
-      svg.setPointerCapture?.(e.pointerId);
+    if(!drag.moved){
+      if(Math.hypot(e.clientX-drag.ox,e.clientY-drag.oy)<=10)return;
+      drag.moved=true;pressId=null;
+      drag.x=e.clientX-tx;drag.y=e.clientY-ty;
+      wrap.classList.add('grabbing');
     }
-    if(drag.moved){tx=e.clientX-drag.x;ty=e.clientY-drag.y;apply()}
+    tx=e.clientX-drag.x;ty=e.clientY-drag.y;apply();
   }
 });
 function endPointer(e){
+  if(!pts.has(e.pointerId))return;
   pts.delete(e.pointerId);
   if(pts.size<2)pinch=null;
   if(pts.size)return;
-  const openId=e.type!=='pointercancel'&&drag&&!drag.moved&&drag.id;
-  if(drag?.moved)suppressClick=true;
-  drag=null;
+  const moved=!!drag?.moved,wasPinch=pinched;
+  const id=e.type==='pointerup'&&!moved&&!wasPinch?pressId:null;
+  drag=null;pressId=null;pinched=false;
   wrap.classList.remove('grabbing');
-  if(openId){suppressClick=true;show(openId)}
+  if(id||moved||wasPinch)skipClick=true;
+  if(!id)return;
+  show(id);
+  nodes[id]?.focus({preventScroll:true});
 }
 svg.addEventListener('pointerup',endPointer);svg.addEventListener('pointercancel',endPointer);
 document.getElementById('zi').addEventListener('click',()=>zoom(1.2));
