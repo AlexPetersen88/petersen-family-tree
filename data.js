@@ -931,22 +931,26 @@ window.SOURCES={
  "S31": {
   "id": "S31",
   "flag": null,
-  "text": "Bjernede Hovedministerialbog 1862\u2013, births/baptisms, image 7: Hans Peder Pedersen b. 28 Feb 1864, bapt. 5 Jun 1864, parents (tentative) Hans Pedersen & Ane Rasmusdatter. Arkivalieronline: https://arkivalieronline.rigsarkivet.dk/en/billedviser?epid=17223538",
+  "text": "Bjernede Hovedministerialbog 1862\u2013, births/baptisms, image 7: Hans Peder Pedersen b. 28 Feb 1864, bapt. 5 Jun 1864, parents (tentative) Hans Pedersen & Ane Rasmusdatter. Arkivalieronline bsid=203238 image 7: https://arkivalieronline.rigsarkivet.dk/en/billedviser?bsid=203238#203238,38546364",
   "urls": [
-   "https://arkivalieronline.rigsarkivet.dk/en/billedviser?epid=17223538"
+   "https://arkivalieronline.rigsarkivet.dk/en/billedviser?bsid=203238#203238,38546364"
   ]
  },
  "S32": {
   "id": "S32",
   "flag": null,
-  "text": "Bjernede church book vol. 1858 K\u20131891 K, confirmations, image 24: Hans Peter Petersen confirmed Palmes\u00f8ndag 14 Apr 1878; parents Boelsmand Hans Petersen & Ane Rasmusdatter; b. 28 Feb 1864. Arkivalieronline (Rigsarkivet).",
-  "urls": []
+  "text": "Bjernede church book vol. 1858 K\u20131891 K, confirmations, image 24: Hans Peter Petersen confirmed Palmes\u00f8ndag 14 Apr 1878; parents Boelsmand Hans Petersen & Ane Rasmusdatter; b. 28 Feb 1864. Arkivalieronline bsid=203240 image 24: https://arkivalieronline.rigsarkivet.dk/en/billedviser?bsid=203240#203240,38546637",
+  "urls": [
+   "https://arkivalieronline.rigsarkivet.dk/en/billedviser?bsid=203240#203240,38546637"
+  ]
  },
  "S33": {
   "id": "S33",
   "flag": null,
-  "text": "1880 Danish census, Bjernede sogn, Sor\u00f8 amt, 1 Feb 1880, image 5/71: Hans Peder Pedersen, 15, stepson in household of Hans Rasmussen & Ane Rasmussen (low-confidence reads). Arkivalieronline (Rigsarkivet).",
-  "urls": []
+  "text": "1880 Danish census, Bjernede sogn, Sor\u00f8 amt, 1 Feb 1880, image 5/71: Hans Peder Pedersen, 15, stepson in household of Hans Rasmussen & Ane Rasmussen (low-confidence reads). Arkivalieronline bsid=55655 image 5: https://arkivalieronline.rigsarkivet.dk/en/billedviser?bsid=55655#55655,11993699",
+  "urls": [
+   "https://arkivalieronline.rigsarkivet.dk/en/billedviser?bsid=55655#55655,11993699"
+  ]
  },
  "S34": {
   "id": "S34",
@@ -959,25 +963,25 @@ window.SOURCES={
  "S35": {
   "id": "S35",
   "flag": null,
-  "text": "Bjernede Sogn, Hovedministerialbog 1862 FVD\u20131878 (156 images), Rigsarkivet Arkivalieronline, epid=17223538: https://arkivalieronline.rigsarkivet.dk/en/billedviser?epid=17223538",
+  "text": "Bjernede Sogn, Hovedministerialbog 1862 FVD\u20131878 (156 images), Rigsarkivet Arkivalieronline, epid=17223538, bsid=203238: https://arkivalieronline.rigsarkivet.dk/en/billedviser?bsid=203238",
   "urls": [
-   "https://arkivalieronline.rigsarkivet.dk/en/billedviser?epid=17223538"
+   "https://arkivalieronline.rigsarkivet.dk/en/billedviser?bsid=203238"
   ]
  },
  "S36": {
   "id": "S36",
   "flag": null,
-  "text": "S35 img 99, Copulerede 1862 no. 5: marriage 14 Oct 1862 Bjernede, Ungkarl/Hjulmand Hans Pedersen (b. 25 Feb 1833 Walsmagle?) & Pige Ane Rasmusdatter (b. 17 Jun 1843 Bjernede Lodsgaard?): https://arkivalieronline.rigsarkivet.dk/en/billedviser?epid=17223538 (shots 06, 07)",
+  "text": "S35 img 99, Copulerede 1862 no. 5: marriage 14 Oct 1862 Bjernede, Ungkarl/Hjulmand Hans Pedersen (b. 25 Feb 1833 Walsmagle?) & Pige Ane Rasmusdatter (b. 17 Jun 1843 Bjernede Lodsgaard?): https://arkivalieronline.rigsarkivet.dk/en/billedviser?bsid=203238#203238,38546457 (shots 06, 07)",
   "urls": [
-   "https://arkivalieronline.rigsarkivet.dk/en/billedviser?epid=17223538"
+   "https://arkivalieronline.rigsarkivet.dk/en/billedviser?bsid=203238#203238,38546457"
   ]
  },
  "S37": {
   "id": "S37",
   "flag": null,
-  "text": "S35 img 125, D\u00f8de Mandk\u00f8n 1867 no. 15: Hans Pedersen, hjulmand Bjernedegaardshuse, d. 11 Sep 1867, bur. 17 Sep 1867, age 34, b. 25 Feb 1833, \"S\u00f8n af Ane Marie Hans Dat.(?)\": https://arkivalieronline.rigsarkivet.dk/en/billedviser?epid=17223538 (shots 10, 10b, 11, 11b)",
+  "text": "S35 img 125, D\u00f8de Mandk\u00f8n 1867 no. 15: Hans Pedersen, hjulmand Bjernedegaardshuse, d. 11 Sep 1867, bur. 17 Sep 1867, age 34, b. 25 Feb 1833, \"S\u00f8n af Ane Marie Hans Dat.(?)\": https://arkivalieronline.rigsarkivet.dk/en/billedviser?bsid=203238#203238,38546483 (shots 10, 10b, 11, 11b)",
   "urls": [
-   "https://arkivalieronline.rigsarkivet.dk/en/billedviser?epid=17223538"
+   "https://arkivalieronline.rigsarkivet.dk/en/billedviser?bsid=203238#203238,38546483"
   ]
  },
  "S38": {
@@ -1031,9 +1035,9 @@ window.SOURCES={
  "S44": {
   "id": "S44",
   "flag": null,
-  "text": "1870 Danish census, Bjernede, Sor\u00f8 Alsted herred, 1 Feb 1870, img 23 (page 66), \"1 Huus\": Anne Rasmusen K 27 widow; Hans Peter Pedersen M 6 unmarried: https://arkivalieronline.rigsarkivet.dk/da/billedviser?bsid=53367 (shots 18, 19). NB img 18 Hans Peter Pedersen ~19, servant = namesake, NOT ours.",
+  "text": "1870 Danish census, Bjernede, Sor\u00f8 Alsted herred, 1 Feb 1870, img 23 (page 66), \"1 Huus\": Anne Rasmusen K 27 widow; Hans Peter Pedersen M 6 unmarried: https://arkivalieronline.rigsarkivet.dk/da/billedviser?bsid=53367#53367,11831254 (shots 18, 19). NB img 18 Hans Peter Pedersen ~19, servant = namesake, NOT ours.",
   "urls": [
-   "https://arkivalieronline.rigsarkivet.dk/da/billedviser?bsid=53367"
+   "https://arkivalieronline.rigsarkivet.dk/da/billedviser?bsid=53367#53367,11831254"
   ]
  },
  "S45": {
