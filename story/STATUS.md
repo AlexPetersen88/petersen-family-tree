@@ -21,9 +21,9 @@ Updated: 2026-11-03 (America/Chicago)
 - No invented scenes, dialogue, motives, or places. Say what is unknown.
 
 ## Deferred (not narrated as settled)
-- P28 Peder Johansen: named in story as *udlagt barnefader* from S51/S56; NOT narrated as proven father (Alex 2026-11-03 — controversy is part of the arc).
+- P34 Peder Johansen of Ringsted: LOCKED recorded/named father (*udlagt barnefader*), S51/S52/S56. Decision B (Alex ~3:33 PM CT, 2026-11-03) locks him as the same man as FT-1834 Peter Johansen ~30, ugift, tjenestekarl on Sankt Hans Gade (S64). P28 is the census alias; the parent link is only P34→P18. Biological paternity/DNA not claimed. No marriage to P25. S68/S71 are not his baptisms.
 - P25 mother's patronymic: LOCKED Hansdatter 2026-11-03 (Clausdatter S51 superseded wrong read). Parents unknown; b. 23 Mar 1805 CANDIDATE only.
-- S63/S64 FT-1834 Ringsted Sankt Hans Gade: CANDIDATE only; same street, not same household; no marriage.
+- S63 FT-1834 Ane Marie Hansdatter on Sankt Hans Gade: CANDIDATE only for P25. Do not say she and P34 lived on the same street, or shared a house, as fact. S64 is P34's street residence only.
 - S67, S68, S69, S71 Ringsted baptisms: not used.
 - Rasmus Peter as the Sleepy Eye emigrant (S49): not used.
 - Rudolph = Hans O. (1893): narrated as Genealogist date-match (S95), name change unexplained.
@@ -35,6 +35,7 @@ Updated: 2026-11-03 (America/Chicago)
 - P18 cause of death (LOW reading) and the 1920 naturalization year: not used.
 
 ## Updates
+- 2026-11-03: Decision B folded — P34 named father = FT-1834 Peter Johansen, ~30, ugift, tjenestekarl, Sankt Hans Gade (S64). P28 is the census alias. S63 stays CANDIDATE. Street pin is P34's 1834 residence only (Sct. Hansgade; no house number; not a shared house). Dig 21 titles still OUT. No DNA proof and no P25×P34 marriage.
 - 2026-11-03: Era-context pack (1830s/1860s) CLEARED by Genealogist and folded: Ch.1 "The world he was born into" + confirmation 1736 note; Ch.2 "The Denmark of their wedding" + 1864 war beat (no service claim) + Bjernede Kirke K8/K9 + Gyrstinge K1; Abridged + Kids era colour; SOURCE-KEY K-block. Dig 21 Indsidder/Almisselem/aftægt still OUT; S207/S222 couple as P25 parents still CANDIDATE. Thin spots (farming calendar, roads, local school, Sorø Amt home front) omitted or UNVERIFIED. PDFs rebuilt + OneDrive refreshed.
 - 2026-11-03: Dig 24 S222 betrothal (Haraldsted Præstegaarden, 21 May 1797; m. 15 Oct 1797) folded into Ch.1/Abridged/Kids; couple → P25 parents CANDIDATE only (not locked). Dig 21 Indsidder/Almisselem/aftægt still OUT. Era-context later CLEARED and folded (see next entry). PDFs rebuilt + OneDrive refreshed.
 - 2026-11-03: Chapter 3 destination upgraded to Springfield, Minn. per Genealogist S83; P29/P30 grandparents still not narrated.

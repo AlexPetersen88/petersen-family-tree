@@ -25,20 +25,24 @@ function mountBadges(){
   });
 }
 mountBadges();
-// Cleared HIGH visit pins only. Same five as story/render_html.py.
+// Cleared HIGH visit pins. Sankt Hans Gade is manual: only P34's card,
+// not the S63 candidate sentence and not a shared house with Ane Marie.
 const HIGH_PINS=[
   {id:'bjernede-kirke',label:'Bjernede Kirke',short:'Bjernede Kirke',osm:'https://www.openstreetmap.org/way/264012018',google:'https://www.google.com/maps/search/?api=1&query=Bjernede+Kirke+Bjernede+Kirkevej+1A+4180+Sor%C3%B8',phrases:['Bjernede churchyard','Bjernede Kirke','Bjernede church']},
   {id:'valsomagle',label:'Valsømagle',short:'Valsømagle',osm:'https://www.openstreetmap.org/node/9956361203',google:'https://www.google.com/maps?q=55.4933219,11.8213452',phrases:['Walsøemagle','Walsømagle','Valsømagle','Walsmagle']},
   {id:'haraldsted-kirke',label:'Haraldsted Kirke and kirkegård',short:'Haraldsted Kirke',osm:'https://www.openstreetmap.org/way/264012020',google:'https://www.google.com/maps?q=55.4915324,11.7681618',phrases:['Haraldsted kirkegård','Haraldsted Kirkegaard','Haraldsted churchyard','Haraldsted Kirke','Haraldsted church']},
   {id:'dannebod',label:'Dannebod Cemetery',short:'Dannebod',osm:'https://www.openstreetmap.org/?mlat=44.31115&mlon=-94.89040#map=16/44.31115/-94.89040',google:'https://www.google.com/maps?q=44.31115,-94.89040',phrases:['Dannebod Cemetery','Dannebod']},
-  {id:'praestegaard',label:'Haraldsted Præstegaarden',short:'Præstegaarden',osm:'https://www.openstreetmap.org/node/341232574',google:'https://www.google.com/maps?q=55.4910250,11.7692050',phrases:['Haraldsted Præstegaarden','Haraldsted Præstegård','Haraldsted parsonage','the parish parsonage','the parsonage','præstegård'],candidate:true}
+  {id:'praestegaard',label:'Haraldsted Præstegaarden',short:'Præstegaarden',osm:'https://www.openstreetmap.org/node/341232574',google:'https://www.google.com/maps?q=55.4910250,11.7692050',phrases:['Haraldsted Præstegaarden','Haraldsted Præstegård','Haraldsted parsonage','the parish parsonage','the parsonage','præstegård'],candidate:true},
+  {id:'sankt-hans-gade',label:'Sankt Hans Gade (Sct. Hansgade)',short:'Sct. Hansgade',osm:'https://www.openstreetmap.org/#map=18/55.4445/11.7908',google:'https://www.google.com/maps/search/?api=1&query=Sct+Hansgade+4100+Ringsted',phrases:[],manual:true,caption:"P34's 1834 street. No house number. Not a shared house."}
 ];
 function highMapLinks(pin){
   const label=esc(pin.label);
-  const group=pin.candidate
+  const group=pin.caption
+    ? `${pin.label}. ${pin.caption}`
+    : pin.candidate
     ? `${pin.label}. Place pin only. The couple as parents is still a candidate, not proven.`
     : `Map links for ${pin.label}`;
-  const caption=pin.candidate?'<i class="map-caption">Parents still a candidate</i>':'';
+  const caption=pin.caption?`<i class="map-caption">${esc(pin.caption)}</i>`:pin.candidate?'<i class="map-caption">Parents still a candidate</i>':'';
   return `<span class="map-links" role="group" aria-label="${esc(group)}"><a class="map-link" href="${esc(pin.osm)}" target="_blank" rel="noopener noreferrer" aria-label="Open map of ${label} on OpenStreetMap">Map · ${esc(pin.short)}</a><a class="map-link map-link-google" href="${esc(pin.google)}" target="_blank" rel="noopener noreferrer" aria-label="Google Maps for ${label}">Google</a>${caption}</span>`;
 }
 function sentenceEnd(text, after){
@@ -63,6 +67,7 @@ function decorateHighPlaces(html){
     if(part.startsWith('<'))return part;
     const hits=[];
     HIGH_PINS.forEach(pin=>{
+      if(pin.manual)return;
       let best=null;
       pin.phrases.forEach(phrase=>{
         const i=part.toLowerCase().indexOf(phrase.toLowerCase());

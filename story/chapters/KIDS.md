@@ -13,11 +13,13 @@ Denmark is a small country north of Germany, and Valsømagle sat on its biggest 
 
 And that is where the puzzle begins.
 
-Hans's mother was a young servant girl, and she was not married. The baptism book named a man, Peder Johansen of Ringsted, a town about four miles away, as the father. That was the name his mother gave. But no later paper ever proves it. Was Peder really his father? Nobody knows, even today.
+Hans's mother was a young servant girl, and she was not married. The baptism book named a man, Peder Johansen of Ringsted, a town about four miles away, as the father. That was the name his mother gave, and the confirmation book lists him again years later. So his name is locked in the records. But was Peder really his father? No paper proves it, and nobody knows, even today.
+
+A few weeks after baby Hans was baptized, around 1 May 1833, his mother left the village to work as a servant girl in Ringsted. The church book says so. But Ringsted's books do not show where in town she arrived. That part is still a mystery.
 
 His mother's name was Ane Marie Hansdatter. (One old book seemed to spell it differently, but that turned out to be a wrong reading.) Family researchers also found an old record of a couple from her village promising to marry at the Haraldsted parsonage, the priest's house next to the church, in 1797. They *might* be her parents, but nobody knows for sure yet.
 
-Here is a clue. A year later, the government counted the people of Ringsted. On one street, Sankt Hans Gade, the counters wrote down a servant girl (*tjenestepige*) named Ane Marie Hansdatter, 27, and a servant named Peter Johansen, 30. Same street! Were they the same two people from the baptism? Maybe. But the list does not show them living together, and no wedding has ever been found. It is a clue, not an answer.
+A year later, the government counted the people of Ringsted. On a street called Sankt Hans Gade (it is still on the map in Ringsted today), the counters wrote down a servant named Peter Johansen, about 30, not married. He was a *tjenestekarl*, a hired man who worked in someone else's house. The researchers checked carefully: he is the same man the church books name as Hans's father. Now we know a little about him! But the books only say the mother *named* him; nobody can prove he really was the father. And here is a maybe: on that same street the counters also wrote down a servant girl named Ane Marie Hansdatter, 27. Was she Hans's mother? Maybe. Nobody knows for sure, and the list does not show her living with Peter. It is a clue, not an answer.
 
 So here is a baby with a big question mark about his father. What would happen to him?
 

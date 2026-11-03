@@ -65,8 +65,10 @@ URL_RE = re.compile(r"https://[^\s)<]+")
 CODE_RE = re.compile(r"`([^`]+)`")
 CHAPTER_RE = re.compile(r"Chapter ([1-4])")
 MAP_RE = re.compile(r"\[map\]\((https://[^)\s]+)\)")
-# Cleared HIGH visit pins only. Held pins (matr. 5a GPS, Sankt Hans Gade,
-# Brookville farm, Dig 21 / 1807 person-link) are intentionally absent.
+# Cleared HIGH visit pins only. Held pins (matr. 5a GPS, Brookville farm,
+# Dig 21 / 1807 person-link) are intentionally absent.
+# Sankt Hans Gade is explicit: the [map] link sits on P34's 1834 residence
+# only. Phrase scan must not attach it to the S63 candidate sentence.
 PINS = [
     {
         "id": "bjernede-kirke",
@@ -127,6 +129,17 @@ PINS = [
         "marks": ("341232574", "55.4910250"),
         "candidate": True,
     },
+    {
+        "id": "sankt-hans-gade",
+        "label": "Sankt Hans Gade (Sct. Hansgade)",
+        "short": "Sct. Hansgade",
+        "osm": "https://www.openstreetmap.org/#map=18/55.4445/11.7908",
+        "google": "https://www.google.com/maps/search/?api=1&query=Sct+Hansgade+4100+Ringsted",
+        "phrases": ["Sct. Hansgade", "Sankt Hans Gade"],
+        "marks": ("55.4445", "11.7908"),
+        "explicit": True,
+        "caption": "P34's 1834 street. No house number. Not a shared house.",
+    },
 ]
 PIN_BY_ID = {pin["id"]: pin for pin in PINS}
 
@@ -140,10 +153,12 @@ def parse_sources(text):
     for line in text.splitlines():
         if not re.match(r"^- [SK]\d+", line):
             continue
-        match = re.match(r"^- ([SK]\d+)\s*(.*)$", line)
+        # One search can be cited as "S108 / S157 (note): body".
+        match = re.match(r"^- ((?:[SK]\d+)(?: / [SK]\d+)*)\s*(.*)$", line)
         if not match:
             raise SystemExit(f"Could not parse source line: {line[:80]}")
-        sid, rest = match.group(1), match.group(2)
+        sids = re.findall(r"[SK]\d+", match.group(1))
+        rest = match.group(2)
         note = ""
         if rest.startswith("("):
             split = rest.find("): ")
@@ -157,7 +172,8 @@ def parse_sources(text):
             body = rest
         if not body.strip():
             raise SystemExit(f"Could not parse source body: {line[:80]}")
-        entries.append({"id": sid, "note": note, "body": body})
+        for sid in sids:
+            entries.append({"id": sid, "note": note, "body": body})
     if not entries:
         raise SystemExit("No source-key entries found")
     return entries
@@ -284,7 +300,7 @@ def apply_maps(text, linked, injected):
 
     base = MAP_RE.sub("", text)
     for pin in PINS:
-        if pin["id"] in linked or pin["id"] in injected:
+        if pin.get("explicit") or pin["id"] in linked or pin["id"] in injected:
             continue
         found = first_phrase_span(base, pin["phrases"])
         if not found:
@@ -310,7 +326,10 @@ def map_widget(pin):
     label = html.escape(pin["label"])
     group = f"Map links for {pin['label']}"
     caption = ""
-    if pin.get("candidate"):
+    if pin.get("caption"):
+        group = f"{pin['label']}. {pin['caption']}"
+        caption = f'<i class="map-caption">{html.escape(pin["caption"])}</i>'
+    elif pin.get("candidate"):
         group = (
             f"{pin['label']}. Place pin only. "
             "The couple as parents is still a candidate, not proven."
@@ -688,6 +707,9 @@ def assert_high_maps():
                 between = rest[:map_at].lower()
                 widget = rest[map_at : map_at + 500].lower()
                 if any(name in between or name in widget for name in high_names):
+                    continue
+                # The street pin belongs on P34's Sankt Hans Gade sentence only.
+                if marker == "Sankt Hans Gade" and "55.4445" in widget:
                     continue
                 raise SystemExit(f"{path.name} puts a map link on {marker}")
 

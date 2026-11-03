@@ -161,12 +161,15 @@ window.PEOPLE={
     "S102",
     "S104",
     "S105",
-    "S155"
+    "S155",
+    "S217",
+    "S236",
+    "S237"
    ],
    "status": "VERIFIED: 1900 census as Mary + FAG; maiden Jensen from Elmer MNHS/FAG",
    "familyConfirmed": "FAMILY-CONFIRMED via Michael Don Petersen (Alex's father), 2026-11-03: Elmer Hamilton Petersen's parents were Hans Peter Petersen and Maren Sophia (Jensen; 'Mary' on 1900 census). Public-record citations (FAG, MNHS, 1900 census) retained.",
    "children_born_living_1910": "7 born / 7 living, married 19 yrs (S28)",
-   "notes": " | S101 NEGATIVE this pass: no MNHS death 1937 Redwood/Brown/Lyon match for Maren Sophia; 1937 death year remains secondary/unconfirmed by free index. | S102 FAG secondary parents/sibs list; S104 1880 Nels household not found this pass; S105 sibs of Hans\u00d7Maren obits negative this pass. | S155 CANDIDATE: 'Mrs. Hans Petersen of Brookville' living Nov 1929 as Ethel's surviving mother (probable = P7). Does not prove 1937 death. S154 NEGATIVE-by-unavailability 1937 obit (Hub timeout; Gazette 1937 issues 404); free CA/Hub dig closed; 1937 death year still secondary/unconfirmed by free newspaper.",
+   "notes": " | S101 NEGATIVE this pass: no MNHS death 1937 Redwood/Brown/Lyon match for Maren Sophia; 1937 death year remains secondary/unconfirmed by free index. | S102 FAG secondary parents/sibs list; S104 1880 Nels household not found this pass; S105 sibs of Hans\u00d7Maren obits negative this pass. | S155 CANDIDATE: 'Mrs. Hans Petersen of Brookville' living Nov 1929 as Ethel's surviving mother (probable = P7). Does not prove 1937 death. S154 NEGATIVE-by-unavailability 1937 obit (Hub timeout; Gazette 1937 issues 404); free CA/Hub dig closed; 1937 death year still secondary/unconfirmed by free newspaper. | Pack 9 PARTIAL (2026-11-03): S104 (1880 not located) SUPERSEDED by S217 HIT \u2014 1880 Brookville Twp, Redwood Co MN, ED 222 p11, dw/fam 96/97: Nels Jensen 31 farmer b. Denmark, wife Mary 30 b. Denmark, dau Sophia 7 b. MN (= P7). Corroborates FAG secondary parents (S102) MED\u2192HIGH for Nels+Mary household / Sophia as daughter. Full names 'Nels Peter Jensen' / 'Anne Marie Hansen' and their years remain FAG secondary (census gives Nels / Mary only). 1880 household siblings (census only, no person cards): Anna 6, Hans ~5 (age uncertain), James 2; one further line UNREAD. | Pack 9 newspapers (2026-11-03): S236 NEG-by-structure \u2014 Redwood Gazette 1937 OCR sample (Jan 7, 14, 21; Feb 4; Jun 10; Nov 4, 11) 0 phrase hits; Jun 3 'Maren' p.8 Lucan social = not obit (LOW); S237 CA 403 / MNHS People Finder INCOMPLETE. Sampled NEG only; 1937 death year still FAG-secondary; no death date.",
    "fagSiblingsSecondary": "S102 FAG secondary only (unverified): Hans Christian, Jens Peter, Ida D Christensen, John, Jennie Christina Trebesch, Emma L McPeek, Louis William, Rudolph Gerhart, Hulda Camilla"
   },
   {
@@ -253,10 +256,12 @@ window.PEOPLE={
    "sources": [
     "S15",
     "S93",
-    "S152"
+    "S152",
+    "S235",
+    "S237"
    ],
    "status": "VERIFIED birth MNHS S93; death 1935 still FAG/secondary pending",
-   "notes": " | S152: 'Olga Petersen at home' alive Nov 1929. S153 NEGATIVE-by-unavailability 1935 obit (Hub timeout; Gazette 1935 issues 404); free CA/Hub dig closed; 1935 death year still secondary/unconfirmed by free newspaper."
+   "notes": " | S152: 'Olga Petersen at home' alive Nov 1929. S153 NEGATIVE-by-unavailability 1935 obit (Hub timeout; Gazette 1935 issues 404); free CA/Hub dig closed; 1935 death year still secondary/unconfirmed by free newspaper. | Pack 9 newspapers (2026-11-03): S235 NEG-by-structure \u2014 Redwood Gazette 1935 OCR sample (Jan 3\u201331, Feb 7\u201314, Jun 6\u201313, Nov 7\u201314) 0 phrase hits; bare 'Olga' Jan 3/10 uninspected; S237 CA 403 / MNHS People Finder INCOMPLETE. Sampled NEG only; 1935 death year still FAG-secondary; no death date."
   },
   {
    "id": "P3",
@@ -349,7 +354,8 @@ window.PEOPLE={
     "S15",
     "S18"
    ],
-   "status": "FAG secondary"
+   "status": "FAG secondary",
+   "notes": "UNVERIFIED lead 2026-11-03 (Scout MN relay of Alex in MN chat): family may be larger than listed \u2014 no dig yet; do not invent children."
   },
   {
    "id": "P1",
@@ -380,7 +386,7 @@ window.PEOPLE={
     "Bill",
     "P12"
    ],
-   "notes": "US Army 15 Mar 1955-14 Mar 1957, 82nd Airborne",
+   "notes": "US Army 15 Mar 1955-14 Mar 1957, 82nd Airborne\nUNVERIFIED lead 2026-11-03 (Scout MN relay of Alex in MN chat): family may be larger than listed \u2014 no dig yet; do not invent children.",
    "sources": [
     "S18",
     "S19",
@@ -567,9 +573,10 @@ window.PEOPLE={
    "burial": "1867-09-17, Bjernede (age 34)",
    "occupation": "Hjulmand (wheelwright), Bjernedegaardshuse; 1862 unmarried servant at Bjernedegaard",
    "parents": [
-    "P25"
+    "P25",
+    "P34"
    ],
-   "parentsNote": "Mother: Ane Marie \u2026datter of Vals\u00f8magle, unmarried servant. CONFLICT on patronymic: HMB baptism (S51) reads Clausdatter; death (S37) reads Klaus Datt.; KMB duplicate (S52) has interlinear correction Hansd. over a struck word. Father CANDIDATE only: Peder Johansen of Ringsted, 'udlagt' (named by mother) in S51/S52 \u2014 paternity not proven. No person cards created until conflict resolved. | 1847 confirmation (S56) reads 'U\u00e6gte S\u00f8n af Pigen Ane Marie Hansd. og udlagt Barnefader Peder Johansen \u2014 Pleiefader Huusm. Jens Nielsen i Skee': adds a 3rd reading (Hansd.) \u2014 CONFLICT still OPEN, not resolved. Foster father Jens Nielsen (Skee) = not a relative by any record seen. | 2026-11-03 pass 4: Mother card P25 created with BOTH variants (Clausdatter / Hansdatter). Move lists S59/S60 give 'Ane Marie Hansd., 28, tjenestepige' going to and from Ringsted in 1832/33, which leans toward Hansd. but the CONFLICT stays OPEN. Father: NO card. FT-1834 Ringsted landsogn has 2 married Peder Johansens (45; 34 Daglejer), CANDIDATES only (S62), no match proven. Foster parents: P26 Jens Nielsen, P27 Kirsten Johansdatter (S54\u2013S58); no kinship to the mother found. | Pass 5: FT-1834 Ringsted town has CANDIDATE Ane Marie Hansdatter 27, unmarried servant, Sankt Hans Gade (S63), and CANDIDATE Peter Johansen 30, unmarried servant, same street (S64, card P28, not linked). Neither is proven.",
+   "parentsNote": "Mother LOCKED: P25 Ane Marie Hansdatter (patronymic LOCKED). Father LOCKED (named/recorded): P34 Peder Johansen of Ringsted, udlagt Barnefader named by the mother \u2014 S51, S52 (1833 baptism), S56 (1847 confirmation); Alex 2026-11-03 via Tree Site. Biological paternity/DNA not claimed. P28/S64 (FT-1834 Peter Johansen, servant, Sankt Hans Gade) same-man LOCKED as P34 per Alex Decision B (~3:33 PM CT 2026-11-03); parent link stays P34 only. No marriage P25\u00d7P34. S63 (mother candidate same street) stays CANDIDATE. Foster father P26 Jens Nielsen (pleiefader, S56). | PRIOR NOTE: Mother: Ane Marie \u2026datter of Vals\u00f8magle, unmarried servant. CONFLICT on patronymic: HMB baptism (S51) reads Clausdatter; death (S37) reads Klaus Datt.; KMB duplicate (S52) has interlinear correction Hansd. over a struck word. Father CANDIDATE only: Peder Johansen of Ringsted, 'udlagt' (named by mother) in S51/S52 \u2014 paternity not proven. No person cards created until conflict resolved. | 1847 confirmation (S56) reads 'U\u00e6gte S\u00f8n af Pigen Ane Marie Hansd. og udlagt Barnefader Peder Johansen \u2014 Pleiefader Huusm. Jens Nielsen i Skee': adds a 3rd reading (Hansd.) \u2014 CONFLICT still OPEN, not resolved. Foster father Jens Nielsen (Skee) = not a relative by any record seen. | 2026-11-03 pass 4: Mother card P25 created with BOTH variants (Clausdatter / Hansdatter). Move lists S59/S60 give 'Ane Marie Hansd., 28, tjenestepige' going to and from Ringsted in 1832/33, which leans toward Hansd. but the CONFLICT stays OPEN. Father: NO card. FT-1834 Ringsted landsogn has 2 married Peder Johansens (45; 34 Daglejer), CANDIDATES only (S62), no match proven. Foster parents: P26 Jens Nielsen, P27 Kirsten Johansdatter (S54\u2013S58); no kinship to the mother found. | Pass 5: FT-1834 Ringsted town has CANDIDATE Ane Marie Hansdatter 27, unmarried servant, Sankt Hans Gade (S63), and CANDIDATE Peter Johansen 30, unmarried servant, same street (S64, card P28, not linked). Neither is proven.",
    "spouses": [
     {
      "id": "P19",
@@ -685,7 +692,7 @@ window.PEOPLE={
     "dateSideA": "1801-04-19 (HIGH ~90%)",
     "dateSideB": "~1831 (SUPERSEDED misread; kept visible)",
     "place": "Bjernede / Bjernedehuse ('her i sognet', 'sammesteds') \u2014 MED (S170, S171, S172); 'Tunnestedt' SUPERSEDED",
-    "baptism": "NEG-by-loss (S179): Slaglille parsonage fire 14 Jul 1808 destroyed pre-1808 Bjernede books; births 1790\u20131807 survive only as scattered notes. Substitutes NEG for Hans s/o Rasmus Hansen ~19 Apr 1801: EM 1808\u201314 spredte Optegnelser (S180), konf boys 1815\u201319 (S181), FT-1801 (S182). OPEN."
+    "baptism": "NEG-by-loss (S179): Slaglille parsonage fire 14 Jul 1808 destroyed pre-1808 Bjernede books; births 1790\u20131807 survive only as scattered notes. Substitutes NEG for Hans s/o Rasmus Hansen ~19 Apr 1801: EM 1808\u201314 spredte Optegnelser (S180), konf boys 1815\u201319 (S181), FT-1801 (S182). OPEN. | Dig H resume 2026-11-03: Dig I leftover AO bsids 627957 (S232 NEG), 618577 (S233 NEG), 626612 (S234 DUPLICATE) = same EM 1808\u20131814 as bsid 203234; baptisms start ~1807/1808; leftovers CLOSED. Baptism still NOT found; birth OPEN."
    },
    "death": {
     "date": "~1883-07-02 (day LOW confidence)",
@@ -722,10 +729,13 @@ window.PEOPLE={
     "S170",
     "S171",
     "S172",
-    "S173"
+    "S173",
+    "S232",
+    "S233",
+    "S234"
    ],
    "status": "RECORD-SOURCED / birth year conflict OPEN: Side A ~1801 HIGH vs Side B ~1831 superseded misreads (Dig H); Alex keep-open until pre-1814 baptism (2026-11-03)",
-   "notes": "Stepfather of Hans Peter (1880 census S33). Previous two wives unknown. Detail: shots/bjernede-family-2026-11-03/; browser-pass-bjernede-family.md; died ~3 days after wife Ane (S45, S46). | 2026-11-03 Alex (Genealogist chat): keep birth year OPEN until pre-1814 baptism register search; do not lock 19 Apr 1801 yet. Side A remains HIGH; Side B stays SUPERSEDED. Nothing to Storyteller/Tree until baptism dig or later lock.",
+   "notes": "Stepfather of Hans Peter (1880 census S33). Previous two wives unknown. Detail: shots/bjernede-family-2026-11-03/; browser-pass-bjernede-family.md; died ~3 days after wife Ane (S45, S46). | 2026-11-03 Alex (Genealogist chat): keep birth year OPEN until pre-1814 baptism register search; do not lock 19 Apr 1801 yet. Side A remains HIGH; Side B stays SUPERSEDED. Nothing to Storyteller/Tree until baptism dig or later lock. | 2026-11-03 Dig H resume GATED (S232\u2013S234): Dig I leftover volumes closed NEG/DUPLICATE. Birth stays OPEN; 19 Apr 1801 NOT locked; parents unchanged ([], father named Rasmus Hansen S46, no card).",
    "property": "Matr. 5a Bjernedehuse, Bjernede Sogn: VERIFIED owner at death \u2014 1884 sk\u00f8de (S50) says property 'hidtil har tilh\u00f8rt' Hans Rasmussen; estate sold it 13 Nov 1884 to J.P. Mathiesen, Gyrstinge, for 13,000 Kr. Owner since 1855 (Realregister: 5a to Hans Rasmussen, Sor\u00f8 Akademi sale) = STRONG CANDIDATE, same man not proven (vol. T fol 97 not digitized).",
    "digINote": "Dig I 2026-11-03 (S179\u2013S182): baptism likely lost in fire; substitutes NEG. Sibling candidates only: Peder s/o Rasmus Hansen & Ane Jacobsdatter, Fuldby, b. 24 Feb 1803 (note) / 20 Feb 1803 (konf 1819); Ane d/o Rasmus Hansen, Bjernedehuse, b. ~11 Mar 1804 (read uncertain). FT-1801 Fuldby fam 29 Hans 9 (~1792) NOT P20. Side A ~1801 HIGH unchanged; Side B SUPERSEDED; birth OPEN; 19 Apr 1801 NOT locked (Alex keep-open)."
   },
@@ -922,18 +932,70 @@ window.PEOPLE={
     "S197",
     "S198",
     "S199",
-    "S200"
+    "S200",
+    "S201",
+    "S202",
+    "S203",
+    "S204",
+    "S205",
+    "S206",
+    "S207",
+    "S208",
+    "S209",
+    "S210",
+    "S211",
+    "S212",
+    "S213",
+    "S214",
+    "S215",
+    "S216",
+    "S222",
+    "S223",
+    "S224",
+    "S225",
+    "S226",
+    "S227",
+    "S228",
+    "S229",
+    "S230",
+    "S231",
+    "S238",
+    "S239",
+    "S240",
+    "S241",
+    "S242",
+    "S243",
+    "S244",
+    "S245",
+    "S246",
+    "S247",
+    "S248",
+    "S249",
+    "S250",
+    "S251",
+    "S252",
+    "S253",
+    "S254",
+    "S255",
+    "S256",
+    "S257",
+    "S258",
+    "S259",
+    "S260",
+    "S261",
+    "S262",
+    "S263"
    ],
    "status": "VERIFIED as mother of P18 (S51/S52/S56); patronymic LOCKED Hansdatter 2026-11-03 (Alex own words \"lock it\", Genealogist chat); Clausdatter SUPERSEDED",
    "residences": [
     "c. Nov 1832\u2013Jan 1833: left Haraldsted for Ringsted (S60, date LOW)",
     "30 Mar 1833: back in Haraldsted from Ringsted (S59)",
     "1834: not in Vals\u00f8magle; later whereabouts unknown",
-    "1834-02-18: CANDIDATE: Ane Marie Hansdatter 27, ugift, Tjenestefolk (servant), Sankt Hans Gade, Ringsted k\u00f8bstad (S63); age 27 vs 28 in 1833 lists, so not proven",
-    "c. 1 May 1833: CANDIDATE: left Haraldsted for Ringsted (S151 Dig 6 reading HIGH; same person as S59 CANDIDATE only)",
-    "after ~1 May 1833: Ringsted arrival UNVERIFIED (S151 dest HIGH; S108/S157 tilgang NEGATIVE; gap OPEN)"
+    "1834-02-18: CANDIDATE: Ane Marie Hansdatter 27, ugift, Tjenestefolk (servant), Sankt Hans Gade, Ringsted k\u00f8bstad (S63); age 27 vs 28 in 1833 lists, so not proven \u2014 stays CANDIDATE after Alex Decision B (B locked father census identity only, not S63)",
+    "c. 1 May 1833: CLEARED (planning) \u2014 left Haraldsted for Ringsted (S151; aligned with S59 chain; Alex Decision 3 (~3:10 PM CT, 2026-11-03))",
+    "after ~1 May 1833: Ringsted arrival UNVERIFIED \u2014 gap OPEN (no Ringsted tilgang found; S108/S157 NEG; do not invent arrival)"
    ],
-   "notes": "LOCKED 2026-11-03: patronymic = Hansdatter, from Alex own words (\"lock it\", Genealogist chat) after image review (~99% lean Hansdatter). Clausdatter SUPERSEDED as wrong read/misread of S51 HMB (and S37 'Klaus Datt.'); Dig 15 gate read C ~80%, but Alex locked Hansdatter after image review + Dig 16 S52 'Hansd.' clerk correction + S56/S59/S60/S106 + S189 CANDIDATE path. Clausdatter side CLOSED. Birth parents still unknown (parents []); birth 23 Mar 1805 stays CANDIDATE (S189 conf only; NOT baptised Haraldsted, S193). Erik Rasmussen \u00d7 Maren Hansd. = CANDIDATE step/foster household only. Historical dig notes below are kept as evidence trail; their 'Clausdatter/Hansdatter OPEN' lines are superseded by this lock. | Ane Bolette (baptism sponsor) is probably Knudsd., not a sister (S61); this is still a CONFLICT. Next: her baptism c. 1804\u201305 (before the 1814 book), Ringsted town FT-1834, and later move lists. | Pass 7 CANDIDATE baptisms (NOT linked, identity unproven): S67 Ane Marie, dau. of Hans Larsen + Ane Chatarina Hansdatter, Ringsted, Wed 27 Jun 1804 (would be patronymic Hansdatter; age fits 28 in 1833). S69: illegitimate Anna Maria, dau. of Maren Hansdatter, bapt. 3 Dec 1802 (reading MEDIUM; age 30 in 1833, weaker fit). No Ane Marie Clausdatter seen in Ringsted baptisms Sep 1803\u2013Mar 1805. CONFLICT Clausdatter vs Hansdatter stays OPEN.\nPass 8 (2026-11-03): CANDIDATE/negative only. FT-1834 Ringsted landsogn (S73) Torped Bye houses 4-27 (imgs 3-7): one 'Ane Marie Hansdatter' age 21, wife of Hans J\u00f8rgensen, house 11 (img 5) - age does not fit (~30 expected) so NOT a match. No Ane Marie Clausdatter. 1803 Jan-Aug and 1805 baptisms (S71, S72): no Ane Marie Hansdatter/Clausdatter. Mother-surname conflict stays OPEN. | 2026-11-03 (S106): Ringsted afgang 1833 no.5 'Ane Marie Hansdatter, 28, Tjenestepige' to Haraldsted fits S59; supports Hansdatter spelling only. Clausdatter conflict OPEN. Does NOT prove identity as P18 mother beyond existing VERIFIED status from baptism. S107/S108 no Ringsted tilgang 1832\u201334 hit; S110 not on Sankt Hans Gade FT-1840 (other streets unread). | 2026-11-03: FT-1840 Ringsted town remainder (S131) NEGATIVE; landsogn img 1\u201323 (S132) NEGATIVE, img 24\u201335 unread. S63 stays CANDIDATE. | 2026-11-03 digs 2\u20134: FT-1840 landsogn full img 1\u201335 (S142) NEGATIVE (img 32 'Ane Marie Hansd.' 32 ugift near-miss NOT promoted); Ringsted afgang remainder (S143) NEGATIVE; FT-1834 Torped img 8\u201323 (S144) NEGATIVE (img 18 Ane Maria Hansdatter 25 rejected). S63 stays CANDIDATE; Clausdatter/Hansdatter CONFLICT OPEN. Haraldsted afgang (S135) still INCOMPLETE. | S151 CANDIDATE (2026-11-03): Haraldsted afgang ~1 May 1833 (ditto date), entry 334/335 unclear, 'Ane Marie Hansd.' 28, Tjenestepige (ditto); destination unclear: 'Ringsted' OR 'Gr\u00f8ftevandershov(?)' \u2014 both kept. Same person as S59 not proven; does not resolve Clausdatter vs Hansdatter. | Dig 6 (2026-11-03): S151 destination = Ringsted (HIGH; Gr\u00f8fte\u2026 = next row Inger, not hers). S156 NEGATIVE img 476\u2013480 no second Hansd./Clausd. ~28. Same-person as S59 still CANDIDATE. Clausdatter/Hansdatter OPEN. | 2026-11-03 Dig 7 (S157): Ringsted tilgang 1833 (bsid 205354) page dates confirm S108 nos 1\u201381 include May 1833+ (img 228 '1ste Mai 1833' \u2192 img 232 Oct; Nov\u2013Dec series img 233\u2013244); May\u2013Oct re-read NEGATIVE for Ane Marie Hansd./Clausd. ~27\u201329 / from Haraldsted. S151 Ringsted destination vs no Ringsted tilgang = arrival gap OPEN (conflicts.md); other Ringsted bsids 205351\u2013205360 checked in Dig 8 (S158): no other 1833 tilgang. S151\u2194S59 same-person stays CANDIDATE. Clausdatter/Hansdatter OPEN. | Dig 7 (2026-11-03): S157 confirms S108 covers May 1833+ and remains NEGATIVE for Ane Marie Hansd./Clausd. ~28 from Haraldsted. S151\u2192Ringsted arrival gap OPEN (conflicts). Same-person as S59 still CANDIDATE. Clausdatter/Hansdatter OPEN. Other Ringsted bsids 205351\u2013205360 checked in Dig 8 (S158): no other 1833 tilgang. | Dig 8 (2026-11-03): neighbor Ringsted bsids 205351\u2013205360 excl. 205354 have no 1833 tilgang (S158). Arrival gap vs S151 still OPEN. Clausdatter/Hansdatter OPEN. S151\u2194S59 same-person still CANDIDATE. | Dig 9 (2026-11-03): Haraldsted afgang img 481\u2013483 (S159) NEGATIVE \u2014 nos 384\u2013404 all Nov 1834; no second Ane Marie Hansd./Clausd. ~28, no note on S151 no. 335 (no. 398 Ane Marie Nielsd. 15 rejected). Haraldsted afgang img 476\u2013483 now all read (S156+S159). Arrival gap vs S151 OPEN. Clausdatter/Hansdatter OPEN. S151\u2194S59 same-person still CANDIDATE. | Dig 10 (2026-11-03): S160 NEGATIVE-by-structure \u2014 Ringsted AO 205355 Almindeligt skema indexes 205353 (~1849\u20131860), not 1833; Ane Marie Hans-/Claus- hits all wrong generation. Arrival gap vs S151 OPEN. Clausdatter/Hansdatter OPEN. S151\u2194S59 same-person still CANDIDATE. | Dig 11 (2026-11-03): Ringsted-adjacent tilgang 1833 \u2014 Sigersted S161 NEG (no. 20 Ane Marie Hansdatter 24 fra Vetterslev = near-miss NOT P25), Vetterslev S162 NEG, Vals\u00f8lille S163 NEG-by-partial, Bringstrup S164 OPEN faded. Kv\u00e6rkeby/Jystrup/Benl\u00f8se/optional unread OPEN. Arrival gap vs S151 OPEN. Clausdatter/Hansdatter OPEN. S151\u2194S59 CANDIDATE. | Dig 12 (2026-11-03): Bringstrup HMB S165 NEG (supersedes faded S164; nos 8\u20139 Lise(?) Hansd. 28 wife of Jens Jacobsen NOT P25); Kv\u00e6rkeby S166 NEG (no. 5 Ane Marie Hansd.(?)/Jensd.(?) 18 fra Ringsted NOT P25); Jystrup S167 NEG (own list); Benl\u00f8se HMB S168 NEG; Vals\u00f8lille no. 12/13 S169 NEG (wife Kirstine Christiansen 22; S163 loose end closed). Arrival gap vs S151 OPEN. Clausdatter/Hansdatter OPEN. S151\u2194S59 CANDIDATE. Dig 13: Vigersted S174 NEG; H\u00f8m S175 NEG; Ringsted KMB 154782 S176 OPEN-by-structure (no tilgang section). Arrival gap still OPEN; Clausdatter/Hansdatter OPEN; S151\u2194S59 CANDIDATE. | Dig 14 (2026-11-03): Ringsted KMB 154785\u2013154820 has no 1833 tilgang (154788 lists begin 1834; S177 NEG-by-structure), so arrival gap vs S151 stays OPEN; Clausdatter/Hansdatter OPEN; S151\u2194S59 CANDIDATE. Dig 15 (2026-11-03): S51 re-read still Clausdatter (C ~80%; ink-over-H not supported). Haraldsted baptisms 1803\u201306 NEG (S178), so she was probably baptised elsewhere. Patronymic OPEN. | Dig 16 (2026-11-03, S183\u2013S185): S52 'Hansd.' = likely same-hand clerk correction over a cancelled patronymic (LOW\u2013MOD); cancelled word unreadable \u2014 Scout: Clausd. possible (LOW); gate: S-initial lean, Clausd. not supported, not excluded. Baptisms 1804\u201305 NEG Vigersted/Sigersted/Bringstrup/Kv\u00e6rkeby; Benl\u00f8se PARTIAL (gap Jan 1798\u2013May 1805); Jystrup no pre-1813 book. FT-1834 Vals\u00f8magle NEG (rest of Haraldsted unchecked). Patronymic CONFLICT OPEN; no promotion. | Dig 17 (2026-11-03, S186\u2013S188): FT-1834 Haraldsted img 10\u201327 NEG (S186; with S185 whole parish NEG). Benl\u00f8se 148269 runs to 28 Apr 1805, so the Dig 16 Benl\u00f8se gap is CLOSED; Aug 1803\u2013Apr 1805 NEG, 1798\u2013Jul 1803 PARTIAL (S187). FT-1840 Haraldsted By + Vals\u00f8magle NEG (S188; Allindelille/Skee skimmed only). Claus Johansen 64, Vals\u00f8magle 1840 = lead only, not a parent. Birth parents unknown. Patronymic CONFLICT OPEN; no promotion. | Dig 18 (2026-11-03, S189\u2013S192): S189 CANDIDATE (strong) Haraldsted conf. 1820 no.11 Ane Marie Hansd., Wals\u00f8magle, b. 23 Mar 1805, 'Stedd.(?)' of Gmd. Erik Rasmussen & Maren Hansd. \u2014 CANDIDATE step/foster household only, NOT parents; biological father OPEN; identity with P25 unproven. S190 no Ane Marie Clausd. confirmed 1818\u201320. S191 Benl\u00f8se 1796\u2013Feb 1803 NEG partial (Mar\u2013Jul 1803 unlocated). S192 sponsors do not settle patronymic. Clausdatter/Hansdatter OPEN, no lock. Next: Haraldsted pre-1814 baptism 23 Mar 1805.\nDig 19 (2026-11-03, S193\u2013S196): Haraldsted 1805 baptisms re-read NEG (S193; only 23 Mar birth = boy S\u00f8ren). Marriage 7 Oct 1809 Erich Rasmussen \u00d7 Enken(?) Maren Hans Datter af Vals\u00f8emagle (S194, Enken ~70\u201375%) = CANDIDATE step/foster household for S189 girl, notes only, NOT parents. Burial Advent 1807 Gd. Hans Andersen(?) Vals\u00f8magle 40\u00bd (S195) = lead only, not father. No Hans/Claus \u00d7 Maren Hansd. marriage 1802\u201310 (S196). S189 conf identity still CANDIDATE; local baptism not found. Bio father unnamed; parents stay []. Clausdatter/Hansdatter OPEN.\nDig 20 (2026-11-03, S197\u2013S200): Haraldsted bapt 1810\u201314 Erik\u00d7Maren NEG (S197). First husband NOT identified; Hans Andersen d. 1807 Vals\u00f8magle 40\u00bd = LEAD only (S198, S199 FT-1801 fam 20, wife Anne Marie, remarriage unproven). FT-1834 Vals\u00f8magle no Erik hh (S200). S189 still CANDIDATE; parents stay []. Clausdatter/Hansdatter OPEN."
+   "notes": "LOCKED 2026-11-03: patronymic = Hansdatter, from Alex own words (\"lock it\", Genealogist chat) after image review (~99% lean Hansdatter). Clausdatter SUPERSEDED as wrong read/misread of S51 HMB (and S37 'Klaus Datt.'); Dig 15 gate read C ~80%, but Alex locked Hansdatter after image review + Dig 16 S52 'Hansd.' clerk correction + S56/S59/S60/S106 + S189 CANDIDATE path. Clausdatter side CLOSED. Birth parents still unknown (parents []); birth 23 Mar 1805 stays CANDIDATE (S189 conf only; NOT baptised Haraldsted, S193). Erik Rasmussen \u00d7 Maren Hansd. = CANDIDATE step/foster household only. Historical dig notes below are kept as evidence trail; their 'Clausdatter/Hansdatter OPEN' lines are superseded by this lock. | Ane Bolette (baptism sponsor) is probably Knudsd., not a sister (S61); this is still a CONFLICT. Next: her baptism c. 1804\u201305 (before the 1814 book), Ringsted town FT-1834, and later move lists. | Pass 7 CANDIDATE baptisms (NOT linked, identity unproven): S67 Ane Marie, dau. of Hans Larsen + Ane Chatarina Hansdatter, Ringsted, Wed 27 Jun 1804 (would be patronymic Hansdatter; age fits 28 in 1833). S69: illegitimate Anna Maria, dau. of Maren Hansdatter, bapt. 3 Dec 1802 (reading MEDIUM; age 30 in 1833, weaker fit). No Ane Marie Clausdatter seen in Ringsted baptisms Sep 1803\u2013Mar 1805. CONFLICT Clausdatter vs Hansdatter stays OPEN.\nPass 8 (2026-11-03): CANDIDATE/negative only. FT-1834 Ringsted landsogn (S73) Torped Bye houses 4-27 (imgs 3-7): one 'Ane Marie Hansdatter' age 21, wife of Hans J\u00f8rgensen, house 11 (img 5) - age does not fit (~30 expected) so NOT a match. No Ane Marie Clausdatter. 1803 Jan-Aug and 1805 baptisms (S71, S72): no Ane Marie Hansdatter/Clausdatter. Mother-surname conflict stays OPEN. | 2026-11-03 (S106): Ringsted afgang 1833 no.5 'Ane Marie Hansdatter, 28, Tjenestepige' to Haraldsted fits S59; supports Hansdatter spelling only. Clausdatter conflict OPEN. Does NOT prove identity as P18 mother beyond existing VERIFIED status from baptism. S107/S108 no Ringsted tilgang 1832\u201334 hit; S110 not on Sankt Hans Gade FT-1840 (other streets unread). | 2026-11-03: FT-1840 Ringsted town remainder (S131) NEGATIVE; landsogn img 1\u201323 (S132) NEGATIVE, img 24\u201335 unread. S63 stays CANDIDATE. | 2026-11-03 digs 2\u20134: FT-1840 landsogn full img 1\u201335 (S142) NEGATIVE (img 32 'Ane Marie Hansd.' 32 ugift near-miss NOT promoted); Ringsted afgang remainder (S143) NEGATIVE; FT-1834 Torped img 8\u201323 (S144) NEGATIVE (img 18 Ane Maria Hansdatter 25 rejected). S63 stays CANDIDATE; Clausdatter/Hansdatter CONFLICT OPEN. Haraldsted afgang (S135) still INCOMPLETE. | S151 CANDIDATE (2026-11-03): Haraldsted afgang ~1 May 1833 (ditto date), entry 334/335 unclear, 'Ane Marie Hansd.' 28, Tjenestepige (ditto); destination unclear: 'Ringsted' OR 'Gr\u00f8ftevandershov(?)' \u2014 both kept. Same person as S59 not proven; does not resolve Clausdatter vs Hansdatter. | Dig 6 (2026-11-03): S151 destination = Ringsted (HIGH; Gr\u00f8fte\u2026 = next row Inger, not hers). S156 NEGATIVE img 476\u2013480 no second Hansd./Clausd. ~28. Same-person as S59 still CANDIDATE. Clausdatter/Hansdatter OPEN. | 2026-11-03 Dig 7 (S157): Ringsted tilgang 1833 (bsid 205354) page dates confirm S108 nos 1\u201381 include May 1833+ (img 228 '1ste Mai 1833' \u2192 img 232 Oct; Nov\u2013Dec series img 233\u2013244); May\u2013Oct re-read NEGATIVE for Ane Marie Hansd./Clausd. ~27\u201329 / from Haraldsted. S151 Ringsted destination vs no Ringsted tilgang = arrival gap OPEN (conflicts.md); other Ringsted bsids 205351\u2013205360 checked in Dig 8 (S158): no other 1833 tilgang. S151\u2194S59 same-person stays CANDIDATE. Clausdatter/Hansdatter OPEN. | Dig 7 (2026-11-03): S157 confirms S108 covers May 1833+ and remains NEGATIVE for Ane Marie Hansd./Clausd. ~28 from Haraldsted. S151\u2192Ringsted arrival gap OPEN (conflicts). Same-person as S59 still CANDIDATE. Clausdatter/Hansdatter OPEN. Other Ringsted bsids 205351\u2013205360 checked in Dig 8 (S158): no other 1833 tilgang. | Dig 8 (2026-11-03): neighbor Ringsted bsids 205351\u2013205360 excl. 205354 have no 1833 tilgang (S158). Arrival gap vs S151 still OPEN. Clausdatter/Hansdatter OPEN. S151\u2194S59 same-person still CANDIDATE. | Dig 9 (2026-11-03): Haraldsted afgang img 481\u2013483 (S159) NEGATIVE \u2014 nos 384\u2013404 all Nov 1834; no second Ane Marie Hansd./Clausd. ~28, no note on S151 no. 335 (no. 398 Ane Marie Nielsd. 15 rejected). Haraldsted afgang img 476\u2013483 now all read (S156+S159). Arrival gap vs S151 OPEN. Clausdatter/Hansdatter OPEN. S151\u2194S59 same-person still CANDIDATE. | Dig 10 (2026-11-03): S160 NEGATIVE-by-structure \u2014 Ringsted AO 205355 Almindeligt skema indexes 205353 (~1849\u20131860), not 1833; Ane Marie Hans-/Claus- hits all wrong generation. Arrival gap vs S151 OPEN. Clausdatter/Hansdatter OPEN. S151\u2194S59 same-person still CANDIDATE. | Dig 11 (2026-11-03): Ringsted-adjacent tilgang 1833 \u2014 Sigersted S161 NEG (no. 20 Ane Marie Hansdatter 24 fra Vetterslev = near-miss NOT P25), Vetterslev S162 NEG, Vals\u00f8lille S163 NEG-by-partial, Bringstrup S164 OPEN faded. Kv\u00e6rkeby/Jystrup/Benl\u00f8se/optional unread OPEN. Arrival gap vs S151 OPEN. Clausdatter/Hansdatter OPEN. S151\u2194S59 CANDIDATE. | Dig 12 (2026-11-03): Bringstrup HMB S165 NEG (supersedes faded S164; nos 8\u20139 Lise(?) Hansd. 28 wife of Jens Jacobsen NOT P25); Kv\u00e6rkeby S166 NEG (no. 5 Ane Marie Hansd.(?)/Jensd.(?) 18 fra Ringsted NOT P25); Jystrup S167 NEG (own list); Benl\u00f8se HMB S168 NEG; Vals\u00f8lille no. 12/13 S169 NEG (wife Kirstine Christiansen 22; S163 loose end closed). Arrival gap vs S151 OPEN. Clausdatter/Hansdatter OPEN. S151\u2194S59 CANDIDATE. Dig 13: Vigersted S174 NEG; H\u00f8m S175 NEG; Ringsted KMB 154782 S176 OPEN-by-structure (no tilgang section). Arrival gap still OPEN; Clausdatter/Hansdatter OPEN; S151\u2194S59 CANDIDATE. | Dig 14 (2026-11-03): Ringsted KMB 154785\u2013154820 has no 1833 tilgang (154788 lists begin 1834; S177 NEG-by-structure), so arrival gap vs S151 stays OPEN; Clausdatter/Hansdatter OPEN; S151\u2194S59 CANDIDATE. Dig 15 (2026-11-03): S51 re-read still Clausdatter (C ~80%; ink-over-H not supported). Haraldsted baptisms 1803\u201306 NEG (S178), so she was probably baptised elsewhere. Patronymic OPEN. | Dig 16 (2026-11-03, S183\u2013S185): S52 'Hansd.' = likely same-hand clerk correction over a cancelled patronymic (LOW\u2013MOD); cancelled word unreadable \u2014 Scout: Clausd. possible (LOW); gate: S-initial lean, Clausd. not supported, not excluded. Baptisms 1804\u201305 NEG Vigersted/Sigersted/Bringstrup/Kv\u00e6rkeby; Benl\u00f8se PARTIAL (gap Jan 1798\u2013May 1805); Jystrup no pre-1813 book. FT-1834 Vals\u00f8magle NEG (rest of Haraldsted unchecked). Patronymic CONFLICT OPEN; no promotion. | Dig 17 (2026-11-03, S186\u2013S188): FT-1834 Haraldsted img 10\u201327 NEG (S186; with S185 whole parish NEG). Benl\u00f8se 148269 runs to 28 Apr 1805, so the Dig 16 Benl\u00f8se gap is CLOSED; Aug 1803\u2013Apr 1805 NEG, 1798\u2013Jul 1803 PARTIAL (S187). FT-1840 Haraldsted By + Vals\u00f8magle NEG (S188; Allindelille/Skee skimmed only). Claus Johansen 64, Vals\u00f8magle 1840 = lead only, not a parent. Birth parents unknown. Patronymic CONFLICT OPEN; no promotion. | Dig 18 (2026-11-03, S189\u2013S192): S189 CANDIDATE (strong) Haraldsted conf. 1820 no.11 Ane Marie Hansd., Wals\u00f8magle, b. 23 Mar 1805, 'Stedd.(?)' of Gmd. Erik Rasmussen & Maren Hansd. \u2014 CANDIDATE step/foster household only, NOT parents; biological father OPEN; identity with P25 unproven. S190 no Ane Marie Clausd. confirmed 1818\u201320. S191 Benl\u00f8se 1796\u2013Feb 1803 NEG partial (Mar\u2013Jul 1803 unlocated). S192 sponsors do not settle patronymic. Clausdatter/Hansdatter OPEN, no lock. Next: Haraldsted pre-1814 baptism 23 Mar 1805.\nDig 19 (2026-11-03, S193\u2013S196): Haraldsted 1805 baptisms re-read NEG (S193; only 23 Mar birth = boy S\u00f8ren). Marriage 7 Oct 1809 Erich Rasmussen \u00d7 Enken(?) Maren Hans Datter af Vals\u00f8emagle (S194, Enken ~70\u201375%) = CANDIDATE step/foster household for S189 girl, notes only, NOT parents. Burial Advent 1807 Gd. Hans Andersen(?) Vals\u00f8magle 40\u00bd (S195) = lead only, not father. No Hans/Claus \u00d7 Maren Hansd. marriage 1802\u201310 (S196). S189 conf identity still CANDIDATE; local baptism not found. Bio father unnamed; parents stay []. Clausdatter/Hansdatter OPEN.\nDig 20 (2026-11-03, S197\u2013S200): Haraldsted bapt 1810\u201314 Erik\u00d7Maren NEG (S197). First husband NOT identified; Hans Andersen d. 1807 Vals\u00f8magle 40\u00bd = LEAD only (S198, S199 FT-1801 fam 20, wife Anne Marie, remarriage unproven). FT-1834 Vals\u00f8magle no Erik hh (S200). S189 still CANDIDATE; parents stay []. Clausdatter/Hansdatter OPEN. | Dig 22 (2026-11-03, S201\u2013S209): neighbour-parish baptisms ~23 Mar 1805 NEG in Benl\u00f8se (S201), Ringsted (S202), Kv\u00e6rkeby (S203; Vigersted PARTIAL); Kv\u00e6rkeby 1803 Anna Maria Hansd. u\u00e6gte child = namesake, not P25 (S204). No Anne Marie Hansd. ~60 burial 1801\u201305 (S205) \u2192 Hans Andersen lead downgraded ~30% (S206). S207 CANDIDATE lead ~30% only: FT-1801 fam5 Hans Pedersen 65 \u00d7 Maren Hans Datter 34 \u2014 could be bio father ONLY IF that Maren = 1809 widow (S194); burial not seen. Alt S208 fam17 ~20%. Erik\u00d7Maren boys 1814\u201319 NEG (S209). Birth 23 Mar 1805 stays CANDIDATE (S189); parents stay []; bio father OPEN. | Dig 23 (2026-11-03, S210\u2013S212): Ringsted 17\u201331 Mar 1805 gap CLOSED NEG (S210); Sorterup (S211) and Gyrstinge (S212) NEG. Neighbour/gap baptism still NEG (cumulative Haraldsted, Benl\u00f8se, Ringsted, Kv\u00e6rkeby, Sorterup, Gyrstinge; Vigersted PARTIAL). Unread: Bringstrup, Allindemagle 147958, Vigersted section. Birth stays CANDIDATE 23 Mar 1805 (S189, may be confirmation-only). Parents stay []. | Dig 21 (2026-11-03, S213\u2013S216): S207 (Hans Pedersen, FT-1801 fam5) STRENGTHENED ~30%\u2192~45\u201350% via CANDIDATE-HIT 14 Jul 1807 burial of Indsidder og Almisselem (lodger and parish pauper) Hans Pedersen i Wals\u00f8magle, 76 (S213, img101 L; age +5 vs 1801, wife unnamed). No other Hans Pedersen burial 1801\u201309 (S214); no Anne Marie Hansd. burial 1806\u201309 (S215). Hans Andersen lead \u2264~25\u201330%, fam17 ~10% (S216). Still CANDIDATE: no person card for Hans Pedersen, parents stay [], bio father OPEN, birth stays CANDIDATE (S189). Dig 24 (S222): 1797 betrothal 21 May / marriage 15 Oct, Enkemand Hans Pedersen \u00d7 Pigen Maren Hans D. of Wals\u00f8emagle \u2192 S207 couple CANDIDATE ~60\u201370%; S223 1809 \"Enken\" PARTIAL (no late husband named); S224\u2013S226 bapt NEG. Parents stay [], bio father OPEN, no Hans Pedersen card. | Dig 25 (S227\u2013S231): 3 kids (Peder 1798, Maren 1801, Niels 1804) of CANDIDATE couple Hans Pedersen \u00d7 Maren(/Marie) Hansd. \u2014 not linked as P25 siblings; S230 Haraldsted 1805 NEG, baptism MISSING; S231 first wife Karen Lars D. PARTIAL; S207 ~75\u201385% CANDIDATE; occupation Indsidder/Skoleholder OPEN; parents []. | Dig 26 (S238\u2013S240): sharpened TWO-Hans conflict. FT-1801 Wals\u00f8magle has two Hans Pedersens, each with son Peder 3 and wife Maren/Marie Hans D.: fam5 'Aft\u00e6gts Mand' 65 (S207) vs fam17 probable 'Skole holder' 39 (S208). Dig 25 Skoleholder kids (Maren 1801, Niels 1804) are possibly fam17, not fam5. S207 revised to ~55\u201365% CANDIDATE; S208 alternate ~20\u201330%; neither linked. Skifte 1807: Ringsted Klosters NEG (S238); Skjolden\u00e6sholm 1800\u201313 free-AO gap (S239); Universitetets Gods NOT CHECKED (S240). Parents [], bio father OPEN, baptism ~23 Mar 1805 MISSING. | Dig 27 (2026-11-03, S241\u2013S244): baptisms re-split by father \u2014 1798 Peder leans S207 (Indsidder+Maren); 1801 Maren / 1804 Niels lean S208 (Skoleholder+Marie); 1807 burial has no Aft\u00e6gt wording. Father-split OPEN; no lock; parents stay []. | Dig 28 (2026-11-03, S245\u2013S247): 1795 Kirsten bapt (Skoleholder \u00d7 Marie) strengthens S208 fam17 household (~80\u201390%, CANDIDATE, not linked); fam17 Peder bapt still NEG; two Hans OPEN; parents stay []. | Dig 29 (2026-11-03, S248\u2013S249): Universitetets Gods Holb\u00e6k/Sor\u00f8 skifte (probate) 1806\u201308 NEG (no Hans Pedersen / no Wals\u00f8magle; poor almisselem may have had no skifte); University tenants at Haraldsted NOT SHOWN; two Hans OPEN unchanged; parents stay []. | Dig 30 (2026-11-03, S250\u2013S251): Skjolden\u00e6sholm Gods skifte (probate) ~late 1801\u20131812 SKIPPED \u2014 free AO gap confirmed HIGH (Book 6 ends Sor\u00f8 1801; Book 7 starts 1812), NOT NEG; two Hans OPEN unchanged; parents stay []. | Dig 31 (2026-11-03, S252\u2013S255): Skjolden\u00e6sholm skifte registers 130265 (\u22641795) / 130266 (inferred 1812+) NEG/PARTIAL for Hans Pedersen of Wals\u00f8magle ~1801\u201312; only Wals\u00f8lille[?] fol 132\u2013133 PARTIAL. No gap pointer; S250 gap unchanged; two Hans OPEN; parents stay []. | Dig 32 (2026-11-03, S256\u2013S257): Book 7 fol 132\u2013133 = Huusmand Hans Pedersen i Wals\u00f8lille d. ~1825 \u00d7 Anne Magretha Frederiks Datter \u2014 NEG HIGH for our Wals\u00f8magle Hans; S255 PARTIAL settled NEG; S250 gap unchanged; two Hans OPEN; parents stay []. | Dig 33 (2026-11-03, S258\u2013S260): Skjolden\u00e6sholm register 130266 M/P sections NEG \u2014 no Maren/Marie Hansdatter enke of Wals\u00f8magle; no Peder Hansen/Pedersen of Wals\u00f8magle; no ~1807 Wals\u00f8magle Hans pointer; Dig 31 M/P leftover CLOSED; S250 gap unchanged; two Hans OPEN; parents stay []. | Alex Decision 3 (~3:10 PM CT, 2026-11-03): ~1 May 1833 departure Haraldsted\u2192Ringsted CLEARED for planning (S151 + S59); Ringsted arrival gap OPEN/UNVERIFIED. Dig J foster kinship (P26/P27 \u2194 P25/P28) UNVERIFIED \u2014 research priority only. Parents stay []; birth 23 Mar 1805 CANDIDATE (S189); two Hans OPEN. | 2026-11-03: child P18's father LOCKED as named/udlagt Peder Johansen of Ringsted (P34; S51/S52/S56; Alex via Tree Site). No marriage to him recorded; spouses stay []. | Dig 34 (2026-11-03, S261\u2013S262): Skjolden\u00e6sholm Book 7 fol 328/370 NEG \u2014 1831 estate of Huusmand Rasmus Hansen \u00d7 Maren Jeppesdatter of Wals\u00f8magle; no couple children; Hans Hansen = Rasmus's brother, not son; no Hans-son / no S207\u2013S208 link. Dig 33 leftover CLOSED; S250 gap unchanged; two Hans OPEN; parents stay []. | Dig 35 (2026-11-03, S263): Book 7 fol 337 NEG \u2014 Rasmus Hansen d. 16 Aug 1831 Wals\u00f8magle; heirs = brothers Knud / Hans Hansen (Indsidder Haraldsted) / S\u00f8ren; no ages; no Hans-son / no S207\u2013S208 link. Dig 34 leftover CLOSED; S250 gap unchanged; two Hans OPEN; parents stay []. | Alex Decision B (~3:33 PM CT 2026-11-03) locked P28=P34 (father's census identity) only; S63 stays CANDIDATE for P25; no marriage; spouses []; parents []."
   },
   {
    "id": "P26",
@@ -946,7 +1008,7 @@ window.PEOPLE={
    "spouses": [
     {
      "id": "P27",
-     "marriage": "UNVERIFIED (before 1834)"
+     "marriage": "UNVERIFIED (before Oct 1835 per S218; not in Haraldsted 1814\u201336, S219)"
     }
    ],
    "children": [],
@@ -957,10 +1019,13 @@ window.PEOPLE={
     "S57",
     "S58",
     "S111",
-    "S128"
+    "S128",
+    "S218",
+    "S219",
+    "S220"
    ],
    "status": "VERIFIED foster father (Pleiefader) of P18 (S56)",
-   "notes": "Son Hagen Jensen b. c. 1835 (S58). Foster child Hans Jensen b. c. 1844 (S58). Death not yet searched. Kinship to P25 or Peder Johansen: none found. | 2026-11-03 (S111): no adult Jens Nielsen in Haraldsted male deaths 1845\u2013early 1851 (img 121\u2013129); 1846 child Jens Nielsen 5\u00bc rejected. Search INCOMPLETE (img 130\u2013157, 1851\u201370). | 2026-11-03 (S128): Haraldsted male deaths 1845\u201370 now read in full (img 121\u2013157) \u2014 NEGATIVE for adult Jens Nielsen; 1869 Jens Nielsen 21 son of Niels Larsen rejected. OPEN: if S129 (1864 widow of Jens Nielsen in Skee) is P27, he died before 1864 and outside Haraldsted (or pre-1845, which would conflict with FT-1850 S58). See conflicts.md."
+   "notes": "Son Hagen Jensen b. c. 1835 (S58). Foster child Hans Jensen b. c. 1844 (S58). Death not yet searched. Kinship to P25 or Peder Johansen: none found. | 2026-11-03 (S111): no adult Jens Nielsen in Haraldsted male deaths 1845\u2013early 1851 (img 121\u2013129); 1846 child Jens Nielsen 5\u00bc rejected. Search INCOMPLETE (img 130\u2013157, 1851\u201370). | 2026-11-03 (S128): Haraldsted male deaths 1845\u201370 now read in full (img 121\u2013157) \u2014 NEGATIVE for adult Jens Nielsen; 1869 Jens Nielsen 21 son of Niels Larsen rejected. OPEN: if S129 (1864 widow of Jens Nielsen in Skee) is P27, he died before 1864 and outside Haraldsted (or pre-1845, which would conflict with FT-1850 S58). See conflicts.md. | Kin Dig J (2026-11-03): son Haagen (Hagen) Jensen confirmed by baptism S218 (b. 30 Oct 1835, bapt 13 Dec 1835, Haraldsted; parents 'Gmd Jens Nielsen og Hustru Kirsten Johansd. af Skee'); couple at Skee by 1835. Title Gmd (gaardmand/farm owner) vs FT Huusmand/Hjulmager OPEN. Marriage Haraldsted 1814\u201336 NEG (S219; may be pre-1814/other parish). S220 forlover conflict (Nielsen vs Andersen) OPEN, not kinship. Kinship to P25/P28 still UNVERIFIED."
   },
   {
    "id": "P27",
@@ -972,7 +1037,7 @@ window.PEOPLE={
    "spouses": [
     {
      "id": "P26",
-     "marriage": "UNVERIFIED"
+     "marriage": "UNVERIFIED (before Oct 1835 per S218; not in Haraldsted 1814\u201336, S219)"
     }
    ],
    "children": [],
@@ -982,10 +1047,13 @@ window.PEOPLE={
     "S57",
     "S58",
     "S129",
-    "S130"
+    "S130",
+    "S218",
+    "S219",
+    "S220"
    ],
    "status": "VERIFIED foster mother of P18 (in the household 1834\u201345)",
-   "notes": "She shares the patronymic Johansdatter with alleged father Peder Johansen. A sibling link is UNVERIFIED speculation and is not asserted. | 2026-11-03: Haraldsted women deaths 1845\u201370 (bsid 204005) NOT yet searched (S111 incomplete). | 2026-11-03: CANDIDATE death (S129, MED): Haraldsted burial 1864 no. 10, Kirsten Johansdatter, widow of Jens Nielsen in Skee, age 68 (\u2248b.1795/96; fits 1796\u201397 within a year). Identity OPEN \u2014 not dead-proven. S130 (1864 no. 3 Kirsten Johansen, child) ruled out."
+   "notes": "She shares the patronymic Johansdatter with alleged father Peder Johansen. A sibling link is UNVERIFIED speculation and is not asserted. | 2026-11-03: Haraldsted women deaths 1845\u201370 (bsid 204005) NOT yet searched (S111 incomplete). | 2026-11-03: CANDIDATE death (S129, MED): Haraldsted burial 1864 no. 10, Kirsten Johansdatter, widow of Jens Nielsen in Skee, age 68 (\u2248b.1795/96; fits 1796\u201397 within a year). Identity OPEN \u2014 not dead-proven. S130 (1864 no. 3 Kirsten Johansen, child) ruled out. | Kin Dig J (2026-11-03): mother of Haagen Jensen per baptism S218 (b. 30 Oct 1835, bapt 13 Dec 1835; 'Hustru Kirsten Johansd. af Skee'). Married to P26 by 1835; marriage Haraldsted 1814\u201336 NEG (S219). Johans* faddere are context only. Kinship to P25/P28 still UNVERIFIED."
   },
   {
    "id": "P28",
@@ -1015,8 +1083,9 @@ window.PEOPLE={
     "S143",
     "S144"
    ],
-   "status": "CANDIDATE ONLY: possible 'udlagt' (named) father of P18. NOT proven; not linked as parent",
-   "notes": "He is the only unmarried Peder/Peter Johansen in FT-1834 Ringsted town plus landsogn (the 2 landsogn men are married, S62). He is on the same street as the candidate mother (S63). Other Peder Johansens may have been in nearby parishes. | Pass 7 CANDIDATE baptism (NOT linked, identity unproven): S68 Peder, son of Huusmand Johan Friderichsen of Torped + Maren Povls(?)datter, Ringsted, Sun 7 Oct 1804. That makes him 29, not 30, in Feb 1834. No other Peder son of a Johan in Ringsted legitimate baptisms Sep 1803\u2013Mar 1805 (Jan\u2013Aug 1803 not read).\nPass 8 (2026-11-03): CANDIDATE only. Baptism 9 May 1803 of 'Peter Johansen', son of Justitsraad Peter Johansen de Neergaard (S71, bsid 154779 img 187) - name/age fit to FT-1834 servant (S64) only; gentry birth makes identity doubtful; NOT linked. 1805 baptisms (S72): no Peder son of a Johan. FT-1834 Torped (S73): no Johan Friderichsen and no Peder Johansen ~30 in houses 4-27. Remains CANDIDATE; no record ties him to Hans's 1833 baptism. | 2026-11-03: S107/S108 not in Ringsted tilgang 1832\u201334; S109 not in afgang 1832 nos 4\u2013138 / 1833 to ~no.90 (partial); S110 no Peter/Peder Johansen ~36 with Ane Marie on Sankt Hans Gade FT-1840. S63/S64 remain CANDIDATE (1834 only). | 2026-11-03: FT-1840 Ringsted town remainder (S131) and landsogn img 1\u201323 (S132): no Peder/Peter Johansen ~36 with Ane Marie. S64 stays CANDIDATE. | 2026-11-03 digs 2\u20134: FT-1840 landsogn full img 1\u201335 (S142), Ringsted afgang 1833 nos.91\u2013140/1834 nos.1\u201370 (S143), FT-1834 Torped img 8\u201323 (S144) all NEGATIVE for Peder/Peter Johansen with Ane Marie; Torped near-misses (img 13, 19) REJECTED, not linked. S64 stays CANDIDATE. Haraldsted afgang (S135) still INCOMPLETE."
+   "status": "SAME-MAN LOCKED = P34 (Alex Decision B ~3:33 PM CT 2026-11-03); alias/census card of P34 \u2014 parent link lives only on P34\u2192P18",
+   "notes": "He is the only unmarried Peder/Peter Johansen in FT-1834 Ringsted town plus landsogn (the 2 landsogn men are married, S62). He is on the same street as the candidate mother (S63). Other Peder Johansens may have been in nearby parishes. | Pass 7 CANDIDATE baptism (NOT linked, identity unproven): S68 Peder, son of Huusmand Johan Friderichsen of Torped + Maren Povls(?)datter, Ringsted, Sun 7 Oct 1804. That makes him 29, not 30, in Feb 1834. No other Peder son of a Johan in Ringsted legitimate baptisms Sep 1803\u2013Mar 1805 (Jan\u2013Aug 1803 not read).\nPass 8 (2026-11-03): CANDIDATE only. Baptism 9 May 1803 of 'Peter Johansen', son of Justitsraad Peter Johansen de Neergaard (S71, bsid 154779 img 187) - name/age fit to FT-1834 servant (S64) only; gentry birth makes identity doubtful; NOT linked. 1805 baptisms (S72): no Peder son of a Johan. FT-1834 Torped (S73): no Johan Friderichsen and no Peder Johansen ~30 in houses 4-27. Remains CANDIDATE; no record ties him to Hans's 1833 baptism. | 2026-11-03: S107/S108 not in Ringsted tilgang 1832\u201334; S109 not in afgang 1832 nos 4\u2013138 / 1833 to ~no.90 (partial); S110 no Peter/Peder Johansen ~36 with Ane Marie on Sankt Hans Gade FT-1840. S63/S64 remain CANDIDATE (1834 only). | 2026-11-03: FT-1840 Ringsted town remainder (S131) and landsogn img 1\u201323 (S132): no Peder/Peter Johansen ~36 with Ane Marie. S64 stays CANDIDATE. | 2026-11-03 digs 2\u20134: FT-1840 landsogn full img 1\u201335 (S142), Ringsted afgang 1833 nos.91\u2013140/1834 nos.1\u201370 (S143), FT-1834 Torped img 8\u201323 (S144) all NEGATIVE for Peder/Peter Johansen with Ane Marie; Torped near-misses (img 13, 19) REJECTED, not linked. S64 stays CANDIDATE. Haraldsted afgang (S135) still INCOMPLETE. | 2026-11-03 (Alex via Tree Site): named-father role now on P34 (LOCKED recorded udlagt father, S51/S52/S56). P28 remains CANDIDATE ONLY for being that same man; NOT a parent of P18. | Alex Decision B (~3:33 PM CT 2026-11-03): identity merged into P34 (same man as named/udlagt father of P18). Card kept as census alias; children stay [] here (P18 linked only via P34). Earlier CANDIDATE trail above kept as history. Not DNA; no marriage to P25; S63 stays CANDIDATE; S68/S71 baptisms still unlinked.",
+   "sameAs": "P34"
   },
   {
    "id": "P29",
@@ -1134,6 +1203,32 @@ window.PEOPLE={
     "S152"
    ],
    "status": "APPROVED from S152 obit only: husband of P9, survived her Oct 1929. Birth, parents unknown \u2014 do not infer (funeral at Hans Jensen home: relationship NOT stated)."
+  },
+  {
+   "id": "P34",
+   "name": "Peder Johansen",
+   "residence": "of Ringsted (S51/S52); 1834-02-18 census: unmarried servant, Sankt Hans Gade, Ringsted k\u00f8bstad (S64; same-man LOCKED via P28, Alex Decision B)",
+   "birth": {
+    "date": "c. 1803\u201304 (30 in Feb 1834, FT-1834 S64; via P28 census identity)",
+    "place": "UNVERIFIED"
+   },
+   "parents": [],
+   "spouses": [],
+   "children": [
+    "P18"
+   ],
+   "sources": [
+    "S51",
+    "S52",
+    "S56",
+    "S64"
+   ],
+   "status": "LOCKED recorded father (udlagt) of P18 \u2014 S51/S52/S56; census same-man LOCKED as P28/S64 per Alex Decision B 2026-11-03",
+   "notes": "Created 2026-11-03 per Alex decision via Tree Site chat (~3:14 PM CT): 'treat Peder Johansen as Hans Pedersen's father \u2014 mom named him and confirmation lists him'. Named as udlagt Barnefader (putative father named by the mother) in 1833 Haraldsted baptism (S51 HMB, S52 KMB) and repeated in 1847 confirmation (S56). Paternity by DNA NOT claimed. No marriage to P25 recorded or implied. Census identity OPEN: P28 (FT-1834 Peter Johansen, Sankt Hans Gade servant, S64) is a CANDIDATE only for being this man \u2014 NOT merged. | Alex Decision B (~3:33 PM CT 2026-11-03, relayed by Genealogy Coordinator): P28 (FT-1834 Peter Johansen, 30, ugift tjenestekarl, Sankt Hans Gade, S64) is the SAME MAN as P34 \u2014 census identity merged here. Supersedes 'census identity OPEN / NOT merged' above. Still NOT DNA/biological proof beyond udlagt naming. No marriage to P25 (spouses []). S63 Ane Marie Hansdatter on same street stays CANDIDATE for P25. P28 candidate baptisms S68/S71 remain UNLINKED CANDIDATES (not added).",
+   "occupation": "Tjenestekarl (servant), Sankt Hans Gade, Ringsted k\u00f8bstad, FT-1834 (S64)",
+   "altNames": [
+    "Peter Johansen (FT-1834, S64; census card P28)"
+   ]
   }
  ]
 };
@@ -1644,7 +1739,7 @@ window.SOURCES={
  },
  "S64": {
   "id": "S64",
-  "flag": "CANDIDATE",
+  "flag": "LOCKED as P34 census identity by Alex Decision B, 2026-11-03 ~3:33 PM CT; was CANDIDATE",
   "text": "same census, Ringsted k\u00f8bstad, Sankt Hans Gade, p. 328, AO bsid=4462 img 1/11: \"Peter Johansen, 30, ugift\", in the Tjenestefolk (servants) bracket with Hans Sonnesen(?) 39: https://api.rigsarkivet.dk/ao/v1/images/112554",
   "urls": [
    "https://api.rigsarkivet.dk/ao/v1/images/112554"
@@ -1950,7 +2045,7 @@ window.SOURCES={
  "S104": {
   "id": "S104",
   "flag": "NEGATIVE / INCOMPLETE",
-  "text": "1880 US census Nels P. Jensen household \u2014 NOT located. Archive.org reel 631 (Redwood etc.) https://archive.org/details/10thcensus0631unit \u2014 no usable OCR; only sampled imgs 0300/0450/0500/0550/0600; Brown reel 616 not opened; full skim not done.",
+  "text": "1880 US census Nels P. Jensen household \u2014 NOT located. Archive.org reel 631 (Redwood etc.) https://archive.org/details/10thcensus0631unit \u2014 no usable OCR; only sampled imgs 0300/0450/0500/0550/0600; Brown reel 616 not opened; full skim not done. **[SUPERSEDED by S217, 2026-11-03 \u2014 household found at reel 631 img 0420; text above kept for history.]**",
   "urls": [
    "https://archive.org/details/10thcensus0631unit"
   ]
@@ -2528,6 +2623,494 @@ window.SOURCES={
   "text": "FT-1834 Haraldsted bsid 2405, Vals\u00f8magle img 2\u20138 (ids 83984\u201383990), 36 hh / 205 persons: no Erik/Erich Rasmussen household, no Maren Hansd. + Ane Marie match. Extends S185 (Dig 16). Haraldsted By not re-read (already S186, Dig 17). hh25 Claus Johansen 60 \u00d7 Mette Knudsdatter 50 = Clausdatter-side lead only (already Dig 17). Viewer https://arkivalieronline.rigsarkivet.dk/da/billedviser?bsid=2405",
   "urls": [
    "https://arkivalieronline.rigsarkivet.dk/da/billedviser?bsid=2405"
+  ]
+ },
+ "S201": {
+  "id": "S201",
+  "flag": "NEGATIVE ~80%; P25",
+  "text": "Benl\u00f8se KB bsid 148269 (book ends Apr 1805) + 148270, baptisms 17 Feb\u201328 Apr 1805: no Ane Marie ~23 Mar 1805. Near-miss NOT ours: 3 Mar 1805 \"Anne Magrete\", Jens Jensen \u00d7 Maren Nielsd. (wrong name). Cite 148269 img75 id 24491099 (https://api.rigsarkivet.dk/ao/v1/images/24491099; crops/b75-top, b75-bot); window shots 148269 img72\u201394 (ids 24491096\u201324491118), 148270 img1\u20134 (ids 24491119\u201324491122).",
+  "urls": [
+   "https://api.rigsarkivet.dk/ao/v1/images/24491099;"
+  ]
+ },
+ "S202": {
+  "id": "S202",
+  "flag": "NEGATIVE ~80%; P25",
+  "text": "Ringsted KB bsid 154779 / 154780, read to 17 Mar 1805 and 31 Mar\u2013Jul 1805: no Ane Marie d/o Hans \u00d7 Maren. Near-miss NOT P25: 12 May 1805 Berthel Hansen \u00d7 Ane Marie [?]d., child Marie. Cite 154779 img194 id 25834400 (https://api.rigsarkivet.dk/ao/v1/images/25834400; crops/r194-left, r194-right); 154780 img4\u20135 ids 25834522\u201325834523. **Gap caveat: 17\u201331 Mar 1805 not listed as read in pack.** **SUPERSEDED by S210 (Dig 23): 17\u201331 Mar 1805 gap CLOSED, NEG.**",
+  "urls": [
+   "https://api.rigsarkivet.dk/ao/v1/images/25834400;"
+  ]
+ },
+ "S203": {
+  "id": "S203",
+  "flag": "NEGATIVE ~80%; P25",
+  "text": "Kv\u00e6rkeby KB bsid 153099, all 1805: no Ane/Anna Marie. Cite img26\u201327 ids 25502410\u201325502411 (https://api.rigsarkivet.dk/ao/v1/images/25502410). Vigersted (annex) entries may sit in another section of this book \u2192 **Vigersted PARTIAL**.",
+  "urls": [
+   "https://api.rigsarkivet.dk/ao/v1/images/25502410"
+  ]
+ },
+ "S204": {
+  "id": "S204",
+  "flag": "CONTEXT ONLY, LOW relevance; NOT P25",
+  "text": "Kv\u00e6rkeby 153099 img24 id 25502408 (crops/k24-left-top), 1803: \"Anna Maria Hans Datters u\u00e6gte Pige Barn f\u00f8dt d. 12 Maj\", udlagt father Hans Pedersen, child Anna. Namesake mother; not P25; no relative inferred.",
+  "urls": []
+ },
+ "S205": {
+  "id": "S205",
+  "flag": "NEGATIVE ~75% 1801\u201305; PARTIAL ~60% 1806",
+  "text": "Haraldsted Enesteministerialbog bsid 150799 burials, 1801\u201305 full-res: no Anne Marie Hansd. ~60 of Wals\u00f8magle. 1803 \"Anne Marie \u2026 Niels Jensens D. i Wals\u00f8magle\" = a child, rejected. Cite img99R id 25011934 (crops/h99R0, h99R1, h99-1803-anemarie2), img100L id 25011935 (crops/h100L0, h100L1). 1806 img100R medium-res (crops/h100R0): no Anne Marie Hansd. ~60, no Hans Pedersen ~70 \u2014 PARTIAL 60%.",
+  "urls": []
+ },
+ "S206": {
+  "id": "S206",
+  "flag": "LEAD DOWNGRADED ~40%\u2192~30%",
+  "text": "Hans Andersen remarriage lead (S198 burial 1807, 40\u00bd; S199 FT-1801 fam 20 wife Anne Marie Hansd. 60): first wife's burial not found 1801\u201306 (S205). LEAD only; NOT Maren's first husband, NOT father of P25. **Dig 21 (S216): DOWNGRADED to \u2264~25\u201330%** \u2014 wife Anne Marie (not Maren), no her burial 1801\u201309 (S205+S215).",
+  "urls": []
+ },
+ "S207": {
+  "id": "S207",
+  "flag": "CANDIDATE lead ~30%; NOT linked",
+  "text": "FT-1801 Haraldsted, Vals\u00f8magle, bsid 26062 img11 id 2895659 (https://api.rigsarkivet.dk/ao/v1/images/2895659; Dig 20 crops): fam 5 \"Hans Pedersen 65 (aft\u00e6gt), Maren Hans Datter 34, Peder Hansen 3; den f\u00f8rste i 2det, hun i 1ste \u00e6gteskab\". IF this Maren = the 1809 widow (S194), Ane Marie's bio father could be Hans Pedersen; requires his death 1801\u201309 (burial not seen 1801\u201306). CANDIDATE only; no person card. **Dig 21 (S213): STRENGTHENED ~30%\u2192~45\u201350%** \u2014 CANDIDATE-HIT 1807 burial of Hans Pedersen i Wals\u00f8magle, 76; still CANDIDATE, NOT linked, NOT locked (age soft +5 yrs; wife unnamed).",
+  "urls": [
+   "https://api.rigsarkivet.dk/ao/v1/images/2895659;"
+  ]
+ },
+ "S208": {
+  "id": "S208",
+  "flag": "Alt CANDIDATE ~20%; NOT linked",
+  "text": "FT-1801 26062 img13 id 2895661 (https://api.rigsarkivet.dk/ao/v1/images/2895661): fam 17 Hans Pedersen 39 \u00d7 Marie/Maren Hans Datter 30. Alternative to S207; no person card. **Dig 21 (S216): WEAKENED ~20%\u2192~10%** \u2014 no burial of a Hans Pedersen ~45 1801\u201309 (S214).",
+  "urls": [
+   "https://api.rigsarkivet.dk/ao/v1/images/2895661"
+  ]
+ },
+ "S209": {
+  "id": "S209",
+  "flag": "NEGATIVE ~80% boys; PARTIAL",
+  "text": "Haraldsted KMB bsid 150801 boys (Mandki\u00f8n) Oct 1814\u2013May 1819, img5\u201318 (img n = id 25012222+n; ids 25012227\u201325012240; crops/p5\u2013p17): no son of Erik Rasmussen \u00d7 Maren Hansd. Girls and post-1819 NOT READ. Side note: 14 Nov 1818 sponsor \"Pigen Maren Hansd. af Wals\u00f8magle\" (img15\u201316, crops/p15) \u2014 unmarried, \u2260 ours (~70%).",
+  "urls": []
+ },
+ "S210": {
+  "id": "S210",
+  "flag": "NEGATIVE ~85%; P25; Ringsted gap CLOSED",
+  "text": "Ringsted kirkebog (church book) bsid 154779 \u2192 154780, 17\u201331 Mar 1805: 154779 \"D\u00f8bte i Aaret 1805\" (baptised in the year 1805) ends no. 7, S\u00f8ndag (Sunday) 17 Mar, S\u00f8ren Jensen \u2026 child Johanne, then a closing attestation; 154780 is a new book, and its first entry (pag. 3) is 31 Mar 1805, Peder Hansen \u2026 Datter (daughter) Maren. No entries 18\u201330 Mar. Cite 154779 img194 id 25834400 (https://api.rigsarkivet.dk/ao/v1/images/25834400; crops/r194-left-bottom, r194-right-bottom), img195 id 25834401 (https://api.rigsarkivet.dk/ao/v1/images/25834401); 154780 img3 id 25834521 (https://api.rigsarkivet.dk/ao/v1/images/25834521, title page), img4 id 25834522 (https://api.rigsarkivet.dk/ao/v1/images/25834522; crops/r4-left-top, r4-right-top). Shots on file. **Supersedes the S202 gap caveat for 17\u201331 Mar.**",
+  "urls": [
+   "https://api.rigsarkivet.dk/ao/v1/images/25834400;",
+   "https://api.rigsarkivet.dk/ao/v1/images/25834401",
+   "https://api.rigsarkivet.dk/ao/v1/images/25834521,",
+   "https://api.rigsarkivet.dk/ao/v1/images/25834522;"
+  ]
+ },
+ "S211": {
+  "id": "S211",
+  "flag": "NEGATIVE ~80%; P25",
+  "text": "Sorterup FVD bsid 517061, Sexagesima (17 Feb) to 5. S. i Fasten (5th Sunday in Lent, 7 Apr) 1805: no Ane Marie Hansd. Near-miss NOT P25: no. 5, Lars Rasmussen af Nesbye (of Nesbye), Datter Anna Maria = Larsdatter. Side note NOT P25: Aug 1805 u\u00e6gte (illegitimate) child of Pigen (unmarried woman) Maren Hans Datter fra Steenstrup, wrong month. Cite img54 id 25768306 (https://api.rigsarkivet.dk/ao/v1/images/25768306; crops/s54-right-top, s54-right-bot), img56 id 25768308 (https://api.rigsarkivet.dk/ao/v1/images/25768308). Shots on file. No person cards.",
+  "urls": [
+   "https://api.rigsarkivet.dk/ao/v1/images/25768306;",
+   "https://api.rigsarkivet.dk/ao/v1/images/25768308"
+  ]
+ },
+ "S212": {
+  "id": "S212",
+  "flag": "NEGATIVE ~80%; P25",
+  "text": "Gyrstinge (+Flinterup) FKVD bsid 627539, Jan\u2013Apr 1805: named children Hans, Anders, Frene, Kirsten, Ellen, Marie (father Ole Jespersen), Ole. No Ane/Anne Marie; no Hans \u00d7 Maren Hansd. Cite img43 id 24990938 (https://api.rigsarkivet.dk/ao/v1/images/24990938; crops/g43-right-mid, g43-right-bot); context img40 id 24990935 (https://api.rigsarkivet.dk/ao/v1/images/24990935; Mar 1804 Maren Hansdatter entries, a year early, not this child). Shots on file.",
+  "urls": [
+   "https://api.rigsarkivet.dk/ao/v1/images/24990938;",
+   "https://api.rigsarkivet.dk/ao/v1/images/24990935;"
+  ]
+ },
+ "S213": {
+  "id": "S213",
+  "flag": "CANDIDATE-HIT ~70% burial identity; P25 bio-father lead S207",
+  "text": "150799 burials img101 **L**, id 25011936 (https://api.rigsarkivet.dk/ao/v1/images/25011936): 7de S\u00f8ndag efter Trinitatis (7th Sunday after Trinity) 14 Jul 1807: \"blev Indsidder [lodger] og Almisselem [pauper on parish relief] Hans Pedersen i Wals\u00f8magle begraven i Haraldsted Kirkegaard\", \"76 aar\". Crop: crop-150799-img101-1807-14jul-HansPedersen-Valsomagle-76.jpg \u2014 **gate read: \"14 Julii \u2026 Indsidder og Almisselem Hans Pedersen i Vals\u00f8magle \u2026 76\" legible, agrees with Scout.** Age soft point: FT-1801 fam5 age 65 \u2192 expect ~71 in 1807 (+5 yr gap, common for elderly, soft). Aft\u00e6gt (retired, on support) \u2192 almisselem fits. Wife NOT named (no Enkemand/hustru). **Same img101 as S198 Hans Andersen burial, which is on img101 R (2den S\u00f8ndag i Advent / 2nd Sunday in Advent) \u2014 left vs right page, different entries; do not conflate.** No person card for Hans Pedersen.",
+  "urls": [
+   "https://api.rigsarkivet.dk/ao/v1/images/25011936"
+  ]
+ },
+ "S214": {
+  "id": "S214",
+  "flag": "NEGATIVE ~85%; other Hans Pedersen burials 1801\u201309",
+  "text": "full pass img99R\u2013102R (ids 25011934\u201325011937; https://api.rigsarkivet.dk/ao/v1/images/25011934 \u2026 https://api.rigsarkivet.dk/ao/v1/images/25011937): no other Hans Pedersen buried. Near-misses NOT ours: 1802 Indsidder Peder Hansen i Wals\u00f8magle 59 (img99R); 1806 gl. (old) Peder Hansens Hustru (wife) Cathrine Povels Datter 72 (img100R).",
+  "urls": [
+   "https://api.rigsarkivet.dk/ao/v1/images/25011934",
+   "https://api.rigsarkivet.dk/ao/v1/images/25011937"
+  ]
+ },
+ "S215": {
+  "id": "S215",
+  "flag": "NEGATIVE ~80%; Anne Marie Hansd. ~60 burial 1806\u201309",
+  "text": "img100R\u2013102R: no Anne Marie/Anna Maria Hansd. Near-misses NOT ours: 1806 Maren i Skee 60; 11 Dec 1807 Henrik Andersens Hustru Mette Marie Hans Datter i Skee 30; 31 Aug 1808 Mette Hans Datter, Hustru af Wals\u00f8magle 62. Combined with S205 (1801\u201305): no burial of Hans Andersen's 1801 wife Anne Marie 1801\u201309 in Haraldsted.",
+  "urls": []
+ },
+ "S216": {
+  "id": "S216",
+  "flag": "LEAD DOWNGRADE note",
+  "text": "Hans Andersen lead (S206) \u2264~25\u201330%: his 1801 wife was Anne Marie, not Maren; no her burial 1801\u201309; he was buried 1807 age 40\u00bd (img101R = S198). FT-1801 fam17 (S208) weakened to ~10% (no Hans Pedersen ~45 burial 1801\u201309, so likely alive 1809). Derived from S198/S199/S205/S214/S215; no new image.",
+  "urls": []
+ },
+ "S217": {
+  "id": "S217",
+  "flag": "APPROVED HIT HIGH \u2014 household as read from image",
+  "text": "1880 US Census, Brookville Twp, Redwood Co MN, Supervisor's Dist 1, ED 222, page 11, enumerated 25 Jun 1880, dwelling/family 96/97. https://archive.org/details/10thcensus0631unit image 0420 (reel 631); local shot shots/scout-mn-pack9/1880-brookville-ed222-p11-img0420.jpg.",
+  "urls": [
+   "https://archive.org/details/10thcensus0631unit"
+  ]
+ },
+ "S218": {
+  "id": "S218",
+  "flag": "HIT HIGH",
+  "text": "Haraldsted KMB, AO bsid 150801, F\u00f8dte Mandki\u00f8n (male births), img 83, image id 25012305. Viewer: https://arkivalieronline.rigsarkivet.dk/da/billedviser?bsid=150801#150801,25012305 \u00b7 Image: https://api.rigsarkivet.dk/ao/v1/images/25012305",
+  "urls": [
+   "https://arkivalieronline.rigsarkivet.dk/da/billedviser?bsid=150801#150801,25012305",
+   "https://api.rigsarkivet.dk/ao/v1/images/25012305"
+  ]
+ },
+ "S219": {
+  "id": "S219",
+  "flag": "NEG (~80\u201385%)",
+  "text": "Haraldsted Copulerede (marriages), bsid 150801 imgs 311\u2013348 (1814\u20131836): no Jens Nielsen \u00d7 Kirsten Johansdatter. Imgs 349\u2013352 downloaded, not fully read \u2192 PARTIAL tail. Near-misses NOT ours: 1822 Jens Nielsen \u00d7 Margrethe Nielsd. Vals\u00f8magle; 1824/25 Jens Olsen \u00d7 Birthe Kirstine Nielsd. Skee (img 325 entry 3, crop on file); 1818 older couple; other Jens* wrong surnames. Marriage may be pre-1814 / bride's parish / outside Haraldsted.",
+  "urls": []
+ },
+ "S220": {
+  "id": "S220",
+  "flag": "SOCIAL/CONFLICT note (not kinship)",
+  "text": "bsid 150801 Copulerede img 330 (1826) entry 12: Ungk. (bachelor) Johannes Larsen 27 af Haraldsted \u00d7 Pigen Ane Hansd. af Vals\u00f8magle 26 \u2014 bride \u2260 P25 by age. Forlover (bondsman): Scout read conflict Jens Nielsen vs Jens Andersen af Skee. Gate eye-read of crop-330-leftfull.jpg: \"g. Jens And\u2026\" / \"af Skee\" \u2014 column truncated at right edge; leans Andersen but NOT clear \u2192 OPEN, both sides kept.",
+  "urls": []
+ },
+ "S221": {
+  "id": "S221",
+  "flag": "CONTEXT",
+  "text": "FT-1834 Skee (see S54) hh35 Jens Olsen \u00d7 Birthe Kirstine = the 1824/25 near-miss couple. Vision-OCR ages on FT page ignored; S54 trusted. Possible sons Johan/Lars UNVERIFIED; NOT children of P26.",
+  "urls": []
+ },
+ "S222": {
+  "id": "S222",
+  "flag": "HIT; couple identity HIGH",
+  "text": "Haraldsted Enesteministerialbog bsid 150799 img13 id 25011848 (https://api.rigsarkivet.dk/ao/v1/images/25011848), right page, 4th entry. Crops: crop-150799-img13-1797-21maj-HansPedersen-MarenHansd.jpg (+ crop-150799-img13-L-marriages-1795-97.jpg, -R-marriages-1797.jpg). Gate read: \"5te S\u00f8ndag efter Paaske den 21de Maji blev Enkemand [widower] Hans Pedersen og Pigen [unmarried woman] Maren Hans D. begge af Wals\u00f8emagle trolovede [betrothed] i Pr\u00e6stegaarden [the parsonage]. Forlovere [sponsors] vare Lars Rasmus[sen] og Christian Jensen ibid. Viede [married] d. 15 Octob. som var 18de S\u00f8ndag efter Trinit.\" Enkemand HIGH~, Pigen HIGH~; Wals\u00f8emagle = Vals\u00f8magle. Betrothal 21 May 1797, marriage 15 Oct 1797. Soft points: \"5te\" settled by calendar (Easter 1797 = 16 Apr \u2192 5th Sunday after = 21 May; 1st would be 23 Apr; also 18th after Trinity = 15 Oct checks). \"Maren\" vs \"Marie\": crop leans Maren (~75%), soft OPEN. Forlover \"Lars Rasmus\u2026\" leans Rasmussen (~70%) over M\u00f8nstersen, soft OPEN. Supports S207 couple; does NOT prove parentage of P25. No person card.",
+  "urls": [
+   "https://api.rigsarkivet.dk/ao/v1/images/25011848"
+  ]
+ },
+ "S223": {
+  "id": "S223",
+  "flag": "PARTIAL",
+  "text": "S194 re-read, 150799 img20 id 25011855 (https://api.rigsarkivet.dk/ao/v1/images/25011855) left page; crops crop-img20-1809-7okt-entry-full.jpg, crop-img20-1809-statusword-x3.jpg: 7 Oct 1809 ungkarl Erich Rasmussen og Enken [the widow] Maren Hans Datter af Vals\u00f8emagle viede i Haraldsted Kirke; forlovere Gd. Rasmus Erichsen (his father), Gd. Christen Henrichsen af Vals\u00f8emagle. Enken ~85%; no late husband named ~95%. Fits widow after Jul 1807 burial (S213); does not name Hans Pedersen. S194 cross-ref; not locked.",
+  "urls": [
+   "https://api.rigsarkivet.dk/ao/v1/images/25011855"
+  ]
+ },
+ "S224": {
+  "id": "S224",
+  "flag": "NEG ~85%",
+  "text": "Vigersted Eneste bsid 158710 img34 R\u201336, ids 26664807\u201326664809 (https://api.rigsarkivet.dk/ao/v1/images/26664808); 1805 baptisms, no Ane Marie / no daughter of a Hans.",
+  "urls": [
+   "https://api.rigsarkivet.dk/ao/v1/images/26664808"
+  ]
+ },
+ "S225": {
+  "id": "S225",
+  "flag": "NEG ~80%",
+  "text": "Bringstrup Eneste bsid 148582 img16\u201317, ids 24553839\u201324553840 (https://api.rigsarkivet.dk/ao/v1/images/24553839). Near-miss: Ane Marie Poulsd., twin, Sexagesima Feb 1805 \u2260 P25.",
+  "urls": [
+   "https://api.rigsarkivet.dk/ao/v1/images/24553839"
+  ]
+ },
+ "S226": {
+  "id": "S226",
+  "flag": "NEG ~85%",
+  "text": "Allindemagle Eneste bsid 147958 img28 id 24430374 (https://api.rigsarkivet.dk/ao/v1/images/24430374); no baptism between 10 Mar and 10 May 1805.",
+  "urls": [
+   "https://api.rigsarkivet.dk/ao/v1/images/24430374"
+  ]
+ },
+ "S227": {
+  "id": "S227",
+  "flag": "HIT ~80%; couple identity strengthen",
+  "text": "150799 img64 R, id 25011899 (https://api.rigsarkivet.dk/ao/v1/images/25011899); crop crop-150799-img64R-1798-Peder-HansPedersen-MarenHansD.jpg. Gate read agrees: \"Indsidder [lodger] Hans Peders. og Hustrue [wife] Maren Hans Datter af Wals\u00f8emagle en S\u00f8n, Peder, f\u00f8dt 16 Martii, baaret af Peder Christophersens Hustrue ibid.\" Faddere [godparents] Hans J\u00f8rgensen, Christen Henrichsen, Lars Marcussen, J\u00f8rgen Hansens Hustrue ibid., \u2026 Peder Hansens Hustrue i Haraldsted. Baptism a Sunday in Mar 1798 (day in margin unclear, ~25?). Fits FT-1801 fam5 \"Peder Hansen 3\" (S207). **[Dig 27: see S241 \u2014 father split, lean fam5/S207 ~65%.]**",
+  "urls": [
+   "https://api.rigsarkivet.dk/ao/v1/images/25011899"
+  ]
+ },
+ "S228": {
+  "id": "S228",
+  "flag": "HIT ~75%",
+  "text": "img69 L, id 25011904 (https://api.rigsarkivet.dk/ao/v1/images/25011904); crop crop-150799-img69L-1801-Maren-\u2026jpg. \"Samme Dag d. 31 Maji. Hans Pedersen Skoleholder [schoolteacher / parish school keeper] i Wals\u00f8emagle og Hustrue Maren(/Marie?) Hans Datter en hiemmed\u00f8bt [home-baptised] Datter, Maren, f\u00f8dt den 2 Maji, til Daabs Confirmation.\" Gate crop leans \"Marie\" here \u2014 soft OPEN. Faddere S\u00f8ren Marcussen, Ferdinand Andersen, Lars Marcussen, Peder Christophersen og Peder Andersens Hustruer, alle Wals\u00f8emagle. **[Dig 27: see S242 \u2014 father split to fam17/S208 lean; wife read Marie.]**",
+  "urls": [
+   "https://api.rigsarkivet.dk/ao/v1/images/25011904"
+  ]
+ },
+ "S229": {
+  "id": "S229",
+  "flag": "HIT ~75%",
+  "text": "img74 L, id 25011909 (https://api.rigsarkivet.dk/ao/v1/images/25011909); crop crop-150799-img74L-1804-Niels-\u2026jpg. \"Trinit. S\u00f8ndag d. 27 Maji. Hans Pedersen Skoleholder i Wals\u00f8emagle og Hustrue Marie(/Maren?) Hans Datter, en hiemmed\u00f8bt S\u00f8n, Niels, f\u00f8dt d. 16 April(?), til Daabs Confirmation.\" Carried by Jomfru C. B. Knudsdorph(?) i Pr\u00e6stegaarden. Faddere Hans Marcussen, Bonden Niels S\u00f8rensen, Hans Henrichsen, Ferdinand Andersens og Lars Marcussens Hustruer. Gate crop reads \"Marie\" \u2014 soft OPEN. **[Dig 27: see S243 \u2014 father split, lean fam17/S208 ~85%.]**",
+  "urls": [
+   "https://api.rigsarkivet.dk/ao/v1/images/25011909"
+  ]
+ },
+ "S230": {
+  "id": "S230",
+  "flag": "NEG high",
+  "text": "Haraldsted 150799 baptisms img64\u201378 full (ids 25011899\u201325011913; https://api.rigsarkivet.dk/ao/v1/images/25011910 for 1805): no Ane/Anne Marie for Hans Pedersen \u00d7 Maren/Marie Hansd. 1798\u20131806. Only 1805 \"Anne Marie\" (img75 R, bapt 7 Apr) = S\u00f8ren Hansen Gaardmand \u00d7 Kirsten Ols Datter, Wals\u00f8emagle \u2260 P25. img72 = duplicate of img71 (no gap). Baptism ~23 Mar 1805 still MISSING; S189 stays CANDIDATE.",
+  "urls": [
+   "https://api.rigsarkivet.dk/ao/v1/images/25011910"
+  ]
+ },
+ "S231": {
+  "id": "S231",
+  "flag": "PARTIAL; CANDIDATE support only",
+  "text": "burials img98 L, id 25011933 (https://api.rigsarkivet.dk/ao/v1/images/25011933); crop crop-150799-img98L-burial-HansPedersensHustrue-KarenLarsD.jpg. Gate read: \"Hans Pedersens Hustrue Karen Lars Datter Wals\u00f8emagle\", \"65\u00bd\" \u2014 first entry of church year 1797 (margin \"1 S. i Advent\"? \u2192 ~27 Nov 1796, date ~60%; name ~80%). Fits Enkemand [widower] Hans Pedersen marrying Maren May/Oct 1797 (S222) and a husband b. ~1731 (S213 age 76). Identity with S207/S213 Hans NOT proven.",
+  "urls": [
+   "https://api.rigsarkivet.dk/ao/v1/images/25011933"
+  ]
+ },
+ "S232": {
+  "id": "S232",
+  "flag": "NEG",
+  "text": "bsid 627957, \"Enesteministerialbog for Slaglille Sogn\" FKVD 1808\u20131814, 62 imgs (94674942\u201394675003); spine EC-404, Slaglille Sogn kasse 1/404-1, F\u00d8DTE 1808\u20131814 \u2014 births start 1808. https://arkivalieronline.rigsarkivet.dk/da/billedviser?bsid=627957#627957,94674942 . Shot 627957_94674942.jpg.",
+  "urls": [
+   "https://arkivalieronline.rigsarkivet.dk/da/billedviser?bsid=627957#627957,94674942"
+  ]
+ },
+ "S233": {
+  "id": "S233",
+  "flag": "NEG; colour re-scan of same book",
+  "text": "bsid 618577, Bjernede EM FVD 1808\u20131814, 57 imgs (93688127\u201393688183); kasse 1/384-1; index img 93688128 gate eye-read: D\u00e5b 1807\u20131814 s.10, Begravelser 1808\u20131814 s.23, Vaccination 1805\u20131829 s.29, Vielser 1808\u20131814 s.48 \u2014 nothing before 1807. https://arkivalieronline.rigsarkivet.dk/da/billedviser?bsid=618577#618577,93688127 . Shots 618577_93688127.jpg, 618577_93688128.jpg.",
+  "urls": [
+   "https://arkivalieronline.rigsarkivet.dk/da/billedviser?bsid=618577#618577,93688127"
+  ]
+ },
+ "S234": {
+  "id": "S234",
+  "flag": "DUPLICATE",
+  "text": "bsid 626612, Bjernede EM FVD 1808\u20131814, 49 imgs (26212574\u201326212622); title card gate eye-read: \"(Slaglille-) Bjernede, Sor\u00f8 Amt, 1808-14(29), Baptisms/Marriages/Burials/Vaccinations (1801-29), Book No 7\". \"1801\" = vaccination range only \u2014 NOT a baptism HIT. https://arkivalieronline.rigsarkivet.dk/da/billedviser?bsid=626612#626612,26212574 . Shot 626612_26212574.jpg.",
+  "urls": [
+   "https://arkivalieronline.rigsarkivet.dk/da/billedviser?bsid=626612#626612,26212574"
+  ]
+ },
+ "S235": {
+  "id": "S235",
+  "flag": "NEG-by-structure, OCR sample \u2014 P10 Olga",
+  "text": "Redwood Gazette 1935, phrases \"Olga Petersen\" / \"Hans Petersen\" / \"Maren\": 0 phrase hits on 1935-01-03, 01-10, 01-17, 01-24, 01-31, 02-07, 02-14, 06-06, 06-13, 11-07, 11-14 (\"Maren\" on 11-14 inconclusive). Bare \"Olga\" 2 hits each on 01-03 and 01-10 UNINSPECTED; 01-10 p.3 Milton Peterson funeral \u2260 target. Not run: 1935-02-21, 02-28, 06-20, 06-27; rest of 1935; 1934/1936; other titles. Caveats: OCR-index only (not visual page reads); exact death day unknown (FAG year secondary); unsampled weeks may still hold an obit. Not a \"no obit exists\" finding.",
+  "urls": []
+ },
+ "S236": {
+  "id": "S236",
+  "flag": "NEG-by-structure, OCR sample \u2014 P7 Maren Sophia",
+  "text": "Redwood Gazette 1937, phrases \"Hans Petersen\" / \"Maren\": 0 phrase hits on 1937-01-07 (header unverified), 01-14, 01-21, 02-04, 06-10, 11-04, 11-11. 01-28: \"Maren\" 0, \"Hans Petersen\" inconclusive. 06-03: \"Hans Petersen\" 0; \"Maren\" 1 hit p.8 Lucan social letter = NOT an obit (LOW, not a HIT; screenshot asset noted in pack). Not run: 1937-02-11, 02-18, 02-25, 06-17, 06-24; rest of 1937; 1936/1938; Walnut Grove / Sleepy Eye titles. Same caveats as S235.",
+  "urls": []
+ },
+ "S237": {
+  "id": "S237",
+  "flag": "NEG-by-unavailability",
+  "text": "Chronicling America / LOC Redwood Gazette LCCN sn85025570 (https://chroniclingamerica.loc.gov/lccn/sn85025570/ \u2192 www.loc.gov/item/sn85025570/): HTTP 403 Cloudflare challenge. MNHS People Finder death index (Olga ~1935, Maren Sophia ~1937; https://www.mnhs.org/search/people): INCOMPLETE (JS-loaded results; curl empty) \u2014 no hit or miss recorded.",
+  "urls": [
+   "https://chroniclingamerica.loc.gov/lccn/sn85025570/",
+   "https://www.mnhs.org/search/people"
+  ]
+ },
+ "S238": {
+  "id": "S238",
+  "flag": "NEG HIGH",
+  "text": "Ringsted Klosters Gods skifteprotokol register 1806\u20131850, bsid 486592 img8 id 86655887 (protocol bsid 486591); https://arkivalieronline.rigsarkivet.dk/da/billedviser?epid=22917492#486592,86655880 ; crops crop-reg-img8-H-top.jpg, crop-reg-img8-H-lower.jpg. H section (reg p.549) lists only \"Hans Pedersen, Gmd. i Skieller\u00f8d\" fol.225 (231,236,259,262) and \"Hans Petersen, Bonde i Torpet\" fol.435. No Wals\u00f8magle entry.",
+  "urls": [
+   "https://arkivalieronline.rigsarkivet.dk/da/billedviser?epid=22917492#486592,86655880"
+  ]
+ },
+ "S239": {
+  "id": "S239",
+  "flag": "SKIPPED / gap HIGH",
+  "text": "Skjolden\u00e6sholm Gods skifteprotokoller: Book 6 (bsid 130261, img455/462) ends \"Anno 1799\". Book 7 (bsid 130263 img1\u20134; register bsid 130266 img1\u201315) starts 1813. Book 6 register (bsid 130265) lists Wals\u00f8magle tenants (e.g. \"Hans Hansen gaardmand af Wals\u00f8magle\"), which shows the estate held Wals\u00f8magle land. No free AO volume covers **1800\u20131813**, so the 1807 skifte can't be found here. This is a gap in the archive, not a paywall. https://api.rigsarkivet.dk/ao/v1/billedviser/billed-reference-lister?bsid=130263",
+  "urls": [
+   "https://api.rigsarkivet.dk/ao/v1/billedviser/billed-reference-lister?bsid=130263"
+  ]
+ },
+ "S240": {
+  "id": "S240",
+  "flag": "NOT CHECKED, leftover",
+  "text": "Universitetets Gods skifte (DS-wiki: held land in Haraldsted). Not opened in Dig 26, so it is neither a hit nor a miss. HOLD for Coordinator.",
+  "urls": []
+ },
+ "S241": {
+  "id": "S241",
+  "flag": "HIT; lean S207 ~65%",
+  "text": "re-read of Dig 25 S227. 1798 Peder bapt, img64 R, id 25011899 (https://api.rigsarkivet.dk/ao/v1/images/25011899). \"Indsidder Hans Peders. og Hustrue Maren Hans Datter af Wals\u00f8emagle \u2026 S\u00f8n, Peder, f\u00f8dt 16 Martii\". Crops crop-150799-img64R-1798-Peder-Indsidder-HansPeders-MarenHansD.jpg + crop-150799-img64R-1798-margin-date.jpg. Assigned lean \u2192 fam5 / S207 (Indsidder + Maren). Not locked.",
+  "urls": [
+   "https://api.rigsarkivet.dk/ao/v1/images/25011899"
+  ]
+ },
+ "S242": {
+  "id": "S242",
+  "flag": "HIT; lean S208 ~80%",
+  "text": "re-read of Dig 25 S228. 1801 daughter Maren bapt, img69 L, id 25011904 (https://api.rigsarkivet.dk/ao/v1/images/25011904). \"Hans Pedersen Skoleholder \u2026 Hustrue Marie Hans Datter \u2026 Datter, Maren, f\u00f8dt den 2 Maji\". Dig 25 \"Maren(/Marie?)\" settled as **Marie**. Crop crop-150799-img69L-1801-Maren-Skoleholder-HansPedersen-MarieHansD.jpg. Assigned lean \u2192 fam17 / S208. Not locked.",
+  "urls": [
+   "https://api.rigsarkivet.dk/ao/v1/images/25011904"
+  ]
+ },
+ "S243": {
+  "id": "S243",
+  "flag": "HIT; lean S208 ~85%",
+  "text": "re-read of Dig 25 S229. 1804 Niels bapt, img74 L, id 25011909 (https://api.rigsarkivet.dk/ao/v1/images/25011909). \"Hans Pedersen Skoleholder \u2026 Hustrue Marie Hans Datter \u2026 S\u00f8n, Niels\". Crop crop-150799-img74L-1804-Niels-Skoleholder-HansPedersen-MarieHansD.jpg. Assigned lean \u2192 fam17 / S208. Not locked.",
+  "urls": [
+   "https://api.rigsarkivet.dk/ao/v1/images/25011909"
+  ]
+ },
+ "S244": {
+  "id": "S244",
+  "flag": "NEG HIGH for Aft\u00e6gt wording; PARTIAL lean S207 by age ~60%",
+  "text": "re-read of Dig 21 S213. Burial 14 Jul 1807, img101 L, id 25011936 (https://api.rigsarkivet.dk/ao/v1/images/25011936). Exact: \"Indsidder og Almisselem Hans Pedersen i Wals\u00f8magle\", age 76. **Aft\u00e6gt/Aft\u00e6gts NOT present.** Crop crop-150799-img101L-1807-14jul-Indsidder-Almisselem-HansPedersen-76-noAftaegt.jpg. Age (~1731) leans S207 over S208 (~1762); not proven; wife unnamed.",
+  "urls": [
+   "https://api.rigsarkivet.dk/ao/v1/images/25011936"
+  ]
+ },
+ "S245": {
+  "id": "S245",
+  "flag": "HIT ~85%; lean S208",
+  "text": "1795 baptism of Kirsten, img60 R, id 25011895 (https://api.rigsarkivet.dk/ao/v1/images/25011895), 20 S. e. Trin. 1795; crop shots/scout-dk-dig28-2026-11-03/crop-150799-img60R-1795-Kirsten-HansPedersen-MarieHansD.jpg. \"Hans Pedersen Skoleholder (schoolteacher / parish schoolkeeper) i Haraldsted og Hustrue (wife) Marie Hans D[atter] en Datter **Kirsten** f\u00f8d d. 29 Octob.\" Carried by Ferdinand Andersens Hustrue i Wals\u00f8magle; Faddere (godparents) Ferdinand Andersen, Jens Hansen i Veddinge(?) Huus, Knud Nielsen i Haraldsted, William Jepsen(?) \u2026 Age 6 in FT-1801 fam17 fits exactly. Strengthens S208 household. Not linked to P25.",
+  "urls": [
+   "https://api.rigsarkivet.dk/ao/v1/images/25011895"
+  ]
+ },
+ "S246": {
+  "id": "S246",
+  "flag": "PARTIAL ~75% on occupation word; context",
+  "text": "3 Paaskedag 1796, bapt. Niels s. Hans Nielsen \u00d7 Cathrine Tobiasdatter, Haraldsted; img61 R, id 25011896 (https://api.rigsarkivet.dk/ao/v1/images/25011896); crop shots/scout-dk-dig28-2026-11-03/crop-150799-img61R-1796-Niels-fadder-HansPedersensHustrue.jpg. Fadder (godparent): \"Skolemester(?) (schoolmaster) Hans Pedersens Hustrue (wife), alle i Haraldsted\". Shows a schoolmaster Hans Pedersen household in Haraldsted 1796; Skolemester vs Skoleholder soft.",
+  "urls": [
+   "https://api.rigsarkivet.dk/ao/v1/images/25011896"
+  ]
+ },
+ "S247": {
+  "id": "S247",
+  "flag": "NEG",
+  "text": "no baptism with father Hans Pedersen (any occupation) Apr 1796 \u2013 Jan 1798, img61 R \u2013 img64 L (ids 25011896\u201325011899; quadrant shots shots/scout-dk-dig28-2026-11-03/150799-61R\u202664L-q*.jpg). Fam17 Peder Hansen (~3 in 1801) still MISSING. Caveat: read from quadrant downsamples (~2x); a faint entry on full-res is possible. Only 1798 Peder remains Indsidder (lodger) \u00d7 Maren (S227/S241, lean S207).",
+  "urls": []
+ },
+ "S248": {
+  "id": "S248",
+  "flag": "NEG MED-HIGH",
+  "text": "continuous skifte headings Nov 1806 \u2013 Dec 1808, bsid 486871 img348\u2013356: no skifte after any Hans Pedersen and no Wals\u00f8magle/Vals\u00f8magle/Haraldsted place. Anchors: img348 fol.678 \"Anno 1806 den 29 November\" Ellen Christensdatter, Tr\u00f8nninge; img350 fol.680 (id 86702254, https://api.rigsarkivet.dk/ao/v1/images/86702254) \"Aar 1807 den 25 Maij\" Ingeborg Hansdatter, wife of Husmand Christen Nielsen, Tr\u00f8nninge; img352 fol.684\u201385 (id 86702256, https://api.rigsarkivet.dk/ao/v1/images/86702256) \"Aar 1807 den 15 October\" Husmand Rasmus Rasmussen (i Kirkerup?); img354 (id 86702258, https://api.rigsarkivet.dk/ao/v1/images/86702258) entry closes 23 Feb 1808, next \"Aar 1808 den 11 October\" Gaardmand Christen Nielsen; img356 \"1808 den 17 December\" (Udstrup?). Crops shots/scout-dk-dig29-2026-11-03/crop-486871-img350-heading-1807-05-25.jpg, shots/scout-dk-dig29-2026-11-03/crop-486871-img352-heading-1807-10-15.jpg; page shots shots/scout-dk-dig29-2026-11-03/ug-486871-img3/320/348/350/352/354/356/380.jpg. The 1807 window is covered and the protocol is free, so this is a real NEG, not a paywall or gap. Reading at thumbnail resolution; headings clear. **Caveat: a poor aft\u00e6gtsmand (retired on support) / almisselem (parish poor-relief recipient) often had no skifte at all \u2014 NEG \u2260 proof he was not a tenant.**",
+  "urls": [
+   "https://api.rigsarkivet.dk/ao/v1/images/86702254",
+   "https://api.rigsarkivet.dk/ao/v1/images/86702256",
+   "https://api.rigsarkivet.dk/ao/v1/images/86702258"
+  ]
+ },
+ "S249": {
+  "id": "S249",
+  "flag": "PARTIAL / LOW",
+  "text": "places in the 1804\u201310 sample (imgs 320\u2013380): Tr\u00f8nninge (most), Gislinge, Kirkerup(?), Udstrup(?), Sandby/Kildeby(?); none in Haraldsted parish. University tenants in Haraldsted/Wals\u00f8magle NOT SHOWN; the DS-wiki claim \"University held land near Haraldsted\" is NOT confirmed by this sample (not disproven; 1787\u20131806 and 1809\u201315 only sampled; vols 486866/486872 unread).",
+  "urls": []
+ },
+ "S250": {
+  "id": "S250",
+  "flag": "SKIPPED / gap HIGH \u2014 NOT NEG",
+  "text": "Skjolden\u00e6sholm Gods skifteprotokoller (probate protocols), free AO. Book 6 (bsid 130261, 465 imgs 33864694\u201333865160) ends with closing authorization \"Foranstaaende \u2026 Sor\u00f8e den 13 [Octo?]bris 1801\", signed by the amtmand (month partly read, med) \u2014 https://api.rigsarkivet.dk/ao/v1/images/33865160. Book 7 (bsid 130263) stamped \"No. 7 \u2026 1812\", authorization for the Skjolden\u00e6sholm skifteret (probate court), Sor\u00f8e 1812 (med-high) \u2014 https://api.rigsarkivet.dk/ao/v1/images/33865162. Image IDs contiguous 33865160\u219233865161; bsid 130262 returns 0 images (high for AO). No free AO volume covers ~late 1801\u20131812, which includes the 1807 burial window. Archive digitization gap; not a miss on Hans Pedersen, not a paywall. Shots: shots/scout-dk-dig30-2026-11-03/s_33865159.jpg, s_33865160.jpg, s_33865161.jpg, s_33865162.jpg, s_33865163.jpg. Refines S239.",
+  "urls": [
+   "https://api.rigsarkivet.dk/ao/v1/images/33865160.",
+   "https://api.rigsarkivet.dk/ao/v1/images/33865162."
+  ]
+ },
+ "S251": {
+  "id": "S251",
+  "flag": "OUT OF WINDOW / high",
+  "text": "bsid 130264 = Book 8, 1841\u20131850 (FS label \"Skjoldn\u00e6sholm Gods Skifteprotokol 1841-1850\") \u2014 https://api.rigsarkivet.dk/ao/v1/images/33865773. Confirms next series after Book 7; not useful for 1807. Shots: s_33865773.jpg, s_33865774.jpg.",
+  "urls": [
+   "https://api.rigsarkivet.dk/ao/v1/images/33865773."
+  ]
+ },
+ "S252": {
+  "id": "S252",
+  "flag": "NEG / scope HIGH",
+  "text": "bsid 130265, 8 imgs 33865800\u2013807: dated alphabetic register (\"Alphabet\" from 1770); latest H date 25 Aug 1795; folios to ~420 = Book 6 register, pre-1801 / pre-gap. Scope: pre-gap only \u2014 https://api.rigsarkivet.dk/ao/v1/images/33865800, https://api.rigsarkivet.dk/ao/v1/images/33865802.",
+  "urls": [
+   "https://api.rigsarkivet.dk/ao/v1/images/33865800,",
+   "https://api.rigsarkivet.dk/ao/v1/images/33865802."
+  ]
+ },
+ "S253": {
+  "id": "S253",
+  "flag": "NEG HIGH",
+  "text": "130265 Hans Pedersen hits, wrong place/wife: (a) \"Hans Pedersen Huusmand (cottager) af Allindemagle\" 12 Feb 1776 fol 169\u2013170; (b) \"Hans Pedersen og hustrue Ulrica, Huusm./Soldat af Harralsted\" 3 Dec 1787\u201316 Dec 1788 fol 312\u2013313 (wife Ulrica, not Maren / Marie Hansdatter) \u2014 https://api.rigsarkivet.dk/ao/v1/images/33865802; crops shots/scout-dk-dig31-2026-11-03/crop_130265_img3_H.jpg, _H_a.jpg, _H_b.jpg.",
+  "urls": [
+   "https://api.rigsarkivet.dk/ao/v1/images/33865802;"
+  ]
+ },
+ "S254": {
+  "id": "S254",
+  "flag": "context MED",
+  "text": "130265 \"Hendrich Hansen gaardmand (farm owner) af Wals\u00f8magle\" 1787 fol 294\u2013295; shows estate held Wals\u00f8magle; not our Hans \u2014 https://api.rigsarkivet.dk/ao/v1/images/33865802.",
+  "urls": [
+   "https://api.rigsarkivet.dk/ao/v1/images/33865802."
+  ]
+ },
+ "S255": {
+  "id": "S255",
+  "flag": "NEG/PARTIAL; MED\u2013HIGH as gap pointer",
+  "text": "bsid 130266, undated alphabetic register, 15 imgs 33865808\u2013822; inferred Book 7 (1812+) register (MED, not date-verified). Hans Pedersen: Huusmand i Tystrup fol 127 NEG; Huusmand i Wals\u00f8lille[?] fol 132\u2013133 PARTIAL (place reads Wals\u00f8lille not Wals\u00f8magle; no date; LOW\u2013MED); Ungkarl (bachelor) i Allindemagle fol 461 NEG. Wals\u00f8magle context (not our man): Hans Nielsen fol 276; Hans Henriksen gaardmand 583\u2013590; Hendrich Hansen 138. No entry names Hans Pedersen of Wals\u00f8magle with date/folio in ~1801\u201312 / ~1807 \u2014 https://api.rigsarkivet.dk/ao/v1/images/33865812; crops shots/scout-dk-dig31-2026-11-03/crop_130266_img5_HansPedersen_zoom.jpg, _Walsolille_zoom.jpg, _H_top.jpg, _H_bot.jpg. H sections only read closely; M/P sections optional. **Dig 32 pointer (2026-11-03): Book 7 fol 132\u2013133 read (S256) \u2014 Wals\u00f8lille entry is Huusmand Hans Pedersen d. ~1825 \u00d7 Anne Magretha Frederiks Datter \u2192 PARTIAL settled as NEG HIGH for our Wals\u00f8magle Hans.**",
+  "urls": [
+   "https://api.rigsarkivet.dk/ao/v1/images/33865812;"
+  ]
+ },
+ "S256": {
+  "id": "S256",
+  "flag": "NEG HIGH",
+  "text": "Book 7 fol 132v\u2013133r, https://api.rigsarkivet.dk/ao/v1/images/33865293: \"Anno 1825 den 2den November \u2026 efter afd\u00f8de Huusmand (cottager) Hans Pedersen i Wals\u00f8lille\". Widow Anne Magretha Frederiks Datter; lauv\u00e6rge (widow's guardian) her father Friderik Nielsen i Wals\u00f8lille; heirs: dau Anne Kirstine ~18, sons Peter / S\u00f8ren / Herman (ages uncertain); formynder (guardian for minors) Christen Nielsen i [Wals\u00f8]lille. Place Wals\u00f8lille + wife Anne Magretha \u2260 Maren / Marie Hansdatter \u2192 NOT S207 (Aft\u00e6gtsmand \u00d7 Maren) nor S208 (Skoleholder \u00d7 Marie). Crops shots/scout-dk-dig32-2026-11-03/c_293_hans_head1.jpg, c_293_hans_head2.jpg, c_293_heirs.jpg. Settles S255 PARTIAL as NEG.",
+  "urls": [
+   "https://api.rigsarkivet.dk/ao/v1/images/33865293:"
+  ]
+ },
+ "S257": {
+  "id": "S257",
+  "flag": "context / NEG HIGH, adjacent",
+  "text": "fol 132r, https://api.rigsarkivet.dk/ao/v1/images/33865292: end of Thomas Nielsen's skifte (probate) (wife Johanne Niels Datter, 1825-09-17), not Hans \u2014 confirms folio mapping. Crop shots/scout-dk-dig32-2026-11-03/c_292_entry_head.jpg.",
+  "urls": [
+   "https://api.rigsarkivet.dk/ao/v1/images/33865292:"
+  ]
+ },
+ "S258": {
+  "id": "S258",
+  "flag": "NEG MED",
+  "text": "bsid 130266 M section, https://api.rigsarkivet.dk/ao/v1/images/33865814: only Hansdatter = \"Maren Hans Datter, Huusmand (cottager) Ole Jensens [Enke/S\u00f8n?] paa \u00d8[\u2026]b[\u2026] Folio 179\" \u2014 place not Wals\u00f8magle. No Maren/Marie Hansdatter enke (widow) of Wals\u00f8magle. Crops shots/scout-dk-dig33-2026-11-03/crop_130266_img7_M_bot.jpg, crop_130266_img7_M_top.jpg.",
+  "urls": [
+   "https://api.rigsarkivet.dk/ao/v1/images/33865814:"
+  ]
+ },
+ "S259": {
+  "id": "S259",
+  "flag": "NEG MED; Peder Pedersen reading LOW\u2013MED",
+  "text": "bsid 130266 P section, https://api.rigsarkivet.dk/ao/v1/images/33865815: \"Peder Hansen, Gaardmand (farm owner) Hans Larsens S\u00f8n i Ourdrup(?) fol 155\"; \"Peder Hansen, \u2026 Hans Mortensens S\u00f8n af B[\u2026]hus fol 520\"; \"Peder Pedersen, \u00d8lbrygger(?) \u2026 fol 589\" \u2014 none Wals\u00f8magle. No Peder Hansen/Pedersen of Wals\u00f8magle. Crops shots/scout-dk-dig33-2026-11-03/crop_130266_img8_P_top.jpg, crop_130266_img8_P_bot.jpg.",
+  "urls": [
+   "https://api.rigsarkivet.dk/ao/v1/images/33865815:"
+  ]
+ },
+ "S260": {
+  "id": "S260",
+  "flag": "context MED",
+  "text": "same imgs 33865814/815: other Wals\u00f8magle M/P entries with no Hans/Maren-enke link: Mathias(?) Larsen fol 73; Maren Larsdatter fol 97\u2013100; Marie Olsdatter fol 123; Maren Larsdatter (Lars Ericksen?) fol 202\u2013219; Mads Pedersen Gaardmand 222\u2013234; Maren Jepsdatter \u00d7 Huusmand Rasmus Hansen, S\u00f8n af Wals\u00f8magle fol 328/370; Peder Johansen 57\u2013106, Peder Andersen 287\u2013305, Peder Christophersen 351/368 (Gaardm\u00e6nd). No Hans Pedersen cross-ref in M/P/S (img 33865817 glanced). No ~1807 Wals\u00f8magle Hans pointer.",
+  "urls": []
+ },
+ "S261": {
+  "id": "S261",
+  "flag": "NEG HIGH",
+  "text": "Book 7 fol 328r, https://api.rigsarkivet.dk/ao/v1/images/33865489 (+ cont. https://api.rigsarkivet.dk/ao/v1/images/33865490 L): No 7 \"Registrerings- og Wurderingsforretning efter Huusmand Rasmus Hansens afd\u00f8de Kone Maren Jeppesdatter af Wals\u00f8magle\" (margin: \"See folio 337\"); 2 Mar 1831 the widower Rasmus Hansen reported his wife died that day. Deceased = the wife; no children of the couple named. Heirs = Maren's Jeppesen kin (children of late brother Anders Jeppesen and late sister Anne Sophie Jeppesdatter \u00d7 Indsidder Hans Hansen, Haraldsted), places Haraldsted / Allindelille / Gyrstinge(?) / Skee(?) / Wals\u00f8lille (some place readings MED). No kinship to P25 claimed. NEG for a Hans-son of Rasmus. Crops shots/scout-dk-dig34-2026-11-03/dig34_fol328r_entryhead.png, dig34_fol328r_heirs.png, dig34_fol328v_heirs_cont.png (entry head checked by gate).",
+  "urls": [
+   "https://api.rigsarkivet.dk/ao/v1/images/33865489",
+   "https://api.rigsarkivet.dk/ao/v1/images/33865490"
+  ]
+ },
+ "S262": {
+  "id": "S262",
+  "flag": "NEG MED",
+  "text": "Book 7 fol 370, https://api.rigsarkivet.dk/ao/v1/images/33865532 R: No 7 & 17 Skifteslutning 15 Dec 1831 \"efter afd\u00f8de Huusmand Rasmus Hansen og forhen afd\u00f8de Kone Maren Jeppesdatter af Wals\u00f8magle\" (ref fol 328 & 337). Rasmus's heirs through S\u00f8ren Hansen of Allindemagle \"ligeledes for hans 2 Br\u00f8dre Knud Hansen og Hans Hansen\" = siblings, not children. This Hans Hansen is Rasmus's brother (no age/residence read). NEG for a Hans-son; no Pedersen and no link to Hans Pedersen ~1807 / S207 / S208. Crops shots/scout-dk-dig34-2026-11-03/dig34_fol370_skifte_head.png, dig34_fol370_skifte_cont.png.",
+  "urls": [
+   "https://api.rigsarkivet.dk/ao/v1/images/33865532"
+  ]
+ },
+ "S263": {
+  "id": "S263",
+  "flag": "NEG HIGH",
+  "text": "Book 7 fol 337, https://api.rigsarkivet.dk/ao/v1/images/33865499 R + https://api.rigsarkivet.dk/ao/v1/images/33865500 L: \"No 17. Registrering og Wurdering efter Huusmand Rasmus Hansen i Wals\u00f8emagle \u2014 See Folio 328 og 370\". Death reported 16 Aug 1831, died same day. Heirs = 3 brothers, all myndige (of age), **no ages given**: (1) Knud Hansen, Aft\u00e6gtsmand i Bentskovhuset [place MED], (2) Hans Hansen, Indsidder i Haraldsted, (3) S\u00f8ren Hansen, Aft\u00e6gtsmand i Allindemagle. Witnesses Sognefoged Mads Hansen af Allindelille, Niels S\u00f8rensen af M\u00f8llebergshuset [?] (MED). Widow Maren Jeppesdatter's effects registered 2 Mar 1831 fol 328\u2013329 (= S261). NEG for a Hans-son / Hans Pedersen ~1807 / S207\u2013S208: Hans Hansen is a brother, surname Hansen not Pedersen. Crops crop_fol337_No17_head.jpg, crop_fol337v_heirs_brothers.jpg (both checked by gate), crop_fol337v_widow_fol328ref.jpg.",
+  "urls": [
+   "https://api.rigsarkivet.dk/ao/v1/images/33865499",
+   "https://api.rigsarkivet.dk/ao/v1/images/33865500"
   ]
  }
 };
