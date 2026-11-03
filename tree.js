@@ -229,7 +229,9 @@ function show(id,opts={}){
   let h=`<h2 tabindex="-1">${esc(p.name)}</h2><div class="pills">${pills}</div>`;
   const facts=[],rels=[];
   const push=(list,t,v)=>{if(v)list.push(`<dt>${t}</dt><dd>${v}</dd>`)};
+  if(Array.isArray(p.altNames)&&p.altNames.length)push(facts,'Name variants',p.altNames.map(esc).join('<br>'));
   push(facts,'Born',place(p.birth)||(p.living?'<span class="muted">Not recorded (living person)</span>':'<span class="muted">unknown</span>'));
+  push(facts,'Baptism',esc(p.baptism));
   if(!p.living)push(facts,'Died',place(p.death)||'<span class="muted">unknown</span>');
   push(facts,'Burial',esc(p.burial));
   push(facts,'Immigration',p.immigration&&[p.immigration.year||'year unknown',p.immigration.status].map(esc).join(' · '));
@@ -237,6 +239,7 @@ function show(id,opts={}){
   push(facts,'1900 residence',esc(p.residence_1900));
   push(facts,'1910 residence',esc(p.residence_1910));
   push(facts,'1920 residence',esc(p.residence_1920));
+  if(Array.isArray(p.residences)&&p.residences.length)push(facts,'Residences',p.residences.map(esc).join('<br>'));
   push(facts,'Notes',esc(p.notes));
   push(facts,'Research status',esc(p.status));
   const narrative=[];
@@ -248,6 +251,9 @@ function show(id,opts={}){
   push(facts,'Confirmation',esc(p.confirmation));
   push(facts,'Occupation',esc(p.occupation));
   push(rels,'Parents',(p.parents||[]).map(ref=>`<div class="rel">${link(ref)}${P[ref]&&!isFamily(P[ref])?' <span class="relnote">RECORD-SOURCED, not confirmed by family.</span>':''}</div>`).join(''));
+  push(rels,'Foster parents',(p.fosterParents||[]).map(ref=>`<div class="rel">${link(ref)} <span class="relnote">Foster, not a blood parent.</span></div>`).join(''));
+  const fosterKids=PEOPLE.people.filter(q=>(q.fosterParents||[]).includes(id)).map(q=>q.id);
+  push(rels,'Foster children',fosterKids.map(ref=>`<div class="rel">${link(ref)} <span class="relnote">Foster child, not blood kin.</span></div>`).join(''));
   push(rels,'Parent status',esc(p.parentsStatus));
   push(rels,'Danish parents',p.danishParents?`<span class="relnote">${esc(p.danishParents)}</span>`:'');
   push(rels,'Siblings',(p.siblings||[]).map(link).join('<br>'));

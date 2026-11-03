@@ -455,7 +455,7 @@ window.PEOPLE={
    "name": "Hans Pedersen",
    "birth": {
     "date": "1833-02-25",
-    "place": "Vals\u00f8magle (read 'Walsmagle'/'Vals\u00f8magle') \u2014 place LOW confidence"
+    "place": "Vals\u00f8magle, Haraldsted Sogn, Ringsted Herred, Sor\u00f8 amt (VERIFIED S51,S52,S53)"
    },
    "death": {
     "date": "1867-09-11",
@@ -463,8 +463,10 @@ window.PEOPLE={
    },
    "burial": "1867-09-17, Bjernede (age 34)",
    "occupation": "Hjulmand (wheelwright), Bjernedegaardshuse; 1862 unmarried servant at Bjernedegaard",
-   "parents": [],
-   "parentsNote": "Mother possibly 'Ane Marie Hansdatter' (death entry S37; LOW confidence, UNVERIFIED). Father UNKNOWN (not named).",
+   "parents": [
+    "P25"
+   ],
+   "parentsNote": "Mother: Ane Marie \u2026datter of Vals\u00f8magle, unmarried servant. CONFLICT on patronymic: HMB baptism (S51) reads Clausdatter; death (S37) reads Klaus Datt.; KMB duplicate (S52) has interlinear correction Hansd. over a struck word. Father CANDIDATE only: Peder Johansen of Ringsted, 'udlagt' (named by mother) in S51/S52 \u2014 paternity not proven. No person cards created until conflict resolved. | 1847 confirmation (S56) reads 'U\u00e6gte S\u00f8n af Pigen Ane Marie Hansd. og udlagt Barnefader Peder Johansen \u2014 Pleiefader Huusm. Jens Nielsen i Skee': adds a 3rd reading (Hansd.) \u2014 CONFLICT still OPEN, not resolved. Foster father Jens Nielsen (Skee) = not a relative by any record seen. | 2026-11-03 pass 4: Mother card P25 created with BOTH variants (Clausdatter / Hansdatter). Move lists S59/S60 give 'Ane Marie Hansd., 28, tjenestepige' going to and from Ringsted in 1832/33, which leans toward Hansd. but the CONFLICT stays OPEN. Father: NO card. FT-1834 Ringsted landsogn has 2 married Peder Johansens (45; 34 Daglejer), CANDIDATES only (S62), no match proven. Foster parents: P26 Jens Nielsen, P27 Kirsten Johansdatter (S54\u2013S58); no kinship to the mother found.",
    "spouses": [
     {
      "id": "P19",
@@ -482,10 +484,33 @@ window.PEOPLE={
     "S37",
     "S31",
     "S42",
-    "S43"
+    "S43",
+    "S51",
+    "S52",
+    "S53",
+    "S54",
+    "S55",
+    "S56",
+    "S57",
+    "S58",
+    "S59",
+    "S60",
+    "S62"
    ],
    "status": "RECORD-SOURCED (Danish church book; not family-confirmed)",
-   "notes": "Same man in marriage (S36) and death (S37): both give b. 25 Feb 1833. Vacc. 29 Jun 1839; confirmed after Jul 1847. Cause of death read 'Brystsyge/Lungebet\u00e6ndelse(?)' (LOW). Died when son Hans Peter was ~3\u00bd. Detail: shots/bjernede-family-2026-11-03/; browser-pass-bjernede-family.md"
+   "notes": "Same man in marriage (S36) and death (S37): both give b. 25 Feb 1833. Vacc. 29 Jun 1839; confirmed after Jul 1847. Cause of death read 'Brystsyge/Lungebet\u00e6ndelse(?)' (LOW). Died when son Hans Peter was ~3\u00bd. Detail: shots/bjernede-family-2026-11-03/; browser-pass-bjernede-family.md Confirmed Haraldsted Kirke per S37 (entry not yet found). | NOTE: confirmation entry (S56) gives vacc. 29 Jun 1833, not 1839 \u2014 earlier '1839' may be a misreading; check S37.",
+   "baptism": "1833-03-31 (Palm Sunday), Haraldsted Kirke; illegitimate (u\u00e6gte) (S51,S52)",
+   "confirmation": "1847-04-11 (1st Sunday after Easter), Haraldsted Kirke, boys no. 3, 'Hans Pedersen af Skee', b. 25 Feb 1833 Vals\u00f8magle; vacc. 29 Jun 1833 (Aschlund) (VERIFIED S56)",
+   "residences": [
+    "1834-02-18 census: Skee, Haraldsted, hh 32 (Jens Nielsen, husmand/hjulmager), 'Hans Pedersen, 1, ugift, Pleiebarn' (S54; identity via S56 foster-father link)",
+    "1840-02-01 census: Skee, Haraldsted, hh 17 (Jens Nielsen 49), 'Hans Pedersen, 6, ugift, Pleiebarn' (S55)",
+    "1845-02-01 census: Skee, Haraldsted, hh 99 (Jens Nielsen), 'Hans Pedersen, 12, her i Sognet, Pleies\u00f8n' (S57)",
+    "1850-02-01 census: NOT in foster household Skee hh 53 (S58); where he was in 1850 is not found (rest of parish not searched)"
+   ],
+   "fosterParents": [
+    "P26",
+    "P27"
+   ]
   },
   {
    "id": "P19",
@@ -692,6 +717,86 @@ window.PEOPLE={
    ],
    "status": "RECORD-SOURCED (Danish church book; not family-confirmed)",
    "notes": "Male births 1863 no. 2 (S35 img 5): unnamed, parents Hans Pedersen & Ane Rasmusdatter ('19 Aar'), remark '1st Barn', 'D\u00f8d d. 18de Januar uden Daab(?)'. Death remark MEDIUM confidence. Explains '2det Barn' on Hans Peter's baptism. Shots 14, 15."
+  },
+  {
+   "id": "P25",
+   "name": "Ane Marie Hansdatter / Clausdatter",
+   "altNames": [
+    "Ane Marie Clausdatter (S51, S37)",
+    "Ane Marie Hansd. (S52 corr., S56, S59, S60)"
+   ],
+   "birth": {
+    "date": "c. 1804\u20131805 (age 28 in 1833, S59/S60)",
+    "place": "UNVERIFIED"
+   },
+   "occupation": "Tjenestepige (maidservant)",
+   "children": [
+    "P18"
+   ],
+   "parents": [],
+   "spouses": [],
+   "sources": [
+    "S51",
+    "S52",
+    "S56",
+    "S59",
+    "S60"
+   ],
+   "status": "VERIFIED as mother of P18 (S51/S52/S56); patronymic CONFLICT OPEN",
+   "residences": [
+    "c. Nov 1832\u2013Jan 1833: left Haraldsted for Ringsted (S60, date LOW)",
+    "30 Mar 1833: back in Haraldsted from Ringsted (S59)",
+    "1834: not in Vals\u00f8magle; later whereabouts unknown"
+   ],
+   "notes": "Ane Bolette (baptism sponsor) is probably Knudsd., not a sister (S61); this is still a CONFLICT. Next: her baptism c. 1804\u201305 (before the 1814 book), Ringsted town FT-1834, and later move lists."
+  },
+  {
+   "id": "P26",
+   "name": "Jens Nielsen",
+   "birth": {
+    "date": "c. 1790\u201391 (43 in 1834; 60 in 1850)",
+    "place": "Kirke-Flinterup(?) per FT-1850 (LOW)"
+   },
+   "occupation": "Huusmand (cottager), Hjulmager (wheelwright), Skee, Haraldsted",
+   "spouses": [
+    {
+     "id": "P27",
+     "marriage": "UNVERIFIED (before 1834)"
+    }
+   ],
+   "children": [],
+   "sources": [
+    "S54",
+    "S55",
+    "S56",
+    "S57",
+    "S58"
+   ],
+   "status": "VERIFIED foster father (Pleiefader) of P18 (S56)",
+   "notes": "Son Hagen Jensen b. c. 1835 (S58). Foster child Hans Jensen b. c. 1844 (S58). Death not yet searched. Kinship to P25 or Peder Johansen: none found."
+  },
+  {
+   "id": "P27",
+   "name": "Kirsten Johansdatter",
+   "birth": {
+    "date": "c. 1796\u201397 (37 in 1834; 53 in 1850)",
+    "place": "illegible in FT-1850 (LOW)"
+   },
+   "spouses": [
+    {
+     "id": "P26",
+     "marriage": "UNVERIFIED"
+    }
+   ],
+   "children": [],
+   "sources": [
+    "S54",
+    "S55",
+    "S57",
+    "S58"
+   ],
+   "status": "VERIFIED foster mother of P18 (in the household 1834\u201345)",
+   "notes": "She shares the patronymic Johansdatter with alleged father Peder Johansen. A sibling link is UNVERIFIED speculation and is not asserted."
   }
  ]
 };
@@ -1092,6 +1197,104 @@ window.SOURCES={
   "text": "Sor\u00f8 By og Birk sk\u00f8de- og panteprotokol V.V, fol ~328\u2013331, recorded 13 Nov 1884: sk\u00f8de \u2014 estate of afd\u00f8de Bolsmand Hans Rasmussen & earlier-deceased Hustru Ane Marie Rasmussen sells Matr. No 5 A af Bjernedehuse, Bjernede Sogn (property \"hidtil har tilh\u00f8rt\" Hans Rasmussen) to m\u00f8ller J.P. Mathiesen of Gyrstinge for 13,000 Kr; lease to Indsidder Hans Andersen from 12 Dec 1867 to be honored. Mortgage bond (fol 329/331): 3,600 Kr owed to umyndige Rasmus Peter og Ane Marie Rasmussen, children of afd. Bolsmand Hans Rasmussen og Hustru i Bjernedehusene (= P21, P22). Wife \"Ane Marie Rasmussen\" = Ane Rasmusdatter (P19) by INFERENCE (as S45). 1855 buyer of 5a (Realregister) = strong candidate same man; vol. T fol 97 not digitized. Matr. 5a as Hans Pedersen (P18) property REJECTED: https://arkivalieronline.rigsarkivet.dk/da/billedviser?bsid=147378 (shots skoede-5a-2026-11-03)",
   "urls": [
    "https://arkivalieronline.rigsarkivet.dk/da/billedviser?bsid=147378"
+  ]
+ },
+ "S51": {
+  "id": "S51",
+  "flag": null,
+  "text": "Haraldsted Sogn, Hovedministerialbog 1814\u20131845, F\u00f8dte Mandki\u00f8n 1833 no. 3, AO epid=17223938 img 58/722: https://api.rigsarkivet.dk/ao/v1/images/38697131 (Hans Pedersen b. 25 Feb 1833, u\u00e6gte; mother Ane Marie Clausdatter, Vals\u00f8magle; udlagt father Peder Johansen, Ringsted)",
+  "urls": [
+   "https://api.rigsarkivet.dk/ao/v1/images/38697131"
+  ]
+ },
+ "S52": {
+  "id": "S52",
+  "flag": null,
+  "text": "Haraldsted Sogn, Kontraministerialbog 1814\u20131842, F\u00f8dte Mandki\u00f8n 1833 no. 2, AO bsid=150801 img 65/750: https://arkivalieronline.rigsarkivet.dk/da/billedviser?bsid=150801#150801,25012287 (same event; mother patronymic corrected interlinear \"Hansd.\")",
+  "urls": [
+   "https://arkivalieronline.rigsarkivet.dk/da/billedviser?bsid=150801#150801,25012287"
+  ]
+ },
+ "S53": {
+  "id": "S53",
+  "flag": null,
+  "text": "Trap Danmark 5. udg., Haraldsted sogn (Vals\u00f8magle in Haraldsted sogn): https://trap5.lex.dk/sogn/haraldsted-sogn-ringsted-herred/",
+  "urls": [
+   "https://trap5.lex.dk/sogn/haraldsted-sogn-ringsted-herred/"
+  ]
+ },
+ "S54": {
+  "id": "S54",
+  "flag": null,
+  "text": "Folket\u00e6lling 1834, Landdistrikter, Sor\u00f8 amt, Ringsted herred, Haraldsted sogn, Skee By hh 32 (Jens Nielsen 43 & Kirsten Johansd. 37), \"Hans Pedersen, 1, ugift, Pleiebarn\", AO bsid=2405 img id 84004: https://api.rigsarkivet.dk/ao/v1/images/84004 (viewer https://arkivalieronline.rigsarkivet.dk/da/billedviser?bsid=2405)",
+  "urls": [
+   "https://api.rigsarkivet.dk/ao/v1/images/84004",
+   "https://arkivalieronline.rigsarkivet.dk/da/billedviser?bsid=2405"
+  ]
+ },
+ "S55": {
+  "id": "S55",
+  "flag": null,
+  "text": "Folket\u00e6lling 1840, Landdistrikter, Haraldsted sogn, Skee By hh 17 (Jens Nielsen 49, Kirsten Johansen 44), \"Hans Pedersen, 6, ugift, Pleiebarn\", AO bsid=5212 img id 122427 (p. 118): https://api.rigsarkivet.dk/ao/v1/images/122427",
+  "urls": [
+   "https://api.rigsarkivet.dk/ao/v1/images/122427"
+  ]
+ },
+ "S56": {
+  "id": "S56",
+  "flag": null,
+  "text": "Haraldsted Sogn, Kontraministerialbog 1841\u20131861, Confirmerede Drenge 1847 no. 3 (p. 168), AO bsid=150802 img id 25013123: https://arkivalieronline.rigsarkivet.dk/da/billedviser?bsid=150802#150802,25013123 \u2014 \"Hans Pedersen af Skee \u2026 U\u00e6gte S\u00f8n af Pigen Ane Marie Hansd. og udlagt Barnefader Peder Johansen \u2014 Pleiefader Huusm. Jens Nielsen i Skee\"; confirmed 11 Apr 1847; b. 25 Feb 1833 i Vals\u00f8magle; vacc. 29 Jun 1833 af Aschlund; Fol 41 No 1026",
+  "urls": [
+   "https://arkivalieronline.rigsarkivet.dk/da/billedviser?bsid=150802#150802,25013123"
+  ]
+ },
+ "S57": {
+  "id": "S57",
+  "flag": null,
+  "text": "Folket\u00e6lling 1845, Landdistrikter, Haraldsted sogn, Skee By hh 99 (Jens Nielsen, Kirsten Johansd. 49), \"Hans Pedersen, 12, [f\u00f8dt] do. [her i Sognet], Pleies\u00f8n\", AO bsid=7005 img id 166828: https://api.rigsarkivet.dk/ao/v1/images/166828",
+  "urls": [
+   "https://api.rigsarkivet.dk/ao/v1/images/166828"
+  ]
+ },
+ "S58": {
+  "id": "S58",
+  "flag": null,
+  "text": "Folket\u00e6lling 1850, Landdistrikter, Sor\u00f8 amt, Ringsted herred, Haraldsted sogn, Skee, \"53, et Huus\": Jens Nielsen 60 gift Huusmand/Hjulmager(?) Huusfader; Kirsten Johansdatter 53 gift; Hagen Jensen 15 deres S\u00f8n; Hans Jensen 6 Pleiebarn. Hans Pedersen (17) NOT in household. AO bsid=113974 img 29/41: https://api.rigsarkivet.dk/ao/v1/images/17265731",
+  "urls": [
+   "https://api.rigsarkivet.dk/ao/v1/images/17265731"
+  ]
+ },
+ "S59": {
+  "id": "S59",
+  "flag": null,
+  "text": "Haraldsted Sogn, Kontraministerialbog 1814\u20131842, Tilgangsliste 1833 no. 199: \"Ane Marie Hansd., 28, Tjenestepige\", came from Ringsted, dated \"d. 30te Marts 1833\". AO bsid=150801 img 398: https://api.rigsarkivet.dk/ao/v1/images/25012620",
+  "urls": [
+   "https://api.rigsarkivet.dk/ao/v1/images/25012620"
+  ]
+ },
+ "S60": {
+  "id": "S60",
+  "flag": null,
+  "text": "same KMB, Afgangsliste 1832/33 no. 335: \"Ane Marie Hansd., 28, [Tjenestepige] (do.)\", moved to Ringsted; date column \"do.\" (ditto), about Nov 1832 to Jan 1833 (LOW). AO bsid=150801 img 475: https://api.rigsarkivet.dk/ao/v1/images/25012697",
+  "urls": [
+   "https://api.rigsarkivet.dk/ao/v1/images/25012697"
+  ]
+ },
+ "S61": {
+  "id": "S61",
+  "flag": null,
+  "text": "same KMB, Tilgangsliste 1832 no. 191 (img 398) and 1834 no. 267 (img 406), and Afgangsliste 1834 no. 373 (img 479): \"Ane Bolette Knudsd.\", tjenestepige, ages 27\u00bd and 29 (Benl\u00f8se / Kj\u00e6rupgaard). AO bsid=150801: https://arkivalieronline.rigsarkivet.dk/da/billedviser?bsid=150801",
+  "urls": [
+   "https://arkivalieronline.rigsarkivet.dk/da/billedviser?bsid=150801"
+  ]
+ },
+ "S62": {
+  "id": "S62",
+  "flag": "CANDIDATE",
+  "text": "Folket\u00e6lling 1834, Landdistrikter, Sor\u00f8, Ringsted herred, Ringsted landsogn, AO bsid=2969: house 57 \"Peder Johansen 45 gift\" (wife \u2026 Madsdatter 43), img 13: https://api.rigsarkivet.dk/ao/v1/images/94166 ; house 95 \"Peder Johansen 34 gift Daglejer\" (wife Karen Hansdatter 31), img 19: https://api.rigsarkivet.dk/ao/v1/images/94172",
+  "urls": [
+   "https://api.rigsarkivet.dk/ao/v1/images/94166",
+   "https://api.rigsarkivet.dk/ao/v1/images/94172"
   ]
  }
 };
