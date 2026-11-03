@@ -1107,10 +1107,11 @@ window.PEOPLE={
     "S219",
     "S220",
     "S310",
-    "S322"
+    "S322",
+    "S326"
    ],
    "status": "VERIFIED foster mother of P18 (in the household 1834\u201345)",
-   "notes": "She shares the patronymic Johansdatter with alleged father Peder Johansen. A sibling link is UNVERIFIED speculation and is not asserted. | 2026-11-03: Haraldsted women deaths 1845\u201370 (bsid 204005) NOT yet searched (S111 incomplete). | 2026-11-03: CANDIDATE death (S129, MED): Haraldsted burial 1864 no. 10, Kirsten Johansdatter, widow of Jens Nielsen in Skee, age 68 (\u2248b.1795/96; fits 1796\u201397 within a year). Identity OPEN \u2014 not dead-proven. S130 (1864 no. 3 Kirsten Johansen, child) ruled out. | Kin Dig J (2026-11-03): mother of Haagen Jensen per baptism S218 (b. 30 Oct 1835, bapt 13 Dec 1835; 'Hustru Kirsten Johansd. af Skee'). Married to P26 by 1835; marriage Haraldsted 1814\u201336 NEG (S219). Johans* faddere are context only. Kinship to P25/P28 still UNVERIFIED. | Dig J S310 (2026-11-03 gate): at marriage 30 Oct 1818, 22 Aar, tjenende (serving) hos Gmd. (g\u00e5rdmand = farmer) Rasmus J\u00f8rgensen i T\u00f8lstrup; forlovere (best men) Gmd. Niels Hansen + Gmd. Rasmus J\u00f8rgensen, both T\u00f8lstrup. No parents given. Kinship to P25/P34 still UNVERIFIED. | Dig J S322 (2026-11-03 gate): bapt CANDIDATE 10 Jan 1796 S\u00e6rl\u00f8se EMB bsid 155316 img 54 \u2014 father Johan Mattisen/Mattiesen i Tolstrup; mother unnamed; same-person HIGH vs P27 (name+age+Tolstrup/T\u00f8lstrup+parish); NOT locked as proven birth. Kinship to P25/P34 still UNVERIFIED. Sibling skim + mother name OPEN (Kin claim HELD)."
+   "notes": "She shares the patronymic Johansdatter with alleged father Peder Johansen. A sibling link is UNVERIFIED speculation and is not asserted. | 2026-11-03: Haraldsted women deaths 1845\u201370 (bsid 204005) NOT yet searched (S111 incomplete). | 2026-11-03: CANDIDATE death (S129, MED): Haraldsted burial 1864 no. 10, Kirsten Johansdatter, widow of Jens Nielsen in Skee, age 68 (\u2248b.1795/96; fits 1796\u201397 within a year). Identity OPEN \u2014 not dead-proven. S130 (1864 no. 3 Kirsten Johansen, child) ruled out. | Kin Dig J (2026-11-03): mother of Haagen Jensen per baptism S218 (b. 30 Oct 1835, bapt 13 Dec 1835; 'Hustru Kirsten Johansd. af Skee'). Married to P26 by 1835; marriage Haraldsted 1814\u201336 NEG (S219). Johans* faddere are context only. Kinship to P25/P28 still UNVERIFIED. | Dig J S310 (2026-11-03 gate): at marriage 30 Oct 1818, 22 Aar, tjenende (serving) hos Gmd. (g\u00e5rdmand = farmer) Rasmus J\u00f8rgensen i T\u00f8lstrup; forlovere (best men) Gmd. Niels Hansen + Gmd. Rasmus J\u00f8rgensen, both T\u00f8lstrup. No parents given. Kinship to P25/P34 still UNVERIFIED. | Dig J S322 (2026-11-03 gate): bapt CANDIDATE 10 Jan 1796 S\u00e6rl\u00f8se EMB bsid 155316 img 54 \u2014 father Johan Mattisen/Mattiesen i Tolstrup; mother unnamed; same-person HIGH vs P27 (name+age+Tolstrup/T\u00f8lstrup+parish); NOT locked as proven birth. Kinship to P25/P34 still UNVERIFIED. Sibling skim + mother name OPEN (Kin claim HELD). | Dig J S326 (2026-11-03 gate, Pass 4o): S\u00e6rl\u00f8se EMB bsid 155316 \u2014 (a) img 56: bapt 28 Jul 1799 (7th Sunday after Trinity) son **Haagen** of Johan Mathiesen i T\u00f8lstrup, mother unnamed; godmother Pigen (maiden) Kirsten Iversdatter (Ivars? reading OPEN) \u2014 CANDIDATE brother of P27 (same father-on-record as S322); no person card. (b) img 53: Onsdag (Wednesday) 11 Feb 1795 Johan Mathiesen i T\u00f8lstrup buried sin Hustru (his wife), 32 aar (years), wife unnamed \u2014 HIGH. Inference CANDIDATE MED (not locked): P27 (bapt Jan 1796) likely from a 2nd marriage ~1795; marriage not searched. Wife alive 26 Mar 1797 (img 55) still unnamed. Mother of P27 still OPEN (best lead: S322 godmother 'hans Kones S\u00f8ster' (his wife's sister), Hans Jensens Hustru i ?rup). Birth NOT locked. Kinship to P25/P34 still UNVERIFIED."
   },
   {
    "id": "P28",
@@ -3550,6 +3551,12 @@ window.SOURCES={
   "id": "S322",
   "flag": "CANDIDATE, not locked",
   "text": "S\u00e6rl\u00f8se baptism 10 Jan 1796. A girl Kirsten, father Johan Mattisen (also Mattiesen) of Tolstrup, mother unnamed. Candidate for P27 Kirsten Johansdatter. No kinship to P25 or P34. S\u00e6rl\u00f8se and Tolstrup stay unpinned.",
+  "urls": []
+ },
+ "S326": {
+  "id": "S326",
+  "flag": "CANDIDATE / context only, not locked",
+  "text": "S\u00e6rl\u00f8se church book. (a) Baptism 28 Jul 1799 of Haagen, son of Johan Mathiesen of T\u00f8lstrup, mother unnamed. Same father-on-record as Kirsten's 1796 baptism (S322), so a candidate brother of P27. No person card. (b) Burial 11 Feb 1795 of Johan's unnamed wife, age 32. Context only: a possible earlier marriage before Kirsten was born. Not proven. No mother named. No kinship to P25 or P34. Kept apart from Erik Rasmussen and Maren Hansdatter (S312). S\u00e6rl\u00f8se and T\u00f8lstrup stay unpinned.",
   "urls": []
  }
 };

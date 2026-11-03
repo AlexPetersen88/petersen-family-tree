@@ -123,3 +123,6 @@
 
 ## S322 — P27 baptism CANDIDATE (Genealogist CLEAR thin) 2026-11-03
 - S322 (CANDIDATE, not locked): Særløse baptism 10 Jan 1796 — Kirsten, father Johan Mattisen/Mattiesen i Tolstrup; mother unnamed. Candidate for P27 Kirsten Johansdatter. No kinship to P25/P34. Særløse/Tolstrup place pins soft-parked.
+
+## Dig J / S326 — Genealogist CLEAR thin (Storyteller) 2026-11-03
+- S326 (CANDIDATE / context only, not locked): Særløse kirkebog — (a) baptism 28 Jul 1799, Haagen, son of Johan Mathiesen i Tølstrup (same father as S322 Kirsten dåb) = CANDIDATE brother of P27; (b) burial 11 Feb 1795, Johan's unnamed *Hustru*, age 32 = possible prior marriage before Kirsten, context only. No mother name. No kinship to P25/P34. Særløse/Tølstrup pins soft-parked.

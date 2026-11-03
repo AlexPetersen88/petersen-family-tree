@@ -624,3 +624,8 @@ Ane Marie's foster raising, and a candidate baptism for Kirsten. No farm pin. No
 
 - S312 (HIGH for Pleiefd.; Gmd. MED): Haraldsted 1820 confirmations, girls row 11. Ane Marie Hansdatter of Walsømagle. Foster parents (*Pleiefd.*): Erik Rasmussen and Maren Hansdatter of Walsømagle. Birth 23 March 1805 stays CANDIDATE from this confirmation only. P25's birth parents stay unknown. Her baptism (Dig 25) is still missing. Blood kinship to Erik or Maren is unverified. This Maren is not the Maren Hansdatter of the 1797 betrothal (S222). Place is the existing Valsømagle village pin only. No farm or house pin.
 - S322 (CANDIDATE, not locked): Særløse baptism 10 Jan 1796. A girl Kirsten, father Johan Mattisen (also Mattiesen) of Tolstrup, mother unnamed. Candidate for P27 Kirsten Johansdatter. No kinship to P25 or P34. Særløse and Tolstrup stay unpinned.
+
+## Dig J / S326 (2026-11-03) — Genealogist CLEAR, thin
+Candidate brother and a 1795 burial. No person card. No new place pin. Not locked.
+
+- S326 (CANDIDATE / context only, not locked): Særløse church book. (a) Baptism 28 Jul 1799 of Haagen, son of Johan Mathiesen of Tølstrup, mother unnamed. Same father-on-record as Kirsten's 1796 baptism (S322), so a candidate brother of P27. No person card. (b) Burial 11 Feb 1795 of Johan's unnamed wife, age 32. Context only: a possible earlier marriage before Kirsten was born. Not proven. No mother named. No kinship to P25 or P34. Kept apart from Erik Rasmussen and Maren Hansdatter (S312). Særløse and Tølstrup stay unpinned.
