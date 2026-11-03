@@ -31,10 +31,10 @@ PEOPLE.people.forEach(c=>{const ps=(c.parents||[]).filter(x=>pos[x]);if(!ps.leng
  const mx=ps.reduce((s,x)=>s+pos[x].x,0)/ps.length,my=pos[ps[0]].y+ (ps.length>1?0:H/2),t=pos[c.id];
  const midY=(my+t.y-H/2)/2+H/4;el('path',{class:'edge',d:`M${mx},${my} V${midY} H${t.x} V${t.y-H/2}`})});
 const nodes={};
-PEOPLE.people.forEach(p=>{const {x,y}=pos[p.id];const g=el('g',{class:'node'+(isVerified(p)?' verified':'')+(p.living?' living':''),transform:`translate(${x-W/2},${y-H/2})`});
+PEOPLE.people.forEach(p=>{const {x,y}=pos[p.id];const g=el('g',{class:'node'+(isFamily(p)?' family':'')+(isRecords(p)?' records':'')+(p.living?' living':''),transform:`translate(${x-W/2},${y-H/2})`});
  el('rect',{width:W,height:H},g);const short=p.name.replace(/\s*\(.*\)/,'');
  el('text',{x:W/2,y:22,'text-anchor':'middle','font-size':short.length>24?12:13.5},g).textContent=short;
- el('text',{x:W/2,y:40,'text-anchor':'middle','font-size':11.5,fill:'#7a6f60'},g).textContent=yrs(p)+(isVerified(p)?'  ✓':'');
+ el('text',{x:W/2,y:40,'text-anchor':'middle','font-size':11.5,fill:'#7a6f60'},g).textContent=yrs(p)+(isFamily(p)?'  ✓':isRecords(p)?' · rec.':'');
  g.addEventListener('click',e=>{e.stopPropagation();show(p.id)});nodes[p.id]=g});
 // pan/zoom
 let tx=0,ty=0,k=1;const svg=document.getElementById('svg');
@@ -49,6 +49,12 @@ addEventListener('pointermove',e=>{if(drag){tx=e.clientX-drag.x;ty=e.clientY-dra
 zi.onclick=()=>zoom(1.2);zo.onclick=()=>zoom(1/1.2);zr.onclick=reset;addEventListener('resize',reset);reset();
 // detail panel
 const link=x=>P[x]?`<a class="p" data-id="${x}">${esc(P[x].name)}</a>`:esc(x)+' <span class="muted">(not in tree)</span>';
+const RECORD_REL='from public records; not yet confirmed by family.';
+function parentNeedsNote(child, ref){const parent=P[ref];
+ if(parent) return parent.confirmation==='records';
+ if(child.id==='P2') return false; // Janice's obituary parents are not the unconfirmed line above Elmer
+ return true}
+function parentHtml(child, ref){return link(ref)+(parentNeedsNote(child, ref)?` <span class="relnote">${esc(RECORD_REL)}</span>`:'')}
 function srcHtml(s){if(/^https?:/.test(s))return `<div class="src"><a href="${esc(s)}" target="_blank" rel="noopener">${esc(s)}</a> <span class="muted">(direct link)</span></div>`;
  const S=SOURCES[s];if(!S)return `<div class="src">${esc(s)} <span class="muted">(not in sources.md)</span></div>`;
  const t=S.text.replace(/https?:\/\/[^\s)]+/g,'').replace(/:\s*$/,'');
@@ -56,13 +62,17 @@ function srcHtml(s){if(/^https?:/.test(s))return `<div class="src"><a href="${es
 function place(o){if(!o)return'';return [o.date,o.place,o.placeStatus,o.status].filter(Boolean).map(esc).join(' · ')}
 function show(id){const p=P[id];Object.values(nodes).forEach(n=>n.classList.remove('sel'));nodes[id].classList.add('sel');
  const kids=new Set([...(p.children||[])]);PEOPLE.people.forEach(q=>(q.parents||[]).includes(id)&&kids.add(q.id));
- const pills=(isVerified(p)?'<span class="pill v">VERIFIED</span>':'<span class="pill u">UNVERIFIED / secondary</span>')+(p.living?'<span class="pill l">LIVING</span>':'');
- let h=`<h2>${esc(p.name)}</h2>${pills}<dl>`;
+ const pills=(isFamily(p)?'<span class="pill f">Family-confirmed</span>':isRecords(p)?'<span class="pill r">Record-sourced · not confirmed by family</span>':'<span class="pill u">UNVERIFIED / secondary</span>')+(p.living?'<span class="pill l">LIVING</span>':'');
+ let h=`<h2>${esc(p.name)}</h2>${pills}`;
+ if(p.familyNote) h+=`<p class="oknote">${esc(p.familyNote)}</p>`;
+ if(isRecords(p)) h+=`<p class="relnote">${esc(RECORD_REL)}</p>`;
+ else if((p.parents||[]).some(ref=>parentNeedsNote(p, ref))) h+=`<p class="relnote">Parents ${esc(RECORD_REL)}</p>`;
+ h+=`<dl>`;
  const row=(t,v)=>{if(v)h+=`<dt>${t}</dt><dd>${v}</dd>`};
  row('Born',place(p.birth)||(p.living?'<span class="muted">Not recorded (living person)</span>':'<span class="muted">unknown</span>'));
  if(!p.living)row('Died',place(p.death)||'<span class="muted">unknown</span>');
  row('Burial',esc(p.burial));row('Immigration',p.immigration&&[p.immigration.year||'year unknown',p.immigration.status].map(esc).join(' · '));
- row('Parents',(p.parents||[]).map(link).join('<br>'));
+ row('Parents',(p.parents||[]).map(ref=>parentHtml(p, ref)).join('<br>'));
  row('Spouse(s)',(p.spouses||[]).map(s=>(s.id?link(s.id):esc(s.name))+(s.marriage?` <span class="muted">m. ${esc(s.marriage)}</span>`:'')).join('<br>'));
  row('Children',[...kids].map(link).join('<br>'));row('Notes',esc(p.notes));row('Research status',esc(p.status));
  row('Sources',(p.sources||[]).map(srcHtml).join('')||'<span class="muted">none</span>');
