@@ -152,3 +152,14 @@ Added RECORD-SOURCED (amber, not family-confirmed) cards from browser-pass-bjern
 - 2026-11-03 09:10 CST — Parcel pass 2: located Skøde- og panteprotokol V.V (AO bsid 147378; U.U=147377) by probing AO indeks-top bsids. VV fol 328–331 (13 Nov 1884): estate of bolsmand Hans Rasmussen & late wife Ane Marie Rasmussen sells matr. 5a Bjernedehuse to J.P. Mathiesen; heirs minors Rasmus Peter & Ane Marie Rasmussen → 5a VERIFIED as stepfather's (P20) property. Vol T (1855) not digitized. 1860 census (DDD/LinkLives down) and fæsteprotokol not done. people.json unchanged. See hans-pedersen-parcel.md.
 
 - 2026-11-03 ~09:05 CST — Sync: added S50 (1884 skøde + mortgage, matr. 5a Bjernedehuse, bsid=147378). people.json: P20 property (verified 1884; 1855 strong candidate), P21/P22 heirs (S50), P19 residence inferred, P6 childhood residence inferred/candidate. P18 ownership of 5a rejected. Rebuilt data.js; pushed to GitHub Pages.
+
+## 2026-11-03 — Hans Pedersen (P18) childhood sync (S51–S57)
+74. Merged verified Haraldsted childhood into P18 only. Birth 25 Feb 1833 Valsømagle, Haraldsted Sogn (S51, S52, S53). Baptism Palm Sunday 1833, Haraldsted, uægte (S51, S52). Foster son (pleiebarn/pleiesøn) of husmand/hjulmager Jens Nielsen & Kirsten Johansdatter in Skee on the 1834, 1840, and 1845 censuses (S54, S55, S57). Confirmation 11 Apr 1847, Haraldsted, boys no. 3, links pleiefader Jens Nielsen (S56). Occupation, death, burial, and marriage to Ane Rasmusdatter left as already recorded.
+75. NOT resolved at that step: mother's patronymic (Clausdatter / Klaus Datt. / Hansd.) stays an open conflict; Peder Johansen of Ringsted stays a candidate udlagt father only. Vaccination discrepancy left open (confirmation S56 says 29 Jun 1833; older notes said 29 Jun 1839).
+
+## 2026-11-03 — P18 mother and foster parents (S51–S62)
+76. Added P25 Ane Marie Hansdatter / Clausdatter as P18's mother (parents: [P25]). Both surname forms are on the card (altNames). Patronymic CONFLICT stays OPEN. Added P26 Jens Nielsen and P27 Kirsten Johansdatter as foster parents only (fosterParents: [P26, P27]), not blood kin. Peder Johansen still has no card; two 1834 Ringsted landsogn namesakes are candidates only (S62). Ane Bolette Knudsdatter (S61) is not added.
+77. Sources S51–S62 synced. Occupation, death, burial, and marriage of P18 unchanged. 1850 census: Hans is not in the Skee foster household (S58).
+
+## 2026-11-03 — candidate father card (S63–S64), not linked
+78. P28 Peter (Peder) Johansen added as CANDIDATE ONLY (S64, with the married landsogn namesakes in S62). Not in P18.parents or fosterParents; children empty. P25 cites a possible 1834 Ringsted town match, Ane Marie Hansdatter 27, unmarried servant, Sankt Hans Gade (S63); not proven. Surname conflict on P25 stays open. Foster parents remain P26 and P27.

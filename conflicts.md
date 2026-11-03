@@ -44,7 +44,7 @@
 - Hans Rasmussen P20 is NOT linked to the logged-not-to-use "Hans Rasmussen b. ~1833, son of Niels Rasmussen & Maren Hansdatter" candidate.
 - "2det Barn" on Hans Peter's baptism implies an earlier first child (b. ~1863–Feb 1864, apparently dead) — NOT FOUND (male deaths 1863 checked; female births/deaths 1863–64 not searched).
 - Rasmus Pedersen (P23): death found (S41), birth NOT found; age "12 Dage"(?) uncertain — probable full sibling only.
-- Hans Pedersen's mother "Ane Marie Hansdatter" (S37) LOW confidence; his father unknown; birthplace Valsømagle/Walsmagle LOW.
+- [BIRTHPLACE SUPERSEDED 2026-11-03 — Valsømagle, Haraldsted Sogn VERIFIED S51–S53. Mother's surname and the named father stay OPEN; see the childhood section below.] Hans Pedersen's mother "Ane Marie Hansdatter" (S37) LOW confidence; his father unknown; birthplace Valsømagle/Walsmagle LOW.
 - US link: no US document names Bjernede; identity rests on Alex's family confirmation (S30) of place + year. Parents are RECORD-SOURCED, not family-confirmed.
 
 ## 2026-11-03 — resume pass (S42–S44)
@@ -60,3 +60,12 @@
 - P22 baptism 10 Jan 1875 (S40) vs 11 Jan 1875 (S48) — minor, unresolved.
 - P21 Sleepy Eye emigrant (S49): OPEN — candidate only (age + Fuldby); needs US/Danish corroboration.
 - P22 Ane Marie after 1888: OPEN. Emigrant "Ane Marie" 23, Boslunde, 1895 NOT linked.
+
+## 2026-11-03 — Hans Pedersen (P18) childhood and parents (S51–S62) — birthplace verified; surnames NOT resolved
+- Birth 25 Feb 1833, Valsømagle, Haraldsted Sogn: VERIFIED (S51, S52; parish context S53). Baptism Palm Sunday (31 Mar) 1833, Haraldsted, illegitimate (uægte): VERIFIED (S51, S52).
+- Childhood residences VERIFIED: foster son (pleiebarn / pleiesøn) in the Skee household of husmand/hjulmager Jens Nielsen and Kirsten Johansdatter — 1834 (S54), 1840 (S55), 1845 (S57). Not in that household in 1850 (S58). Confirmation 11 Apr 1847, Haraldsted, boys no. 3, names pleiefader Huusmand Jens Nielsen i Skee (S56).
+- Mother card P25, Ane Marie Hansdatter / Clausdatter, is the blood mother (parents: [P25]). Both surname variants stay on the card. OPEN — patronymic not resolved: S51 Clausdatter; S37 Klaus Datt.; S52 interlinear Hansd.; S56 / S59 / S60 Ane Marie Hansd. Move lists lean Hansd. The conflict stays open.
+- Foster cards P26 Jens Nielsen and P27 Kirsten Johansdatter are the Skee foster household only (fosterParents on P18). Not blood kin. No kinship to P25 was found.
+- OPEN / CANDIDATE only — father: Peder Johansen of Ringsted, udlagt in S51, S52, and S56. Not proven. Card P28, Peter (Peder) Johansen, is the unmarried servant on Sankt Hans Gade in the 1834 Ringsted town census (S64). He is not linked as P18’s father. The two married landsogn namesakes (S62) are also not matched. P25’s 1834 Ringsted town servant entry (S63) is a possible match only; age 27 vs 28, not proven.
+- OPEN — Ane Bolette, a baptism sponsor, is probably Ane Bolette Knudsdatter and not a sister of P25 (S61). Still a conflict; no card added.
+- OPEN — vaccination date: older marriage note says 29 Jun 1839; confirmation S56 says 29 Jun 1833 (Aschlund). Not resolved.

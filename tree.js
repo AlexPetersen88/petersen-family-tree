@@ -43,11 +43,12 @@ function nameSize(short){
   while(size>13&&short.length*size*0.62>maxW)size-=0.5;
   return size;
 }
+const isCandidate=p=>/^CANDIDATE\b/i.test(p.status||'');
 const nodes={};
 PEOPLE.people.forEach(p=>{
   const {x,y}=pos[p.id];
   const short=shortName(p.name);
-  const status=isFamily(p)?'Family':'Records';
+  const status=isFamily(p)?'Family':isCandidate(p)?'Candidate':'Records';
   const g=el('g',{
     class:'node'+(isFamily(p)?' family':' records')+(p.living?' living':''),
     transform:`translate(${x-W/2},${y-H/2})`,
@@ -225,11 +226,13 @@ function show(id,opts={}){
   Object.values(nodes).forEach(n=>{n.classList.remove('sel');n.setAttribute('aria-pressed','false')});
   nodes[id].classList.add('sel');nodes[id].setAttribute('aria-pressed','true');
   const kids=new Set([...(p.children||[])]);PEOPLE.people.forEach(q=>(q.parents||[]).includes(id)&&kids.add(q.id));
-  const pills=(isFamily(p)?'<span class="pill f">Family-confirmed</span>':'<span class="pill r">Record-sourced · not confirmed by family</span>')+(isOrigin(p)?'<span class="pill f">Family-confirmed origin</span>':'')+(p.living?'<span class="pill l">LIVING</span>':'');
+  const pills=(isCandidate(p)?'<span class="pill r">Candidate · not proven</span>':isFamily(p)?'<span class="pill f">Family-confirmed</span>':'<span class="pill r">Record-sourced · not confirmed by family</span>')+(isOrigin(p)?'<span class="pill f">Family-confirmed origin</span>':'')+(p.living?'<span class="pill l">LIVING</span>':'');
   let h=`<h2 tabindex="-1">${esc(p.name)}</h2><div class="pills">${pills}</div>`;
   const facts=[],rels=[];
   const push=(list,t,v)=>{if(v)list.push(`<dt>${t}</dt><dd>${v}</dd>`)};
+  if(Array.isArray(p.altNames)&&p.altNames.length)push(facts,'Name variants',p.altNames.map(esc).join('<br>'));
   push(facts,'Born',place(p.birth)||(p.living?'<span class="muted">Not recorded (living person)</span>':'<span class="muted">unknown</span>'));
+  push(facts,'Baptism',esc(p.baptism));
   if(!p.living)push(facts,'Died',place(p.death)||'<span class="muted">unknown</span>');
   push(facts,'Burial',esc(p.burial));
   push(facts,'Immigration',p.immigration&&[p.immigration.year||'year unknown',p.immigration.status].map(esc).join(' · '));
@@ -237,6 +240,7 @@ function show(id,opts={}){
   push(facts,'1900 residence',esc(p.residence_1900));
   push(facts,'1910 residence',esc(p.residence_1910));
   push(facts,'1920 residence',esc(p.residence_1920));
+  if(Array.isArray(p.residences)&&p.residences.length)push(facts,'Residences',p.residences.map(esc).join('<br>'));
   push(facts,'Notes',esc(p.notes));
   push(facts,'Research status',esc(p.status));
   const narrative=[];
@@ -248,6 +252,9 @@ function show(id,opts={}){
   push(facts,'Confirmation',esc(p.confirmation));
   push(facts,'Occupation',esc(p.occupation));
   push(rels,'Parents',(p.parents||[]).map(ref=>`<div class="rel">${link(ref)}${P[ref]&&!isFamily(P[ref])?' <span class="relnote">RECORD-SOURCED, not confirmed by family.</span>':''}</div>`).join(''));
+  push(rels,'Foster parents',(p.fosterParents||[]).map(ref=>`<div class="rel">${link(ref)} <span class="relnote">Foster, not a blood parent.</span></div>`).join(''));
+  const fosterKids=PEOPLE.people.filter(q=>(q.fosterParents||[]).includes(id)).map(q=>q.id);
+  push(rels,'Foster children',fosterKids.map(ref=>`<div class="rel">${link(ref)} <span class="relnote">Foster child, not blood kin.</span></div>`).join(''));
   push(rels,'Parent status',esc(p.parentsStatus));
   push(rels,'Danish parents',p.danishParents?`<span class="relnote">${esc(p.danishParents)}</span>`:'');
   push(rels,'Siblings',(p.siblings||[]).map(link).join('<br>'));

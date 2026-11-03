@@ -455,7 +455,7 @@
       "name": "Hans Pedersen",
       "birth": {
         "date": "1833-02-25",
-        "place": "Valsømagle (read 'Walsmagle'/'Valsømagle') — place LOW confidence"
+        "place": "Valsømagle, Haraldsted Sogn, Ringsted Herred, Sorø amt (VERIFIED S51,S52,S53)"
       },
       "death": {
         "date": "1867-09-11",
@@ -463,8 +463,10 @@
       },
       "burial": "1867-09-17, Bjernede (age 34)",
       "occupation": "Hjulmand (wheelwright), Bjernedegaardshuse; 1862 unmarried servant at Bjernedegaard",
-      "parents": [],
-      "parentsNote": "Mother possibly 'Ane Marie Hansdatter' (death entry S37; LOW confidence, UNVERIFIED). Father UNKNOWN (not named).",
+      "parents": [
+        "P25"
+      ],
+      "parentsNote": "Mother: Ane Marie …datter of Valsømagle, unmarried servant. CONFLICT on patronymic: HMB baptism (S51) reads Clausdatter; death (S37) reads Klaus Datt.; KMB duplicate (S52) has interlinear correction Hansd. over a struck word. Father CANDIDATE only: Peder Johansen of Ringsted, 'udlagt' (named by mother) in S51/S52 — paternity not proven. No person cards created until conflict resolved. | 1847 confirmation (S56) reads 'Uægte Søn af Pigen Ane Marie Hansd. og udlagt Barnefader Peder Johansen — Pleiefader Huusm. Jens Nielsen i Skee': adds a 3rd reading (Hansd.) — CONFLICT still OPEN, not resolved. Foster father Jens Nielsen (Skee) = not a relative by any record seen. | 2026-11-03 pass 4: Mother card P25 created with BOTH variants (Clausdatter / Hansdatter). Move lists S59/S60 give 'Ane Marie Hansd., 28, tjenestepige' going to and from Ringsted in 1832/33, which leans toward Hansd. but the CONFLICT stays OPEN. Father: NO card. FT-1834 Ringsted landsogn has 2 married Peder Johansens (45; 34 Daglejer), CANDIDATES only (S62), no match proven. Foster parents: P26 Jens Nielsen, P27 Kirsten Johansdatter (S54–S58); no kinship to the mother found. | Pass 5: FT-1834 Ringsted town has CANDIDATE Ane Marie Hansdatter 27, unmarried servant, Sankt Hans Gade (S63), and CANDIDATE Peter Johansen 30, unmarried servant, same street (S64, card P28, not linked). Neither is proven.",
       "spouses": [
         {
           "id": "P19",
@@ -482,10 +484,33 @@
         "S37",
         "S31",
         "S42",
-        "S43"
+        "S43",
+        "S51",
+        "S52",
+        "S53",
+        "S54",
+        "S55",
+        "S56",
+        "S57",
+        "S58",
+        "S59",
+        "S60",
+        "S62"
       ],
       "status": "RECORD-SOURCED (Danish church book; not family-confirmed)",
-      "notes": "Same man in marriage (S36) and death (S37): both give b. 25 Feb 1833. Vacc. 29 Jun 1839; confirmed after Jul 1847. Cause of death read 'Brystsyge/Lungebetændelse(?)' (LOW). Died when son Hans Peter was ~3½. Detail: shots/bjernede-family-2026-11-03/; browser-pass-bjernede-family.md"
+      "notes": "Same man in marriage (S36) and death (S37): both give b. 25 Feb 1833. Vacc. 29 Jun 1839; confirmed after Jul 1847. Cause of death read 'Brystsyge/Lungebetændelse(?)' (LOW). Died when son Hans Peter was ~3½. Detail: shots/bjernede-family-2026-11-03/; browser-pass-bjernede-family.md Confirmed Haraldsted Kirke per S37 (entry not yet found). | NOTE: confirmation entry (S56) gives vacc. 29 Jun 1833, not 1839 — earlier '1839' may be a misreading; check S37.",
+      "baptism": "1833-03-31 (Palm Sunday), Haraldsted Kirke; illegitimate (uægte) (S51,S52)",
+      "confirmation": "1847-04-11 (1st Sunday after Easter), Haraldsted Kirke, boys no. 3, 'Hans Pedersen af Skee', b. 25 Feb 1833 Valsømagle; vacc. 29 Jun 1833 (Aschlund) (VERIFIED S56)",
+      "residences": [
+        "1834-02-18 census: Skee, Haraldsted, hh 32 (Jens Nielsen, husmand/hjulmager), 'Hans Pedersen, 1, ugift, Pleiebarn' (S54; identity via S56 foster-father link)",
+        "1840-02-01 census: Skee, Haraldsted, hh 17 (Jens Nielsen 49), 'Hans Pedersen, 6, ugift, Pleiebarn' (S55)",
+        "1845-02-01 census: Skee, Haraldsted, hh 99 (Jens Nielsen), 'Hans Pedersen, 12, her i Sognet, Pleiesøn' (S57)",
+        "1850-02-01 census: NOT in foster household Skee hh 53 (S58); where he was in 1850 is not found (rest of parish not searched)"
+      ],
+      "fosterParents": [
+        "P26",
+        "P27"
+      ]
     },
     {
       "id": "P19",
@@ -692,6 +717,106 @@
       ],
       "status": "RECORD-SOURCED (Danish church book; not family-confirmed)",
       "notes": "Male births 1863 no. 2 (S35 img 5): unnamed, parents Hans Pedersen & Ane Rasmusdatter ('19 Aar'), remark '1st Barn', 'Død d. 18de Januar uden Daab(?)'. Death remark MEDIUM confidence. Explains '2det Barn' on Hans Peter's baptism. Shots 14, 15."
+    },
+    {
+      "id": "P25",
+      "name": "Ane Marie Hansdatter / Clausdatter",
+      "altNames": [
+        "Ane Marie Clausdatter (S51, S37)",
+        "Ane Marie Hansd. (S52 corr., S56, S59, S60)"
+      ],
+      "birth": {
+        "date": "c. 1804–1805 (age 28 in 1833, S59/S60)",
+        "place": "UNVERIFIED"
+      },
+      "occupation": "Tjenestepige (maidservant)",
+      "children": [
+        "P18"
+      ],
+      "parents": [],
+      "spouses": [],
+      "sources": [
+        "S51",
+        "S52",
+        "S56",
+        "S59",
+        "S60",
+        "S63"
+      ],
+      "status": "VERIFIED as mother of P18 (S51/S52/S56); patronymic CONFLICT OPEN",
+      "residences": [
+        "c. Nov 1832–Jan 1833: left Haraldsted for Ringsted (S60, date LOW)",
+        "30 Mar 1833: back in Haraldsted from Ringsted (S59)",
+        "1834: not in Valsømagle; later whereabouts unknown",
+        "1834-02-18: CANDIDATE: Ane Marie Hansdatter 27, ugift, Tjenestefolk (servant), Sankt Hans Gade, Ringsted købstad (S63); age 27 vs 28 in 1833 lists, so not proven"
+      ],
+      "notes": "Ane Bolette (baptism sponsor) is probably Knudsd., not a sister (S61); this is still a CONFLICT. Next: her baptism c. 1804–05 (before the 1814 book), Ringsted town FT-1834, and later move lists."
+    },
+    {
+      "id": "P26",
+      "name": "Jens Nielsen",
+      "birth": {
+        "date": "c. 1790–91 (43 in 1834; 60 in 1850)",
+        "place": "Kirke-Flinterup(?) per FT-1850 (LOW)"
+      },
+      "occupation": "Huusmand (cottager), Hjulmager (wheelwright), Skee, Haraldsted",
+      "spouses": [
+        {
+          "id": "P27",
+          "marriage": "UNVERIFIED (before 1834)"
+        }
+      ],
+      "children": [],
+      "sources": [
+        "S54",
+        "S55",
+        "S56",
+        "S57",
+        "S58"
+      ],
+      "status": "VERIFIED foster father (Pleiefader) of P18 (S56)",
+      "notes": "Son Hagen Jensen b. c. 1835 (S58). Foster child Hans Jensen b. c. 1844 (S58). Death not yet searched. Kinship to P25 or Peder Johansen: none found."
+    },
+    {
+      "id": "P27",
+      "name": "Kirsten Johansdatter",
+      "birth": {
+        "date": "c. 1796–97 (37 in 1834; 53 in 1850)",
+        "place": "illegible in FT-1850 (LOW)"
+      },
+      "spouses": [
+        {
+          "id": "P26",
+          "marriage": "UNVERIFIED"
+        }
+      ],
+      "children": [],
+      "sources": [
+        "S54",
+        "S55",
+        "S57",
+        "S58"
+      ],
+      "status": "VERIFIED foster mother of P18 (in the household 1834–45)",
+      "notes": "She shares the patronymic Johansdatter with alleged father Peder Johansen. A sibling link is UNVERIFIED speculation and is not asserted."
+    },
+    {
+      "id": "P28",
+      "name": "Peter (Peder) Johansen",
+      "birth": {
+        "date": "c. 1803–04 (30 in Feb 1834)",
+        "place": "UNVERIFIED"
+      },
+      "occupation": "Tjenestekarl (servant), Sankt Hans Gade, Ringsted købstad (S64)",
+      "parents": [],
+      "spouses": [],
+      "children": [],
+      "sources": [
+        "S64",
+        "S62"
+      ],
+      "status": "CANDIDATE ONLY: possible 'udlagt' (named) father of P18. NOT proven; not linked as parent",
+      "notes": "He is the only unmarried Peder/Peter Johansen in FT-1834 Ringsted town plus landsogn (the 2 landsogn men are married, S62). He is on the same street as the candidate mother (S63). Other Peder Johansens may have been in nearby parishes."
     }
   ]
 }
