@@ -103,11 +103,11 @@ He was already gone.
 
 Hans Peter made it. Every American census after that agrees he arrived in 1884.
 
-He settled in Brookville Township, Redwood County, Minnesota, about 22 miles from Springfield, the town he had named in Copenhagen. Around 1891 he married Maren Sophia Jensen, born in 1872, the daughter of Nels Peter Jensen and Anne Marie Hansen Jensen.
+He settled in Brookville Township, Redwood County, Minnesota, about 22 miles from Springfield, the town he had named in Copenhagen. On March 11, 1891, he married Maren Sophia Jensen (the marriage record spells her "Mary S Jensen"), born in 1872, the daughter of Nels Peter Jensen and Anne Marie Hansen Jensen.
 
 Then the farm grew, and so did the family.
 
-In 1900, the census found Hans Peter farming, with five children. By 1910 he **owned** his farm. By 1920 it was a dairy farm.
+In 1900, the census found Hans Peter farming, with five children. In 1905 the state counted them again: Hans Peter was 41, Maren was 32, and Anna was 10. By 1910 he **owned** his farm. By 1920 it was a dairy farm he ran for himself. It still had a loan on it, called a mortgage. And that census tells us something big: back in 1897, the boy from Bjernede had become an **American citizen.**
 
 Hans Peter and Maren Sophia had eight children: Nels, Rudolph, Annie, Louis, Mary, Ethel, Elmer, and Olga.
 
@@ -119,7 +119,7 @@ Babe grew up to be called **Elmer.**
 
 In September 1922, the local newspaper printed sad news.
 
-Hans P. Petersen, 55, of Brookville Township, about two miles east of the Brookville church, had died suddenly one afternoon of heart trouble while sitting in a chair. The paper said he had been ailing for some time.
+Hans P. Petersen, 55, of Brookville Township, about two miles east of the Brookville church, had died suddenly one afternoon of heart trouble while sitting in a chair. The paper said he had been ailing for some time. (Another old list spells his name "Hans T." and gives the day as September 6. Is that a mistake? Nobody has checked the death certificate yet, so it is still a mystery.)
 
 He was buried at Dannebod Cemetery, the graveyard of the township's Danish church. Maren Sophia is buried there too. (A website called Find a Grave tells us this; we'd like to find more records to be sure.) The cemetery is still on a country road near the little town of Cobden.
 

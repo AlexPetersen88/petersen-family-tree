@@ -18,9 +18,10 @@
    "death": {
     "date": "1922",
     "notes": "Year 1922. NEWSPAPER (S145, Redwood Gazette 1922-09-13 p.4, Morgan Messenger reprint): printed \"Hans P. Petersen\", age 55, of Brookville township ~2 mi east of Brookville church; died suddenly ~4:30 \"yesterday\" afternoon of heart trouble and complications while sitting in a chair; had been ailing some time; funeral not yet arranged; survived by wife and several children (unnamed). Calendar date NOT proven by article. CANDIDATE date 1922-09-06 from MNHS index (Hans T. Petersen, cert 1922-MN-011514) only.",
-    "conflict": "RESOLVED (display + index T.) 2026-11-03: Alex Genealogist chat = Hans P.; Alex Narrative = MNHS 'Hans T.' is a typo. Cert image not seen. Death date 1922-09-06 stays CANDIDATE (index only). See conflicts.md.",
+    "conflict": "RESOLVED (display + index T.) 2026-11-03: Alex Genealogist chat = Hans P.; Alex Narrative = MNHS 'Hans T.' is a typo. Cert image not seen. Death date 1922-09-06 stays CANDIDATE (index only). See conflicts.md. | MN Pack 10 (S274 FS death index, same cert 011514) restates Hans T.; record-level initial conflict OPEN, no pick by gate.",
     "sources": [
-     "S145"
+     "S145",
+     "S274"
     ]
    },
    "burial": "Dannebod Cemetery (Fredsminde Danish church cemetery), Brookville Twp near Cobden/Morgan, Redwood Co MN",
@@ -36,7 +37,7 @@
    "spouses": [
     {
      "id": "P7",
-     "marriage": "1891"
+     "marriage": "11 Mar 1891"
     }
    ],
    "children": [
@@ -80,16 +81,20 @@
     "S125",
     "S126",
     "S136",
-    "S145"
+    "S145",
+    "S271",
+    "S272",
+    "S273",
+    "S274"
    ],
    "status": "VERIFIED: 1900 US census (imm. 1884, Na, b. Feb 1864 Denmark) + FAG parent of Elmer; origin Bjernede FAMILY-CONFIRMED 2026-11-03",
    "occupation_1900": "Farmer",
    "residence_1900": "Brookville Twp, Redwood Co MN, ED 232 sheet 6, dwelling/family 109",
-   "notes": " Census surname spelled Peterson. Children on 1900: Nels A., Hans O., Annie H., Louis C., Mary S. — Hans O. May 1893 may = Rudolph Hans (FAG); unresolved. Parents Hans Pedersen (P18) & Ane Rasmusdatter (P19), RECORD-SOURCED (Niels Peder Pedersen / Ane Kirstine reading withdrawn as misread). Father died when Hans Peter was ~3½ (Sep 1867). Elder brother unnamed son (P24) b. 17 Jan 1863, d. 18 Jan 1863 (S42) — matches '2det Barn'. Full brother Rasmus Pedersen (P23, b. 10 Dec 1866, d. 5 Feb 1867); half-siblings Rasmus Peter (P21) & Ane Marie (P22) Rasmussen; stepfather Hans Rasmussen (P20). See browser-pass-bjernede-family.md. | NATURALIZATION INDEX (Scout MN Pack #4, 2026-11-03): Iron Range Research Center free index ONLY (no year/cert until microfilm). CANDIDATES not linked: Redwood PETERSEN Hans S74 (best spelling), PEDERSEN Hans S75, PEDERSON Hans S76 — CONFLICT, no winner. Redwood PETERSON Hans = 0 hits (S77). Brown Co CANDIDATES (Springfield dest. geography): Petersen Hans cluster S78; Peterson incl. indexed Hans Peter S79. REJECT unless later proof: Hans Henry S80; Hans Christian / Pedersen Hans Brown S81. Census Na (S27) and ~1897 reading (S29) unchanged — no reel/page proven as ours. | S98 UNVERIFIED watch: Agnes Ruby Petersen b. 26 Aug 1909 Redwood mother Jensen — NOT added as child; could be extra Hans×Maren OR different couple (CONFLICT OPEN). | S103: FG memorial S12 omits middle Peter and lists only 4 kids — incompleteness, not a different man (census S27–S29 + family-confirm). | BLM GLO (Scout MN Pack #6, 2026-11-03): Redwood patents — no Petersen spelling (S113 NEGATIVE) and no patent on est. Brookville T109N R36W. Hans Pederson T110N R39W sec 32 1881 (S125–S126) remain unlinked CANDIDATE LOW — NOT P6 land. No land-ownership claim. | NEWSPAPERS (Scout MN Pack #7, 2026-11-03): no verified newspaper article/obituary found. MN Hub Browse-by-date finding aid S136 (search still hung). Chronicling America hits S137–S141 UNVERIFIED/LOW — not attached as support. CANDIDATE 1922 death date 1922-09-06 (MNHS index); 'Hans T.' = MNHS typo per Alex Narrative 2026-11-03. Scout MN still digging Redwood gazette week of 1922-09-06 (to ~09-27). | NEWSPAPERS (Scout MN Pack #7b, 2026-11-03): S145 APPROVED death notice \"Hans P. Petersen\" Redwood Gazette 1922-09-13 p.4 (see death.notes). S146 H.P. Federson/Evan LOW not linked; S147 NEGATIVE Sep 6/27. Hans P. display locked; MNHS T. = typo per Alex Narrative 2026-11-03.",
+   "notes": " Census surname spelled Peterson. Children on 1900: Nels A., Hans O., Annie H., Louis C., Mary S. — Hans O. May 1893 may = Rudolph Hans (FAG); unresolved. Parents Hans Pedersen (P18) & Ane Rasmusdatter (P19), RECORD-SOURCED (Niels Peder Pedersen / Ane Kirstine reading withdrawn as misread). Father died when Hans Peter was ~3½ (Sep 1867). Elder brother unnamed son (P24) b. 17 Jan 1863, d. 18 Jan 1863 (S42) — matches '2det Barn'. Full brother Rasmus Pedersen (P23, b. 10 Dec 1866, d. 5 Feb 1867); half-siblings Rasmus Peter (P21) & Ane Marie (P22) Rasmussen; stepfather Hans Rasmussen (P20). See browser-pass-bjernede-family.md. | NATURALIZATION INDEX (Scout MN Pack #4, 2026-11-03): Iron Range Research Center free index ONLY (no year/cert until microfilm). CANDIDATES not linked: Redwood PETERSEN Hans S74 (best spelling), PEDERSEN Hans S75, PEDERSON Hans S76 — CONFLICT, no winner. Redwood PETERSON Hans = 0 hits (S77). Brown Co CANDIDATES (Springfield dest. geography): Petersen Hans cluster S78; Peterson incl. indexed Hans Peter S79. REJECT unless later proof: Hans Henry S80; Hans Christian / Pedersen Hans Brown S81. Census Na (S27) and ~1897 reading (S29) unchanged — no reel/page proven as ours. | S98 UNVERIFIED watch: Agnes Ruby Petersen b. 26 Aug 1909 Redwood mother Jensen — NOT added as child; could be extra Hans×Maren OR different couple (CONFLICT OPEN). | S103: FG memorial S12 omits middle Peter and lists only 4 kids — incompleteness, not a different man (census S27–S29 + family-confirm). | BLM GLO (Scout MN Pack #6, 2026-11-03): Redwood patents — no Petersen spelling (S113 NEGATIVE) and no patent on est. Brookville T109N R36W. Hans Pederson T110N R39W sec 32 1881 (S125–S126) remain unlinked CANDIDATE LOW — NOT P6 land. No land-ownership claim. | NEWSPAPERS (Scout MN Pack #7, 2026-11-03): no verified newspaper article/obituary found. MN Hub Browse-by-date finding aid S136 (search still hung). Chronicling America hits S137–S141 UNVERIFIED/LOW — not attached as support. CANDIDATE 1922 death date 1922-09-06 (MNHS index); 'Hans T.' = MNHS typo per Alex Narrative 2026-11-03. Scout MN still digging Redwood gazette week of 1922-09-06 (to ~09-27). | NEWSPAPERS (Scout MN Pack #7b, 2026-11-03): S145 APPROVED death notice \"Hans P. Petersen\" Redwood Gazette 1922-09-13 p.4 (see death.notes). S146 H.P. Federson/Evan LOW not linked; S147 NEGATIVE Sep 6/27. Hans P. display locked; MNHS T. = typo per Alex Narrative 2026-11-03. | MN Pack 10 (2026-11-03): S271 1920 census Brookville ED 182 (age 55, imm 1884; Maren S, Anna H, Ethel M, Elmer H, Olga M); S272 marriage 11 Mar 1891 Redwood to Mary S Jensen; S273 1905 state census (Maren S, Niels A, Hans R 12, Anna H). 1905 'Hans R' ≈ Rudolph Hans / 1900 Hans O. = CANDIDATE same son, unresolved. | S271 IMAGE (Archive.org reel 851 n271, soft amend 2026-11-03): naturalized (Na) 1897; dairy farm, OA (works for himself); home owned mortgaged (O M); imm 1884. | S272 IMAGE-CONFIRMED 2026-11-03 (MN Pack 10b): m. Mary S. Jensen 11 Mar 1891 Redwood Falls MN by JP (~Edward Marsh, given name MED); affidavit signed 'Hans Peter Petersen', license 'Hans P. Peterson'; witnesses Niels Jensen + J. L. Byram (clerk); no ages/parents on form.",
    "familyConfirmed": "FAMILY-CONFIRMED via Michael Don Petersen (Alex's father), 2026-11-03: Elmer Hamilton Petersen's parents were Hans Peter Petersen and Maren Sophia (Jensen; 'Mary' on 1900 census). Public-record citations (FAG, MNHS, 1900 census) retained. | ORIGIN FAMILY-CONFIRMED by Alex Petersen, 2026-11-03: birth year 1864 + Bjernede (small town) match the Danish records — 'That's our Hans' (S30). Cites retained: baptism S31, confirmation S32, 1880 census S33, Copenhagen Police emigration 16 Apr 1884 S34.",
    "children_count": "8 children: 1910 census Maren 'mother of 7, 7 living' (S28) + Olga b. ~1911/12 (1920 census S29, FAG)",
    "residence_1910": "Brookville Twp, Redwood Co MN, ED 109 sheet 4A, dwelling/family 61 (S28); imm. 1884, Na; farmer, owns farm",
-   "residence_1920": "Brookville Twp, Redwood Co MN, ED 182, dwelling 54 (S29); age 55, b. Denmark, Danish mother tongue, parents b. Denmark; imm./naturalization cols partly legible (naturalized yr reads ~1897, unverified)",
+   "residence_1920": "Brookville Twp, Redwood Co MN, ED 182, sheet 3B (S29 companion, S271 image); age 55, b. Denmark, Danish mother tongue, parents b. Denmark; imm. 1884; naturalized 1897 (Na); farm owned, mortgaged (O M); dairy farm, own account (OA). Household number: S271 reads dwelling 52 / family 54; S29 had read dwelling 54 — both kept, no pick.",
    "denmarkOrigin": "RESOLVED 2026-11-03: Bjernede, Sorø amt; b. 28 Feb 1864, bapt. 5 Jun 1864 (S31), confirmed 14 Apr 1878 (S32), 1880 census Bjernede stepson of Hans Rasmussen (S33, low-confidence), emigrated via Copenhagen 16 Apr 1884 age 20 to Springfield, Minn., contract 1015 Y (S34 index; S83 VERIFIED original register image — occupation Tjenende?/servant MEDIUM; no companions; ship not in register). Tinglev S21 WITHDRAWN.",
    "danishParents": "RECORD-SOURCED (not family-named): father Hans Pedersen (P18), hjulmand, b. 25 Feb 1833, d. 11 Sep 1867 bur. 17 Sep 1867 Bjernede age 34 (S36, S37); mother Ane Rasmusdatter (P19), b. 17 Jun 1843 Bjernede Lodsgaard(?), m. 14 Oct 1862 Bjernede (S36); she m2 Hans Rasmussen (P20) spring 1870 (S38). Alex confirmed origin place/year only.",
    "parents": [
@@ -142,7 +147,7 @@
    "spouses": [
     {
      "id": "P6",
-     "marriage": "1891"
+     "marriage": "11 Mar 1891"
     }
    ],
    "children": [
@@ -164,12 +169,15 @@
     "S155",
     "S217",
     "S236",
-    "S237"
+    "S237",
+    "S271",
+    "S272",
+    "S273"
    ],
    "status": "VERIFIED: 1900 census as Mary + FAG; maiden Jensen from Elmer MNHS/FAG",
    "familyConfirmed": "FAMILY-CONFIRMED via Michael Don Petersen (Alex's father), 2026-11-03: Elmer Hamilton Petersen's parents were Hans Peter Petersen and Maren Sophia (Jensen; 'Mary' on 1900 census). Public-record citations (FAG, MNHS, 1900 census) retained.",
    "children_born_living_1910": "7 born / 7 living, married 19 yrs (S28)",
-   "notes": " | S101 NEGATIVE this pass: no MNHS death 1937 Redwood/Brown/Lyon match for Maren Sophia; 1937 death year remains secondary/unconfirmed by free index. | S102 FAG secondary parents/sibs list; S104 1880 Nels household not found this pass; S105 sibs of Hans×Maren obits negative this pass. | S155 CANDIDATE: 'Mrs. Hans Petersen of Brookville' living Nov 1929 as Ethel's surviving mother (probable = P7). Does not prove 1937 death. S154 NEGATIVE-by-unavailability 1937 obit (Hub timeout; Gazette 1937 issues 404); free CA/Hub dig closed; 1937 death year still secondary/unconfirmed by free newspaper. | Pack 9 PARTIAL (2026-11-03): S104 (1880 not located) SUPERSEDED by S217 HIT — 1880 Brookville Twp, Redwood Co MN, ED 222 p11, dw/fam 96/97: Nels Jensen 31 farmer b. Denmark, wife Mary 30 b. Denmark, dau Sophia 7 b. MN (= P7). Corroborates FAG secondary parents (S102) MED→HIGH for Nels+Mary household / Sophia as daughter. Full names 'Nels Peter Jensen' / 'Anne Marie Hansen' and their years remain FAG secondary (census gives Nels / Mary only). 1880 household siblings (census only, no person cards): Anna 6, Hans ~5 (age uncertain), James 2; one further line UNREAD. | Pack 9 newspapers (2026-11-03): S236 NEG-by-structure — Redwood Gazette 1937 OCR sample (Jan 7, 14, 21; Feb 4; Jun 10; Nov 4, 11) 0 phrase hits; Jun 3 'Maren' p.8 Lucan social = not obit (LOW); S237 CA 403 / MNHS People Finder INCOMPLETE. Sampled NEG only; 1937 death year still FAG-secondary; no death date.",
+   "notes": " | S101 NEGATIVE this pass: no MNHS death 1937 Redwood/Brown/Lyon match for Maren Sophia; 1937 death year remains secondary/unconfirmed by free index. | S102 FAG secondary parents/sibs list; S104 1880 Nels household not found this pass; S105 sibs of Hans×Maren obits negative this pass. | S155 CANDIDATE: 'Mrs. Hans Petersen of Brookville' living Nov 1929 as Ethel's surviving mother (probable = P7). Does not prove 1937 death. S154 NEGATIVE-by-unavailability 1937 obit (Hub timeout; Gazette 1937 issues 404); free CA/Hub dig closed; 1937 death year still secondary/unconfirmed by free newspaper. | Pack 9 PARTIAL (2026-11-03): S104 (1880 not located) SUPERSEDED by S217 HIT — 1880 Brookville Twp, Redwood Co MN, ED 222 p11, dw/fam 96/97: Nels Jensen 31 farmer b. Denmark, wife Mary 30 b. Denmark, dau Sophia 7 b. MN (= P7). Corroborates FAG secondary parents (S102) MED→HIGH for Nels+Mary household / Sophia as daughter. Full names 'Nels Peter Jensen' / 'Anne Marie Hansen' and their years remain FAG secondary (census gives Nels / Mary only). 1880 household siblings (census only, no person cards): Anna 6, Hans ~5 (age uncertain), James 2; one further line UNREAD. | Pack 9 newspapers (2026-11-03): S236 NEG-by-structure — Redwood Gazette 1937 OCR sample (Jan 7, 14, 21; Feb 4; Jun 10; Nov 4, 11) 0 phrase hits; Jun 3 'Maren' p.8 Lucan social = not obit (LOW); S237 CA 403 / MNHS People Finder INCOMPLETE. Sampled NEG only; 1937 death year still FAG-secondary; no death date. | MN Pack 10: S272 marriage 11 Mar 1891 Redwood as 'Mary S Jensen'; S271 1920 Maren S 47; S273 1905 Maren S 32. | S272 IMAGE-CONFIRMED 2026-11-03 (MN Pack 10b): m. Hans Peter Petersen 11 Mar 1891 Redwood Falls MN as 'Mary S. Jensen'; witnesses Niels Jensen + J. L. Byram; no ages/parents on form. Witness Niels Jensen = possible father Nels Jensen (S217) — CANDIDATE ONLY, NOT merged.",
    "fagSiblingsSecondary": "S102 FAG secondary only (unverified): Hans Christian, Jens Peter, Ida D Christensen, John, Jennie Christina Trebesch, Emma L McPeek, Louis William, Rudolph Gerhart, Hulda Camilla"
   },
   {
