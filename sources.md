@@ -106,3 +106,7 @@ Note: FT-1834 Ringsted købstad was skimmed in full: bsids 4460 Nørregade, 4461
 - S93 (APPROVED index — P10): MNHS birth — Olga Margaret Petersen, b. 28 Feb 1911 Redwood Co; mother Jensen; cert 1911-21964 (middle name Margaret new). https://www.mnhs.org/search/people/record?uuid=ba40d979-971d-40a9-9c12-9f86dcbdce87&recordType=birth-records Confidence HIGH.
 - S94 (APPROVED index — P3 Elmer): MNHS birth — “Babe” Petersen, b. 24 Mar 1906 Redwood Co; mother Jensen; cert 1906-21514 — date matches Elmer; unnamed-at-registration pattern. https://www.mnhs.org/search/people/record?uuid=4735dd80-74a7-405a-b003-e85e45211e63&recordType=birth-records Confidence HIGH = Elmer birth. Death already S14 1964-MN-016272.
 - S95 (APPROVED index — P8): MNHS death — Rudolph H. Petersen, b. 8 May 1893 MN; mother JENSEN; d. 13 Apr 1964 Hennepin Co; cert 1964-MN-006734. https://www.mnhs.org/search/people/record?uuid=3480d138-4a74-4be4-ba6d-7061b97c2ac5&recordType=death-records Confidence HIGH (mother Jensen + May 1893 matches 1900 Hans O. / Rudolph).
+
+## Added 2026-11-03 — Pack #8 S152 (Ethel Mathilda and Werner Jensen)
+
+- S152 (APPROVED — newspaper): Redwood Gazette, 6 Nov 1929, p.5 — “FUNERAL THURSDAY FOR MRS. WERNER JENSEN.” Ethel Mathilda Petersen, b. Brookville Twp 15 Jan 1902; m. Werner Jensen 3 Jan 1923; d. Redwood Falls hospital 20 Oct 1929 after an operation. https://www.loc.gov/resource/sn85025570/1929-11-06/ed-1/?sp=5

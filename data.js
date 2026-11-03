@@ -156,21 +156,43 @@ window.PEOPLE={
    "name": "Ethel Mathilda Petersen (Jensen)",
    "birth": {
     "date": "1902-01-15",
-    "place": "Redwood Co MN",
-    "placeStatus": "VERIFIED MNHS birth index S92 (mother Jensen)"
+    "place": "Brookville Twp, Redwood Co MN",
+    "placeStatus": "VERIFIED MNHS birth index S92 (Redwood Co; mother Jensen); newspaper S152 (Brookville Twp)"
    },
    "death": {
-    "date": "1929"
+    "date": "1929-10-20",
+    "place": "Redwood Falls hospital",
+    "status": "APPROVED newspaper S152; after an operation"
    },
    "parents": [
     "P6",
     "P7"
    ],
-   "sources": [
-    "S15",
-    "S92"
+   "spouses": [
+    {
+     "id": "P33",
+     "marriage": "1923-01-03"
+    }
    ],
-   "status": "VERIFIED birth MNHS S92; death 1929 still FAG/secondary pending"
+   "sources": [
+    "S92",
+    "S152"
+   ],
+   "status": "VERIFIED birth MNHS S92; marriage and death APPROVED newspaper S152"
+  },
+  {
+   "id": "P33",
+   "name": "Werner Jensen",
+   "spouses": [
+    {
+     "id": "P9",
+     "marriage": "1923-01-03"
+    }
+   ],
+   "sources": [
+    "S152"
+   ],
+   "status": "RECORD-SOURCED marriage to P9 only (S152). Birth and death are not in this notice."
   },
   {
    "id": "P10",
@@ -1470,6 +1492,14 @@ window.SOURCES={
   "text": "MNHS death \u2014 Rudolph H. Petersen, b. 8 May 1893 MN; mother JENSEN; d. 13 Apr 1964 Hennepin Co; cert 1964-MN-006734. https://www.mnhs.org/search/people/record?uuid=3480d138-4a74-4be4-ba6d-7061b97c2ac5&recordType=death-records Confidence HIGH (mother Jensen + May 1893 matches 1900 Hans O. / Rudolph).",
   "urls": [
    "https://www.mnhs.org/search/people/record?uuid=3480d138-4a74-4be4-ba6d-7061b97c2ac5&recordType=death-records"
+  ]
+ },
+ "S152": {
+  "id": "S152",
+  "flag": "APPROVED \u2014 newspaper",
+  "text": "Redwood Gazette, 6 Nov 1929, p.5 \u2014 \u201cFUNERAL THURSDAY FOR MRS. WERNER JENSEN.\u201d Ethel Mathilda Petersen, b. Brookville Twp 15 Jan 1902; m. Werner Jensen 3 Jan 1923; d. Redwood Falls hospital 20 Oct 1929 after an operation. https://www.loc.gov/resource/sn85025570/1929-11-06/ed-1/?sp=5",
+  "urls": [
+   "https://www.loc.gov/resource/sn85025570/1929-11-06/ed-1/?sp=5"
   ]
  }
 };

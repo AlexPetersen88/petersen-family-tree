@@ -31,7 +31,7 @@ The children named in the records are:
 - **Louis C.**, born October 1896 (S27, S28)
 - **Mary S.**, born May 1898 (S27). The 1910 census lists a daughter "Marie E.," 11 (S28).
 - **Rudolph H. Petersen**, born 8 May 1893 in Minnesota; mother Jensen; died 13 April 1964 in Hennepin County (S95). He appears as "Rudolph H.," 16, in 1910 (S28). The 1900 census lists a son "Hans O.," born May 1893 (S27); Genealogist treats that as matching Rudolph’s MNHS dates (S95).
-- **Ethel M. Petersen**, born 15 January 1902 in Redwood County; mother Jensen (S92). She appears as Ethel M., 8, in 1910 (S28). Death year 1929 is still from Find a Grave only (S15).
+- **Ethel Mathilda Petersen**, born 15 January 1902 in Brookville Township (S92, S152). She appears as Ethel M., 8, in 1910 (S28). She married Werner Jensen on 3 January 1923 (S152). She died on 20 October 1929 at the Redwood Falls hospital after an operation; the funeral was held at the Hans Jensen home in Brookville, then Brookville Lutheran Church, with burial in the church cemetery; Rev. H. Madsen of Sleepy Eye officiated (S152). Survivors named in the notice and cleared for this story include her mother (“Mrs. Hans Petersen” of Brookville), her sister Olga, and her brother Elmer (S152). Other sisters’ married names in that notice are unverified and are not used here.
 - **Elmer Hamilton Petersen**, born 24 March 1906 in Redwood County. The Minnesota birth index registers him as "Babe" Petersen, mother Jensen (S94); later records use Elmer (S14, S15, S28). He is our line (Chapter 4).
 - **Olga Margaret Petersen**, born 28 February 1911 in Redwood County; mother Jensen (S93). She appears as Olga M., 8, in 1920 (S29). Death year 1935 is still from Find a Grave only (S15).
 

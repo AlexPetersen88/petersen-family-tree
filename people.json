@@ -156,21 +156,43 @@
       "name": "Ethel Mathilda Petersen (Jensen)",
       "birth": {
         "date": "1902-01-15",
-        "place": "Redwood Co MN",
-        "placeStatus": "VERIFIED MNHS birth index S92 (mother Jensen)"
+        "place": "Brookville Twp, Redwood Co MN",
+        "placeStatus": "VERIFIED MNHS birth index S92 (Redwood Co; mother Jensen); newspaper S152 (Brookville Twp)"
       },
       "death": {
-        "date": "1929"
+        "date": "1929-10-20",
+        "place": "Redwood Falls hospital",
+        "status": "APPROVED newspaper S152; after an operation"
       },
       "parents": [
         "P6",
         "P7"
       ],
-      "sources": [
-        "S15",
-        "S92"
+      "spouses": [
+        {
+          "id": "P33",
+          "marriage": "1923-01-03"
+        }
       ],
-      "status": "VERIFIED birth MNHS S92; death 1929 still FAG/secondary pending"
+      "sources": [
+        "S92",
+        "S152"
+      ],
+      "status": "VERIFIED birth MNHS S92; marriage and death APPROVED newspaper S152"
+    },
+    {
+      "id": "P33",
+      "name": "Werner Jensen",
+      "spouses": [
+        {
+          "id": "P9",
+          "marriage": "1923-01-03"
+        }
+      ],
+      "sources": [
+        "S152"
+      ],
+      "status": "RECORD-SOURCED marriage to P9 only (S152). Birth and death are not in this notice."
     },
     {
       "id": "P10",
