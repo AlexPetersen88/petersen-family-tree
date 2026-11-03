@@ -54,7 +54,8 @@ window.PEOPLE={
     "S35",
     "S36",
     "S37",
-    "S44"
+    "S44",
+    "S50"
    ],
    "status": "VERIFIED: 1900 US census (imm. 1884, Na, b. Feb 1864 Denmark) + FAG parent of Elmer; origin Bjernede FAMILY-CONFIRMED 2026-11-03",
    "occupation_1900": "Farmer",
@@ -77,7 +78,8 @@ window.PEOPLE={
     "P21",
     "P22"
    ],
-   "residence_1870": "1 Feb 1870 Bjernede: Hans Peter Pedersen, 6, unmarried, with widowed mother Anne Rasmusen 27, own Huus (S44)"
+   "residence_1870": "1 Feb 1870 Bjernede: Hans Peter Pedersen, 6, unmarried, with widowed mother Anne Rasmusen 27, own Huus (S44)",
+   "childhoodResidenceNote": "INFERRED / CANDIDATE: after mother's 1870 remarriage, likely grew up on stepfather Hans Rasmussen's matr. 5a Bjernedehuse (S50; stepson in his household 1880, S33). Not on the deed itself. 5a was NOT his father Hans Pedersen's (P18)."
   },
   {
    "id": "P7",
@@ -531,11 +533,13 @@ window.PEOPLE={
     "S44",
     "S45",
     "S47",
-    "S48"
+    "S48",
+    "S50"
    ],
    "status": "RECORD-SOURCED (Danish church book; not family-confirmed)",
    "notes": "Vacc. 24 Aug 1844. In 1862 serving with Hans Rasmussen Bode(?) in Overl\u00f8se(?). Age '28' on son's 1864 baptism conflicts with 1843 birth \u2014 treated as misread (see conflicts.md). Death 1883 found in 1879 FVD vol (S45); match by inference, see death.matchNote. Detail: shots/bjernede-family-2026-11-03/; browser-pass-bjernede-family.md",
-   "residence_1870": "1 Feb 1870 Bjernede: widow 'Anne Rasmusen' 27, own Huus, with son Hans Peter Pedersen 6 (S44)"
+   "residence_1870": "1 Feb 1870 Bjernede: widow 'Anne Rasmusen' 27, own Huus, with son Hans Peter Pedersen 6 (S44)",
+   "residenceNote": "INFERRED: after 1870 remarriage to Hans Rasmussen (S38) lived on his matr. 5a Bjernedehuse (S50 names deceased wife 'Ane Marie Rasmussen'; identity = inference as S45)."
   },
   {
    "id": "P20",
@@ -574,10 +578,12 @@ window.PEOPLE={
     "S33",
     "S46",
     "S47",
-    "S48"
+    "S48",
+    "S50"
    ],
    "status": "RECORD-SOURCED / birth year leans 1801 (death age 83); day of death/burial & birthplace LOW confidence",
-   "notes": "Stepfather of Hans Peter (1880 census S33). Previous two wives unknown. Detail: shots/bjernede-family-2026-11-03/; browser-pass-bjernede-family.md; died ~3 days after wife Ane (S45, S46)."
+   "notes": "Stepfather of Hans Peter (1880 census S33). Previous two wives unknown. Detail: shots/bjernede-family-2026-11-03/; browser-pass-bjernede-family.md; died ~3 days after wife Ane (S45, S46).",
+   "property": "Matr. 5a Bjernedehuse, Bjernede Sogn: VERIFIED owner at death \u2014 1884 sk\u00f8de (S50) says property 'hidtil har tilh\u00f8rt' Hans Rasmussen; estate sold it 13 Nov 1884 to J.P. Mathiesen, Gyrstinge, for 13,000 Kr. Owner since 1855 (Realregister: 5a to Hans Rasmussen, Sor\u00f8 Akademi sale) = STRONG CANDIDATE, same man not proven (vol. T fol 97 not digitized)."
   },
   {
    "id": "P21",
@@ -595,12 +601,14 @@ window.PEOPLE={
     "S39",
     "S33",
     "S47",
-    "S49"
+    "S49",
+    "S50"
    ],
    "status": "RECORD-SOURCED (half-brother of Hans Peter)",
    "notes": "Mother's age given 27. = 'Rasmus Peder' 8 in 1880 census. Orphaned 1883; foster home Fuldby. Possible emigrant 1889 \u2192 Sleepy Eye (candidate only). Detail: browser-pass-ane-second-family.md",
    "confirmation": "spring 1885 (S\u00f8ndag efter Paaske), Bjernede (S47): b. 1 Mar 1871 Bjernedehuse, bapt. 4 Apr 1871; parents Hans Rasmussen & Ane Rasmussen 'begge d\u00f8de'; foster-father Gaardejer Rasmus Rasmussen of Fuldby/Tuldby (place hand-read)",
-   "emigrationCandidate": "CANDIDATE / UNVERIFIED: Copenhagen Police emigrant index 18 Jun 1889, contract 4232 Y (indirect), 'Rasmussen, Rasmus Peder', Landmand, last res. Fuldby, Sor\u00f8, age 18, to Sleepy Eye, USA (S49). Probable (age + Fuldby match foster home) but index gives no parents/birthplace; destination link NOT proven."
+   "emigrationCandidate": "CANDIDATE / UNVERIFIED: Copenhagen Police emigrant index 18 Jun 1889, contract 4232 Y (indirect), 'Rasmussen, Rasmus Peder', Landmand, last res. Fuldby, Sor\u00f8, age 18, to Sleepy Eye, USA (S49). Probable (age + Fuldby match foster home) but index gives no parents/birthplace; destination link NOT proven.",
+   "inheritance": "Heir (umyndig) to estate of Bolsmand Hans Rasmussen: 1884 mortgage bond of 3,600 Kr on matr. 5a Bjernedehuse owed to 'umyndige Rasmus Peter og Ane Marie Rasmussen' (S50). VERIFIED."
   },
   {
    "id": "P22",
@@ -617,11 +625,13 @@ window.PEOPLE={
    "sources": [
     "S40",
     "S33",
-    "S48"
+    "S48",
+    "S50"
    ],
    "status": "RECORD-SOURCED (half-sister of Hans Peter)",
    "notes": "Mother's age 31. Sponsor 'Hans Pedersen' probably half-brother Hans Peter (unverified). = Ane Marie 5 in 1880 census. Orphaned 1883; fate after 1888 UNKNOWN (emigrant 'Ane Marie' 23, Boslunde, 1895 NOT linked). Detail: browser-pass-ane-second-family.md",
-   "confirmation": "autumn 1888 (S\u00f8ndag efter Michaelis), Bjernede (S48): b. 24 Oct 1874 Bjernedehuse, bapt. 11 Jan 1875; parents Hans Rasmussen & Ane Rasmussen 'begge d\u00f8de'; foster-father Bolmand Anders Larsen, Bjernedehuse"
+   "confirmation": "autumn 1888 (S\u00f8ndag efter Michaelis), Bjernede (S48): b. 24 Oct 1874 Bjernedehuse, bapt. 11 Jan 1875; parents Hans Rasmussen & Ane Rasmussen 'begge d\u00f8de'; foster-father Bolmand Anders Larsen, Bjernedehuse",
+   "inheritance": "Heir (umyndig) to estate of Bolsmand Hans Rasmussen: 1884 mortgage bond of 3,600 Kr on matr. 5a Bjernedehuse owed to 'umyndige Rasmus Peter og Ane Marie Rasmussen' (S50). VERIFIED."
   },
   {
    "id": "P23",
@@ -931,26 +941,22 @@ window.SOURCES={
  "S31": {
   "id": "S31",
   "flag": null,
-  "text": "Bjernede Hovedministerialbog 1862\u2013, births/baptisms, image 7: Hans Peder Pedersen b. 28 Feb 1864, bapt. 5 Jun 1864, parents (tentative) Hans Pedersen & Ane Rasmusdatter. Arkivalieronline bsid=203238 image 7: https://arkivalieronline.rigsarkivet.dk/en/billedviser?bsid=203238#203238,38546364",
+  "text": "Bjernede Hovedministerialbog 1862\u2013, births/baptisms, image 7: Hans Peder Pedersen b. 28 Feb 1864, bapt. 5 Jun 1864, parents (tentative) Hans Pedersen & Ane Rasmusdatter. Arkivalieronline: https://arkivalieronline.rigsarkivet.dk/en/billedviser?epid=17223538",
   "urls": [
-   "https://arkivalieronline.rigsarkivet.dk/en/billedviser?bsid=203238#203238,38546364"
+   "https://arkivalieronline.rigsarkivet.dk/en/billedviser?epid=17223538"
   ]
  },
  "S32": {
   "id": "S32",
   "flag": null,
-  "text": "Bjernede church book vol. 1858 K\u20131891 K, confirmations, image 24: Hans Peter Petersen confirmed Palmes\u00f8ndag 14 Apr 1878; parents Boelsmand Hans Petersen & Ane Rasmusdatter; b. 28 Feb 1864. Arkivalieronline bsid=203240 image 24: https://arkivalieronline.rigsarkivet.dk/en/billedviser?bsid=203240#203240,38546637",
-  "urls": [
-   "https://arkivalieronline.rigsarkivet.dk/en/billedviser?bsid=203240#203240,38546637"
-  ]
+  "text": "Bjernede church book vol. 1858 K\u20131891 K, confirmations, image 24: Hans Peter Petersen confirmed Palmes\u00f8ndag 14 Apr 1878; parents Boelsmand Hans Petersen & Ane Rasmusdatter; b. 28 Feb 1864. Arkivalieronline (Rigsarkivet).",
+  "urls": []
  },
  "S33": {
   "id": "S33",
   "flag": null,
-  "text": "1880 Danish census, Bjernede sogn, Sor\u00f8 amt, 1 Feb 1880, image 5/71: Hans Peder Pedersen, 15, stepson in household of Hans Rasmussen & Ane Rasmussen (low-confidence reads). Arkivalieronline bsid=55655 image 5: https://arkivalieronline.rigsarkivet.dk/en/billedviser?bsid=55655#55655,11993699",
-  "urls": [
-   "https://arkivalieronline.rigsarkivet.dk/en/billedviser?bsid=55655#55655,11993699"
-  ]
+  "text": "1880 Danish census, Bjernede sogn, Sor\u00f8 amt, 1 Feb 1880, image 5/71: Hans Peder Pedersen, 15, stepson in household of Hans Rasmussen & Ane Rasmussen (low-confidence reads). Arkivalieronline (Rigsarkivet).",
+  "urls": []
  },
  "S34": {
   "id": "S34",
@@ -963,25 +969,25 @@ window.SOURCES={
  "S35": {
   "id": "S35",
   "flag": null,
-  "text": "Bjernede Sogn, Hovedministerialbog 1862 FVD\u20131878 (156 images), Rigsarkivet Arkivalieronline, epid=17223538, bsid=203238: https://arkivalieronline.rigsarkivet.dk/en/billedviser?bsid=203238",
+  "text": "Bjernede Sogn, Hovedministerialbog 1862 FVD\u20131878 (156 images), Rigsarkivet Arkivalieronline, epid=17223538: https://arkivalieronline.rigsarkivet.dk/en/billedviser?epid=17223538",
   "urls": [
-   "https://arkivalieronline.rigsarkivet.dk/en/billedviser?bsid=203238"
+   "https://arkivalieronline.rigsarkivet.dk/en/billedviser?epid=17223538"
   ]
  },
  "S36": {
   "id": "S36",
   "flag": null,
-  "text": "S35 img 99, Copulerede 1862 no. 5: marriage 14 Oct 1862 Bjernede, Ungkarl/Hjulmand Hans Pedersen (b. 25 Feb 1833 Walsmagle?) & Pige Ane Rasmusdatter (b. 17 Jun 1843 Bjernede Lodsgaard?): https://arkivalieronline.rigsarkivet.dk/en/billedviser?bsid=203238#203238,38546457 (shots 06, 07)",
+  "text": "S35 img 99, Copulerede 1862 no. 5: marriage 14 Oct 1862 Bjernede, Ungkarl/Hjulmand Hans Pedersen (b. 25 Feb 1833 Walsmagle?) & Pige Ane Rasmusdatter (b. 17 Jun 1843 Bjernede Lodsgaard?): https://arkivalieronline.rigsarkivet.dk/en/billedviser?epid=17223538 (shots 06, 07)",
   "urls": [
-   "https://arkivalieronline.rigsarkivet.dk/en/billedviser?bsid=203238#203238,38546457"
+   "https://arkivalieronline.rigsarkivet.dk/en/billedviser?epid=17223538"
   ]
  },
  "S37": {
   "id": "S37",
   "flag": null,
-  "text": "S35 img 125, D\u00f8de Mandk\u00f8n 1867 no. 15: Hans Pedersen, hjulmand Bjernedegaardshuse, d. 11 Sep 1867, bur. 17 Sep 1867, age 34, b. 25 Feb 1833, \"S\u00f8n af Ane Marie Hans Dat.(?)\": https://arkivalieronline.rigsarkivet.dk/en/billedviser?bsid=203238#203238,38546483 (shots 10, 10b, 11, 11b)",
+  "text": "S35 img 125, D\u00f8de Mandk\u00f8n 1867 no. 15: Hans Pedersen, hjulmand Bjernedegaardshuse, d. 11 Sep 1867, bur. 17 Sep 1867, age 34, b. 25 Feb 1833, \"S\u00f8n af Ane Marie Hans Dat.(?)\": https://arkivalieronline.rigsarkivet.dk/en/billedviser?epid=17223538 (shots 10, 10b, 11, 11b)",
   "urls": [
-   "https://arkivalieronline.rigsarkivet.dk/en/billedviser?bsid=203238#203238,38546483"
+   "https://arkivalieronline.rigsarkivet.dk/en/billedviser?epid=17223538"
   ]
  },
  "S38": {
@@ -1035,9 +1041,9 @@ window.SOURCES={
  "S44": {
   "id": "S44",
   "flag": null,
-  "text": "1870 Danish census, Bjernede, Sor\u00f8 Alsted herred, 1 Feb 1870, img 23 (page 66), \"1 Huus\": Anne Rasmusen K 27 widow; Hans Peter Pedersen M 6 unmarried: https://arkivalieronline.rigsarkivet.dk/da/billedviser?bsid=53367#53367,11831254 (shots 18, 19). NB img 18 Hans Peter Pedersen ~19, servant = namesake, NOT ours.",
+  "text": "1870 Danish census, Bjernede, Sor\u00f8 Alsted herred, 1 Feb 1870, img 23 (page 66), \"1 Huus\": Anne Rasmusen K 27 widow; Hans Peter Pedersen M 6 unmarried: https://arkivalieronline.rigsarkivet.dk/da/billedviser?bsid=53367 (shots 18, 19). NB img 18 Hans Peter Pedersen ~19, servant = namesake, NOT ours.",
   "urls": [
-   "https://arkivalieronline.rigsarkivet.dk/da/billedviser?bsid=53367#53367,11831254"
+   "https://arkivalieronline.rigsarkivet.dk/da/billedviser?bsid=53367"
   ]
  },
  "S45": {
@@ -1078,6 +1084,14 @@ window.SOURCES={
   "text": "Copenhagen Police emigrant index, 18 Jun 1889, contract 4232 Y (indirect): Rasmussen, Rasmus Peder, Landmand, Fuldby Sor\u00f8, 18, \u2192 Sleepy Eye USA. No parents in index; link to P21 probable only: https://www.aalborgstadsarkiv.dk/UA.asp?UA=UAProtokol (shot 13)",
   "urls": [
    "https://www.aalborgstadsarkiv.dk/UA.asp?UA=UAProtokol"
+  ]
+ },
+ "S50": {
+  "id": "S50",
+  "flag": null,
+  "text": "Sor\u00f8 By og Birk sk\u00f8de- og panteprotokol V.V, fol ~328\u2013331, recorded 13 Nov 1884: sk\u00f8de \u2014 estate of afd\u00f8de Bolsmand Hans Rasmussen & earlier-deceased Hustru Ane Marie Rasmussen sells Matr. No 5 A af Bjernedehuse, Bjernede Sogn (property \"hidtil har tilh\u00f8rt\" Hans Rasmussen) to m\u00f8ller J.P. Mathiesen of Gyrstinge for 13,000 Kr; lease to Indsidder Hans Andersen from 12 Dec 1867 to be honored. Mortgage bond (fol 329/331): 3,600 Kr owed to umyndige Rasmus Peter og Ane Marie Rasmussen, children of afd. Bolsmand Hans Rasmussen og Hustru i Bjernedehusene (= P21, P22). Wife \"Ane Marie Rasmussen\" = Ane Rasmusdatter (P19) by INFERENCE (as S45). 1855 buyer of 5a (Realregister) = strong candidate same man; vol. T fol 97 not digitized. Matr. 5a as Hans Pedersen (P18) property REJECTED: https://arkivalieronline.rigsarkivet.dk/da/billedviser?bsid=147378 (shots skoede-5a-2026-11-03)",
+  "urls": [
+   "https://arkivalieronline.rigsarkivet.dk/da/billedviser?bsid=147378"
   ]
  }
 };
