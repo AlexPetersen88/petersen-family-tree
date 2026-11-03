@@ -618,3 +618,9 @@ Donald and Janice's marriage, Janice's death place, and her cemetery burial. No 
 Foster parents' marriage only. Kinship to Ane Marie Hansdatter (P25) or Peder Johansen (P34) stays unverified. No Særløse, Tølstrup, or Lejre map pin. Dig 40–43 are not in this fold.
 
 - S310 (HIGH — event; P26/P27 identity HIGH documentary): Kirke Hvalsø and Særløse church book 1814–1829, AO bsid=152686 img 114, marriages 1818 row 5. 30 Oct 1818 at Særløse Kirke: bachelor Jens Nielsen, 26, *tjenende* (serving) near Lejre, married Kirsten Johansdatter, 22, *tjenende hos gårdmand* (serving in a farmer's household) at Tølstrup. No parents on the entry. This clears P26 × P27 as Hans's foster parents' marriage. It does not make them blood kin of P25 or P34. https://arkivalieronline.rigsarkivet.dk/da/billedviser?bsid=152686&page=114
+
+## Dig 47 / S312 and S322 (2026-11-03) — Genealogist CLEAR, thin
+Ane Marie's foster raising, and a candidate baptism for Kirsten. No farm pin. No new Særløse or Tølstrup pin. Dig 40–43 are not in this fold.
+
+- S312 (HIGH for Pleiefd.; Gmd. MED): Haraldsted 1820 confirmations, girls row 11. Ane Marie Hansdatter of Walsømagle. Foster parents (*Pleiefd.*): Erik Rasmussen and Maren Hansdatter of Walsømagle. Birth 23 March 1805 stays CANDIDATE from this confirmation only. P25's birth parents stay unknown. Her baptism (Dig 25) is still missing. Blood kinship to Erik or Maren is unverified. This Maren is not the Maren Hansdatter of the 1797 betrothal (S222). Place is the existing Valsømagle village pin only. No farm or house pin.
+- S322 (CANDIDATE, not locked): Særløse baptism 10 Jan 1796. A girl Kirsten, father Johan Mattisen (also Mattiesen) of Tolstrup, mother unnamed. Candidate for P27 Kirsten Johansdatter. No kinship to P25 or P34. Særløse and Tolstrup stay unpinned.

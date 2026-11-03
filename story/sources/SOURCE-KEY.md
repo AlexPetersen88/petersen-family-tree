@@ -117,3 +117,9 @@
 
 ## Dig J / S310 — Genealogist-CLEARED (thin) 2026-11-03
 - S310 (HIGH — event; P26/P27 identity HIGH documentary): Kirke Hvalsø & Særløse kirkebog (HM) 1814–1829, AO bsid=152686 img 114, Copulerede 1818 row 5 — 30 Oct 1818 at Særløse Kirke: Ungkarl Jens Nielsen, 26, *tjenende* near Lejre × Kirsten Johans Datter, 22, *tjenende hos gårdmand* at Tølstrup. Parents none on entry. Kinship of couple to P25/P34 UNVERIFIED — not for bio-parent story. https://arkivalieronline.rigsarkivet.dk/da/billedviser?bsid=152686&page=114
+
+## Dig 47 / S312 — Genealogist CLEAR thin (Storyteller) 2026-11-03
+- S312 (HIGH for Pleiefd.; Gmd. MED): Haraldsted 1820 Confirmerede, girls row 11 — Ane Marie Hansd., Walsømagle; Pleiefd. Gmd. Erik Rasmussen / Maren Hansd., Walsømagle; b. 23 Marts 1805 (CANDIDATE, from confirmation only). Use: P25 raised by foster parents Erik Rasmussen × Maren Hansdatter (Dig 45 fold context). P25 birth parents still []; Dig 25 dåb MISSING; blood kinship to Erik/Maren UNVERIFIED. NOT the S222 1797 couple. Place: Valsømagle village pin 55.4933, 11.8213 (HIGH village); no farm pin.
+
+## S322 — P27 baptism CANDIDATE (Genealogist CLEAR thin) 2026-11-03
+- S322 (CANDIDATE, not locked): Særløse baptism 10 Jan 1796 — Kirsten, father Johan Mattisen/Mattiesen i Tolstrup; mother unnamed. Candidate for P27 Kirsten Johansdatter. No kinship to P25/P34. Særløse/Tolstrup place pins soft-parked.
