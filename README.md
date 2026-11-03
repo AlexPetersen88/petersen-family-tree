@@ -4,7 +4,7 @@ Open `index.html` directly in a browser (double-click, or `file:///workspace/gen
 Or serve it: `cd /workspace/genealogy/site && python3 -m http.server 8000` → http://localhost:8000
 
 - **Tree** (`index.html`): drag to pan, scroll or +/− to zoom; click a person for dates, places, family, status, and source links.
-- **Map** (`map.html`): cleared visit pins in Denmark and Minnesota. Each region has its own view. Tap a pin for the place, the years, and what the records say happened there.
+- **Map** (`map.html`): cleared visit pins in Denmark and Minnesota, plus Wolfeboro, New Hampshire as a town-only label. Each of Denmark and Minnesota has its own view. Tap a pin for the place, the years, and what the records say happened there.
 - **Story** (`story/index.html`): four chapters, an abridged easy-read, a change log, and the chapter source key. The wording lives in `story/chapters/` and `story/sources/`. After a Storyteller sync, run `python3 story/render_html.py`.
 - **Downloads** (`downloads/`): `Petersen-Family-Story.pdf`, `Petersen-Family-Story-Kids.pdf`, and `Denmark-Trip-Itinerary.pdf`, linked from the Story pages.
 - **Sources** (`sources.html`): every source from `sources.md`, with URLs and who cites it.

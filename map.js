@@ -6,8 +6,11 @@
     {id:'haraldsted-praestegaard',region:'dk',lat:55.4910,lng:11.7692,zoom:17,cluster:'haraldsted'},
     {id:'valsomagle',region:'dk',lat:55.4933,lng:11.8213,zoom:15},
     {id:'sct-hansgade',region:'dk',lat:55.4445,lng:11.7908,zoom:17},
-    {id:'bjernedehuse-overlook',region:'dk',lat:55.4597,lng:11.6419,zoom:15,soft:true},
-    {id:'dannebod',region:'mn',lat:44.31115,lng:-94.89040,zoom:15}
+    {id:'bjernedehuse-overlook',region:'dk',lat:55.4597,lng:11.6419,zoom:15,soft:true,labelNote:'Hamlet overlook, not the house.'},
+    {id:'dannebod',region:'mn',lat:44.31115,lng:-94.89040,zoom:15},
+    {id:'bethany-lutheran',region:'mn',lat:44.4452,lng:-94.9873,zoom:16},
+    {id:'evan',region:'mn',lat:44.3540,lng:-94.8410,zoom:14},
+    {id:'wolfeboro',region:'mn',lat:43.5848,lng:-71.2122,zoom:13,soft:true,frame:false,labelNote:'Town only. Medium confidence. Not a hospital or a residence.'}
   ];
   const byId={};
   PINS.forEach(pin=>{byId[pin.id]=pin});
@@ -40,7 +43,7 @@
     });
   }
   function pinLabel(pin){
-    return placeName(pin.id)+(pin.soft?' . Hamlet overlook, not the house.':'');
+    return placeName(pin.id)+(pin.labelNote?' . '+pin.labelNote:'');
   }
   function labelMarkers(){
     PINS.forEach(pin=>{
@@ -69,7 +72,7 @@
     else map.flyTo(latlng,zoom,{duration:.55});
   }
   function fitRegion(next,animate){
-    const pts=PINS.filter(pin=>pin.region===next);
+    const pts=PINS.filter(pin=>pin.region===next&&pin.frame!==false);
     if(!map||!pts.length)return;
     if(pts.length===1){
       moveMap([pts[0].lat,pts[0].lng],pts[0].zoom);
@@ -122,7 +125,14 @@
       const jump=el.querySelector('.place-jump');
       if(jump)jump.setAttribute('aria-pressed',on?'true':'false');
     });
-    setRegion(pin.region,{fit:false,animate:false});
+    if(pin.frame===false){
+      document.body.dataset.region='';
+      const dkBtn=document.getElementById('regiondk');
+      const mnBtn=document.getElementById('regionmn');
+      if(dkBtn)dkBtn.setAttribute('aria-pressed','false');
+      if(mnBtn)mnBtn.setAttribute('aria-pressed','false');
+      if(regionStatus)regionStatus.textContent='Showing '+placeName(pin.id)+'. This town is outside the Minnesota close-up. Minnesota brings those pins back.';
+    }else setRegion(pin.region,{fit:false,animate:false});
     paintMarkers();
     if(opts.pan!==false)moveMap([pin.lat,pin.lng],pin.zoom);
     if(opts.history!==false&&location.hash!=='#'+id)history.pushState({pin:id,region:pin.region},'','#'+id);
