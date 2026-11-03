@@ -566,8 +566,31 @@ function peekPx(){
   return (bar?bar.offsetHeight:68)+(safe?safe.offsetHeight:0);
 }
 function syncPeek(){const h=peekPx();document.documentElement.style.setProperty('--peek',h+'px');return h}
+function paneIsHidden(){return document.documentElement.classList.contains('tree-pane-hidden')}
+function setPaneHidden(hidden,opts={}){
+  document.documentElement.classList.toggle('tree-pane-hidden', !!hidden);
+  const btn=document.getElementById('panetoggle');
+  if(btn)btn.setAttribute('aria-expanded', hidden?'false':'true');
+  if(hidden){
+    if(btn&&sheet.contains(document.activeElement))btn.focus();
+    sheet.setAttribute('inert','');
+    sheet.setAttribute('aria-hidden','true');
+  }else{
+    sheet.removeAttribute('inert');
+    sheet.removeAttribute('aria-hidden');
+  }
+  if(opts.remember){
+    try{localStorage.setItem('petersen-tree-pane', hidden?'hidden':'shown')}catch(e){}
+  }
+}
+function togglePane(){
+  const hide=!paneIsHidden();
+  setPaneHidden(hide,{remember:true});
+  setSheet(!hide,{skipView:true});
+  viewPerson(selected||ROOT,{force:true});
+}
 function coverPx(){
-  if(!MOBILE())return 0;
+  if(!MOBILE()||paneIsHidden())return 0;
   if(!sheet.classList.contains('open'))return peekPx();
   return sheet.offsetHeight;
 }
@@ -783,7 +806,7 @@ bindCtrl('scopefocus',()=>setScope(false));
 bindCtrl('scopefull',()=>setScope(true));
 
 function syncInert(){
-  const hide=MOBILE()&&!sheet.classList.contains('open');
+  const hide=paneIsHidden()||(MOBILE()&&!sheet.classList.contains('open'));
   const foot=document.getElementById('sheetfoot');
   if(hide){
     panel.setAttribute('inert','');
@@ -844,6 +867,13 @@ sheetToggle.addEventListener('click',()=>{
   setSheet(!sheet.classList.contains('open'));
 });
 document.getElementById('sheetback')?.addEventListener('click',()=>setSheet(false));
+function bindPaneToggle(id){
+  const button=document.getElementById(id);
+  if(!button)return;
+  button.addEventListener('click',()=>togglePane());
+}
+bindPaneToggle('panetoggle');
+bindPaneToggle('panehide');
 
 const link=x=>P[x]?`<a class="p" href="#${encodeURIComponent(x)}" data-id="${x}">${esc(P[x].name)}</a>`:esc(x)+' <span class="muted">(not in tree)</span>';
 function srcHtml(s,personId){
@@ -916,7 +946,8 @@ function show(id,opts={}){
   sheetLabel.textContent=shortName(p.name);
   // #id is the person deep link Phase 2 person pages can take over.
   if(opts.history!==false&&location.hash!=='#'+id)history.replaceState(null,'','#'+id);
-  const openSheet=opts.sheet!==undefined?!!opts.sheet:true;
+  if(opts.pane===false)setPaneHidden(true);
+  const openSheet=paneIsHidden()?false:(opts.sheet!==undefined?!!opts.sheet:true);
   setSheet(openSheet,{skipView:true,focusSheet:opts.focus==='sheet'||opts.focus===true});
   viewPerson(id,{force:!!opts.force||(!fullTree&&changed)});
   if(opts.focus==='node')nodes[id]?.focus({preventScroll:true});
@@ -953,7 +984,10 @@ function boot(){
   const raw=decodeURIComponent((location.hash||'').replace(/^#/,''));
   const known=!!(raw&&P[raw]&&nodes[raw]);
   const id=known?raw:(P[ROOT]&&nodes[ROOT]?ROOT:(PEOPLE.people.find(p=>nodes[p.id])||{}).id);
-  if(id)show(id,{force:true,sheet:known||!MOBILE(),focus:false,history:known});
+  let panePref=null;
+  try{panePref=localStorage.getItem('petersen-tree-pane')}catch(e){}
+  const keepHidden=panePref==='hidden';
+  if(id)show(id,{force:true,sheet:keepHidden?false:(known||!MOBILE()),pane:keepHidden?false:undefined,rememberPane:false,focus:false,history:known});
   else viewPerson(ROOT,{force:true});
   lastW=svg.getBoundingClientRect().width;
 }

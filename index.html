@@ -22,6 +22,9 @@
 <meta name="twitter:image" content="https://alexpetersen88.github.io/petersen-family-tree/og.png">
 <link rel="canonical" href="https://alexpetersen88.github.io/petersen-family-tree/">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230C3B2E'/%3E%3C/svg%3E">
+<script>
+try{if(localStorage.getItem("petersen-tree-pane")==="hidden")document.documentElement.classList.add("tree-pane-hidden")}catch(e){}
+</script>
 <link rel="stylesheet" href="style.css">
 </head>
 <body class="tree">
@@ -52,12 +55,14 @@
 <button id="zr" type="button" aria-label="Recenter on the selected person"><svg class="ctrl-ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="3.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 3v4M12 17v4M3 12h4M17 12h4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span class="ctrl-label">Recenter</span></button>
 <button id="zi" type="button" aria-label="Zoom in"><svg class="ctrl-ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 6v12M6 12h12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
 </div>
+<button id="panetoggle" class="pane-toggle" type="button" aria-expanded="true" aria-controls="sheet"><span class="when-open">Hide details</span><span class="when-closed">Show details</span></button>
 </div>
 <main class="stage">
 <div id="treewrap">
 <svg id="svg" aria-label="Petersen family tree"><g id="vp"></g></svg>
 </div>
 <aside id="sheet" aria-labelledby="sheetlabel">
+<button id="panehide" class="pane-hide" type="button">Hide details</button>
 <div class="sheetbar" id="sheetbar">
 <button id="sheetclose" class="sheetclose" type="button" aria-expanded="false" aria-controls="panel" aria-label="Show details">
 <span class="handle" aria-hidden="true"></span>
