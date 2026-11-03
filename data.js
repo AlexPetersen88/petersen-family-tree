@@ -50,18 +50,31 @@ window.PEOPLE={
     "S31",
     "S32",
     "S33",
-    "S34"
+    "S34",
+    "S35",
+    "S36",
+    "S37"
    ],
    "status": "VERIFIED: 1900 US census (imm. 1884, Na, b. Feb 1864 Denmark) + FAG parent of Elmer; origin Bjernede FAMILY-CONFIRMED 2026-11-03",
    "occupation_1900": "Farmer",
    "residence_1900": "Brookville Twp, Redwood Co MN, ED 232 sheet 6, dwelling/family 109",
-   "notes": " Census surname spelled Peterson. Children on 1900: Nels A., Hans O., Annie H., Louis C., Mary S. \u2014 Hans O. May 1893 may = Rudolph Hans (FAG); unresolved. Denmark parish still NOT found (2026-11-03). Bjernede candidate parents tentatively Hans Pedersen & Ane Rasmusdatter (Niels Peder Pedersen / Ane Kirstine reading withdrawn as misread); see denmarkOriginCandidate and browser-pass-bjernede-corroboration.md.",
+   "notes": " Census surname spelled Peterson. Children on 1900: Nels A., Hans O., Annie H., Louis C., Mary S. \u2014 Hans O. May 1893 may = Rudolph Hans (FAG); unresolved. Parents Hans Pedersen (P18) & Ane Rasmusdatter (P19), RECORD-SOURCED (Niels Peder Pedersen / Ane Kirstine reading withdrawn as misread). Father died when Hans Peter was ~3\u00bd (Sep 1867). Baptism remark '2det Barn' implies an earlier first child, apparently dead \u2014 NOT FOUND. Probable full brother Rasmus Pedersen (P23, d. Feb 1867); half-siblings Rasmus Peter (P21) & Ane Marie (P22) Rasmussen; stepfather Hans Rasmussen (P20). See browser-pass-bjernede-family.md.",
    "familyConfirmed": "FAMILY-CONFIRMED via Michael Don Petersen (Alex's father), 2026-11-03: Elmer Hamilton Petersen's parents were Hans Peter Petersen and Maren Sophia (Jensen; 'Mary' on 1900 census). Public-record citations (FAG, MNHS, 1900 census) retained. | ORIGIN FAMILY-CONFIRMED by Alex Petersen, 2026-11-03: birth year 1864 + Bjernede (small town) match the Danish records \u2014 'That's our Hans' (S30). Cites retained: baptism S31, confirmation S32, 1880 census S33, Copenhagen Police emigration 16 Apr 1884 S34.",
    "children_count": "8 children: 1910 census Maren 'mother of 7, 7 living' (S28) + Olga b. ~1911/12 (1920 census S29, FAG)",
    "residence_1910": "Brookville Twp, Redwood Co MN, ED 109 sheet 4A, dwelling/family 61 (S28); imm. 1884, Na; farmer, owns farm",
    "residence_1920": "Brookville Twp, Redwood Co MN, ED 182, dwelling 54 (S29); age 55, b. Denmark, Danish mother tongue, parents b. Denmark; imm./naturalization cols partly legible (naturalized yr reads ~1897, unverified)",
    "denmarkOrigin": "RESOLVED 2026-11-03: Bjernede, Sor\u00f8 amt; b. 28 Feb 1864, bapt. 5 Jun 1864 (S31), confirmed 14 Apr 1878 (S32), 1880 census Bjernede stepson of Hans Rasmussen (S33, low-confidence), emigrated via Copenhagen 16 Apr 1884 age 20 to Springfield USA, contract 1015 Y (S34). Tinglev S21 WITHDRAWN.",
-   "danishParents": "RECORD-SOURCED only (not family-named): Hans Pedersen/Petersen (Boelsmand) & Ane Rasmusdatter \u2014 per baptism S31 + confirmation S32 (tentative reads). Alex confirmed origin place/year only."
+   "danishParents": "RECORD-SOURCED (not family-named): father Hans Pedersen (P18), hjulmand, b. 25 Feb 1833, d. 11 Sep 1867 bur. 17 Sep 1867 Bjernede age 34 (S36, S37); mother Ane Rasmusdatter (P19), b. 17 Jun 1843 Bjernede Lodsgaard(?), m. 14 Oct 1862 Bjernede (S36); she m2 Hans Rasmussen (P20) spring 1870 (S38). Alex confirmed origin place/year only.",
+   "parents": [
+    "P18",
+    "P19"
+   ],
+   "parentsStatus": "RECORD-SOURCED 2026-11-03 (baptism S31, confirmation S32, 1880 census S33, parents' marriage S36, father's death S37). NOT family-named \u2014 Alex confirmed only Bjernede place + 1864 year (S30).",
+   "siblings": [
+    "P23",
+    "P21",
+    "P22"
+   ]
   },
   {
    "id": "P7",
@@ -431,6 +444,172 @@ window.PEOPLE={
     "S27"
    ],
    "status": "VERIFIED 1900 census only so far"
+  },
+  {
+   "id": "P18",
+   "name": "Hans Pedersen",
+   "birth": {
+    "date": "1833-02-25",
+    "place": "Vals\u00f8magle (read 'Walsmagle'/'Vals\u00f8magle') \u2014 place LOW confidence"
+   },
+   "death": {
+    "date": "1867-09-11",
+    "place": "Bjernedegaardshuse, Bjernede, Sor\u00f8 amt"
+   },
+   "burial": "1867-09-17, Bjernede (age 34)",
+   "occupation": "Hjulmand (wheelwright), Bjernedegaardshuse; 1862 unmarried servant at Bjernedegaard",
+   "parents": [],
+   "parentsNote": "Mother possibly 'Ane Marie Hansdatter' (death entry S37; LOW confidence, UNVERIFIED). Father UNKNOWN (not named).",
+   "spouses": [
+    {
+     "id": "P19",
+     "marriage": "1862-10-14, Bjernede church"
+    }
+   ],
+   "children": [
+    "P6",
+    "P23"
+   ],
+   "sources": [
+    "S35",
+    "S36",
+    "S37",
+    "S31"
+   ],
+   "status": "RECORD-SOURCED (Danish church book; not family-confirmed)",
+   "notes": "Same man in marriage (S36) and death (S37): both give b. 25 Feb 1833. Vacc. 29 Jun 1839; confirmed after Jul 1847. Cause of death read 'Brystsyge/Lungebet\u00e6ndelse(?)' (LOW). Died when son Hans Peter was ~3\u00bd. Detail: shots/bjernede-family-2026-11-03/; browser-pass-bjernede-family.md"
+  },
+  {
+   "id": "P19",
+   "name": "Ane Rasmusdatter",
+   "birth": {
+    "date": "1843-06-17",
+    "place": "Bjernede Lodsgaard (place LOW confidence; year medium)"
+   },
+   "death": {
+    "date": "unknown (alive 1 Feb 1880, Bjernede)"
+   },
+   "parents": [],
+   "parentsNote": "Parents NOT found (her 1843 baptism not yet searched). Marriage witness Peder Rasmussen, Bjernede Lodsgaard = possible relative, UNVERIFIED.",
+   "spouses": [
+    {
+     "id": "P18",
+     "marriage": "1862-10-14, Bjernede church (m1)"
+    },
+    {
+     "id": "P20",
+     "marriage": "spring 1870, Bjernede (m2; day/month illegible, 'April'?)"
+    }
+   ],
+   "children": [
+    "P6",
+    "P23",
+    "P21",
+    "P22"
+   ],
+   "sources": [
+    "S36",
+    "S38",
+    "S39",
+    "S40",
+    "S31",
+    "S33"
+   ],
+   "status": "RECORD-SOURCED (Danish church book; not family-confirmed)",
+   "notes": "Vacc. 24 Aug 1844. In 1862 serving with Hans Rasmussen Bode(?) in Overl\u00f8se(?). Age '28' on son's 1864 baptism conflicts with 1843 birth \u2014 treated as misread (see conflicts.md). Death not found (volume ends 1878). Detail: shots/bjernede-family-2026-11-03/; browser-pass-bjernede-family.md"
+  },
+  {
+   "id": "P20",
+   "name": "Hans Rasmussen",
+   "birth": {
+    "date": "19 Apr 1801 or 1831 (year unclear; 1880 census age ~48 favours 1831)",
+    "place": "Bjernedehuse(?)"
+   },
+   "death": {
+    "date": "unknown (alive 1880)"
+   },
+   "occupation": "Husmand, Bjernedegaardshuse",
+   "parents": [],
+   "parentsNote": "UNKNOWN. Do NOT link to the 'Hans Rasmussen b. ~1833, son of Niels Rasmussen & Maren Hansdatter' candidate \u2014 unverified, logged not-to-use.",
+   "spouses": [
+    {
+     "id": "P19",
+     "marriage": "spring 1870, Bjernede (his 3rd marriage; widower)"
+    }
+   ],
+   "children": [
+    "P21",
+    "P22"
+   ],
+   "stepchildren": [
+    "P6"
+   ],
+   "sources": [
+    "S38",
+    "S39",
+    "S40",
+    "S33"
+   ],
+   "status": "RECORD-SOURCED / birth year UNVERIFIED (1801 vs 1831)",
+   "notes": "Stepfather of Hans Peter (1880 census S33). Previous two wives unknown. Detail: shots/bjernede-family-2026-11-03/; browser-pass-bjernede-family.md"
+  },
+  {
+   "id": "P21",
+   "name": "Rasmus Peter Rasmussen",
+   "birth": {
+    "date": "1871-03-01 (day read '1st March(?)')",
+    "place": "Bjernede, Sor\u00f8 amt"
+   },
+   "parents": [
+    "P20",
+    "P19"
+   ],
+   "sources": [
+    "S39",
+    "S33"
+   ],
+   "status": "RECORD-SOURCED (half-brother of Hans Peter)",
+   "notes": "Mother's age given 27. = 'Rasmus Peder' 8 in 1880 census. After 1880 unknown. Detail: shots/bjernede-family-2026-11-03/; browser-pass-bjernede-family.md"
+  },
+  {
+   "id": "P22",
+   "name": "Ane Marie Rasmussen",
+   "birth": {
+    "date": "1874-10-24",
+    "place": "Bjernedehuse, Bjernede, Sor\u00f8 amt",
+    "baptism": "1875-01-10"
+   },
+   "parents": [
+    "P20",
+    "P19"
+   ],
+   "sources": [
+    "S40",
+    "S33"
+   ],
+   "status": "RECORD-SOURCED (half-sister of Hans Peter)",
+   "notes": "Mother's age 31. Sponsor 'Hans Pedersen' probably half-brother Hans Peter (unverified). = Ane Marie 5 in 1880 census. After 1880 unknown. Detail: shots/bjernede-family-2026-11-03/; browser-pass-bjernede-family.md"
+  },
+  {
+   "id": "P23",
+   "name": "Rasmus Pedersen",
+   "birth": {
+    "date": "NOT FOUND (birth entry not located)"
+   },
+   "death": {
+    "date": "1867-02-05",
+    "place": "Bjernedegaardshuse, Bjernede"
+   },
+   "burial": "1867-02-10, Bjernede",
+   "parents": [
+    "P18",
+    "P19"
+   ],
+   "sources": [
+    "S41"
+   ],
+   "status": "PROBABLE full brother \u2014 RECORD-SOURCED death only; birth UNVERIFIED",
+   "notes": "Death entry names parents Hans Pedersen & Ane Rasmusdatter of Bjernedegaardshuse. Age read '12 Dage'(?) \u2014 uncertain; birth date not inferred. Detail: shots/bjernede-family-2026-11-03/; browser-pass-bjernede-family.md"
   }
  ]
 };
@@ -703,6 +882,62 @@ window.SOURCES={
   "text": "Copenhagen Police emigrant protocols (Udvandrerarkivet index), 16 Apr 1884: Hans Peter Petersen, Bjernede Sor\u00f8, age 20, dest. Springfield USA, contract 1015 Y: https://www.aalborgstadsarkiv.dk/UA.asp?UA=UAProtokol",
   "urls": [
    "https://www.aalborgstadsarkiv.dk/UA.asp?UA=UAProtokol"
+  ]
+ },
+ "S35": {
+  "id": "S35",
+  "flag": null,
+  "text": "Bjernede Sogn, Hovedministerialbog 1862 FVD\u20131878 (156 images), Rigsarkivet Arkivalieronline, epid=17223538: https://arkivalieronline.rigsarkivet.dk/en/billedviser?epid=17223538",
+  "urls": [
+   "https://arkivalieronline.rigsarkivet.dk/en/billedviser?epid=17223538"
+  ]
+ },
+ "S36": {
+  "id": "S36",
+  "flag": null,
+  "text": "S35 img 99, Copulerede 1862 no. 5: marriage 14 Oct 1862 Bjernede, Ungkarl/Hjulmand Hans Pedersen (b. 25 Feb 1833 Walsmagle?) & Pige Ane Rasmusdatter (b. 17 Jun 1843 Bjernede Lodsgaard?): https://arkivalieronline.rigsarkivet.dk/en/billedviser?epid=17223538 (shots 06, 07)",
+  "urls": [
+   "https://arkivalieronline.rigsarkivet.dk/en/billedviser?epid=17223538"
+  ]
+ },
+ "S37": {
+  "id": "S37",
+  "flag": null,
+  "text": "S35 img 125, D\u00f8de Mandk\u00f8n 1867 no. 15: Hans Pedersen, hjulmand Bjernedegaardshuse, d. 11 Sep 1867, bur. 17 Sep 1867, age 34, b. 25 Feb 1833, \"S\u00f8n af Ane Marie Hans Dat.(?)\": https://arkivalieronline.rigsarkivet.dk/en/billedviser?epid=17223538 (shots 10, 10b, 11, 11b)",
+  "urls": [
+   "https://arkivalieronline.rigsarkivet.dk/en/billedviser?epid=17223538"
+  ]
+ },
+ "S38": {
+  "id": "S38",
+  "flag": null,
+  "text": "S35 img 107, Copulerede 1870 no. 2: spring 1870 (day illegible) Enkemand Hans Rasmussen (b. 19 Apr 1801/1831?, 3rd marriage) & Enke Ane Rasmusdatter (b. 17 Jun 1843, 2nd marriage): https://arkivalieronline.rigsarkivet.dk/en/billedviser?epid=17223538 (shots 12, 13)",
+  "urls": [
+   "https://arkivalieronline.rigsarkivet.dk/en/billedviser?epid=17223538"
+  ]
+ },
+ "S39": {
+  "id": "S39",
+  "flag": null,
+  "text": "S35 img 24, male births 1871 no. 3: Rasmus Peter Rasmussen b. ~1 Mar 1871, parents Hans Rasmussen & Ane Rasmusdatter (27): https://arkivalieronline.rigsarkivet.dk/en/billedviser?epid=17223538 (shots 04, 05)",
+  "urls": [
+   "https://arkivalieronline.rigsarkivet.dk/en/billedviser?epid=17223538"
+  ]
+ },
+ "S40": {
+  "id": "S40",
+  "flag": null,
+  "text": "S35 img 82, female births 1874 no. 11: Ane Marie Rasmussen b. 24 Oct 1874, bapt. 10 Jan 1875, parents Hans Rasmussen & Ane Rasmusdatter (31): https://arkivalieronline.rigsarkivet.dk/en/billedviser?epid=17223538 (shots 02, 03)",
+  "urls": [
+   "https://arkivalieronline.rigsarkivet.dk/en/billedviser?epid=17223538"
+  ]
+ },
+ "S41": {
+  "id": "S41",
+  "flag": null,
+  "text": "S35 img 124, D\u00f8de Mandk\u00f8n 1867 no. 3: Rasmus Pedersen d. 5 Feb 1867, bur. 10 Feb 1867, son of Hans Pedersen & Ane Rasmusdatter, Bjernedegaardshuse (age read \"12 Dage\"?): https://arkivalieronline.rigsarkivet.dk/en/billedviser?epid=17223538 (shots 08, 09)",
+  "urls": [
+   "https://arkivalieronline.rigsarkivet.dk/en/billedviser?epid=17223538"
   ]
  }
 };

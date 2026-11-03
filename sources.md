@@ -41,3 +41,14 @@ Note: S5/S6 are transcriptions of government indexes, not originals. Underlying 
 - S33: 1880 Danish census, Bjernede sogn, Sorø amt, 1 Feb 1880, image 5/71: Hans Peder Pedersen, 15, stepson in household of Hans Rasmussen & Ane Rasmussen (low-confidence reads). Arkivalieronline (Rigsarkivet).
 - S34: Copenhagen Police emigrant protocols (Udvandrerarkivet index), 16 Apr 1884: Hans Peter Petersen, Bjernede Sorø, age 20, dest. Springfield USA, contract 1015 Y: https://www.aalborgstadsarkiv.dk/UA.asp?UA=UAProtokol
 - Detail: browser-pass-bjernede-corroboration.md
+
+## Added 2026-11-03 — Bjernede family pass (Hans Peter's parents & siblings)
+All in Bjernede Sogn Hovedministerialbog, folder "1862 FVD" (–1878, 156 imgs); image no. = viewer image n/156. Readings are handwriting interpretations (confidence in browser-pass-bjernede-family.md); screenshots in shots/bjernede-family-2026-11-03/.
+- S35: Bjernede Sogn, Hovedministerialbog 1862 FVD–1878 (156 images), Rigsarkivet Arkivalieronline, epid=17223538: https://arkivalieronline.rigsarkivet.dk/en/billedviser?epid=17223538
+- S36: S35 img 99, Copulerede 1862 no. 5: marriage 14 Oct 1862 Bjernede, Ungkarl/Hjulmand Hans Pedersen (b. 25 Feb 1833 Walsmagle?) & Pige Ane Rasmusdatter (b. 17 Jun 1843 Bjernede Lodsgaard?): https://arkivalieronline.rigsarkivet.dk/en/billedviser?epid=17223538 (shots 06, 07)
+- S37: S35 img 125, Døde Mandkøn 1867 no. 15: Hans Pedersen, hjulmand Bjernedegaardshuse, d. 11 Sep 1867, bur. 17 Sep 1867, age 34, b. 25 Feb 1833, "Søn af Ane Marie Hans Dat.(?)": https://arkivalieronline.rigsarkivet.dk/en/billedviser?epid=17223538 (shots 10, 10b, 11, 11b)
+- S38: S35 img 107, Copulerede 1870 no. 2: spring 1870 (day illegible) Enkemand Hans Rasmussen (b. 19 Apr 1801/1831?, 3rd marriage) & Enke Ane Rasmusdatter (b. 17 Jun 1843, 2nd marriage): https://arkivalieronline.rigsarkivet.dk/en/billedviser?epid=17223538 (shots 12, 13)
+- S39: S35 img 24, male births 1871 no. 3: Rasmus Peter Rasmussen b. ~1 Mar 1871, parents Hans Rasmussen & Ane Rasmusdatter (27): https://arkivalieronline.rigsarkivet.dk/en/billedviser?epid=17223538 (shots 04, 05)
+- S40: S35 img 82, female births 1874 no. 11: Ane Marie Rasmussen b. 24 Oct 1874, bapt. 10 Jan 1875, parents Hans Rasmussen & Ane Rasmusdatter (31): https://arkivalieronline.rigsarkivet.dk/en/billedviser?epid=17223538 (shots 02, 03)
+- S41: S35 img 124, Døde Mandkøn 1867 no. 3: Rasmus Pedersen d. 5 Feb 1867, bur. 10 Feb 1867, son of Hans Pedersen & Ane Rasmusdatter, Bjernedegaardshuse (age read "12 Dage"?): https://arkivalieronline.rigsarkivet.dk/en/billedviser?epid=17223538 (shots 08, 09)
+- Detail: browser-pass-bjernede-family.md

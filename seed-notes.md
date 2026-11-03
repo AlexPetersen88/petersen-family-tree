@@ -43,3 +43,6 @@ Updated: 2026-11-02 (America/Chicago)
 \n## 2026-11-03 — Family confirmation\n- Alex confirmed via his father, Michael Don Petersen: Elmer Hamilton Petersen's parents were **Hans Peter Petersen** and **Maren Sophia** (Jensen; "Mary" on 1900 census). FAMILY-CONFIRMED; existing FAG/MNHS/1900 census citations kept.\n
 ## 2026-11-03
 - Alex confirmed Bjernede / 1864 origin for Hans Peter (P6) — family-confirmed (S30). people.json birth updated to 28 Feb 1864 Bjernede, Sorø amt; S30–S34 added; Tinglev S21 withdrawn; data.js rebuilt.
+
+## 2026-11-03 — Bjernede family records added
+Added RECORD-SOURCED (amber, not family-confirmed) cards from browser-pass-bjernede-family.md: father Hans Pedersen P18 (1833–1867, hjulmand), mother Ane Rasmusdatter P19 (b. 1843), stepfather Hans Rasmussen P20 (b. 1801/1831?), half-sibs Rasmus Peter P21 (1871) & Ane Marie P22 (1874), probable brother Rasmus Pedersen P23 (d. 1867). Sources S35–S41. Open: first child, Rasmus birth, Ane/Hans R. deaths, Ane's parents. Backup people.prev-2026-11-03c.json.

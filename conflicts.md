@@ -37,3 +37,12 @@
 - Bjernede candidate RESOLVED by family confirmation (Alex Petersen, 2026-11-03, S30) of birth year + place: b. 28 Feb 1864 Bjernede, Sorø amt (S31–S34). Sections above marked "CANDIDATE/UNVERIFIED" are superseded.
 - Tinglev/Gaardeby S21 candidate WITHDRAWN (no longer competing).
 - Still open: parents Hans Pedersen & Ane Rasmusdatter are record-sourced, tentative reads, not family-named. No US document yet explicitly names Bjernede.
+
+## 2026-11-03 — Bjernede family pass (browser-pass-bjernede-family.md, S35–S41)
+- Ane Rasmusdatter's age "28" on the 1864 baptism (S31) vs b. 17 Jun 1843 (S36, S38; fits 1844 vaccination and 1871/1874 ages 27/31) → she was ~20. Treat baptism age as misread/inaccurate.
+- Hans Rasmussen (stepfather, P20) birth year 1801 vs 1831 on 1870 remarriage (S38) — UNRESOLVED; 1880 census age ~48 favours 1831.
+- Hans Rasmussen P20 is NOT linked to the logged-not-to-use "Hans Rasmussen b. ~1833, son of Niels Rasmussen & Maren Hansdatter" candidate.
+- "2det Barn" on Hans Peter's baptism implies an earlier first child (b. ~1863–Feb 1864, apparently dead) — NOT FOUND (male deaths 1863 checked; female births/deaths 1863–64 not searched).
+- Rasmus Pedersen (P23): death found (S41), birth NOT found; age "12 Dage"(?) uncertain — probable full sibling only.
+- Hans Pedersen's mother "Ane Marie Hansdatter" (S37) LOW confidence; his father unknown; birthplace Valsømagle/Walsmagle LOW.
+- US link: no US document names Bjernede; identity rests on Alex's family confirmation (S30) of place + year. Parents are RECORD-SOURCED, not family-confirmed.

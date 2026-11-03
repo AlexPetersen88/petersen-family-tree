@@ -1,10 +1,17 @@
 // Layout: generation = depth from Hans (P6); spouses share generation.
 const gen={},order=[];const ROOT='P6';
-(function walk(id,g){if(!P[id]||gen[id]!==undefined)return;gen[id]=g;order.push(id);
- (P[id].spouses||[]).forEach(s=>{if(s.id&&P[s.id]&&gen[s.id]===undefined){gen[s.id]=g;order.push(s.id)}});
+function remember(id,g){if(!P[id])return;if(gen[id]===undefined)order.push(id);if(gen[id]===undefined||g<gen[id])gen[id]=g}
+function climb(id,g){if(!P[id])return;remember(id,g);
+ (P[id].spouses||[]).forEach(s=>{if(s.id)remember(s.id,g)});
+ (P[id].parents||[]).forEach(pid=>climb(pid,g-1))}
+climb(ROOT,0);
+function descend(id){if(!P[id]||gen[id]===undefined)return;const g=gen[id];
+ (P[id].spouses||[]).forEach(s=>{if(s.id)remember(s.id,g)});
  const kids=new Set();[id,...(P[id].spouses||[]).map(s=>s.id)].forEach(x=>P[x]&&(P[x].children||[]).forEach(c=>kids.add(c)));
  PEOPLE.people.forEach(q=>(q.parents||[]).includes(id)&&kids.add(q.id));
- kids.forEach(c=>walk(c,g+1))})(ROOT,0);
+ kids.forEach(c=>{if(gen[c]===undefined){remember(c,g+1);descend(c)}})}
+for(let n=0;n<4;n++)Object.keys(gen).slice().forEach(descend);
+const shift=Math.min(...Object.values(gen));if(shift)for(const id in gen)gen[id]-=shift;
 PEOPLE.people.forEach(p=>{if(gen[p.id]===undefined){gen[p.id]=0;order.push(p.id)}});
 const W=216,H=64,GX=28,GY=124,pos={};const rows={};
 order.forEach(id=>(rows[gen[id]]=rows[gen[id]]||[]).push(id));
@@ -71,8 +78,10 @@ function show(id){const p=P[id];Object.values(nodes).forEach(n=>n.classList.remo
  row('Born',place(p.birth)||(p.living?'<span class="muted">Not recorded (living person)</span>':'<span class="muted">unknown</span>'));
  if(!p.living)row('Died',place(p.death)||'<span class="muted">unknown</span>');
  row('Burial',esc(p.burial));row('Immigration',p.immigration&&[p.immigration.year||'year unknown',p.immigration.status].map(esc).join(' · '));
- row('Parents',(p.parents||[]).map(link).join('<br>'));
+ row('Parents',(p.parents||[]).map(ref=>link(ref)+(P[ref]&&!isFamily(P[ref])?' <span class="relnote">RECORD-SOURCED, not confirmed by family.</span>':'')).join('<br>'));
+ row('Parent status',esc(p.parentsStatus));
  row('Danish parents',p.danishParents?`<span class="relnote">${esc(p.danishParents)}</span>`:'');
+ row('Siblings',(p.siblings||[]).map(link).join('<br>'));
  row('Spouse(s)',(p.spouses||[]).map(s=>(s.id?link(s.id):esc(s.name))+(s.marriage?` <span class="muted">m. ${esc(s.marriage)}</span>`:'')).join('<br>'));
  row('Children',[...kids].map(link).join('<br>'));
  row('Child count',esc(p.children_count));
