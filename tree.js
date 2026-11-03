@@ -64,7 +64,7 @@ function show(id){const p=P[id];Object.values(nodes).forEach(n=>n.classList.remo
  const kids=new Set([...(p.children||[])]);PEOPLE.people.forEach(q=>(q.parents||[]).includes(id)&&kids.add(q.id));
  const pills=(isFamily(p)?'<span class="pill f">Family-confirmed</span>':isRecords(p)?'<span class="pill r">Record-sourced · not confirmed by family</span>':'<span class="pill u">UNVERIFIED / secondary</span>')+(p.living?'<span class="pill l">LIVING</span>':'');
  let h=`<h2>${esc(p.name)}</h2>${pills}`;
- if(p.familyNote) h+=`<p class="oknote">${esc(p.familyNote)}</p>`;
+ if(p.familyNote||p.familyConfirmed) h+=`<p class="oknote">${esc(p.familyNote||p.familyConfirmed)}</p>`;
  if(isRecords(p)) h+=`<p class="relnote">${esc(RECORD_REL)}</p>`;
  else if((p.parents||[]).some(ref=>parentNeedsNote(p, ref))) h+=`<p class="relnote">Parents ${esc(RECORD_REL)}</p>`;
  h+=`<dl>`;
@@ -74,7 +74,10 @@ function show(id){const p=P[id];Object.values(nodes).forEach(n=>n.classList.remo
  row('Burial',esc(p.burial));row('Immigration',p.immigration&&[p.immigration.year||'year unknown',p.immigration.status].map(esc).join(' · '));
  row('Parents',(p.parents||[]).map(ref=>parentHtml(p, ref)).join('<br>'));
  row('Spouse(s)',(p.spouses||[]).map(s=>(s.id?link(s.id):esc(s.name))+(s.marriage?` <span class="muted">m. ${esc(s.marriage)}</span>`:'')).join('<br>'));
- row('Children',[...kids].map(link).join('<br>'));row('Notes',esc(p.notes));row('Research status',esc(p.status));
+ row('Children',[...kids].map(link).join('<br>'));
+ row('Child count',esc(p.children_count));row('1910 children',esc(p.children_born_living_1910));
+ row('1900 residence',esc(p.residence_1900));row('1910 residence',esc(p.residence_1910));row('1920 residence',esc(p.residence_1920));
+ row('Notes',esc(p.notes));row('Research status',esc(p.status));
  row('Sources',(p.sources||[]).map(srcHtml).join('')||'<span class="muted">none</span>');
  h+=`</dl><p class="muted" style="font-size:.8rem">ID ${p.id}. Double-check against primary records before relying on any of this.</p>`;
  panel.innerHTML=h;panel.querySelectorAll('a.p').forEach(a=>a.onclick=()=>show(a.dataset.id))}
