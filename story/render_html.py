@@ -65,10 +65,12 @@ URL_RE = re.compile(r"https://[^\s)<]+")
 CODE_RE = re.compile(r"`([^`]+)`")
 CHAPTER_RE = re.compile(r"Chapter ([1-4])")
 MAP_RE = re.compile(r"\[map\]\((https://[^)\s]+)\)")
-# Cleared HIGH visit pins only. Held pins (matr. 5a GPS, Brookville farm,
-# Dig 21 / 1807 person-link) are intentionally absent.
+# Cleared visit pins only. Held pins (matr. 5a GPS, Brookville farm,
+# Dig 21 / 1807 person-link, living residences, a Wolfeboro hospital
+# or house) are intentionally absent.
 # Sankt Hans Gade is explicit: the [map] link sits on P34's 1834 residence
 # only. Phrase scan must not attach it to the S63 candidate sentence.
+# Pack 11 pins are explicit too: Evan village, Bethany church, Wolfeboro town.
 PINS = [
     {
         "id": "bjernede-kirke",
@@ -139,6 +141,94 @@ PINS = [
         "marks": ("55.4445", "11.7908"),
         "explicit": True,
         "caption": "P34's 1834 street. No house number. Not a shared house.",
+    },
+    {
+        "id": "evan-mn",
+        "label": "Evan, Minnesota",
+        "short": "Evan",
+        "osm": "https://www.openstreetmap.org/relation/136994",
+        "google": "https://www.google.com/maps/search/?api=1&query=Evan,+Minnesota",
+        "phrases": ["rural Evan"],
+        "marks": ("136994", "44.3540"),
+        "explicit": True,
+        "caption": "The village. The farm where Darvin was born is not known.",
+    },
+    {
+        "id": "bethany-lutheran",
+        "label": "Bethany Lutheran Church, Morgan",
+        "short": "Bethany",
+        "osm": "https://www.openstreetmap.org/?mlat=44.4452&mlon=-94.9873#map=17/44.4452/-94.9873",
+        "google": "https://www.google.com/maps/search/?api=1&query=44.4452,-94.9873",
+        "phrases": ["Bethany Lutheran Church in Morgan"],
+        "marks": ("44.4452",),
+        "explicit": True,
+        "caption": "The church. Burials are in this churchyard. Grave rows are not pinned.",
+    },
+    {
+        "id": "wolfeboro",
+        "label": "Wolfeboro, New Hampshire",
+        "short": "Wolfeboro",
+        "osm": "https://www.openstreetmap.org/node/158909474",
+        "google": "https://www.google.com/maps/search/?api=1&query=Wolfeboro,+NH",
+        "phrases": ["Wolfeboro, New Hampshire"],
+        "marks": ("158909474", "43.5848"),
+        "explicit": True,
+        "caption": "The town only. No hospital or house.",
+    },
+    {
+        "id": "pownal-me",
+        "label": "Pownal, Maine",
+        "short": "Pownal",
+        "osm": "https://www.openstreetmap.org/relation/12171325",
+        "google": "https://www.google.com/maps/search/?api=1&query=43.8923,-70.1835",
+        "phrases": ["Pownal, Cumberland County, Maine"],
+        "marks": ("12171325", "43.8923"),
+        "explicit": True,
+        "caption": "The town only. No building or house.",
+    },
+    {
+        "id": "redwood-falls-cemetery",
+        "label": "Redwood Falls Cemetery",
+        "short": "Redwood Falls Cemetery",
+        "osm": "https://www.openstreetmap.org/?mlat=44.5510&mlon=-95.1000#map=17/44.5510/-95.1000",
+        "google": "https://www.google.com/maps/search/?api=1&query=44.5510,-95.1000",
+        "phrases": ["Redwood Falls Cemetery"],
+        "marks": ("44.5510",),
+        "explicit": True,
+        "caption": "The cemetery. Randy's stone and Janice's grave are not pinned.",
+    },
+    {
+        "id": "sleepy-eye",
+        "label": "Sleepy Eye, Minnesota",
+        "short": "Sleepy Eye",
+        "osm": "https://www.openstreetmap.org/?mlat=44.2972&mlon=-94.7242#map=15/44.2972/-94.7242",
+        "google": "https://www.google.com/maps/search/?api=1&query=44.2972,-94.7242",
+        "phrases": ["born on 23 July 1938 in Sleepy Eye"],
+        "marks": ("44.2972",),
+        "explicit": True,
+        "caption": "The town. Janice's birth house is not pinned.",
+    },
+    {
+        "id": "sleepy-eye-methodist",
+        "label": "Faith United Methodist Church, Sleepy Eye",
+        "short": "Faith UMC",
+        "osm": "https://www.openstreetmap.org/?mlat=44.2944&mlon=-94.7225#map=18/44.2944/-94.7225",
+        "google": "https://www.google.com/maps/search/?api=1&query=44.2944,-94.7225",
+        "phrases": ["Faith United Methodist Church at 321 1st Ave S"],
+        "marks": ("44.2944",),
+        "explicit": True,
+        "caption": "Today's church building. That the 1957 service used this lot is not proven.",
+    },
+    {
+        "id": "garnette-gardens",
+        "label": "Garnette Gardens, Redwood Falls",
+        "short": "Garnette Gardens",
+        "osm": "https://www.openstreetmap.org/?mlat=44.5356&mlon=-95.0981#map=18/44.5356/-95.0981",
+        "google": "https://www.google.com/maps/search/?api=1&query=44.5356,-95.0981",
+        "phrases": ["Vista Prairie at Garnette Gardens"],
+        "marks": ("44.5356",),
+        "explicit": True,
+        "caption": "Death place only. Not a residence, and not a grave.",
     },
 ]
 PIN_BY_ID = {pin["id"]: pin for pin in PINS}

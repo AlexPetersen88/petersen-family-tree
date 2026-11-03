@@ -1,0 +1,10 @@
+# Bethany Lutheran Church / Cemetery, Morgan, Minnesota → Bethany Lutheran Church (ELCA), rural Morgan, Redwood County
+
+- **Record name:** Bethany Lutheran Church / Cemetery, Morgan, MN (Darvin P11 m. Anna Maye Hansen 27 Jun 1954; burial after d. 29 Jun 2007)
+- **Modern:** Bethany Lutheran Church (ELCA, SW MN Synod), 27220 County Highway 13, Morgan, MN 56266-1344 · (507) 249-3737. Rural church ~5 mi NW of Morgan town. FindAGrave lists "Bethany Lutheran Church Cemetery" under Morgan; obits say "Bethany Lutheran Cemetery near Morgan".
+- **Lat/lon:** 44.4452, -94.9873 (church; joinmychurch + exa place record agree to ~15 m). Not in OSM as of 2026-11-03 (Nominatim: no result).
+- **Map:** https://www.google.com/maps/search/?api=1&query=44.4452,-94.9873 · https://www.openstreetmap.org/?mlat=44.4452&mlon=-94.9873#map=17/44.4452/-94.9873
+- **Visit:** Drive County Hwy 13 to #27220; the cemetery is the churchyard by name — confirm the grave row on site or via FindAGrave memorial before saying "this grave".
+- **Confidence:** Church location HIGH (address + 2 matching coords). Burial of Darvin + Anna Maye Hansen at Bethany Lutheran Church Cemetery: HIGH per Genealogist (FAG 212639016 / 130109756). Cemetery = churchyard on same campus: MED-HIGH (unchanged — FAG memorial/cemetery pages Cloudflare-blocked to fetch 2026-11-03, so cemetery GPS still not independently checked). Grave row UNVERIFIED (no plot coords).
+- **Sources:** https://www.findagrave.com/memorial/212639016 · https://www.findagrave.com/memorial/130109756 (both cited by Genealogist; not fetchable by Scout) · https://www.joinmychurch.com/churches/Bethany-Lutheran-Church-Morgan-Minnesota-United-States/142217 · https://www.faithstreet.com/church/bethany-lutheran-church-morgan-mn · https://www.findagrave.com/cemetery-browse/USA/Minnesota/Redwood-County/Morgan?id=city_74660 · https://www.pattonschad.com/obituaries/violet-hansen (interment "Bethany Lutheran Cemetery near Morgan")
+- **Pack:** MN Pack 11 (Darvin P11 / Donald kids CLEAR) + Pack 11b (Darvin + Anna Maye burials)

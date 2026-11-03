@@ -82,3 +82,36 @@
 - Display name is Ane Marie Hansdatter (alt Hansd. / Hansdatter). Clausdatter may be noted once as a superseded wrong read. It is not the current name.
 - Parents of P25 are still unknown. No father named Hans and no mother have been added. Birth 23 Mar 1805 stays CANDIDATE (S189 confirmation only; not found baptised in Haraldsted, S193).
 - FT-1834 Ringsted købstad, Sankt Hans Gade: CANDIDATE Ane Marie Hansdatter (S63) and CANDIDATE Peter/Peder Johansen (S64 / P28) were on the same street, not proven the same household. Marriage not found. P28 is NOT locked as father (udlagt naming HIGH, paternity OPEN). S63/S64 stay CANDIDATE. The arrival gap and S189 stay as in sources.md.
+- [SUPERSEDED for the father census identity by Decision B, 2026-11-03 ~3:33 PM CT — see sources.md decision note. This bullet is the pre-Decision-B reading.] P28 same-man question was later locked: P28 is the census alias of P34. S63 stays CANDIDATE. Biological paternity was not locked.
+
+## MN Pack 10 (2026-11-03) — S271–S274 — Genealogist CLEAR
+- Marriage (Pack 10b, image confirmed): Hans Peter Petersen × Mary S. Jensen (= Maren Sophia), 11 Mar 1891, at Redwood Falls (S272). The Redwood County marriage book page has been viewed (FamilySearch image 622 of 807, page 58). Affidavit spells "Hans Peter Petersen"; the license on the same form spells "Hans P. Peterson". Witnesses Niels Jensen and J. L. Byram are names only. Niels Jensen is not claimed as P7's father (CANDIDATE at most; not narrated). No ages or parents on the form. Officiant not used.
+- 1920 census image (S271; S29 companion, same Archive.org reel): farm owned and mortgaged (O M); dairy farm, own account (OA); immigrated 1884; naturalized 1897. Household number not picked: S271 reads dwelling 52 / family 54; the earlier S29 read said dwelling 54.
+- 1905 Minnesota state census (S273): Hans P. Petersen, 41; Maren S., 32; Niels A., 13; Hans R., 12; Anna H., 10. "Hans R." stays as written. Matching him to 1900 Hans O. or to Rudolph is CANDIDATE only, not a merge.
+- Death-name conflict OPEN, no pick. Newspaper S145 prints Hans **P.** Petersen. S274 (https://www.familysearch.org/ark:/61903/1:1:V4WB-GXM) restates the MNHS index: Hans **T.** Petersen, died 06 Sep 1922, Redwood, record 359351, certificate 011514/1922, no image. Same certificate as 1922-MN-011514, not independent second evidence. Display stays Hans P. / Hans Peter. The day 6 Sep 1922 stays CANDIDATE. Alex's note that "T." may be an index typo is logged, not adopted as a resolution.
+- Decision B stands: P34 is the locked named father; S64 is the 1834 Sankt Hans Gade tjenestekarl, age about 30; P28 is the same-man alias; S63 stays CANDIDATE only.
+- Still out: Dig 21, Dig 40, Day B, nearby 1920 ED 182 Petersen households, and any Brookville farm coordinate.
+
+## Dig 39 (2026-11-03) — father surname CLOSED, Genealogist CLEAR
+- Alex (~4:02 PM CT): keep Peder Johansen and Hansdatter for the mother; lock them.
+- Winner: **Peder Johansen** (P34), supported by S275 (AO image, letter shapes Joh-, not Jørg-) plus S51, S52, S56, and the S267 index. Decision B (S64 / P28 same man) stands. Biological paternity is still not claimed. No marriage to P25.
+- **S268** FamilySearch "Peder Jørgensen" is SUPERSEDED as a mis-index, not a second father. S270's father line stayed unread and does not overturn S275.
+- Mother: Ane Marie Hansdatter LOCK unchanged. S276 Larsdatter is an alternate eye-read only, not adopted. Clausdatter stays superseded.
+
+## MN Pack 11 (2026-11-03) — Darvin and Donald's sons — Genealogist CLEAR
+- Darvin Wayne Petersen (P11): born 28 Mar 1932, rural Evan, Minnesota (S278). Village pin only; the birth farm is not identified. USAF during the Korean War and an aviation career are HIGH (S278). Rank first lieutenant is MED, from the veterans burial listing only (S279); the obituary does not give it. Married Anna Maye Hansen (P35) 27 Jun 1954 at Bethany Lutheran Church, Morgan (S278, S280). Anna Maye born 3 Oct 1933 rural Morgan, died 10 May 2014 (S280). Five children, names only, birth dates blank: Dwight, Daniel, Diana, Douglas, Deborah (S281). Died 29 Jun 2007, Wolfeboro, New Hampshire, town only (S278). Buried Bethany Lutheran Cemetery, Morgan (S278, S279). The church location is HIGH; the cemetery sharing that campus is softer; the grave spot is not checked.
+- Donald Alvin Petersen (P1) had exactly five sons: Randy Don, Rick, Michael Don, Chad, and Bill (S282). No sixth son. Randy Don was born 30 Jul 1958 and died 18 Oct 1958 in Redwood County (S283). Living sons' towns and their spouses' given names are only as stated in Janice's 2025 obituary (S282).
+- Not merged: Iowa Darvin Arthur Petersen, 1932–2014 (S284).
+- Not folded: Dig 40, Dig 41, Day B, Dig 21, and any farm parcel, living-residence pin, or Wolfeboro facility.
+
+## MN Pack 11b (2026-11-03) — burials — Genealogist CLEAR
+- Darvin Wayne Petersen is buried in Bethany Lutheran Church Cemetery, Morgan (S287, with S278 and S279). Anna Maye Hansen Petersen is buried in the same cemetery (S288). The cemetery is the churchyard on the church campus (MED-HIGH). Grave rows are not pinned. No plot coordinates.
+- Anna Maye died 10 May 2014 in Pownal, Cumberland County, Maine (S288). Town pin only.
+- Randy Don Petersen is buried in Redwood Falls Cemetery. The stone reads "2 1/2 Months" (S289). Dates are corroborated by the Minnesota death index, certificate 1958-MN-014557 (S290). Cemetery location is pinned at 44.5510, -95.1000. His grave is not pinned.
+- Held out: Dig 40, Dig 41, Dig 42, Anna Maye's parents as person cards, and a 1957 Find a Grave marriage bio. S291 is only a note that those Minnesota indexes do not cover these years.
+
+## MN Pack 11c (2026-11-03) — Donald and Janice — Genealogist CLEAR
+- Marriage: Donald Alvin Petersen × Janice Elaine Dohrmann, 14 Sep 1957, Brown County, Minnesota. Minnesota Official Marriage System certificate C-063 (S300) is HIGH. The Sleepy Eye Methodist church remains the obituary's ceremony place only. It is not a locked parcel.
+- Janice was born 23 Jul 1938 in Sleepy Eye. She died 18 Apr 2025 at Garnette Gardens, Redwood Falls, and was buried in Redwood Falls Cemetery (S301). Find a Grave has no memorial (S302). The cemetery grounds pin stands. Her grave is not pinned.
+- Second marriage: Loren Jacobsen, 28 Jun 1986 (S301). Obit note only. No person card.
+- Held out: Dig 40, Dig 41, Dig 42, Day B, Hansen parents, living-residence pins, and any individual grave coordinate for Janice.

@@ -18,9 +18,10 @@ window.PEOPLE={
    "death": {
     "date": "1922",
     "notes": "Year 1922. NEWSPAPER (S145, Redwood Gazette 1922-09-13 p.4, Morgan Messenger reprint): printed \"Hans P. Petersen\", age 55, of Brookville township ~2 mi east of Brookville church; died suddenly ~4:30 \"yesterday\" afternoon of heart trouble and complications while sitting in a chair; had been ailing some time; funeral not yet arranged; survived by wife and several children (unnamed). Calendar date NOT proven by article. CANDIDATE date 1922-09-06 from MNHS index (Hans T. Petersen, cert 1922-MN-011514) only.",
-    "conflict": "RESOLVED (display + index T.) 2026-11-03: Alex Genealogist chat = Hans P.; Alex Narrative = MNHS 'Hans T.' is a typo. Cert image not seen. Death date 1922-09-06 stays CANDIDATE (index only). See conflicts.md.",
+    "conflict": "RESOLVED (display + index T.) 2026-11-03: Alex Genealogist chat = Hans P.; Alex Narrative = MNHS 'Hans T.' is a typo. Cert image not seen. Death date 1922-09-06 stays CANDIDATE (index only). See conflicts.md. | MN Pack 10 (S274 FS death index, same cert 011514) restates Hans T.; record-level initial conflict OPEN, no pick by gate.",
     "sources": [
-     "S145"
+     "S145",
+     "S274"
     ]
    },
    "burial": "Dannebod Cemetery (Fredsminde Danish church cemetery), Brookville Twp near Cobden/Morgan, Redwood Co MN",
@@ -36,7 +37,7 @@ window.PEOPLE={
    "spouses": [
     {
      "id": "P7",
-     "marriage": "1891"
+     "marriage": "11 Mar 1891, Redwood Falls"
     }
    ],
    "children": [
@@ -80,16 +81,20 @@ window.PEOPLE={
     "S125",
     "S126",
     "S136",
-    "S145"
+    "S145",
+    "S271",
+    "S272",
+    "S273",
+    "S274"
    ],
    "status": "VERIFIED: 1900 US census (imm. 1884, Na, b. Feb 1864 Denmark) + FAG parent of Elmer; origin Bjernede FAMILY-CONFIRMED 2026-11-03",
    "occupation_1900": "Farmer",
    "residence_1900": "Brookville Twp, Redwood Co MN, ED 232 sheet 6, dwelling/family 109",
-   "notes": " Census surname spelled Peterson. Children on 1900: Nels A., Hans O., Annie H., Louis C., Mary S. \u2014 Hans O. May 1893 may = Rudolph Hans (FAG); unresolved. Parents Hans Pedersen (P18) & Ane Rasmusdatter (P19), RECORD-SOURCED (Niels Peder Pedersen / Ane Kirstine reading withdrawn as misread). Father died when Hans Peter was ~3\u00bd (Sep 1867). Elder brother unnamed son (P24) b. 17 Jan 1863, d. 18 Jan 1863 (S42) \u2014 matches '2det Barn'. Full brother Rasmus Pedersen (P23, b. 10 Dec 1866, d. 5 Feb 1867); half-siblings Rasmus Peter (P21) & Ane Marie (P22) Rasmussen; stepfather Hans Rasmussen (P20). See browser-pass-bjernede-family.md. | NATURALIZATION INDEX (Scout MN Pack #4, 2026-11-03): Iron Range Research Center free index ONLY (no year/cert until microfilm). CANDIDATES not linked: Redwood PETERSEN Hans S74 (best spelling), PEDERSEN Hans S75, PEDERSON Hans S76 \u2014 CONFLICT, no winner. Redwood PETERSON Hans = 0 hits (S77). Brown Co CANDIDATES (Springfield dest. geography): Petersen Hans cluster S78; Peterson incl. indexed Hans Peter S79. REJECT unless later proof: Hans Henry S80; Hans Christian / Pedersen Hans Brown S81. Census Na (S27) and ~1897 reading (S29) unchanged \u2014 no reel/page proven as ours. | S98 UNVERIFIED watch: Agnes Ruby Petersen b. 26 Aug 1909 Redwood mother Jensen \u2014 NOT added as child; could be extra Hans\u00d7Maren OR different couple (CONFLICT OPEN). | S103: FG memorial S12 omits middle Peter and lists only 4 kids \u2014 incompleteness, not a different man (census S27\u2013S29 + family-confirm). | BLM GLO (Scout MN Pack #6, 2026-11-03): Redwood patents \u2014 no Petersen spelling (S113 NEGATIVE) and no patent on est. Brookville T109N R36W. Hans Pederson T110N R39W sec 32 1881 (S125\u2013S126) remain unlinked CANDIDATE LOW \u2014 NOT P6 land. No land-ownership claim. | NEWSPAPERS (Scout MN Pack #7, 2026-11-03): no verified newspaper article/obituary found. MN Hub Browse-by-date finding aid S136 (search still hung). Chronicling America hits S137\u2013S141 UNVERIFIED/LOW \u2014 not attached as support. CANDIDATE 1922 death date 1922-09-06 (MNHS index); 'Hans T.' = MNHS typo per Alex Narrative 2026-11-03. Scout MN still digging Redwood gazette week of 1922-09-06 (to ~09-27). | NEWSPAPERS (Scout MN Pack #7b, 2026-11-03): S145 APPROVED death notice \"Hans P. Petersen\" Redwood Gazette 1922-09-13 p.4 (see death.notes). S146 H.P. Federson/Evan LOW not linked; S147 NEGATIVE Sep 6/27. Hans P. display locked; MNHS T. = typo per Alex Narrative 2026-11-03.",
+   "notes": " Census surname spelled Peterson. Children on 1900: Nels A., Hans O., Annie H., Louis C., Mary S. \u2014 Hans O. May 1893 may = Rudolph Hans (FAG); unresolved. Parents Hans Pedersen (P18) & Ane Rasmusdatter (P19), RECORD-SOURCED (Niels Peder Pedersen / Ane Kirstine reading withdrawn as misread). Father died when Hans Peter was ~3\u00bd (Sep 1867). Elder brother unnamed son (P24) b. 17 Jan 1863, d. 18 Jan 1863 (S42) \u2014 matches '2det Barn'. Full brother Rasmus Pedersen (P23, b. 10 Dec 1866, d. 5 Feb 1867); half-siblings Rasmus Peter (P21) & Ane Marie (P22) Rasmussen; stepfather Hans Rasmussen (P20). See browser-pass-bjernede-family.md. | NATURALIZATION INDEX (Scout MN Pack #4, 2026-11-03): Iron Range Research Center free index ONLY (no year/cert until microfilm). CANDIDATES not linked: Redwood PETERSEN Hans S74 (best spelling), PEDERSEN Hans S75, PEDERSON Hans S76 \u2014 CONFLICT, no winner. Redwood PETERSON Hans = 0 hits (S77). Brown Co CANDIDATES (Springfield dest. geography): Petersen Hans cluster S78; Peterson incl. indexed Hans Peter S79. REJECT unless later proof: Hans Henry S80; Hans Christian / Pedersen Hans Brown S81. Census Na (S27) and ~1897 reading (S29) unchanged \u2014 no reel/page proven as ours. | S98 UNVERIFIED watch: Agnes Ruby Petersen b. 26 Aug 1909 Redwood mother Jensen \u2014 NOT added as child; could be extra Hans\u00d7Maren OR different couple (CONFLICT OPEN). | S103: FG memorial S12 omits middle Peter and lists only 4 kids \u2014 incompleteness, not a different man (census S27\u2013S29 + family-confirm). | BLM GLO (Scout MN Pack #6, 2026-11-03): Redwood patents \u2014 no Petersen spelling (S113 NEGATIVE) and no patent on est. Brookville T109N R36W. Hans Pederson T110N R39W sec 32 1881 (S125\u2013S126) remain unlinked CANDIDATE LOW \u2014 NOT P6 land. No land-ownership claim. | NEWSPAPERS (Scout MN Pack #7, 2026-11-03): no verified newspaper article/obituary found. MN Hub Browse-by-date finding aid S136 (search still hung). Chronicling America hits S137\u2013S141 UNVERIFIED/LOW \u2014 not attached as support. CANDIDATE 1922 death date 1922-09-06 (MNHS index); 'Hans T.' = MNHS typo per Alex Narrative 2026-11-03. Scout MN still digging Redwood gazette week of 1922-09-06 (to ~09-27). | NEWSPAPERS (Scout MN Pack #7b, 2026-11-03): S145 APPROVED death notice \"Hans P. Petersen\" Redwood Gazette 1922-09-13 p.4 (see death.notes). S146 H.P. Federson/Evan LOW not linked; S147 NEGATIVE Sep 6/27. Hans P. display locked; MNHS T. = typo per Alex Narrative 2026-11-03. | MN Pack 10 (2026-11-03): S271 1920 census Brookville ED 182 (age 55, imm 1884; Maren S, Anna H, Ethel M, Elmer H, Olga M); S272 marriage 11 Mar 1891 Redwood to Mary S Jensen; S273 1905 state census (Maren S, Niels A, Hans R 12, Anna H). 1905 'Hans R' \u2248 Rudolph Hans / 1900 Hans O. = CANDIDATE same son, unresolved. | S271 IMAGE (Archive.org reel 851 n271, soft amend 2026-11-03): naturalized (Na) 1897; dairy farm, OA (works for himself); home owned mortgaged (O M); imm 1884. | S272 IMAGE-CONFIRMED 2026-11-03 (MN Pack 10b): m. Mary S. Jensen 11 Mar 1891 Redwood Falls MN by JP (~Edward Marsh, given name MED); affidavit signed 'Hans Peter Petersen', license 'Hans P. Peterson'; witnesses Niels Jensen + J. L. Byram (clerk); no ages/parents on form.",
    "familyConfirmed": "FAMILY-CONFIRMED via Michael Don Petersen (Alex's father), 2026-11-03: Elmer Hamilton Petersen's parents were Hans Peter Petersen and Maren Sophia (Jensen; 'Mary' on 1900 census). Public-record citations (FAG, MNHS, 1900 census) retained. | ORIGIN FAMILY-CONFIRMED by Alex Petersen, 2026-11-03: birth year 1864 + Bjernede (small town) match the Danish records \u2014 'That's our Hans' (S30). Cites retained: baptism S31, confirmation S32, 1880 census S33, Copenhagen Police emigration 16 Apr 1884 S34.",
    "children_count": "8 children: 1910 census Maren 'mother of 7, 7 living' (S28) + Olga b. ~1911/12 (1920 census S29, FAG)",
    "residence_1910": "Brookville Twp, Redwood Co MN, ED 109 sheet 4A, dwelling/family 61 (S28); imm. 1884, Na; farmer, owns farm",
-   "residence_1920": "Brookville Twp, Redwood Co MN, ED 182, dwelling 54 (S29); age 55, b. Denmark, Danish mother tongue, parents b. Denmark; imm./naturalization cols partly legible (naturalized yr reads ~1897, unverified)",
+   "residence_1920": "Brookville Twp, Redwood Co MN, ED 182, sheet 3B (S29 companion, S271 image); age 55, b. Denmark, Danish mother tongue, parents b. Denmark; imm. 1884; naturalized 1897 (Na); farm owned, mortgaged (O M); dairy farm, own account (OA). Household number: S271 reads dwelling 52 / family 54; S29 had read dwelling 54 \u2014 both kept, no pick.",
    "denmarkOrigin": "RESOLVED 2026-11-03: Bjernede, Sor\u00f8 amt; b. 28 Feb 1864, bapt. 5 Jun 1864 (S31), confirmed 14 Apr 1878 (S32), 1880 census Bjernede stepson of Hans Rasmussen (S33, low-confidence), emigrated via Copenhagen 16 Apr 1884 age 20 to Springfield, Minn., contract 1015 Y (S34 index; S83 VERIFIED original register image \u2014 occupation Tjenende?/servant MEDIUM; no companions; ship not in register). Tinglev S21 WITHDRAWN.",
    "danishParents": "RECORD-SOURCED (not family-named): father Hans Pedersen (P18), hjulmand, b. 25 Feb 1833, d. 11 Sep 1867 bur. 17 Sep 1867 Bjernede age 34 (S36, S37); mother Ane Rasmusdatter (P19), b. 17 Jun 1843 Bjernede Lodsgaard(?), m. 14 Oct 1862 Bjernede (S36); she m2 Hans Rasmussen (P20) spring 1870 (S38). Alex confirmed origin place/year only.",
    "parents": [
@@ -142,7 +147,7 @@ window.PEOPLE={
    "spouses": [
     {
      "id": "P6",
-     "marriage": "1891"
+     "marriage": "11 Mar 1891, Redwood Falls"
     }
    ],
    "children": [
@@ -164,12 +169,15 @@ window.PEOPLE={
     "S155",
     "S217",
     "S236",
-    "S237"
+    "S237",
+    "S271",
+    "S272",
+    "S273"
    ],
    "status": "VERIFIED: 1900 census as Mary + FAG; maiden Jensen from Elmer MNHS/FAG",
    "familyConfirmed": "FAMILY-CONFIRMED via Michael Don Petersen (Alex's father), 2026-11-03: Elmer Hamilton Petersen's parents were Hans Peter Petersen and Maren Sophia (Jensen; 'Mary' on 1900 census). Public-record citations (FAG, MNHS, 1900 census) retained.",
    "children_born_living_1910": "7 born / 7 living, married 19 yrs (S28)",
-   "notes": " | S101 NEGATIVE this pass: no MNHS death 1937 Redwood/Brown/Lyon match for Maren Sophia; 1937 death year remains secondary/unconfirmed by free index. | S102 FAG secondary parents/sibs list; S104 1880 Nels household not found this pass; S105 sibs of Hans\u00d7Maren obits negative this pass. | S155 CANDIDATE: 'Mrs. Hans Petersen of Brookville' living Nov 1929 as Ethel's surviving mother (probable = P7). Does not prove 1937 death. S154 NEGATIVE-by-unavailability 1937 obit (Hub timeout; Gazette 1937 issues 404); free CA/Hub dig closed; 1937 death year still secondary/unconfirmed by free newspaper. | Pack 9 PARTIAL (2026-11-03): S104 (1880 not located) SUPERSEDED by S217 HIT \u2014 1880 Brookville Twp, Redwood Co MN, ED 222 p11, dw/fam 96/97: Nels Jensen 31 farmer b. Denmark, wife Mary 30 b. Denmark, dau Sophia 7 b. MN (= P7). Corroborates FAG secondary parents (S102) MED\u2192HIGH for Nels+Mary household / Sophia as daughter. Full names 'Nels Peter Jensen' / 'Anne Marie Hansen' and their years remain FAG secondary (census gives Nels / Mary only). 1880 household siblings (census only, no person cards): Anna 6, Hans ~5 (age uncertain), James 2; one further line UNREAD. | Pack 9 newspapers (2026-11-03): S236 NEG-by-structure \u2014 Redwood Gazette 1937 OCR sample (Jan 7, 14, 21; Feb 4; Jun 10; Nov 4, 11) 0 phrase hits; Jun 3 'Maren' p.8 Lucan social = not obit (LOW); S237 CA 403 / MNHS People Finder INCOMPLETE. Sampled NEG only; 1937 death year still FAG-secondary; no death date.",
+   "notes": " | S101 NEGATIVE this pass: no MNHS death 1937 Redwood/Brown/Lyon match for Maren Sophia; 1937 death year remains secondary/unconfirmed by free index. | S102 FAG secondary parents/sibs list; S104 1880 Nels household not found this pass; S105 sibs of Hans\u00d7Maren obits negative this pass. | S155 CANDIDATE: 'Mrs. Hans Petersen of Brookville' living Nov 1929 as Ethel's surviving mother (probable = P7). Does not prove 1937 death. S154 NEGATIVE-by-unavailability 1937 obit (Hub timeout; Gazette 1937 issues 404); free CA/Hub dig closed; 1937 death year still secondary/unconfirmed by free newspaper. | Pack 9 PARTIAL (2026-11-03): S104 (1880 not located) SUPERSEDED by S217 HIT \u2014 1880 Brookville Twp, Redwood Co MN, ED 222 p11, dw/fam 96/97: Nels Jensen 31 farmer b. Denmark, wife Mary 30 b. Denmark, dau Sophia 7 b. MN (= P7). Corroborates FAG secondary parents (S102) MED\u2192HIGH for Nels+Mary household / Sophia as daughter. Full names 'Nels Peter Jensen' / 'Anne Marie Hansen' and their years remain FAG secondary (census gives Nels / Mary only). 1880 household siblings (census only, no person cards): Anna 6, Hans ~5 (age uncertain), James 2; one further line UNREAD. | Pack 9 newspapers (2026-11-03): S236 NEG-by-structure \u2014 Redwood Gazette 1937 OCR sample (Jan 7, 14, 21; Feb 4; Jun 10; Nov 4, 11) 0 phrase hits; Jun 3 'Maren' p.8 Lucan social = not obit (LOW); S237 CA 403 / MNHS People Finder INCOMPLETE. Sampled NEG only; 1937 death year still FAG-secondary; no death date. | MN Pack 10: S272 marriage 11 Mar 1891 Redwood as 'Mary S Jensen'; S271 1920 Maren S 47; S273 1905 Maren S 32. | S272 IMAGE-CONFIRMED 2026-11-03 (MN Pack 10b): m. Hans Peter Petersen 11 Mar 1891 Redwood Falls MN as 'Mary S. Jensen'; witnesses Niels Jensen + J. L. Byram; no ages/parents on form. Witness Niels Jensen = possible father Nels Jensen (S217) \u2014 CANDIDATE ONLY, NOT merged.",
    "fagSiblingsSecondary": "S102 FAG secondary only (unverified): Hans Christian, Jens Peter, Ida D Christensen, John, Jennie Christina Trebesch, Emma L McPeek, Louis William, Rudolph Gerhart, Hulda Camilla"
   },
   {
@@ -341,10 +349,12 @@ window.PEOPLE={
    "id": "P11",
    "name": "Darvin Wayne Petersen",
    "birth": {
-    "date": "1932"
+    "date": "1932-03-28",
+    "place": "rural Evan, MN"
    },
    "death": {
-    "date": "2007"
+    "date": "2007-06-29",
+    "place": "Wolfeboro, Carroll Co., NH"
    },
    "parents": [
     "P3",
@@ -352,10 +362,31 @@ window.PEOPLE={
    ],
    "sources": [
     "S15",
-    "S18"
+    "S18",
+    "S278",
+    "S279",
+    "S280",
+    "S281",
+    "S284",
+    "S287",
+    "S291"
    ],
-   "status": "FAG secondary",
-   "notes": "UNVERIFIED lead 2026-11-03 (Scout MN relay of Alex in MN chat): family may be larger than listed \u2014 no dig yet; do not invent children."
+   "status": "VERIFIED: obits S278 + S280; veterans burial S279",
+   "notes": "Mother Caroline (Schultz) per S278 obit = P4. USAF, Korean War era; aviation career (S278 HIGH). Rank US Air Force 1st Lt per S279 (MED). 'Family larger' lead CLOSED by MN Pack 11: five children. Iowa Darvin Arthur Petersen 1932\u20132014 (S284) is NOT this man. FAG 212639016 (S287 HIGH) links parents Elmer Hamilton \u00d7 Caroline Alvina Minnie (Schultz) = P3/P4 (middle names FAG secondary, MED); sibling Donald P1. MNHS death index OUT-OF-RANGE (ends 2001; S291).",
+   "burial": "Bethany Lutheran Church Cemetery, Morgan, Redwood Co. MN (S278/S279; FAG 212639016 S287 HIGH)",
+   "spouses": [
+    {
+     "id": "P35",
+     "marriage": "1954-06-27, Bethany Lutheran Church, Morgan MN"
+    }
+   ],
+   "children": [
+    "P36",
+    "P37",
+    "P38",
+    "P39",
+    "P40"
+   ]
   },
   {
    "id": "P1",
@@ -376,23 +407,25 @@ window.PEOPLE={
    "spouses": [
     {
      "id": "P2",
-     "marriage": "1957-09-14, Methodist Church, Sleepy Eye"
+     "marriage": "1957-09-14, Methodist Church, Sleepy Eye, Brown Co MN (MOMS C-063)"
     }
    ],
    "children": [
-    "Rick",
+    "P12",
+    "P41",
     "P5",
-    "Chad",
-    "Bill",
-    "P12"
+    "P42",
+    "P43"
    ],
-   "notes": "US Army 15 Mar 1955-14 Mar 1957, 82nd Airborne\nUNVERIFIED lead 2026-11-03 (Scout MN relay of Alex in MN chat): family may be larger than listed \u2014 no dig yet; do not invent children.",
+   "notes": "US Army 15 Mar 1955-14 Mar 1957, 82nd Airborne\nMN Pack 11 (2026-11-03): exactly five sons (Randy, Rick, Mike, Chad, Bill) per S282/S4 \u2014 no sixth; 'family larger' lead CLOSED. Stepdaughter Carrie = Loren Jacobsen's, not Donald's. FAG S18 re-read (Pack 11b): bio says m. Janice Dohrmann 1957 Brown Co. MN \u2014 MED (FAG bio text, no index cite); SP3 US Army stone. | Pack 11c (2026-11-03): marriage HIGH via MOMS Brown Co cert C-063 (S300); FAG bio note upgraded.",
    "sources": [
     "S18",
     "S19",
     "S5",
     "S1",
-    "S2"
+    "S2",
+    "S282",
+    "S300"
    ],
    "status": "VERIFIED: MNHS 1980-MN-015396 (mother SCHULTZ) + FAG 191558268 + obits"
   },
@@ -400,19 +433,27 @@ window.PEOPLE={
    "id": "P12",
    "name": "Randy Don Petersen",
    "birth": {
-    "date": "1958"
+    "date": "1958-07-30",
+    "place": "Redwood Co. MN (FAG S289 / MNHS S290)"
    },
    "death": {
-    "date": "1958"
+    "date": "1958-10-18",
+    "place": "Redwood Co MN"
    },
    "parents": [
     "P1",
     "P2"
    ],
    "sources": [
-    "S18"
+    "S18",
+    "S283",
+    "S289",
+    "S290",
+    "S291"
    ],
-   "status": "FAG secondary (infant)"
+   "status": "VERIFIED HIGH: MNHS death index cert 1958-MN-014557 (S290) + SortedByName (S283) + FAG (S289)",
+   "notes": "MN death index mother maiden DOHRMANN (= P2). MNHS cert 1958-MN-014557; paid image NOT ordered (needs Alex yes; orders paused to ~Nov 10). Birth index OUT-OF-RANGE (S291).",
+   "burial": "Redwood Falls Cemetery Association, Redwood Falls MN; inscription '2 1/2 Months' (FAG 191558269 S289 HIGH)"
   },
   {
    "id": "P2",
@@ -423,7 +464,7 @@ window.PEOPLE={
    },
    "death": {
     "date": "2025-04-18",
-    "place": "Redwood Falls, MN"
+    "place": "Garnette Gardens, Redwood Falls, MN"
    },
    "burial": "Redwood Falls Cemetery (obit)",
    "parents": [
@@ -433,11 +474,12 @@ window.PEOPLE={
    "spouses": [
     {
      "id": "P1",
-     "marriage": "1957-09-14"
+     "marriage": "1957-09-14, Methodist Church, Sleepy Eye, Brown Co MN (MOMS C-063)"
     },
     {
      "name": "Loren Jacobsen",
-     "marriage": "1986"
+     "marriage": "1986-06-28",
+     "note": "Loren Jacobsen, predeceased Janice; obit S301 HIGH; not carded"
     }
    ],
    "sources": [
@@ -446,11 +488,14 @@ window.PEOPLE={
     "S3",
     "S4",
     "S89",
-    "S90"
+    "S90",
+    "S300",
+    "S301",
+    "S302"
    ],
-   "status": "VERIFIED (obituaries); no Find a Grave memorial found",
+   "status": "VERIFIED (obituaries S1\u2013S4/S301 + MOMS marriage S300); Find a Grave NEG (S302)",
    "parentsNote": "Wesley Edward Dohrmann (P31) & Ethel Bertha (Neubauer) Dohrmann (P32) \u2014 maiden RESOLVED S148/S149; Gent = Ethel's mother's maiden.",
-   "notes": " | Parents: Wesley Edward Dohrmann (S89) & Ethel (Neubauer) Dohrmann \u2014 maiden Neubauer RESOLVED 2026-11-03 (S148/S149); S89 \"Gent\" was her mother's maiden."
+   "notes": " | Parents: Wesley Edward Dohrmann (S89) & Ethel (Neubauer) Dohrmann \u2014 maiden Neubauer RESOLVED 2026-11-03 (S148/S149); S89 \"Gent\" was her mother's maiden. | S282 (2026-11-03) re-fetch of S1 confirms five sons Randy/Rick/Mike/Chad/Bill. | Pack 11c (2026-11-03): m. Donald 1957-09-14 Brown Co MOMS C-063 (S300 HIGH); b/d/burial re-confirmed by multiple obits (S301); FAG memorial NEG (S302); m. Loren Jacobsen 1986-06-28 (S301, note only). Obit 'Ethel (Gent)' = mother's maiden per resolved S148/S149."
   },
   {
    "id": "P5",
@@ -469,9 +514,11 @@ window.PEOPLE={
    ],
    "sources": [
     "S0",
-    "S2"
+    "S2",
+    "S282"
    ],
-   "status": "son of Janice per obit; birth date oral"
+   "status": "son of Janice per obit; birth date oral",
+   "notes": "S282 (Janice 2025 obit) lists Mike [Mary], Redwood Falls."
   },
   {
    "id": "P13",
@@ -576,7 +623,7 @@ window.PEOPLE={
     "P25",
     "P34"
    ],
-   "parentsNote": "Mother LOCKED: P25 Ane Marie Hansdatter (patronymic LOCKED). Father LOCKED (named/recorded): P34 Peder Johansen of Ringsted, udlagt Barnefader named by the mother \u2014 S51, S52 (1833 baptism), S56 (1847 confirmation); Alex 2026-11-03 via Tree Site. Biological paternity/DNA not claimed. P28/S64 (FT-1834 Peter Johansen, servant, Sankt Hans Gade) same-man LOCKED as P34 per Alex Decision B (~3:33 PM CT 2026-11-03); parent link stays P34 only. No marriage P25\u00d7P34. S63 (mother candidate same street) stays CANDIDATE. Foster father P26 Jens Nielsen (pleiefader, S56). | PRIOR NOTE: Mother: Ane Marie \u2026datter of Vals\u00f8magle, unmarried servant. CONFLICT on patronymic: HMB baptism (S51) reads Clausdatter; death (S37) reads Klaus Datt.; KMB duplicate (S52) has interlinear correction Hansd. over a struck word. Father CANDIDATE only: Peder Johansen of Ringsted, 'udlagt' (named by mother) in S51/S52 \u2014 paternity not proven. No person cards created until conflict resolved. | 1847 confirmation (S56) reads 'U\u00e6gte S\u00f8n af Pigen Ane Marie Hansd. og udlagt Barnefader Peder Johansen \u2014 Pleiefader Huusm. Jens Nielsen i Skee': adds a 3rd reading (Hansd.) \u2014 CONFLICT still OPEN, not resolved. Foster father Jens Nielsen (Skee) = not a relative by any record seen. | 2026-11-03 pass 4: Mother card P25 created with BOTH variants (Clausdatter / Hansdatter). Move lists S59/S60 give 'Ane Marie Hansd., 28, tjenestepige' going to and from Ringsted in 1832/33, which leans toward Hansd. but the CONFLICT stays OPEN. Father: NO card. FT-1834 Ringsted landsogn has 2 married Peder Johansens (45; 34 Daglejer), CANDIDATES only (S62), no match proven. Foster parents: P26 Jens Nielsen, P27 Kirsten Johansdatter (S54\u2013S58); no kinship to the mother found. | Pass 5: FT-1834 Ringsted town has CANDIDATE Ane Marie Hansdatter 27, unmarried servant, Sankt Hans Gade (S63), and CANDIDATE Peter Johansen 30, unmarried servant, same street (S64, card P28, not linked). Neither is proven.",
+   "parentsNote": "Mother LOCKED: P25 Ane Marie Hansdatter (patronymic LOCKED). Father LOCKED (named/recorded): P34 Peder Johansen of Ringsted, udlagt Barnefader named by the mother \u2014 S51, S52 (1833 baptism), S56 (1847 confirmation); Alex 2026-11-03 via Tree Site. Biological paternity/DNA not claimed. P28/S64 (FT-1834 Peter Johansen, servant, Sankt Hans Gade) same-man LOCKED as P34 per Alex Decision B (~3:33 PM CT 2026-11-03); parent link stays P34 only. No marriage P25\u00d7P34. S63 (mother candidate same street) stays CANDIDATE. Foster father P26 Jens Nielsen (pleiefader, S56). | PRIOR NOTE: Mother: Ane Marie \u2026datter of Vals\u00f8magle, unmarried servant. CONFLICT on patronymic: HMB baptism (S51) reads Clausdatter; death (S37) reads Klaus Datt.; KMB duplicate (S52) has interlinear correction Hansd. over a struck word. Father CANDIDATE only: Peder Johansen of Ringsted, 'udlagt' (named by mother) in S51/S52 \u2014 paternity not proven. No person cards created until conflict resolved. | 1847 confirmation (S56) reads 'U\u00e6gte S\u00f8n af Pigen Ane Marie Hansd. og udlagt Barnefader Peder Johansen \u2014 Pleiefader Huusm. Jens Nielsen i Skee': adds a 3rd reading (Hansd.) \u2014 CONFLICT still OPEN, not resolved. Foster father Jens Nielsen (Skee) = not a relative by any record seen. | 2026-11-03 pass 4: Mother card P25 created with BOTH variants (Clausdatter / Hansdatter). Move lists S59/S60 give 'Ane Marie Hansd., 28, tjenestepige' going to and from Ringsted in 1832/33, which leans toward Hansd. but the CONFLICT stays OPEN. Father: NO card. FT-1834 Ringsted landsogn has 2 married Peder Johansens (45; 34 Daglejer), CANDIDATES only (S62), no match proven. Foster parents: P26 Jens Nielsen, P27 Kirsten Johansdatter (S54\u2013S58); no kinship to the mother found. | Pass 5: FT-1834 Ringsted town has CANDIDATE Ane Marie Hansdatter 27, unmarried servant, Sankt Hans Gade (S63), and CANDIDATE Peter Johansen 30, unmarried servant, same street (S64, card P28, not linked). Neither is proven. | Dig 39 fold (Alex ~4:02 PM CT 2026-11-03, 'Keep Peder Johansena and hansdatter for mother. lock them'): father surname conflict CLOSED \u2014 Peder Johansen LOCK stands (S275 AO MED-HIGH); S268 FS 'Peder J\u00f8rgensen' SUPERSEDED as index error. Mother Hansdatter LOCK unchanged; Larsdatter (S276) alternate only.",
    "spouses": [
     {
      "id": "P19",
@@ -606,7 +653,12 @@ window.PEOPLE={
     "S59",
     "S60",
     "S62",
-    "S106"
+    "S106",
+    "S267",
+    "S268",
+    "S270",
+    "S275",
+    "S276"
    ],
    "status": "RECORD-SOURCED (Danish church book; not family-confirmed)",
    "notes": "Same man in marriage (S36) and death (S37): both give b. 25 Feb 1833. Vacc. 29 Jun 1839; confirmed after Jul 1847. Cause of death read 'Brystsyge/Lungebet\u00e6ndelse(?)' (LOW). Died when son Hans Peter was ~3\u00bd. Detail: shots/bjernede-family-2026-11-03/; browser-pass-bjernede-family.md Confirmed Haraldsted Kirke per S37 (entry not yet found). | NOTE: confirmation entry (S56) gives vacc. 29 Jun 1833, not 1839 \u2014 earlier '1839' may be a misreading; check S37. | 2026-11-03: mother's move chain \u2014 S106 Ringsted afgang 1833 no.5 \u2192 S59 Haraldsted tilgang 30 Mar 1833 (UNVERIFIED match; Hansdatter form). Mother patronymic conflict still OPEN.",
@@ -984,7 +1036,8 @@ window.PEOPLE={
     "S260",
     "S261",
     "S262",
-    "S263"
+    "S263",
+    "S276"
    ],
    "status": "VERIFIED as mother of P18 (S51/S52/S56); patronymic LOCKED Hansdatter 2026-11-03 (Alex own words \"lock it\", Genealogist chat); Clausdatter SUPERSEDED",
    "residences": [
@@ -1221,14 +1274,192 @@ window.PEOPLE={
     "S51",
     "S52",
     "S56",
-    "S64"
+    "S64",
+    "S267",
+    "S270",
+    "S275"
    ],
    "status": "LOCKED recorded father (udlagt) of P18 \u2014 S51/S52/S56; census same-man LOCKED as P28/S64 per Alex Decision B 2026-11-03",
-   "notes": "Created 2026-11-03 per Alex decision via Tree Site chat (~3:14 PM CT): 'treat Peder Johansen as Hans Pedersen's father \u2014 mom named him and confirmation lists him'. Named as udlagt Barnefader (putative father named by the mother) in 1833 Haraldsted baptism (S51 HMB, S52 KMB) and repeated in 1847 confirmation (S56). Paternity by DNA NOT claimed. No marriage to P25 recorded or implied. Census identity OPEN: P28 (FT-1834 Peter Johansen, Sankt Hans Gade servant, S64) is a CANDIDATE only for being this man \u2014 NOT merged. | Alex Decision B (~3:33 PM CT 2026-11-03, relayed by Genealogy Coordinator): P28 (FT-1834 Peter Johansen, 30, ugift tjenestekarl, Sankt Hans Gade, S64) is the SAME MAN as P34 \u2014 census identity merged here. Supersedes 'census identity OPEN / NOT merged' above. Still NOT DNA/biological proof beyond udlagt naming. No marriage to P25 (spouses []). S63 Ane Marie Hansdatter on same street stays CANDIDATE for P25. P28 candidate baptisms S68/S71 remain UNLINKED CANDIDATES (not added).",
+   "notes": "Created 2026-11-03 per Alex decision via Tree Site chat (~3:14 PM CT): 'treat Peder Johansen as Hans Pedersen's father \u2014 mom named him and confirmation lists him'. Named as udlagt Barnefader (putative father named by the mother) in 1833 Haraldsted baptism (S51 HMB, S52 KMB) and repeated in 1847 confirmation (S56). Paternity by DNA NOT claimed. No marriage to P25 recorded or implied. Census identity OPEN: P28 (FT-1834 Peter Johansen, Sankt Hans Gade servant, S64) is a CANDIDATE only for being this man \u2014 NOT merged. | Alex Decision B (~3:33 PM CT 2026-11-03, relayed by Genealogy Coordinator): P28 (FT-1834 Peter Johansen, 30, ugift tjenestekarl, Sankt Hans Gade, S64) is the SAME MAN as P34 \u2014 census identity merged here. Supersedes 'census identity OPEN / NOT merged' above. Still NOT DNA/biological proof beyond udlagt naming. No marriage to P25 (spouses []). S63 Ane Marie Hansdatter on same street stays CANDIDATE for P25. P28 candidate baptisms S68/S71 remain UNLINKED CANDIDATES (not added). | Dig 39 fold (Alex ~4:02 PM CT 2026-11-03, 'Keep Peder Johansena and hansdatter for mother. lock them'): father surname conflict CLOSED \u2014 Peder Johansen LOCK stands (S275 AO MED-HIGH); S268 FS 'Peder J\u00f8rgensen' SUPERSEDED as index error. Mother Hansdatter LOCK unchanged; Larsdatter (S276) alternate only.",
    "occupation": "Tjenestekarl (servant), Sankt Hans Gade, Ringsted k\u00f8bstad, FT-1834 (S64)",
    "altNames": [
     "Peter Johansen (FT-1834, S64; census card P28)"
    ]
+  },
+  {
+   "id": "P35",
+   "name": "Anna Maye Hansen (Petersen)",
+   "aka": "Amy",
+   "birth": {
+    "date": "1933-10-03",
+    "place": "rural Morgan, MN (Redwood Co.; FAG S288)"
+   },
+   "death": {
+    "date": "2014-05-10",
+    "place": "Pownal, Cumberland Co., ME (FAG S288, MED-HIGH; new vs Pack 11)"
+   },
+   "spouses": [
+    {
+     "id": "P11",
+     "marriage": "1954-06-27, Bethany Lutheran Church, Morgan MN"
+    }
+   ],
+   "children": [
+    "P36",
+    "P37",
+    "P38",
+    "P39",
+    "P40"
+   ],
+   "parents": [],
+   "sources": [
+    "S278",
+    "S280",
+    "S281",
+    "S288",
+    "S291"
+   ],
+   "status": "VERIFIED (obit S280)",
+   "notes": "Parents John & Dora per S280 obit; FAG S288 names Johannes Pilegaard 'John' Hansen (1898\u20131979) \u00d7 Dora Ellie (Hartmann) Hansen (1902\u20131985) \u2014 FAG secondary, UNVERIFIED for tree; no person cards created. Sibling Marie Dora Hansen Maas on FAG (UNVERIFIED, no card). MNHS death OUT-OF-RANGE (S291).",
+   "burial": "Bethany Lutheran Church Cemetery, Morgan, Redwood Co. MN (FAG 130109756 S288 HIGH)"
+  },
+  {
+   "id": "P36",
+   "name": "Dwight Petersen",
+   "living": true,
+   "birth": {},
+   "parents": [
+    "P11",
+    "P35"
+   ],
+   "sources": [
+    "S278",
+    "S280",
+    "S281"
+   ],
+   "status": "living \u2014 public-obit names only",
+   "notes": "Spouse (given name only, from obit): Yimei. No DOB found; do not invent."
+  },
+  {
+   "id": "P37",
+   "name": "Daniel (Dan) Petersen",
+   "living": true,
+   "birth": {},
+   "parents": [
+    "P11",
+    "P35"
+   ],
+   "sources": [
+    "S278",
+    "S280",
+    "S281"
+   ],
+   "status": "living \u2014 public-obit names only",
+   "notes": "Spouse (given name only, from obit): Kathy. No DOB found; do not invent."
+  },
+  {
+   "id": "P38",
+   "name": "Diana Petersen",
+   "living": true,
+   "birth": {},
+   "parents": [
+    "P11",
+    "P35"
+   ],
+   "sources": [
+    "S278",
+    "S280",
+    "S281"
+   ],
+   "status": "living \u2014 public-obit names only",
+   "notes": "Spouse (given name only, from obit): Jim. No DOB found; do not invent.",
+   "residence": " Married surname not found."
+  },
+  {
+   "id": "P39",
+   "name": "Douglas (Doug) Petersen",
+   "living": true,
+   "birth": {},
+   "parents": [
+    "P11",
+    "P35"
+   ],
+   "sources": [
+    "S278",
+    "S280",
+    "S281"
+   ],
+   "status": "living \u2014 public-obit names only",
+   "notes": "Spouse (given name only, from obit): Lisa. No DOB found; do not invent."
+  },
+  {
+   "id": "P40",
+   "name": "Deborah (Deb) Petersen",
+   "living": true,
+   "birth": {},
+   "parents": [
+    "P11",
+    "P35"
+   ],
+   "sources": [
+    "S278",
+    "S280",
+    "S281"
+   ],
+   "status": "living \u2014 public-obit names only",
+   "notes": "Spouse (given name only, from obit): Bill. No DOB found; do not invent.",
+   "residence": " Married surname not found."
+  },
+  {
+   "id": "P41",
+   "name": "Rick Petersen",
+   "living": true,
+   "birth": {},
+   "parents": [
+    "P1",
+    "P2"
+   ],
+   "sources": [
+    "S282",
+    "S4"
+   ],
+   "status": "living \u2014 public-obit names only",
+   "notes": "Spouse (given name only, from obit): Kim. No DOB found; do not invent. Middle initial 'D' (LinkedIn/USDOT) CANDIDATE only \u2014 not locked.",
+   "residence": "Redwood Falls MN (as of Janice 2025 obit)"
+  },
+  {
+   "id": "P42",
+   "name": "Chad Petersen",
+   "living": true,
+   "birth": {},
+   "parents": [
+    "P1",
+    "P2"
+   ],
+   "sources": [
+    "S282",
+    "S4"
+   ],
+   "status": "living \u2014 public-obit names only",
+   "notes": "Spouse (given name only, from obit): Heather. No DOB found; do not invent.",
+   "residence": "River Falls WI (as of Janice 2025 obit)"
+  },
+  {
+   "id": "P43",
+   "name": "Bill Petersen",
+   "living": true,
+   "birth": {},
+   "parents": [
+    "P1",
+    "P2"
+   ],
+   "sources": [
+    "S282",
+    "S4"
+   ],
+   "status": "living \u2014 public-obit names only",
+   "notes": "Spouse (given name only, from obit): Kimberlee. No DOB found; do not invent. DO NOT merge with S8 William Rudolph Petersen.",
+   "residence": "Hutchinson MN (as of Janice 2025 obit)"
   }
  ]
 };
@@ -3111,6 +3342,190 @@ window.SOURCES={
   "urls": [
    "https://api.rigsarkivet.dk/ao/v1/images/33865499",
    "https://api.rigsarkivet.dk/ao/v1/images/33865500"
+  ]
+ },
+ "S271": {
+  "id": "S271",
+  "flag": "APPROVED \u2014 HIGH, image-confirmed",
+  "text": "1920 US Census, Brookville Twp, Redwood Co MN, ED 182, sheet 3B, dwelling 52 / family 54, lines 52\u201357. Hans P Peterson [P6] 55, b. Denmark, imm 1884, naturalized 1897 (Na); farm owned, mortgaged (O M); dairy farm, own account (OA). Wife Maren S 47; Anna H 25; Ethel M 17; Elmer H 13; Olga M 8. Nearby same-ED Louis/Carl/Rudolph H. Petersen UNVERIFIED, not linked. S29 remains a valid companion cite for the same image (S29 had read dwelling 54 and a partly legible ~1897; that earlier read is not deleted). Archive.org reel 851 n271: https://archive.org/details/14thcensusofpopu851unit/page/n271/mode/1up ; FS: https://www.familysearch.org/ark:/61903/1:1:MWBR-VCP",
+  "urls": [
+   "https://archive.org/details/14thcensusofpopu851unit/page/n271/mode/1up",
+   "https://www.familysearch.org/ark:/61903/1:1:MWBR-VCP"
+  ]
+ },
+ "S272": {
+  "id": "S272",
+  "flag": "APPROVED \u2014 HIGH; image-confirmed Pack 10b",
+  "text": "Marriage 11 Mar 1891 at Redwood Falls, Redwood Co MN \u2014 affidavit \"Hans Peter Petersen\" (license on the same form \"Hans P. Peterson\") \u00d7 Mary S. Jensen [= P7 Maren Sophia]. Witnesses Niels Jensen and J. L. Byram, names only; no kinship. Niels Jensen is not P7's father (CANDIDATE at most, not narrated). No ages or parents on the form. Officiant not used. Original viewed: FamilySearch \"Redwood. Marriage Records April 1866\u2013May 1894,\" image 622 of 807, page 58. County: https://www.familysearch.org/ark:/61903/1:1:Q2M5-3J3S ; state: https://www.familysearch.org/ark:/61903/1:1:FD61-GLZ",
+  "urls": [
+   "https://www.familysearch.org/ark:/61903/1:1:Q2M5-3J3S",
+   "https://www.familysearch.org/ark:/61903/1:1:FD61-GLZ"
+  ]
+ },
+ "S273": {
+  "id": "S273",
+  "flag": "APPROVED \u2014 HIGH",
+  "text": "1905 Minnesota state census, Brookville Twp, Redwood Co, p.443 line 80 \u2014 Hans P Petersen 41, b. 1864 Denmark; Maren S 32; Niels A 13; Hans R 12; Anna H 10. \"Hans R.\" is given as written. Same boy as Rudolph / 1900 \"Hans O.\" is CANDIDATE only, not merged. https://www.familysearch.org/ark:/61903/1:1:SPQ3-3K3",
+  "urls": [
+   "https://www.familysearch.org/ark:/61903/1:1:SPQ3-3K3"
+  ]
+ },
+ "S274": {
+  "id": "S274",
+  "flag": "APPROVED as conflict restatement only",
+  "text": "FamilySearch Minnesota death index (restates MNHS) \u2014 Hans T. Petersen, d. 06 Sep 1922, Redwood Co, cert 011514, record 359351. Cert image unseen. Same certificate as MNHS 1922-MN-011514, not a second independent record. Conflicts with S145 newspaper \"Hans P.\"; OPEN, no pick. Display stays Hans P. / Hans Peter. Date 1922-09-06 CANDIDATE. https://www.familysearch.org/ark:/61903/1:1:V4WB-GXM",
+  "urls": [
+   "https://www.familysearch.org/ark:/61903/1:1:V4WB-GXM"
+  ]
+ },
+ "S267": {
+  "id": "S267",
+  "flag": "Dig 37 index \u2014 Side A, agrees with the lock",
+  "text": "FamilySearch Denmark Baptisms index, father Peder Johansen, on the 1833 Haraldsted baptism. Supports P34; not a new record beyond S51/S52.",
+  "urls": []
+ },
+ "S268": {
+  "id": "S268",
+  "flag": "SUPERSEDED \u2014 Dig 39",
+  "text": "FamilySearch Danmark Kirkeb\u00f8ger index reading \"Peder J\u00f8rgensen\" as father on the 1833 Haraldsted baptism, vol. 3 p. 61, film 391_3_003. Mis-index, not a competing father form. Set aside by S275.",
+  "urls": []
+ },
+ "S270": {
+  "id": "S270",
+  "flag": "Dig 38 \u2014 PARTIAL, does not settle the name",
+  "text": "FamilySearch image of Haraldsted vol. 3 p. 61, film 007220851 img 67. Baptism 31 Mar 1833 and mother Ane Marie Hansdatter of Vals\u00f8magle read HIGH; father line LOW/unread on that scan. https://www.familysearch.org/ark:/61903/3:1:3QSQ-G944-CWKT",
+  "urls": [
+   "https://www.familysearch.org/ark:/61903/3:1:3QSQ-G944-CWKT"
+  ]
+ },
+ "S275": {
+  "id": "S275",
+  "flag": "CLEARED \u2014 Dig 39",
+  "text": "AO image of Haraldsted HMB, F\u00f8dte Mandki\u00f8n 1833 no. 3. Father surname letter shapes Joh-, not J\u00f8rg-. Supports P34 Peder Johansen. https://api.rigsarkivet.dk/ao/v1/images/38697131",
+  "urls": [
+   "https://api.rigsarkivet.dk/ao/v1/images/38697131"
+  ]
+ },
+ "S276": {
+  "id": "S276",
+  "flag": "Dig 39 \u2014 NOT a mother form",
+  "text": "Alternate eye-read \"Larsdatter\" of the baptism parents cell. Discarded alongside Clausdatter. P25 Hansdatter lock unchanged.",
+  "urls": []
+ },
+ "S278": {
+  "id": "S278",
+  "flag": "HIGH",
+  "text": "West Central Tribune obituary, Darvin W. Petersen, 4 Jul 2007. Born 28 Mar 1932 rural Evan; USAF, Korean War, aviation career; married Anna Maye Hansen 27 Jun 1954 at Bethany Lutheran, Morgan; died 29 Jun 2007 Wolfeboro NH; burial Bethany Lutheran Cemetery, Morgan. https://www.wctrib.com/news/darvin-w-petersen",
+  "urls": [
+   "https://www.wctrib.com/news/darvin-w-petersen"
+  ]
+ },
+ "S279": {
+  "id": "S279",
+  "flag": "HIGH dates/burial; MED rank",
+  "text": "Interment.net Minnesota veterans burials, Darvin W. Petersen, Bethany Lutheran Cemetery, Morgan. Rank \"US Air Force 1st Lt\" is from this listing only. https://www.interment.net/united-states/minnesota/veterans-burials/transcription/644.php?page=336",
+  "urls": [
+   "https://www.interment.net/united-states/minnesota/veterans-burials/transcription/644.php?page=336"
+  ]
+ },
+ "S280": {
+  "id": "S280",
+  "flag": "HIGH",
+  "text": "Nelson-Hillestad obituary, Anna Maye (Hansen) Petersen. Born 3 Oct 1933 rural Morgan; died 10 May 2014. Parents John and Dora (Hansen) stay unverified; no cards. https://www.nelson-hillestad.com/obituaries/anna-petersen-3",
+  "urls": [
+   "https://www.nelson-hillestad.com/obituaries/anna-petersen-3"
+  ]
+ },
+ "S281": {
+  "id": "S281",
+  "flag": "HIGH, derived from S278 and S280",
+  "text": "five children of Darvin and Anna Maye \u2014 Dwight, Daniel, Diana, Douglas, Deborah. Names only; birth dates not found.",
+  "urls": []
+ },
+ "S282": {
+  "id": "S282",
+  "flag": "HIGH",
+  "text": "Janice E. Jacobsen obituary, same text as S1, plus KLGR S4. Exactly five sons: Randy, Rick, Mike, Chad, Bill. Living sons' places and spouses' given names are as of this 2025 obituary only. https://stephensfuneralservice.com/obituaries/janice-e-jacobsen/779/",
+  "urls": [
+   "https://stephensfuneralservice.com/obituaries/janice-e-jacobsen/779/"
+  ]
+ },
+ "S283": {
+  "id": "S283",
+  "flag": "HIGH",
+  "text": "Minnesota death index, Randy Don Petersen, born 30 Jul 1958, died 18 Oct 1958, Redwood County, mother Dohrmann. https://sortedbyname.com/letter_p/petersen/index_591.html",
+  "urls": [
+   "https://sortedbyname.com/letter_p/petersen/index_591.html"
+  ]
+ },
+ "S284": {
+  "id": "S284",
+  "flag": "NEG \u2014 not P11",
+  "text": "Iowa Darvin Arthur Petersen, 1932\u20132014. Not merged with Darvin Wayne Petersen.",
+  "urls": []
+ },
+ "S287": {
+  "id": "S287",
+  "flag": "HIGH",
+  "text": "Find a Grave 212639016, Darvin Wayne Petersen, Bethany Lutheran Church Cemetery, Morgan, Minnesota. https://www.findagrave.com/memorial/212639016",
+  "urls": [
+   "https://www.findagrave.com/memorial/212639016"
+  ]
+ },
+ "S288": {
+  "id": "S288",
+  "flag": "HIGH",
+  "text": "Find a Grave 130109756, Anna Maye Petersen, Bethany Lutheran Church Cemetery, Morgan. Died 10 May 2014 in Pownal, Cumberland County, Maine. https://www.findagrave.com/memorial/130109756",
+  "urls": [
+   "https://www.findagrave.com/memorial/130109756"
+  ]
+ },
+ "S289": {
+  "id": "S289",
+  "flag": "HIGH",
+  "text": "Find a Grave 191558269, Randy Don Petersen, Redwood Falls Cemetery. Stone reads \"2 1/2 Months\". The cemetery is pinned; the grave row is not. https://www.findagrave.com/memorial/191558269",
+  "urls": [
+   "https://www.findagrave.com/memorial/191558269"
+  ]
+ },
+ "S290": {
+  "id": "S290",
+  "flag": "HIGH, index",
+  "text": "Minnesota Historical Society death index, Randy Don Petersen, certificate 1958-MN-014557. Dates match S283. The certificate image was not ordered.",
+  "urls": []
+ },
+ "S291": {
+  "id": "S291",
+  "flag": "NEG \u2014 not used",
+  "text": "Minnesota Historical Society death index ends in 2001, so it cannot cover Darvin (2007) or Anna Maye (2014). The birth index does not cover Randy Don. Not a conflicting record.",
+  "urls": []
+ },
+ "S300": {
+  "id": "S300",
+  "flag": "HIGH \u2014 state index",
+  "text": "Minnesota Official Marriage System, Brown County, certificate C-063: Donald Alvin Petersen \u00d7 Janice Elaine Dohrmann, married 14 Sep 1957. Index only; certified copy not ordered. The Sleepy Eye Methodist church is obituary corroboration of the ceremony, not a parcel lock. https://moms.mn.gov/Search",
+  "urls": [
+   "https://moms.mn.gov/Search"
+  ]
+ },
+ "S301": {
+  "id": "S301",
+  "flag": "HIGH \u2014 public obituaries",
+  "text": "Janice E. Jacobsen, born 23 Jul 1938 in Sleepy Eye; died 18 Apr 2025 at Garnette Gardens, Redwood Falls; buried Redwood Falls Cemetery; married Loren Jacobsen 28 Jun 1986 (note only). https://stephensfuneralservice.com/obituaries/janice-e-jacobsen/779/ https://www.marshallindependent.com/obituaries/2025/04/janice-jacobsen/ https://www.wctrib.com/obituaries/obits/janice-e-jacobsen-3ubrjenkymyanikmkv0r https://www.myklgr.com/obituaries/janice-e-jacobsen/ https://www.nujournal.com/obituaries/2025/04/19/janice-jan-e-jacobsen/",
+  "urls": [
+   "https://stephensfuneralservice.com/obituaries/janice-e-jacobsen/779/",
+   "https://www.marshallindependent.com/obituaries/2025/04/janice-jacobsen/",
+   "https://www.wctrib.com/obituaries/obits/janice-e-jacobsen-3ubrjenkymyanikmkv0r",
+   "https://www.myklgr.com/obituaries/janice-e-jacobsen/",
+   "https://www.nujournal.com/obituaries/2025/04/19/janice-jan-e-jacobsen/"
+  ]
+ },
+ "S302": {
+  "id": "S302",
+  "flag": "NEG HIGH",
+  "text": "Find a Grave has no Janice memorial under Jacobsen, Petersen, or Dohrmann for 2025 at Redwood Falls Cemetery or site-wide in Minnesota. Cemetery grounds pin only. No individual grave pin. https://www.findagrave.com/cemetery/83131/redwood-falls-cemetery-association",
+  "urls": [
+   "https://www.findagrave.com/cemetery/83131/redwood-falls-cemetery-association"
   ]
  }
 };

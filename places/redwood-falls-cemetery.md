@@ -1,0 +1,10 @@
+# Redwood Falls Cemetery, Redwood Falls, Minnesota
+
+- **Record name:** Redwood Falls Cemetery (burial of Janice Elaine (Dohrmann) Petersen, 23 Jul 1938–18 Apr 2025, public obits S301; and burial of Randy Don Petersen, 30 Jul–18 Oct 1958; stone "2 1/2 Months"; FAG 191558269; MNHS death cert index 1958-MN-014557)
+- **Modern:** Redwood Falls Cemetery (Redwood Falls Cemetery Association), N. Swain St., Redwood Falls, MN 56283 — ~1/4 mi north of Northwood Dr. Association office (per FAG): 307 Lake Dr., Redwood Falls · 507-828-4748.
+- **Lat/lon:** 44.5510, -95.1000 (USGS National Map point 44.55096, -95.09941; OSM unnamed landuse=cemetery centroid 44.55098, -95.10022 agree ~65 m). FAG cemetery pin 44.55097, -95.10308 is ~300 m W (likely entrance/west edge). Nominatim: no named result.
+- **Map:** https://www.google.com/maps/search/?api=1&query=44.5510,-95.1000 · https://www.openstreetmap.org/?mlat=44.5510&mlon=-95.1000#map=17/44.5510/-95.1000
+- **Visit:** Take N. Swain St. north past Northwood Dr.; ask the association (507-828-4748) for the section/lot of Janice Elaine Petersen (2025) and/or Randy Don Petersen (1958) — the small "2 1/2 Months" stone — before walking rows; ask whether they share a family lot.
+- **Confidence:** Cemetery location HIGH (USGS + OSM + FAG agree). Randy burial MED-HIGH (FAG + MNHS index cited by Genealogist; FAG not fetchable by Scout). Janice burial (cemetery level) HIGH (obits S301); FAG memorial absent (S302 NEG). Both grave positions UNVERIFIED.
+- **Sources:** https://www.findagrave.com/memorial/191558269 (cited by Genealogist) · https://www.findagrave.com/cemetery/83131/redwood-falls-cemetery-association · https://minnesota.hometownlocator.com/maps/tnm-feature-map,n,redwood-falls-cemetery-4660,fcode,82010.cfm (USGS GNIS) · http://www.genemaas.net/cemeteries/redwood_falls_cemetery.htm · https://everloved.com/cemeteries/MN/redwood-falls/redwood-falls-cemetery-redwood-falls-mn-56283/ · OSM Overpass query 2026-11-03 · S301 Janice obits · S302 FAG NEG
+- **Pack:** MN Pack 11b + 11c
