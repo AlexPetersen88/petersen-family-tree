@@ -1,6 +1,9 @@
-// Layout: generation = depth from Hans (P6); spouses share generation.
-const gen={},order=[];const ROOT='P6';
-function remember(id,g){if(!P[id])return;if(gen[id]===undefined)order.push(id);if(gen[id]===undefined||g<gen[id])gen[id]=g}
+// Layout: one row per generation. Each marriage is a couple sitting side by side,
+// and the children of that marriage form one group centered under the couple bar.
+const ROOT='P6';
+const W=300,H=104,COUPLE_GAP=40,UNIT_GAP=64,ROOT_GAP=200,GY=200;
+const gen={};
+function remember(id,g){if(!P[id])return;if(gen[id]===undefined||g<gen[id])gen[id]=g}
 function climb(id,g){if(!P[id])return;remember(id,g);
  (P[id].spouses||[]).forEach(s=>{if(s.id)remember(s.id,g)});
  (P[id].parents||[]).forEach(pid=>climb(pid,g-1))}
@@ -11,28 +14,394 @@ function descend(id){if(!P[id]||gen[id]===undefined)return;const g=gen[id];
  PEOPLE.people.forEach(q=>(q.parents||[]).includes(id)&&kids.add(q.id));
  kids.forEach(c=>{if(gen[c]===undefined){remember(c,g+1);descend(c)}})}
 for(let n=0;n<4;n++)Object.keys(gen).slice().forEach(descend);
+function inTreeParents(id){return (P[id].parents||[]).filter(pid=>P[pid])}
+// Parents of someone already on the chart (in-laws the climb from P6 never reached)
+// sit one row above that person. Spouses share the row.
+for(let n=0;n<8;n++){
+  let changed=false;
+  PEOPLE.people.forEach(p=>{
+    if(gen[p.id]===undefined)return;
+    inTreeParents(p.id).forEach(pid=>{
+      if(gen[pid]===undefined||gen[pid]>gen[p.id]-1){remember(pid,gen[p.id]-1);changed=true}
+    });
+  });
+  Object.keys(gen).slice().forEach(id=>{(P[id].spouses||[]).forEach(s=>{
+    if(!s.id||!P[s.id]||gen[s.id]!==undefined)return;
+    remember(s.id,gen[id]);changed=true;
+  })});
+  if(!changed)break;
+}
 const shift=Math.min(...Object.values(gen));if(shift)for(const id in gen)gen[id]-=shift;
-PEOPLE.people.forEach(p=>{if(gen[p.id]===undefined){gen[p.id]=0;order.push(p.id)}});
-const W=300,H=104,GX=32,GY=176,pos={};const rows={};
-order.forEach(id=>(rows[gen[id]]=rows[gen[id]]||[]).push(id));
-Object.keys(rows).sort((a,b)=>a-b).forEach(g=>{const r=rows[g];
- const key=id=>{const ps=(P[id].parents||[]).filter(x=>pos[x]);if(ps.length)return ps.reduce((s,x)=>s+pos[x].x,0)/ps.length;
-  const sp=(P[id].spouses||[]).find(s=>s.id&&pos[s.id]);return sp?pos[sp.id].x:0};
- const units=[];const seen=new Set();r.forEach(id=>{if(seen.has(id))return;const u=[id];seen.add(id);
-  (P[id].spouses||[]).forEach(s=>{if(s.id&&r.includes(s.id)&&!seen.has(s.id)){seen.add(s.id);(P[s.id].parents?u.unshift:u.push).call(u,s.id)}});units.push(u)});
- units.forEach(u=>u.sort((a,b)=>(b===ROOT)-(a===ROOT)||0)&&0||u.sort((a,b)=>(P[b].parents?.some(x=>P[x])?1:0)-(P[a].parents?.some(x=>P[x])?1:0)));
- units.sort((a,b)=>Math.min(...a.map(key))-Math.min(...b.map(key)));
- const flat=units.flat();const total=flat.length*(W+GX);
- let x=-total/2;const ideal=units.map(u=>Math.min(...u.map(key)));
- let cursor=-Infinity;units.forEach((u,i)=>{let start=Math.max(cursor,(ideal[i]||0)-(u.length*(W+GX))/2+ (W+GX)/2, g==0?x:-Infinity);
-  if(!isFinite(start))start=x;u.forEach((id,j)=>pos[id]={x:start+j*(W+GX),y:g*GY});cursor=start+u.length*(W+GX)})});
+PEOPLE.people.forEach(p=>{if(gen[p.id]===undefined)gen[p.id]=0});
+function birthKey(id){
+  const raw=P[id].birth;
+  const s=typeof raw==='string'?raw:(raw&&raw.date)||'';
+  const m=String(s).match(/(\d{4})(?:-(\d{2}))?(?:-(\d{2}))?/);
+  return (m?`${m[1]}-${m[2]||'00'}-${m[3]||'00'}`:'9999-99-99')+'-'+id;
+}
+function marriageKey(a,b){
+  const hit=(P[a].spouses||[]).find(s=>s.id===b)||(P[b].spouses||[]).find(s=>s.id===a);
+  return (hit&&hit.marriage)||'';
+}
+function areSpouses(a,b){
+  return (P[a].spouses||[]).some(s=>s.id===b)||(P[b].spouses||[]).some(s=>s.id===a);
+}
+function reaches(id,goal){
+  const seen=new Set();const stack=[id];
+  while(stack.length){
+    const cur=stack.pop();
+    if(!P[cur]||seen.has(cur))continue;
+    seen.add(cur);
+    if(cur===goal)return true;
+    const kids=new Set([...(P[cur].children||[])].filter(k=>P[k]));
+    PEOPLE.people.forEach(q=>{if(inTreeParents(q.id).includes(cur))kids.add(q.id)});
+    kids.forEach(k=>stack.push(k));
+  }
+  return false;
+}
+function orderMembers(ids){
+  if(ids.length<=1)return ids.slice();
+  const set=new Set(ids);const adj={};
+  ids.forEach(id=>{adj[id]=[]});
+  ids.forEach(id=>{(P[id].spouses||[]).forEach(s=>{
+    if(s.id&&set.has(s.id)&&gen[s.id]===gen[id]&&id<s.id){adj[id].push(s.id);adj[s.id].push(id)}
+  })});
+  const blood=id=>id===ROOT?0:inTreeParents(id).length?1:2;
+  if(ids.length===2){
+    return ids.slice().sort((a,b)=>blood(a)-blood(b)||(birthKey(a)<birthKey(b)?-1:1));
+  }
+  const hub=ids.slice().sort((a,b)=>adj[b].length-adj[a].length||blood(a)-blood(b))[0];
+  if(adj[hub].length===ids.length-1&&adj[hub].length>=2){
+    const leaves=adj[hub].slice().sort((a,b)=>(marriageKey(hub,a)<marriageKey(hub,b)?-1:marriageKey(hub,a)>marriageKey(hub,b)?1:birthKey(a)<birthKey(b)?-1:1));
+    const mid=Math.ceil(leaves.length/2);
+    return leaves.slice(0,mid).concat([hub],leaves.slice(mid));
+  }
+  const ends=ids.filter(id=>adj[id].length<=1).sort((a,b)=>blood(a)-blood(b)||(birthKey(a)<birthKey(b)?-1:1));
+  const order=[];const guard=new Set();
+  let prev=null,cur=ends[0]||ids[0];
+  while(cur&&!guard.has(cur)){
+    guard.add(cur);order.push(cur);
+    const next=(adj[cur]||[]).find(n=>n!==prev);
+    prev=cur;cur=next;
+  }
+  ids.forEach(id=>{if(!guard.has(id))order.push(id)});
+  return order;
+}
+function choosePrimary(members){
+  if(members.includes(ROOT))return ROOT;
+  const anchored=members.filter(id=>inTreeParents(id).length);
+  const anc=anchored.filter(id=>reaches(id,ROOT));
+  const pool=(anc.length?anc:anchored).slice().sort((a,b)=>(birthKey(a)<birthKey(b)?-1:1));
+  return pool[0]||members[0];
+}
+function parentsMatch(id,a,b){
+  const ps=inTreeParents(id);
+  if(b)return ps.includes(a)&&ps.includes(b)&&ps.length===2;
+  return ps.length===1&&ps[0]===a;
+}
+const byGen={};
+Object.keys(gen).forEach(id=>{(byGen[gen[id]]||(byGen[gen[id]]=[])).push(id)});
+const units=[];const unitOf={};
+Object.keys(byGen).forEach(g=>{
+  const seen=new Set();
+  byGen[g].forEach(id=>{
+    if(seen.has(id))return;
+    const comp=[];const stack=[id];
+    while(stack.length){
+      const cur=stack.pop();
+      if(seen.has(cur))continue;
+      seen.add(cur);comp.push(cur);
+      (P[cur].spouses||[]).forEach(s=>{if(s.id&&gen[s.id]===gen[cur]&&!seen.has(s.id))stack.push(s.id)});
+    }
+    const members=orderMembers(comp);
+    const unit={members,primary:choosePrimary(members),gen:+g};
+    members.forEach(m=>{unitOf[m]=unit});
+    units.push(unit);
+  });
+});
+function bundleUnits(a,b){
+  return units.filter(u=>parentsMatch(u.primary,a,b)).sort((u,v)=>birthKey(u.primary)<birthKey(v.primary)?-1:1);
+}
+function claimsPrimaryChild(unit){
+  return units.some(u=>{
+    const ps=inTreeParents(u.primary);
+    return ps.length&&ps.every(pid=>unit.members.includes(pid));
+  });
+}
+function isInlawAnchor(unit){
+  if(claimsPrimaryChild(unit))return false;
+  return PEOPLE.people.some(p=>inTreeParents(p.id).some(pid=>unit.members.includes(pid)));
+}
+function extOf(posMap){
+  const ext={};
+  Object.keys(posMap).forEach(id=>{
+    const g=gen[id],L=posMap[id]-W/2,R=posMap[id]+W/2;
+    if(!ext[g])ext[g]={left:L,right:R};
+    else{ext[g].left=Math.min(ext[g].left,L);ext[g].right=Math.max(ext[g].right,R)}
+  });
+  return ext;
+}
+function mergeExt(ext,g,L,R){
+  if(g===undefined||Number.isNaN(g))return;
+  if(!ext[g])ext[g]={left:L,right:R};
+  else{ext[g].left=Math.min(ext[g].left,L);ext[g].right=Math.max(ext[g].right,R)}
+}
+// A family's children occupy the row below, so a neighbor must not sit in that
+// column either — otherwise an uncle lines up directly above a nephew.
+function shadowExt(ext){
+  const out={};
+  Object.keys(ext||{}).forEach(g=>{
+    const n=+g;
+    [n-1,n,n+1].forEach(gg=>mergeExt(out,gg,ext[g].left,ext[g].right));
+  });
+  return out;
+}
+function anchorSep(prev,cur){
+  const a=shadowExt(prev),b=shadowExt(cur);
+  let dist=0,any=false;
+  Object.keys(a).forEach(g=>{
+    if(!b[g])return;
+    any=true;
+    dist=Math.max(dist,a[g].right-b[g].left+UNIT_GAP);
+  });
+  return any?dist:UNIT_GAP;
+}
+function overlapPush(a,b){
+  const A=shadowExt(a),B=shadowExt(b);
+  let push=0;
+  Object.keys(A).forEach(g=>{
+    if(!B[g])return;
+    push=Math.max(push,A[g].right+UNIT_GAP-B[g].left);
+  });
+  return push;
+}
+function shiftExt(ext,d){
+  const out={};
+  Object.keys(ext).forEach(g=>{out[g]={left:ext[g].left+d,right:ext[g].right+d}});
+  return out;
+}
+function layoutUnit(unit,stack){
+  const empty={pos:{},ext:{0:{left:-W/2,right:W/2}}};
+  if(stack.has(unit))return empty;
+  stack.add(unit);
+  const posX={};
+  const step=W+COUPLE_GAP;
+  unit.members.forEach((id,i)=>{posX[id]=i*step});
+  const base=posX[unit.primary]||0;
+  unit.members.forEach(id=>{posX[id]-=base});
+  const bundles=[];
+  if(unit.members.length===1){
+    bundles.push({target:posX[unit.members[0]],units:bundleUnits(unit.members[0],null)});
+  }else{
+    for(let i=0;i<unit.members.length-1;i++){
+      const a=unit.members[i],b=unit.members[i+1];
+      if(!areSpouses(a,b))continue;
+      bundles.push({target:(posX[a]+posX[b])/2,units:bundleUnits(a,b)});
+    }
+    unit.members.forEach(id=>{
+      const singles=bundleUnits(id,null);
+      if(singles.length)bundles.push({target:posX[id],units:singles});
+    });
+  }
+  const placed=[];
+  bundles.forEach(b=>{
+    if(!b.units.length)return;
+    const layouts=b.units.map(u=>layoutUnit(u,stack));
+    const anchors=[0];
+    for(let i=1;i<layouts.length;i++)anchors[i]=anchors[i-1]+anchorSep(layouts[i-1].ext,layouts[i].ext);
+    const mid=(anchors[0]+anchors[anchors.length-1])/2;
+    const dx=b.target-mid;
+    const part={};
+    layouts.forEach((L,i)=>{
+      const at=anchors[i]+dx;
+      Object.keys(L.pos).forEach(id=>{part[id]=L.pos[id]+at});
+    });
+    const ext=extOf(part);
+    layouts.forEach((L,i)=>{
+      const at=anchors[i]+dx;
+      Object.keys(L.ext).forEach(g=>mergeExt(ext,+g,L.ext[g].left+at,L.ext[g].right+at));
+    });
+    let left=Infinity,right=-Infinity;
+    Object.keys(ext).forEach(g=>{left=Math.min(left,ext[g].left);right=Math.max(right,ext[g].right)});
+    placed.push({target:b.target,pos:part,ext,width:Math.max(W,right-left),center:(left+right)/2});
+  });
+  placed.sort((a,c)=>a.target-c.target);
+  const center=placed.map(b=>b.center);
+  for(let iter=0;iter<32;iter++){
+    let moved=false;
+    for(let i=0;i<placed.length-1;i++){
+      const push=overlapPush(shiftExt(placed[i].ext,center[i]-placed[i].center),shiftExt(placed[i+1].ext,center[i+1]-placed[i+1].center));
+      if(push>0.1){
+        const w1=placed[i].width*placed[i].width,w2=placed[i+1].width*placed[i+1].width,t=w1+w2||1;
+        center[i]-=push*(w2/t);center[i+1]+=push*(w1/t);moved=true;
+      }
+    }
+    if(!moved)break;
+  }
+  for(let i=1;i<placed.length;i++){
+    const push=overlapPush(shiftExt(placed[i-1].ext,center[i-1]-placed[i-1].center),shiftExt(placed[i].ext,center[i]-placed[i].center));
+    if(push>0.1)center[i]+=push;
+  }
+  placed.forEach((b,i)=>{
+    const d=center[i]-b.center;
+    if(Math.abs(d)<0.01)return;
+    Object.keys(b.pos).forEach(id=>{b.pos[id]+=d});
+    b.ext=shiftExt(b.ext,d);
+  });
+  placed.forEach(b=>{Object.keys(b.pos).forEach(id=>{if(posX[id]===undefined)posX[id]=b.pos[id]})});
+  const ext=extOf(posX);
+  placed.forEach(b=>{Object.keys(b.ext).forEach(g=>mergeExt(ext,+g,b.ext[g].left,b.ext[g].right))});
+  stack.delete(unit);
+  return {pos:posX,ext};
+}
+const pos={};
+function placeRoot(u,gap,placedRoots){
+  const L=layoutUnit(u,new Set());
+  let anchor=0;
+  placedRoots.forEach(prev=>{
+    Object.keys(L.ext).forEach(g=>{
+      if(!prev.ext[g])return;
+      const need=prev.ext[g].right+gap-L.ext[g].left;
+      if(need>anchor)anchor=need;
+    });
+  });
+  Object.keys(L.pos).forEach(id=>{pos[id]={x:L.pos[id]+anchor,y:gen[id]*GY}});
+  const abs={};
+  Object.keys(L.ext).forEach(g=>{abs[g]={left:L.ext[g].left+anchor,right:L.ext[g].right+anchor}});
+  placedRoots.push({ext:abs});
+}
+const roots=units.filter(u=>!inTreeParents(u.primary).length&&!isInlawAnchor(u));
+const bloodRoot=u=>u.members.some(id=>id===ROOT||reaches(id,ROOT));
+const placedRoots=[];
+roots.filter(bloodRoot).forEach(u=>placeRoot(u,UNIT_GAP,placedRoots));
+function shiftUnit(ids,dx){ids.forEach(id=>{if(pos[id])pos[id].x+=dx})}
+function overlaps(ids,dx){
+  return ids.some(id=>Object.keys(pos).some(o=>{
+    if(ids.includes(o)||!pos[o]||!pos[id])return false;
+    const x=pos[id].x+dx;
+    if(gen[o]===gen[id])return Math.abs(x-pos[o].x)<W+UNIT_GAP;
+    if(Math.abs(gen[o]-gen[id])!==1||Math.abs(x-pos[o].x)>=W*0.75)return false;
+    if(inTreeParents(o).some(pid=>ids.includes(pid)))return false;
+    if(inTreeParents(id).includes(o))return false;
+    return true;
+  }));
+}
+function clearShift(ids){
+  if(!overlaps(ids,0))return 0;
+  const search=dir=>{
+    let hi=24;
+    while(hi<24000&&overlaps(ids,dir*hi))hi*=2;
+    if(overlaps(ids,dir*hi))return null;
+    let lo=0;
+    while(hi-lo>2){const mid=(lo+hi)/2;if(overlaps(ids,dir*mid))lo=mid;else hi=mid}
+    return dir*Math.ceil(hi);
+  };
+  const opts=[search(1),search(-1)].filter(v=>v!==null);
+  opts.sort((a,b)=>Math.abs(a)-Math.abs(b)||a-b);
+  return opts.length?opts[0]:0;
+}
+function snapOutsideChildBands(unit){
+  const g=gen[unit.members[0]];
+  const mine=new Set(unit.members);
+  const bands=new Map();
+  Object.keys(pos).forEach(id=>{
+    if(gen[id]!==g||mine.has(id)||!pos[id])return;
+    const ps=inTreeParents(id);
+    if(!ps.length||ps.some(pid=>mine.has(pid)))return;
+    const key=ps.slice().sort().join('|');
+    if(!bands.has(key))bands.set(key,[]);
+    bands.get(key).push(id);
+  });
+  const half=(unit.members.length*W+(unit.members.length-1)*COUPLE_GAP)/2;
+  bands.forEach(members=>{
+    const mid=unit.members.reduce((s,id)=>s+pos[id].x,0)/unit.members.length;
+    const xs=members.map(id=>pos[id].x);
+    const left=Math.min(...xs)-W/2,right=Math.max(...xs)+W/2;
+    if(mid+half<=left+1||mid-half>=right-1)return;
+    const toRight=(right+UNIT_GAP+half)-mid;
+    const toLeft=mid-(left-UNIT_GAP-half);
+    shiftUnit(unit.members,Math.abs(toRight)<=Math.abs(toLeft)?toRight:-toLeft);
+  });
+}
+units.filter(isInlawAnchor).sort((a,b)=>a.gen-b.gen||(a.primary<b.primary?-1:1)).forEach(unit=>{
+  const kids=PEOPLE.people.filter(p=>pos[p.id]&&inTreeParents(p.id).some(pid=>unit.members.includes(pid)));
+  if(!kids.length)return;
+  const local={};
+  unit.members.forEach((id,i)=>{local[id]=i*(W+COUPLE_GAP)});
+  const links=unit.members.filter(id=>kids.some(k=>inTreeParents(k.id).includes(id)));
+  const focus=links.length?links:unit.members;
+  const mid=focus.reduce((s,id)=>s+local[id],0)/focus.length;
+  const target=kids.reduce((s,k)=>s+pos[k.id].x,0)/kids.length;
+  unit.members.forEach(id=>{pos[id]={x:local[id]-mid+target,y:gen[id]*GY}});
+  snapOutsideChildBands(unit);
+  const dx=clearShift(unit.members);
+  if(dx)shiftUnit(unit.members,dx);
+  snapOutsideChildBands(unit);
+  const again=clearShift(unit.members);
+  if(again)shiftUnit(unit.members,again);
+});
+const seenExt={};
+Object.keys(pos).forEach(id=>mergeExt(seenExt,gen[id],pos[id].x-W/2,pos[id].x+W/2));
+placedRoots.push({ext:seenExt});
+roots.filter(u=>!bloodRoot(u)).forEach(u=>placeRoot(u,ROOT_GAP,placedRoots));
+let edge=0;
+Object.keys(pos).forEach(id=>{edge=Math.max(edge,pos[id].x+W/2)});
+PEOPLE.people.forEach(p=>{
+  if(pos[p.id])return;
+  pos[p.id]={x:edge+ROOT_GAP+W/2,y:gen[p.id]*GY};
+  edge=pos[p.id].x+W/2;
+});
 const NS='http://www.w3.org/2000/svg',vp=document.getElementById('vp');
 const el=(t,a,p=vp)=>{const e=document.createElementNS(NS,t);for(const k in a)e.setAttribute(k,a[k]);p.appendChild(e);return e};
-const done=new Set();PEOPLE.people.forEach(p=>(p.spouses||[]).forEach(s=>{if(!s.id||!pos[s.id])return;const k=[p.id,s.id].sort().join();if(done.has(k))return;done.add(k);
- const a=pos[p.id],b=pos[s.id];el('line',{class:'marr',x1:Math.min(a.x,b.x)+W/2,y1:a.y,x2:Math.max(a.x,b.x)-W/2,y2:b.y})}));
-PEOPLE.people.forEach(c=>{const ps=(c.parents||[]).filter(x=>pos[x]);if(!ps.length)return;
- const mx=ps.reduce((s,x)=>s+pos[x].x,0)/ps.length,my=pos[ps[0]].y+(ps.length>1?0:H/2),t=pos[c.id];
- const midY=(my+t.y-H/2)/2+H/4;el('path',{class:'edge',d:`M${mx},${my} V${midY} H${t.x} V${t.y-H/2}`})});
+function drawTreeLinks(){
+  const groups=new Map();
+  PEOPLE.people.forEach(c=>{
+    const ps=inTreeParents(c.id).filter(id=>pos[id]);
+    if(!ps.length||!pos[c.id])return;
+    const key=ps.slice().sort().join('|')+'@'+gen[c.id];
+    if(!groups.has(key))groups.set(key,{parents:ps.slice(),kids:[]});
+    groups.get(key).kids.push(c.id);
+  });
+  groups.forEach(({parents,kids})=>{
+    const dropX=parents.reduce((s,id)=>s+pos[id].x,0)/parents.length;
+    const parentY=parents.reduce((s,id)=>s+pos[id].y,0)/parents.length;
+    const yStart=parents.length>1?parentY:parentY+H/2;
+    const xs=kids.map(id=>pos[id].x).sort((a,b)=>a-b);
+    const left=xs[0],right=xs[xs.length-1];
+    const childTop=Math.min(...kids.map(id=>pos[id].y))-H/2;
+    const below=parentY+H/2+16;
+    let busY=childTop-18;
+    if(busY<below+14)busY=(below+childTop)/2;
+    const n=v=>Math.round(v*10)/10;
+    // Leave the marriage bar downward, then cross to the children so a
+    // neighboring couple does not look like the parent of this set.
+    let d=`M${n(dropX)},${n(yStart)} V${n(Math.min(below,busY))}`;
+    const overKids=dropX>=left-4&&dropX<=right+4;
+    if(!overKids){
+      const land=dropX<left?left:right;
+      d+=` H${n(land)}`;
+      if(busY>below+1)d+=` V${n(busY)}`;
+    }else if(busY>below+1){
+      d+=` V${n(busY)}`;
+    }
+    if(right-left>0.5)d+=` M${n(left)},${n(busY)} H${n(right)}`;
+    kids.slice().sort((a,b)=>pos[a].x-pos[b].x).forEach(id=>{
+      d+=` M${n(pos[id].x)},${n(busY)} V${n(pos[id].y-H/2)}`;
+    });
+    el('path',{class:'edge',d});
+  });
+  const seen=new Set();
+  PEOPLE.people.forEach(p=>{(p.spouses||[]).forEach(s=>{
+    if(!s.id||!pos[s.id]||!pos[p.id])return;
+    const key=[p.id,s.id].sort().join('|');
+    if(seen.has(key))return;
+    seen.add(key);
+    const a=pos[p.id],b=pos[s.id];
+    const y=(a.y+b.y)/2;
+    el('line',{class:'marr',x1:Math.min(a.x,b.x)+W/2,y1:y,x2:Math.max(a.x,b.x)-W/2,y2:y});
+  })});
+}
+drawTreeLinks();
 
 function shortName(name){
   let short=name.startsWith('(')?name.replace(/^\(([^)]*)\)\s*/,'$1 '):name.replace(/\s*\([^)]*\)/g,'');
@@ -133,21 +502,29 @@ function visibleBox(){
   const cover=coverPx();
   return {w:r.width,h:Math.max(72,r.height-cover)};
 }
-function desiredScale(box){
+function mateIds(id){
+  return (P[id].spouses||[]).map(s=>s.id).filter(sid=>sid&&pos[sid]&&gen[sid]===gen[id]);
+}
+function focusFrame(id){
+  const p=pos[id];
+  const xs=[p.x,...mateIds(id).map(sid=>pos[sid].x)];
+  return {x:(Math.min(...xs)+Math.max(...xs))/2,y:p.y,span:Math.max(...xs)-Math.min(...xs)+W};
+}
+function desiredScale(box,id){
   const mobile=MOBILE();
-  const floor=(mobile?16:14)/16;
-  const raw=mobile?(box.w*0.86)/W:box.w/((W+GX)*3);
-  return Math.min(mobile?1.4:1.25,Math.max(floor,raw));
+  const span=focusFrame(id).span;
+  const fit=(box.w*(mobile?0.92:0.8))/span;
+  return Math.min(mobile?1.15:1.2,Math.max(mobile?0.34:0.42,fit));
 }
 function viewPerson(id,opts={}){
   const p=pos[id];if(!p)return;
   const box=visibleBox();
   if((box.w<40||box.h<40)&&(opts._try||0)<8){requestAnimationFrame(()=>viewPerson(id,{...opts,_try:(opts._try||0)+1}));return}
   if(box.w<40)return;
-  const next=desiredScale(box);
-  if(opts.force||k<((MOBILE()?16:14)/16))k=next;
-  tx=box.w/2-k*p.x;
-  ty=box.h*0.46-k*p.y;
+  const frame=focusFrame(id);
+  if(opts.force)k=desiredScale(box,id);
+  tx=box.w/2-k*frame.x;
+  ty=box.h*(MOBILE()?0.32:0.34)-k*frame.y;
   apply();
 }
 function zoom(f,cx,cy){
