@@ -120,3 +120,9 @@
 - Jens Nielsen (P26) and Kirsten Johansdatter (P27) married 30 Oct 1818 at Særløse Kirke (S310). He was 26 and *tjenende* near Lejre. She was 22 and *tjenende hos gårdmand* at Tølstrup. No parents are named on the entry.
 - They are Hans Pedersen's verified foster parents. Kinship to Ane Marie Hansdatter (P25) or to Peder Johansen (P34) stays UNVERIFIED. Do not call them blood parents or siblings of the named father.
 - No visit pin for Særløse, Tølstrup, or Lejre. Dig 40–43, Day B, and farm coordinates stay out.
+
+## Dig 47 / S312 and S322 (2026-11-03) — Genealogist CLEAR, thin
+- Ane Marie Hansdatter (P25) was raised by foster parents Erik Rasmussen and Maren Hansdatter of Walsømagle. Haraldsted confirmation 1820, girls row 11, writes *Pleiefd.* (S312, HIGH). The farmer title *Gmd.* is MED. Birth 23 Mar 1805 stays CANDIDATE. Birth parents stay unknown. Her baptism (Dig 25) is still missing. Blood kinship to Erik or Maren stays UNVERIFIED. No person cards for them.
+- This Maren Hansdatter is not the Maren Hansdatter in the 1797 Haraldsted betrothal (S222). That couple stays a separate candidate.
+- Only the existing Valsømagle village pin is used (55.4933, 11.8213). No farm or house pin.
+- Kirsten Johansdatter (P27): a Særløse baptism of 10 Jan 1796, father Johan Mattisen/Mattiesen of Tolstrup, mother unnamed, is a CANDIDATE only (S322). Not locked. No kinship to P25 or P34. No new Særløse or Tølstrup pin.
