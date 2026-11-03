@@ -27,7 +27,7 @@ So here is a baby with a big question mark about his father. What would happen t
 
 Before his first birthday, Hans was living somewhere new.
 
-Three miles from where he was born, in a village called Skee, stood the cottage of Jens Nielsen and his wife, Kirsten. Hans became their foster child. That means they raised him, even though they were not his birth parents.
+Three miles from where he was born, in a village called Skee, stood the cottage of Jens Nielsen and his wife, Kirsten. Hans became their foster child. That means they raised him, even though they were not his birth parents. Long before Hans was born — on October 30, 1818 — Jens and Kirsten had married in Særløse church. He was twenty-six and working in service near Lejre; she was twenty-two and working for a farmer at Tølstrup. The books do not say they were related to Hans’s mother or to the man named as his father.
 
 Jens was a wheelwright. A wheelwright builds and fixes wooden wheels for wagons and carts. In a world with no cars, wagons were everything, and so was the person who kept their wheels turning.
 

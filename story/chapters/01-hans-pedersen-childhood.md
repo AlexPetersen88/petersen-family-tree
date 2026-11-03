@@ -28,12 +28,14 @@ Denmark in 1833 was still an absolute monarchy: the king ruled without a parliam
 
 Hans did not grow up with his mother. On the census of 18 February 1834, when he was one year old, he was living in the village of Skee in Haraldsted parish, about 3 miles straight-line from Valsømagle where he was born and about 3 miles from Haraldsted church. He was listed as a *pleiebarn* (foster child) in the household of Jens Nielsen, a cottager (*husmand*) and wheelwright, and his wife Kirsten Johansdatter (S54).
 
+Those foster parents had married long before Hans was born. On 30 October 1818, in Særløse Kirke, bachelor Jens Nielsen, then 26 and *tjenende* (serving) near Lejre, married Kirsten Johansdatter, then 22 and *tjenende hos gårdmand* (serving in a farmer’s household) at Tølstrup (S310). The marriage entry names no parents for either of them. Genealogist has cleared this couple as Hans’s verified foster parents (P26 and P27). Nothing in that record — or elsewhere cleared so far — shows that Jens or Kirsten were kin to Ane Marie Hansdatter or to the named father Peder Johansen; that kinship stays unverified (S310).
+
 He was still there at the next two censuses:
 
 - **1 February 1840:** "Hans Pedersen, 6, unmarried, foster child" in the household of Jens Nielsen, 49, and Kirsten, 44 (S55).
 - **1 February 1845:** "Hans Pedersen, 12," born in the parish, now called a *pleiesøn* (foster son) (S57).
 
-So from his first year until at least age twelve, the cottage of Jens and Kirsten in Skee was his home (S54, S55, S57). No record found so far shows that the foster parents were related to him or to his mother.
+So from his first year until at least age twelve, the cottage of Jens and Kirsten in Skee was his home (S54, S55, S57, S310). No cleared record shows that the foster parents were related to him, to his mother, or to Peder Johansen.
 
 The records show that Jens Nielsen worked as a wheelwright (S54). Many years later, Hans himself would be a wheelwright, a *hjulmand* (S36, S37). The sources do not say who taught him the trade. We can only note that he grew up in a wheelwright's home, and that by 1850 Jens Nielsen was still entered as *huusmand* and, in a hard-to-read word, perhaps *hjulmager* (S58). The thread of the trade runs unbroken from the foster father's cottage to Hans's own marriage entry fifteen years later (S36).
 
@@ -53,5 +55,6 @@ The parsonage still stands about 80 metres southeast of Haraldsted church, at Ha
 - Where Ane Marie Hansdatter went in Ringsted after she left Haraldsted around 1 May 1833 is still open. No Ringsted arrival entry has been found (S151; S108, S157 negative).
 - Who Ane Marie Hansdatter’s parents were, and when exactly she was born, is still open. Her patronymic is locked as Hansdatter (P25), but 23 March 1805 is only a CANDIDATE birth date. A Valsømagle couple, Hans Pedersen and Maren Hansdatter, betrothed at the Haraldsted parsonage in 1797 (S222), are a CANDIDATE pair for her parents only — her baptism is missing, and they are not locked as her parents.
 - Whether the Ane Marie Hansdatter, 27, *tjenestepige*, on Sankt Hans Gade in 1834 (S63) is Hans's mother is not proven; she is a CANDIDATE match for P25 only, and the census does not place her in Peter Johansen's household.
+- Whether foster parents Jens Nielsen and Kirsten Johansdatter (married 30 Oct 1818 at Særløse Kirke, S310) were kin to Ane Marie Hansdatter or to Peder Johansen remains unverified; Dig J clears only the marriage for P26/P27 as foster parents, not blood kinship.
 - At the census of 1 February 1850 Hans, then about 17, was no longer in the Skee foster household (S58). Where he was living that year has not been found.
 - The years between 1850 and 1862 are blank in our records. The next time we see him, he is a young man working at Bjernedegaard in Bjernede parish (Chapter 2).
