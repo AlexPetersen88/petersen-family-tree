@@ -31,6 +31,11 @@
 </header>
 <div class="banner"></div>
 <div class="toolbar">
+<div class="scope" role="group" aria-label="Tree scope">
+<button id="scopefocus" type="button" aria-pressed="true" aria-label="Focus. Shows parents, spouse, children, and siblings.">Focus</button>
+<button id="scopefull" type="button" aria-pressed="false">Show full tree</button>
+</div>
+<p id="scopestatus" class="sr" aria-live="polite">Focus on Hans Peter Petersen. Showing parents, spouse, children, and siblings.</p>
 <details class="legend" id="legend">
 <summary>Key</summary>
 <div class="legend-body" id="legendbody">
@@ -38,6 +43,7 @@
 <p><span class="badge badge-records" data-badge="records"><span class="badge-label">Records</span></span> Record-sourced, not confirmed by family</p>
 <p><span class="badge badge-candidate" data-badge="candidate"><span class="badge-label">Candidate</span></span> Candidate, not proven</p>
 <p><span class="badge badge-living" data-badge="living"><span class="badge-label">Living</span></span> Living person</p>
+<p class="legend-help">Focus shows parents, spouse, kids, and siblings. Show full tree for everyone else.</p>
 <p class="legend-help">A bar joins a couple. Their children hang under that bar. Drag or pinch to move. Tap a person for details.</p>
 </div>
 </details>
