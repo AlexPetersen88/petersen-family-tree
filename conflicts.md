@@ -126,3 +126,8 @@
 - This Maren Hansdatter is not the Maren Hansdatter in the 1797 Haraldsted betrothal (S222). That couple stays a separate candidate.
 - Only the existing Valsømagle village pin is used (55.4933, 11.8213). No farm or house pin.
 - Kirsten Johansdatter (P27): a Særløse baptism of 10 Jan 1796, father Johan Mattisen/Mattiesen of Tolstrup, mother unnamed, is a CANDIDATE only (S322). Not locked. No kinship to P25 or P34. No new Særløse or Tølstrup pin.
+
+## Dig J / S326 (2026-11-03) — Genealogist CLEAR, thin
+- A boy Haagen was baptized 28 Jul 1799 at Særløse, son of Johan Mathiesen of Tølstrup, mother unnamed (S326). Same father-on-record as Kirsten's candidate baptism (S322). Candidate brother only. Not locked. No person card.
+- On 11 Feb 1795 Johan buried an unnamed wife, age 32 (S326). Context only: a possible earlier marriage, so Kirsten (baptized Jan 1796) may be from a later marriage. That inference is CANDIDATE, not locked. No mother is named.
+- No kinship to Ane Marie (P25) or Peder Johansen (P34). Kept apart from Erik Rasmussen × Maren Hansdatter (S312). No Særløse, Tølstrup, or Lejre pin. Day B held. Dig 40–43 stay out.
