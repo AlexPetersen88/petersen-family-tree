@@ -153,13 +153,42 @@ Added RECORD-SOURCED (amber, not family-confirmed) cards from browser-pass-bjern
 
 - 2026-11-03 ~09:05 CST — Sync: added S50 (1884 skøde + mortgage, matr. 5a Bjernedehuse, bsid=147378). people.json: P20 property (verified 1884; 1855 strong candidate), P21/P22 heirs (S50), P19 residence inferred, P6 childhood residence inferred/candidate. P18 ownership of 5a rejected. Rebuilt data.js; pushed to GitHub Pages.
 
-## 2026-11-03 — Hans Pedersen (P18) childhood sync (S51–S57)
-74. Merged verified Haraldsted childhood into P18 only. Birth 25 Feb 1833 Valsømagle, Haraldsted Sogn (S51, S52, S53). Baptism Palm Sunday 1833, Haraldsted, uægte (S51, S52). Foster son (pleiebarn/pleiesøn) of husmand/hjulmager Jens Nielsen & Kirsten Johansdatter in Skee on the 1834, 1840, and 1845 censuses (S54, S55, S57). Confirmation 11 Apr 1847, Haraldsted, boys no. 3, links pleiefader Jens Nielsen (S56). Occupation, death, burial, and marriage to Ane Rasmusdatter left as already recorded.
-75. NOT resolved at that step: mother's patronymic (Clausdatter / Klaus Datt. / Hansd.) stays an open conflict; Peder Johansen of Ringsted stays a candidate udlagt father only. Vaccination discrepancy left open (confirmation S56 says 29 Jun 1833; older notes said 29 Jun 1839).
+- 2026-11-03: P22 Ane Marie pass. Searched Bjernede marriages and deaths 1892–1920 (bsid 0148390, 0148391) and the emigrant index for all name variants 1888–1910. Found no match, so her fate stays UNKNOWN. Confirmed P21 emigrated alone to Sleepy Eye on 18/6 1889 (contract 4232 Y). people.json left unchanged. Details are in browser-pass-ane-marie.md.
 
-## 2026-11-03 — P18 mother and foster parents (S51–S62)
-76. Added P25 Ane Marie Hansdatter / Clausdatter as P18's mother (parents: [P25]). Both surname forms are on the card (altNames). Patronymic CONFLICT stays OPEN. Added P26 Jens Nielsen and P27 Kirsten Johansdatter as foster parents only (fosterParents: [P26, P27]), not blood kin. Peder Johansen still has no card; two 1834 Ringsted landsogn namesakes are candidates only (S62). Ane Bolette Knudsdatter (S61) is not added.
-77. Sources S51–S62 synced. Occupation, death, burial, and marriage of P18 unchanged. 1850 census: Hans is not in the Skee foster household (S58).
+## 2026-11-03: Hans Pedersen (P18) origins pass
+- Birthplace Valsømagle = Haraldsted Sogn, Ringsted Herred (Trap 5). VERIFIED.
+- Baptism FOUND: Haraldsted HMB 1814–45, img 38697131, 1833 no. 3 (S45), and KMB 1814–42 bsid 150801, img 25012287, 1833 no. 2 (S46). Uægte (illegitimate) son, b. 25 Feb 1833, bapt. Palm Sunday 31 Mar 1833. Mother Ane Marie Clausdatter of Valsømagle; udlagt (named) father Peder Johansen, servant/bachelor of Ringsted. Vacc. 29 Jun 1839 matches the 1862 marriage.
+- Death crop re-read: "Søn af Ane Marie Klaus Datt."; confirmed Haraldsted Kirke.
+- people.json P18: mother set to Clausdatter (verified, two sources). Father recorded as CANDIDATE only.
+- Census 1834 (bsid 2405) located, not read. 1840–60 censuses and the confirmation are still open. Details: browser-pass-hans-pedersen-father.md
 
-## 2026-11-03 — candidate father card (S63–S64), not linked
-78. P28 Peter (Peder) Johansen added as CANDIDATE ONLY (S64, with the married landsogn namesakes in S62). Not in P18.parents or fosterParents; children empty. P25 cites a possible 1834 Ringsted town match, Ane Marie Hansdatter 27, unmarried servant, Sankt Hans Gade (S63); not proven. Surname conflict on P25 stays open. Foster parents remain P26 and P27.
+## 2026-11-03 ~09:35 CST: Source ID fix — Haraldsted baptism renumbered S51–S53 (S45–S47 already used for Ane second-family).
+
+## 2026-11-03 FT-1834 Haraldsted (bsid 2405) Valsømagle scan: negative
+- All of Valsømagle read (imgs 83984–83990, 203 persons). No Ane Marie + infant Hans. Remaining parish pages 83991–84009 not read. No new sources added, so no S54. people.json unchanged. Mother's patronymic stays CONFLICT. Confirmation, FT-1840 and FT-1845 not yet done.
+- 2026-11-03 (P18 pass 3): FT-1834 Haraldsted finished. Skee hh 32 Pleiebarn Hans Pedersen 1 (S54) linked by the 1847 confirmation (S56, KMB 150802 img 25013123; foster father Huusm. Jens Nielsen i Skee). Same boy found in FT-1840 bsid 5212 Skee hh 17, age 6 (S55) and in FT-1845 bsid 7005 Skee hh 99, age 12, Pleiesøn (S57). The confirmation reads mother "Ane Marie Hansd."; the CONFLICT stays open. people.json P18 updated (backup people.prev-2026-11-03i.json). Next lead: Ringsted town (not pursued).
+- 2026-11-03 (P18 pass 4: parents and foster family): FT-1850 Skee hh 53 (S58) has foster parents Jens Nielsen 60 and Kirsten Johansdatter 53, son Hagen 15, and Pleiebarn Hans Jensen 6. Hans Pedersen has left by 1850. In the KMB move lists, Ane Marie Hansd., 28, tjenestepige, moved out to Ringsted around the turn of 1832/33 (S60) and came back from Ringsted on 30 Mar 1833 (S59), the day before the baptism. This fits a birth around 1804–05 and favours the patronymic "Hansd." Sponsor "Ane Bolette" is Knudsd. in the move lists (S61), which weakens the sister idea. FT-1834 Ringsted landsogn has two married Peder Johansens, ages 45 and 34 (S62, CANDIDATES only). Ringsted købstad (town) was not scanned. Backup people.prev-2026-11-03j.json; cards P25 (mother), P26 and P27 (foster parents) added; site rebuilt.
+- 2026-11-03 (P18 pass 5): Skimmed FT-1834 Ringsted købstad, all 5 street units (33 images). CANDIDATES: Ane Marie Hansdatter 27, ugift, servant, Sankt Hans Gade (S63); Peter Johansen 30, ugift, servant, Sankt Hans Gade p. 328 (S64). The census gives no birthplaces, so neither is proven. Age conflict: 27 in Feb 1834 vs 28 in the 1833 move lists. Card P28 added as CANDIDATE only, NOT linked as parent. Sankt Bendts church books NOT searched. Backup people.prev-2026-11-03k.json; site rebuilt.
+
+## Pass 6 — 2026-11-03 (Ringsted Sankt Bendts church books)
+- Found the Ringsted Sogn volumes on Rigsarkivet AO: bsid 154778–154815 (154779 FVD 1741–1805; 154780 FKVD 1805–14; 154782 FK 1814–49; 154787 VD 1814–49; 154788 J TA 1834–49). See S65 and S66.
+- Tilgang/afgang (arrivals/departures) 1832–34: the AO J TA volume found STARTS in 1834 (S65), so the 1832/33 moves are not in it. The 1830–48 J TA book (register 2-402-005 per denjyskekirkebog.dk) was NOT located in the AO bsid range this pass. No hit.
+- Baptisms c.1803–05: located (S66, images about 183–194, and the illegitimate section about 195–205), but they could not be read reliably. No hit, and nothing ruled out.
+- FT-1840 Ringsted købstad (market town) and the Haraldsted deaths 1845–70: not reached.
+- P28 stays CANDIDATE. Nothing ties him to Hans's baptism. The mother-surname CONFLICT (Clausdatter vs Hansdatter) stays OPEN. people.json was backed up (-l) and its content is unchanged.
+- Next: read bsid 154779 images 183–194 and 154780 (1805) at full resolution; find the 1830–48 J TA volume (try the Ministerialbog series, below 154778, or the Landsogn); and FT-1840 Ringsted.
+
+## 2026-11-03 Pass 7
+- Read bsid 154779 baptisms at full resolution. S67 (Ane Marie, dau. of Hans Larsen, 1804) and S68 (Peder, son of Johan Friderichsen, Torped, 1804) were added as CANDIDATES; S69 is weak; S70 records the negatives. people.json was backed up to people.prev-2026-11-03m.json, and only notes and sources were added to P25 and P28. No links or status changed. CONFLICT stays OPEN.
+- Next: img 186–188 (Jan–Aug 1803); bsid 154780 for 1805; the 1830–48 J TA volume; FT-1840 Ringsted; Haraldsted deaths; FT-1834 Torped, to see if Johan Friderichsen's family is there (to test S68).
+
+## Pass 8 (2026-11-03)
+- 1803 Jan–Aug (bsid 154779 imgs 186–188): CANDIDATE Peter Johansen bapt. 9 May 1803, son of Justitsraad P. J. de Neergaard (S71). Gentry; identity with S64 servant doubtful. Not linked.
+- 1805 → Jan 1806 (bsid 154780 imgs 3–7): negative (S72).
+- FT-1834 Torped (bsid 2969 imgs 3–7): negative; Ane Marie Hansdatter 21 in house 11 is an age mismatch (S73).
+- Not done: 1830–48 tilgang/afgang 1832–34, FT-1840 Ringsted town, Haraldsted deaths 1845–70.
+- Mother-surname conflict OPEN; P28 CANDIDATE.
+
+## 2026-11-03 Kin scout (collateral)
+- Wrote scout-kin-2026-11-03.md. New leads: Alice M. (Dohrmann) Murphy funeral card (USGenWeb) names a brother Wesley Dohrmann, a possible aunt of P2 (MED). The Paul Rasmussen 1918–2010 obituary names his father Rasmus Peter Rasmussen of Sleepy Eye/Eden Twp, a possible trace of P21 (LOW, CANDIDATE; conflicts with a FamilySearch 1883–1953 profile). Geske SSDI cluster at Wabasso (LOW).
+- FAG and MNHS searches were blocked for the fetch tool and need a browser pass. people.json NOT edited.
