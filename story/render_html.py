@@ -248,6 +248,7 @@ def chrome(current):
 <nav class="story-companions" aria-label="Story companions">{''.join(companion_links)}</nav>
 <nav class="story-files" aria-label="Downloads">
 <a href="../downloads/Petersen-Family-Story.pdf">Story PDF</a>
+<a href="../downloads/Petersen-Family-Story-Kids.pdf">Kids story PDF</a>
 <a href="../downloads/Denmark-Trip-Itinerary.pdf">Denmark trip PDF</a>
 </nav>
 </div>"""
@@ -399,6 +400,7 @@ def render():
 <section class="download-block" aria-label="Downloads">
 <h3>Downloads</h3>
 <a class="download-card" href="../downloads/Petersen-Family-Story.pdf"><span class="download-kicker">PDF</span><span class="download-title">Petersen family story</span><span class="download-sum">The four chapters, as a file.</span></a>
+<a class="download-card" href="../downloads/Petersen-Family-Story-Kids.pdf"><span class="download-kicker">PDF</span><span class="download-title">Petersen family story for kids</span><span class="download-sum">The same cleared facts, for ages 9–11.</span></a>
 <a class="download-card" href="../downloads/Denmark-Trip-Itinerary.pdf"><span class="download-kicker">PDF</span><span class="download-title">Denmark trip itinerary</span><span class="download-sum">Genealogist-approved places only.</span></a>
 </section>"""
     index_html = page("Story · Petersen Family", "index", index_body)

@@ -4,7 +4,7 @@
 
 ## Leaving through Copenhagen, April 1884
 
-On 16 April 1884, the Copenhagen Police emigration register recorded "Hans Peter Petersen" of Bjernede, Sorø, age 20, occupation read as servant (medium confidence), heading for Springfield, Minn., under contract no. 1015 Y, with no companions listed on that contract (S83; earlier index summary S34). The register does not say why he left, and this story does not guess. Every later American census agrees that he came in 1884 (S27, S28).
+On 16 April 1884, the Copenhagen Police emigration register recorded "Hans Peter Petersen" of Bjernede, Sorø, age 20, occupation entered as *Tjenende(?)* — in service, a hired servant (medium-confidence reading), heading for Springfield, Minn., under contract no. 1015 Y, with no companions listed on that contract (S83; earlier index summary S34). The register does not say why he left, and this story does not guess. Every later American census agrees that he came in 1884 (S27, S28).
 
 He was about two months past his twentieth birthday (S31, S34). His father had died when he was three (S37). At the time he left, his mother and stepfather were already gone (S45, S46), but the 1884 sale of his stepfather's property was still months away (S50).
 
