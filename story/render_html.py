@@ -65,10 +65,12 @@ URL_RE = re.compile(r"https://[^\s)<]+")
 CODE_RE = re.compile(r"`([^`]+)`")
 CHAPTER_RE = re.compile(r"Chapter ([1-4])")
 MAP_RE = re.compile(r"\[map\]\((https://[^)\s]+)\)")
-# Cleared HIGH visit pins only. Held pins (matr. 5a GPS, Brookville farm,
-# Dig 21 / 1807 person-link) are intentionally absent.
+# Cleared visit pins only. Held pins (matr. 5a GPS, Brookville farm,
+# Dig 21 / 1807 person-link, living residences, a Wolfeboro hospital
+# or house) are intentionally absent.
 # Sankt Hans Gade is explicit: the [map] link sits on P34's 1834 residence
 # only. Phrase scan must not attach it to the S63 candidate sentence.
+# Pack 11 pins are explicit too: Evan village, Bethany church, Wolfeboro town.
 PINS = [
     {
         "id": "bjernede-kirke",
@@ -139,6 +141,39 @@ PINS = [
         "marks": ("55.4445", "11.7908"),
         "explicit": True,
         "caption": "P34's 1834 street. No house number. Not a shared house.",
+    },
+    {
+        "id": "evan-mn",
+        "label": "Evan, Minnesota",
+        "short": "Evan",
+        "osm": "https://www.openstreetmap.org/relation/136994",
+        "google": "https://www.google.com/maps/search/?api=1&query=Evan,+Minnesota",
+        "phrases": ["rural Evan"],
+        "marks": ("136994", "44.3540"),
+        "explicit": True,
+        "caption": "The village. The farm where Darvin was born is not known.",
+    },
+    {
+        "id": "bethany-lutheran",
+        "label": "Bethany Lutheran Church, Morgan",
+        "short": "Bethany",
+        "osm": "https://www.openstreetmap.org/?mlat=44.4452&mlon=-94.9873#map=17/44.4452/-94.9873",
+        "google": "https://www.google.com/maps/search/?api=1&query=44.4452,-94.9873",
+        "phrases": ["Bethany Lutheran Church in Morgan"],
+        "marks": ("44.4452",),
+        "explicit": True,
+        "caption": "The church. The cemetery sharing these grounds is not fully confirmed, and the grave has not been checked.",
+    },
+    {
+        "id": "wolfeboro",
+        "label": "Wolfeboro, New Hampshire",
+        "short": "Wolfeboro",
+        "osm": "https://www.openstreetmap.org/node/158909474",
+        "google": "https://www.google.com/maps/search/?api=1&query=Wolfeboro,+NH",
+        "phrases": ["Wolfeboro, New Hampshire"],
+        "marks": ("158909474", "43.5848"),
+        "explicit": True,
+        "caption": "The town only. No hospital or house.",
     },
 ]
 PIN_BY_ID = {pin["id"]: pin for pin in PINS}

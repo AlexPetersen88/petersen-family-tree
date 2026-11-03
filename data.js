@@ -349,10 +349,12 @@ window.PEOPLE={
    "id": "P11",
    "name": "Darvin Wayne Petersen",
    "birth": {
-    "date": "1932"
+    "date": "1932-03-28",
+    "place": "rural Evan, MN"
    },
    "death": {
-    "date": "2007"
+    "date": "2007-06-29",
+    "place": "Wolfeboro, NH"
    },
    "parents": [
     "P3",
@@ -360,10 +362,29 @@ window.PEOPLE={
    ],
    "sources": [
     "S15",
-    "S18"
+    "S18",
+    "S278",
+    "S279",
+    "S280",
+    "S281",
+    "S284"
    ],
-   "status": "FAG secondary",
-   "notes": "UNVERIFIED lead 2026-11-03 (Scout MN relay of Alex in MN chat): family may be larger than listed \u2014 no dig yet; do not invent children."
+   "status": "VERIFIED: obits S278 + S280; veterans burial S279",
+   "notes": "Mother Caroline (Schultz) per S278 obit = P4. USAF, Korean War era; aviation career (S278 HIGH). Rank US Air Force 1st Lt per S279 (MED). 'Family larger' lead CLOSED by MN Pack 11: five children. Iowa Darvin Arthur Petersen 1932\u20132014 (S284) is NOT this man.",
+   "burial": "Bethany Lutheran Cemetery, Morgan MN (S278/S279)",
+   "spouses": [
+    {
+     "id": "P35",
+     "marriage": "1954-06-27, Bethany Lutheran Church, Morgan MN"
+    }
+   ],
+   "children": [
+    "P36",
+    "P37",
+    "P38",
+    "P39",
+    "P40"
+   ]
   },
   {
    "id": "P1",
@@ -388,19 +409,20 @@ window.PEOPLE={
     }
    ],
    "children": [
-    "Rick",
+    "P12",
+    "P41",
     "P5",
-    "Chad",
-    "Bill",
-    "P12"
+    "P42",
+    "P43"
    ],
-   "notes": "US Army 15 Mar 1955-14 Mar 1957, 82nd Airborne\nUNVERIFIED lead 2026-11-03 (Scout MN relay of Alex in MN chat): family may be larger than listed \u2014 no dig yet; do not invent children.",
+   "notes": "US Army 15 Mar 1955-14 Mar 1957, 82nd Airborne\nMN Pack 11 (2026-11-03): exactly five sons (Randy, Rick, Mike, Chad, Bill) per S282/S4 \u2014 no sixth; 'family larger' lead CLOSED. Stepdaughter Carrie = Loren Jacobsen's, not Donald's.",
    "sources": [
     "S18",
     "S19",
     "S5",
     "S1",
-    "S2"
+    "S2",
+    "S282"
    ],
    "status": "VERIFIED: MNHS 1980-MN-015396 (mother SCHULTZ) + FAG 191558268 + obits"
   },
@@ -408,19 +430,23 @@ window.PEOPLE={
    "id": "P12",
    "name": "Randy Don Petersen",
    "birth": {
-    "date": "1958"
+    "date": "1958-07-30",
+    "place": "MN"
    },
    "death": {
-    "date": "1958"
+    "date": "1958-10-18",
+    "place": "Redwood Co MN"
    },
    "parents": [
     "P1",
     "P2"
    ],
    "sources": [
-    "S18"
+    "S18",
+    "S283"
    ],
-   "status": "FAG secondary (infant)"
+   "status": "VERIFIED: MN Death Index (S283) + FAG",
+   "notes": "MN death index lists mother maiden DOHRMANN (= P2)."
   },
   {
    "id": "P2",
@@ -458,7 +484,7 @@ window.PEOPLE={
    ],
    "status": "VERIFIED (obituaries); no Find a Grave memorial found",
    "parentsNote": "Wesley Edward Dohrmann (P31) & Ethel Bertha (Neubauer) Dohrmann (P32) \u2014 maiden RESOLVED S148/S149; Gent = Ethel's mother's maiden.",
-   "notes": " | Parents: Wesley Edward Dohrmann (S89) & Ethel (Neubauer) Dohrmann \u2014 maiden Neubauer RESOLVED 2026-11-03 (S148/S149); S89 \"Gent\" was her mother's maiden."
+   "notes": " | Parents: Wesley Edward Dohrmann (S89) & Ethel (Neubauer) Dohrmann \u2014 maiden Neubauer RESOLVED 2026-11-03 (S148/S149); S89 \"Gent\" was her mother's maiden. | S282 (2026-11-03) re-fetch of S1 confirms five sons Randy/Rick/Mike/Chad/Bill."
   },
   {
    "id": "P5",
@@ -477,9 +503,11 @@ window.PEOPLE={
    ],
    "sources": [
     "S0",
-    "S2"
+    "S2",
+    "S282"
    ],
-   "status": "son of Janice per obit; birth date oral"
+   "status": "son of Janice per obit; birth date oral",
+   "notes": "S282 (Janice 2025 obit) lists Mike [Mary], Redwood Falls."
   },
   {
    "id": "P13",
@@ -1246,6 +1274,177 @@ window.PEOPLE={
    "altNames": [
     "Peter Johansen (FT-1834, S64; census card P28)"
    ]
+  },
+  {
+   "id": "P35",
+   "name": "Anna Maye Hansen (Petersen)",
+   "aka": "Amy",
+   "birth": {
+    "date": "1933-10-03",
+    "place": "rural Morgan, MN"
+   },
+   "death": {
+    "date": "2014-05-10"
+   },
+   "spouses": [
+    {
+     "id": "P11",
+     "marriage": "1954-06-27, Bethany Lutheran Church, Morgan MN"
+    }
+   ],
+   "children": [
+    "P36",
+    "P37",
+    "P38",
+    "P39",
+    "P40"
+   ],
+   "parents": [],
+   "sources": [
+    "S278",
+    "S280",
+    "S281"
+   ],
+   "status": "VERIFIED (obit S280)",
+   "notes": "Parents John & Dora (Hansen) per S280 \u2014 UNVERIFIED; no person cards created."
+  },
+  {
+   "id": "P36",
+   "name": "Dwight Petersen",
+   "living": true,
+   "birth": {},
+   "parents": [
+    "P11",
+    "P35"
+   ],
+   "sources": [
+    "S278",
+    "S280",
+    "S281"
+   ],
+   "status": "living \u2014 public-obit names only",
+   "notes": "Spouse (given name only, from obit): Yimei. No DOB found; do not invent."
+  },
+  {
+   "id": "P37",
+   "name": "Daniel (Dan) Petersen",
+   "living": true,
+   "birth": {},
+   "parents": [
+    "P11",
+    "P35"
+   ],
+   "sources": [
+    "S278",
+    "S280",
+    "S281"
+   ],
+   "status": "living \u2014 public-obit names only",
+   "notes": "Spouse (given name only, from obit): Kathy. No DOB found; do not invent."
+  },
+  {
+   "id": "P38",
+   "name": "Diana Petersen",
+   "living": true,
+   "birth": {},
+   "parents": [
+    "P11",
+    "P35"
+   ],
+   "sources": [
+    "S278",
+    "S280",
+    "S281"
+   ],
+   "status": "living \u2014 public-obit names only",
+   "notes": "Spouse (given name only, from obit): Jim. No DOB found; do not invent.",
+   "residence": " Married surname not found."
+  },
+  {
+   "id": "P39",
+   "name": "Douglas (Doug) Petersen",
+   "living": true,
+   "birth": {},
+   "parents": [
+    "P11",
+    "P35"
+   ],
+   "sources": [
+    "S278",
+    "S280",
+    "S281"
+   ],
+   "status": "living \u2014 public-obit names only",
+   "notes": "Spouse (given name only, from obit): Lisa. No DOB found; do not invent."
+  },
+  {
+   "id": "P40",
+   "name": "Deborah (Deb) Petersen",
+   "living": true,
+   "birth": {},
+   "parents": [
+    "P11",
+    "P35"
+   ],
+   "sources": [
+    "S278",
+    "S280",
+    "S281"
+   ],
+   "status": "living \u2014 public-obit names only",
+   "notes": "Spouse (given name only, from obit): Bill. No DOB found; do not invent.",
+   "residence": " Married surname not found."
+  },
+  {
+   "id": "P41",
+   "name": "Rick Petersen",
+   "living": true,
+   "birth": {},
+   "parents": [
+    "P1",
+    "P2"
+   ],
+   "sources": [
+    "S282",
+    "S4"
+   ],
+   "status": "living \u2014 public-obit names only",
+   "notes": "Spouse (given name only, from obit): Kim. No DOB found; do not invent. Middle initial 'D' (LinkedIn/USDOT) CANDIDATE only \u2014 not locked.",
+   "residence": "Redwood Falls MN (as of Janice 2025 obit)"
+  },
+  {
+   "id": "P42",
+   "name": "Chad Petersen",
+   "living": true,
+   "birth": {},
+   "parents": [
+    "P1",
+    "P2"
+   ],
+   "sources": [
+    "S282",
+    "S4"
+   ],
+   "status": "living \u2014 public-obit names only",
+   "notes": "Spouse (given name only, from obit): Heather. No DOB found; do not invent.",
+   "residence": "River Falls WI (as of Janice 2025 obit)"
+  },
+  {
+   "id": "P43",
+   "name": "Bill Petersen",
+   "living": true,
+   "birth": {},
+   "parents": [
+    "P1",
+    "P2"
+   ],
+   "sources": [
+    "S282",
+    "S4"
+   ],
+   "status": "living \u2014 public-obit names only",
+   "notes": "Spouse (given name only, from obit): Kimberlee. No DOB found; do not invent. DO NOT merge with S8 William Rudolph Petersen.",
+   "residence": "Hutchinson MN (as of Janice 2025 obit)"
   }
  ]
 };
@@ -3196,6 +3395,58 @@ window.SOURCES={
   "id": "S276",
   "flag": "Dig 39 \u2014 NOT a mother form",
   "text": "Alternate eye-read \"Larsdatter\" of the baptism parents cell. Discarded alongside Clausdatter. P25 Hansdatter lock unchanged.",
+  "urls": []
+ },
+ "S278": {
+  "id": "S278",
+  "flag": "HIGH",
+  "text": "West Central Tribune obituary, Darvin W. Petersen, 4 Jul 2007. Born 28 Mar 1932 rural Evan; USAF, Korean War, aviation career; married Anna Maye Hansen 27 Jun 1954 at Bethany Lutheran, Morgan; died 29 Jun 2007 Wolfeboro NH; burial Bethany Lutheran Cemetery, Morgan. https://www.wctrib.com/news/darvin-w-petersen",
+  "urls": [
+   "https://www.wctrib.com/news/darvin-w-petersen"
+  ]
+ },
+ "S279": {
+  "id": "S279",
+  "flag": "HIGH dates/burial; MED rank",
+  "text": "Interment.net Minnesota veterans burials, Darvin W. Petersen, Bethany Lutheran Cemetery, Morgan. Rank \"US Air Force 1st Lt\" is from this listing only. https://www.interment.net/united-states/minnesota/veterans-burials/transcription/644.php?page=336",
+  "urls": [
+   "https://www.interment.net/united-states/minnesota/veterans-burials/transcription/644.php?page=336"
+  ]
+ },
+ "S280": {
+  "id": "S280",
+  "flag": "HIGH",
+  "text": "Nelson-Hillestad obituary, Anna Maye (Hansen) Petersen. Born 3 Oct 1933 rural Morgan; died 10 May 2014. Parents John and Dora (Hansen) stay unverified; no cards. https://www.nelson-hillestad.com/obituaries/anna-petersen-3",
+  "urls": [
+   "https://www.nelson-hillestad.com/obituaries/anna-petersen-3"
+  ]
+ },
+ "S281": {
+  "id": "S281",
+  "flag": "HIGH, derived from S278 and S280",
+  "text": "five children of Darvin and Anna Maye \u2014 Dwight, Daniel, Diana, Douglas, Deborah. Names only; birth dates not found.",
+  "urls": []
+ },
+ "S282": {
+  "id": "S282",
+  "flag": "HIGH",
+  "text": "Janice E. Jacobsen obituary, same text as S1, plus KLGR S4. Exactly five sons: Randy, Rick, Mike, Chad, Bill. Living sons' places and spouses' given names are as of this 2025 obituary only. https://stephensfuneralservice.com/obituaries/janice-e-jacobsen/779/",
+  "urls": [
+   "https://stephensfuneralservice.com/obituaries/janice-e-jacobsen/779/"
+  ]
+ },
+ "S283": {
+  "id": "S283",
+  "flag": "HIGH",
+  "text": "Minnesota death index, Randy Don Petersen, born 30 Jul 1958, died 18 Oct 1958, Redwood County, mother Dohrmann. https://sortedbyname.com/letter_p/petersen/index_591.html",
+  "urls": [
+   "https://sortedbyname.com/letter_p/petersen/index_591.html"
+  ]
+ },
+ "S284": {
+  "id": "S284",
+  "flag": "NEG \u2014 not P11",
+  "text": "Iowa Darvin Arthur Petersen, 1932\u20132014. Not merged with Darvin Wayne Petersen.",
   "urls": []
  }
 };

@@ -586,3 +586,14 @@ P34 Peder Johansen stays LOCKED. FamilySearch "Peder Jørgensen" (S268) is SUPER
 - S270 (Dig 38 — PARTIAL, does not settle the name): FamilySearch image of Haraldsted vol. 3 p. 61, film 007220851 img 67. Baptism 31 Mar 1833 and mother Ane Marie Hansdatter of Valsømagle read HIGH; father line LOW/unread on that scan. https://www.familysearch.org/ark:/61903/3:1:3QSQ-G944-CWKT
 - S275 (CLEARED — Dig 39): AO image of Haraldsted HMB, Fødte Mandkiøn 1833 no. 3. Father surname letter shapes Joh-, not Jørg-. Supports P34 Peder Johansen. https://api.rigsarkivet.dk/ao/v1/images/38697131
 - S276 (Dig 39 — NOT a mother form): Alternate eye-read "Larsdatter" of the baptism parents cell. Discarded alongside Clausdatter. P25 Hansdatter lock unchanged.
+
+## MN Pack 11 (2026-11-03) — Genealogist CLEAR, S278–S284
+Darvin Wayne (P11) and Donald's five sons. Dig 40 and Dig 41 are not in this pack. Iowa Darvin Arthur Petersen (S284) is not P11.
+
+- S278 (HIGH): West Central Tribune obituary, Darvin W. Petersen, 4 Jul 2007. Born 28 Mar 1932 rural Evan; USAF, Korean War, aviation career; married Anna Maye Hansen 27 Jun 1954 at Bethany Lutheran, Morgan; died 29 Jun 2007 Wolfeboro NH; burial Bethany Lutheran Cemetery, Morgan. https://www.wctrib.com/news/darvin-w-petersen
+- S279 (HIGH dates/burial; MED rank): Interment.net Minnesota veterans burials, Darvin W. Petersen, Bethany Lutheran Cemetery, Morgan. Rank "US Air Force 1st Lt" is from this listing only. https://www.interment.net/united-states/minnesota/veterans-burials/transcription/644.php?page=336
+- S280 (HIGH): Nelson-Hillestad obituary, Anna Maye (Hansen) Petersen. Born 3 Oct 1933 rural Morgan; died 10 May 2014. Parents John and Dora (Hansen) stay unverified; no cards. https://www.nelson-hillestad.com/obituaries/anna-petersen-3
+- S281 (HIGH, derived from S278 and S280): five children of Darvin and Anna Maye — Dwight, Daniel, Diana, Douglas, Deborah. Names only; birth dates not found.
+- S282 (HIGH): Janice E. Jacobsen obituary, same text as S1, plus KLGR S4. Exactly five sons: Randy, Rick, Mike, Chad, Bill. Living sons' places and spouses' given names are as of this 2025 obituary only. https://stephensfuneralservice.com/obituaries/janice-e-jacobsen/779/
+- S283 (HIGH): Minnesota death index, Randy Don Petersen, born 30 Jul 1958, died 18 Oct 1958, Redwood County, mother Dohrmann. https://sortedbyname.com/letter_p/petersen/index_591.html
+- S284 (NEG — not P11): Iowa Darvin Arthur Petersen, 1932–2014. Not merged with Darvin Wayne Petersen.

@@ -97,3 +97,9 @@
 - Winner: **Peder Johansen** (P34), supported by S275 (AO image, letter shapes Joh-, not Jørg-) plus S51, S52, S56, and the S267 index. Decision B (S64 / P28 same man) stands. Biological paternity is still not claimed. No marriage to P25.
 - **S268** FamilySearch "Peder Jørgensen" is SUPERSEDED as a mis-index, not a second father. S270's father line stayed unread and does not overturn S275.
 - Mother: Ane Marie Hansdatter LOCK unchanged. S276 Larsdatter is an alternate eye-read only, not adopted. Clausdatter stays superseded.
+
+## MN Pack 11 (2026-11-03) — Darvin and Donald's sons — Genealogist CLEAR
+- Darvin Wayne Petersen (P11): born 28 Mar 1932, rural Evan, Minnesota (S278). Village pin only; the birth farm is not identified. USAF during the Korean War and an aviation career are HIGH (S278). Rank first lieutenant is MED, from the veterans burial listing only (S279); the obituary does not give it. Married Anna Maye Hansen (P35) 27 Jun 1954 at Bethany Lutheran Church, Morgan (S278, S280). Anna Maye born 3 Oct 1933 rural Morgan, died 10 May 2014 (S280). Five children, names only, birth dates blank: Dwight, Daniel, Diana, Douglas, Deborah (S281). Died 29 Jun 2007, Wolfeboro, New Hampshire, town only (S278). Buried Bethany Lutheran Cemetery, Morgan (S278, S279). The church location is HIGH; the cemetery sharing that campus is softer; the grave spot is not checked.
+- Donald Alvin Petersen (P1) had exactly five sons: Randy Don, Rick, Michael Don, Chad, and Bill (S282). No sixth son. Randy Don was born 30 Jul 1958 and died 18 Oct 1958 in Redwood County (S283). Living sons' towns and their spouses' given names are only as stated in Janice's 2025 obituary (S282).
+- Not merged: Iowa Darvin Arthur Petersen, 1932–2014 (S284).
+- Not folded: Dig 40, Dig 41, Day B, Dig 21, and any farm parcel, living-residence pin, or Wolfeboro facility.

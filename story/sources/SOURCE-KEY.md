@@ -95,3 +95,12 @@
 - K22 Trap Danmark, "1850-1920 i Sorø Kommune": https://trap.lex.dk/1850-1920_i_Sorø_Kommune
 - K23 Lex, "Krigen i 1864": https://lex.dk/Krigen_i_1864
 - K24 Trap Danmark, "1536-1850 i Sorø Kommune": https://trap.lex.dk/1536-1850_i_Sorø_Kommune
+
+## MN Pack 11 — Genealogist-CLEARED 2026-11-03
+- S278 (HIGH): West Central Tribune obit, Darvin W. Petersen, 4 Jul 2007: https://www.wctrib.com/news/darvin-w-petersen
+- S279 (HIGH dates/burial; MED rank): Interment.net MN veterans burials, Darvin W Petersen, Bethany Lutheran Cemetery, Morgan; "US Air Force 1st Lt": https://www.interment.net/united-states/minnesota/veterans-burials/transcription/644.php?page=336
+- S280 (HIGH): Nelson-Hillestad obit, Anna Maye (Hansen) Petersen: https://www.nelson-hillestad.com/obituaries/anna-petersen-3
+- S281 (HIGH, derived S278+S280): five children of Darvin × Anna Maye — Dwight, Daniel, Diana, Douglas, Deborah.
+- S282 (HIGH): Janice E. Jacobsen obit re-fetch (= S1) + KLGR (S4): five sons Randy, Rick, Mike, Chad, Bill; 2025 survivors' residences: https://stephensfuneralservice.com/obituaries/janice-e-jacobsen/779/
+- S283 (HIGH): SortedByName MN Death Index, Randy Don Petersen b. 30 Jul 1958, d. 18 Oct 1958 Redwood Co, mother Dohrmann: https://sortedbyname.com/letter_p/petersen/index_591.html
+- S284 (NEG — noise): Iowa Darvin Arthur Petersen 1932–2014 ≠ Darvin Wayne; not merged.
