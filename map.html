@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Map · Petersen Family Tree</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light only">
+<meta name="theme-color" content="#FAF8F4">
+<meta name="description" content="Map of cleared visit places for the Petersens, in Denmark and Minnesota.">
+<meta property="og:site_name" content="Petersen Family Tree">
+<meta property="og:title" content="Map · Petersen Family Tree">
+<meta property="og:description" content="Map of cleared visit places for the Petersens, in Denmark and Minnesota.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://alexpetersen88.github.io/petersen-family-tree/map.html">
+<meta property="og:image" content="https://alexpetersen88.github.io/petersen-family-tree/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="The Petersen Family, Redwood County, Minnesota">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Map · Petersen Family Tree">
+<meta name="twitter:description" content="Map of cleared visit places for the Petersens, in Denmark and Minnesota.">
+<meta name="twitter:image" content="https://alexpetersen88.github.io/petersen-family-tree/og.png">
+<link rel="canonical" href="https://alexpetersen88.github.io/petersen-family-tree/map.html">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230C3B2E'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="vendor/leaflet/leaflet.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="page map-page" data-region="dk">
+<header>
+<div class="brand"><p class="eyebrow">Redwood County, Minnesota</p><h1>The Petersen Family</h1></div>
+<nav aria-label="Primary"><a href="index.html">Tree</a><a href="sources.html">Sources</a><a href="story/index.html">Story</a><a class="on" href="map.html" aria-current="page">Map</a></nav>
+</header>
+<div class="banner"></div>
+<div class="toolbar map-toolbar">
+<div class="scope" role="group" aria-label="Map region">
+<button id="regiondk" type="button" aria-pressed="true">Denmark</button>
+<button id="regionmn" type="button" aria-pressed="false">Minnesota</button>
+</div>
+<p id="regionstatus" class="sr" aria-live="polite">Showing Denmark.</p>
+</div>
+<main class="map-layout">
+<div id="map" class="map-canvas" tabindex="-1" aria-label="Visit map. Pins match the place list."></div>
+<div class="map-side">
+<p class="lede">Cleared visit pins only. Denmark and Minnesota are far apart, so each region has its own view. A solid pin is a visit place. The dashed pin is a hamlet overlook, not a house.</p>
+<p id="mapstatus" class="sr" aria-live="polite"></p>
+<div id="nearchooser" class="near-chooser" hidden>
+<p id="neartext"></p>
+<div id="nearbtns" class="near-btns"></div>
+</div>
+<section id="places-dk" aria-labelledby="dk-label">
+<h2 id="dk-label">Denmark <span class="region-on">On the map</span></h2>
+<div class="place-list">
+<article class="place-card" id="bjernede-kirke">
+<h3 class="place-heading"><button type="button" class="place-jump" aria-pressed="false"><span class="place-kicker">Denmark · High</span><span class="place-name">Bjernede Kirke</span><span class="place-meta">1862 · 1864 · 1867 · 1878</span></button></h3>
+<div class="place-body">
+<button type="button" class="back-map">Back to the map</button>
+<p class="place-where">Bjernede Kirke, Bjernede Kirkevej 1A, 4180 Sorø. Zealand’s only round church.</p>
+<p>On 14 October 1862 Hans Pedersen and Ane Rasmusdatter were married here (<a class="cite" href="story/source-key.html#S36">S36</a>). Hans Peter was baptized here on 5 June 1864 (<a class="cite" href="story/source-key.html#S31">S31</a>) and confirmed on 14 April 1878. Hans Pedersen was buried in this churchyard on 17 September 1867 (<a class="cite" href="story/source-key.html#S37">S37</a>), and the infant Rasmus on 10 February 1867 (<a class="cite" href="story/source-key.html#S41">S41</a>). No grave from those 1867 burials is known to survive. The place to stand is the churchyard, not a marked stone.</p>
+<p>Place and these events: high. Grave location: unverified. Pin 55.4621, 11.6251.</p>
+<div class="map-links">
+<a class="map-link map-link-quiet" href="story/02-bjernede-parents-and-loss.html">Chapter 2</a>
+<a class="map-link map-link-quiet" href="index.html#P6">Hans Peter Petersen</a>
+<a class="map-link map-link-quiet" href="index.html#P18">Hans Pedersen</a>
+<a class="map-link map-link-quiet" href="index.html#P19">Ane Rasmusdatter</a>
+<a class="map-link" href="https://www.openstreetmap.org/way/264012018" target="_blank" rel="noopener noreferrer">OpenStreetMap</a>
+<a class="map-link map-link-google" href="https://www.google.com/maps/search/?api=1&query=Bjernede+Kirke+Bjernede+Kirkevej+1A+4180+Sor%C3%B8" target="_blank" rel="noopener noreferrer">Google Maps</a>
+</div>
+</div>
+</article>
+<article class="place-card" id="haraldsted-kirke">
+<h3 class="place-heading"><button type="button" class="place-jump" aria-pressed="false"><span class="place-kicker">Denmark · High</span><span class="place-name">Haraldsted Kirke</span><span class="place-meta">1833 · 1847</span></button></h3>
+<div class="place-body">
+<button type="button" class="back-map">Back to the map</button>
+<p class="place-where">Haraldsted Kirke, Haraldstedvej, Haraldsted, 4100 Ringsted. The churchyard surrounds the church.</p>
+<p>Hans Pedersen was baptized here on 31 March 1833, Palm Sunday (<a class="cite" href="story/source-key.html#S51">S51</a>, <a class="cite" href="story/source-key.html#S52">S52</a>), and confirmed here on 11 April 1847 (<a class="cite" href="story/source-key.html#S56">S56</a>).</p>
+<p>Church, churchyard, baptism, and confirmation: high. Pin 55.4915, 11.7682. The præstegård is a separate pin about 80 metres southeast.</p>
+<div class="map-links">
+<a class="map-link map-link-quiet" href="story/01-hans-pedersen-childhood.html">Chapter 1</a>
+<a class="map-link map-link-quiet" href="index.html#P18">Hans Pedersen</a>
+<a class="map-link" href="https://www.openstreetmap.org/way/264012020" target="_blank" rel="noopener noreferrer">OpenStreetMap</a>
+<a class="map-link map-link-google" href="https://www.google.com/maps?q=55.4915324,11.7681618" target="_blank" rel="noopener noreferrer">Google Maps</a>
+</div>
+</div>
+</article>
+<article class="place-card" id="haraldsted-praestegaard">
+<h3 class="place-heading"><button type="button" class="place-jump" aria-pressed="false"><span class="place-kicker">Denmark · High event</span><span class="place-name">Haraldsted Præstegaarden</span><span class="place-meta">1797 · Parents still a candidate</span></button></h3>
+<div class="place-body">
+<button type="button" class="back-map">Back to the map</button>
+<p class="place-where">Haraldsted Præstegård, Haraldstedvej 91, Haraldsted, 4100 Ringsted.</p>
+<p>On 21 May 1797 a betrothal (<em>trolovelse</em>) was recorded here: the widower Hans Pedersen and the girl Maren Hansdatter of Valsømagle (<a class="cite" href="story/source-key.html#S222">S222</a>). The event and the place are high. Whether this couple were Ane Marie Hansdatter’s parents stays a candidate. Her baptism has not been found, so they are not locked as her parents.</p>
+<p>The pin is the address point, about 80 metres southeast of the church, not a building outline. GPS for that point: medium. It is a working private residence and parish office. Stand on Haraldstedvej or on the churchyard side. The grounds are private.</p>
+<p>Pin 55.4910, 11.7692.</p>
+<div class="map-links">
+<a class="map-link map-link-quiet" href="story/01-hans-pedersen-childhood.html">Chapter 1</a>
+<a class="map-link map-link-quiet" href="index.html#P25">Ane Marie Hansdatter</a>
+<a class="map-link" href="https://www.openstreetmap.org/node/341232574" target="_blank" rel="noopener noreferrer">OpenStreetMap</a>
+<a class="map-link map-link-google" href="https://www.google.com/maps?q=55.4910250,11.7692050" target="_blank" rel="noopener noreferrer">Google Maps</a>
+</div>
+</div>
+</article>
+<article class="place-card" id="valsomagle">
+<h3 class="place-heading"><button type="button" class="place-jump" aria-pressed="false"><span class="place-kicker">Denmark · High · Village only</span><span class="place-name">Valsømagle</span><span class="place-meta">1833 · No house</span></button></h3>
+<div class="place-body">
+<button type="button" class="back-map">Back to the map</button>
+<p class="place-where">Valsømagle village, Ringsted Kommune.</p>
+<p>Hans Pedersen was born here on 25 February 1833 (<a class="cite" href="story/source-key.html#S51">S51</a>, <a class="cite" href="story/source-key.html#S52">S52</a>, <a class="cite" href="story/source-key.html#S53">S53</a>). His mother, Ane Marie Hansdatter, was a servant girl of the village. This pin is the village only. No farm or house is identified for the birth.</p>
+<p>Place: high. Birth: high. Pin 55.4933, 11.8213.</p>
+<div class="map-links">
+<a class="map-link map-link-quiet" href="story/01-hans-pedersen-childhood.html">Chapter 1</a>
+<a class="map-link map-link-quiet" href="index.html#P18">Hans Pedersen</a>
+<a class="map-link map-link-quiet" href="index.html#P25">Ane Marie Hansdatter</a>
+<a class="map-link" href="https://www.openstreetmap.org/node/9956361203" target="_blank" rel="noopener noreferrer">OpenStreetMap</a>
+<a class="map-link map-link-google" href="https://www.google.com/maps?q=55.4933219,11.8213452" target="_blank" rel="noopener noreferrer">Google Maps</a>
+</div>
+</div>
+</article>
+<article class="place-card" id="sct-hansgade">
+<h3 class="place-heading"><button type="button" class="place-jump" aria-pressed="false"><span class="place-kicker">Denmark · High street</span><span class="place-name">Sct. Hansgade</span><span class="place-meta">1834 · Door unverified</span></button></h3>
+<div class="place-body">
+<button type="button" class="back-map">Back to the map</button>
+<p class="place-where">Sct. Hansgade (Sankt Hans Gade), 4100 Ringsted. The pin is the middle of the street. The exact 1834 door is unverified.</p>
+<p>The 1834 census places Peter Johansen, about 30, unmarried, a <em>tjenestekarl</em>, on Sankt Hans Gade (<a class="cite" href="story/source-key.html#S64">S64</a>). Genealogist Decision B clears him as the same man as Peder Johansen of Ringsted, the named father of Hans. The pin is that street, not a door.</p>
+<p>An Ane Marie Hansdatter in the same census is a candidate match only (<a class="cite" href="story/source-key.html#S63">S63</a>), in a separate servants’ entry. No shared household is claimed.</p>
+<p>Street: high. Peter Johansen’s 1834 residence, at street level: high. Exact door: unverified. Pin 55.4445, 11.7908.</p>
+<div class="map-links">
+<a class="map-link map-link-quiet" href="story/01-hans-pedersen-childhood.html">Chapter 1</a>
+<a class="map-link map-link-quiet" href="index.html#P34">Peder Johansen</a>
+<a class="map-link map-link-quiet" href="index.html#P18">Hans Pedersen</a>
+<a class="map-link" href="https://www.openstreetmap.org/#map=18/55.4445/11.7908" target="_blank" rel="noopener noreferrer">OpenStreetMap</a>
+<a class="map-link map-link-google" href="https://www.google.com/maps/search/?api=1&query=Sct+Hansgade+4100+Ringsted" target="_blank" rel="noopener noreferrer">Google Maps</a>
+</div>
+</div>
+</article>
+<article class="place-card place-soft" id="bjernedehuse-overlook">
+<h3 class="place-heading"><button type="button" class="place-jump" aria-pressed="false"><span class="place-kicker">Denmark · Place high · GPS low–medium</span><span class="place-name">Bjernedehuse overlook</span><span class="place-meta">Hamlet overlook, not the house</span></button></h3>
+<div class="place-body">
+<button type="button" class="back-map">Back to the map</button>
+<p class="place-where">Hamlet overlook, not the house. Public road near Stokholtsvej, about 1.2 km east-southeast of Bjernede Kirke.</p>
+<p>The records use the names Bjernedegaardshuse and Bjernedehuse for the family’s years in this hamlet. An 1884 deed names matr. no. 5a of Bjernedehuse (<a class="cite" href="story/source-key.html#S50">S50</a>). This pin is an overlook from the road. It is not the house, and it is not the 5a plot. The deed shows matr. 5a belonged to Hans Rasmussen until his death in 1883. Hans Pedersen did not own it. Whether Hans Peter lived on 5a is not proven.</p>
+<p>Place-name: high. GPS of this overlook: low to medium. No house is pinned. Pin 55.4597, 11.6419.</p>
+<div class="map-links">
+<a class="map-link map-link-quiet" href="story/02-bjernede-parents-and-loss.html">Chapter 2</a>
+<a class="map-link" href="https://www.openstreetmap.org/node/3185195082" target="_blank" rel="noopener noreferrer">OpenStreetMap</a>
+</div>
+</div>
+</article>
+</div>
+</section>
+<section id="places-mn" aria-labelledby="mn-label">
+<h2 id="mn-label">Minnesota <span class="region-on">On the map</span></h2>
+<div class="place-list">
+<article class="place-card" id="dannebod">
+<h3 class="place-heading"><button type="button" class="place-jump" aria-pressed="false"><span class="place-kicker">Minnesota · Cemetery high · Burial medium</span><span class="place-name">Dannebod Cemetery</span><span class="place-meta">1922 · Farm not pinned</span></button></h3>
+<div class="place-body">
+<button type="button" class="back-map">Back to the map</button>
+<p class="place-where">Dannebod Cemetery, 180th Street, Brookville Township, near Cobden, Redwood County, Minnesota.</p>
+<p>Hans Peter Petersen (1864–1922) is buried here (<a class="cite" href="story/source-key.html#S12">S12</a>). The cemetery location is high. The burial is secondary, from Find a Grave, so it stays medium confidence. The marker is on the north side of 180th Street, with the Fredsminde church monument behind it. That church stood from 1889 to 1961.</p>
+<p>Find a Grave also places Maren Sophia’s 1937 burial here. That date and burial stay secondary (<a class="cite" href="story/source-key.html#S13">S13</a>).</p>
+<p>The Brookville Township farm is not on this map. Its site is unverified. Pin 44.31115, -94.89040.</p>
+<div class="map-links">
+<a class="map-link map-link-quiet" href="story/03-hans-peter-to-minnesota.html">Chapter 3</a>
+<a class="map-link map-link-quiet" href="index.html#P6">Hans Peter Petersen</a>
+<a class="map-link map-link-quiet" href="index.html#P7">Maren Sophia Jensen</a>
+<a class="map-link" href="https://www.openstreetmap.org/?mlat=44.31115&amp;mlon=-94.89040#map=16/44.31115/-94.89040" target="_blank" rel="noopener noreferrer">OpenStreetMap</a>
+<a class="map-link map-link-google" href="https://www.google.com/maps?q=44.31115,-94.89040" target="_blank" rel="noopener noreferrer">Google Maps</a>
+<a class="map-link map-link-quiet" href="https://www.hmdb.org/m.asp?m=257655" target="_blank" rel="noopener noreferrer">Historical marker</a>
+</div>
+</div>
+</article>
+</div>
+</section>
+</div>
+</main>
+<script src="vendor/leaflet/leaflet.js"></script>
+<script src="data.js"></script>
+<script src="common.js"></script>
+<script src="map.js"></script>
+</body>
+</html>
