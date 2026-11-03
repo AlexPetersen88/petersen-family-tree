@@ -111,3 +111,9 @@ Tools: curl + web search. ddd.dda.dk/soeg_person_enkel.asp timed out again (both
 
 ## 2026-11-03 — Bjernede family records added
 Added RECORD-SOURCED (amber, not family-confirmed) cards from browser-pass-bjernede-family.md: father Hans Pedersen P18 (1833–1867, hjulmand), mother Ane Rasmusdatter P19 (b. 1843), stepfather Hans Rasmussen P20 (b. 1801/1831?), half-sibs Rasmus Peter P21 (1871) & Ane Marie P22 (1874), probable brother Rasmus Pedersen P23 (d. 1867). Sources S35–S41. Open: first child, Rasmus birth, Ane/Hans R. deaths, Ane's parents. Backup people.prev-2026-11-03c.json.
+## 2026-11-03 resume pass
+57. FIRST CHILD found: img 5 (births 1863 No. 2): 17 Jan 1863, unnamed, parents Hans Pedersen + Ane Rasmusdatter "19 Aar", "Død d. 18de Januar uden Daab(?)"; "1st Barn". Medium confidence.
+58. Rasmus Pedersen BIRTH found: img 13 (1866 No. 17) b. 10 Dec 1866, bapt. 23 Jan 1867, d. 5 Feb 1867. Earlier "12 Dage" note withdrawn.
+59. 1870 census img 23 (bsid=53367): Anne Rasmusen, 27, enke + Hans Peter Pedersen, 6, in own "Huus", Bjernede. Namesake H.P. Pedersen ~19 on img 18 is NOT ours.
+60. Female births imgs 52-59,61: no entry for this couple (not exhaustive). Not done: female deaths, 1879 vol, confirmation vol, emigrant index.
+61. Synced 57–59 to people.json: added P24 (unnamed son 1863), P23 birth updated, 1870 census on P6/P19; sources S42–S44; backup people.prev-2026-11-03d.json; data.js rebuilt.

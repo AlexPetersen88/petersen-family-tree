@@ -46,3 +46,6 @@ Updated: 2026-11-02 (America/Chicago)
 
 ## 2026-11-03 — Bjernede family records added
 Added RECORD-SOURCED (amber, not family-confirmed) cards from browser-pass-bjernede-family.md: father Hans Pedersen P18 (1833–1867, hjulmand), mother Ane Rasmusdatter P19 (b. 1843), stepfather Hans Rasmussen P20 (b. 1801/1831?), half-sibs Rasmus Peter P21 (1871) & Ane Marie P22 (1874), probable brother Rasmus Pedersen P23 (d. 1867). Sources S35–S41. Open: first child, Rasmus birth, Ane/Hans R. deaths, Ane's parents. Backup people.prev-2026-11-03c.json.
+
+## 2026-11-03 — resume-pass sync
+Added P24 unnamed son (b. 17 / d. 18 Jan 1863, RECORD-SOURCED, medium); P23 Rasmus birth 10 Dec 1866 (d. 5 Feb 1867); 1870 census Ane widow + Hans Peter 6 (S44). Sources S42–S44. "4th Barn" remark unreliable — no sibling added. Backup people.prev-2026-11-03d.json.

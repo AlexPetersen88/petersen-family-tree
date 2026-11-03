@@ -52,3 +52,8 @@ All in Bjernede Sogn Hovedministerialbog, folder "1862 FVD" (–1878, 156 imgs);
 - S40: S35 img 82, female births 1874 no. 11: Ane Marie Rasmussen b. 24 Oct 1874, bapt. 10 Jan 1875, parents Hans Rasmussen & Ane Rasmusdatter (31): https://arkivalieronline.rigsarkivet.dk/en/billedviser?epid=17223538 (shots 02, 03)
 - S41: S35 img 124, Døde Mandkøn 1867 no. 3: Rasmus Pedersen d. 5 Feb 1867, bur. 10 Feb 1867, son of Hans Pedersen & Ane Rasmusdatter, Bjernedegaardshuse (age read "12 Dage"?): https://arkivalieronline.rigsarkivet.dk/en/billedviser?epid=17223538 (shots 08, 09)
 - Detail: browser-pass-bjernede-family.md
+
+## Added 2026-11-03 — resume pass (research-log 57–60)
+- S42: S35 img 5, male births 1863 no. 2: unnamed son b. 17 Jan 1863, parents Hans Pedersen & Ane Rasmusdatter (19), "1st Barn", "Død d. 18de Januar uden Daab(?)" (death remark medium confidence): https://arkivalieronline.rigsarkivet.dk/en/billedviser?epid=17223538 (shots 14, 15)
+- S43: S35 img 13, male births 1866 no. 17: Rasmus Pedersen b. 10 Dec 1866, bapt. 23 Jan 1867 in church, parents Hjulmand Hans Pedersen & Ane Rasmusdatter (23), Bjernedegaardshuse; margin "† 5/2 67": https://arkivalieronline.rigsarkivet.dk/en/billedviser?epid=17223538 (shots 16, 17)
+- S44: 1870 Danish census, Bjernede, Sorø Alsted herred, 1 Feb 1870, img 23 (page 66), "1 Huus": Anne Rasmusen K 27 widow; Hans Peter Pedersen M 6 unmarried: https://arkivalieronline.rigsarkivet.dk/da/billedviser?bsid=53367 (shots 18, 19). NB img 18 Hans Peter Pedersen ~19, servant = namesake, NOT ours.

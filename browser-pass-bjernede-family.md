@@ -35,3 +35,31 @@ Spring 1870 (day/month illegible; "April"?). Groom: "Enkemand, Husmand i Bjerned
 
 ## Next steps
 Female births 1863–66 (img ~43–60) and deaths (female ~img 136–150) for the first child; 1879 FVD volume for Ane/Hans Rasmussen deaths and half-sib marriages; 1870 census (…/rif/select/7/16874258) to show Hans Pedersen's household composition is moot (he d. 1867) but 1870 shows Ane+Hans Rasmussen + Hans Peder; confirmation vol 1858 K–1891 K for half-sibs; Ane's 1843 birth (vol 1814/1840 FKVDJTA… not in viewer tree range) to name her parents (witness Peder Rasmussen, Bjernede = possible relative, unverified).
+
+## ADDENDUM 2026-11-03 (resume pass) — first child, Rasmus Pedersen birth, 1870 census
+Viewer: https://arkivalieronline.rigsarkivet.dk/en/billedviser?epid=17223538 (img n/156)
+
+### FIRST CHILD ("1st Barn") — FOUND (male-births page, img 5, 1863 No. 2)
+- Entry no. 2, dated "17 Januar 1863"; NAME COLUMN BLANK; parents column reads (my reading, medium confidence): "Indsidder(?) i Bjernedegaardshuse Hans Pedersen og Hustru Ane Rasmusdatter 19 Aar gl."; baptism/sponsor columns: "Død d. 18de Januar uden Daab(?)"; remarks: "1st Barn … introduceret … 1ste Marts 1863".
+- => An unnamed child (listed on the MALE-births page, so presumably a son), b. 17 Jan 1863, d. 18 Jan 1863, unbaptised. This is the older sibling implied by "2det Barn" on Hans Peder's 1864 baptism. Also fixes mother's age: 19 in Jan 1863 => b. ~1843 (consistent with marriage record).
+- Shots: shots/bjernede-family-2026-11-03/14_img5_full_births1863.jpg, 15_img5_no2_firstchild_crop.png
+- Death record for this infant not separately searched (img 119 1863 deaths previously checked w/o match; the birth entry itself says it died 18 Jan).
+
+### Rasmus Pedersen (full brother) — BIRTH FOUND (img 13, 1866 No. 17)
+- "10 Decbr 1866 | Rasmus Pedersen | døbt 23 Januar 1867 i Kirken | Inderste(?) i Bjernedegaardshuse, Hjulmand Hans Pedersen og Hustru Ane Rasmusdatter (23 Aar gl.)"; margin "† 5/2 67"; remark "4th Barn, dead 2 Dødt" (illegible part). Matches death img 124 no. 3 (d. 5 Feb 1867).
+- => Full brother b. 10 Dec 1866, bapt. 23 Jan 1867, d. 5 Feb 1867 (~2 months). Correction: the earlier note "12 Dage" is NOT supported.
+- Shots: 16_img13_full_births1866.jpg, 17_img13_no17_RasmusPedersen_birth_crop.png
+- NB: mother's age here "23" vs ~24 expected; ages in these books are loose.
+
+### Other searched, nothing for this couple
+- Male births 1865–66: imgs 9, 10, 11, 13 viewed — no Hans Pedersen/Ane Rasmusdatter entry besides Rasmus above (img 12 and 14 not fully checked).
+- Female births (cover "Fødte kvindekøn" at img 50): imgs 52, 53, 54, 55, 57, 58, 59, 61 viewed (Sep 1862–mid 1866) — no entry to Hans Pedersen/Ane Rasmusdatter. NOT exhaustive: imgs 56, 60, 62–66 unchecked. Female deaths imgs 136–150 NOT checked.
+- Sibling count so far: 1) unnamed son b/d 17–18 Jan 1863; 2) Hans Peder b. 28 Feb 1864; 3) (a 3rd child, if any, unknown); 4) Rasmus b. 10 Dec 1866 marked "4th Barn" in remark (reading uncertain) — so possibly one more child born 1865–66 not found.
+
+### 1870 census (Bjernede, Sorø Alsted; viewer https://arkivalieronline.rigsarkivet.dk/da/billedviser?bsid=53367 , 44 imgs; Rigsarkivet select page /da/rif/select/7/16874258 -> Sorø amt -> Sorø Alsted Bjernede)
+- img 23 (page no. 66), count date 1 Feb 1870, district "Bjernede": top household "1 Huus": 1. "Anne Rasmusen" K, 27, E (enke/widow); 2. "Hans Peter Pedersen" M, 6, U (unmarried), Lutheran. No other child in household (readings clear for names/ages; occupation column illegible to me).
+- => Before remarriage (spring 1870) Ane lived with only Hans Peder; no surviving siblings with her. Shots: 18_census1870_img23_full.png, 19_census1870_img23_household_crop.png
+- CAUTION: img 18 lists a different "Hans Peter Pedersen" aged ~19 (servant in Ole Hermansen Larsen's household) — namesake, NOT ours. Hans Rasmussen's own 1870 household not located (not needed).
+
+### NOT DONE
+Female deaths 136–150; 1879 FVD volume; confirmation vol 1858 K–1891 K; emigrant index (tab left open, no search run). Fates of Ane/Hans Rasmussen/half-sibs still unknown.

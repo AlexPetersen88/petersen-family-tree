@@ -46,3 +46,10 @@
 - Rasmus Pedersen (P23): death found (S41), birth NOT found; age "12 Dage"(?) uncertain — probable full sibling only.
 - Hans Pedersen's mother "Ane Marie Hansdatter" (S37) LOW confidence; his father unknown; birthplace Valsømagle/Walsmagle LOW.
 - US link: no US document names Bjernede; identity rests on Alex's family confirmation (S30) of place + year. Parents are RECORD-SOURCED, not family-confirmed.
+
+## 2026-11-03 — resume pass (S42–S44)
+- First child FOUND (S42): unnamed son b. 17 Jan 1863, d. 18 Jan 1863 unbaptised (P24) — resolves "2det Barn". Death remark medium confidence.
+- Rasmus Pedersen (P23) birth FOUND (S43): b. 10 Dec 1866; earlier "12 Dage" age reading WITHDRAWN (lived ~2 months).
+- Rasmus's birth remark possibly "4th Barn" — reading UNRELIABLE (partly illegible). Would imply a 3rd child 1865–66; NOT inferred, no person added. Female births imgs 56, 60, 62–66 and female deaths 136–150 unchecked.
+- Mother's age "23" on S43 vs b. 1843 (~23½) — consistent enough; ages loose.
+- 1870 census (S44): a different Hans Peter Pedersen ~19, servant (img 18) is a namesake — NOT P6.

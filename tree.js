@@ -35,7 +35,7 @@ PEOPLE.people.forEach(c=>{const ps=(c.parents||[]).filter(x=>pos[x]);if(!ps.leng
  const midY=(my+t.y-H/2)/2+H/4;el('path',{class:'edge',d:`M${mx},${my} V${midY} H${t.x} V${t.y-H/2}`})});
 const nodes={};
 PEOPLE.people.forEach(p=>{const {x,y}=pos[p.id];const g=el('g',{class:'node'+(isFamily(p)?' family':' records')+(p.living?' living':''),transform:`translate(${x-W/2},${y-H/2})`});
- el('rect',{width:W,height:H},g);const short=p.name.replace(/\s*\(.*\)/,'');
+ el('rect',{width:W,height:H},g);let short=p.name.startsWith('(')?p.name.replace(/^\(([^)]*)\)\s*/,'$1 '):p.name.replace(/\s*\([^)]*\)/g,'');short=short.trim();
  const size=short.length>32?10.5:short.length>24?12:13.5;
  el('text',{x:W/2,y:26,'text-anchor':'middle','font-size':size},g).textContent=short;
  const sub=el('text',{x:W/2,y:46,'text-anchor':'middle','font-size':12,class:'sub'},g);
@@ -85,6 +85,7 @@ function show(id){const p=P[id];Object.values(nodes).forEach(n=>n.classList.remo
  row('Spouse(s)',(p.spouses||[]).map(s=>(s.id?link(s.id):esc(s.name))+(s.marriage?` <span class="muted">m. ${esc(s.marriage)}</span>`:'')).join('<br>'));
  row('Children',[...kids].map(link).join('<br>'));
  row('Child count',esc(p.children_count));
+ row('1870 residence',esc(p.residence_1870));
  row('1900 residence',esc(p.residence_1900));row('1910 residence',esc(p.residence_1910));row('1920 residence',esc(p.residence_1920));
  row('Notes',esc(p.notes));row('Research status',esc(p.status));
  row('Sources',(p.sources||[]).map(srcHtml).join('')||'<span class="muted">none</span>');
