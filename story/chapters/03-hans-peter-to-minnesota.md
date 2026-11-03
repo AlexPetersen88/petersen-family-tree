@@ -41,7 +41,7 @@ Altogether, seven children were living in 1910 (S28), and Olga was born afterwar
 
 In September 1922 the *Redwood Gazette* reprinted a Morgan Messenger notice: Hans P. Petersen, age 55, of Brookville Township about two miles east of the Brookville church, died suddenly about 4:30 in the afternoon of heart trouble and complications while sitting in a chair. He had been ailing for some time; funeral arrangements were not yet made. He was survived by his wife and several children, unnamed in the notice (S145).
 
-**Open conflict:** the newspaper prints **Hans P.**; a Minnesota Historical Society death index lists **Hans T.** Petersen with date 1922-09-06 (candidate only). Genealogist has not resolved the middle initial, and this story does not treat 1922-09-06 as a proven death day (S145).
+Alex and Genealogist have locked his display name as **Hans P.** / **Hans Peter**, and this story uses that name only. A Minnesota Historical Society death index that reads **Hans T.** Petersen is treated as a **typo on MNHS’s part** — not a real middle initial — per Alex’s call, cleared by Genealogist. The index date 1922-09-06 stays a candidate only; the death certificate image has not been seen, and the calendar death day is still not proven from the newspaper alone (S145).
 
 He is buried at Dannebod Cemetery in Brookville Township, Redwood County (S12). The cemetery dates from 1876 and was the burial ground of the Danish Fredsminde church, built in 1889 (S20). The wording on his stone has not yet been transcribed.
 
