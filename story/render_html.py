@@ -122,7 +122,7 @@ def inline(text, ids, link_chapters):
 
 def paragraph_class(raw):
     stripped = raw.lstrip("- ").strip()
-    if stripped.startswith("**Provisional:**") or stripped.startswith("**Open question (provisional):**"):
+    if stripped.startswith(("**Provisional:**", "**Open question (provisional):**", "**Open conflict:**")):
         return ' class="provisional"'
     return ""
 
