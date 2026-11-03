@@ -16,7 +16,7 @@ Elmer died on 24 October 1964 in Redwood County (S14, S15). Caroline died on 8 A
 
 Donald Alvin Petersen was born on 23 July 1935 in Redwood County (S18, S19). He served in the US Army from 15 March 1955 to 14 March 1957, with the 82nd Airborne (S1, S2). His gravestone reads "SP 3 US ARMY" (S18).
 
-Janice Elaine Dohrmann was born on 23 July 1938 in Sleepy Eye, Minnesota, to Wesley and Ethel (Gent) Dohrmann (S1, S2). She and Donald married on 14 September 1957 at the Methodist Church in Sleepy Eye (S1, S2). Her obituary says they farmed in Paxton Township as the second generation on the family farm (S1).
+Janice Elaine Dohrmann was born on 23 July 1938 in Sleepy Eye, Minnesota, to Wesley Edward Dohrmann and Ethel Bertha (Neubauer) Dohrmann (S1, S2, S148, S149). Ethel was born 27 November 1911 in Brown County and died 7 June 1994 in Brown County; her mother’s maiden name was Gent (S148, S149). A Find a Grave bio for Wesley that says he married “Ethel Gent” misstates Ethel’s maiden name (S89). She and Donald married on 14 September 1957 at the Methodist Church in Sleepy Eye (S1, S2). Her obituary says they farmed in Paxton Township as the second generation on the family farm (S1).
 
 Their first son, Randy Don, was born and died in 1958 (S18). Their son **Michael Don Petersen** was born on 5 August 1961 (S0, S2).
 

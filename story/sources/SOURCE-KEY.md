@@ -53,3 +53,8 @@
 - S95 (APPROVED index — P8): MNHS death — Rudolph H. Petersen, b. 8 May 1893 MN; mother JENSEN; d. 13 Apr 1964 Hennepin Co; cert 1964-MN-006734. https://www.mnhs.org/search/people/record?uuid=3480d138-4a74-4be4-ba6d-7061b97c2ac5&recordType=death-records
 
 - S145 (APPROVED — newspaper text): Redwood Gazette (Redwood Falls), 1922-09-13, p.4, reprint from Morgan Messenger — Hans P. Petersen, age 55, Brookville Twp ~2 mi east of Brookville church; sudden heart death ~4:30 while sitting in a chair; had been ailing; funeral not yet made; survived by wife + several children (unnamed). Calendar death day NOT proven (“yesterday” relative to Messenger issue). Middle-initial conflict OPEN vs MNHS Hans T. 1922-09-06. https://www.loc.gov/resource/sn85025570/1922-09-13/ed-1/?sp=4
+
+- S148 (APPROVED index — P32): MNHS birth — Ethel Bertha Neubauer, b. 1911-11-27 Brown Co; mother's maiden GENT; cert 1911-03110. https://www.mnhs.org/search/people
+- S149 (APPROVED index — P32): MNHS death — Ethel B. Dohrmann, d. 1994-06-07 Brown Co; b. 1911-11-27; mother's maiden GENT; cert 1994-MN-015182. https://www.mnhs.org/search/people
+- S150 (SECONDARY): Find a Grave 228250641, Ethel B Neubauer Dohrmann, 27 Nov 1911 – 7 Jun 1994, Home Cemetery Sleepy Eye; spouse Wesley (m. 1935). https://www.findagrave.com/memorial/228250641/ethel-b-dohrmann
+- S89 (RECORD-SOURCED FAG secondary — Janice’s father): Find a Grave 197091387, Wesley Edward Dohrmann, 6 Jun 1902 – 18 Apr 1981, Home Cemetery Sleepy Eye. Bio says “Married Ethel Gent” — maiden misstated; Gent = Ethel’s mother’s maiden (see S148/S149). https://www.findagrave.com/memorial/197091387/wesley-edward-dohrmann
