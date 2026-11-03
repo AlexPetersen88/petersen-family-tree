@@ -9,6 +9,9 @@ Updated: 2026-11-03 (America/Chicago)
 - chapters/04-elmer-to-alex.md: P3 and P4, then P1 and P2, then P5, then P13
 - chapters/INDEX.md, sources/SOURCE-KEY.md
 
+## Standing preferences
+- Alex (2026-11-03 via Coordinator): include Genealogist-cleared Danish class/occupation terms (tjenestepige, tjenestekarl, husmand, hjulmand, boelsmand…) as lived scene detail with S# cites; never invent titles. Enrich landed 2026-11-03 (Ch.1, Ch.3, Abridged, Kids); PDFs rebuilt.
+
 ## Gate rules
 - Narrate only facts that are FAMILY-CONFIRMED, VERIFIED, or RECORD-SOURCED, each with a real S# cite from ../sources.md.
 - Omit CANDIDATE, probable, and inference claims, or mark them "Provisional."
