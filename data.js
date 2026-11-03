@@ -1054,14 +1054,14 @@ window.PEOPLE={
    "id": "P26",
    "name": "Jens Nielsen",
    "birth": {
-    "date": "c. 1790\u201391 (43 in 1834; 60 in 1850)",
-    "place": "Kirke-Flinterup(?) per FT-1850 (LOW)"
+    "date": "c. 1790\u201392 (43 in 1834; 60 in 1850; 26 at marriage 30 Oct 1818, S310 \u2014 consistent)",
+    "place": "Kirke Hvals\u00f8, Kj\u00f8benhavns Amt \u2014 CANDIDATE HIGH (FT-1855/1860 per Kin Pass 4l; not locked). Earlier FT-1850 read 'Kirke-Flinterup(?)' LOW."
    },
    "occupation": "Huusmand (cottager), Hjulmager (wheelwright), Skee, Haraldsted",
    "spouses": [
     {
      "id": "P27",
-     "marriage": "UNVERIFIED (before Oct 1835 per S218; not in Haraldsted 1814\u201336, S219)"
+     "marriage": "30 Oct 1818, S\u00e6rl\u00f8se Kirke (Kirke Hvals\u00f8 & S\u00e6rl\u00f8se pastorat), after banns (entered 23 Maj 1818) (S310 HIGH); couple = P26\u00d7P27 HIGH by name + ages + later Skee household (S218, FT); no parents given"
     }
    ],
    "children": [],
@@ -1075,22 +1075,23 @@ window.PEOPLE={
     "S128",
     "S218",
     "S219",
-    "S220"
+    "S220",
+    "S310"
    ],
    "status": "VERIFIED foster father (Pleiefader) of P18 (S56)",
-   "notes": "Son Hagen Jensen b. c. 1835 (S58). Foster child Hans Jensen b. c. 1844 (S58). Death not yet searched. Kinship to P25 or Peder Johansen: none found. | 2026-11-03 (S111): no adult Jens Nielsen in Haraldsted male deaths 1845\u2013early 1851 (img 121\u2013129); 1846 child Jens Nielsen 5\u00bc rejected. Search INCOMPLETE (img 130\u2013157, 1851\u201370). | 2026-11-03 (S128): Haraldsted male deaths 1845\u201370 now read in full (img 121\u2013157) \u2014 NEGATIVE for adult Jens Nielsen; 1869 Jens Nielsen 21 son of Niels Larsen rejected. OPEN: if S129 (1864 widow of Jens Nielsen in Skee) is P27, he died before 1864 and outside Haraldsted (or pre-1845, which would conflict with FT-1850 S58). See conflicts.md. | Kin Dig J (2026-11-03): son Haagen (Hagen) Jensen confirmed by baptism S218 (b. 30 Oct 1835, bapt 13 Dec 1835, Haraldsted; parents 'Gmd Jens Nielsen og Hustru Kirsten Johansd. af Skee'); couple at Skee by 1835. Title Gmd (gaardmand/farm owner) vs FT Huusmand/Hjulmager OPEN. Marriage Haraldsted 1814\u201336 NEG (S219; may be pre-1814/other parish). S220 forlover conflict (Nielsen vs Andersen) OPEN, not kinship. Kinship to P25/P28 still UNVERIFIED."
+   "notes": "Son Hagen Jensen b. c. 1835 (S58). Foster child Hans Jensen b. c. 1844 (S58). Death not yet searched. Kinship to P25 or Peder Johansen: none found. | 2026-11-03 (S111): no adult Jens Nielsen in Haraldsted male deaths 1845\u2013early 1851 (img 121\u2013129); 1846 child Jens Nielsen 5\u00bc rejected. Search INCOMPLETE (img 130\u2013157, 1851\u201370). | 2026-11-03 (S128): Haraldsted male deaths 1845\u201370 now read in full (img 121\u2013157) \u2014 NEGATIVE for adult Jens Nielsen; 1869 Jens Nielsen 21 son of Niels Larsen rejected. OPEN: if S129 (1864 widow of Jens Nielsen in Skee) is P27, he died before 1864 and outside Haraldsted (or pre-1845, which would conflict with FT-1850 S58). See conflicts.md. | Kin Dig J (2026-11-03): son Haagen (Hagen) Jensen confirmed by baptism S218 (b. 30 Oct 1835, bapt 13 Dec 1835, Haraldsted; parents 'Gmd Jens Nielsen og Hustru Kirsten Johansd. af Skee'); couple at Skee by 1835. Title Gmd (gaardmand/farm owner) vs FT Huusmand/Hjulmager OPEN. Marriage Haraldsted 1814\u201336 NEG (S219; may be pre-1814/other parish). S220 forlover conflict (Nielsen vs Andersen) OPEN, not kinship. Kinship to P25/P28 still UNVERIFIED. | Dig J S310 (2026-11-03 gate): at marriage 30 Oct 1818 'Ungkarl' (bachelor), tjenende (serving) at Birkhammer/Birkehammer Torvgaard? i Lejre (place spelling UNVERIFIED MED), 26 Aar. Flinterup 25 Sept 1791 baptism (Pass 3) remains CANDIDATE only, NOT merged as birth. Kinship to P25/P34 still UNVERIFIED."
   },
   {
    "id": "P27",
    "name": "Kirsten Johansdatter",
    "birth": {
-    "date": "c. 1796\u201397 (37 in 1834; 53 in 1850)",
-    "place": "illegible in FT-1850 (LOW)"
+    "date": "c. 1795\u201397 (37 in 1834; 53 in 1850; 22 at marriage 30 Oct 1818, S310 \u2014 consistent)",
+    "place": "S\u00e6rl\u00f8se Sogn, Kj\u00f8benhavns Amt \u2014 CANDIDATE HIGH (FT -l\u00f8se/Kbh Amt + marriage in S\u00e6rl\u00f8se Kirke S310; not locked; baptism not located)"
    },
    "spouses": [
     {
      "id": "P26",
-     "marriage": "UNVERIFIED (before Oct 1835 per S218; not in Haraldsted 1814\u201336, S219)"
+     "marriage": "30 Oct 1818, S\u00e6rl\u00f8se Kirke (Kirke Hvals\u00f8 & S\u00e6rl\u00f8se pastorat), after banns (entered 23 Maj 1818) (S310 HIGH); couple = P26\u00d7P27 HIGH by name + ages + later Skee household (S218, FT); no parents given"
     }
    ],
    "children": [],
@@ -1103,10 +1104,11 @@ window.PEOPLE={
     "S130",
     "S218",
     "S219",
-    "S220"
+    "S220",
+    "S310"
    ],
    "status": "VERIFIED foster mother of P18 (in the household 1834\u201345)",
-   "notes": "She shares the patronymic Johansdatter with alleged father Peder Johansen. A sibling link is UNVERIFIED speculation and is not asserted. | 2026-11-03: Haraldsted women deaths 1845\u201370 (bsid 204005) NOT yet searched (S111 incomplete). | 2026-11-03: CANDIDATE death (S129, MED): Haraldsted burial 1864 no. 10, Kirsten Johansdatter, widow of Jens Nielsen in Skee, age 68 (\u2248b.1795/96; fits 1796\u201397 within a year). Identity OPEN \u2014 not dead-proven. S130 (1864 no. 3 Kirsten Johansen, child) ruled out. | Kin Dig J (2026-11-03): mother of Haagen Jensen per baptism S218 (b. 30 Oct 1835, bapt 13 Dec 1835; 'Hustru Kirsten Johansd. af Skee'). Married to P26 by 1835; marriage Haraldsted 1814\u201336 NEG (S219). Johans* faddere are context only. Kinship to P25/P28 still UNVERIFIED."
+   "notes": "She shares the patronymic Johansdatter with alleged father Peder Johansen. A sibling link is UNVERIFIED speculation and is not asserted. | 2026-11-03: Haraldsted women deaths 1845\u201370 (bsid 204005) NOT yet searched (S111 incomplete). | 2026-11-03: CANDIDATE death (S129, MED): Haraldsted burial 1864 no. 10, Kirsten Johansdatter, widow of Jens Nielsen in Skee, age 68 (\u2248b.1795/96; fits 1796\u201397 within a year). Identity OPEN \u2014 not dead-proven. S130 (1864 no. 3 Kirsten Johansen, child) ruled out. | Kin Dig J (2026-11-03): mother of Haagen Jensen per baptism S218 (b. 30 Oct 1835, bapt 13 Dec 1835; 'Hustru Kirsten Johansd. af Skee'). Married to P26 by 1835; marriage Haraldsted 1814\u201336 NEG (S219). Johans* faddere are context only. Kinship to P25/P28 still UNVERIFIED. | Dig J S310 (2026-11-03 gate): at marriage 30 Oct 1818, 22 Aar, tjenende (serving) hos Gmd. (g\u00e5rdmand = farmer) Rasmus J\u00f8rgensen i T\u00f8lstrup; forlovere (best men) Gmd. Niels Hansen + Gmd. Rasmus J\u00f8rgensen, both T\u00f8lstrup. No parents given. Kinship to P25/P34 still UNVERIFIED."
   },
   {
    "id": "P28",
@@ -3526,6 +3528,14 @@ window.SOURCES={
   "text": "Find a Grave has no Janice memorial under Jacobsen, Petersen, or Dohrmann for 2025 at Redwood Falls Cemetery or site-wide in Minnesota. Cemetery grounds pin only. No individual grave pin. https://www.findagrave.com/cemetery/83131/redwood-falls-cemetery-association",
   "urls": [
    "https://www.findagrave.com/cemetery/83131/redwood-falls-cemetery-association"
+  ]
+ },
+ "S310": {
+  "id": "S310",
+  "flag": "HIGH \u2014 event; P26/P27 identity HIGH documentary",
+  "text": "Kirke Hvals\u00f8 and S\u00e6rl\u00f8se church book 1814\u20131829, AO bsid=152686 img 114, marriages 1818 row 5. 30 Oct 1818 at S\u00e6rl\u00f8se Kirke: bachelor Jens Nielsen, 26, *tjenende* (serving) near Lejre, married Kirsten Johansdatter, 22, *tjenende hos g\u00e5rdmand* (serving in a farmer's household) at T\u00f8lstrup. No parents on the entry. This clears P26 \u00d7 P27 as Hans's foster parents' marriage. It does not make them blood kin of P25 or P34. https://arkivalieronline.rigsarkivet.dk/da/billedviser?bsid=152686&page=114",
+  "urls": [
+   "https://arkivalieronline.rigsarkivet.dk/da/billedviser?bsid=152686&page=114"
   ]
  }
 };

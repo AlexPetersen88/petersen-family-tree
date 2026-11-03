@@ -115,3 +115,8 @@
 - Janice was born 23 Jul 1938 in Sleepy Eye. She died 18 Apr 2025 at Garnette Gardens, Redwood Falls, and was buried in Redwood Falls Cemetery (S301). Find a Grave has no memorial (S302). The cemetery grounds pin stands. Her grave is not pinned.
 - Second marriage: Loren Jacobsen, 28 Jun 1986 (S301). Obit note only. No person card.
 - Held out: Dig 40, Dig 41, Dig 42, Day B, Hansen parents, living-residence pins, and any individual grave coordinate for Janice.
+
+## Dig J / S310 (2026-11-03) — foster marriage — Genealogist CLEAR, thin
+- Jens Nielsen (P26) and Kirsten Johansdatter (P27) married 30 Oct 1818 at Særløse Kirke (S310). He was 26 and *tjenende* near Lejre. She was 22 and *tjenende hos gårdmand* at Tølstrup. No parents are named on the entry.
+- They are Hans Pedersen's verified foster parents. Kinship to Ane Marie Hansdatter (P25) or to Peder Johansen (P34) stays UNVERIFIED. Do not call them blood parents or siblings of the named father.
+- No visit pin for Særløse, Tølstrup, or Lejre. Dig 40–43, Day B, and farm coordinates stay out.
