@@ -51,7 +51,7 @@ PEOPLE.people.forEach(p=>{
   const g=el('g',{
     class:'node'+(isFamily(p)?' family':' records')+(p.living?' living':''),
     transform:`translate(${x-W/2},${y-H/2})`,
-    tabindex:'0',role:'button','aria-pressed':'false',
+    tabindex:'0',role:'button','aria-pressed':'false','data-id':p.id,
     'aria-label':`${short}, ${yrs(p)}, ${status}${p.living?', living':''}`
   });
   el('rect',{width:W,height:H,rx:16},g);
@@ -112,14 +112,48 @@ function zoom(f,cx,cy){
 }
 svg.addEventListener('wheel',e=>{e.preventDefault();const r=svg.getBoundingClientRect();zoom(e.deltaY<0?1.12:1/1.12,e.clientX-r.left,e.clientY-r.top)},{passive:false});
 const pts=new Map();let drag=null,pinch=null;
-svg.addEventListener('pointerdown',e=>{if(e.button!==undefined&&e.button!==0)return;svg.setPointerCapture?.(e.pointerId);pts.set(e.pointerId,{x:e.clientX,y:e.clientY});
- if(pts.size===1){drag={x:e.clientX-tx,y:e.clientY-ty,ox:e.clientX,oy:e.clientY,moved:false};wrap.classList.add('grabbing')}
- else if(pts.size===2){drag=null;const [a,b]=[...pts.values()];pinch={dist:Math.hypot(a.x-b.x,a.y-b.y)||1,k,tx,ty}}});
-svg.addEventListener('pointermove',e=>{if(!pts.has(e.pointerId))return;pts.set(e.pointerId,{x:e.clientX,y:e.clientY});
- if(pts.size>=2&&pinch){const [a,b]=[...pts.values()];const dist=Math.hypot(a.x-b.x,a.y-b.y)||1;const nk=Math.min(3.2,Math.max(.08,pinch.k*(dist/pinch.dist)));
-  const r=svg.getBoundingClientRect();const px=(a.x+b.x)/2-r.left,py=(a.y+b.y)/2-r.top;const s=nk/pinch.k;tx=px-(px-pinch.tx)*s;ty=py-(py-pinch.ty)*s;k=nk;apply();suppressClick=true}
- else if(drag&&pts.size===1){if(Math.hypot(e.clientX-drag.ox,e.clientY-drag.oy)>10)drag.moved=true;tx=e.clientX-drag.x;ty=e.clientY-drag.y;apply()}});
-function endPointer(e){pts.delete(e.pointerId);if(pts.size<2)pinch=null;if(!pts.size){if(drag?.moved)suppressClick=true;drag=null;wrap.classList.remove('grabbing')}}
+svg.addEventListener('pointerdown',e=>{
+  if(e.button!==undefined&&e.button!==0)return;
+  pts.set(e.pointerId,{x:e.clientX,y:e.clientY});
+  if(pts.size===1){
+    drag={x:e.clientX-tx,y:e.clientY-ty,ox:e.clientX,oy:e.clientY,moved:false,id:e.target.closest?.('.node')?.dataset.id||''};
+    wrap.classList.add('grabbing');
+  }else if(pts.size===2){
+    drag=null;
+    const [a,b]=[...pts.values()];
+    pinch={dist:Math.hypot(a.x-b.x,a.y-b.y)||1,k,tx,ty};
+    for(const id of pts.keys())svg.setPointerCapture?.(id);
+  }
+});
+svg.addEventListener('pointermove',e=>{
+  if(!pts.has(e.pointerId))return;
+  pts.set(e.pointerId,{x:e.clientX,y:e.clientY});
+  if(pts.size>=2&&pinch){
+    const [a,b]=[...pts.values()];
+    const dist=Math.hypot(a.x-b.x,a.y-b.y)||1;
+    const nk=Math.min(3.2,Math.max(.08,pinch.k*(dist/pinch.dist)));
+    const r=svg.getBoundingClientRect();
+    const px=(a.x+b.x)/2-r.left,py=(a.y+b.y)/2-r.top;
+    const s=nk/pinch.k;
+    tx=px-(px-pinch.tx)*s;ty=py-(py-pinch.ty)*s;k=nk;apply();suppressClick=true;
+  }else if(drag&&pts.size===1){
+    if(!drag.moved&&Math.hypot(e.clientX-drag.ox,e.clientY-drag.oy)>10){
+      drag.moved=true;
+      svg.setPointerCapture?.(e.pointerId);
+    }
+    if(drag.moved){tx=e.clientX-drag.x;ty=e.clientY-drag.y;apply()}
+  }
+});
+function endPointer(e){
+  pts.delete(e.pointerId);
+  if(pts.size<2)pinch=null;
+  if(pts.size)return;
+  const openId=e.type!=='pointercancel'&&drag&&!drag.moved&&drag.id;
+  if(drag?.moved)suppressClick=true;
+  drag=null;
+  wrap.classList.remove('grabbing');
+  if(openId){suppressClick=true;show(openId)}
+}
 svg.addEventListener('pointerup',endPointer);svg.addEventListener('pointercancel',endPointer);
 document.getElementById('zi').addEventListener('click',()=>zoom(1.2));
 document.getElementById('zo').addEventListener('click',()=>zoom(1/1.2));
