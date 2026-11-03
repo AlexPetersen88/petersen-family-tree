@@ -4,7 +4,7 @@ Open `index.html` directly in a browser (double-click, or `file:///workspace/gen
 Or serve it: `cd /workspace/genealogy/site && python3 -m http.server 8000` → http://localhost:8000
 
 - **Tree** (`index.html`): drag to pan, scroll or +/− to zoom; click a person for dates, places, family, status, and source links.
-- **Story** (`story/index.html`): four chapters and the chapter source key. The wording lives in `story/chapters/` and `story/sources/`. After a Storyteller sync, run `python3 story/render_html.py`.
+- **Story** (`story/index.html`): four chapters, an abridged easy-read, a change log, and the chapter source key. The wording lives in `story/chapters/` and `story/sources/`. After a Storyteller sync, run `python3 story/render_html.py`.
 - **Downloads** (`downloads/`): `Petersen-Family-Story.pdf` and `Denmark-Trip-Itinerary.pdf`, linked from the Story pages.
 - **Sources** (`sources.html`): every source from `sources.md`, with URLs and who cites it.
 

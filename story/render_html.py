@@ -6,6 +6,7 @@ GitHub Pages serves the HTML directly. Re-run after a chapter sync:
     python3 story/render_html.py
 
 The script copies wording through. It does not add relatives, scenes, or source ids.
+ABRIDGED.md and CHANGE-LOG.md render as companion pages next to the chapters.
 """
 
 import html
@@ -36,8 +37,25 @@ CHAPTERS = [
         "short": "Chapter 4",
     },
 ]
+COMPANIONS = [
+    {
+        "md": "chapters/ABRIDGED.md",
+        "html": "abridged.html",
+        "short": "Abridged",
+        "kicker": "Easy read",
+        "summary": "An easy-reading telling of the full chapters. Findings cleared by the Genealogist are told as plain fact.",
+    },
+    {
+        "md": "chapters/CHANGE-LOG.md",
+        "html": "change-log.html",
+        "short": "Change log",
+        "kicker": "Record",
+        "summary": "Genealogist-cleared additions and corrections folded into the story chapters, newest first.",
+    },
+]
 SRC_RE = re.compile(r"\bS\d+\b")
 URL_RE = re.compile(r"https://[^\s)<]+")
+CODE_RE = re.compile(r"`([^`]+)`")
 CHAPTER_RE = re.compile(r"Chapter ([1-4])")
 
 
@@ -93,6 +111,9 @@ def inline(text, ids, link_chapters):
     urls = URL_RE.findall(text)
     for i, url in enumerate(urls):
         text = text.replace(url, f"\x00URL{i}\x00", 1)
+    codes = CODE_RE.findall(text)
+    for i, code in enumerate(codes):
+        text = text.replace(f"`{code}`", f"\x00CODE{i}\x00", 1)
     text = html.escape(text)
     text = re.sub(r"\*\*(.+?)\*\*", r"<strong>\1</strong>", text)
     text = re.sub(r"\*(.+?)\*", r"<em>\1</em>", text)
@@ -117,6 +138,13 @@ def inline(text, ids, link_chapters):
             f"\x00URL{i}\x00",
             f'<a class="src-url" href="{safe}" target="_blank" rel="noopener">{safe}</a>',
         )
+    for i, code in enumerate(codes):
+        safe = html.escape(code)
+        if code == "sources/SOURCE-KEY.md":
+            repl = f'<a href="source-key.html"><code>{safe}</code></a>'
+        else:
+            repl = f"<code>{safe}</code>"
+        text = text.replace(f"\x00CODE{i}\x00", repl)
     return text
 
 
@@ -203,6 +231,12 @@ def chrome(current):
         links.append(
             f'<a href="{href}" aria-label="{html.escape(aria)}"{current_attr}>{html.escape(label)}</a>'
         )
+    companion_links = []
+    for comp in COMPANIONS:
+        current_attr = ' aria-current="page"' if current == comp["html"] else ""
+        companion_links.append(
+            f'<a href="{comp["html"]}"{current_attr}>{html.escape(comp["short"])}</a>'
+        )
     story_current = ' class="on" aria-current="page"'
     return f"""<div class="sticky-chrome">
 <header>
@@ -211,6 +245,7 @@ def chrome(current):
 </header>
 <div class="banner"></div>
 <nav class="story-jump" aria-label="Chapters">{''.join(links)}</nav>
+<nav class="story-companions" aria-label="Story companions">{''.join(companion_links)}</nav>
 <nav class="story-files" aria-label="Downloads">
 <a href="../downloads/Petersen-Family-Story.pdf">Story PDF</a>
 <a href="../downloads/Denmark-Trip-Itinerary.pdf">Denmark trip PDF</a>
@@ -289,10 +324,28 @@ def pager(index):
     return "\n".join(parts)
 
 
+def companion_pager(index):
+    parts = ['<nav class="pager" aria-label="More of the story">']
+    if index > 0:
+        prev = COMPANIONS[index - 1]
+        parts.append(
+            f'<a class="prev" href="{prev["html"]}"><span class="dir">Previous</span><span class="label">{html.escape(prev["short"])}</span></a>'
+        )
+    if index < len(COMPANIONS) - 1:
+        nxt = COMPANIONS[index + 1]
+        parts.append(
+            f'<a class="next" href="{nxt["html"]}"><span class="dir">Next</span><span class="label">{html.escape(nxt["short"])}</span></a>'
+        )
+    parts.append('<a class="keylink" href="index.html">All chapters</a>')
+    parts.append('<a class="keylink" href="source-key.html">Source key</a>')
+    parts.append("</nav>")
+    return "\n".join(parts)
+
+
 def plain(text):
     text = re.sub(r"<[^>]+>", "", text)
     text = html.unescape(text)
-    text = text.replace("*", "")
+    text = text.replace("*", "").replace("`", "")
     text = re.sub(r"^#+\s*", "", text, flags=re.M)
     text = re.sub(r"^\s*-\s+", "", text, flags=re.M)
     return re.sub(r"\s+", " ", text).strip()
@@ -324,11 +377,24 @@ def render():
             f"<span class=\"chapter-sum\">{inline(item['summary'], ids, False)}</span>"
             "</span></a></li>"
         )
+    companion_cards = []
+    for comp in COMPANIONS:
+        companion_cards.append(
+            f'<a class="download-card" href="{comp["html"]}">'
+            f'<span class="download-kicker">{html.escape(comp["kicker"])}</span>'
+            f'<span class="download-title">{html.escape(comp["short"])}</span>'
+            f'<span class="download-sum">{html.escape(comp["summary"])}</span>'
+            "</a>"
+        )
     index_body = """<h2>Story</h2>
-<p class="lede">Four chapters, from Hans Pedersen of Skee to Alex. Uncertain points stay labeled. Living members of the current household are left out on purpose.</p>
+<p class="lede">Four chapters, from Hans Pedersen of Skee to Alex, plus a short version and a change log. Uncertain points stay labeled. Living members of the current household are left out on purpose.</p>
 <ol class="chapter-list">
 """ + "\n".join(cards) + """
 </ol>
+<section class="download-block" aria-label="Short version and change log">
+<h3>Short version and change log</h3>
+""" + "\n".join(companion_cards) + """
+</section>
 <p class="key-row"><a class="keylink" href="source-key.html">Source key</a></p>
 <section class="download-block" aria-label="Downloads">
 <h3>Downloads</h3>
@@ -371,6 +437,45 @@ def render():
             raise SystemExit(f"Unconverted markdown left in {chapter['html']}")
         (ROOT / chapter["html"]).write_text(document, encoding="utf-8")
 
+    # The change log names people and sources the chapters keep out. Copy that
+    # wording through, and still refuse the living household.
+    living = ("Tina", "Ryder", "Jayden", "Maryana")
+    for n, comp in enumerate(COMPANIONS):
+        raw = (ROOT / comp["md"]).read_text(encoding="utf-8")
+        for word in living:
+            if word in raw:
+                raise SystemExit(f"{comp['md']} contains withheld marker {word}")
+        title, dek, body_lines = split_chapter(raw)
+        dek_html = f'<p class="dek">{inline(dek, ids, True)}</p>\n' if dek else ""
+        article = (
+            "<article class=\"chapter\">\n"
+            f"<h2>{inline(title, ids, False)}</h2>\n"
+            f"{dek_html}"
+            f"{render_blocks(body_lines, ids)}\n"
+            "</article>"
+        )
+        document = page(
+            f"{title} · Petersen Family",
+            comp["html"],
+            article + "\n" + companion_pager(n),
+        )
+        for word in living:
+            if word in document:
+                raise SystemExit(f"Generated {comp['html']} contains {word}")
+        cited = set(SRC_RE.findall(raw))
+        linked = set(re.findall(r"source-key\.html#(S\d+)", article))
+        if linked != cited & ids:
+            raise SystemExit(
+                f"{comp['html']} cite links {sorted(linked)} != known cites {sorted(cited & ids)}"
+            )
+        expected = plain(raw)
+        got = article_text(document)
+        if expected != got:
+            raise SystemExit(f"Text drift in {comp['html']}\nEXPECTED: {expected}\nGOT: {got}")
+        if "*" in article or "`" in article:
+            raise SystemExit(f"Unconverted markdown left in {comp['html']}")
+        (ROOT / comp["html"]).write_text(document, encoding="utf-8")
+
     cards = []
     for entry in entries:
         note = ""
@@ -396,7 +501,9 @@ def render():
         if word in source_html:
             raise SystemExit(f"Source key page contains {word}")
     (ROOT / "source-key.html").write_text(source_html, encoding="utf-8")
-    print(f"Rendered {len(CHAPTERS)} chapters, index, and {len(entries)} sources.")
+    print(
+        f"Rendered {len(CHAPTERS)} chapters, {len(COMPANIONS)} companions, index, and {len(entries)} sources."
+    )
 
 
 if __name__ == "__main__":
