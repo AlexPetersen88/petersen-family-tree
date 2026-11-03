@@ -49,3 +49,6 @@ Added RECORD-SOURCED (amber, not family-confirmed) cards from browser-pass-bjern
 
 ## 2026-11-03 — resume-pass sync
 Added P24 unnamed son (b. 17 / d. 18 Jan 1863, RECORD-SOURCED, medium); P23 Rasmus birth 10 Dec 1866 (d. 5 Feb 1867); 1870 census Ane widow + Hans Peter 6 (S44). Sources S42–S44. "4th Barn" remark unreliable — no sibling added. Backup people.prev-2026-11-03d.json.
+
+## 2026-11-03 — Ane second-family sync (research-log 63)
+P19 Ane d. 29 Jun 1883 (inference match, entered "Ane Marie Rasmussen"); P20 Hans Rasmussen d. ~Jul 1883 age 83 → birth leans 1801; P21 confirmed 1885, foster Fuldby, emigrant 1889 → Sleepy Eye CANDIDATE; P22 confirmed 1888, foster Anders Larsen, fate after 1888 unknown. Sources S45–S49. Backup people.prev-2026-11-03e.json.

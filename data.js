@@ -493,7 +493,12 @@ window.PEOPLE={
     "place": "Bjernede Lodsgaard (place LOW confidence; year medium)"
    },
    "death": {
-    "date": "unknown (alive 1 Feb 1880, Bjernede)"
+    "date": "1883-06-29",
+    "burial": "1883-07-05",
+    "age": "40",
+    "place": "Bjerne Huse, Bjernede",
+    "entry": "'Ane Marie Rasmussen', Gift (2den Gang) med Bolmand Hans Rasmussen i Bjerne Huse (S45)",
+    "matchNote": "INFERENCE: identified with Ane Rasmusdatter by husband/household, age 40 (b. 1843) and 2nd marriage; no patronymic or parents on the entry; recorded as 'Ane Marie', not 'Ane Rasmusdatter'. Children's confirmations (S47, S48) say both parents dead by 1885."
    },
    "parents": [],
    "parentsNote": "Parents NOT found (her 1843 baptism not yet searched). Marriage witness Peder Rasmussen, Bjernede Lodsgaard = possible relative, UNVERIFIED.",
@@ -523,25 +528,32 @@ window.PEOPLE={
     "S33",
     "S42",
     "S43",
-    "S44"
+    "S44",
+    "S45",
+    "S47",
+    "S48"
    ],
    "status": "RECORD-SOURCED (Danish church book; not family-confirmed)",
-   "notes": "Vacc. 24 Aug 1844. In 1862 serving with Hans Rasmussen Bode(?) in Overl\u00f8se(?). Age '28' on son's 1864 baptism conflicts with 1843 birth \u2014 treated as misread (see conflicts.md). Death not found (volume ends 1878). Detail: shots/bjernede-family-2026-11-03/; browser-pass-bjernede-family.md",
+   "notes": "Vacc. 24 Aug 1844. In 1862 serving with Hans Rasmussen Bode(?) in Overl\u00f8se(?). Age '28' on son's 1864 baptism conflicts with 1843 birth \u2014 treated as misread (see conflicts.md). Death 1883 found in 1879 FVD vol (S45); match by inference, see death.matchNote. Detail: shots/bjernede-family-2026-11-03/; browser-pass-bjernede-family.md",
    "residence_1870": "1 Feb 1870 Bjernede: widow 'Anne Rasmusen' 27, own Huus, with son Hans Peter Pedersen 6 (S44)"
   },
   {
    "id": "P20",
    "name": "Hans Rasmussen",
    "birth": {
-    "date": "19 Apr 1801 or 1831 (year unclear; 1880 census age ~48 favours 1831)",
-    "place": "Bjernedehuse(?)"
+    "date": "~1800\u20131801 (FAVOURED: 19 Apr 1801 per S38 + death age 83 in 1883, S46; 1831 reading / 1880 census ~48 now disfavoured)",
+    "place": "'Tunnestedt'(?) per death entry \u2014 LOW confidence; earlier 'Bjernedehuse(?)'"
    },
    "death": {
-    "date": "unknown (alive 1880)"
+    "date": "~1883-07-02 (day LOW confidence)",
+    "burial": "1883-07-05 or 07-08 (day digits unsure)",
+    "age": "83",
+    "place": "Bjernede Huse",
+    "entry": "Hans Rasmussen, Gift (3die Gang), Bolmand i Bjernede Huse, Faderens Navn Rasmus Hansen (S46)"
    },
-   "occupation": "Husmand, Bjernedegaardshuse",
+   "occupation": "Husmand/Bolmand, Bjernedegaardshuse / Bjernede Huse",
    "parents": [],
-   "parentsNote": "UNKNOWN. Do NOT link to the 'Hans Rasmussen b. ~1833, son of Niels Rasmussen & Maren Hansdatter' candidate \u2014 unverified, logged not-to-use.",
+   "parentsNote": "Father named on death entry: Rasmus Hansen (S46; no card). Mother unknown. Do NOT link to the 'Hans Rasmussen b. ~1833, son of Niels Rasmussen & Maren Hansdatter' candidate \u2014 unverified, logged not-to-use (and age 83 in 1883 argues against it).",
    "spouses": [
     {
      "id": "P19",
@@ -559,17 +571,21 @@ window.PEOPLE={
     "S38",
     "S39",
     "S40",
-    "S33"
+    "S33",
+    "S46",
+    "S47",
+    "S48"
    ],
-   "status": "RECORD-SOURCED / birth year UNVERIFIED (1801 vs 1831)",
-   "notes": "Stepfather of Hans Peter (1880 census S33). Previous two wives unknown. Detail: shots/bjernede-family-2026-11-03/; browser-pass-bjernede-family.md"
+   "status": "RECORD-SOURCED / birth year leans 1801 (death age 83); day of death/burial & birthplace LOW confidence",
+   "notes": "Stepfather of Hans Peter (1880 census S33). Previous two wives unknown. Detail: shots/bjernede-family-2026-11-03/; browser-pass-bjernede-family.md; died ~3 days after wife Ane (S45, S46)."
   },
   {
    "id": "P21",
    "name": "Rasmus Peter Rasmussen",
    "birth": {
-    "date": "1871-03-01 (day read '1st March(?)')",
-    "place": "Bjernede, Sor\u00f8 amt"
+    "date": "1871-03-01",
+    "place": "Bjernedehuse, Bjernede, Sor\u00f8 amt",
+    "baptism": "1871-04-04 (S47)"
    },
    "parents": [
     "P20",
@@ -577,10 +593,14 @@ window.PEOPLE={
    ],
    "sources": [
     "S39",
-    "S33"
+    "S33",
+    "S47",
+    "S49"
    ],
    "status": "RECORD-SOURCED (half-brother of Hans Peter)",
-   "notes": "Mother's age given 27. = 'Rasmus Peder' 8 in 1880 census. After 1880 unknown. Detail: shots/bjernede-family-2026-11-03/; browser-pass-bjernede-family.md"
+   "notes": "Mother's age given 27. = 'Rasmus Peder' 8 in 1880 census. Orphaned 1883; foster home Fuldby. Possible emigrant 1889 \u2192 Sleepy Eye (candidate only). Detail: browser-pass-ane-second-family.md",
+   "confirmation": "spring 1885 (S\u00f8ndag efter Paaske), Bjernede (S47): b. 1 Mar 1871 Bjernedehuse, bapt. 4 Apr 1871; parents Hans Rasmussen & Ane Rasmussen 'begge d\u00f8de'; foster-father Gaardejer Rasmus Rasmussen of Fuldby/Tuldby (place hand-read)",
+   "emigrationCandidate": "CANDIDATE / UNVERIFIED: Copenhagen Police emigrant index 18 Jun 1889, contract 4232 Y (indirect), 'Rasmussen, Rasmus Peder', Landmand, last res. Fuldby, Sor\u00f8, age 18, to Sleepy Eye, USA (S49). Probable (age + Fuldby match foster home) but index gives no parents/birthplace; destination link NOT proven."
   },
   {
    "id": "P22",
@@ -588,7 +608,7 @@ window.PEOPLE={
    "birth": {
     "date": "1874-10-24",
     "place": "Bjernedehuse, Bjernede, Sor\u00f8 amt",
-    "baptism": "1875-01-10"
+    "baptism": "1875-01-10 (S40) / 1875-01-11 (S48) \u2014 one-day discrepancy"
    },
    "parents": [
     "P20",
@@ -596,10 +616,12 @@ window.PEOPLE={
    ],
    "sources": [
     "S40",
-    "S33"
+    "S33",
+    "S48"
    ],
    "status": "RECORD-SOURCED (half-sister of Hans Peter)",
-   "notes": "Mother's age 31. Sponsor 'Hans Pedersen' probably half-brother Hans Peter (unverified). = Ane Marie 5 in 1880 census. After 1880 unknown. Detail: shots/bjernede-family-2026-11-03/; browser-pass-bjernede-family.md"
+   "notes": "Mother's age 31. Sponsor 'Hans Pedersen' probably half-brother Hans Peter (unverified). = Ane Marie 5 in 1880 census. Orphaned 1883; fate after 1888 UNKNOWN (emigrant 'Ane Marie' 23, Boslunde, 1895 NOT linked). Detail: browser-pass-ane-second-family.md",
+   "confirmation": "autumn 1888 (S\u00f8ndag efter Michaelis), Bjernede (S48): b. 24 Oct 1874 Bjernedehuse, bapt. 11 Jan 1875; parents Hans Rasmussen & Ane Rasmussen 'begge d\u00f8de'; foster-father Bolmand Anders Larsen, Bjernedehuse"
   },
   {
    "id": "P23",
@@ -1012,6 +1034,46 @@ window.SOURCES={
   "text": "1870 Danish census, Bjernede, Sor\u00f8 Alsted herred, 1 Feb 1870, img 23 (page 66), \"1 Huus\": Anne Rasmusen K 27 widow; Hans Peter Pedersen M 6 unmarried: https://arkivalieronline.rigsarkivet.dk/da/billedviser?bsid=53367 (shots 18, 19). NB img 18 Hans Peter Pedersen ~19, servant = namesake, NOT ours.",
   "urls": [
    "https://arkivalieronline.rigsarkivet.dk/da/billedviser?bsid=53367"
+  ]
+ },
+ "S45": {
+  "id": "S45",
+  "flag": null,
+  "text": "Bjernede Hovedministerialbog 1879 FVD\u20131891 FVD, img 90, D\u00f8de Kvindek\u00f8n 1883 no. 11: \"Ane Marie Rasmussen\" d. 29 Jun 1883, bur. 5 Jul 1883, age 40, Gift (2den Gang) med Bolmand Hans Rasmussen i Bjerne Huse. Identity with Ane Rasmusdatter = inference: https://arkivalieronline.rigsarkivet.dk/en/billedviser?epid=17223538 (shots ane-second-family 05, 06)",
+  "urls": [
+   "https://arkivalieronline.rigsarkivet.dk/en/billedviser?epid=17223538"
+  ]
+ },
+ "S46": {
+  "id": "S46",
+  "flag": null,
+  "text": "same vol., img 71, D\u00f8de Mandk\u00f8n 1883 no. 4: Hans Rasmussen d. ~2 Jul 1883, bur. 5/8 Jul (days LOW), age 83, Gift (3die Gang), Bolmand i Bjernede Huse, f\u00f8dt \"Tunnestedt\"(? LOW), Faderens Navn Rasmus Hansen: https://arkivalieronline.rigsarkivet.dk/en/billedviser?epid=17223538 (shots 09, 10)",
+  "urls": [
+   "https://arkivalieronline.rigsarkivet.dk/en/billedviser?epid=17223538"
+  ]
+ },
+ "S47": {
+  "id": "S47",
+  "flag": null,
+  "text": "Bjernede vol. 1858 K\u20131891 K, img 33, Drenge spring 1885 no. 5: Rasmus Peter Rasmussen b. 1 Mar 1871 Bjernedehuse, bapt. 4 Apr 1871; parents Bolmand Hans Rasmussen & Ane Rasmussen begge d\u00f8de; Plejefader Gaardejer Rasmus Rasmussen af Fuldby(?): https://arkivalieronline.rigsarkivet.dk/en/billedviser?epid=17223538 (shot 12)",
+  "urls": [
+   "https://arkivalieronline.rigsarkivet.dk/en/billedviser?epid=17223538"
+  ]
+ },
+ "S48": {
+  "id": "S48",
+  "flag": null,
+  "text": "same K vol., img 80, Piger autumn 1888 no. 6: Ane Marie Rasmussen af Bjernedehuse b. 24 Oct 1874, bapt. 11 Jan 1875; parents begge d\u00f8de; Plejefader Bolmand Anders Larsen, Bjernedehuse: https://arkivalieronline.rigsarkivet.dk/en/billedviser?epid=17223538 (shot 11)",
+  "urls": [
+   "https://arkivalieronline.rigsarkivet.dk/en/billedviser?epid=17223538"
+  ]
+ },
+ "S49": {
+  "id": "S49",
+  "flag": "CANDIDATE",
+  "text": "Copenhagen Police emigrant index, 18 Jun 1889, contract 4232 Y (indirect): Rasmussen, Rasmus Peder, Landmand, Fuldby Sor\u00f8, 18, \u2192 Sleepy Eye USA. No parents in index; link to P21 probable only: https://www.aalborgstadsarkiv.dk/UA.asp?UA=UAProtokol (shot 13)",
+  "urls": [
+   "https://www.aalborgstadsarkiv.dk/UA.asp?UA=UAProtokol"
   ]
  }
 };

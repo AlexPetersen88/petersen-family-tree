@@ -53,3 +53,10 @@
 - Rasmus's birth remark possibly "4th Barn" — reading UNRELIABLE (partly illegible). Would imply a 3rd child 1865–66; NOT inferred, no person added. Female births imgs 56, 60, 62–66 and female deaths 136–150 unchecked.
 - Mother's age "23" on S43 vs b. 1843 (~23½) — consistent enough; ages loose.
 - 1870 census (S44): a different Hans Peter Pedersen ~19, servant (img 18) is a namesake — NOT P6.
+
+## 2026-11-03 — Ane second-family pass (S45–S49)
+- P19 death entry (S45) names "Ane Marie Rasmussen", not "Ane Rasmusdatter"; "Marie" appears in no earlier record. Match by inference (husband Hans Rasmussen, Bjerne Huse, age 40 = b. 1843, 2nd marriage) + children's "begge døde" (S47, S48). Accepted with note.
+- P20 birth year: death age 83 in 1883 (S46) supports 1801 over 1831; 1880 census "~48" now treated as misread. Leaning 1801, not closed. Still NOT linked to the ~1833 Niels/Maren candidate. Death/burial days and birthplace "Tunnestedt" LOW confidence.
+- P22 baptism 10 Jan 1875 (S40) vs 11 Jan 1875 (S48) — minor, unresolved.
+- P21 Sleepy Eye emigrant (S49): OPEN — candidate only (age + Fuldby); needs US/Danish corroboration.
+- P22 Ane Marie after 1888: OPEN. Emigrant "Ane Marie" 23, Boslunde, 1895 NOT linked.

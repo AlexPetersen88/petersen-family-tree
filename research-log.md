@@ -117,3 +117,14 @@ Added RECORD-SOURCED (amber, not family-confirmed) cards from browser-pass-bjern
 59. 1870 census img 23 (bsid=53367): Anne Rasmusen, 27, enke + Hans Peter Pedersen, 6, in own "Huus", Bjernede. Namesake H.P. Pedersen ~19 on img 18 is NOT ours.
 60. Female births imgs 52-59,61: no entry for this couple (not exhaustive). Not done: female deaths, 1879 vol, confirmation vol, emigrant index.
 61. Synced 57–59 to people.json: added P24 (unnamed son 1863), P23 birth updated, 1870 census on P6/P19; sources S42–S44; backup people.prev-2026-11-03d.json; data.js rebuilt.
+
+## 2026-11-03 ~07:20 CST: Free index pass for Ane's second family after 1880. NOTHING NEW, NOT VERIFIED
+62. Emigrant index UAProtokol: curl form POSTs return an empty shell page. BLOCKED (needs a browser). Not searched, so this is not a negative result.
+63. ddd.dda.dk search: timed out again (40 s). BLOCKED. DFS and FamilySearch need a login and were not tried.
+64. Web search (names + Bjernede, 1890/1901 census): no relevant hits. Only namesakes (Hans Rasmussen b. 1850 Dreslette, not ours).
+65. Volume map from denjyskekirkebog.dk/LAK/384-404.htm: deaths and marriages 1879–91 = Hovedministerialbog 2-384-005 (FVD 1879–1891); confirmations = 2-384-006 (K 1858–1891); 1892–1908 = 3-384-007; 1909–20 = 3-384-008. These are the next image reads. Details: browser-pass-ane-second-family-index.md. people.json unchanged.
+
+## 2026-11-03 Ane second-family pass (PARTIAL) — see browser-pass-ane-second-family.md
+62. Mapped Bjernede 1879 FVD–1891 FVD (99 imgs, epid=17223538): births 2–~56, marriages ~57–65, deaths ~66–99. Sampled only; no hit for Ane/Hans Rasmussen/Rasmus Peter/Ane Marie. Not exhaustive. K volume, censuses 1890+, emigrant index NOT done. people.json unchanged.
+63. 2026-11-03 resume: Bjernede 1879 FVD–1891 FVD male deaths imgs 66–82, female 83/84–90; found Ane Marie Rasmussen d. 29 Jun 1883 age 40 "gift 2den gang m. Hans Rasmussen i Bjerne Huse" (img 90 #11) and Hans Rasmussen d. Jul 1883 age 83 "3die Gang" (img 71 #4). K volume: Rasmus Peter Rasmussen conf. spring 1885 (img 33 #5), Ane Marie Rasmussen conf. autumn 1888 (img 80 #6), both parents "begge døde". Emigrant index: Rasmus Peder Rasmussen, Fuldby/Sorø, 18, → Sleepy Eye USA, 18/6 1889 (probable Rasmus Peter). Female deaths 91–99, 1890 census, marriages not done. people.json unchanged. See browser-pass-ane-second-family.md.
+66. Synced entry 63 to people.json: P19/P20 deaths 1883 (RECORD-SOURCED; P19 match by inference), P20 birth leans 1801, P21/P22 confirmations, P21 Sleepy Eye emigrant CANDIDATE (S49). Sources S45–S49; conflicts.md updated; backup people.prev-2026-11-03e.json; data.js rebuilt. Open: female deaths imgs 91–99, 1890 census, Ane Marie after 1888, US trace of Rasmus Peder.

@@ -1,7 +1,7 @@
 const P={};PEOPLE.people.forEach(p=>P[p.id]=p);
 const isFamily=p=>!!p.familyConfirmed||/confirmed by Alex/i.test(p.status||'');
 const isOrigin=p=>/FAMILY-CONFIRMED|RESOLVED/i.test(p.denmarkOrigin||'')||/ORIGIN FAMILY-CONFIRMED/i.test(p.familyConfirmed||'');
-const yearOf=d=>{const s=String(d||'');if(/NOT FOUND|unclear|\bor \d{4}/i.test(s))return'?';const m=s.match(/\d{4}/);return m?m[0]:'?'};
+const yearOf=d=>{const s=String(d||'');if(/NOT FOUND|unclear|\bor \d{4}/i.test(s))return'?';const fav=s.match(/FAVOURED:[\s\S]*?(\d{4})/);if(fav)return fav[1];const m=s.match(/\d{4}/);return m?m[0]:'?'};
 const yrs=p=>{if(p.living)return (p.birth&&p.birth.date?'b. '+yearOf(p.birth.date)+' · ':'')+'living';
  return yearOf(p.birth&&p.birth.date)+'–'+yearOf(p.death&&p.death.date)};
 const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));

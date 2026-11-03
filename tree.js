@@ -65,7 +65,9 @@ function srcHtml(s){if(/^https?:/.test(s))return `<div class="src"><a href="${es
  const S=SOURCES[s];if(!S)return `<div class="src">${esc(s)} <span class="muted">(not in sources.md)</span></div>`;
  const t=S.text.replace(/https?:\/\/[^\s)]+/g,'').replace(/:\s*$/,'');
  return `<div class="src"><a href="sources.html#${s}"><b>${s}</b></a>${S.flag?' <i>('+esc(S.flag)+')</i>':''}: ${esc(t)} ${S.urls.map(u=>`<a href="${esc(u)}" target="_blank" rel="noopener">[open ↗]</a>`).join(' ')}</div>`}
-function place(o){if(!o)return'';return [o.date,o.place,o.baptism&&('bapt. '+o.baptism),o.placeStatus,o.status].filter(Boolean).map(esc).join(' · ')}
+function place(o){if(!o)return'';if(typeof o==='string')return esc(o);
+ const bits=[o.date,o.place,o.baptism&&('bapt. '+o.baptism),o.burial&&('bur. '+o.burial),o.age&&('age '+o.age),o.placeStatus,o.entry,o.status].filter(Boolean).map(esc);
+ let h=bits.join(' · '); if(o.matchNote)h+=`<div class="relnote">${esc(o.matchNote)}</div>`; return h}
 function show(id){const p=P[id];Object.values(nodes).forEach(n=>n.classList.remove('sel'));nodes[id].classList.add('sel');
  const kids=new Set([...(p.children||[])]);PEOPLE.people.forEach(q=>(q.parents||[]).includes(id)&&kids.add(q.id));
  const pills=(isFamily(p)?'<span class="pill f">Family-confirmed</span>':'<span class="pill r">Record-sourced · not confirmed by family</span>')+(isOrigin(p)?'<span class="pill f">Family-confirmed origin</span>':'')+(p.living?'<span class="pill l">LIVING</span>':'');
@@ -73,6 +75,8 @@ function show(id){const p=P[id];Object.values(nodes).forEach(n=>n.classList.remo
  if(p.familyConfirmed) h+=`<p class="oknote">${esc(p.familyConfirmed)}</p>`;
  if(p.denmarkOrigin) h+=`<p class="oknote">${esc(p.denmarkOrigin)}</p>`;
  if(p.danishParents) h+=`<p class="relnote">${esc(p.danishParents)}</p>`;
+ if(p.death&&p.death.matchNote) h+=`<p class="relnote">${esc(p.death.matchNote)}</p>`;
+ if(p.emigrationCandidate) h+=`<p class="relnote">${esc(p.emigrationCandidate)}</p>`;
  h+=`<dl>`;
  const row=(t,v)=>{if(v)h+=`<dt>${t}</dt><dd>${v}</dd>`};
  row('Born',place(p.birth)||(p.living?'<span class="muted">Not recorded (living person)</span>':'<span class="muted">unknown</span>'));
@@ -82,6 +86,10 @@ function show(id){const p=P[id];Object.values(nodes).forEach(n=>n.classList.remo
  row('Parent status',esc(p.parentsStatus));
  row('Danish parents',p.danishParents?`<span class="relnote">${esc(p.danishParents)}</span>`:'');
  row('Siblings',(p.siblings||[]).map(link).join('<br>'));
+ row('Confirmation',esc(p.confirmation));
+ row('Occupation',esc(p.occupation));
+ row('Parents note',esc(p.parentsNote));
+ row('Stepchildren',(p.stepchildren||[]).map(link).join('<br>'));
  row('Spouse(s)',(p.spouses||[]).map(s=>(s.id?link(s.id):esc(s.name))+(s.marriage?` <span class="muted">m. ${esc(s.marriage)}</span>`:'')).join('<br>'));
  row('Children',[...kids].map(link).join('<br>'));
  row('Child count',esc(p.children_count));
