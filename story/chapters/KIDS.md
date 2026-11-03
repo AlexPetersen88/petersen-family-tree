@@ -135,13 +135,13 @@ Darvin, the big brother, was born in 1932. He served in the U.S. Air Force durin
 
 Donald was born on July 23, 1935. When he grew up, he served in the U.S. Army with the **82nd Airborne**, the paratroopers, soldiers trained to jump out of airplanes.
 
-In 1957, Donald married Janice Dohrmann at the Methodist church in Sleepy Eye, Minnesota. They farmed in Paxton Township, the second generation on the family farm.
+In 1957, Donald married Janice Dohrmann at the Methodist church in Sleepy Eye, Minnesota (Brown County). They farmed in Paxton Township, the second generation on the family farm.
 
 Their first baby, Randy, was born on July 30, 1958, and died that October, when he was not yet three months old. He is buried in Redwood Falls, and his small stone says he lived 2 1/2 months. Almost a hundred years after Bjernede, the family knew that sorrow again.
 
 Then more boys came. Donald and Janice had five sons in all: Randy, Rick, **Michael**, Chad, and Bill. Michael was born on August 5, 1961.
 
-Donald died young, at 44, in 1980. Janice lived to 86 and died in Redwood Falls in 2025.
+Donald died young, at 44, in 1980, and is buried in Redwood Falls. Janice lived to 86 and died in Redwood Falls in 2025; she is buried in the same cemetery.
 
 ## 10. The Last Clue
 

@@ -606,3 +606,10 @@ Burials for Darvin, Anna Maye, and Randy Don. No grave-row coordinates. Dig 40, 
 - S289 (HIGH): Find a Grave 191558269, Randy Don Petersen, Redwood Falls Cemetery. Stone reads "2 1/2 Months". The cemetery is pinned; the grave row is not. https://www.findagrave.com/memorial/191558269
 - S290 (HIGH, index): Minnesota Historical Society death index, Randy Don Petersen, certificate 1958-MN-014557. Dates match S283. The certificate image was not ordered.
 - S291 (NEG — not used): Minnesota Historical Society death index ends in 2001, so it cannot cover Darvin (2007) or Anna Maye (2014). The birth index does not cover Randy Don. Not a conflicting record.
+
+## MN Pack 11c (2026-11-03) — Genealogist CLEAR, S300–S302
+Donald and Janice's marriage, Janice's death place, and her cemetery burial. No individual grave pin. Loren Jacobsen is an obituary note, not a person card. Dig 40, Dig 41, and Dig 42 are not in this pack.
+
+- S300 (HIGH — state index): Minnesota Official Marriage System, Brown County, certificate C-063: Donald Alvin Petersen × Janice Elaine Dohrmann, married 14 Sep 1957. Index only; certified copy not ordered. The Sleepy Eye Methodist church is obituary corroboration of the ceremony, not a parcel lock. https://moms.mn.gov/Search
+- S301 (HIGH — public obituaries): Janice E. Jacobsen, born 23 Jul 1938 in Sleepy Eye; died 18 Apr 2025 at Garnette Gardens, Redwood Falls; buried Redwood Falls Cemetery; married Loren Jacobsen 28 Jun 1986 (note only). https://stephensfuneralservice.com/obituaries/janice-e-jacobsen/779/ https://www.marshallindependent.com/obituaries/2025/04/janice-jacobsen/ https://www.wctrib.com/obituaries/obits/janice-e-jacobsen-3ubrjenkymyanikmkv0r https://www.myklgr.com/obituaries/janice-e-jacobsen/ https://www.nujournal.com/obituaries/2025/04/19/janice-jan-e-jacobsen/
+- S302 (NEG HIGH): Find a Grave has no Janice memorial under Jacobsen, Petersen, or Dohrmann for 2025 at Redwood Falls Cemetery or site-wide in Minnesota. Cemetery grounds pin only. No individual grave pin. https://www.findagrave.com/cemetery/83131/redwood-falls-cemetery-association

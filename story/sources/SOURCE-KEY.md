@@ -109,3 +109,8 @@
 - S289 (HIGH): Find a Grave 191558269, Randy Don Petersen, Redwood Falls Cemetery (Association); stone "2 1/2 Months".
 - S290 (HIGH, index): MNHS death index, Randy Don Petersen, cert 1958-MN-014557; dates corroborated (image not ordered).
 - S291 (NEG — noise): not used.
+
+## MN Pack 11c — Genealogist-CLEARED 2026-11-03
+- S300 (HIGH — state index): MN Official Marriage System (MOMS), Brown County, Certificate C-063: Donald Alvin Petersen × Janice Elaine Dohrmann, m. 14 Sep 1957. https://moms.mn.gov/Search (index only; certified copy not ordered).
+- S301 (HIGH — multiple public obits): Janice E. Jacobsen — b. 23 Jul 1938 Sleepy Eye; d. 18 Apr 2025 Garnette Gardens, Redwood Falls; burial Redwood Falls Cemetery; m. Loren Jacobsen 28 Jun 1986 (note only). https://stephensfuneralservice.com/obituaries/janice-e-jacobsen/779/ ; https://www.marshallindependent.com/obituaries/2025/04/janice-jacobsen/ ; https://www.wctrib.com/obituaries/obits/janice-e-jacobsen-3ubrjenkymyanikmkv0r ; https://www.myklgr.com/obituaries/janice-e-jacobsen/ ; https://www.nujournal.com/obituaries/2025/04/19/janice-jan-e-jacobsen/
+- S302 (NEG HIGH): Find a Grave — no Janice memorial under Jacobsen/Petersen/Dohrmann 2025 at Redwood Falls Cemetery (83131) or site-wide Minnesota; no individual grave pin beyond cemetery grounds. https://www.findagrave.com/cemetery/83131/redwood-falls-cemetery-association

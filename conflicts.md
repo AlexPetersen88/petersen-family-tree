@@ -109,3 +109,9 @@
 - Anna Maye died 10 May 2014 in Pownal, Cumberland County, Maine (S288). Town pin only.
 - Randy Don Petersen is buried in Redwood Falls Cemetery. The stone reads "2 1/2 Months" (S289). Dates are corroborated by the Minnesota death index, certificate 1958-MN-014557 (S290). Cemetery location is pinned at 44.5510, -95.1000. His grave is not pinned.
 - Held out: Dig 40, Dig 41, Dig 42, Anna Maye's parents as person cards, and a 1957 Find a Grave marriage bio. S291 is only a note that those Minnesota indexes do not cover these years.
+
+## MN Pack 11c (2026-11-03) — Donald and Janice — Genealogist CLEAR
+- Marriage: Donald Alvin Petersen × Janice Elaine Dohrmann, 14 Sep 1957, Brown County, Minnesota. Minnesota Official Marriage System certificate C-063 (S300) is HIGH. The Sleepy Eye Methodist church remains the obituary's ceremony place only. It is not a locked parcel.
+- Janice was born 23 Jul 1938 in Sleepy Eye. She died 18 Apr 2025 at Garnette Gardens, Redwood Falls, and was buried in Redwood Falls Cemetery (S301). Find a Grave has no memorial (S302). The cemetery grounds pin stands. Her grave is not pinned.
+- Second marriage: Loren Jacobsen, 28 Jun 1986 (S301). Obit note only. No person card.
+- Held out: Dig 40, Dig 41, Dig 42, Day B, Hansen parents, living-residence pins, and any individual grave coordinate for Janice.

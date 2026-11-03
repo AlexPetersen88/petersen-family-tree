@@ -407,7 +407,7 @@ window.PEOPLE={
    "spouses": [
     {
      "id": "P2",
-     "marriage": "1957-09-14, Methodist Church, Sleepy Eye"
+     "marriage": "1957-09-14, Methodist Church, Sleepy Eye, Brown Co MN (MOMS C-063)"
     }
    ],
    "children": [
@@ -417,14 +417,15 @@ window.PEOPLE={
     "P42",
     "P43"
    ],
-   "notes": "US Army 15 Mar 1955-14 Mar 1957, 82nd Airborne\nMN Pack 11 (2026-11-03): exactly five sons (Randy, Rick, Mike, Chad, Bill) per S282/S4 \u2014 no sixth; 'family larger' lead CLOSED. Stepdaughter Carrie = Loren Jacobsen's, not Donald's.",
+   "notes": "US Army 15 Mar 1955-14 Mar 1957, 82nd Airborne\nMN Pack 11 (2026-11-03): exactly five sons (Randy, Rick, Mike, Chad, Bill) per S282/S4 \u2014 no sixth; 'family larger' lead CLOSED. Stepdaughter Carrie = Loren Jacobsen's, not Donald's. FAG S18 re-read (Pack 11b): bio says m. Janice Dohrmann 1957 Brown Co. MN \u2014 MED (FAG bio text, no index cite); SP3 US Army stone. | Pack 11c (2026-11-03): marriage HIGH via MOMS Brown Co cert C-063 (S300); FAG bio note upgraded.",
    "sources": [
     "S18",
     "S19",
     "S5",
     "S1",
     "S2",
-    "S282"
+    "S282",
+    "S300"
    ],
    "status": "VERIFIED: MNHS 1980-MN-015396 (mother SCHULTZ) + FAG 191558268 + obits"
   },
@@ -463,7 +464,7 @@ window.PEOPLE={
    },
    "death": {
     "date": "2025-04-18",
-    "place": "Redwood Falls, MN"
+    "place": "Garnette Gardens, Redwood Falls, MN"
    },
    "burial": "Redwood Falls Cemetery (obit)",
    "parents": [
@@ -473,11 +474,12 @@ window.PEOPLE={
    "spouses": [
     {
      "id": "P1",
-     "marriage": "1957-09-14"
+     "marriage": "1957-09-14, Methodist Church, Sleepy Eye, Brown Co MN (MOMS C-063)"
     },
     {
      "name": "Loren Jacobsen",
-     "marriage": "1986"
+     "marriage": "1986-06-28",
+     "note": "Loren Jacobsen, predeceased Janice; obit S301 HIGH; not carded"
     }
    ],
    "sources": [
@@ -486,11 +488,14 @@ window.PEOPLE={
     "S3",
     "S4",
     "S89",
-    "S90"
+    "S90",
+    "S300",
+    "S301",
+    "S302"
    ],
-   "status": "VERIFIED (obituaries); no Find a Grave memorial found",
+   "status": "VERIFIED (obituaries S1\u2013S4/S301 + MOMS marriage S300); Find a Grave NEG (S302)",
    "parentsNote": "Wesley Edward Dohrmann (P31) & Ethel Bertha (Neubauer) Dohrmann (P32) \u2014 maiden RESOLVED S148/S149; Gent = Ethel's mother's maiden.",
-   "notes": " | Parents: Wesley Edward Dohrmann (S89) & Ethel (Neubauer) Dohrmann \u2014 maiden Neubauer RESOLVED 2026-11-03 (S148/S149); S89 \"Gent\" was her mother's maiden. | S282 (2026-11-03) re-fetch of S1 confirms five sons Randy/Rick/Mike/Chad/Bill."
+   "notes": " | Parents: Wesley Edward Dohrmann (S89) & Ethel (Neubauer) Dohrmann \u2014 maiden Neubauer RESOLVED 2026-11-03 (S148/S149); S89 \"Gent\" was her mother's maiden. | S282 (2026-11-03) re-fetch of S1 confirms five sons Randy/Rick/Mike/Chad/Bill. | Pack 11c (2026-11-03): m. Donald 1957-09-14 Brown Co MOMS C-063 (S300 HIGH); b/d/burial re-confirmed by multiple obits (S301); FAG memorial NEG (S302); m. Loren Jacobsen 1986-06-28 (S301, note only). Obit 'Ethel (Gent)' = mother's maiden per resolved S148/S149."
   },
   {
    "id": "P5",
@@ -3494,6 +3499,34 @@ window.SOURCES={
   "flag": "NEG \u2014 not used",
   "text": "Minnesota Historical Society death index ends in 2001, so it cannot cover Darvin (2007) or Anna Maye (2014). The birth index does not cover Randy Don. Not a conflicting record.",
   "urls": []
+ },
+ "S300": {
+  "id": "S300",
+  "flag": "HIGH \u2014 state index",
+  "text": "Minnesota Official Marriage System, Brown County, certificate C-063: Donald Alvin Petersen \u00d7 Janice Elaine Dohrmann, married 14 Sep 1957. Index only; certified copy not ordered. The Sleepy Eye Methodist church is obituary corroboration of the ceremony, not a parcel lock. https://moms.mn.gov/Search",
+  "urls": [
+   "https://moms.mn.gov/Search"
+  ]
+ },
+ "S301": {
+  "id": "S301",
+  "flag": "HIGH \u2014 public obituaries",
+  "text": "Janice E. Jacobsen, born 23 Jul 1938 in Sleepy Eye; died 18 Apr 2025 at Garnette Gardens, Redwood Falls; buried Redwood Falls Cemetery; married Loren Jacobsen 28 Jun 1986 (note only). https://stephensfuneralservice.com/obituaries/janice-e-jacobsen/779/ https://www.marshallindependent.com/obituaries/2025/04/janice-jacobsen/ https://www.wctrib.com/obituaries/obits/janice-e-jacobsen-3ubrjenkymyanikmkv0r https://www.myklgr.com/obituaries/janice-e-jacobsen/ https://www.nujournal.com/obituaries/2025/04/19/janice-jan-e-jacobsen/",
+  "urls": [
+   "https://stephensfuneralservice.com/obituaries/janice-e-jacobsen/779/",
+   "https://www.marshallindependent.com/obituaries/2025/04/janice-jacobsen/",
+   "https://www.wctrib.com/obituaries/obits/janice-e-jacobsen-3ubrjenkymyanikmkv0r",
+   "https://www.myklgr.com/obituaries/janice-e-jacobsen/",
+   "https://www.nujournal.com/obituaries/2025/04/19/janice-jan-e-jacobsen/"
+  ]
+ },
+ "S302": {
+  "id": "S302",
+  "flag": "NEG HIGH",
+  "text": "Find a Grave has no Janice memorial under Jacobsen, Petersen, or Dohrmann for 2025 at Redwood Falls Cemetery or site-wide in Minnesota. Cemetery grounds pin only. No individual grave pin. https://www.findagrave.com/cemetery/83131/redwood-falls-cemetery-association",
+  "urls": [
+   "https://www.findagrave.com/cemetery/83131/redwood-falls-cemetery-association"
+  ]
  }
 };
 window.SOURCE_NOTES=["Note: S5/S6 are transcriptions of government indexes, not originals. Underlying originals to pull on FamilySearch (free login): Minnesota Death Index 1908\u20132017; U.S. SSA Applications and Claims Index; BIRLS death file.", "Note: FT-1834 Ringsted k\u00f8bstad was skimmed in full: bsids 4460 N\u00f8rregade, 4461 Sankt Bendts Gade, 4462 Sankt Hans Gade, 4463 S\u00f8gade, 4464 Torvet (33 images). It has 1 unmarried Peter/Peder Johansen and 1 Ane Marie Hansdatter of the right age. No Ane Marie Clausdatter was seen."];
