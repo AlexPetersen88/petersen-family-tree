@@ -912,7 +912,7 @@ function show(id,opts={}){
   const sources=(p.sources||[]).map(s=>srcHtml(s,id)).join('');
   h+=`<h3>Sources</h3><p class="src-hint">Source IDs open the Sources page. A link there returns to this person.</p>${sources||'<span class="muted">none</span>'}`;
   h+=`<p class="fineprint">ID ${esc(p.id)}. Double-check against primary records before relying on any of this.</p>`;
-  panel.innerHTML=h;
+  panel.innerHTML=decorateHighPlaces(h);
   sheetLabel.textContent=shortName(p.name);
   // #id is the person deep link Phase 2 person pages can take over.
   if(opts.history!==false&&location.hash!=='#'+id)history.replaceState(null,'','#'+id);

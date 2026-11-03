@@ -66,3 +66,22 @@
 - S63 (CANDIDATE): Folketælling 1834, Købstæder, Sorø amt, Ringsted købstad, Sankt Hans Gade, AO bsid=4462 img 10/11: "Ane Marie Hansdatter, 27, ugift", in the Tjenestefolk (servants) bracket with Jørgen Jensen 24, just before house No. 304 (Peder Reed 57): https://api.rigsarkivet.dk/ao/v1/images/112563
 - S64 (CANDIDATE): same census, Ringsted købstad, Sankt Hans Gade, p. 328, AO bsid=4462 img 1/11: "Peter Johansen, 30, ugift", in the Tjenestefolk (servants) bracket with Hans Sonnesen(?) 39: https://api.rigsarkivet.dk/ao/v1/images/112554
 - S106 (UNVERIFIED match MED-HIGH — supports Hansdatter spelling only; NOT identity proof as P18 mother): Ringsted Sogn HMB 1830–1848 (by- og landsogn), Afgangsliste (departure list) 1833 no. 5: "Ane Marie Hansdatter, 28, Tjenestepige" (servant girl), moved to Haraldsted. AO bsid=205354 img 27 (image id 38960693). Fits S59 Haraldsted tilgang 30 Mar 1833 (age 28, from Ringsted). Evidence for Hansdatter form only; does NOT identify her as P18’s mother. Viewer: https://arkivalieronline.rigsarkivet.dk/da/billedviser?bsid=205354 ; image if available: https://api.rigsarkivet.dk/ao/v1/images/38960693
+- S222 (event/place HIGH; couple → P25 parents CANDIDATE ~60–70%): Haraldsted sogn church book, trolovelse 21 May 1797 at Haraldsted Præstegaarden — Enkemand Hans Pedersen and Pigen Maren Hans D. (Maren Hansdatter), both of Walsøemagle; married 15 Oct 1797. Place card: places/haraldsted-praestegaarden.md (Haraldstedvej 91, 4100 Ringsted; OSM node 341232574).
+
+## Encyclopedia sources (K#) — era-context pack, Genealogist-CLEARED 2026-11-03 (fetched 2026-11-03)
+
+- K1 Trap Danmark, "1536-1850 i Ringsted Kommune": https://trap.lex.dk/1536-1850_i_Ringsted_Kommune
+- K2 Trap Danmark, "1850-1920 i Ringsted Kommune": https://trap.lex.dk/1850-1920_i_Ringsted_Kommune
+- K4 Lex, "Haraldsted" (Steder i middelalderens Danmark): https://lex.dk/Haraldsted
+- K5 Lex, "Haraldsted Kirke": https://lex.dk/Haraldsted_Kirke
+- K6 Trap Danmark, "Haraldsted Præstegård": https://trap.lex.dk/Haraldsted_Præstegård
+- K8 Lex, "Bjernede Kirke": https://lex.dk/Bjernede_Kirke
+- K9 Trap Danmark, "Kirker i Sorø Kommune" / "Bjernede Kirke" (search listing): https://trap.lex.dk/.search?query=Bjernede
+- K11 Lex, "husmand" (C. Bjørn, P. Grau Møller): https://lex.dk/husmand
+- K15 Lex, "Junigrundloven": https://lex.dk/Junigrundloven
+- K18 Lex, "stavnsbånd": https://lex.dk/stavnsbånd
+- K19 Lex, "konfirmation": https://lex.dk/konfirmation
+- K20 Lex, "Skolelovgivningen i Danmark, efter 1521": https://lex.dk/Skolelovgivningen_i_Danmark,_efter_1521
+- K22 Trap Danmark, "1850-1920 i Sorø Kommune": https://trap.lex.dk/1850-1920_i_Sorø_Kommune
+- K23 Lex, "Krigen i 1864": https://lex.dk/Krigen_i_1864
+- K24 Trap Danmark, "1536-1850 i Sorø Kommune": https://trap.lex.dk/1536-1850_i_Sorø_Kommune

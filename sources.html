@@ -44,6 +44,8 @@ tb.innerHTML=Object.values(SOURCES).map(S=>{
 }).join('');
 const direct=PEOPLE.people.flatMap(p=>(p.sources||[]).filter(s=>/^https?:/.test(s)).map(s=>`<li><a href="${esc(s)}" target="_blank" rel="noopener">${esc(s)}</a> — ${esc(p.name)}</li>`));
 notes.innerHTML=SOURCE_NOTES.map(n=>`<p>${esc(n)}</p>`).join('')+(direct.length?`<h3>Direct links cited on people</h3><ul>${direct.join('')}</ul>`:'');
+tb.innerHTML=decorateHighPlaces(tb.innerHTML);
+notes.innerHTML=decorateHighPlaces(notes.innerHTML);
 function revealHash(){
   const hashId=location.hash.slice(1);
   if(!hashId)return;

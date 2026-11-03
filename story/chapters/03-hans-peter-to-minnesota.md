@@ -16,6 +16,8 @@ Hans Peter's wife was Maren Sophia Jensen. She was born in November 1872 (S13, S
 
 ## The farm in Brookville Township
 
+The censuses place the family in Brookville Township, and in 1910 and 1920 they owned their farm (S27–S29). Where in the township that farm stood has not been found, so this story names only the township where they farmed, not the farm itself.
+
 **1900.** On 19 June 1900, the census taker for Brookville Township, Redwood County, listed the "Hans Peterson" household (S27). Hans was born in February 1864 in Denmark. He had come in 1884, had been in the US 16 years, and had taken the first step toward citizenship (marked "Na"). His occupation was farmer (S27). His wife was listed as "Mary," and the children were Nels A. (born October 1891), Hans O. (May 1893), Annie H. (January 1895), Louis C. (October 1896), and Mary S. (May 1898) (S27).
 
 **1910.** On 23 April 1910, the family was still in Brookville Township. Hans P., 45, was a farmer who **owned his farm** (S28). Maren S., 37, born in Minnesota, was recorded as the mother of seven children, all seven living (S28). The children at home were Rudolph H. 16, Anna H. 15, Louis C. 13, Marie E. 11, Ethel M. 8, and Elmer H. 4 (S28).
@@ -43,6 +45,6 @@ In September 1922 the *Redwood Gazette* reprinted a Morgan Messenger notice: Han
 
 Alex and Genealogist have locked his display name as **Hans P.** / **Hans Peter**, and this story uses that name only. A Minnesota Historical Society death index that reads **Hans T.** Petersen is treated as a **typo on MNHS’s part** — not a real middle initial — per Alex’s call, cleared by Genealogist. The index date 1922-09-06 stays a candidate only; the death certificate image has not been seen, and the calendar death day is still not proven from the newspaper alone (S145).
 
-He is buried at Dannebod Cemetery in Brookville Township, Redwood County (S12). The cemetery dates from 1876 and was the burial ground of the Danish Fredsminde church, built in 1889 (S20). The wording on his stone has not yet been transcribed.
+He is buried at Dannebod Cemetery in Brookville Township, Redwood County (S12). The cemetery dates from 1876 and was the burial ground of the Danish Fredsminde church, built in 1889 (S20). The wording on his stone has not yet been transcribed. The burial itself comes from Find a Grave, a secondary source, so it is held at medium confidence (S12). The cemetery is easy to find: on 180th Street just west of Skyview Avenue, near Cobden, with a historical marker on the north side of the road and the Fredsminde church monument behind it, where the church stood from 1889 to 1961 ([map](https://www.google.com/maps?q=44.31115,-94.89040), 44.31115, -94.89040).
 
-Find a Grave places Maren Sophia’s death in 1937 and her burial at Dannebod (S13). A Minnesota Historical Society death confirmation for that year was not approved in Genealogist’s MN Pack #5, so the 1937 date stays secondary for now.
+Find a Grave places Maren Sophia’s death in 1937 and her burial at Dannebod (S13). A Minnesota Historical Society death confirmation for that year was not approved in Genealogist’s MN Pack #5, so the 1937 date and the Dannebod burial both stay secondary (Find a Grave) for now (S13).
