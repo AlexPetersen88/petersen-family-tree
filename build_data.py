@@ -4,7 +4,7 @@ here=pathlib.Path(__file__).parent
 people=json.load(open(here/'people.json'))
 src={}
 for line in open(here/'sources.md'):
-    m=re.match(r'- (S\d+)(?: \(([^)]*)\))?\s*:?\s*(.*)',line.strip())
+    m=re.match(r'- (S\d+)(?: \(([^)]*)\))?: (.*)',line.strip())
     if m:
         sid,flag,text=m.groups(); urls=re.findall(r'https?://[^\s)]+',text)
         src[sid]={"id":sid,"flag":flag,"text":text,"urls":urls}

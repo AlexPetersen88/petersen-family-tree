@@ -2,16 +2,17 @@ window.PEOPLE={
  "meta": {
   "updated": "2026-11-03",
   "owner": "Alex Petersen",
-  "note": "Alex, via Michael Don Petersen (2026-11-03, S30), confirms Elmer's parents were Hans Peter Petersen and Maren Sophia (Jensen; Mary on the 1900 census). Denmark parish is still unverified; immigration 1884 and birthplace Denmark (country only) stay as on the 1900 census. Hans Peter and Maren had 8 children: 1910 census mother of 7, 7 living (S28), plus Olga M. born after that census (S29). Rudolph Hans and the 1900 son Hans O. are probably the same person; the middle initial is unexplained. Find a Grave is secondary unless backed by MNHS or the census. Living people: only what Alex shared."
+  "note": "Find a Grave (FAG) data = secondary, user-contributed unless backed by MNHS index or stone photo. Living people: oral/obit data only."
  },
  "people": [
   {
    "id": "P6",
    "name": "Hans Peter Petersen",
    "birth": {
-    "date": "1864-02",
-    "place": "Denmark",
-    "placeStatus": "VERIFIED 1900 census (country only; parish unknown)"
+    "date": "1864-02-28",
+    "place": "Bjernede, Sor\u00f8 amt, Denmark",
+    "placeStatus": "FAMILY-CONFIRMED 2026-11-03 (Alex Petersen: birth year + small-town match); Danish records S31\u2013S33; 1900 census b. Feb 1864 Denmark",
+    "baptism": "1864-06-05, Bjernede"
    },
    "death": {
     "date": "1922"
@@ -45,17 +46,22 @@ window.PEOPLE={
     "S27",
     "S28",
     "S29",
-    "S30"
+    "S30",
+    "S31",
+    "S32",
+    "S33",
+    "S34"
    ],
-   "status": "VERIFIED: 1900 US census (imm. 1884, Na, b. Feb 1864 Denmark) + FAG parent of Elmer",
+   "status": "VERIFIED: 1900 US census (imm. 1884, Na, b. Feb 1864 Denmark) + FAG parent of Elmer; origin Bjernede FAMILY-CONFIRMED 2026-11-03",
    "occupation_1900": "Farmer",
    "residence_1900": "Brookville Twp, Redwood Co MN, ED 232 sheet 6, dwelling/family 109",
-   "notes": " Census surname spelled Peterson. Children on 1900: Nels A., Hans O., Annie H., Louis C., Mary S. \u2014 Hans O. May 1893 may = Rudolph Hans (FAG); unresolved. Denmark parish still NOT found (2026-11-03).",
-   "familyConfirmed": "FAMILY-CONFIRMED via Michael Don Petersen (Alex's father), 2026-11-03: Elmer Hamilton Petersen's parents were Hans Peter Petersen and Maren Sophia (Jensen; 'Mary' on 1900 census). Public-record citations (FAG, MNHS, 1900 census) retained.",
+   "notes": " Census surname spelled Peterson. Children on 1900: Nels A., Hans O., Annie H., Louis C., Mary S. \u2014 Hans O. May 1893 may = Rudolph Hans (FAG); unresolved. Denmark parish still NOT found (2026-11-03). Bjernede candidate parents tentatively Hans Pedersen & Ane Rasmusdatter (Niels Peder Pedersen / Ane Kirstine reading withdrawn as misread); see denmarkOriginCandidate and browser-pass-bjernede-corroboration.md.",
+   "familyConfirmed": "FAMILY-CONFIRMED via Michael Don Petersen (Alex's father), 2026-11-03: Elmer Hamilton Petersen's parents were Hans Peter Petersen and Maren Sophia (Jensen; 'Mary' on 1900 census). Public-record citations (FAG, MNHS, 1900 census) retained. | ORIGIN FAMILY-CONFIRMED by Alex Petersen, 2026-11-03: birth year 1864 + Bjernede (small town) match the Danish records \u2014 'That's our Hans' (S30). Cites retained: baptism S31, confirmation S32, 1880 census S33, Copenhagen Police emigration 16 Apr 1884 S34.",
    "children_count": "8 children: 1910 census Maren 'mother of 7, 7 living' (S28) + Olga b. ~1911/12 (1920 census S29, FAG)",
    "residence_1910": "Brookville Twp, Redwood Co MN, ED 109 sheet 4A, dwelling/family 61 (S28); imm. 1884, Na; farmer, owns farm",
    "residence_1920": "Brookville Twp, Redwood Co MN, ED 182, dwelling 54 (S29); age 55, b. Denmark, Danish mother tongue, parents b. Denmark; imm./naturalization cols partly legible (naturalized yr reads ~1897, unverified)",
-   "confirmation": "family"
+   "denmarkOrigin": "RESOLVED 2026-11-03: Bjernede, Sor\u00f8 amt; b. 28 Feb 1864, bapt. 5 Jun 1864 (S31), confirmed 14 Apr 1878 (S32), 1880 census Bjernede stepson of Hans Rasmussen (S33, low-confidence), emigrated via Copenhagen 16 Apr 1884 age 20 to Springfield USA, contract 1015 Y (S34). Tinglev S21 WITHDRAWN.",
+   "danishParents": "RECORD-SOURCED only (not family-named): Hans Pedersen/Petersen (Boelsmand) & Ane Rasmusdatter \u2014 per baptism S31 + confirmation S32 (tentative reads). Alex confirmed origin place/year only."
   },
   {
    "id": "P7",
@@ -80,11 +86,7 @@ window.PEOPLE={
     }
    ],
    "children": [
-    "P14",
     "P8",
-    "P15",
-    "P16",
-    "P17",
     "P9",
     "P3",
     "P10"
@@ -94,20 +96,17 @@ window.PEOPLE={
     "S14",
     "S27",
     "S28",
-    "S29",
-    "S30"
+    "S29"
    ],
    "status": "VERIFIED: 1900 census as Mary + FAG; maiden Jensen from Elmer MNHS/FAG",
    "familyConfirmed": "FAMILY-CONFIRMED via Michael Don Petersen (Alex's father), 2026-11-03: Elmer Hamilton Petersen's parents were Hans Peter Petersen and Maren Sophia (Jensen; 'Mary' on 1900 census). Public-record citations (FAG, MNHS, 1900 census) retained.",
-   "children_born_living_1910": "7 born / 7 living, married 19 yrs (S28)",
-   "confirmation": "family",
-   "notes": " Birthplace Minnesota on the 1900 and 1910 censuses (preferred). The 1920 census says Denmark (S29); two records against one, so Minnesota stays. 1910: mother of 7, 7 living. Olga M. was born after that census."
+   "children_born_living_1910": "7 born / 7 living, married 19 yrs (S28)"
   },
   {
    "id": "P8",
-   "name": "Rudolph Hans / Hans O. Petersen",
+   "name": "Rudolph Hans Petersen",
    "birth": {
-    "date": "1893-05"
+    "date": "1893"
    },
    "death": {
     "date": "1964"
@@ -122,9 +121,8 @@ window.PEOPLE={
     "S27",
     "S28"
    ],
-   "status": "Record-sourced. Probable same person as the 1900 census son Hans O. (May 1893): 1910 lists Rudolph H., age 16, in that household slot (S28). Middle initial O is unexplained. Not certain.",
-   "notes": " RESOLVED (probable): 1900 'Hans O.' b. May 1893 (S27) appears in the same household in 1910 as 'Rudolph H.', son, age 16 (S28) \u2014 same slot/age; FAG Rudolph Hans 1893\u20131964. Middle initial O in 1900 is unexplained.",
-   "confirmation": "records"
+   "status": "FAG secondary; name conflict with 1900 Hans O. \u2014 see conflicts.md",
+   "notes": " RESOLVED (probable): 1900 'Hans O.' b. May 1893 (S27) appears in the same household in 1910 as 'Rudolph H.', son, age 16 (S28) \u2014 same slot/age; FAG Rudolph Hans 1893\u20131964. Middle initial O in 1900 is unexplained."
   },
   {
    "id": "P9",
@@ -140,16 +138,13 @@ window.PEOPLE={
     "P7"
    ],
    "sources": [
-    "S15",
-    "S28",
-    "S29"
+    "S15"
    ],
-   "status": "Record-sourced: birth about 1902. 1910 Ethel M. age 8 (S28); 1920 Ethel M. age 17 (S29). Find a Grave secondary.",
-   "confirmation": "records"
+   "status": "FAG secondary"
   },
   {
    "id": "P10",
-   "name": "Olga M. Petersen",
+   "name": "Olga Petersen",
    "birth": {
     "date": "1911"
    },
@@ -161,12 +156,9 @@ window.PEOPLE={
     "P7"
    ],
    "sources": [
-    "S15",
-    "S29"
+    "S15"
    ],
-   "status": "Record-sourced: born after the 1910 census, about 1911. 1920 Olga M. age 8 (S29). Find a Grave secondary. Eighth child.",
-   "confirmation": "records",
-   "notes": " Not on the 1910 census, when Maren was mother of 7, 7 living. Present in 1920 as Olga M., age 8."
+   "status": "FAG secondary"
   },
   {
    "id": "P3",
@@ -198,14 +190,10 @@ window.PEOPLE={
     "S14",
     "S15",
     "S5",
-    "S6",
-    "S28",
-    "S29",
-    "S30"
+    "S6"
    ],
    "status": "VERIFIED: MNHS death index 1964-MN-016272 (mother JENSEN) + FAG",
-   "familyConfirmed": "FAMILY-CONFIRMED via Michael Don Petersen (Alex's father), 2026-11-03: Elmer Hamilton Petersen's parents were Hans Peter Petersen and Maren Sophia (Jensen; 'Mary' on 1900 census). Public-record citations (FAG, MNHS, 1900 census) retained.",
-   "confirmation": "family"
+   "familyConfirmed": "FAMILY-CONFIRMED via Michael Don Petersen (Alex's father), 2026-11-03: Elmer Hamilton Petersen's parents were Hans Peter Petersen and Maren Sophia (Jensen; 'Mary' on 1900 census). Public-record citations (FAG, MNHS, 1900 census) retained."
   },
   {
    "id": "P4",
@@ -239,8 +227,7 @@ window.PEOPLE={
     "S10",
     "S0"
    ],
-   "status": "VERIFIED: MNHS 1984-MN-021408 (mother GESKE) + FAG; maiden Schultz confirmed by Alex (great-grandmother) and by Donald's MNHS mother SCHULTZ",
-   "confirmation": "family"
+   "status": "VERIFIED: MNHS 1984-MN-021408 (mother GESKE) + FAG; maiden Schultz confirmed by Alex (great-grandmother) and by Donald's MNHS mother SCHULTZ"
   },
   {
    "id": "P11",
@@ -259,8 +246,7 @@ window.PEOPLE={
     "S15",
     "S18"
    ],
-   "status": "FAG secondary",
-   "confirmation": "records"
+   "status": "FAG secondary"
   },
   {
    "id": "P1",
@@ -299,8 +285,7 @@ window.PEOPLE={
     "S1",
     "S2"
    ],
-   "status": "VERIFIED: MNHS 1980-MN-015396 (mother SCHULTZ) + FAG 191558268 + obits",
-   "confirmation": "family"
+   "status": "VERIFIED: MNHS 1980-MN-015396 (mother SCHULTZ) + FAG 191558268 + obits"
   },
   {
    "id": "P12",
@@ -318,8 +303,7 @@ window.PEOPLE={
    "sources": [
     "S18"
    ],
-   "status": "FAG secondary (infant)",
-   "confirmation": "records"
+   "status": "FAG secondary (infant)"
   },
   {
    "id": "P2",
@@ -353,8 +337,7 @@ window.PEOPLE={
     "S3",
     "S4"
    ],
-   "status": "VERIFIED (obituaries); no Find a Grave memorial found",
-   "confirmation": "family"
+   "status": "VERIFIED (obituaries); no Find a Grave memorial found"
   },
   {
    "id": "P5",
@@ -375,8 +358,7 @@ window.PEOPLE={
     "S0",
     "S2"
    ],
-   "status": "son of Janice per obit; birth date oral",
-   "confirmation": "family"
+   "status": "son of Janice per obit; birth date oral"
   },
   {
    "id": "P13",
@@ -388,8 +370,7 @@ window.PEOPLE={
    "sources": [
     "S0"
    ],
-   "status": "oral",
-   "confirmation": "family"
+   "status": "oral"
   },
   {
    "id": "P14",
@@ -402,16 +383,13 @@ window.PEOPLE={
     "P7"
    ],
    "sources": [
-    "S27",
-    "S28"
+    "S27"
    ],
-   "status": "Record-sourced: 1900 census, b. Oct 1891 (S27). Not in the 1910 household; still among the 7 children living (S28).",
-   "confirmation": "records",
-   "notes": " Not listed in the 1910 Brookville household (about age 18). Maren is mother of 7, 7 living on that census, so he is still counted."
+   "status": "VERIFIED 1900 census only so far"
   },
   {
    "id": "P15",
-   "name": "Anna/Annie H. Petersen",
+   "name": "Annie H. Petersen",
    "birth": {
     "date": "1895-01"
    },
@@ -420,13 +398,9 @@ window.PEOPLE={
     "P7"
    ],
    "sources": [
-    "S27",
-    "S28",
-    "S29"
+    "S27"
    ],
-   "status": "Record-sourced: 1900 Annie H., b. Jan 1895 (S27); 1910 Anna H. age 15 (S28); 1920 Anna H. age 25 (S29).",
-   "confirmation": "records",
-   "notes": " 1900 spells Annie; 1910 and 1920 spell Anna. Same daughter."
+   "status": "VERIFIED 1900 census only so far"
   },
   {
    "id": "P16",
@@ -439,16 +413,13 @@ window.PEOPLE={
     "P7"
    ],
    "sources": [
-    "S27",
-    "S28"
+    "S27"
    ],
-   "status": "Record-sourced: 1900 b. Oct 1896 (S27); 1910 Louis C. age 13 (S28). Not listed in the 1920 household (S29).",
-   "confirmation": "records",
-   "notes": " Not listed with the family in 1920 (S29)."
+   "status": "VERIFIED 1900 census only so far"
   },
   {
    "id": "P17",
-   "name": "Mary/Marie Petersen",
+   "name": "Mary S. Petersen",
    "birth": {
     "date": "1898-05"
    },
@@ -457,12 +428,9 @@ window.PEOPLE={
     "P7"
    ],
    "sources": [
-    "S27",
-    "S28"
+    "S27"
    ],
-   "status": "Record-sourced: 1900 Mary S., b. May 1898 (S27); 1910 Marie E. age 11 (S28). Same household slot; middle initial differs.",
-   "confirmation": "records",
-   "notes": " 1900 Mary S. and 1910 Marie E. occupy the same daughter slot. Middle initial differs, so the middle name is not settled. Not listed in the 1920 household (S29)."
+   "status": "VERIFIED 1900 census only so far"
   }
  ]
 };
@@ -706,8 +674,36 @@ window.SOURCES={
  "S30": {
   "id": "S30",
   "flag": null,
-  "text": "Alex Petersen, via his father Michael Don Petersen, 2026-11-03: Elmer Hamilton Petersen's parents were Hans Peter Petersen and Maren Sophia (Jensen; Mary on the 1900 census). Distinct from S28 (1910 census) and S29 (1920 census).",
+  "text": "Family confirmation \u2014 Alex Petersen, 2026-11-03: \"The birth year and location (small town) have to be correct. That's our Hans.\" Confirms origin Bjernede / b. 1864 (place+year only; not parents).",
   "urls": []
+ },
+ "S31": {
+  "id": "S31",
+  "flag": null,
+  "text": "Bjernede Hovedministerialbog 1862\u2013, births/baptisms, image 7: Hans Peder Pedersen b. 28 Feb 1864, bapt. 5 Jun 1864, parents (tentative) Hans Pedersen & Ane Rasmusdatter. Arkivalieronline: https://arkivalieronline.rigsarkivet.dk/en/billedviser?epid=17223538",
+  "urls": [
+   "https://arkivalieronline.rigsarkivet.dk/en/billedviser?epid=17223538"
+  ]
+ },
+ "S32": {
+  "id": "S32",
+  "flag": null,
+  "text": "Bjernede church book vol. 1858 K\u20131891 K, confirmations, image 24: Hans Peter Petersen confirmed Palmes\u00f8ndag 14 Apr 1878; parents Boelsmand Hans Petersen & Ane Rasmusdatter; b. 28 Feb 1864. Arkivalieronline (Rigsarkivet).",
+  "urls": []
+ },
+ "S33": {
+  "id": "S33",
+  "flag": null,
+  "text": "1880 Danish census, Bjernede sogn, Sor\u00f8 amt, 1 Feb 1880, image 5/71: Hans Peder Pedersen, 15, stepson in household of Hans Rasmussen & Ane Rasmussen (low-confidence reads). Arkivalieronline (Rigsarkivet).",
+  "urls": []
+ },
+ "S34": {
+  "id": "S34",
+  "flag": null,
+  "text": "Copenhagen Police emigrant protocols (Udvandrerarkivet index), 16 Apr 1884: Hans Peter Petersen, Bjernede Sor\u00f8, age 20, dest. Springfield USA, contract 1015 Y: https://www.aalborgstadsarkiv.dk/UA.asp?UA=UAProtokol",
+  "urls": [
+   "https://www.aalborgstadsarkiv.dk/UA.asp?UA=UAProtokol"
+  ]
  }
 };
-window.SOURCE_NOTES=["Note: S5/S6 are transcriptions of government indexes, not originals. Underlying originals to pull on FamilySearch (free login): Minnesota Death Index 1908\u20132017; U.S. SSA Applications and Claims Index; BIRLS death file.", "Note: S28 is the 1910 census and S29 is the 1920 census (Archive.org). S30 is the separate 2026-11-03 family confirmation and is not the 1910 census. Denmark parish is still unverified. Hans Peter and Maren had 8 children (1910: mother of 7, 7 living; Olga M. born after that census). Rudolph Hans and the 1900 son Hans O. are probably the same person; the middle initial is unexplained."];
+window.SOURCE_NOTES=["Note: S5/S6 are transcriptions of government indexes, not originals. Underlying originals to pull on FamilySearch (free login): Minnesota Death Index 1908\u20132017; U.S. SSA Applications and Claims Index; BIRLS death file."];

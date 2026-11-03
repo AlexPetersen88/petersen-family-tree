@@ -1,9 +1,14 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><title>Petersen Family Tree</title>
-<meta name="viewport" content="width=device-width,initial-scale=1"><link rel="stylesheet" href="style.css"></head><body>
-<header><h1>The Petersen Family · Redwood County, Minnesota</h1><nav><a class="on" href="index.html">Tree</a><a href="sources.html">Sources &amp; citation log</a></nav></header>
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#f3efe7" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#161411" media="(prefers-color-scheme: dark)">
+<link rel="stylesheet" href="style.css"></head><body class="tree">
+<header><div class="brand"><p class="eyebrow">Redwood County, Minnesota</p><h1>The Petersen Family</h1></div>
+<nav><a class="on" href="index.html">Tree</a><a href="sources.html">Sources</a></nav></header>
 <div class="banner"></div>
-<main><div id="treewrap"><svg id="svg"><g id="vp"></g></svg>
-<div class="ctrl"><button id="zi">+</button><button id="zo">−</button><button id="zr">Reset</button></div>
-<div class="legend">Drag to pan · scroll to zoom · click a person. <b style="color:#4f6b3a">Green border</b> = family-confirmed · <b style="color:#a66a1f">Amber border</b> = public records, not yet confirmed by family · dashed = living · <span style="color:#a66a1f">- - -</span> marriage</div></div>
-<aside id="panel"><h2>Select a person</h2><p class="muted">Green cards are family-confirmed. Hans Peter Petersen and Maren Sophia are Elmer’s parents (Alex via Michael Don Petersen, 2026-11-03), with Elmer, Caroline, Donald, Janice, Michael, and Alex. They had 8 children on the census. Amber cards, including those children except Elmer, are record-sourced and not family-confirmed. Rudolph Hans and the 1900 son Hans O. are probably the same person; that is not certain. Denmark parish is still unverified.</p></aside></main>
+<main class="stage"><div id="treewrap"><svg id="svg"><g id="vp"></g></svg>
+<div class="ctrl"><button id="zi" type="button" aria-label="Zoom in">+</button><button id="zo" type="button" aria-label="Zoom out">−</button><button id="zr" type="button" aria-label="Reset view">⟲</button></div>
+<div class="legend">Drag or pinch. Tap a person. <b style="color:var(--green)">Green</b> = family-confirmed · <b style="color:var(--amber)">Amber</b> = record-sourced, not confirmed by family · dashed = living.</div></div>
+<aside id="sheet"><button id="sheetclose" class="sheetclose" type="button">Details</button>
+<div id="panel"><h2>Select a person</h2><p class="muted">Hans Peter Petersen was born 28 Feb 1864 in Bjernede, Sorø amt, Denmark. Alex confirmed that origin on 2026-11-03. Baptism was 5 Jun 1864. He immigrated in 1884. Hans Pedersen and Ane Rasmusdatter appear on the Danish records only and are not family-confirmed. He and Maren Sophia are Elmer’s parents.</p></div></aside></main>
 <script src="data.js"></script><script src="common.js"></script><script src="tree.js"></script></body></html>

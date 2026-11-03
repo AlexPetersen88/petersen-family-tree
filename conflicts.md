@@ -7,9 +7,9 @@
 - Caroline identity: Caroline Alvina Minnie Petersen b.21 Mar 1908 (mother Geske) d.8 Aug 1984 Redwood Co (S10) assumed = Caroline M. Schultz; maiden Schultz not shown in S10. Probable, not proven.
 - Immigrant name: owner corrected "Han" → Hans. ~~No Hans Petersen yet linked to Elmer H.~~ RESOLVED 2026-11-03: Hans Peter Petersen + Maren Sophia FAMILY-CONFIRMED as Elmer's parents via Michael Don Petersen.
 - (2026-11-02 pass 3) Elmer/Caroline identity now RESOLVED: MNHS indexes + FAG + Donald's MNHS mother SCHULTZ.
-- Hans Petersen origin: no verified Danish birthplace. Candidate S21 (b. 13 Mar 1864 Gaardeby, Tinglev — then Prussian Schleswig) is year-match only; competing identity unresolved. If he was from Schleswig post-1864, records may say "Germany/Prussia".
+- [SUPERSEDED 2026-11-03 — see RESOLVED below] Hans Petersen origin: no verified Danish birthplace. Candidate S21 (b. 13 Mar 1864 Gaardeby, Tinglev — then Prussian Schleswig) is year-match only; competing identity unresolved. If he was from Schleswig post-1864, records may say "Germany/Prussia".
 - Dannebod location: FAG lists under Morgan; HMDB places it in Brookville Twp near Cobden — same cemetery, address difference only.
-- Hans P6 birthplace: Tinglev/Gaardeby 13 Mar 1864 candidate still uncorroborated after Pass 4; not adopted.
+- [WITHDRAWN 2026-11-03] Hans P6 birthplace: Tinglev/Gaardeby 13 Mar 1864 candidate still uncorroborated after Pass 4; not adopted.
 
 ## 1900 census vs Find a Grave (2026-11-02)
 - FAG lists son Rudolph Hans Petersen (1893–1964). 1900 census lists son **Hans O.** b. May 1893. Possibly same person (Rudolph Hans / Hans O.); do not merge silently — ask Alex if known.
@@ -22,3 +22,18 @@
 - Maren's birthplace: MN in 1900/1910 vs Denmark in 1920 (S29). Two records against one; MN preferred.
 - Nels A. (b. 1891) is not in the 1910 household (age ~18, probably living elsewhere). He is still counted among the 7 living.
 - Hans's year of naturalization in 1920 reads ~1897 (uncertain). Immigration 1884 is consistent across 1900 and 1910.
+
+## 2026-11-03 — CANDIDATE Denmark origin for Hans Peter Petersen (P6) — UNVERIFIED, NOT family-confirmed
+1. Copenhagen Police emigrant index, registered 16 Apr 1884: Hans Peter Petersen, last residence Bjernede, Sorø amt, age 20, dest. Springfield USA, contract 1015 Y. Index: https://www.aalborgstadsarkiv.dk/UA.asp?UA=UAProtokol
+2. Bjernede Hovedministerialbog 1862–, FVD (births/baptisms), image 7 (epid=17223538): Hans Peder Pedersen b. 28 Feb 1864, bapt. 5 Jun 1864; parents TENTATIVELY **Hans Pedersen** & **Ane Rasmusdatter** (~28) per confirmation + re-read of this baptism; "2det Barn". The earlier reading "Niels Peder Pedersen / Ane Kirstine" is WITHDRAWN (misread) — see browser-pass-bjernede-corroboration.md. Viewer: https://arkivalieronline.rigsarkivet.dk/en/billedviser?epid=17223538
+- Pedersen/Petersen is a normal spelling variant. No document yet links this Bjernede person to the Redwood Co MN Hans. Competing Tinglev/Gaardeby S21 candidate still NOT adopted.
+- Birthplace in people.json stays "Denmark" (country only). Danish parents NOT added as people cards; recorded in notes only.
+3. Confirmation 14 Apr 1878 (Bjernede, vol. 1858 K–1891 K, image 24): Hans Peter Petersen, parents Boelsmand Hans Petersen & Ane Rasmusdatter, b. 28 Feb 1864 / bapt. 5 Jun 1864 — matches baptism.
+4. 1880 census Bjernede (image 5/71): Hans Peder Pedersen, 15, stepson of Hans Rasmussen (mother Ane remarried); low-confidence reads.
+- These corroborate the Danish-side identity only. Still a CANDIDATE for Redwood Co MN Hans; birthplace stays Denmark (country only), parish unverified. Not family-confirmed. Source: browser-pass-bjernede-corroboration.md.
+- Next free checks: 1870 Danish census Bjernede; original emigration protocol scan for contract 1015 Y; MN naturalization/death record parents.
+
+## 2026-11-03 — RESOLVED: Hans Peter Petersen (P6) Danish origin
+- Bjernede candidate RESOLVED by family confirmation (Alex Petersen, 2026-11-03, S30) of birth year + place: b. 28 Feb 1864 Bjernede, Sorø amt (S31–S34). Sections above marked "CANDIDATE/UNVERIFIED" are superseded.
+- Tinglev/Gaardeby S21 candidate WITHDRAWN (no longer competing).
+- Still open: parents Hans Pedersen & Ane Rasmusdatter are record-sourced, tentative reads, not family-named. No US document yet explicitly names Bjernede.

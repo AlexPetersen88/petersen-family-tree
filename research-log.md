@@ -44,13 +44,51 @@ Next: browser-based FamilySearch (free login) 1900/1910/1905 MN census; DDD emig
 31. Fredsminde church records 1892–1960 exist only as FamilySearch Library film (ldsgenealogy.com/MN/Redwood-County-Church-Records.htm); not free online elsewhere. Pastor list: hmdb.org/m.asp?m=257656 ; church history genealogytrails.com/minn/redwood/church_hist.html. No family entries.
 32. Find a Grave mirrors / Ancestry free trees / RootsWeb → nothing for this Hans. MISS.
 Result: no immigration year/parish; people.json UNCHANGED.
-
-## 2026-11-03 — Family confirmation
-- Alex confirmed via his father, Michael Don Petersen: Elmer Hamilton Petersen's parents were **Hans Peter Petersen** and **Maren Sophia** (Jensen; "Mary" on 1900 census). FAMILY-CONFIRMED; existing FAG/MNHS/1900 census citations kept.
-
+\n## 2026-11-03 — Family confirmation\n- Alex confirmed via his father, Michael Don Petersen: Elmer Hamilton Petersen's parents were **Hans Peter Petersen** and **Maren Sophia** (Jensen; "Mary" on 1900 census). FAMILY-CONFIRMED; existing FAG/MNHS/1900 census citations kept.\n
 ## 2026-11-03 Hans dig (America/Chicago)
 33. 1910 census (free Archive.org T624 reel 713) → HIT S28: Brookville ED 109 sh. 4A dw. 61. Maren is "mother of 7, 7 living", married 19 yrs. Hans P. 45, imm. 1884, Na. Children in the house: Rudolph H. 16, Anna H. 15, Louis C. 13, Marie E. 11, Ethel M. 8, Elmer H. 4 (Nels is away).
 34. 1920 census (free Archive.org T625 reel 851) → HIT S29: Brookville ED 182 dw. 54. Hans P. 55, Maren S. 47, Anna H. 25, Ethel M. 17, Elmer H. 13, Olga M. 8.
 35. CHILD COUNT = 8 (7 born by Apr 1910 per S28, plus Olga after that): Nels A. (Oct 1891; S27), Rudolph Hans / "Hans O." (May 1893; S27, S28, FAG 183099171), Anna/Annie H. (Jan 1895; S27–S29), Louis C. (Oct 1896; S27, S28), Mary S./Marie E. (May 1898; S27, S28), Ethel Mathilda (~1902; S28, S29, FAG), Elmer Hamilton (24 Mar 1906; S28, S29, MNHS), Olga M. (~1911; S29, FAG).
 36. Denmark origin: NOT FOUND. Web search for Hans Peter Petersen 1864 emigrant turned up only non-matches: Styrtom/Ensted b. 4 Oct 1864, m. 1888 in Broager (excluded, since our Hans married in MN in 1891); Eskebjerg 1856; Nebraska 1854. The DDD/danishfamilysearch emigrant search is a JS app and returned no data to curl. The Tinglev/Gaardeby S21 candidate is still NOT adopted.
 37. Next steps (free): browser search of the DDD emigrant DB (Copenhagen Police registers 1869–1940) for Hans Peter Petersen, ~20 yrs, 1884, destination Minnesota/Redwood/Sleepy Eye; Redwood Co naturalization papers (~1890s; the 1920 naturalization-year reading is uncertain) at MNHS/county court; Hans's 1922 MN death certificate (MNHS index gives the cert no.; the certificate may name his parents and birthplace); Fredsminde church records (FamilySearch film).
+
+## 2026-11-03 Hans origin (free desk research)
+- emiarch.dk still HTTP 500. Working free official index = Det Danske Udvandrerarkiv / Copenhagen Police Emigration Protocols: https://www.aalborgstadsarkiv.dk/UA.asp?UA=UAProtokol (covers 1868–1911, 1913–16, 1919–20). Guide: https://www.rigsarkivet.dk/vejledning/udvandring-til-andre-verdensdele-kom-godt-i-gang/
+- Search "Hans Peter" + "Petersen", 1884: EXACTLY 1 hit -> Petersen, Hans Peter | Tyende (m/k land) [rural servant] | last residence Bjernede, Sorø amt | age 20 | dest. Springfield, USA | contract 1015 Y | registered 16/4 1884.
+  - Fits: b. ~1864, emig. 1884. Springfield, MN (Brown Co) borders Redwood Co -> plausible. CANDIDATE, not proven (no family-tie evidence yet). Not cross-checked against original protocol image (book icon on result).
+- Variant checks 1883–85: "Hans Peter Pedersen"/"Peterson" = 0. "Hans Pedersen" 18 hits (none 1884 to MN). "Hans Petersen" 95 hits (only page 1 reviewed; none other to MN town). Pages 2+ not reviewed.
+- S21 Tinglev/Gaardeby still NOT adopted; this hit (Bjernede, Zealand) competes with it.
+- Nels Peter Jensen (Maren's father) not searched — he emigrated before Maren's b. 1872 MN; doesn't directly help Hans.
+- Next: (1) open original protocol image for 1015 Y; (2) Bjernede parish baptisms Feb 1864 on sa.dk Arkivalieronline (free) / Danish Family Search; (3) 1880 Danish census Bjernede for Hans Peter Petersen ~16; (4) Hans naturalization papers (Redwood/Brown Co) for port/date.
+
+## 2026-11-03 — CANDIDATE Denmark origin for Hans Peter Petersen (P6) — UNVERIFIED, NOT family-confirmed
+1. Copenhagen Police emigrant index, registered 16 Apr 1884: Hans Peter Petersen, last residence Bjernede, Sorø amt, age 20, dest. Springfield USA, contract 1015 Y. Index: https://www.aalborgstadsarkiv.dk/UA.asp?UA=UAProtokol
+2. Bjernede Hovedministerialbog 1862–, FVD (births/baptisms), image 7 (epid=17223538): Hans Peder Pedersen b. 28 Feb 1864, bapt. 5 Jun 1864; parents TENTATIVELY read as Niels Peder Pedersen (gaardfæster, Bjernede) & Ane Kirstine (~28); "2det Barn". Viewer: https://arkivalieronline.rigsarkivet.dk/en/billedviser?epid=17223538
+- Pedersen/Petersen is a normal spelling variant. No document yet links this Bjernede person to the Redwood Co MN Hans. Competing Tinglev/Gaardeby S21 candidate still NOT adopted.
+- Birthplace in people.json stays "Denmark" (country only). Danish parents NOT added as people cards; recorded in notes only.
+- Next free checks: 1870/1880 Danish census Bjernede; confirmation ~1878 (Bjernede); original emigration protocol scan for contract 1015 Y.
+
+## 2026-11-03 ~06:50 CST — Census 1870/1880 corroboration pass for Hans Peder Pedersen b. 28 Feb 1864 Bjernede (free web/index)
+- ddd.dda.dk: home page loads (links soeg_person_enkel.asp, soeg_person.asp, soeg_husstand_selv.asp), but the person-search page timed out from curl (40 s, no response). Old /soeg-i-folketaellinger URL returns 404. The census search did NOT run. MISS (needs browser).
+- danishfamilysearch.com/sogn/bjernede: loads, but the census data is behind JS/login. No transcription retrieved. MISS.
+- WebSearch "Bjernede folketælling 1880 Hans Peder Pedersen 1864": no Bjernede hit. cs.rigsarkivet.dk/picture/view-values/662672 lists a Hans Peder Pedersen at "Birket" (not Bjernede) and a Carl Ferdinand Harvey Pedersen at Bjernede. Not relevant/unverified.
+- WebSearch "Niels Peder Pedersen" + Bjernede + "Ane Kirstine": NON-MATCH. annakarlsdatter.dk (http://www.annakarlsdatter.dk/individual.php?pid=I1651) cites FT-1880 for Himlingøje, Præstø amt: household of Hans Pedersen 42 (shoemaker) & Ane Jørgensen 37, with a son "Hans Peder Pedersen 6" (b. ~1874). Wrong parish, parents and age. NOT our man. Not adopted.
+- forum.slaegt.dk topic 41706: Bjernede marriages 1879–91 (Ane Kirstine Pedersen b. 1848 Stokholdt). Unrelated.
+- Official 1870 census images (free, unindexed): https://arkivalieronline.rigsarkivet.dk/da/rif/select/7/16874258 (Folketælling 1870 Landdistrikter). The Bjernede pages were not browsed.
+Result: NO census corroboration found. Household members NOT identified. Baptism reading stays TENTATIVE. Next: browser search of DDD (soeg_person_enkel.asp: Sorø amt, Alsted herred, Bjernede, FT-1870/1880, "Hans Peder"), or browse the Bjernede pages of FT-1870/1880 on Arkivalieronline.
+
+## 2026-11-03 Bjernede corroboration pass (free) — CANDIDATE STRENGTHENED, NOT PROVEN
+38. Confirmation HIT: Bjernede Hovedministerialbog vol. 1858 K–1891 K, "Konfirmerede drenge", img 24/84, Palmesøndag 14 Apr 1878 no. 2: Hans Peter Petersen, Bjernede; parents Hans Petersen (Boelsmand) & Ane Rasmusdatter; b. Bjernede 28 Feb 1864, bapt. 5 Jun 1864. https://arkivalieronline.rigsarkivet.dk/en/billedviser?epid=17223538
+39. Baptism re-read (FVD img 7, entry 4): parents Hans Pedersen & Ane Rasmusdatter (28 yrs) — CORRECTS the earlier tentative "Niels Peder Pedersen / Ane Kirstine" (misread; discard).
+40. 1880 census HIT: Bjernede, Alsted hrd, Sorø amt, img 5/71: household Hans Rasmussen (head, Bolsmand) / Ane Rasmussen / Hans Peder Pedersen 15 (stepson, read) / Rasmus Peder Rasmussen 8 / Ane Marie Rasmussen 5. https://arkivalieronline.rigsarkivet.dk/da/rif/select/7/16877355
+41. 1870 census not checked (ddd.dda.dk search hung; danishfamilysearch needs login). Manual browse: .../rif/select/7/16874258.
+42. Still no doc linking Bjernede man to MN Hans → NOT proven; people.json unchanged (birthplace stays "Denmark"). Details: genealogy/browser-pass-bjernede-corroboration.md; shots/hans-origin-2026-11-03/bjernede_*.
+
+## 2026-11-03 US-link pass (Bjernede emigrant -> Redwood Co MN Hans) — MISS, NOT PROVEN
+43. 1885 MN census: FamilySearch needs login (blank); archive.org search no relevant item. Not searched.
+44. Naturalization index: no free searchable index found (MNHS tip URL 404). Not searched.
+45. Newspapers: loc.gov Chronicling America blocked by Cloudflare (reported); MN Digital Newspaper Hub content search "Hans Petersen" + Springfield/Redwood/Cobden → "No titles found" (tool limitation, not negative evidence).
+46. No bridge. people.json unchanged. See browser-pass-us-link-bjernede.md; shots/hans-origin-2026-11-03/mnhub_*.
+
+## 2026-11-03
+- Alex confirmed Bjernede / 1864 origin for Hans Peter (P6) — family-confirmed (S30). people.json birth updated to 28 Feb 1864 Bjernede, Sorø amt; S30–S34 added; Tinglev S21 withdrawn; data.js rebuilt.
