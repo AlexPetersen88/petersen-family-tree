@@ -128,12 +128,20 @@
 - S326 (CANDIDATE / context only, not locked): Særløse kirkebog — (a) baptism 28 Jul 1799, Haagen, son of Johan Mathiesen i Tølstrup (same father as S322 Kirsten dåb) = CANDIDATE brother of P27; (b) burial 11 Feb 1795, Johan's unnamed *Hustru*, age 32 = possible prior marriage before Kirsten, context only. No mother name. No kinship to P25/P34. Særløse/Tølstrup pins soft-parked.
 
 ## Dig 52 / S329–S335 — Genealogist CLEAR thin (Storyteller) 2026-11-03
-- S329 / S330 / S331 / S332 / S333 / S334 / S335 (Dig 52 CLEAR thin): Henry F. Dohrmann (P44) b. Germany 15 Oct 1864; the 1878 immigration reading is reopened in Dig 54 (CONFLICT OPEN with 1873); m. Ida A. Diederich (b. New Ulm, MN, 17 Jun 1869) 7 Nov 1889 Sleepy Eye. Henry's parents Heinrich W. Dohrmann × Caroline (maiden OPEN — Grote/Grate, not locked). Use: Ch.4 Janice section + ABRIDGED. German town not named.
-- Kept out: S337/S338 (place and maiden locks). Any German town stays unverified and is not named. New Ulm is a town pin only; the birth house is not pinned.
+- S329 / S330 / S331 / S332 / S333 / S334 / S335 (Dig 52 CLEAR thin): Henry F. Dohrmann (P44) × Ida A. Diederich (b. New Ulm, MN, 17 Jun 1869) m. 7 Nov 1889 Sleepy Eye. The 1878 immigration reading stays reopened (Dig 54, CONFLICT OPEN with 1873). Birthplace, parents, and maiden name are superseded by Dig 55 (S347–S350): Landesbergen HIGH; maiden Grote LOCKED; forename Louisa/Caroline OPEN. Use: Ch.4 Janice section + ABRIDGED. New Ulm is a town pin only; the birth house is not pinned.
 
 ## Dig 54 / S342–S345 — Genealogist CLEAR thin (Storyteller) 2026-11-03
 - S342 (HIGH): 1875 census, Leavenworth Twp, Brown Co, MN — Dohrmann household; Henry ~10 with parents Heinrich/Henry & Caroline and siblings. Supports imm. 1873.
 - S343: Weser passenger list — Dohrmann family arrival, supports 1873. Heinrich age 8 matched to Henry (P44) is MED.
 - S344 (HIGH): Henry F. Dohrmann 1946 obituary cluster — b. 15 Oct 1864 Hanover (province); arrived 1873; Chicago ~2 yrs then Brown Co/Leavenworth.
 - S345: 1920 US census — immigration year 1878.
-- Immigration year CONFLICT OPEN (1873 vs 1878); Dig 52 S329–S335 imm-1878 lock reopened. No German town or parish is cleared, and none is named. No German pin.
+- Immigration year CONFLICT OPEN (1873 vs 1878); Dig 52 S329–S335 imm-1878 lock reopened. Dig 54 "no German town" is superseded by Dig 55.
+
+## Dig 55 / S347–S350 — Genealogist CLEAR thin (Storyteller) 2026-11-03 — CLOSED HIT
+- S347 (HIGH): Archion Landesbergen baptisms, Heinrich Friedrich Ludwig Dohrmann, b. 15 Oct 1864, bapt. 23 Oct 1864. Parents Anbauer Heinrich Dohrmann of Landesbergen × Louisa geb. Grote.
+- S348 (HIGH): Archion Landesbergen marriages, Heinrich Dohrmann × Louisa Grote, m. 1 Jul 1859 Landesbergen.
+- S349 (HIGH): S347 and S348 are the same couple. The baptism is five years after the wedding.
+- S350 (HIGH): Landesbergen is the cite-ready parish. Supersedes Dig 52/54 "Landesbergen out."
+- Mother's maiden name Grote: LOCKED. Forename Louisa vs Caroline: OPEN (write Louisa/Caroline).
+- Immigration year still CONFLICT OPEN 1873 vs 1878 (S342–S345). Chicago ~2 yrs → Leavenworth unchanged.
+- Visit pins: places/landesbergen-de.md (village 52.5610, 9.1238; church Am Kirchplatz 5, 52.5592, 9.1185 — baptism inside that building is a candidate; house unverified).
