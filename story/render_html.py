@@ -68,7 +68,7 @@ MAP_RE = re.compile(r"\[map\]\((https://[^)\s]+)\)")
 # Cleared visit pins only. Held pins (Brookville farm,
 # Dig 21 / 1807 person-link, living residences, a Wolfeboro hospital
 # or house, and the soft Bjernedehuse overlook) are intentionally absent.
-# Matr. 5a is explicit: the [map] link sits on the deed sentence only.
+# Matr. 5a is explicit. Story links sit on the fields south of Stokholtsvej.
 # The caption may name the parcel. It must not say Hans lived there.
 # Sankt Hans Gade is explicit: the [map] link sits on P34's 1834 residence
 # only. Phrase scan must not attach it to the S63 candidate sentence.

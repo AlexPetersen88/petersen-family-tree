@@ -1,0 +1,14 @@
+# Bjernedegaardshuse / Bjernedehuse / matr. 5a Bjernedehuse
+- **Record names:** *Bjernedegaardshuse* (Rasmus b. 1866, father d. 1867; S37, S43); *Bjernedehuse* (half-sibs 1871/74; S39, S47, S48); *Bjerne Huse* (stepfather d. 1883); deed: "Matr. No 5 A af Bjernedehuse, Bjernede Sogn" (S50).
+- **Modern:** ejerlav "Bjernede Huse" (code 220252), Sorø Kommune. **Matr. 5a still exists** (not renumbered away). Original 5 appears split into **5a / 5b / 5c**.
+- **Pins:**
+  - **Matr. 5a parcel (visit pin):** **55.4656, 11.6444** — long strip south of Stokholtsvej, east edge along the road — https://www.openstreetmap.org/?mlat=55.4656&mlon=11.6444#map=17/55.4656/11.6444 — **HIGH** (matriklen.dk map readout EPSG:25832 → WGS84)
+  - **Property address (BFE 1318312 = parcels 4 + 5a):** Stokholtsvej 35, 4173 Fjenneslev — house/buildings sit on **parcel 4** north of the road (~55.46695, 11.64359 Nominatim) — address MED–HIGH for standing at the farmyard; not the 5a strip itself
+  - Neighbors: **5b** = Stokholtsvej 31 (~55.4648, 11.6408); **5c** east of 5a; **6a** = Stokholtsvej 29; **2a** = Stokholtsvej 62 (~55.4683, 11.6530)
+  - Older hamlet overlook (still useful context): Stokholtshuse OSM 55.4597, 11.6419 — superseded for 5a plot
+- **What is proven:** matr. 5a belonged to bolsmand Hans Rasmussen (stepfather, P20) until his death 1883; estate sold 13 Nov 1884 to miller J.P. Mathiesen of Gyrstinge; heirs Rasmus Peter (P21) + Ane Marie (P22) (S50, VERIFIED deed). Hans Pedersen (P18) never owned it. Whether Hans Peter (P6) lived on 5a: NOT proven.
+- **Matrikel today:** 5a = 35,540 m² (1,970 m² road); same property as parcel 4 (147,752 m²); landbrugsejendom; last change 21.06.2021. Map: https://www.matriklen.dk/kort/sfe/1318312/jordstykker
+- **Stand there:** park/walk public Stokholtsvej at the bend by Stokholtsvej 35; view the **5a strip south of the road** (fields along the road’s west side going south). Do not enter farmyards. Say “the houses of Bjernede / matr. 5a fields,” not “their house” (ownership ≠ childhood residence proven).
+- **Confidence:** place-name HIGH; 5a ownership HIGH (deed); **modern 5a parcel location HIGH**; property street address MED–HIGH (shared with 4; buildings on 4). Historic house footprint on 5a vs 4 = UNVERIFIED without historisk matrikel overlay.
+- **Optional next:** matriklen “Historisk matrikelkort” tab or historiskekort.dk Original 2 vs modern 5a shape — only if we need the 1800s building site, not the parcel.
+- **Sources:** S37, S39, S43, S47, S48, S50; matriklen.dk BFE 1318312 (2026-11-03); Nominatim Stokholtsvej 35; shots `matr5a-matriklen-modern.png`, `matr5a-matriklen-hover-coords.png`; ../bjernedegaardshuse-pin.md; ../hans-pedersen-parcel.md

@@ -26,7 +26,7 @@ Seven months later, on 11 September 1867, the father died at 34 and was buried i
 
 In 1870 the census shows Ane as a 27-year-old widow living in Bjernede with her son "Hans Peter Pedersen, 6." That spring she married Hans Rasmussen, a much older widower. They had two children, Rasmus Peter (1871) and Ane Marie (1874). Hans Peter was confirmed on Palm Sunday 1878, and in 1880 he was still living at home as a stepson, age 15.
 
-In the summer of 1883 the household came to an end. Hans Rasmussen's wife, almost surely Ane, died on 29 June, and he died a few days later. In November 1884 their property in Bjernede, matr. 5a — a strip of fields south of Stokholtsvej that can still be seen from the road ([map](https://www.openstreetmap.org/?mlat=55.4656&mlon=11.6444#map=17/55.4656/11.6444)) — was sold to a miller from Gyrstinge for 13,000 kroner. Part of the money was kept for the two young half-siblings, who went to foster homes. Hans Peter was not named in the sale. Whether he ever lived on 5a is not proven. By then he was already gone.
+In the summer of 1883 the household came to an end. Hans Rasmussen's wife, almost surely Ane, died on 29 June, and he died a few days later. In November 1884 their property in Bjernede, matr. 5a — a strip of fields south of Stokholtsvej that can still be seen from the road ([map](https://www.openstreetmap.org/?mlat=55.4656&mlon=11.6444#map=17/55.4656/11.6444), 55.4656, 11.6444) — was sold to a miller from Gyrstinge for 13,000 kroner. Part of the money was kept for the two young half-siblings, who went to foster homes. Hans Peter was not named in the sale. Whether he ever lived on 5a is not proven. By then he was already gone.
 
 ## 3. Hans Peter Crosses to Minnesota (1884–1922)
 
