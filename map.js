@@ -8,6 +8,7 @@
     {id:'sct-hansgade',region:'dk',lat:55.4445,lng:11.7908,zoom:17},
     {id:'landesbergen',region:'dk',lat:52.5610,lng:9.1238,zoom:14,cluster:'landesbergen'},
     {id:'landesbergen-kirche',region:'dk',lat:52.5592,lng:9.1185,zoom:17,cluster:'landesbergen'},
+    {id:'leese-de',region:'dk',lat:52.5057,lng:9.1159,zoom:14},
     {id:'bjernedehuse-5a',region:'dk',lat:55.4656,lng:11.6444,zoom:17,labelNote:'Parcel south of Stokholtsvej. Stand near Stokholtsvej 35. Not the modern house. Living on 5a is not proven.'},
     {id:'bjernedehuse-overlook',region:'dk',lat:55.4597,lng:11.6419,zoom:15,soft:true,labelNote:'Hamlet overlook, not the house.'},
     {id:'dannebod',region:'mn',lat:44.31115,lng:-94.89040,zoom:15},
@@ -77,7 +78,7 @@
 
   function moveMap(latlng,zoom){
     if(!map)return;
-    if(reduce)map.setView(latlng,zoom,{animate:false});
+    if(reduce||!map._loaded)map.setView(latlng,zoom,{animate:false});
     else map.flyTo(latlng,zoom,{duration:.55});
   }
   function fitRegion(next,animate){

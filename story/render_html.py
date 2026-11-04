@@ -280,6 +280,17 @@ PINS = [
         "caption": "Today's church. That the 1864 baptism was inside this building is not proven.",
     },
     {
+        "id": "leese-de",
+        "label": "Leese",
+        "short": "Leese",
+        "osm": "https://www.openstreetmap.org/?mlat=52.5057&mlon=9.1159#map=14/52.5057/9.1159",
+        "google": "https://www.google.com/maps/search/?api=1&query=52.5057,9.1159",
+        "phrases": [],
+        "marks": ("52.5057", "9.1159"),
+        "explicit": True,
+        "caption": "The village. Her house is not pinned. The 1873–74 brick church is not this pin.",
+    },
+    {
         "id": "sleepy-eye-methodist",
         "label": "Faith United Methodist Church, Sleepy Eye",
         "short": "Faith UMC",

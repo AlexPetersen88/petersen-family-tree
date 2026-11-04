@@ -2,6 +2,10 @@
 
 This log tracks Genealogist-cleared additions and corrections folded into the story chapters, newest first. Each entry gives a short reason and its source. S# cites refer to `sources/SOURCE-KEY.md` and the Genealogist tree.
 
+## 2026-11-04
+
+- **Dig 56 / S347–S351 — Henry F. Dohrmann's mother's first name LOCKED Carolina** — Ch.4 + Abridged: Louisa/Caroline OPEN → Carolina geb. Grote (Grote stays locked). US Caroline and church Karoline/Carolina = same woman. Louisa/Louise = superseded reading of the German handwriting (noted once in Ch.4). Immigration 1873 vs 1878 still both OPEN. Carolina b. ~1835 Leese, *Dienstmagd* Leese, 1859 banns Landesbergen + Leese (S348/S351); Places Scout Leese village pin 52.5057, 9.1159 HIGH. Kirchplatz 5 is the parish square; the 1873–74 brick church is not her-era building and is not a map pin; house UNVERIFIED — places/leese-de.md. Siblings 1860/1863/1870 kept as P44 notes only (not in prose). Kids unchanged (no Dohrmann beat). Dig 21 / Day B / Dig J unchanged. — Why: Genealogist Dig 56 CLEAR. (S347–S351; S329–S335, S342; Dig 56 CLEAR)
+
 ## 2026-11-03
 
 - **Dig 55 / S347–S350 — Henry F. Dohrmann's German hometown (thin, CLOSED HIT)** — Ch.4 + Abridged: Henry b. 15 Oct 1864, bapt. 23 Oct 1864 Landesbergen (Nienburg / Stolzenau-Loccum, Hanover province) as Heinrich Friedrich Ludwig; parents Anbauer Heinrich Dohrmann of Landesbergen × Louisa/Caroline geb. Grote (maiden Grote locked; forename open), m. 1 Jul 1859 Landesbergen. Replaces "Hanover province only / no village." S337 Landesbergen proved (S350), superseding Dig 52/54 "Landesbergen OUT". Village pin 52.5610, 9.1238. Church at Am Kirchplatz 5 (52.5592, 9.1185) is a visit pin; baptism inside that building is a candidate; the house is unverified. Imm. 1873 vs 1878 still OPEN; Chicago → Leavenworth unchanged and still off the map page. Kids unchanged. — Why: Genealogist Dig 55 CLEAR. (S347–S350; places/landesbergen-de.md)

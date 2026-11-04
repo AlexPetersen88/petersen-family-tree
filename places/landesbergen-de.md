@@ -1,6 +1,6 @@
 # Landesbergen (Nienburg / Stolzenau-Loccum), Hanover province → Niedersachsen (Henry F. Dohrmann birth/baptism)
 
-- **Record name:** Landesbergen, Hanover province (Dig 55 CLEAR CLOSED HIT). Heinrich Friedrich Ludwig Dohrmann b. 15 Oct 1864, bapt. 23 Oct 1864; parents Anbauer Heinrich Dohrmann of Landesbergen × Louisa/Caroline geb. Grote (m. 1 Jul 1859 Landesbergen). S347–S350 Archion.
+- **Record name:** Landesbergen, Hanover province (Dig 55 CLEAR CLOSED HIT). Heinrich Friedrich Ludwig Dohrmann b. 15 Oct 1864, bapt. 23 Oct 1864; parents Anbauer Heinrich Dohrmann of Landesbergen × **Carolina** geb. Grote (Dienstmagd Leese; m. 1 Jul 1859 Landesbergen; banns also Leese). Dig 56 LOCKED forename Carolina (Louisa/Louise = superseded reading). S347–S351 Archion. See also [leese-de.md](leese-de.md).
 - **Modern:** Gemeinde Landesbergen, Samtgemeinde Mittelweser, Landkreis Nienburg/Weser, Niedersachsen 31628. Historic Kirchenkreis Stolzenau-Loccum.
 - **Village pin:** 52.5610, 9.1238 (Nominatim/OSM admin relation Landesbergen 2026-11-03).
 - **Church visit pin (CANDIDATE for 1864 baptism building):** Ev.-Luth. Kirche Landesbergen, **Am Kirchplatz 5**, 31628 Landesbergen — **52.5592, 9.1185** (OSM building “5, Am Kirchplatz”). Parish still Landesbergen; church Romanesque core ~12th/13th c., tower/nave work 19th c. — likely same parish church as 1864 baptisms, but baptism-in-*this* fabric not sealed from the Archion images alone.
