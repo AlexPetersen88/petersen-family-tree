@@ -10,7 +10,9 @@
     {id:'dannebod',region:'mn',lat:44.31115,lng:-94.89040,zoom:15},
     {id:'bethany-lutheran',region:'mn',lat:44.4452,lng:-94.9873,zoom:16},
     {id:'evan',region:'mn',lat:44.3540,lng:-94.8410,zoom:14},
-    {id:'wolfeboro',region:'mn',lat:43.5848,lng:-71.2122,zoom:13,soft:true,frame:false,labelNote:'Town only. Medium confidence. Not a hospital or a residence.'}
+    {id:'redwood-falls-cemetery',region:'mn',lat:44.5510,lng:-95.1000,zoom:16},
+    {id:'wolfeboro',region:'mn',lat:43.5848,lng:-71.2122,zoom:13,soft:true,frame:false,labelNote:'Town only. Medium confidence. Not a hospital or a residence.'},
+    {id:'pownal',region:'mn',lat:43.8923,lng:-70.1835,zoom:13,soft:true,frame:false,labelNote:'Town only. Medium confidence. Not a building or a residence.'}
   ];
   const byId={};
   PINS.forEach(pin=>{byId[pin.id]=pin});
