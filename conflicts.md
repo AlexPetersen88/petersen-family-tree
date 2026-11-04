@@ -147,6 +147,15 @@
 ## Dig 55 (2026-11-03) — Landesbergen — Genealogist CLEAR, CLOSED HIT
 - Landesbergen (Nienburg / Stolzenau-Loccum, Hanover province) is the cite-ready parish of Henry's birth and baptism, and of his parents' marriage (S347–S350, HIGH). This supersedes Dig 52, Dig 53, and Dig 54 "Landesbergen out / no German town."
 - He was born 15 Oct 1864 and baptized 23 Oct 1864 as Heinrich Friedrich Ludwig. Henry F. is the American form (S347).
-- Parents: Anbauer Heinrich Dohrmann of Landesbergen and Louisa/Caroline, born Grote, married 1 Jul 1859 in Landesbergen (S347, S348, S349). Maiden name Grote is locked. The forename stays open: Louisa on the church books, Caroline in American records. Show both. No winner.
+- Parents: Anbauer Heinrich Dohrmann of Landesbergen and Carolina, born Grote, married 1 Jul 1859 in Landesbergen (S347, S348, S349). Maiden name Grote is locked. Dig 55 left the forename open (Louisa on the church books, Caroline in American records). Dig 56 locks it. See below.
 - The village pin is 52.5610, 9.1238. The parish church at Am Kirchplatz 5 is 52.5592, 9.1185. The church building is a visit place. That the 1864 baptism was inside this exact building is a candidate. The family's house is not pinned.
 - Immigration 1873 and 1878 stay CONFLICT OPEN. Neither year is locked.
+
+## Dig 56 (2026-11-04) — Carolina LOCKED — Genealogist CLEAR
+- P44's mother forename is LOCKED Carolina geb. Grote (Alex 2026-11-04). Maiden Grote stays locked. US Caroline and church Karoline/Carolina are the same woman (S338, S347–S351, S356).
+- Louisa/Louise, the Dig 55 handwriting reading, is SUPERSEDED. It is not the tree name. The FamilySearch longer form Dorothea Louise Carolina may be named as a longer form only.
+- She was born about 1835 in Leese and was a Dienstmagd there. Banns in June 1859 were read in Landesbergen and Leese. The marriage was in Landesbergen on 1 July 1859 (S348, S351).
+- Leese village pin 52.5057, 9.1159 is HIGH. Kirchplatz 5, about 52.5051, 9.1136, is the parish square. The brick church of 1873–74 is CANDIDATE/LOW for her youth and is not pinned. Her house is UNVERIFIED and is not pinned.
+- Siblings (no person cards, not story prose): sister born 1860 (S352), stillborn son 1863 (S353), sister born 1870 (S355).
+- Immigration year stays CONFLICT OPEN. Keep both 1873 and 1878. Neither is locked.
+- Dig J and Day B stay held. No places beyond Landesbergen and Leese.

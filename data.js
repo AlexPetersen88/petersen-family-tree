@@ -1485,7 +1485,7 @@ window.PEOPLE={
    "burial": "Home Cemetery, Sleepy Eye, Brown Co MN",
    "parents": [
     "Heinrich Dohrmann (Anbauer, Landesbergen; 1831\u20131899) HIGH S347/S348",
-    "[Louisa/Caroline] geb. Grote (1835\u20131907) \u2014 maiden Grote LOCKED; forename OPEN: Louisa (S347/S348 Archion Scout) vs Caroline (S338 US)"
+    "Carolina geb. Grote (1835\u20131907) \u2014 forename LOCKED Carolina (Alex 2026-11-04; Karoline/-olina/US Caroline same name; Dig 56 S351/S353/S355, US S338); maiden Grote LOCKED. Alternate superseded reading: Louisa/Louise (Dig 55 S347/S348). FS tree full form (S337): Dorothea Louise Carolina."
    ],
    "spouses": [
     {
@@ -1516,10 +1516,16 @@ window.PEOPLE={
     "S347",
     "S348",
     "S349",
-    "S350"
+    "S350",
+    "S351",
+    "S352",
+    "S353",
+    "S354",
+    "S355",
+    "S356"
    ],
-   "status": "Germany birth HIGH; Landesbergen cite-ready HIGH (S347/S350); 1875 Leavenworth HIGH (S342); immigration year KEEP BOTH OPEN 1873 vs 1878; Dig 55 CLOSED HIT",
-   "notes": "Census variants Dohrman/Dohornan/Dorhman. 1880 (S333) with father Henry 51, mother Caroline 45, sister Lena 10, all b. Germany. MNHS death cert 1946-MN-001678 (index only; paid image PARKED). FS tree LHCF-L5B names him Dietrich Heinrich Friedrich Ludwig, b. Landesbergen \u2014 CANDIDATE UNVERIFIED, NOT approved (S337). Children per S89/S336 (noted, not carded): Arthur Edgar, Estella Lena Bittner, Elsie George, Lucy Lambrecht, Verna Ingraham, Henry August, Elmer Raymond, Edwin, Alice Murphy. WikiTree Dohrmann-176 = different man, REJECT. Parents not carded (parents-next stop). Dig 53 (gated ~6:25 PM CT): free Landesbergen FS birth search 0 hits (S339 NEG); Bremen 1875\u20131908 lists destroyed (S340); Suderburg D\u00f6hrmann\u00d7Grote NEG other couple (S341). Town still NOT cite-ready. S337 stays CANDIDATE UNVERIFIED. Dig 54 (gated ~6:48 PM CT): 1875 MN census Leavenworth household HIGH (S342); mother+kids Weser 1873 (S343; Heinrich 8 = P44 MED); obit: b. Hanover 15 Oct 1864, came with parents 1873, near Chicago ~2 yrs then Leavenworth (S344). Imm year CONFLICT OPEN (S345). 1880 Lena may = younger Caroline \u2014 UNVERIFIED (S346). | Dig 54 imm fold (Alex 2026-11-03 ~6:49 CT): KEEP BOTH OPEN \u2014 show 1873 and 1878; no year locked. | Dig 55 (gated ~9:40 PM CT 2026-11-03): CLOSED HIT PARTIAL. Archion Landesbergen bapt (S347) + parents' m. 1 Jul 1859 (S348), link S349; S337 Landesbergen PROVED (S350). Mother forename Louisa vs Caroline OPEN; Grote LOCKED. Archion pass \u20ac19.90 (Alex yes), valid to 04 Dec 2026.",
+   "status": "Germany birth HIGH; Landesbergen cite-ready HIGH (S347/S350); 1875 Leavenworth HIGH (S342); immigration year KEEP BOTH OPEN 1873 vs 1878; Dig 55 CLOSED HIT; Dig 56 FOLDED \u2014 mother forename LOCKED Carolina (Alex 2026-11-04); Louisa SUPERSEDED",
+   "notes": "Census variants Dohrman/Dohornan/Dorhman. 1880 (S333) with father Henry 51, mother Caroline 45, sister Lena 10, all b. Germany. MNHS death cert 1946-MN-001678 (index only; paid image PARKED). FS tree LHCF-L5B names him Dietrich Heinrich Friedrich Ludwig, b. Landesbergen \u2014 CANDIDATE UNVERIFIED, NOT approved (S337). Children per S89/S336 (noted, not carded): Arthur Edgar, Estella Lena Bittner, Elsie George, Lucy Lambrecht, Verna Ingraham, Henry August, Elmer Raymond, Edwin, Alice Murphy. WikiTree Dohrmann-176 = different man, REJECT. Parents not carded (parents-next stop). Dig 53 (gated ~6:25 PM CT): free Landesbergen FS birth search 0 hits (S339 NEG); Bremen 1875\u20131908 lists destroyed (S340); Suderburg D\u00f6hrmann\u00d7Grote NEG other couple (S341). Town still NOT cite-ready. S337 stays CANDIDATE UNVERIFIED. Dig 54 (gated ~6:48 PM CT): 1875 MN census Leavenworth household HIGH (S342); mother+kids Weser 1873 (S343; Heinrich 8 = P44 MED); obit: b. Hanover 15 Oct 1864, came with parents 1873, near Chicago ~2 yrs then Leavenworth (S344). Imm year CONFLICT OPEN (S345). 1880 Lena may = younger Caroline \u2014 UNVERIFIED (S346). | Dig 54 imm fold (Alex 2026-11-03 ~6:49 CT): KEEP BOTH OPEN \u2014 show 1873 and 1878; no year locked. | Dig 55 (gated ~9:40 PM CT 2026-11-03): CLOSED HIT PARTIAL. Archion Landesbergen bapt (S347) + parents' m. 1 Jul 1859 (S348), link S349; S337 Landesbergen PROVED (S350). Mother forename Louisa vs Caroline OPEN; Grote LOCKED. Archion pass \u20ac19.90 (Alex yes), valid to 04 Dec 2026. | Dig 56 (gated ~10:45 PM CT 2026-11-03): CLOSED PARTIAL S351\u2013S356. Mother forename was OPEN at the gate: Louisa/Louise (Dig 55 S347/S348) vs Carolina/Karoline/-olina (S351 reread Carolina Dorothea MED; S353 1863 burial reads Carolina, clearer; S355 1870 ends -olina). Maiden Grote LOCKED. S354: P44 bapt child facts stand HIGH; mother glyph still unclear. Siblings (no person cards): Dorothea Louise Karoline(?) b. 23 Dec 1860, bapt 1 Jan 1861 (S352 HIGH); stillborn son b. 23 May 1863, bur ~25 May 1863 (S353 HIGH); Louise Wilhelmine Karoline(?) Sophie b. ~31 May 1870, bapt 12 Jun 1870 (S355 HIGH). Mother forename glyph unclear on all at the Dig 56 gate. | Dig 56 fold (Alex 2026-11-04 ~6:17 AM CT): mother forename LOCKED Carolina geb. Grote; Dig 55 Louisa/Louise SUPERSEDED as alternate reading; earlier OPEN lines above are superseded for the forename only. Immigration year stays CONFLICT OPEN \u2014 1873 and 1878, neither locked. Carolina b. ~1835 Leese, Dienstmagd Leese; banns Landesbergen + Leese (S348/S351). House UNVERIFIED.",
    "immigration": {
     "year": "1873 and 1878",
     "status": "CONFLICT OPEN \u2014 KEEP BOTH. Show 1873 (S344/S343/S342) and 1878 (S332/S345) without locking. Alex fold Dig 54 (~6:49 PM CT 2026-11-03). Not DNA; both cited."
@@ -3692,7 +3698,7 @@ window.SOURCES={
  "S335": {
   "id": "S335",
   "flag": "Dig 52 CLEAR thin",
-  "text": "Henry F. Dohrmann married Ida A. Diederich on 7 Nov 1889 in Sleepy Eye. Town pin only. The ceremony building is not known and is not the 1957 Faith United Methodist pin. Dig 55: his father is Anbauer Heinrich Dohrmann of Landesbergen; his mother's maiden name Grote is locked; her forename Louisa or Caroline stays open (S347, S348).",
+  "text": "Henry F. Dohrmann married Ida A. Diederich on 7 Nov 1889 in Sleepy Eye. Town pin only. The ceremony building is not known and is not the 1957 Faith United Methodist pin. Dig 55: his father is Anbauer Heinrich Dohrmann of Landesbergen; his mother's maiden name Grote is locked. Dig 56 locks her forename as Carolina. Louisa/Louise is a superseded reading (S347, S348, S351, S356).",
   "urls": []
  },
  "S337": {
@@ -3704,7 +3710,7 @@ window.SOURCES={
  "S338": {
   "id": "S338",
   "flag": "maiden locked by Dig 55",
-  "text": "Grote. The forename stays open: Louisa on the Landesbergen registers (S347, S348) and Caroline in American records.",
+  "text": "Grote. Dig 55 left the forename open: Louisa on the Landesbergen registers (S347, S348) and Caroline in American records. Dig 56 locks the forename as Carolina. Louisa/Louise is a superseded handwriting reading. US Caroline is the same woman.",
   "urls": []
  },
  "S339": {
@@ -3758,7 +3764,7 @@ window.SOURCES={
  "S347": {
   "id": "S347",
   "flag": "HIGH",
-  "text": "Archion, Landesbergen baptisms 1853\u20131883, book 252604, Bild 87, entry 45. Heinrich Friedrich Ludwig Dohrmann, born 15 Oct 1864, baptized 23 Oct 1864. Parents: Anbauer Heinrich Dohrmann of Landesbergen and his wife Louisa, born Grote. The mother's forename reading stays open against Caroline in American records. https://www.archion.de/de/viewer/churchRegister/252604?cHash=55f2097b2aaaced7cdd35b0f19b72c30",
+  "text": "Archion, Landesbergen baptisms 1853\u20131883, book 252604, Bild 87, entry 45. Heinrich Friedrich Ludwig Dohrmann, born 15 Oct 1864, baptized 23 Oct 1864. Parents: Anbauer Heinrich Dohrmann of Landesbergen and his wife, born Grote. Dig 55 read the forename as Louisa. Dig 56 locks it as Carolina. US Caroline and church Karoline are the same woman. Louisa/Louise is a superseded handwriting reading. https://www.archion.de/de/viewer/churchRegister/252604?cHash=55f2097b2aaaced7cdd35b0f19b72c30",
   "urls": [
    "https://www.archion.de/de/viewer/churchRegister/252604?cHash=55f2097b2aaaced7cdd35b0f19b72c30"
   ]
@@ -3766,7 +3772,7 @@ window.SOURCES={
  "S348": {
   "id": "S348",
   "flag": "HIGH",
-  "text": "Archion, Landesbergen marriages 1853\u20131892, book 252607, Bild 25, entry 3. Heinrich Dohrmann married Louisa Grote on 1 Jul 1859 in Landesbergen. Banns about 19 and 26 Jun 1859, Landesbergen and Leese. Groom born 2 Mar 1831 in Landesbergen. Bride a servant in Leese, born about 1835 in Leese. Parent names on the entry are medium. https://www.archion.de/de/viewer/churchRegister/252607?cHash=a090c3838499f28ff58d70ec7743c7c7",
+  "text": "Archion, Landesbergen marriages 1853\u20131892, book 252607, Bild 25, entry 3. Heinrich Dohrmann married Carolina Grote on 1 Jul 1859 in Landesbergen. Dig 55 had read the bride's forename as Louisa; that reading is superseded (S351, S356). Banns about 19 and 26 Jun 1859, Landesbergen and Leese. Groom born 2 Mar 1831 in Landesbergen. Bride a servant in Leese, born about 1835 in Leese. Parent names on the entry are medium. https://www.archion.de/de/viewer/churchRegister/252607?cHash=a090c3838499f28ff58d70ec7743c7c7",
   "urls": [
    "https://www.archion.de/de/viewer/churchRegister/252607?cHash=a090c3838499f28ff58d70ec7743c7c7"
   ]
@@ -3781,6 +3787,53 @@ window.SOURCES={
   "id": "S350",
   "flag": "HIGH",
   "text": "Landesbergen is the cite-ready parish of Henry's birth and baptism, and of his parents' marriage. This proves the place the FamilySearch tree had only as a candidate (S337). Dig 52, Dig 53, and Dig 54 \"no German town\" are superseded.",
+  "urls": []
+ },
+ "S351": {
+  "id": "S351",
+  "flag": "HIGH for Leese and maiden Grote",
+  "text": "Archion reread of the 1859 Landesbergen marriage, same entry as S348, book 252607, Bild 25. Bride a Dienstmagd in Leese, born about 1835 in Leese. Banns in Landesbergen and Leese. Dig 55 read Louisa. This reread leaned Carolina Dorothea. Alex locked Carolina on 2026-11-04 (S356). Parent names on the entry: H\u00e4usling Heinrich Friedrich Ludwig Grote and Sophie Dorothea, born Engelking, medium. https://www.archion.de/de/viewer/churchRegister/252607?cHash=a090c3838499f28ff58d70ec7743c7c7",
+  "urls": [
+   "https://www.archion.de/de/viewer/churchRegister/252607?cHash=a090c3838499f28ff58d70ec7743c7c7"
+  ]
+ },
+ "S352": {
+  "id": "S352",
+  "flag": "HIGH sibling; not narrated",
+  "text": "Sister Dorothea Louise Karoline(?) Dohrmann, born 23 Dec 1860, baptized 1 Jan 1861, Landesbergen. Father Anbauer Heinrich Dohrmann. Mother geb. Grote. No person card. https://www.archion.de/de/viewer/churchRegister/252604?cHash=55f2097b2aaaced7cdd35b0f19b72c30",
+  "urls": [
+   "https://www.archion.de/de/viewer/churchRegister/252604?cHash=55f2097b2aaaced7cdd35b0f19b72c30"
+  ]
+ },
+ "S353": {
+  "id": "S353",
+  "flag": "HIGH event; not narrated",
+  "text": "Stillborn son of Heinrich Dohrmann and his wife geb. Grote, born 23 May 1863, buried about 25 May 1863. The burial reading of the mother leans Carolina. No person card. https://www.archion.de/de/viewer/churchRegister/252604?cHash=55f2097b2aaaced7cdd35b0f19b72c30 https://www.archion.de/de/viewer/churchRegister/252609?cHash=1d533b5a0411612f834ccb8a6c930588",
+  "urls": [
+   "https://www.archion.de/de/viewer/churchRegister/252604?cHash=55f2097b2aaaced7cdd35b0f19b72c30",
+   "https://www.archion.de/de/viewer/churchRegister/252609?cHash=1d533b5a0411612f834ccb8a6c930588"
+  ]
+ },
+ "S354": {
+  "id": "S354",
+  "flag": "child facts HIGH",
+  "text": "Reconfirm of P44's baptism, book 252604, Bild 87, entry 45. Born 15 Oct 1864, baptized 23 Oct 1864. Same child facts as S347. The mother glyph on this line was still unclear before the Carolina lock. https://www.archion.de/de/viewer/churchRegister/252604?cHash=55f2097b2aaaced7cdd35b0f19b72c30",
+  "urls": [
+   "https://www.archion.de/de/viewer/churchRegister/252604?cHash=55f2097b2aaaced7cdd35b0f19b72c30"
+  ]
+ },
+ "S355": {
+  "id": "S355",
+  "flag": "HIGH sibling; not narrated",
+  "text": "Sister Louise Wilhelmine Karoline(?) Sophie Dohrmann, born about 31 May 1870, baptized 12 Jun 1870, Landesbergen. Father Heinrich Dohrmann. Mother geb. Grote; the forename ends -olina. No person card. https://www.archion.de/de/viewer/churchRegister/252604?cHash=55f2097b2aaaced7cdd35b0f19b72c30",
+  "urls": [
+   "https://www.archion.de/de/viewer/churchRegister/252604?cHash=55f2097b2aaaced7cdd35b0f19b72c30"
+  ]
+ },
+ "S356": {
+  "id": "S356",
+  "flag": "STATUS",
+  "text": "Forename LOCKED Carolina (Alex 2026-11-04). Maiden Grote stays LOCKED across the 1859 marriage and the 1860, 1863, 1864, and 1870 entries. Louisa/Louise is a superseded alternate reading. Immigration year is not decided here.",
   "urls": []
  }
 };

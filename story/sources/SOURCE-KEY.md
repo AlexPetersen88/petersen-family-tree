@@ -142,6 +142,21 @@
 - S348 (HIGH): Archion Landesbergen marriages, Heinrich Dohrmann × Louisa Grote, m. 1 Jul 1859 Landesbergen.
 - S349 (HIGH): S347 and S348 are the same couple. The baptism is five years after the wedding.
 - S350 (HIGH): Landesbergen is the cite-ready parish. Supersedes Dig 52/54 "Landesbergen out."
-- Mother's maiden name Grote: LOCKED. Forename Louisa vs Caroline: OPEN (write Louisa/Caroline).
+- Mother's maiden name Grote: LOCKED. Forename Louisa vs Caroline: OPEN at Dig 55 (write was "Louisa/Caroline"). Superseded by Dig 56: Carolina LOCKED.
 - Immigration year still CONFLICT OPEN 1873 vs 1878 (S342–S345). Chicago ~2 yrs → Leavenworth unchanged.
 - Visit pins: places/landesbergen-de.md (village 52.5610, 9.1238; church Am Kirchplatz 5, 52.5592, 9.1185 — baptism inside that building is a candidate; house unverified).
+
+## Dig 56 — Genealogist CLEAR (Storyteller) 2026-11-04
+- S351 (HIGH for place and maiden; forename locked later): Archion reread of the 1859 Landesbergen marriage (same entry as S348). Bride a Dienstmagd in Leese, born about 1835 in Leese. Banns in Landesbergen and Leese. Dig 55 had read the forename as Louisa. Dig 56 reread leaned Carolina. Alex locked Carolina on 2026-11-04. US Caroline and church Karoline/Carolina are the same woman. Louisa/Louise is a superseded handwriting reading.
+- S352 (HIGH sibling; not in story prose): sister Dorothea Louise Karoline(?) Dohrmann, born 23 Dec 1860, baptized 1 Jan 1861, Landesbergen. Mother geb. Grote. P44 notes only.
+- S353 (HIGH event; not in story prose): stillborn son of Heinrich Dohrmann and his wife geb. Grote, born 23 May 1863, buried about 25 May 1863. Burial reading of the mother leans Carolina. P44 notes only.
+- S354 (child facts HIGH): P44 baptism reconfirm. Born 15 Oct 1864, baptized 23 Oct 1864. Same child facts as S347. The mother glyph on this entry was still unclear before the lock.
+- S355 (HIGH sibling; not in story prose): sister Louise Wilhelmine Karoline(?) Sophie Dohrmann, born about 31 May 1870, baptized 12 Jun 1870, Landesbergen. Mother geb. Grote; the forename ends -olina. P44 notes only.
+- S356 (STATUS): Forename LOCKED Carolina (Alex 2026-11-04). Maiden Grote stays LOCKED. Longer FamilySearch form Dorothea Louise Carolina is a longer form only, not the story name.
+- P44 Henry F. Dohrmann's mother: first name **Carolina LOCKED**; maiden **Grote LOCKED**. Same woman as US Caroline (S329–S335, S342) and church Karoline/Carolina (S347–S351).
+- Louisa/Louise: SUPERSEDED alternate reading of the German handwriting — not the tree name.
+- Longer form "Dorothea Louise Carolina" (FamilySearch): optional longer form only; not used in prose.
+- Siblings (Heinrich × Grote, Landesbergen): sister 1860, stillborn son 1863, sister 1870 — thin, P44 notes only; not in prose.
+- Carolina b. ~1835 Leese; Dienstmagd Leese; 1859 banns Landesbergen + Leese (S348/S351). Places: places/leese-de.md — village 52.5057, 9.1159 HIGH. Kirchplatz 5 ~52.5051, 9.1136 is the parish square; the 1873–74 brick church is CANDIDATE/LOW for her youth and is not a map pin. House UNVERIFIED.
+- Immigration year 1873 vs 1878: still OPEN.
+- Use: Ch.4 Janice section + ABRIDGED. Kids: no Dohrmann beat. Dig J and Day B unchanged.
