@@ -631,12 +631,34 @@ Candidate brother and a 1795 burial. No person card. No new place pin. Not locke
 - S326 (CANDIDATE / context only, not locked): Særløse church book. (a) Baptism 28 Jul 1799 of Haagen, son of Johan Mathiesen of Tølstrup, mother unnamed. Same father-on-record as Kirsten's 1796 baptism (S322), so a candidate brother of P27. No person card. (b) Burial 11 Feb 1795 of Johan's unnamed wife, age 32. Context only: a possible earlier marriage before Kirsten was born. Not proven. No mother named. No kinship to P25 or P34. Kept apart from Erik Rasmussen and Maren Hansdatter (S312). Særløse and Tølstrup stay unpinned.
 
 ## Dig 52 (2026-11-03) — Genealogist CLEAR, thin, S329–S335
-Henry F. Dohrmann and Ida A. Diederich. No German town is named. S337 and S338 are not used. Ethel's maiden name stays Neubauer.
+Henry F. Dohrmann and Ida A. Diederich. Dig 55 supersedes the "no German town" line and the open maiden name. Ethel's maiden name stays Neubauer.
 
-- S329 (Dig 52 CLEAR thin): Henry F. Dohrmann (P44), born in Germany 15 Oct 1864. The town is not cleared and is not named.
+- S329 (Dig 52 CLEAR thin): Henry F. Dohrmann (P44), born 15 Oct 1864. Dig 55 names the parish: Landesbergen (S347, S350).
 - S330 (Dig 52 CLEAR thin): Ida A. Diederich (P45), born in New Ulm, Minnesota, 17 Jun 1869. Town pin only. Birth house not pinned.
 - S331 (Dig 52 CLEAR thin): Census support for Henry born in Germany and Ida born in Minnesota.
-- S332 (Dig 52 CLEAR thin): Henry immigrated in 1878.
+- S332 (Dig 52 CLEAR thin; Dig 54 reopened): A record gives Henry's immigration year as 1878. Dig 54 keeps 1878 beside 1873 (S342–S344, S345). The year is CONFLICT OPEN. Neither year is locked.
 - S333 (Dig 52 CLEAR thin): 1880 census household of Henry's parents in the United States: father Henry, mother Caroline, sister Lena, all born in Germany.
 - S334 (Dig 52 CLEAR thin): Wesley Edward Dohrmann birth index, mother maiden Diederich.
-- S335 (Dig 52 CLEAR thin): Henry F. Dohrmann married Ida A. Diederich on 7 Nov 1889 in Sleepy Eye. Town pin only. The ceremony building is not known and is not the 1957 Faith United Methodist pin. Henry's parents: Heinrich W. Dohrmann and Caroline. Caroline's maiden name stays OPEN. Grote/Grate is a candidate only, not locked.
+- S335 (Dig 52 CLEAR thin): Henry F. Dohrmann married Ida A. Diederich on 7 Nov 1889 in Sleepy Eye. Town pin only. The ceremony building is not known and is not the 1957 Faith United Methodist pin. Dig 55: his father is Anbauer Heinrich Dohrmann of Landesbergen; his mother's maiden name Grote is locked; her forename Louisa or Caroline stays open (S347, S348).
+
+## Dig 54 (2026-11-03) — Genealogist CLEAR, thin, S337–S346
+Henry F. Dohrmann's immigration year. Both 1873 and 1878 stay open. Dig 55 supersedes "no German town." Chicago and Leavenworth stay place cards and story map links. They are not map-page pins.
+
+- S337 (place proved by S350): A FamilySearch tree (LHCF-L5B) named Landesbergen and a longer personal name. Dig 55 proves the parish from the church books (S347–S350). The tree is not the proof.
+- S338 (maiden locked by Dig 55): Grote. The forename stays open: Louisa on the Landesbergen registers (S347, S348) and Caroline in American records.
+- S339 (NEG): Dig 53 free FamilySearch birth search for the candidate German town returned 0 hits. The town is still not cite-ready.
+- S340 (NEG): Bremen passenger lists for 1875–1908 are destroyed.
+- S341 (NEG): A Suderburg Döhrmann × Grote couple is a different couple, not this family.
+- S342 (HIGH): 1875 Minnesota census, Leavenworth Township, Brown County. Dohrmann household: Henry about 10 with parents Heinrich (Henry) and Caroline and siblings. Supports immigration in 1873. Village only; the farm is not pinned.
+- S343: Weser passenger list. Mother and children, arrival supporting 1873. Heinrich, age 8, matched to Henry (P44) is MED.
+- S344 (HIGH): Henry F. Dohrmann 1946 obituary cluster. Born 15 Oct 1864 in Hanover, the province. Came with his parents in 1873. About two years near Chicago, then Brown County / Leavenworth.
+- S345: 1920 U.S. census immigration year 1878. With S332, the 1878 side of the open conflict.
+- S346 (UNVERIFIED): The 1880 census sister Lena may be a younger Caroline. Not settled.
+
+## Dig 55 (2026-11-03) — Genealogist CLEAR, CLOSED HIT, S347–S350
+Landesbergen is the cite-ready parish. Maiden name Grote is locked. The mother's forename stays open. Immigration 1873 and 1878 stay open.
+
+- S347 (HIGH): Archion, Landesbergen baptisms 1853–1883, book 252604, Bild 87, entry 45. Heinrich Friedrich Ludwig Dohrmann, born 15 Oct 1864, baptized 23 Oct 1864. Parents: Anbauer Heinrich Dohrmann of Landesbergen and his wife Louisa, born Grote. The mother's forename reading stays open against Caroline in American records. https://www.archion.de/de/viewer/churchRegister/252604?cHash=55f2097b2aaaced7cdd35b0f19b72c30
+- S348 (HIGH): Archion, Landesbergen marriages 1853–1892, book 252607, Bild 25, entry 3. Heinrich Dohrmann married Louisa Grote on 1 Jul 1859 in Landesbergen. Banns about 19 and 26 Jun 1859, Landesbergen and Leese. Groom born 2 Mar 1831 in Landesbergen. Bride a servant in Leese, born about 1835 in Leese. Parent names on the entry are medium. https://www.archion.de/de/viewer/churchRegister/252607?cHash=a090c3838499f28ff58d70ec7743c7c7
+- S349 (HIGH): The S347 baptism and the S348 marriage are the same couple. The baptism is five years after the wedding.
+- S350 (HIGH): Landesbergen is the cite-ready parish of Henry's birth and baptism, and of his parents' marriage. This proves the place the FamilySearch tree had only as a candidate (S337). Dig 52, Dig 53, and Dig 54 "no German town" are superseded.

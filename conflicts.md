@@ -133,7 +133,20 @@
 - No kinship to Ane Marie (P25) or Peder Johansen (P34). Kept apart from Erik Rasmussen × Maren Hansdatter (S312). No Særløse, Tølstrup, or Lejre pin. Day B held. Dig 40–43 stay out.
 
 ## Dig 52 (2026-11-03) — Dohrmann — Genealogist CLEAR, thin
-- Henry F. Dohrmann (P44) was born in Germany on 15 Oct 1864 and immigrated in 1878. No German town is cleared, and none is named.
+- Henry F. Dohrmann (P44) was born on 15 Oct 1864. Dig 52 had read the immigration year as 1878. Dig 54 reopened that year. Dig 55 names the parish.
 - He married Ida A. Diederich (P45) on 7 Nov 1889 in Sleepy Eye. Ida was born in New Ulm, Minnesota, on 17 Jun 1869. New Ulm is a town pin only. The 1889 ceremony building is unknown and is not tied to Faith United Methodist.
-- Henry's parents are Heinrich W. Dohrmann and Caroline. Caroline's maiden name is OPEN. Grote/Grate is a candidate only, not locked.
+- Dig 52 called his parents Heinrich W. Dohrmann and Caroline, and left the maiden name open. Dig 55 supersedes that.
 - Ethel Bertha Dohrmann stays Neubauer. Dig J places stay unpinned. Dig 40–43 and Day B stay out.
+
+## Dig 54 (2026-11-03) — Dohrmann immigration — Genealogist CLEAR, thin; Alex KEEP BOTH
+- Immigration year is CONFLICT OPEN. Keep both: 1873 (1946 obituary S344, Weser list S343, 1875 census S342) and 1878 (S332, 1920 census S345). Neither year is locked. Not a DNA question. Both are cited.
+- The 1946 obituary places the family about two years in Chicago, then Brown County / Leavenworth (S344). The 1875 census shows the household in Leavenworth Township (S342, HIGH). Chicago is city only. Leavenworth is the village only. The farm and any Chicago address are not pinned. Those two places stay off the map page.
+- Dig 52 New Ulm town pin and the 7 Nov 1889 Sleepy Eye marriage stay. Ethel stays Neubauer.
+- Dig 54's "Hanover province only / no German town" is superseded by Dig 55.
+
+## Dig 55 (2026-11-03) — Landesbergen — Genealogist CLEAR, CLOSED HIT
+- Landesbergen (Nienburg / Stolzenau-Loccum, Hanover province) is the cite-ready parish of Henry's birth and baptism, and of his parents' marriage (S347–S350, HIGH). This supersedes Dig 52, Dig 53, and Dig 54 "Landesbergen out / no German town."
+- He was born 15 Oct 1864 and baptized 23 Oct 1864 as Heinrich Friedrich Ludwig. Henry F. is the American form (S347).
+- Parents: Anbauer Heinrich Dohrmann of Landesbergen and Louisa/Caroline, born Grote, married 1 Jul 1859 in Landesbergen (S347, S348, S349). Maiden name Grote is locked. The forename stays open: Louisa on the church books, Caroline in American records. Show both. No winner.
+- The village pin is 52.5610, 9.1238. The parish church at Am Kirchplatz 5 is 52.5592, 9.1185. The church building is a visit place. That the 1864 baptism was inside this exact building is a candidate. The family's house is not pinned.
+- Immigration 1873 and 1878 stay CONFLICT OPEN. Neither year is locked.

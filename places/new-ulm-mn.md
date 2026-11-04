@@ -6,6 +6,6 @@
 - **Map:** https://www.google.com/maps/search/?api=1&query=44.3140,-94.4614 · https://www.openstreetmap.org/?mlat=44.3140&mlon=-94.4614#map=14/44.3140/-94.4614
 - **Visit:** Stand downtown near Broadway / Minnesota St — town-level only. Birth house/street UNVERIFIED (not pinned).
 - **Confidence:** Town HIGH. Ida birth in New Ulm HIGH (Dig 52 CLEAR). House UNVERIFIED.
-- **Not pinned:** any German town for Henry F. Dohrmann. None is cleared. A candidate hometown stays unverified and is not named.
+- **German birth now pinned:** Dig 55 CLEAR — Landesbergen parish HIGH (see [landesbergen-de.md](landesbergen-de.md)). Dig 52/53/54 "CLEAR none" for Landesbergen is superseded. Hanover province is still the historic province.
 - **Sources:** https://nominatim.openstreetmap.org/search?q=New+Ulm,+Brown+County,+Minnesota · Dig 52 Genealogist CLEAR
 - **Pack:** Dig 52 Dohrmann

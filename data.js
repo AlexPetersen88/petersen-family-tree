@@ -1215,7 +1215,7 @@ window.PEOPLE={
     "S334"
    ],
    "status": "FAG secondary (S89) \u2014 father of Janice Elaine Dohrmann (P2)",
-   "notes": "Siblings on memorial: Arthur Edgar, Estella Lena Bittner, Elsie George, Lucy Lambrecht, Verna Ingraham, Henry August, Elmer Raymond, Alice Murphy. Wife Ethel maiden Neubauer (RESOLVED 2026-11-03, S148/S149); his bio S89 says \"Ethel Gent\" = her mother's maiden, misstated. Dig 52: parents carded P44\u00d7P45. Henry was born in Germany; no German town is cleared."
+   "notes": "Siblings on memorial: Arthur Edgar, Estella Lena Bittner, Elsie George, Lucy Lambrecht, Verna Ingraham, Henry August, Elmer Raymond, Alice Murphy. Wife Ethel maiden Neubauer (RESOLVED 2026-11-03, S148/S149); his bio S89 says \"Ethel Gent\" = her mother's maiden, misstated. Dig 52: parents carded P44\u00d7P45. Dig 55: Henry was born and baptized in Landesbergen (S347\u2013S350)."
   },
   {
    "id": "P32",
@@ -1475,7 +1475,8 @@ window.PEOPLE={
    "name": "Henry Frederick Dohrmann",
    "birth": {
     "date": "1864-10-15",
-    "place": "Germany (town not cleared)"
+    "place": "Landesbergen, Nienburg / Stolzenau-Loccum (Hanover province), Germany",
+    "placeStatus": "HIGH (S347, S350). Hanover province HIGH (S344)."
    },
    "death": {
     "date": "1946-12-22",
@@ -1483,8 +1484,8 @@ window.PEOPLE={
    },
    "burial": "Home Cemetery, Sleepy Eye, Brown Co MN",
    "parents": [
-    "Heinrich W. Dohrmann (1831\u20131899)",
-    "Caroline Dohrmann (1835\u20131907; maiden OPEN \u2014 Grote/Grate CANDIDATE only)"
+    "Heinrich Dohrmann (Anbauer, Landesbergen; 1831\u20131899) HIGH S347/S348",
+    "[Louisa/Caroline] geb. Grote (1835\u20131907) \u2014 maiden Grote LOCKED; forename OPEN: Louisa (S347/S348 Archion Scout) vs Caroline (S338 US)"
    ],
    "spouses": [
     {
@@ -1501,10 +1502,29 @@ window.PEOPLE={
     "S332",
     "S333",
     "S334",
-    "S335"
+    "S335",
+    "S337",
+    "S338",
+    "S339",
+    "S340",
+    "S341",
+    "S342",
+    "S343",
+    "S344",
+    "S345",
+    "S346",
+    "S347",
+    "S348",
+    "S349",
+    "S350"
    ],
-   "status": "Germany birth HIGH (census S331/S333 + FAG S329); immigration 1878 HIGH (S332); European town NOT cite-ready",
-   "notes": "Census variants Dohrman/Dohornan/Dorhman. 1880 (S333) with father Henry 51, mother Caroline 45, sister Lena 10, all b. Germany. MNHS death cert 1946-MN-001678 (index only; paid image PARKED). A FamilySearch tree names a German town and a longer personal name \u2014 CANDIDATE UNVERIFIED, NOT approved, and not used (S337). Children per S89/S336 (noted, not carded): Arthur Edgar, Estella Lena Bittner, Elsie George, Lucy Lambrecht, Verna Ingraham, Henry August, Elmer Raymond, Edwin, Alice Murphy. WikiTree Dohrmann-176 = different man, REJECT. Parents not carded."
+   "status": "Germany birth HIGH; Landesbergen cite-ready HIGH (S347/S350); 1875 Leavenworth HIGH (S342); immigration year KEEP BOTH OPEN 1873 vs 1878; Dig 55 CLOSED HIT",
+   "notes": "Census variants Dohrman/Dohornan/Dorhman. 1880 (S333) with father Henry 51, mother Caroline 45, sister Lena 10, all b. Germany. MNHS death cert 1946-MN-001678 (index only; paid image PARKED). FS tree LHCF-L5B names him Dietrich Heinrich Friedrich Ludwig, b. Landesbergen \u2014 CANDIDATE UNVERIFIED, NOT approved (S337). Children per S89/S336 (noted, not carded): Arthur Edgar, Estella Lena Bittner, Elsie George, Lucy Lambrecht, Verna Ingraham, Henry August, Elmer Raymond, Edwin, Alice Murphy. WikiTree Dohrmann-176 = different man, REJECT. Parents not carded (parents-next stop). Dig 53 (gated ~6:25 PM CT): free Landesbergen FS birth search 0 hits (S339 NEG); Bremen 1875\u20131908 lists destroyed (S340); Suderburg D\u00f6hrmann\u00d7Grote NEG other couple (S341). Town still NOT cite-ready. S337 stays CANDIDATE UNVERIFIED. Dig 54 (gated ~6:48 PM CT): 1875 MN census Leavenworth household HIGH (S342); mother+kids Weser 1873 (S343; Heinrich 8 = P44 MED); obit: b. Hanover 15 Oct 1864, came with parents 1873, near Chicago ~2 yrs then Leavenworth (S344). Imm year CONFLICT OPEN (S345). 1880 Lena may = younger Caroline \u2014 UNVERIFIED (S346). | Dig 54 imm fold (Alex 2026-11-03 ~6:49 CT): KEEP BOTH OPEN \u2014 show 1873 and 1878; no year locked. | Dig 55 (gated ~9:40 PM CT 2026-11-03): CLOSED HIT PARTIAL. Archion Landesbergen bapt (S347) + parents' m. 1 Jul 1859 (S348), link S349; S337 Landesbergen PROVED (S350). Mother forename Louisa vs Caroline OPEN; Grote LOCKED. Archion pass \u20ac19.90 (Alex yes), valid to 04 Dec 2026.",
+   "immigration": {
+    "year": "1873 and 1878",
+    "status": "CONFLICT OPEN \u2014 KEEP BOTH. Show 1873 (S344/S343/S342) and 1878 (S332/S345) without locking. Alex fold Dig 54 (~6:49 PM CT 2026-11-03). Not DNA; both cited."
+   },
+   "baptism": "1864-10-23, Landesbergen. Given names Heinrich Friedrich Ludwig (HIGH, S347)."
   },
   {
    "id": "P45",
@@ -3636,7 +3656,7 @@ window.SOURCES={
  "S329": {
   "id": "S329",
   "flag": "Dig 52 CLEAR thin",
-  "text": "Henry F. Dohrmann (P44), born in Germany 15 Oct 1864. The town is not cleared and is not named.",
+  "text": "Henry F. Dohrmann (P44), born 15 Oct 1864. Dig 55 names the parish: Landesbergen (S347, S350).",
   "urls": []
  },
  "S330": {
@@ -3653,8 +3673,8 @@ window.SOURCES={
  },
  "S332": {
   "id": "S332",
-  "flag": "Dig 52 CLEAR thin",
-  "text": "Henry immigrated in 1878.",
+  "flag": "Dig 52 CLEAR thin; Dig 54 reopened",
+  "text": "A record gives Henry's immigration year as 1878. Dig 54 keeps 1878 beside 1873 (S342\u2013S344, S345). The year is CONFLICT OPEN. Neither year is locked.",
   "urls": []
  },
  "S333": {
@@ -3672,7 +3692,95 @@ window.SOURCES={
  "S335": {
   "id": "S335",
   "flag": "Dig 52 CLEAR thin",
-  "text": "Henry F. Dohrmann married Ida A. Diederich on 7 Nov 1889 in Sleepy Eye. Town pin only. The ceremony building is not known and is not the 1957 Faith United Methodist pin. Henry's parents: Heinrich W. Dohrmann and Caroline. Caroline's maiden name stays OPEN. Grote/Grate is a candidate only, not locked.",
+  "text": "Henry F. Dohrmann married Ida A. Diederich on 7 Nov 1889 in Sleepy Eye. Town pin only. The ceremony building is not known and is not the 1957 Faith United Methodist pin. Dig 55: his father is Anbauer Heinrich Dohrmann of Landesbergen; his mother's maiden name Grote is locked; her forename Louisa or Caroline stays open (S347, S348).",
+  "urls": []
+ },
+ "S337": {
+  "id": "S337",
+  "flag": "place proved by S350",
+  "text": "A FamilySearch tree (LHCF-L5B) named Landesbergen and a longer personal name. Dig 55 proves the parish from the church books (S347\u2013S350). The tree is not the proof.",
+  "urls": []
+ },
+ "S338": {
+  "id": "S338",
+  "flag": "maiden locked by Dig 55",
+  "text": "Grote. The forename stays open: Louisa on the Landesbergen registers (S347, S348) and Caroline in American records.",
+  "urls": []
+ },
+ "S339": {
+  "id": "S339",
+  "flag": "NEG",
+  "text": "Dig 53 free FamilySearch birth search for the candidate German town returned 0 hits. The town is still not cite-ready.",
+  "urls": []
+ },
+ "S340": {
+  "id": "S340",
+  "flag": "NEG",
+  "text": "Bremen passenger lists for 1875\u20131908 are destroyed.",
+  "urls": []
+ },
+ "S341": {
+  "id": "S341",
+  "flag": "NEG",
+  "text": "A Suderburg D\u00f6hrmann \u00d7 Grote couple is a different couple, not this family.",
+  "urls": []
+ },
+ "S342": {
+  "id": "S342",
+  "flag": "HIGH",
+  "text": "1875 Minnesota census, Leavenworth Township, Brown County. Dohrmann household: Henry about 10 with parents Heinrich (Henry) and Caroline and siblings. Supports immigration in 1873. Village only; the farm is not pinned.",
+  "urls": []
+ },
+ "S343": {
+  "id": "S343",
+  "flag": null,
+  "text": "Weser passenger list. Mother and children, arrival supporting 1873. Heinrich, age 8, matched to Henry (P44) is MED.",
+  "urls": []
+ },
+ "S344": {
+  "id": "S344",
+  "flag": "HIGH",
+  "text": "Henry F. Dohrmann 1946 obituary cluster. Born 15 Oct 1864 in Hanover, the province. Came with his parents in 1873. About two years near Chicago, then Brown County / Leavenworth.",
+  "urls": []
+ },
+ "S345": {
+  "id": "S345",
+  "flag": null,
+  "text": "1920 U.S. census immigration year 1878. With S332, the 1878 side of the open conflict.",
+  "urls": []
+ },
+ "S346": {
+  "id": "S346",
+  "flag": "UNVERIFIED",
+  "text": "The 1880 census sister Lena may be a younger Caroline. Not settled.",
+  "urls": []
+ },
+ "S347": {
+  "id": "S347",
+  "flag": "HIGH",
+  "text": "Archion, Landesbergen baptisms 1853\u20131883, book 252604, Bild 87, entry 45. Heinrich Friedrich Ludwig Dohrmann, born 15 Oct 1864, baptized 23 Oct 1864. Parents: Anbauer Heinrich Dohrmann of Landesbergen and his wife Louisa, born Grote. The mother's forename reading stays open against Caroline in American records. https://www.archion.de/de/viewer/churchRegister/252604?cHash=55f2097b2aaaced7cdd35b0f19b72c30",
+  "urls": [
+   "https://www.archion.de/de/viewer/churchRegister/252604?cHash=55f2097b2aaaced7cdd35b0f19b72c30"
+  ]
+ },
+ "S348": {
+  "id": "S348",
+  "flag": "HIGH",
+  "text": "Archion, Landesbergen marriages 1853\u20131892, book 252607, Bild 25, entry 3. Heinrich Dohrmann married Louisa Grote on 1 Jul 1859 in Landesbergen. Banns about 19 and 26 Jun 1859, Landesbergen and Leese. Groom born 2 Mar 1831 in Landesbergen. Bride a servant in Leese, born about 1835 in Leese. Parent names on the entry are medium. https://www.archion.de/de/viewer/churchRegister/252607?cHash=a090c3838499f28ff58d70ec7743c7c7",
+  "urls": [
+   "https://www.archion.de/de/viewer/churchRegister/252607?cHash=a090c3838499f28ff58d70ec7743c7c7"
+  ]
+ },
+ "S349": {
+  "id": "S349",
+  "flag": "HIGH",
+  "text": "The S347 baptism and the S348 marriage are the same couple. The baptism is five years after the wedding.",
+  "urls": []
+ },
+ "S350": {
+  "id": "S350",
+  "flag": "HIGH",
+  "text": "Landesbergen is the cite-ready parish of Henry's birth and baptism, and of his parents' marriage. This proves the place the FamilySearch tree had only as a candidate (S337). Dig 52, Dig 53, and Dig 54 \"no German town\" are superseded.",
   "urls": []
  }
 };
