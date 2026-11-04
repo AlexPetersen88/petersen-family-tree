@@ -636,7 +636,21 @@ Henry F. Dohrmann and Ida A. Diederich. No German town is named. S337 and S338 a
 - S329 (Dig 52 CLEAR thin): Henry F. Dohrmann (P44), born in Germany 15 Oct 1864. The town is not cleared and is not named.
 - S330 (Dig 52 CLEAR thin): Ida A. Diederich (P45), born in New Ulm, Minnesota, 17 Jun 1869. Town pin only. Birth house not pinned.
 - S331 (Dig 52 CLEAR thin): Census support for Henry born in Germany and Ida born in Minnesota.
-- S332 (Dig 52 CLEAR thin): Henry immigrated in 1878.
+- S332 (Dig 52 CLEAR thin; Dig 54 reopened): A record gives Henry's immigration year as 1878. Dig 54 keeps 1878 beside 1873 (S342–S344, S345). The year is CONFLICT OPEN. Neither year is locked.
 - S333 (Dig 52 CLEAR thin): 1880 census household of Henry's parents in the United States: father Henry, mother Caroline, sister Lena, all born in Germany.
 - S334 (Dig 52 CLEAR thin): Wesley Edward Dohrmann birth index, mother maiden Diederich.
 - S335 (Dig 52 CLEAR thin): Henry F. Dohrmann married Ida A. Diederich on 7 Nov 1889 in Sleepy Eye. Town pin only. The ceremony building is not known and is not the 1957 Faith United Methodist pin. Henry's parents: Heinrich W. Dohrmann and Caroline. Caroline's maiden name stays OPEN. Grote/Grate is a candidate only, not locked.
+
+## Dig 54 (2026-11-03) — Genealogist CLEAR, thin, S337–S346
+Henry F. Dohrmann's birth province and immigration year. Both 1873 and 1878 stay open. No German town, village, or parish is cleared, and none is pinned. Chicago and Leavenworth are place cards and story map links only. The map page is unchanged.
+
+- S337 (CANDIDATE UNVERIFIED, NOT approved): A FamilySearch tree (LHCF-L5B) names Henry Dietrich Heinrich Friedrich Ludwig and gives a German birth town. Dig 52/53/54 CLEAR none for that town. Not approved, not narrated, and not pinned.
+- S338 (CANDIDATE, not locked): Caroline's maiden name Grote/Grate. Not locked. Dig 52 keeps the maiden OPEN.
+- S339 (NEG): Dig 53 free FamilySearch birth search for the candidate German town returned 0 hits. The town is still not cite-ready.
+- S340 (NEG): Bremen passenger lists for 1875–1908 are destroyed.
+- S341 (NEG): A Suderburg Döhrmann × Grote couple is a different couple, not this family.
+- S342 (HIGH): 1875 Minnesota census, Leavenworth Township, Brown County. Dohrmann household: Henry about 10 with parents Heinrich (Henry) and Caroline and siblings. Supports immigration in 1873. Village only; the farm is not pinned.
+- S343: Weser passenger list. Mother and children, arrival supporting 1873. Heinrich, age 8, matched to Henry (P44) is MED.
+- S344 (HIGH): Henry F. Dohrmann 1946 obituary cluster. Born 15 Oct 1864 in Hanover, the province. Came with his parents in 1873. About two years near Chicago, then Brown County / Leavenworth.
+- S345: 1920 U.S. census immigration year 1878. With S332, the 1878 side of the open conflict.
+- S346 (UNVERIFIED): The 1880 census sister Lena may be a younger Caroline. Not settled.

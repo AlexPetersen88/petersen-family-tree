@@ -133,7 +133,13 @@
 - No kinship to Ane Marie (P25) or Peder Johansen (P34). Kept apart from Erik Rasmussen × Maren Hansdatter (S312). No Særløse, Tølstrup, or Lejre pin. Day B held. Dig 40–43 stay out.
 
 ## Dig 52 (2026-11-03) — Dohrmann — Genealogist CLEAR, thin
-- Henry F. Dohrmann (P44) was born in Germany on 15 Oct 1864 and immigrated in 1878. No German town is cleared, and none is named.
+- Henry F. Dohrmann (P44) was born in Germany on 15 Oct 1864. Dig 52 had read the immigration year as 1878. Dig 54 reopened that year. No German town is cleared, and none is named.
 - He married Ida A. Diederich (P45) on 7 Nov 1889 in Sleepy Eye. Ida was born in New Ulm, Minnesota, on 17 Jun 1869. New Ulm is a town pin only. The 1889 ceremony building is unknown and is not tied to Faith United Methodist.
 - Henry's parents are Heinrich W. Dohrmann and Caroline. Caroline's maiden name is OPEN. Grote/Grate is a candidate only, not locked.
 - Ethel Bertha Dohrmann stays Neubauer. Dig J places stay unpinned. Dig 40–43 and Day B stay out.
+
+## Dig 54 (2026-11-03) — Dohrmann immigration — Genealogist CLEAR, thin; Alex KEEP BOTH
+- Birth place is Hanover province only (S344, HIGH). No German town, village, or parish is cleared. None is named in the story, and none is pinned.
+- Immigration year is CONFLICT OPEN. Keep both: 1873 (1946 obituary S344, Weser list S343, 1875 census S342) and 1878 (S332, 1920 census S345). Neither year is locked. Not a DNA question. Both are cited.
+- The 1946 obituary places the family about two years in Chicago, then Brown County / Leavenworth (S344). The 1875 census shows the household in Leavenworth Township (S342, HIGH). Chicago is city only. Leavenworth is the village only. The farm and any Chicago address are not pinned.
+- Dig 52 New Ulm town pin and the 7 Nov 1889 Sleepy Eye marriage stay. Caroline's maiden name stays OPEN. Ethel stays Neubauer. Map page pins are unchanged.
