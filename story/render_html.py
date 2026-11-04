@@ -65,9 +65,11 @@ URL_RE = re.compile(r"https://[^\s)<]+")
 CODE_RE = re.compile(r"`([^`]+)`")
 CHAPTER_RE = re.compile(r"Chapter ([1-4])")
 MAP_RE = re.compile(r"\[map\]\((https://[^)\s]+)\)")
-# Cleared visit pins only. Held pins (matr. 5a GPS, Brookville farm,
+# Cleared visit pins only. Held pins (Brookville farm,
 # Dig 21 / 1807 person-link, living residences, a Wolfeboro hospital
-# or house) are intentionally absent.
+# or house, and the soft Bjernedehuse overlook) are intentionally absent.
+# Matr. 5a is explicit: the [map] link sits on the deed sentence only.
+# The caption may name the parcel. It must not say Hans lived there.
 # Sankt Hans Gade is explicit: the [map] link sits on P34's 1834 residence
 # only. Phrase scan must not attach it to the S63 candidate sentence.
 # Pack 11 pins are explicit too: Evan village, Bethany church, Wolfeboro town.
@@ -80,6 +82,20 @@ PINS = [
         "google": "https://www.google.com/maps/search/?api=1&query=Bjernede+Kirke+Bjernede+Kirkevej+1A+4180+Sor%C3%B8",
         "phrases": ["Bjernede churchyard", "Bjernede Kirke", "Bjernede church"],
         "marks": ("264012018",),
+    },
+    {
+        "id": "bjernedehuse-5a",
+        "label": "Matr. 5a Bjernede Huse",
+        "short": "Matr. 5a",
+        "osm": "https://www.openstreetmap.org/?mlat=55.4656&mlon=11.6444#map=17/55.4656/11.6444",
+        "google": "https://www.google.com/maps?q=55.4656,11.6444",
+        "phrases": [],
+        "marks": ("55.4656", "11.6444"),
+        "explicit": True,
+        "caption": (
+            "Parcel pin. Stand near Stokholtsvej 35. The buildings are on parcel 4 "
+            "and are not the 1800s house. Living on 5a is not proven."
+        ),
     },
     {
         "id": "valsomagle",
@@ -819,6 +835,8 @@ def assert_high_maps():
         raise SystemExit("Chapter 1 era section missing")
     if "The Denmark of their wedding" not in chapter_two:
         raise SystemExit("Chapter 2 era section missing")
+    if "55.4656" not in chapter_two or "Living on 5a is not proven." not in chapter_two:
+        raise SystemExit("Chapter 2 matr. 5a map must be the parcel pin and keep living there unproven")
     if "CANDIDATE" not in chapter_one or "Provisional" not in chapter_one:
         raise SystemExit("Chapter 1 no longer labels the 1797 couple as a candidate")
     for path in pages:
@@ -855,6 +873,10 @@ def assert_high_maps():
                     continue
                 # The street pin belongs on P34's Sankt Hans Gade sentence only.
                 if marker == "Sankt Hans Gade" and "55.4445" in widget:
+                    continue
+                # The parcel pin may follow the matr. 5a deed sentence.
+                # It has to be that pin, and the caption has to keep living there unproven.
+                if marker == "matr. no. 5" and "55.4656" in widget and "not proven" in widget:
                     continue
                 raise SystemExit(f"{path.name} puts a map link on {marker}")
 
