@@ -27,8 +27,11 @@ function mountBadges(){
 mountBadges();
 // Cleared HIGH visit pins. Sankt Hans Gade is manual: only P34's card,
 // not the S63 candidate sentence and not a shared house with Ane Marie.
+// Matr. 5a is manual too: parcel pin only. Phrase scan must not attach it
+// to a sentence that would say someone lived there. Living on 5a stays unproven.
 const HIGH_PINS=[
   {id:'bjernede-kirke',label:'Bjernede Kirke',short:'Bjernede Kirke',osm:'https://www.openstreetmap.org/way/264012018',google:'https://www.google.com/maps/search/?api=1&query=Bjernede+Kirke+Bjernede+Kirkevej+1A+4180+Sor%C3%B8',phrases:['Bjernede churchyard','Bjernede Kirke','Bjernede church']},
+  {id:'bjernedehuse-5a',label:'Matr. 5a Bjernede Huse',short:'Matr. 5a',osm:'https://www.openstreetmap.org/?mlat=55.4656&mlon=11.6444#map=17/55.4656/11.6444',google:'https://www.google.com/maps?q=55.4656,11.6444',phrases:[],manual:true,caption:'Parcel pin. Stand near Stokholtsvej 35. The buildings are on parcel 4 and are not the 1800s house. Living on 5a is not proven.'},
   {id:'valsomagle',label:'Valsømagle',short:'Valsømagle',osm:'https://www.openstreetmap.org/node/9956361203',google:'https://www.google.com/maps?q=55.4933219,11.8213452',phrases:['Walsøemagle','Walsømagle','Valsømagle','Walsmagle']},
   {id:'haraldsted-kirke',label:'Haraldsted Kirke and kirkegård',short:'Haraldsted Kirke',osm:'https://www.openstreetmap.org/way/264012020',google:'https://www.google.com/maps?q=55.4915324,11.7681618',phrases:['Haraldsted kirkegård','Haraldsted Kirkegaard','Haraldsted churchyard','Haraldsted Kirke','Haraldsted church']},
   {id:'dannebod',label:'Dannebod Cemetery',short:'Dannebod',osm:'https://www.openstreetmap.org/?mlat=44.31115&mlon=-94.89040#map=16/44.31115/-94.89040',google:'https://www.google.com/maps?q=44.31115,-94.89040',phrases:['Dannebod Cemetery','Dannebod']},

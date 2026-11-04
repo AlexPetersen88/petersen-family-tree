@@ -8,6 +8,7 @@
     {id:'sct-hansgade',region:'dk',lat:55.4445,lng:11.7908,zoom:17},
     {id:'landesbergen',region:'dk',lat:52.5610,lng:9.1238,zoom:14,cluster:'landesbergen'},
     {id:'landesbergen-kirche',region:'dk',lat:52.5592,lng:9.1185,zoom:17,cluster:'landesbergen'},
+    {id:'bjernedehuse-5a',region:'dk',lat:55.4656,lng:11.6444,zoom:17,labelNote:'Parcel south of Stokholtsvej. Stand near Stokholtsvej 35. Not the modern house. Living on 5a is not proven.'},
     {id:'bjernedehuse-overlook',region:'dk',lat:55.4597,lng:11.6419,zoom:15,soft:true,labelNote:'Hamlet overlook, not the house.'},
     {id:'dannebod',region:'mn',lat:44.31115,lng:-94.89040,zoom:15},
     {id:'bethany-lutheran',region:'mn',lat:44.4452,lng:-94.9873,zoom:16},
@@ -163,6 +164,7 @@
     const sleepy=hits.every(pin=>pin.cluster==='sleepy-eye');
     const redwood=hits.every(pin=>pin.cluster==='redwood-falls');
     const landesbergen=hits.every(pin=>pin.cluster==='landesbergen');
+    const parcel=hits.length===2&&hits.some(pin=>pin.id==='bjernedehuse-5a')&&hits.some(pin=>pin.id==='bjernedehuse-overlook');
     chooserText.textContent=haraldsted
       ?'Haraldsted Kirke and the præstegård are about 80 metres apart. Choose which note to open.'
       :sleepy
@@ -171,6 +173,8 @@
       ?'Redwood Falls Cemetery and Garnette Gardens are about 1.7 km apart. Choose which note to open.'
       :landesbergen
       ?'Landesbergen village and the parish church are a short walk apart. Choose which note to open.'
+      :parcel
+      ?'Matr. 5a is the parcel pin. The overlook is a softer view from the road, not the plot. Choose which note to open.'
       :'These pins sit close together on this view. Choose which note to open.';
     chooserBtns.replaceChildren();
     hits.forEach(pin=>{
