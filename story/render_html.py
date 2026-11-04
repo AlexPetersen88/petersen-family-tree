@@ -606,7 +606,7 @@ def chrome(current):
     return f"""<div class="sticky-chrome">
 <header>
 <div class="brand"><p class="eyebrow">Redwood County, Minnesota</p><h1>The Petersen Family</h1></div>
-<nav aria-label="Primary"><a href="../index.html">Tree</a><a href="../sources.html">Sources</a><a{story_current} href="index.html">Story</a></nav>
+<nav aria-label="Primary"><a href="../index.html">Tree</a><a href="../sources.html">Sources</a><a{story_current} href="index.html">Story</a><a href="../map.html">Map</a></nav>
 </header>
 <button type="button" class="story-tools-toggle" id="storytoolstoggle" aria-expanded="true" aria-controls="storytools"><span class="when-open">Hide tools</span><span class="when-closed">Show tools</span></button>
 <div id="storytools" class="story-tools">
