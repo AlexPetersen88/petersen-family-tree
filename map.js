@@ -10,7 +10,10 @@
     {id:'dannebod',region:'mn',lat:44.31115,lng:-94.89040,zoom:15},
     {id:'bethany-lutheran',region:'mn',lat:44.4452,lng:-94.9873,zoom:16},
     {id:'evan',region:'mn',lat:44.3540,lng:-94.8410,zoom:14},
-    {id:'redwood-falls-cemetery',region:'mn',lat:44.5510,lng:-95.1000,zoom:16},
+    {id:'sleepy-eye',region:'mn',lat:44.2972,lng:-94.7242,zoom:15,cluster:'sleepy-eye'},
+    {id:'sleepy-eye-methodist',region:'mn',lat:44.2944,lng:-94.7225,zoom:17,cluster:'sleepy-eye'},
+    {id:'redwood-falls-cemetery',region:'mn',lat:44.5510,lng:-95.1000,zoom:16,cluster:'redwood-falls'},
+    {id:'garnette-gardens',region:'mn',lat:44.5356,lng:-95.0981,zoom:17,cluster:'redwood-falls'},
     {id:'wolfeboro',region:'mn',lat:43.5848,lng:-71.2122,zoom:13,soft:true,frame:false,labelNote:'Town only. Medium confidence. Not a hospital or a residence.'},
     {id:'pownal',region:'mn',lat:43.8923,lng:-70.1835,zoom:13,soft:true,frame:false,labelNote:'Town only. Medium confidence. Not a building or a residence.'}
   ];
@@ -81,7 +84,7 @@
       return;
     }
     const bounds=L.latLngBounds(pts.map(pin=>[pin.lat,pin.lng]));
-    map.fitBounds(bounds,{padding:[48,48],maxZoom:13,animate:animate&&!reduce});
+    map.fitBounds(bounds,{paddingTopLeft:[72,20],paddingBottomRight:[20,36],maxZoom:13,animate:animate&&!reduce});
   }
   function clearSelection(){
     current=null;
@@ -154,8 +157,14 @@
   }
   function showChooser(hits){
     const haraldsted=hits.every(pin=>pin.cluster==='haraldsted');
+    const sleepy=hits.every(pin=>pin.cluster==='sleepy-eye');
+    const redwood=hits.every(pin=>pin.cluster==='redwood-falls');
     chooserText.textContent=haraldsted
       ?'Haraldsted Kirke and the præstegård are about 80 metres apart. Choose which note to open.'
+      :sleepy
+      ?'Sleepy Eye and Faith United Methodist Church are a few blocks apart. Choose which note to open.'
+      :redwood
+      ?'Redwood Falls Cemetery and Garnette Gardens are about 1.7 km apart. Choose which note to open.'
       :'These pins sit close together on this view. Choose which note to open.';
     chooserBtns.replaceChildren();
     hits.forEach(pin=>{
