@@ -1194,8 +1194,8 @@ window.PEOPLE={
    },
    "burial": "Home Cemetery, Sleepy Eye, Brown Co MN",
    "parents": [
-    "Henry Frederick Dohrmann (1864\u20131946)",
-    "Ida A. Diederich (1869\u20131954)"
+    "P44",
+    "P45"
    ],
    "spouses": [
     {
@@ -1208,10 +1208,14 @@ window.PEOPLE={
    ],
    "sources": [
     "S89",
-    "S90"
+    "S90",
+    "S329",
+    "S330",
+    "S331",
+    "S334"
    ],
    "status": "FAG secondary (S89) \u2014 father of Janice Elaine Dohrmann (P2)",
-   "notes": "Siblings on memorial: Arthur Edgar, Estella Lena Bittner, Elsie George, Lucy Lambrecht, Verna Ingraham, Henry August, Elmer Raymond, Alice Murphy. Wife Ethel maiden Neubauer (RESOLVED 2026-11-03, S148/S149); his bio S89 says \"Ethel Gent\" = her mother's maiden, misstated."
+   "notes": "Siblings on memorial: Arthur Edgar, Estella Lena Bittner, Elsie George, Lucy Lambrecht, Verna Ingraham, Henry August, Elmer Raymond, Alice Murphy. Wife Ethel maiden Neubauer (RESOLVED 2026-11-03, S148/S149); his bio S89 says \"Ethel Gent\" = her mother's maiden, misstated. Dig 52: parents carded P44\u00d7P45. Henry was born in Germany; no German town is cleared."
   },
   {
    "id": "P32",
@@ -1465,6 +1469,76 @@ window.PEOPLE={
    "status": "living \u2014 public-obit names only",
    "notes": "Spouse (given name only, from obit): Kimberlee. No DOB found; do not invent. DO NOT merge with S8 William Rudolph Petersen.",
    "residence": "Hutchinson MN (as of Janice 2025 obit)"
+  },
+  {
+   "id": "P44",
+   "name": "Henry Frederick Dohrmann",
+   "birth": {
+    "date": "1864-10-15",
+    "place": "Germany (town not cleared)"
+   },
+   "death": {
+    "date": "1946-12-22",
+    "place": "Sleepy Eye, Brown Co MN"
+   },
+   "burial": "Home Cemetery, Sleepy Eye, Brown Co MN",
+   "parents": [
+    "Heinrich W. Dohrmann (1831\u20131899)",
+    "Caroline Dohrmann (1835\u20131907; maiden OPEN \u2014 Grote/Grate CANDIDATE only)"
+   ],
+   "spouses": [
+    {
+     "id": "P45",
+     "marriage": "1889-11-07 Sleepy Eye MN (S335)"
+    }
+   ],
+   "children": [
+    "P31"
+   ],
+   "sources": [
+    "S329",
+    "S331",
+    "S332",
+    "S333",
+    "S334",
+    "S335"
+   ],
+   "status": "Germany birth HIGH (census S331/S333 + FAG S329); immigration 1878 HIGH (S332); European town NOT cite-ready",
+   "notes": "Census variants Dohrman/Dohornan/Dorhman. 1880 (S333) with father Henry 51, mother Caroline 45, sister Lena 10, all b. Germany. MNHS death cert 1946-MN-001678 (index only; paid image PARKED). A FamilySearch tree names a German town and a longer personal name \u2014 CANDIDATE UNVERIFIED, NOT approved, and not used (S337). Children per S89/S336 (noted, not carded): Arthur Edgar, Estella Lena Bittner, Elsie George, Lucy Lambrecht, Verna Ingraham, Henry August, Elmer Raymond, Edwin, Alice Murphy. WikiTree Dohrmann-176 = different man, REJECT. Parents not carded."
+  },
+  {
+   "id": "P45",
+   "name": "Ida A. (Diederich) Dohrmann",
+   "birth": {
+    "date": "1869-06-17",
+    "place": "New Ulm, Brown Co MN"
+   },
+   "death": {
+    "date": "1954-03-19",
+    "place": "Sleepy Eye, Brown Co MN"
+   },
+   "burial": "not stated in Dig 52 pack (UNVERIFIED)",
+   "parents": [
+    "August Diederich (1834\u20131876)",
+    "Dorothea Elizabeth (Witzel) Alwin (1838\u20131914)"
+   ],
+   "spouses": [
+    {
+     "id": "P44",
+     "marriage": "1889-11-07 Sleepy Eye MN (S335)"
+    }
+   ],
+   "children": [
+    "P31"
+   ],
+   "sources": [
+    "S330",
+    "S331",
+    "S334",
+    "S335"
+   ],
+   "status": "US-born New Ulm HIGH (FAG S330 + census S331) \u2014 European origin is Dohrmann line, not Ida",
+   "notes": "MNHS death cert 1954-MN-001608 (index only; paid image PARKED). Her parents' origin = separate dig, PARKED."
   }
  ]
 };
@@ -3557,6 +3631,48 @@ window.SOURCES={
   "id": "S326",
   "flag": "CANDIDATE / context only, not locked",
   "text": "S\u00e6rl\u00f8se church book. (a) Baptism 28 Jul 1799 of Haagen, son of Johan Mathiesen of T\u00f8lstrup, mother unnamed. Same father-on-record as Kirsten's 1796 baptism (S322), so a candidate brother of P27. No person card. (b) Burial 11 Feb 1795 of Johan's unnamed wife, age 32. Context only: a possible earlier marriage before Kirsten was born. Not proven. No mother named. No kinship to P25 or P34. Kept apart from Erik Rasmussen and Maren Hansdatter (S312). S\u00e6rl\u00f8se and T\u00f8lstrup stay unpinned.",
+  "urls": []
+ },
+ "S329": {
+  "id": "S329",
+  "flag": "Dig 52 CLEAR thin",
+  "text": "Henry F. Dohrmann (P44), born in Germany 15 Oct 1864. The town is not cleared and is not named.",
+  "urls": []
+ },
+ "S330": {
+  "id": "S330",
+  "flag": "Dig 52 CLEAR thin",
+  "text": "Ida A. Diederich (P45), born in New Ulm, Minnesota, 17 Jun 1869. Town pin only. Birth house not pinned.",
+  "urls": []
+ },
+ "S331": {
+  "id": "S331",
+  "flag": "Dig 52 CLEAR thin",
+  "text": "Census support for Henry born in Germany and Ida born in Minnesota.",
+  "urls": []
+ },
+ "S332": {
+  "id": "S332",
+  "flag": "Dig 52 CLEAR thin",
+  "text": "Henry immigrated in 1878.",
+  "urls": []
+ },
+ "S333": {
+  "id": "S333",
+  "flag": "Dig 52 CLEAR thin",
+  "text": "1880 census household of Henry's parents in the United States: father Henry, mother Caroline, sister Lena, all born in Germany.",
+  "urls": []
+ },
+ "S334": {
+  "id": "S334",
+  "flag": "Dig 52 CLEAR thin",
+  "text": "Wesley Edward Dohrmann birth index, mother maiden Diederich.",
+  "urls": []
+ },
+ "S335": {
+  "id": "S335",
+  "flag": "Dig 52 CLEAR thin",
+  "text": "Henry F. Dohrmann married Ida A. Diederich on 7 Nov 1889 in Sleepy Eye. Town pin only. The ceremony building is not known and is not the 1957 Faith United Methodist pin. Henry's parents: Heinrich W. Dohrmann and Caroline. Caroline's maiden name stays OPEN. Grote/Grate is a candidate only, not locked.",
   "urls": []
  }
 };

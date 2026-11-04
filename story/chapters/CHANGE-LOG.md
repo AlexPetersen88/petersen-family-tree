@@ -49,3 +49,6 @@ This log tracks Genealogist-cleared additions and corrections folded into the st
 
 - Ringsted baptisms S67–S69, S71; Rasmus Peter as the Sleepy Eye emigrant (S49); the Stokholtshuse farm site; Hans Peter's childhood on matr. 5a; the cause of Hans Pedersen's death; and the 1920 naturalization year. None of these are used.
 - Ane Marie Rasmussen (S45) = Ane Rasmusdatter is still labeled "Provisional" in the full story.
+
+- 2026-11-03 Dig 52 Genealogist CLEAR thin folded (Ch.4 Janice section, ABRIDGED): Wesley's parents Henry F. Dohrmann (b. Germany 15 Oct 1864; imm. 1878) × Ida A. Diederich (b. New Ulm 17 Jun 1869), m. 7 Nov 1889 Sleepy Eye; Henry's parents Heinrich W. × Caroline (maiden OPEN). No German town is named (a candidate hometown is unverified and stays out). S337/S338 not used. Ethel/Neubauer wording unchanged. KIDS skipped. PDFs + OneDrive refreshed.
+- 2026-11-03 Dig 52 Places Scout pins folded (Ch.4): New Ulm town pin 44.3140, -94.4614 (house UNVERIFIED); Sleepy Eye town pin reused for 1889 marriage (ceremony building UNVERIFIED; Faith UMC pin not used). No German town.
