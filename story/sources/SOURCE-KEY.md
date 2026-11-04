@@ -126,3 +126,7 @@
 
 ## Dig J / S326 — Genealogist CLEAR thin (Storyteller) 2026-11-03
 - S326 (CANDIDATE / context only, not locked): Særløse kirkebog — (a) baptism 28 Jul 1799, Haagen, son of Johan Mathiesen i Tølstrup (same father as S322 Kirsten dåb) = CANDIDATE brother of P27; (b) burial 11 Feb 1795, Johan's unnamed *Hustru*, age 32 = possible prior marriage before Kirsten, context only. No mother name. No kinship to P25/P34. Særløse/Tølstrup pins soft-parked.
+
+## Dig 52 / S329–S335 — Genealogist CLEAR thin (Storyteller) 2026-11-03
+- S329 / S330 / S331 / S332 / S333 / S334 / S335 (Dig 52 CLEAR thin): Henry F. Dohrmann (P44) b. Germany 15 Oct 1864; immigrated 1878; m. Ida A. Diederich (b. New Ulm, MN, 17 Jun 1869) 7 Nov 1889 Sleepy Eye. Henry's parents Heinrich W. Dohrmann × Caroline (maiden OPEN — Grote/Grate, not locked). Use: Ch.4 Janice section + ABRIDGED. German town not named.
+- Kept out: S337/S338 (place and maiden locks). Any German town stays unverified and is not named. New Ulm is a town pin only; the birth house is not pinned.

@@ -11,6 +11,7 @@
     {id:'bethany-lutheran',region:'mn',lat:44.4452,lng:-94.9873,zoom:16},
     {id:'evan',region:'mn',lat:44.3540,lng:-94.8410,zoom:14},
     {id:'sleepy-eye',region:'mn',lat:44.2972,lng:-94.7242,zoom:15,cluster:'sleepy-eye'},
+    {id:'new-ulm',region:'mn',lat:44.3140,lng:-94.4614,zoom:14},
     {id:'sleepy-eye-methodist',region:'mn',lat:44.2944,lng:-94.7225,zoom:17,cluster:'sleepy-eye'},
     {id:'redwood-falls-cemetery',region:'mn',lat:44.5510,lng:-95.1000,zoom:16,cluster:'redwood-falls'},
     {id:'garnette-gardens',region:'mn',lat:44.5356,lng:-95.0981,zoom:17,cluster:'redwood-falls'},

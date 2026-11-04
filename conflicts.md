@@ -131,3 +131,9 @@
 - A boy Haagen was baptized 28 Jul 1799 at Særløse, son of Johan Mathiesen of Tølstrup, mother unnamed (S326). Same father-on-record as Kirsten's candidate baptism (S322). Candidate brother only. Not locked. No person card.
 - On 11 Feb 1795 Johan buried an unnamed wife, age 32 (S326). Context only: a possible earlier marriage, so Kirsten (baptized Jan 1796) may be from a later marriage. That inference is CANDIDATE, not locked. No mother is named.
 - No kinship to Ane Marie (P25) or Peder Johansen (P34). Kept apart from Erik Rasmussen × Maren Hansdatter (S312). No Særløse, Tølstrup, or Lejre pin. Day B held. Dig 40–43 stay out.
+
+## Dig 52 (2026-11-03) — Dohrmann — Genealogist CLEAR, thin
+- Henry F. Dohrmann (P44) was born in Germany on 15 Oct 1864 and immigrated in 1878. No German town is cleared, and none is named.
+- He married Ida A. Diederich (P45) on 7 Nov 1889 in Sleepy Eye. Ida was born in New Ulm, Minnesota, on 17 Jun 1869. New Ulm is a town pin only. The 1889 ceremony building is unknown and is not tied to Faith United Methodist.
+- Henry's parents are Heinrich W. Dohrmann and Caroline. Caroline's maiden name is OPEN. Grote/Grate is a candidate only, not locked.
+- Ethel Bertha Dohrmann stays Neubauer. Dig J places stay unpinned. Dig 40–43 and Day B stay out.

@@ -629,3 +629,14 @@ Ane Marie's foster raising, and a candidate baptism for Kirsten. No farm pin. No
 Candidate brother and a 1795 burial. No person card. No new place pin. Not locked.
 
 - S326 (CANDIDATE / context only, not locked): Særløse church book. (a) Baptism 28 Jul 1799 of Haagen, son of Johan Mathiesen of Tølstrup, mother unnamed. Same father-on-record as Kirsten's 1796 baptism (S322), so a candidate brother of P27. No person card. (b) Burial 11 Feb 1795 of Johan's unnamed wife, age 32. Context only: a possible earlier marriage before Kirsten was born. Not proven. No mother named. No kinship to P25 or P34. Kept apart from Erik Rasmussen and Maren Hansdatter (S312). Særløse and Tølstrup stay unpinned.
+
+## Dig 52 (2026-11-03) — Genealogist CLEAR, thin, S329–S335
+Henry F. Dohrmann and Ida A. Diederich. No German town is named. S337 and S338 are not used. Ethel's maiden name stays Neubauer.
+
+- S329 (Dig 52 CLEAR thin): Henry F. Dohrmann (P44), born in Germany 15 Oct 1864. The town is not cleared and is not named.
+- S330 (Dig 52 CLEAR thin): Ida A. Diederich (P45), born in New Ulm, Minnesota, 17 Jun 1869. Town pin only. Birth house not pinned.
+- S331 (Dig 52 CLEAR thin): Census support for Henry born in Germany and Ida born in Minnesota.
+- S332 (Dig 52 CLEAR thin): Henry immigrated in 1878.
+- S333 (Dig 52 CLEAR thin): 1880 census household of Henry's parents in the United States: father Henry, mother Caroline, sister Lena, all born in Germany.
+- S334 (Dig 52 CLEAR thin): Wesley Edward Dohrmann birth index, mother maiden Diederich.
+- S335 (Dig 52 CLEAR thin): Henry F. Dohrmann married Ida A. Diederich on 7 Nov 1889 in Sleepy Eye. Town pin only. The ceremony building is not known and is not the 1957 Faith United Methodist pin. Henry's parents: Heinrich W. Dohrmann and Caroline. Caroline's maiden name stays OPEN. Grote/Grate is a candidate only, not locked.

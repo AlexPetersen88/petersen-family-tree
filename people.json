@@ -1194,8 +1194,8 @@
    },
    "burial": "Home Cemetery, Sleepy Eye, Brown Co MN",
    "parents": [
-    "Henry Frederick Dohrmann (1864–1946)",
-    "Ida A. Diederich (1869–1954)"
+    "P44",
+    "P45"
    ],
    "spouses": [
     {
@@ -1208,10 +1208,14 @@
    ],
    "sources": [
     "S89",
-    "S90"
+    "S90",
+    "S329",
+    "S330",
+    "S331",
+    "S334"
    ],
    "status": "FAG secondary (S89) — father of Janice Elaine Dohrmann (P2)",
-   "notes": "Siblings on memorial: Arthur Edgar, Estella Lena Bittner, Elsie George, Lucy Lambrecht, Verna Ingraham, Henry August, Elmer Raymond, Alice Murphy. Wife Ethel maiden Neubauer (RESOLVED 2026-11-03, S148/S149); his bio S89 says \"Ethel Gent\" = her mother's maiden, misstated."
+   "notes": "Siblings on memorial: Arthur Edgar, Estella Lena Bittner, Elsie George, Lucy Lambrecht, Verna Ingraham, Henry August, Elmer Raymond, Alice Murphy. Wife Ethel maiden Neubauer (RESOLVED 2026-11-03, S148/S149); his bio S89 says \"Ethel Gent\" = her mother's maiden, misstated. Dig 52: parents carded P44×P45. Henry was born in Germany; no German town is cleared."
   },
   {
    "id": "P32",
@@ -1465,6 +1469,76 @@
    "status": "living — public-obit names only",
    "notes": "Spouse (given name only, from obit): Kimberlee. No DOB found; do not invent. DO NOT merge with S8 William Rudolph Petersen.",
    "residence": "Hutchinson MN (as of Janice 2025 obit)"
+  },
+  {
+   "id": "P44",
+   "name": "Henry Frederick Dohrmann",
+   "birth": {
+    "date": "1864-10-15",
+    "place": "Germany (town not cleared)"
+   },
+   "death": {
+    "date": "1946-12-22",
+    "place": "Sleepy Eye, Brown Co MN"
+   },
+   "burial": "Home Cemetery, Sleepy Eye, Brown Co MN",
+   "parents": [
+    "Heinrich W. Dohrmann (1831–1899)",
+    "Caroline Dohrmann (1835–1907; maiden OPEN — Grote/Grate CANDIDATE only)"
+   ],
+   "spouses": [
+    {
+     "id": "P45",
+     "marriage": "1889-11-07 Sleepy Eye MN (S335)"
+    }
+   ],
+   "children": [
+    "P31"
+   ],
+   "sources": [
+    "S329",
+    "S331",
+    "S332",
+    "S333",
+    "S334",
+    "S335"
+   ],
+   "status": "Germany birth HIGH (census S331/S333 + FAG S329); immigration 1878 HIGH (S332); European town NOT cite-ready",
+   "notes": "Census variants Dohrman/Dohornan/Dorhman. 1880 (S333) with father Henry 51, mother Caroline 45, sister Lena 10, all b. Germany. MNHS death cert 1946-MN-001678 (index only; paid image PARKED). A FamilySearch tree names a German town and a longer personal name — CANDIDATE UNVERIFIED, NOT approved, and not used (S337). Children per S89/S336 (noted, not carded): Arthur Edgar, Estella Lena Bittner, Elsie George, Lucy Lambrecht, Verna Ingraham, Henry August, Elmer Raymond, Edwin, Alice Murphy. WikiTree Dohrmann-176 = different man, REJECT. Parents not carded."
+  },
+  {
+   "id": "P45",
+   "name": "Ida A. (Diederich) Dohrmann",
+   "birth": {
+    "date": "1869-06-17",
+    "place": "New Ulm, Brown Co MN"
+   },
+   "death": {
+    "date": "1954-03-19",
+    "place": "Sleepy Eye, Brown Co MN"
+   },
+   "burial": "not stated in Dig 52 pack (UNVERIFIED)",
+   "parents": [
+    "August Diederich (1834–1876)",
+    "Dorothea Elizabeth (Witzel) Alwin (1838–1914)"
+   ],
+   "spouses": [
+    {
+     "id": "P44",
+     "marriage": "1889-11-07 Sleepy Eye MN (S335)"
+    }
+   ],
+   "children": [
+    "P31"
+   ],
+   "sources": [
+    "S330",
+    "S331",
+    "S334",
+    "S335"
+   ],
+   "status": "US-born New Ulm HIGH (FAG S330 + census S331) — European origin is Dohrmann line, not Ida",
+   "notes": "MNHS death cert 1954-MN-001608 (index only; paid image PARKED). Her parents' origin = separate dig, PARKED."
   }
  ]
 }
