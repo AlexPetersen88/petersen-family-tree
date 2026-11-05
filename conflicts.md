@@ -159,3 +159,15 @@
 - Siblings (no person cards, not story prose): sister born 1860 (S352), stillborn son 1863 (S353), sister born 1870 (S355).
 - Immigration year stays CONFLICT OPEN. Keep both 1873 and 1878. Neither is locked.
 - Dig J and Day B stay held. No places beyond Landesbergen and Leese.
+
+## Dig 57 (2026-11-04) — Weser 1873 image — Genealogist CLEAR, thin
+- Spring 1873 ship *Weser* to New York: Caroline Dohrmann (37) with Louise (12), Heinrich (8), and Caroline (2). No adult man in their party (S357, S358). Heinrich age 8 matched to Henry F. (P44) stays MED–HIGH.
+- Diedrich Dohrmann (37) on the same page is a different family. He is not Henry’s father Heinrich. No kinship is claimed (S359, REFUTE HIGH).
+- Immigration year stays CONFLICT OPEN. Keep both 1873 and 1878 (S345, S360). A free 1878 search was empty and does not settle the year.
+- Father Heinrich’s crossing and the exact arrival day stay unknown. They are not invented. Dig 21, Day B, and Dig J stay out. No new map pins.
+
+## Dig 58 (2026-11-05) — Father Heinrich alive in Minnesota — Genealogist CLEAR, thin
+- Father Heinrich Dohrmann (~1831), husband of Carolina geb. Grote, was alive in Minnesota by 1875 and still living in 1880 with son Henry (S370, S371). A death in Germany before the *Weser* 1873 sailing is REFUTED (S369, HIGH).
+- How and when he crossed, any separate ship name, the exact arrival day, and a German death are not invented (S372). Landesbergen burials 1870–75 show no adult male Heinrich ~1831 (S373, NEG MED–HIGH) and do not prove a burial elsewhere.
+- Carolina forename stays LOCKED. Maiden Grote stays LOCKED. Landesbergen birth stays HIGH.
+- Immigration year stays CONFLICT OPEN: 1873 and 1878, both open. Dig J and Dig 51 stay HELD. Day B stays held. No new map pins.
