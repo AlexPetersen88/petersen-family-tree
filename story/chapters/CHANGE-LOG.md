@@ -2,6 +2,14 @@
 
 This log tracks Genealogist-cleared additions and corrections folded into the story chapters, newest first. Each entry gives a short reason and its source. S# cites refer to `sources/SOURCE-KEY.md` and the Genealogist tree.
 
+## 2026-11-05 — Dig 58 father Heinrich alive MN (thin CLEAR)
+
+- Folded into Ch.4 + ABRIDGED: father Heinrich (~1831) **alive MN by 1875 and still with Henry in 1880** (S370/S371) — **not** dead in Germany before Weser 1873 mother+kids sailing (S369 REFUTE). Crossing how/when still UNKNOWN (S372). Imm 1873/1878 KEEP BOTH OPEN. Carolina / Grote / Landesbergen unchanged. KIDS unchanged. Dig J/51 HELD.
+
+## 2026-11-04 — Dig 57 Weser 1873 image (thin CLEAR)
+
+- Folded into Ch.4 + ABRIDGED: spring 1873 *Weser* → NY shows Caroline (37) + Louise (12), Heinrich (8), Caroline (2), **no adult man** (S357/S358). Diedrich (37) on same page = separate family, **not** father Heinrich (S359 REFUTE). Imm year 1873 vs 1878 still KEEP BOTH OPEN (S345/S360). Father’s crossing + exact day UNKNOWN — not invented. KIDS unchanged. Dig 21 / Day B / Dig J unchanged.
+
 ## 2026-11-04
 
 - **Dig 56 / S347–S351 — Henry F. Dohrmann's mother's first name LOCKED Carolina** — Ch.4 + Abridged: Louisa/Caroline OPEN → Carolina geb. Grote (Grote stays locked). US Caroline and church Karoline/Carolina = same woman. Louisa/Louise = superseded reading of the German handwriting (noted once in Ch.4). Immigration 1873 vs 1878 still both OPEN. Carolina b. ~1835 Leese, *Dienstmagd* Leese, 1859 banns Landesbergen + Leese (S348/S351); Places Scout Leese village pin 52.5057, 9.1159 HIGH. Kirchplatz 5 is the parish square; the 1873–74 brick church is not her-era building and is not a map pin; house UNVERIFIED — places/leese-de.md. Siblings 1860/1863/1870 kept as P44 notes only (not in prose). Kids unchanged (no Dohrmann beat). Dig 21 / Day B / Dig J unchanged. — Why: Genealogist Dig 56 CLEAR. (S347–S351; S329–S335, S342; Dig 56 CLEAR)

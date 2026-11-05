@@ -1484,7 +1484,7 @@ window.PEOPLE={
    },
    "burial": "Home Cemetery, Sleepy Eye, Brown Co MN",
    "parents": [
-    "Heinrich Dohrmann (Anbauer, Landesbergen; 1831\u20131899) HIGH S347/S348",
+    "Heinrich Dohrmann (Anbauer, Landesbergen; b. ~2 Mar 1831 HIGH S347/S348) \u2014 alive MN Leavenworth 1875 age 44 HIGH (S370/S342) and 1880 age ~51 with son HIGH (S371/S333); DE-before-Weser-1873 death hypothesis REFUTE HIGH (S369); Archion Landesbergen Beerdigungen 1870\u201375 no adult male Heinrich ~1831 burial NEG MED-HIGH (S373); how/when US entry OPEN (not invented; S372 NEG/PARTIAL free solo ship). Dig 52 FAG 1831\u20131899 SECONDARY / not elevated (Dig 58 FAG re-fetch BLOCKED).",
     "Carolina geb. Grote (1835\u20131907) \u2014 forename LOCKED Carolina (Alex 2026-11-04; Karoline/-olina/US Caroline same name; Dig 56 S351/S353/S355, US S338); maiden Grote LOCKED. Alternate superseded reading: Louisa/Louise (Dig 55 S347/S348). FS tree full form (S337): Dorothea Louise Carolina."
    ],
    "spouses": [
@@ -1522,13 +1522,26 @@ window.PEOPLE={
     "S353",
     "S354",
     "S355",
-    "S356"
+    "S356",
+    "S357",
+    "S358",
+    "S359",
+    "S360",
+    "S369",
+    "S370",
+    "S371",
+    "S372",
+    "S373"
    ],
-   "status": "Germany birth HIGH; Landesbergen cite-ready HIGH (S347/S350); 1875 Leavenworth HIGH (S342); immigration year KEEP BOTH OPEN 1873 vs 1878; Dig 55 CLOSED HIT; Dig 56 FOLDED \u2014 mother forename LOCKED Carolina (Alex 2026-11-04); Louisa SUPERSEDED",
-   "notes": "Census variants Dohrman/Dohornan/Dorhman. 1880 (S333) with father Henry 51, mother Caroline 45, sister Lena 10, all b. Germany. MNHS death cert 1946-MN-001678 (index only; paid image PARKED). FS tree LHCF-L5B names him Dietrich Heinrich Friedrich Ludwig, b. Landesbergen \u2014 CANDIDATE UNVERIFIED, NOT approved (S337). Children per S89/S336 (noted, not carded): Arthur Edgar, Estella Lena Bittner, Elsie George, Lucy Lambrecht, Verna Ingraham, Henry August, Elmer Raymond, Edwin, Alice Murphy. WikiTree Dohrmann-176 = different man, REJECT. Parents not carded (parents-next stop). Dig 53 (gated ~6:25 PM CT): free Landesbergen FS birth search 0 hits (S339 NEG); Bremen 1875\u20131908 lists destroyed (S340); Suderburg D\u00f6hrmann\u00d7Grote NEG other couple (S341). Town still NOT cite-ready. S337 stays CANDIDATE UNVERIFIED. Dig 54 (gated ~6:48 PM CT): 1875 MN census Leavenworth household HIGH (S342); mother+kids Weser 1873 (S343; Heinrich 8 = P44 MED); obit: b. Hanover 15 Oct 1864, came with parents 1873, near Chicago ~2 yrs then Leavenworth (S344). Imm year CONFLICT OPEN (S345). 1880 Lena may = younger Caroline \u2014 UNVERIFIED (S346). | Dig 54 imm fold (Alex 2026-11-03 ~6:49 CT): KEEP BOTH OPEN \u2014 show 1873 and 1878; no year locked. | Dig 55 (gated ~9:40 PM CT 2026-11-03): CLOSED HIT PARTIAL. Archion Landesbergen bapt (S347) + parents' m. 1 Jul 1859 (S348), link S349; S337 Landesbergen PROVED (S350). Mother forename Louisa vs Caroline OPEN; Grote LOCKED. Archion pass \u20ac19.90 (Alex yes), valid to 04 Dec 2026. | Dig 56 (gated ~10:45 PM CT 2026-11-03): CLOSED PARTIAL S351\u2013S356. Mother forename was OPEN at the gate: Louisa/Louise (Dig 55 S347/S348) vs Carolina/Karoline/-olina (S351 reread Carolina Dorothea MED; S353 1863 burial reads Carolina, clearer; S355 1870 ends -olina). Maiden Grote LOCKED. S354: P44 bapt child facts stand HIGH; mother glyph still unclear. Siblings (no person cards): Dorothea Louise Karoline(?) b. 23 Dec 1860, bapt 1 Jan 1861 (S352 HIGH); stillborn son b. 23 May 1863, bur ~25 May 1863 (S353 HIGH); Louise Wilhelmine Karoline(?) Sophie b. ~31 May 1870, bapt 12 Jun 1870 (S355 HIGH). Mother forename glyph unclear on all at the Dig 56 gate. | Dig 56 fold (Alex 2026-11-04 ~6:17 AM CT): mother forename LOCKED Carolina geb. Grote; Dig 55 Louisa/Louise SUPERSEDED as alternate reading; earlier OPEN lines above are superseded for the forename only. Immigration year stays CONFLICT OPEN \u2014 1873 and 1878, neither locked. Carolina b. ~1835 Leese, Dienstmagd Leese; banns Landesbergen + Leese (S348/S351). House UNVERIFIED.",
+   "status": "Germany birth HIGH; Landesbergen cite-ready HIGH (S347/S350); 1875 Leavenworth HIGH (S342/S370); immigration year KEEP BOTH OPEN 1873 vs 1878; Dig 55 CLOSED HIT; Dig 56 FOLDED \u2014 mother forename LOCKED Carolina (Alex 2026-11-04); Louisa SUPERSEDED; Dig 57 CLOSED PARTIAL \u2014 Weser 1873 scan HIGH for mother Caroline 37 + Louise 12 + Heinrich 8 + Caroline 2 (S357/S358), no adult male in group; Diedr Dohrmann 37 \u2260 father Heinrich REFUTE HIGH (S359); Dig 58 CLOSED PARTIAL \u2014 father alive MN 1875/1880 HIGH (S370/S371); DE-before-leave REFUTE HIGH (S369); Archion 1870\u201375 local burial NEG MED-HIGH (S373); father US entry mechanism OPEN (S372 NEG/PARTIAL); imm year still KEEP BOTH OPEN 1873/1878 (S345)",
+   "notes": "Census variants Dohrman/Dohornan/Dorhman. 1880 (S333) with father Henry 51, mother Caroline 45, sister Lena 10, all b. Germany. MNHS death cert 1946-MN-001678 (index only; paid image PARKED). FS tree LHCF-L5B names him Dietrich Heinrich Friedrich Ludwig, b. Landesbergen \u2014 CANDIDATE UNVERIFIED, NOT approved (S337). Children per S89/S336 (noted, not carded): Arthur Edgar, Estella Lena Bittner, Elsie George, Lucy Lambrecht, Verna Ingraham, Henry August, Elmer Raymond, Edwin, Alice Murphy. WikiTree Dohrmann-176 = different man, REJECT. Parents not carded (parents-next stop). Dig 53 (gated ~6:25 PM CT): free Landesbergen FS birth search 0 hits (S339 NEG); Bremen 1875\u20131908 lists destroyed (S340); Suderburg D\u00f6hrmann\u00d7Grote NEG other couple (S341). Town still NOT cite-ready. S337 stays CANDIDATE UNVERIFIED. Dig 54 (gated ~6:48 PM CT): 1875 MN census Leavenworth household HIGH (S342); mother+kids Weser 1873 (S343; Heinrich 8 = P44 MED); obit: b. Hanover 15 Oct 1864, came with parents 1873, near Chicago ~2 yrs then Leavenworth (S344). Imm year CONFLICT OPEN (S345). 1880 Lena may = younger Caroline \u2014 UNVERIFIED (S346). | Dig 54 imm fold (Alex 2026-11-03 ~6:49 CT): KEEP BOTH OPEN \u2014 show 1873 and 1878; no year locked. | Dig 55 (gated ~9:40 PM CT 2026-11-03): CLOSED HIT PARTIAL. Archion Landesbergen bapt (S347) + parents' m. 1 Jul 1859 (S348), link S349; S337 Landesbergen PROVED (S350). Mother forename Louisa vs Caroline OPEN; Grote LOCKED. Archion pass \u20ac19.90 (Alex yes), valid to 04 Dec 2026. | Dig 56 (gated ~10:45 PM CT 2026-11-03): CLOSED PARTIAL S351\u2013S356. Mother forename was OPEN at the gate: Louisa/Louise (Dig 55 S347/S348) vs Carolina/Karoline/-olina (S351 reread Carolina Dorothea MED; S353 1863 burial reads Carolina, clearer; S355 1870 ends -olina). Maiden Grote LOCKED. S354: P44 bapt child facts stand HIGH; mother glyph still unclear. Siblings (no person cards): Dorothea Louise Karoline(?) b. 23 Dec 1860, bapt 1 Jan 1861 (S352 HIGH); stillborn son b. 23 May 1863, bur ~25 May 1863 (S353 HIGH); Louise Wilhelmine Karoline(?) Sophie b. ~31 May 1870, bapt 12 Jun 1870 (S355 HIGH). Mother forename glyph unclear on all at the Dig 56 gate. | Dig 56 fold (Alex 2026-11-04 ~6:17 AM CT): mother forename LOCKED Carolina geb. Grote; Dig 55 Louisa/Louise SUPERSEDED as alternate reading; earlier OPEN lines above are superseded for the forename only. Immigration year stays CONFLICT OPEN \u2014 1873 and 1878, neither locked. Carolina b. ~1835 Leese, Dienstmagd Leese; banns Landesbergen + Leese (S348/S351). House UNVERIFIED. | Dig 57 (gated ~8:25 AM CT 2026-11-04): CLOSED PARTIAL. Weser NY 1873 full scan FS 1849782 / M237 film 372 img 512 (S357 HIGH). Rows 12\u201315 Caroline 37, Louise 12, Heinrich 8, Caroline 2 = S343/S342 group (S358 HIGH); NO adult male with them. Rows 6\u201311 = separate Diedr Dohrmann 37 family (wife Caroline 34; Wilhelmine 7, Heinrich 4, Diedrich 2, infant Caroline). Diedr \u2260 father Heinrich b.1831 \u2014 REFUTE HIGH (S359). Father's 1873 voyage OPEN/not found; no identity assigned. Free 1878 retry NEG/PARTIAL (S360) \u2014 1878 not refuted. S345 KEEP BOTH OPEN unchanged. | Dig 58 (gated ~06:45 CT 2026-11-05): CLOSED PARTIAL S369\u2013S373. Hypothesis father died DE before Weser spring 1873 REFUTE HIGH (S369) \u2014 adult Henry 44 with Caroline+kids Leavenworth 1875 (S370 re-cite Dig 54 S342). 1880 Henry 51 + son Henry 15 same household HIGH (S371 re-cite Dig 52 S333). Free solo ship Heinrich/Henry ~40\u201350 NEG/PARTIAL (S372; does not prove no arrival). Archion Landesbergen Beerdigungen 252609 Bilder 87\u2013119 (1870\u201375) NEG MED-HIGH no adult male Heinrich ~1831 burial (S373). Weser-no-adult (Dig 57) and alive-MN both true. Imm S345 KEEP BOTH OPEN. Do NOT invent death year (Dig 52 FAG 1831\u20131899 stays secondary/not elevated). Do NOT invent how father crossed ocean.",
    "immigration": {
     "year": "1873 and 1878",
-    "status": "CONFLICT OPEN \u2014 KEEP BOTH. Show 1873 (S344/S343/S342) and 1878 (S332/S345) without locking. Alex fold Dig 54 (~6:49 PM CT 2026-11-03). Not DNA; both cited."
+    "status": "CONFLICT OPEN \u2014 KEEP BOTH. Show 1873 (S344/S343/S342/S357/S358) and 1878 (S332/S345; S360 free search empty, not a refute) without locking. fatherOnShip OPEN: he is not on the Weser page with wife and children (S358); Diedrich Dohrmann 37 is not the father (S359 REFUTE). DE-before-leave REFUTE HIGH: alive in Minnesota by 1875 and in 1880 (S370/S371; S369). How and when he crossed is unknown (S372). No ship, arrival day, or German death invented.",
+    "1873": "Weser NY 1873 passenger scan HIGH for mother + 3 children (S343/S357/S358); obit S344; 1875 census S342/S370",
+    "1878": "1920 census self-report S332/S345; free 1878 search NEG/PARTIAL S360 (not a refute)",
+    "fatherOnShip": "OPEN \u2014 not on Weser page with wife+kids (S358); Diedr Dohrmann 37 REFUTED as father (S359). Father alive MN by 1875 / 1880 (S370/S371) so DE-before-leave REFUTE HIGH (S369). How/when he entered US still OPEN (S372 free solo extract NEG/PARTIAL \u2014 does not prove no arrival). Crossing mechanism not invented.",
+    "fatherAliveMN": "HIGH \u2014 1875 Leavenworth age 44 (S370/S342); 1880 age ~51 with son (S371/S333)"
    },
    "baptism": "1864-10-23, Landesbergen. Given names Heinrich Friedrich Ludwig (HIGH, S347)."
   },
@@ -3835,6 +3848,71 @@ window.SOURCES={
   "flag": "STATUS",
   "text": "Forename LOCKED Carolina (Alex 2026-11-04). Maiden Grote stays LOCKED across the 1859 marriage and the 1860, 1863, 1864, and 1870 entries. Louisa/Louise is a superseded alternate reading. Immigration year is not decided here.",
   "urls": []
+ },
+ "S357": {
+  "id": "S357",
+  "flag": "HIT HIGH",
+  "text": "Ship Weser passenger list, spring 1873, New York \u2014 Caroline Dohrmann (37) with Louise (12), Heinrich (8), and Caroline (2). FamilySearch collection 1849782, NARA M237 film 372, image 512 of 650 (arrival window Feb 21\u2013Apr 7 1873). Image-proved. Exact arrival day not read (OPEN). https://www.familysearch.org/ark:/61903/3:1:939V-5RZ1-P?view=index&personArk=%2Fark%3A%2F61903%2F1%3A1%3AQVPK-3874&action=view&cc=1849782&lang=en",
+  "urls": [
+   "https://www.familysearch.org/ark:/61903/3:1:939V-5RZ1-P?view=index&personArk=%2Fark%3A%2F61903%2F1%3A1%3AQVPK-3874&action=view&cc=1849782&lang=en"
+  ]
+ },
+ "S358": {
+  "id": "S358",
+  "flag": "HIT HIGH",
+  "text": "Same Weser page, two ditto-surname Dohrmann blocks. Block B is Caroline 37, Louise 12, Heinrich 8, Caroline 2, and no adult man. Heinrich age 8 matched to Henry F. (P44) stays MED\u2013HIGH. Block A is a separate household.",
+  "urls": []
+ },
+ "S359": {
+  "id": "S359",
+  "flag": "REFUTE HIGH",
+  "text": "Diedrich Dohrmann (37) on the same page heads a separate household. He is not Heinrich Dohrmann (born 2 Mar 1831, Landesbergen), father of P44. No kinship claimed.",
+  "urls": []
+ },
+ "S360": {
+  "id": "S360",
+  "flag": "NEG/PARTIAL",
+  "text": "Free search for an 1878 Dohrmann family arrival was empty / partial and does not refute 1878. Immigration year stays CONFLICT OPEN (S345, KEEP BOTH). https://shipmanifests.com/by_date/1878.html",
+  "urls": [
+   "https://shipmanifests.com/by_date/1878.html"
+  ]
+ },
+ "S369": {
+  "id": "S369",
+  "flag": "REFUTE HIGH",
+  "text": "Hypothesis that Heinrich ~1831 died in Germany before the Weser spring 1873 sailing of mother and children \u2014 closed refute. Adult Henry age 44 is enumerated with Caroline and the children in Leavenworth Township, Brown County, Minnesota, in 1875 (S370 / S342). Absence from that Weser block does not mean a German death. Diedrich Dohrmann (37) remains a different man (S359).",
+  "urls": []
+ },
+ "S370": {
+  "id": "S370",
+  "flag": "HIT HIGH",
+  "text": "1875 Minnesota census, Leavenworth Township, Brown County. Adult Henry 44, born Germany, with Caroline 39, Louisa 14, Henry 10, Caroline 4, and George Otte 22. Re-cite of Dig 54 S342. https://www.familysearch.org/ark:/61903/1:1:MKNH-YZM https://www.familysearch.org/ark:/61903/1:1:MKNH-B66",
+  "urls": [
+   "https://www.familysearch.org/ark:/61903/1:1:MKNH-YZM",
+   "https://www.familysearch.org/ark:/61903/1:1:MKNH-B66"
+  ]
+ },
+ "S371": {
+  "id": "S371",
+  "flag": "HIT HIGH",
+  "text": "1880 U.S. census. Henry 51 with wife Caroline 45, son Henry 15, and Lena 10, all born in Germany. The man age ~51 is the father, in the same household as son Henry. Re-cite of Dig 52 S333. https://www.familysearch.org/ark:/61903/1:1:MZ99-JZC",
+  "urls": [
+   "https://www.familysearch.org/ark:/61903/1:1:MZ99-JZC"
+  ]
+ },
+ "S372": {
+  "id": "S372",
+  "flag": "NEG/PARTIAL",
+  "text": "Free solo-ship extract for a Heinrich/Henry about 40\u201350 after spring 1873 found no matching entry. The extract is incomplete (the Weser family itself is missing from that site). It does not prove there was no separate arrival, and it does not name a ship, a day, or a way across.",
+  "urls": []
+ },
+ "S373": {
+  "id": "S373",
+  "flag": "NEG MED-HIGH",
+  "text": "Archion Landesbergen Beerdigungen 1853\u20131889, book 252609, Bilder 87\u2013119, covering 1870 through 1875. No burial of an adult male Heinrich Dohrmann ~1831. Does not prove a burial elsewhere. Other Dohrmann and Grote names on those pages are not this man. https://www.archion.de/de/viewer/churchRegister/252609?cHash=1d533b5a0411612f834ccb8a6c930588",
+  "urls": [
+   "https://www.archion.de/de/viewer/churchRegister/252609?cHash=1d533b5a0411612f834ccb8a6c930588"
+  ]
  }
 };
 window.SOURCE_NOTES=["Note: S5/S6 are transcriptions of government indexes, not originals. Underlying originals to pull on FamilySearch (free login): Minnesota Death Index 1908\u20132017; U.S. SSA Applications and Claims Index; BIRLS death file.", "Note: FT-1834 Ringsted k\u00f8bstad was skimmed in full: bsids 4460 N\u00f8rregade, 4461 Sankt Bendts Gade, 4462 Sankt Hans Gade, 4463 S\u00f8gade, 4464 Torvet (33 images). It has 1 unmarried Peter/Peder Johansen and 1 Ane Marie Hansdatter of the right age. No Ane Marie Clausdatter was seen."];

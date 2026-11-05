@@ -160,3 +160,17 @@
 - Carolina b. ~1835 Leese; Dienstmagd Leese; 1859 banns Landesbergen + Leese (S348/S351). Places: places/leese-de.md — village 52.5057, 9.1159 HIGH. Kirchplatz 5 ~52.5051, 9.1136 is the parish square; the 1873–74 brick church is CANDIDATE/LOW for her youth and is not a map pin. House UNVERIFIED.
 - Immigration year 1873 vs 1878: still OPEN.
 - Use: Ch.4 Janice section + ABRIDGED. Kids: no Dohrmann beat. Dig J and Day B unchanged.
+
+## Dig 57 — Weser 1873 image (MN Dig 57 CLEAR thin, 2026-11-04)
+- S357 / S358 (HIGH): Ship *Weser* passenger list, spring 1873, New York — Caroline Dohrmann (37) with Louise (12), Heinrich (8 = P44 MED–HIGH), Caroline (2); **no adult man** in their block. Image-proved (Dig 57 CLEAR).
+- S359 (HIGH REFUTE): Diedrich Dohrmann (37) on the same page heads a **separate** household — not Heinrich Dohrmann (father of P44); no kinship claimed.
+- S360: Free search for an 1878 Dohrmann arrival empty / partial — does not refute 1878; year CONFLICT stays OPEN (Alex KEEP BOTH).
+- OPEN: father Heinrich’s crossing; exact arrival day. Do not invent.
+
+## Dig 58 — Father Heinrich alive MN (CLEAR thin, 2026-11-05)
+- S369 (HIGH REFUTE): Hypothesis that Heinrich ~1831 died in Germany before Weser spring 1873 — **closed refute**.
+- S370 (HIGH): Adult Henry/Heinrich ~44 alive Leavenworth Twp MN 1875. Re-cite of S342.
+- S371 (HIGH): Still living 1880 age ~51 with son Henry 15. Re-cite of Dig 52 S333.
+- S372: Free solo-ship extract for father’s entry NEG/PARTIAL — does not invent a crossing.
+- S373: Archion Landesbergen Beerdigungen 1870–75 — no adult male Heinrich ~1831 burial found (NEG MED–HIGH); does not prove burial elsewhere.
+- OPEN: how/when father entered the US; imm year 1873 vs 1878 KEEP BOTH OPEN. Carolina LOCKED; Grote LOCKED; Landesbergen HIGH unchanged.
