@@ -1,6 +1,6 @@
 {
  "meta": {
-  "updated": "2026-11-03",
+  "updated": "2026-11-09",
   "owner": "Alex Petersen",
   "note": "Find a Grave (FAG) data = secondary, user-contributed unless backed by MNHS index or stone photo. Living people: oral/obit data only.",
   "openWatch": []
@@ -661,7 +661,7 @@
     "S276"
    ],
    "status": "RECORD-SOURCED (Danish church book; not family-confirmed)",
-   "notes": "Same man in marriage (S36) and death (S37): both give b. 25 Feb 1833. Vacc. 29 Jun 1839; confirmed after Jul 1847. Cause of death read 'Brystsyge/Lungebetændelse(?)' (LOW). Died when son Hans Peter was ~3½. Detail: shots/bjernede-family-2026-11-03/; browser-pass-bjernede-family.md Confirmed Haraldsted Kirke per S37 (entry not yet found). | NOTE: confirmation entry (S56) gives vacc. 29 Jun 1833, not 1839 — earlier '1839' may be a misreading; check S37. | 2026-11-03: mother's move chain — S106 Ringsted afgang 1833 no.5 → S59 Haraldsted tilgang 30 Mar 1833 (UNVERIFIED match; Hansdatter form). Mother patronymic conflict still OPEN.",
+   "notes": "Hans's foster grandparents (parents of foster mother Kirsten Johansdatter) are Margrethe Johansdatter (P46) and Johan Mathiesen (P47). They are not his foster parents. Blood kinship to Hans Pedersen is UNVERIFIED — this is the foster-family line. Foster parents remain P26 Jens Nielsen and P27 Kirsten Johansdatter. | Same man in marriage (S36) and death (S37): both give b. 25 Feb 1833. Vacc. 29 Jun 1839; confirmed after Jul 1847. Cause of death read 'Brystsyge/Lungebetændelse(?)' (LOW). Died when son Hans Peter was ~3½. Detail: shots/bjernede-family-2026-11-03/; browser-pass-bjernede-family.md Confirmed Haraldsted Kirke per S37 (entry not yet found). | NOTE: confirmation entry (S56) gives vacc. 29 Jun 1833, not 1839 — earlier '1839' may be a misreading; check S37. | 2026-11-03: mother's move chain — S106 Ringsted afgang 1833 no.5 → S59 Haraldsted tilgang 30 Mar 1833 (UNVERIFIED match; Hansdatter form). Mother patronymic conflict still OPEN.",
    "baptism": "1833-03-31 (Palm Sunday), Haraldsted Kirke; illegitimate (uægte) (S51,S52)",
    "confirmation": "1847-04-11 (1st Sunday after Easter), Haraldsted Kirke, boys no. 3, 'Hans Pedersen af Skee', b. 25 Feb 1833 Valsømagle; vacc. 29 Jun 1833 (Aschlund) (VERIFIED S56)",
    "residences": [
@@ -673,6 +673,10 @@
    "fosterParents": [
     "P26",
     "P27"
+   ],
+   "fosterGrandparents": [
+    "P46",
+    "P47"
    ]
   },
   {
@@ -815,20 +819,27 @@
     "S87",
     "S88"
    ],
-   "status": "RECORD-SOURCED (half-brother of Hans Peter)",
-   "notes": "Mother's age given 27. = 'Rasmus Peder' 8 in 1880 census. Orphaned 1883; foster home Fuldby. Possible emigrant 1889 → Sleepy Eye (candidate only). Detail: browser-pass-ane-second-family.md | Kin browser S84–S88 (2026-11-03): US death candidate Lyon 1939 + Union Cem Evan; still CANDIDATE for identity = Danish half-brother; 1949 Brown Co namesake REJECTED as same man (S86).",
+   "status": "RECORD-SOURCED Danish half-brother of Hans Peter. US death S84 is CANDIDATE only — not confirmed; Danish↔US link not sealed",
+   "notes": "US death record S84 is CANDIDATE only — not confirmed; Danish↔US link not sealed. Find a Grave memorial 229182652 names Rasmus Peter Rasmussen, d. 28 Oct 1939, Stanley Twp, Lyon Co MN, burial Union Cemetery, Evan, Brown Co MN. That memorial is not proof this Danish half-brother died there. | Mother's age given 27. = 'Rasmus Peder' 8 in 1880 census. Orphaned 1883; foster home Fuldby. Possible emigrant 1889 → Sleepy Eye (candidate only). Detail: browser-pass-ane-second-family.md | Kin browser S84–S88 (2026-11-03): US death candidate Lyon 1939 + Union Cem Evan; still CANDIDATE for identity = Danish half-brother; 1949 Brown Co namesake REJECTED as same man (S86).",
    "confirmation": "spring 1885 (Søndag efter Paaske), Bjernede (S47): b. 1 Mar 1871 Bjernedehuse, bapt. 4 Apr 1871; parents Hans Rasmussen & Ane Rasmussen 'begge døde'; foster-father Gaardejer Rasmus Rasmussen of Fuldby/Tuldby (place hand-read)",
    "emigrationCandidate": "CANDIDATE / UNVERIFIED: Copenhagen Police emigrant index 18 Jun 1889, contract 4232 Y (indirect), 'Rasmussen, Rasmus Peder', Landmand, last res. Fuldby, Sorø, age 18, to Sleepy Eye, USA (S49). Probable (age + Fuldby match foster home) but index gives no parents/birthplace; destination link NOT proven.",
    "inheritance": "Heir (umyndig) to estate of Bolsmand Hans Rasmussen: 1884 mortgage bond of 3,600 Kr on matr. 5a Bjernedehuse owed to 'umyndige Rasmus Peter og Ane Marie Rasmussen' (S50). VERIFIED.",
    "usCandidate": {
-    "status": "CANDIDATE — FAG+MNHS death date match; Danish↔US chain NOT sealed",
+    "status": "CANDIDATE only — not confirmed; Danish↔US link not sealed",
     "fag": "S84 memorial 229182652",
     "mnhsDeath": "S85 1939-MN-007751 Lyon Co",
     "conflictOther": "S86 1949-MN-001637 Brown Co — different man; do not merge",
     "cemeteryNote": "S87 Union Cemetery Evan — not Home Cemetery Sleepy Eye",
     "wives": "Annie Hanson; Lena Hansen (S88)",
-    "note": "1883 birth unsupported. Birthplace Alsted on FAG may = Alsted herred (Bjernede in Alsted herred) — unverified. Sleepy Eye emigrant candidate S49 still separate/unproven link."
-   }
+    "note": "CANDIDATE only — not confirmed; Danish↔US link not sealed. Died 28 Oct 1939, Stanley Twp, Lyon Co MN; burial Union Cemetery, Evan, Brown Co MN (Find a Grave 229182652). 1883 birth unsupported. Birthplace Alsted on FAG may = Alsted herred (Bjernede in Alsted herred) — unverified. Sleepy Eye emigrant candidate S49 still separate/unproven link. Do not treat this as a confirmed death of the Danish half-brother."
+   },
+   "death": {
+    "date": "CANDIDATE only — not confirmed",
+    "place": "Stanley Twp, Lyon Co MN, 28 Oct 1939 (S84 Find a Grave 229182652)",
+    "status": "CANDIDATE only — not confirmed; Danish↔US link not sealed",
+    "matchNote": "CANDIDATE only (S84). Find a Grave memorial 229182652 records a death on 28 Oct 1939 in Stanley Township, Lyon County, Minnesota. Not confirmed; Danish↔US link not sealed. The tree card does not show 1939 as a proven death year."
+   },
+   "burial": "CANDIDATE only (S84): Union Cemetery, Evan, Brown Co MN — not confirmed; Danish↔US link not sealed"
   },
   {
    "id": "P22",
@@ -1062,7 +1073,7 @@
    "spouses": [
     {
      "id": "P27",
-     "marriage": "30 Oct 1818, Særløse Kirke (Kirke Hvalsø & Særløse pastorat), after banns (entered 23 Maj 1818) (S310 HIGH); couple = P26×P27 HIGH by name + ages + later Skee household (S218, FT); no parents given"
+     "marriage": "30 Oct 1818, Særløse Kirke (Kirke Hvalsø & Særløse pastorat), after banns (entered 23 Maj 1818) (S310 HIGH); couple = P26×P27 HIGH by name + ages + later Skee household (S218, FT). The 1818 entry itself names no parents. Kirsten's parents are the later APPROVED HIGH link to P46 and P47: Hans's foster grandparents (parents of foster mother Kirsten Johansdatter), not Hans's foster parents."
     }
    ],
    "children": [],
@@ -1080,19 +1091,24 @@
     "S310"
    ],
    "status": "VERIFIED foster father (Pleiefader) of P18 (S56)",
-   "notes": "Son Hagen Jensen b. c. 1835 (S58). Foster child Hans Jensen b. c. 1844 (S58). Death not yet searched. Kinship to P25 or Peder Johansen: none found. | 2026-11-03 (S111): no adult Jens Nielsen in Haraldsted male deaths 1845–early 1851 (img 121–129); 1846 child Jens Nielsen 5¼ rejected. Search INCOMPLETE (img 130–157, 1851–70). | 2026-11-03 (S128): Haraldsted male deaths 1845–70 now read in full (img 121–157) — NEGATIVE for adult Jens Nielsen; 1869 Jens Nielsen 21 son of Niels Larsen rejected. OPEN: if S129 (1864 widow of Jens Nielsen in Skee) is P27, he died before 1864 and outside Haraldsted (or pre-1845, which would conflict with FT-1850 S58). See conflicts.md. | Kin Dig J (2026-11-03): son Haagen (Hagen) Jensen confirmed by baptism S218 (b. 30 Oct 1835, bapt 13 Dec 1835, Haraldsted; parents 'Gmd Jens Nielsen og Hustru Kirsten Johansd. af Skee'); couple at Skee by 1835. Title Gmd (gaardmand/farm owner) vs FT Huusmand/Hjulmager OPEN. Marriage Haraldsted 1814–36 NEG (S219; may be pre-1814/other parish). S220 forlover conflict (Nielsen vs Andersen) OPEN, not kinship. Kinship to P25/P28 still UNVERIFIED. | Dig J S310 (2026-11-03 gate): at marriage 30 Oct 1818 'Ungkarl' (bachelor), tjenende (serving) at Birkhammer/Birkehammer Torvgaard? i Lejre (place spelling UNVERIFIED MED), 26 Aar. Flinterup 25 Sept 1791 baptism (Pass 3) remains CANDIDATE only, NOT merged as birth. Kinship to P25/P34 still UNVERIFIED."
+   "notes": "His wife's parents are Margrethe Johansdatter (P46) and Johan Mathiesen (P47). They are Hans's foster grandparents (parents of foster mother Kirsten Johansdatter), not Hans's foster parents. Blood kinship to Hans Pedersen is UNVERIFIED — this is the foster-family line. Foster parents of Hans remain P26 and P27. | Son Hagen Jensen b. c. 1835 (S58). Foster child Hans Jensen b. c. 1844 (S58). Death not yet searched. Kinship to P25 or Peder Johansen: none found. | 2026-11-03 (S111): no adult Jens Nielsen in Haraldsted male deaths 1845–early 1851 (img 121–129); 1846 child Jens Nielsen 5¼ rejected. Search INCOMPLETE (img 130–157, 1851–70). | 2026-11-03 (S128): Haraldsted male deaths 1845–70 now read in full (img 121–157) — NEGATIVE for adult Jens Nielsen; 1869 Jens Nielsen 21 son of Niels Larsen rejected. OPEN: if S129 (1864 widow of Jens Nielsen in Skee) is P27, he died before 1864 and outside Haraldsted (or pre-1845, which would conflict with FT-1850 S58). See conflicts.md. | Kin Dig J (2026-11-03): son Haagen (Hagen) Jensen confirmed by baptism S218 (b. 30 Oct 1835, bapt 13 Dec 1835, Haraldsted; parents 'Gmd Jens Nielsen og Hustru Kirsten Johansd. af Skee'); couple at Skee by 1835. Title Gmd (gaardmand/farm owner) vs FT Huusmand/Hjulmager OPEN. Marriage Haraldsted 1814–36 NEG (S219; may be pre-1814/other parish). S220 forlover conflict (Nielsen vs Andersen) OPEN, not kinship. Kinship to P25/P28 still UNVERIFIED. | Dig J S310 (2026-11-03 gate): at marriage 30 Oct 1818 'Ungkarl' (bachelor), tjenende (serving) at Birkhammer/Birkehammer Torvgaard? i Lejre (place spelling UNVERIFIED MED), 26 Aar. Flinterup 25 Sept 1791 baptism (Pass 3) remains CANDIDATE only, NOT merged as birth. Kinship to P25/P34 still UNVERIFIED."
   },
   {
    "id": "P27",
    "name": "Kirsten Johansdatter",
    "birth": {
     "date": "c. 1795–97 (37 in 1834; 53 in 1850; 22 at marriage 30 Oct 1818, S310 — consistent); bapt 10 Jan 1796 Særløse (S322 HIT CANDIDATE — not locked)",
-    "place": "Særløse Sogn, Kjøbenhavns Amt — CANDIDATE HIGH (FT -løse/Kbh Amt + marriage in Særløse Kirke S310; not locked; baptism CANDIDATE S322 (10 Jan 1796; father Johan Mattisen/Mattiesen i Tolstrup; mother unnamed; not locked))"
+    "place": "Særløse Sogn, Kjøbenhavns Amt — CANDIDATE HIGH (FT -løse/Kbh Amt + marriage in Særløse Kirke S310; not locked; baptism CANDIDATE S322 (10 Jan 1796; father Johan Mattisen/Mattiesen i Tolstrup; mother unnamed on that baptism; not locked)). Parents APPROVED HIGH separately: mother Margrethe (Margrete) Johansdatter and father Johan Mathiesen (Mathiasen/Mattisen) of Tolstrup/Tølstrup, Særløse (S377+S379+S380; father also S322/S326). The 1796 baptism itself stays CANDIDATE."
    },
+   "parents": [
+    "P46",
+    "P47"
+   ],
+   "kinshipNote": "Blood kinship to Hans Pedersen is UNVERIFIED — this is the foster-family line.",
    "spouses": [
     {
      "id": "P26",
-     "marriage": "30 Oct 1818, Særløse Kirke (Kirke Hvalsø & Særløse pastorat), after banns (entered 23 Maj 1818) (S310 HIGH); couple = P26×P27 HIGH by name + ages + later Skee household (S218, FT); no parents given"
+     "marriage": "30 Oct 1818, Særløse Kirke (Kirke Hvalsø & Særløse pastorat), after banns (entered 23 Maj 1818) (S310 HIGH); couple = P26×P27 HIGH by name + ages + later Skee household (S218, FT). The 1818 entry itself names no parents. Kirsten's parents are the later APPROVED HIGH link to P46 and P47: Hans's foster grandparents (parents of foster mother Kirsten Johansdatter), not Hans's foster parents."
     }
    ],
    "children": [],
@@ -1108,10 +1124,16 @@
     "S220",
     "S310",
     "S322",
-    "S326"
+    "S326",
+    "S377",
+    "S378",
+    "S379",
+    "S380",
+    "S400",
+    "S401"
    ],
-   "status": "VERIFIED foster mother of P18 (in the household 1834–45)",
-   "notes": "She shares the patronymic Johansdatter with alleged father Peder Johansen. A sibling link is UNVERIFIED speculation and is not asserted. | 2026-11-03: Haraldsted women deaths 1845–70 (bsid 204005) NOT yet searched (S111 incomplete). | 2026-11-03: CANDIDATE death (S129, MED): Haraldsted burial 1864 no. 10, Kirsten Johansdatter, widow of Jens Nielsen in Skee, age 68 (≈b.1795/96; fits 1796–97 within a year). Identity OPEN — not dead-proven. S130 (1864 no. 3 Kirsten Johansen, child) ruled out. | Kin Dig J (2026-11-03): mother of Haagen Jensen per baptism S218 (b. 30 Oct 1835, bapt 13 Dec 1835; 'Hustru Kirsten Johansd. af Skee'). Married to P26 by 1835; marriage Haraldsted 1814–36 NEG (S219). Johans* faddere are context only. Kinship to P25/P28 still UNVERIFIED. | Dig J S310 (2026-11-03 gate): at marriage 30 Oct 1818, 22 Aar, tjenende (serving) hos Gmd. (gårdmand = farmer) Rasmus Jørgensen i Tølstrup; forlovere (best men) Gmd. Niels Hansen + Gmd. Rasmus Jørgensen, both Tølstrup. No parents given. Kinship to P25/P34 still UNVERIFIED. | Dig J S322 (2026-11-03 gate): bapt CANDIDATE 10 Jan 1796 Særløse EMB bsid 155316 img 54 — father Johan Mattisen/Mattiesen i Tolstrup; mother unnamed; same-person HIGH vs P27 (name+age+Tolstrup/Tølstrup+parish); NOT locked as proven birth. Kinship to P25/P34 still UNVERIFIED. Sibling skim + mother name OPEN (Kin claim HELD). | Dig J S326 (2026-11-03 gate, Pass 4o): Særløse EMB bsid 155316 — (a) img 56: bapt 28 Jul 1799 (7th Sunday after Trinity) son **Haagen** of Johan Mathiesen i Tølstrup, mother unnamed; godmother Pigen (maiden) Kirsten Iversdatter (Ivars? reading OPEN) — CANDIDATE brother of P27 (same father-on-record as S322); no person card. (b) img 53: Onsdag (Wednesday) 11 Feb 1795 Johan Mathiesen i Tølstrup buried sin Hustru (his wife), 32 aar (years), wife unnamed — HIGH. Inference CANDIDATE MED (not locked): P27 (bapt Jan 1796) likely from a 2nd marriage ~1795; marriage not searched. Wife alive 26 Mar 1797 (img 55) still unnamed. Mother of P27 still OPEN (best lead: S322 godmother 'hans Kones Søster' (his wife's sister), Hans Jensens Hustru i ?rup). Birth NOT locked. Kinship to P25/P34 still UNVERIFIED."
+   "status": "VERIFIED foster mother of P18 (in the household 1834–45). Parents APPROVED HIGH: Margrethe Johansdatter and Johan Mathiesen. They are Hans's foster grandparents (parents of foster mother Kirsten Johansdatter), not his foster parents.",
+   "notes": "Blood kinship to Hans Pedersen is UNVERIFIED — this is the foster-family line. Parents APPROVED HIGH: mother Margrethe (Margrete/Margretha) Johansdatter (P46) and father Johan Mathiesen (Mathiasen/Mattisen) of Tolstrup/Tølstrup, Særløse (S377+S379+S380; father also S322/S326). They are Hans's foster grandparents (parents of foster mother Kirsten Johansdatter). They are not Hans's foster parents. Foster parents of Hans remain Jens Nielsen (P26) and Kirsten (P27). | 25 Mar 1795 Jystrup Præstegaard betrothal (S379 APPROVED HIT HIGH): Enkemand Johan Mathiasen/Mathiesen, Huusmand i Tolstrup × Pigen Margrethe/Margretha Johans Datter af Taastrup. Copul. margin 16 Søndag efter Trinit. = 20 Sep 1795 by calendar reckoning; the page does not write 20 Sep. Forlover KEEP BOTH OPEN: Johan Haagensen, Gaardmand i Taastrup (S401 corroborates this reading; still not a silent winner) and Johan Jørgensen (MED, possible bleed). | Burial 21 Dec 1800 (4de Søndag i Advent), Særløse: Johan Mathiesen i Tølstrup, 44 Aar (S380 APPROVED HIT HIGH). | FT-1801 Tølstrup By, Særløse, Pag.24, 12te Familie (S377 APPROVED HIT HIGH household): Margrethe Johans Datter, 35, enke efter 1ste Ægteskab, har et Jordløs huus; Jens Johansen, 9, Huusets afdøde Mands Søn; Kirsten Johans Datter, 6, and Haagen Johansen, 2, hendes Børn. Johan is not named on that sheet. Jens and Haagen are not linked people. | 18 Oct 1801 Særløse betrothal (S400 APPROVED HIT HIGH): enke Margrete Johans Datter i Tolstrup × ungkarl Rasmus Jørgensen fra Rø…rup (Rørup MED; other readings OPEN). Rasmus Jørgensen is not a linked person. Witness Gaardmand Niels Hansen i Tolstrup; the second witness is Mads with the surname OPEN. | S401 is a CANDIDATE context note only: Dom. 18 p. Trinit. 1769 Jystrup baptism of Haagen, son of Gaardmand Johan Haagensen af Taastrup; mother introduced as Ingeborg, patronym not on the sheet. Not linked people. Does not lock Margrethe's father. | S378 APPROVED NEG: this couple is not in the Særløse Copulerede/Trolovede 1794–96 section. | The 10 Jan 1796 Særløse baptism (S322) stays CANDIDATE for Kirsten herself, not locked. Lines below that still say the mother was open were written before S379–S380. | She shares the patronymic Johansdatter with alleged father Peder Johansen. A sibling link is UNVERIFIED speculation and is not asserted. | 2026-11-03: Haraldsted women deaths 1845–70 (bsid 204005) NOT yet searched (S111 incomplete). | 2026-11-03: CANDIDATE death (S129, MED): Haraldsted burial 1864 no. 10, Kirsten Johansdatter, widow of Jens Nielsen in Skee, age 68 (≈b.1795/96; fits 1796–97 within a year). Identity OPEN — not dead-proven. S130 (1864 no. 3 Kirsten Johansen, child) ruled out. | Kin Dig J (2026-11-03): mother of Haagen Jensen per baptism S218 (b. 30 Oct 1835, bapt 13 Dec 1835; 'Hustru Kirsten Johansd. af Skee'). Married to P26 by 1835; marriage Haraldsted 1814–36 NEG (S219). Johans* faddere are context only. Kinship to P25/P28 still UNVERIFIED. | Dig J S310 (2026-11-03 gate): at marriage 30 Oct 1818, 22 Aar, tjenende (serving) hos Gmd. (gårdmand = farmer) Rasmus Jørgensen i Tølstrup; forlovere (best men) Gmd. Niels Hansen + Gmd. Rasmus Jørgensen, both Tølstrup. No parents given. Kinship to P25/P34 still UNVERIFIED. | Dig J S322 (2026-11-03 gate): bapt CANDIDATE 10 Jan 1796 Særløse EMB bsid 155316 img 54 — father Johan Mattisen/Mattiesen i Tolstrup; mother unnamed; same-person HIGH vs P27 (name+age+Tolstrup/Tølstrup+parish); NOT locked as proven birth. Kinship to P25/P34 still UNVERIFIED. Sibling skim + mother name OPEN (Kin claim HELD). | Dig J S326 (2026-11-03 gate, Pass 4o): Særløse EMB bsid 155316 — (a) img 56: bapt 28 Jul 1799 (7th Sunday after Trinity) son **Haagen** of Johan Mathiesen i Tølstrup, mother unnamed; godmother Pigen (maiden) Kirsten Iversdatter (Ivars? reading OPEN) — CANDIDATE brother of P27 (same father-on-record as S322); no person card. (b) img 53: Onsdag (Wednesday) 11 Feb 1795 Johan Mathiesen i Tølstrup buried sin Hustru (his wife), 32 aar (years), wife unnamed — HIGH. Inference CANDIDATE MED (not locked): P27 (bapt Jan 1796) likely from a 2nd marriage ~1795; marriage not searched. Wife alive 26 Mar 1797 (img 55) still unnamed. Mother of P27 still OPEN (best lead: S322 godmother 'hans Kones Søster' (his wife's sister), Hans Jensens Hustru i ?rup). Birth NOT locked. Kinship to P25/P34 still UNVERIFIED."
   },
   {
    "id": "P28",
@@ -1578,6 +1600,86 @@
    ],
    "status": "US-born New Ulm HIGH (FAG S330 + census S331) — European origin is Dohrmann line, not Ida",
    "notes": "MNHS death cert 1954-MN-001608 (index only; paid image PARKED). Her parents' origin = separate dig, PARKED."
+  },
+  {
+   "id": "P46",
+   "name": "Margrethe Johansdatter",
+   "altNames": [
+    "Margrete Johansdatter",
+    "Margretha Johans Datter",
+    "Margrethe Johans Datter"
+   ],
+   "birth": {
+    "date": "c. 1766 (35 in FT-1801, S377) — the census does not write a birth year",
+    "place": "of Taastrup at the 25 Mar 1795 Jystrup betrothal (S379). FT-1801 household in Tølstrup By, Særløse (S377). Birth parish is not stated on these records."
+   },
+   "occupation": "FT-1801: Kone, enke efter 1ste Ægteskab, har et Jordløs huus, Tølstrup (S377). 18 Oct 1801: enke i Tolstrup (S400).",
+   "parents": [],
+   "spouses": [
+    {
+     "id": "P47",
+     "marriage": "Betrothed 25 Mar 1795 at Jystrup Præstegaard (S379 APPROVED HIT HIGH): Enkemand Johan Mathiasen/Mathiesen, Huusmand i Tolstrup × Pigen Margrethe/Margretha Johans Datter af Taastrup. Copul. margin 16 Søndag efter Trinit. = 20 Sep 1795 by calendar reckoning; the page does not write 20 Sep. Forlover KEEP BOTH OPEN: Johan Haagensen, Gaardmand i Taastrup, and Johan Jørgensen. S401 corroborates the Haagensen reading and does not pick a winner."
+    },
+    {
+     "name": "Rasmus Jørgensen (not a linked person)",
+     "marriage": "Betrothed 18 Oct 1801, Særløse (S400 APPROVED HIT HIGH): enke Margrete Johans Datter i Tolstrup × ungkarl Rasmus Jørgensen fra Rø…rup (Rørup is a medium reading; other readings stay open). Not added as a person."
+    }
+   ],
+   "children": [
+    "P27"
+   ],
+   "sources": [
+    "S377",
+    "S378",
+    "S379",
+    "S380",
+    "S400",
+    "S401"
+   ],
+   "kinshipNote": "Blood kinship to Hans Pedersen is UNVERIFIED — this is the foster-family line.",
+   "status": "APPROVED HIGH mother of Kirsten Johansdatter (P27). Hans's foster grandmother (parent of foster mother Kirsten Johansdatter). Not a foster parent of Hans Pedersen.",
+   "notes": "Blood kinship to Hans Pedersen is UNVERIFIED — this is the foster-family line. She is Hans's foster grandmother (parent of foster mother Kirsten Johansdatter), not his foster parent. Foster parents of Hans remain Jens Nielsen (P26) and Kirsten Johansdatter (P27). | Mother of P27 APPROVED HIGH (S377+S379+S380). | FT-1801 Landdistrikter, København, Særløse, Tølstrup By, Pag.24, 12te Familie (S377 APPROVED HIT HIGH household): Margrethe Johans Datter, 35, Kone, enke efter 1ste Ægteskab, har et Jordløs huus. Jens Johansen, 9, is Huusets afdøde Mands Søn and is kept separate. Kirsten Johans Datter, 6, and Haagen Johansen, 2, are hendes Børn. Johan is not named on that sheet. Jens and Haagen are not linked people. | 25 Mar 1795 betrothal at Jystrup Præstegaard (S379). Forlover KEEP BOTH OPEN. | Husband Johan Mathiesen buried 21 Dec 1800 at Særløse, age 44 (S380). | 18 Oct 1801 remarriage betrothal as enke to ungkarl Rasmus Jørgensen (S400). Place after his name: Rø…rup (Rørup MED; other readings OPEN). Witness Gaardmand Niels Hansen i Tolstrup. Second witness Mads, surname OPEN. Rasmus is not a linked person, and he is not identified with the Rasmus Jørgensen named at Kirsten's 1818 marriage. | S401 CANDIDATE context only: 1769 Jystrup baptism of Haagen, son of Gaardmand Johan Haagensen af Taastrup × mother introduced as Ingeborg (patronym not on the sheet). Not linked people. Does not lock Margrethe's father. | S378 APPROVED NEG: no Johan Mathiesen × Margrethe Johansdatter in the Særløse Copulerede/Trolovede 1794–96 section."
+  },
+  {
+   "id": "P47",
+   "name": "Johan Mathiesen",
+   "altNames": [
+    "Johan Mathiasen",
+    "Johan Mattisen",
+    "Johan Mattiesen"
+   ],
+   "birth": {
+    "date": "c. 1756 (age 44 at the 21 Dec 1800 burial, S380) — a birth date is not written",
+    "place": "not stated. Huusmand in Tolstrup/Tølstrup, Særløse parish (S379, S380)."
+   },
+   "death": {
+    "date": "1800-12-21",
+    "place": "Buried at Særløse. Johan Mathiesen i Tølstrup, 44 Aar (S380). The entry is the burial on the 4th Sunday of Advent (4de Søndag i Advent). A separate death day is not written.",
+    "status": "APPROVED HIT HIGH burial date, age, and place (S380). Name glyphs MED–HIGH."
+   },
+   "burial": "21 Dec 1800 (4de Søndag i Advent), Særløse, age 44, Johan Mathiesen i Tølstrup (S380 APPROVED HIT HIGH)",
+   "occupation": "Enkemand and Huusmand i Tolstrup at the 25 Mar 1795 betrothal (S379). Of Tølstrup at the 21 Dec 1800 burial (S380).",
+   "parents": [],
+   "spouses": [
+    {
+     "id": "P46",
+     "marriage": "Betrothed 25 Mar 1795 at Jystrup Præstegaard (S379 APPROVED HIT HIGH). He was a widower (enkemand) and a huusmand in Tolstrup. Copul. margin 16 Søndag efter Trinit. = 20 Sep 1795 by calendar reckoning; the page does not write 20 Sep. Forlover KEEP BOTH OPEN."
+    }
+   ],
+   "children": [
+    "P27"
+   ],
+   "sources": [
+    "S322",
+    "S326",
+    "S377",
+    "S378",
+    "S379",
+    "S380"
+   ],
+   "kinshipNote": "Blood kinship to Hans Pedersen is UNVERIFIED — this is the foster-family line.",
+   "status": "APPROVED HIGH father of Kirsten Johansdatter (P27), of Tolstrup/Tølstrup, Særløse (S379+S380+S322/S326). Hans's foster grandfather (parent of foster mother Kirsten Johansdatter). Not a foster parent of Hans Pedersen.",
+   "notes": "Blood kinship to Hans Pedersen is UNVERIFIED — this is the foster-family line. He is Hans's foster grandfather (parent of foster mother Kirsten Johansdatter), not his foster parent. Foster parents of Hans remain Jens Nielsen (P26) and Kirsten Johansdatter (P27). | Father of P27 APPROVED HIGH (S379+S380+S322/S326), with the mother approved from S377+S379+S380. | 25 Mar 1795 Jystrup Præstegaard: Enkemanden Johan Mathiasen/Mathiesen, Huusmand i Tolstrup, betrothed to Pigen Margrethe/Margretha Johans Datter af Taastrup (S379). Forlover KEEP BOTH OPEN. | Buried 21 Dec 1800 (4de Søndag i Advent) at Særløse, Johan Mathiesen i Tølstrup, 44 Aar, immediately above the header Døde 1801 (S380 APPROVED HIT HIGH for date, age, place, and section; name glyphs MED–HIGH). | He is not named on the FT-1801 widow household (S377). That sheet is his widow Margrethe, enke efter 1ste Ægteskab, with Kirsten and Haagen as her children and Jens as the dead husband's son. | S322 and S326 name him as father at the 10 Jan 1796 baptism of Kirsten and the 28 Jul 1799 baptism of Haagen, both i Tolstrup/Tølstrup, mother unnamed on those pages. Kirsten's baptism stays CANDIDATE for being P27. Haagen is not a linked person. S326 also records burial of his unnamed wife, age 32, on 11 Feb 1795. | S378 APPROVED NEG: this couple is not in the Særløse Copulerede/Trolovede 1794–96 section. | S401 people (Johan Haagensen, Ingeborg, and their son Haagen) are not linked to him."
   }
  ]
 }

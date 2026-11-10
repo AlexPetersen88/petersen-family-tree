@@ -166,6 +166,17 @@
 - Immigration year stays CONFLICT OPEN. Keep both 1873 and 1878 (S345, S360). A free 1878 search was empty and does not settle the year.
 - Father Heinrich’s crossing and the exact arrival day stay unknown. They are not invented. Dig 21, Day B, and Dig J stay out. No new map pins.
 
+## Dig J foster grandparents (2026-11-09) — APPROVED HIGH parents; kinship and forlover still open
+- P27 Kirsten Johansdatter's parents are APPROVED HIGH: mother Margrethe (Margrete/Margretha) Johansdatter (P46) and father Johan Mathiesen (Mathiasen/Mattisen) (P47), of Tolstrup/Tølstrup, Særløse (S377+S379+S380; father also S322/S326).
+- They are Hans Pedersen's foster grandparents (parents of foster mother Kirsten Johansdatter). They are not his foster parents. Foster parents remain P26 and P27.
+- Blood kinship to Hans Pedersen is UNVERIFIED — this is the foster-family line. Kinship of P26/P27 to P25/P34 stays UNVERIFIED.
+- 1795 forlover KEEP BOTH OPEN: Johan Haagensen, Gaardmand i Taastrup, and Johan Jørgensen (S379). S401 corroborates the Haagensen household and does not pick a winner.
+- Kirsten's 10 Jan 1796 baptism (S322) stays CANDIDATE, not locked.
+- FT-1801 does not name Johan. Jens Johansen and Haagen Johansen on that sheet are not person cards. The 1799 Haagen baptism (S326) stays a candidate brother note only.
+- S400 second husband Rasmus Jørgensen is not a person card. His place is Rø…rup (Rørup MED; other readings OPEN). He is not identified with the Rasmus Jørgensen at Kirsten's 1818 marriage. Second witness Mads, surname OPEN.
+- S401 Johan Haagensen, Ingeborg, and their son Haagen are not linked people.
+- P21 US death S84 (Find a Grave 229182652; d. 28 Oct 1939 Stanley Twp, Lyon Co MN; Union Cemetery, Evan) stays CANDIDATE only — not confirmed; Danish↔US link not sealed.
+
 ## Dig 58 (2026-11-05) — Father Heinrich alive in Minnesota — Genealogist CLEAR, thin
 - Father Heinrich Dohrmann (~1831), husband of Carolina geb. Grote, was alive in Minnesota by 1875 and still living in 1880 with son Henry (S370, S371). A death in Germany before the *Weser* 1873 sailing is REFUTED (S369, HIGH).
 - How and when he crossed, any separate ship name, the exact arrival day, and a German death are not invented (S372). Landesbergen burials 1870–75 show no adult male Heinrich ~1831 (S373, NEG MED–HIGH) and do not prove a burial elsewhere.

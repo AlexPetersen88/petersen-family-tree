@@ -29,7 +29,11 @@ So here is a baby with a big question mark about his father. What would happen t
 
 Before his first birthday, Hans was living somewhere new.
 
-Three miles from where he was born, in a village called Skee, stood the cottage of Jens Nielsen and his wife, Kirsten. Hans became their foster child. That means they raised him, even though they were not his birth parents. Long before Hans was born — on October 30, 1818 — Jens and Kirsten had married in Særløse church. He was twenty-six and working in service near Lejre; she was twenty-two and working for a farmer at Tølstrup. The books do not say they were related to Hans’s mother or to the man named as his father. (So mother and son were both foster children! But they grew up in different homes. Ane Marie was raised by Erik and Maren in Valsømagle. Hans was raised by Jens and Kirsten in Skee.) Researchers also found a church record that might be Kirsten's own baptism, in Særløse in January 1796. It names her father as Johan Mattisen of Tolstrup. That is a maybe too, not proven yet.
+Three miles from where he was born, in a village called Skee, stood the cottage of Jens Nielsen and his wife, Kirsten. Hans became their foster child. That means they raised him, even though they were not his birth parents. Long before Hans was born — on October 30, 1818 — Jens and Kirsten had married in Særløse church. He was twenty-six and working in service near Lejre; she was twenty-two and working for a farmer at Tølstrup. The books do not say they were related to Hans’s mother or to the man named as his father. (So mother and son were both foster children! But they grew up in different homes. Ane Marie was raised by Erik and Maren in Valsømagle. Hans was raised by Jens and Kirsten in Skee.)
+
+Researchers now know Kirsten's own parents. Her mother was Margrethe Johansdatter. Her father was Johan Mathiesen, a cottager in the village of Tolstrup (the old books also spell it Tølstrup). They are Hans's foster grandparents (parents of foster mother Kirsten Johansdatter). That is a careful label. Jens and Kirsten are the foster parents, the people who raised Hans. Margrethe and Johan are the parents of Kirsten. They did not raise Hans. Nobody has shown that they were related to Hans by blood. Blood kinship to Hans Pedersen is UNVERIFIED — this is the foster-family line.
+
+In 1795, at the priest's house in Jystrup, widower Johan promised to marry Margrethe, a young woman from Taastrup. Who stood beside her as her father's witness is still two possible readings, and both stay open. Johan was buried at Særløse in December 1800, when he was 44. The next year the census found widow Margrethe in a little house in Tølstrup with no land, and Kirsten, then about six, was in that house as her child. That same autumn Margrethe, still a widow, promised to marry a bachelor named Rasmus Jørgensen. A church line that might be Kirsten's own baptism, in Særløse in January 1796, is still only a maybe.
 
 Jens was a wheelwright. A wheelwright builds and fixes wooden wheels for wagons and carts. In a world with no cars, wagons were everything, and so was the person who kept their wheels turning.
 
@@ -82,6 +86,8 @@ On June 29, 1883, Hans Rasmussen's wife died. That was almost surely Hans Peter'
 In one summer, the whole household was gone.
 
 Hans Peter was nineteen. His young half-brother and half-sister went to foster homes, the same way his father had grown up long before.
+
+Years later, a Find a Grave memorial names a Rasmus Peter Rasmussen who died on 28 October 1939 in Stanley Township, Lyon County, Minnesota, and who was buried at Union Cemetery in the town of Evan. Maybe that is Hans Peter's half-brother. Maybe it is another man with the same name. The researchers have not sealed the link, so it stays a maybe: not confirmed.
 
 The next spring, Hans Peter did something that would change everything for our family.
 
