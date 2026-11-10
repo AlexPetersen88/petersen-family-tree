@@ -61,6 +61,20 @@ for(let n=0;n<8;n++){
 }
 const shift=Math.min(...Object.values(gen));if(shift)for(const id in gen)gen[id]-=shift;
 everyone().forEach(p=>{if(gen[p.id]===undefined)gen[p.id]=0});
+// Parents linked only on a side line (foster grandparents) were still on the
+// child's row. Lift them one generation above that child, then re-zero.
+for(let n=0;n<8;n++){
+  let changed=false;
+  everyone().forEach(p=>{
+    if(gen[p.id]===undefined)return;
+    inTreeParents(p.id).forEach(pid=>{
+      if(gen[pid]===undefined||gen[pid]>gen[p.id]-1){remember(pid,gen[p.id]-1);changed=true}
+    });
+  });
+  if(!changed)break;
+}
+const shiftAgain=Math.min(...Object.values(gen));
+if(shiftAgain)for(const id in gen)gen[id]-=shiftAgain;
 function birthKey(id){
   const raw=P[id].birth;
   const s=typeof raw==='string'?raw:(raw&&raw.date)||'';
@@ -973,15 +987,31 @@ function show(id,opts={}){
   if(p.danishParents)narrative.push(`<p class="relnote">${esc(p.danishParents)}</p>`);
   if(p.death&&p.death.matchNote)narrative.push(`<p class="relnote">${esc(p.death.matchNote)}</p>`);
   if(p.emigrationCandidate)narrative.push(`<p class="relnote">${esc(p.emigrationCandidate)}</p>`);
+  if(p.kinshipNote)narrative.push(`<p class="relnote">${esc(p.kinshipNote)}</p>`);
+  if(p.usCandidate){
+    const u=p.usCandidate;
+    const bits=[u.status,u.fag,u.mnhsDeath,u.conflictOther,u.cemeteryNote,u.wives,u.note].filter(Boolean);
+    narrative.push(`<p class="relnote">${esc(bits.join(' '))}</p>`);
+  }
   push(facts,'Confirmation',esc(p.confirmation));
   const streetPin=p.id==='P34'?highMapLinks(HIGH_PINS.find(pin=>pin.id==='sankt-hans-gade')):'';
   push(facts,'Residence',esc(p.residence)+(p.id==='P34'&&p.residence?streetPin:''));
   push(facts,'Occupation',esc(p.occupation)+(p.id==='P34'&&!p.residence?streetPin:''));
-  push(rels,'Parents',(p.parents||[]).map(ref=>`<div class="rel">${link(ref)}${P[ref]&&!isFamily(P[ref])?' <span class="relnote">RECORD-SOURCED, not confirmed by family.</span>':''}</div>`).join(''));
+  const HANS_FOSTER_GP="Hans's foster grandparents (parents of foster mother Kirsten Johansdatter).";
+  const fosterGpIds=new Set(PEOPLE.people.flatMap(q=>q.fosterGrandparents||[]));
+  push(rels,'Parents',(p.parents||[]).map(ref=>{
+    const note=fosterGpIds.has(ref)
+      ?` <span class="relnote">${esc(HANS_FOSTER_GP)}</span>`
+      :(P[ref]&&!isFamily(P[ref])?' <span class="relnote">RECORD-SOURCED, not confirmed by family.</span>':'');
+    return `<div class="rel">${link(ref)}${note}</div>`;
+  }).join(''));
   if(p.sameAs&&P[p.sameAs])push(rels,'Same person',`${link(p.sameAs)} <span class="relnote">Census alias. Parent link stays on the named father.</span>`);
   push(rels,'Foster parents',(p.fosterParents||[]).map(ref=>`<div class="rel">${link(ref)} <span class="relnote">Foster, not a blood parent.</span></div>`).join(''));
   const fosterKids=PEOPLE.people.filter(q=>(q.fosterParents||[]).includes(id)).map(q=>q.id);
   push(rels,'Foster children',fosterKids.map(ref=>`<div class="rel">${link(ref)} <span class="relnote">Foster child, not blood kin.</span></div>`).join(''));
+  push(rels,'Foster grandparents',(p.fosterGrandparents||[]).map(ref=>`<div class="rel">${link(ref)} <span class="relnote">${esc(HANS_FOSTER_GP)}</span></div>`).join(''));
+  const hansAsFosterGrandchild=PEOPLE.people.filter(q=>(q.fosterGrandparents||[]).includes(id)).map(q=>q.id);
+  push(rels,'Relation to Hans Pedersen',hansAsFosterGrandchild.map(ref=>`<div class="rel">${link(ref)} <span class="relnote">${esc(HANS_FOSTER_GP)}</span></div>`).join(''));
   push(rels,'Parent status',esc(p.parentsStatus));
   push(rels,'Danish parents',p.danishParents?`<span class="relnote">${esc(p.danishParents)}</span>`:'');
   push(rels,'Siblings',(p.siblings||[]).map(link).join('<br>'));

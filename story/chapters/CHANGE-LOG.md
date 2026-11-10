@@ -2,6 +2,13 @@
 
 This log tracks Genealogist-cleared additions and corrections folded into the story chapters, newest first. Each entry gives a short reason and its source. S# cites refer to `sources/SOURCE-KEY.md` and the Genealogist tree.
 
+## 2026-11-09 — Dig J foster grandparents (S377–S380, S400) and S84 CANDIDATE
+
+- Ch.1, Abridged, and Kids: Kirsten Johansdatter's parents are Margrethe (Margrete/Margretha) Johansdatter and Johan Mathiesen (Mathiasen/Mattisen) of Tolstrup/Tølstrup, Særløse. APPROVED HIGH (S377+S379+S380; father also S322/S326). They are Hans's foster grandparents (parents of foster mother Kirsten Johansdatter). They are not his foster parents. Foster parents stay Jens Nielsen and Kirsten Johansdatter. Blood kinship to Hans Pedersen is UNVERIFIED — this is the foster-family line.
+- Shown from the records: 25 Mar 1795 betrothal at Jystrup Præstegaard (S379); copulation margin = 20 Sep 1795 by calendar reckoning, not written on the page; *forlover* KEEP BOTH OPEN. Johan buried 21 Dec 1800 at Særløse, age 44 (S380). FT-1801 widow household in a landless house at Tølstrup (S377). Margrete betrothed 18 Oct 1801 as a widow to Rasmus Jørgensen (S400). S401 1769 Jystrup baptism of Haagen, son of Johan Haagensen and Ingeborg, is a CANDIDATE context note only. Those people are not linked. Kirsten's 10 Jan 1796 baptism stays CANDIDATE (S322).
+- Ch.2, Abridged, and Kids: P21 US death S84 (Find a Grave 229182652; d. 28 Oct 1939 Stanley Twp, Lyon Co MN; Union Cemetery, Evan) is CANDIDATE only — not confirmed; Danish↔US link not sealed.
+- Why: Genealogist-approved Dig J packs for S377–S380, S400, and S401, plus the standing S84 candidate. (S377, S378, S379, S380, S400, S401, S84)
+
 ## 2026-11-05 — Dig 58 father Heinrich alive MN (thin CLEAR)
 
 - Folded into Ch.4 + ABRIDGED: father Heinrich (~1831) **alive MN by 1875 and still with Henry in 1880** (S370/S371) — **not** dead in Germany before Weser 1873 mother+kids sailing (S369 REFUTE). Crossing how/when still UNKNOWN (S372). Imm 1873/1878 KEEP BOTH OPEN. Carolina / Grote / Landesbergen unchanged. KIDS unchanged. Dig J/51 HELD.
