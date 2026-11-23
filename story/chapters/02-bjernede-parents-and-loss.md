@@ -70,7 +70,7 @@ Matr. 5a still exists under the same number in the modern land register for Bjer
 The orphaned half-siblings went to foster homes:
 
 - At his spring 1885 confirmation, Rasmus Peter's foster father was farmer Rasmus Rasmussen, of a place read as Fuldby (S47).
-- A Find a Grave memorial, number 229182652, names a Rasmus Peter Rasmussen who died on 28 October 1939 in Stanley Township, Lyon County, Minnesota, and was buried at Union Cemetery, Evan (S84). **CANDIDATE only:** not confirmed; the Danish↔US link is not sealed (S84). The memorial is not proof that the boy born at Bjernedehuse in 1871 is that man.
+- A Find a Grave memorial, number 229182652, names a Rasmus Peter Rasmussen who died on 28 October 1939 in Stanley Township, Lyon County, Minnesota, and was buried at Union Cemetery, Evan (S84). **CANDIDATE only:** not confirmed; the Danish↔US link is not sealed (S84). A 1939 Sleepy Eye Herald-Dispatch obituary clip is secondary and high, but still only a candidate that the clip and the Find a Grave memorial are the same man, and still not a seal to the Danish half-brother (S384). Burial wording in the clip ("Prairieville cemetery") versus Union Cemetery, Evan, is left open on both sides (KEEP BOTH OPEN). A 1949 Brown County namesake remains a different man (S86).
 - At her autumn 1888 confirmation, Ane Marie's foster father was smallholder Anders Larsen of Bjernedehuse (S48).
 
 Hans Peter was 20 by the time of the sale and does not appear on the deed (S50). By then he had already left Denmark (Chapter 3, S83).

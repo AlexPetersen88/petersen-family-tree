@@ -998,7 +998,24 @@ function show(id,opts={}){
   push(facts,'Residence',esc(p.residence)+(p.id==='P34'&&p.residence?streetPin:''));
   push(facts,'Occupation',esc(p.occupation)+(p.id==='P34'&&!p.residence?streetPin:''));
   const HANS_FOSTER_GP="Hans's foster grandparents (parents of foster mother Kirsten Johansdatter).";
-  const fosterGpIds=new Set(PEOPLE.people.flatMap(q=>q.fosterGrandparents||[]));
+  const HANS_FOSTER_GG="Hans's foster great-grandfather (parent of foster grandmother Margrethe).";
+  function fosterGrandparentsOf(personId){
+    const out=[];
+    const add=pid=>{if(P[pid]&&!out.includes(pid))out.push(pid)};
+    ((P[personId]&&P[personId].fosterParents)||[]).forEach(fp=>{
+      ((P[fp]&&P[fp].parents)||[]).forEach(add);
+    });
+    ((P[personId]&&P[personId].fosterGrandparents)||[]).forEach(add);
+    return out;
+  }
+  function fosterGreatOf(personId){
+    const out=[];
+    fosterGrandparentsOf(personId).forEach(gp=>{
+      (P[gp].parents||[]).forEach(pid=>{if(P[pid]&&!out.includes(pid))out.push(pid)});
+    });
+    return out;
+  }
+  const fosterGpIds=new Set(PEOPLE.people.flatMap(q=>fosterGrandparentsOf(q.id)));
   push(rels,'Parents',(p.parents||[]).map(ref=>{
     const note=fosterGpIds.has(ref)
       ?` <span class="relnote">${esc(HANS_FOSTER_GP)}</span>`
@@ -1009,9 +1026,12 @@ function show(id,opts={}){
   push(rels,'Foster parents',(p.fosterParents||[]).map(ref=>`<div class="rel">${link(ref)} <span class="relnote">Foster, not a blood parent.</span></div>`).join(''));
   const fosterKids=PEOPLE.people.filter(q=>(q.fosterParents||[]).includes(id)).map(q=>q.id);
   push(rels,'Foster children',fosterKids.map(ref=>`<div class="rel">${link(ref)} <span class="relnote">Foster child, not blood kin.</span></div>`).join(''));
-  push(rels,'Foster grandparents',(p.fosterGrandparents||[]).map(ref=>`<div class="rel">${link(ref)} <span class="relnote">${esc(HANS_FOSTER_GP)}</span></div>`).join(''));
-  const hansAsFosterGrandchild=PEOPLE.people.filter(q=>(q.fosterGrandparents||[]).includes(id)).map(q=>q.id);
-  push(rels,'Relation to Hans Pedersen',hansAsFosterGrandchild.map(ref=>`<div class="rel">${link(ref)} <span class="relnote">${esc(HANS_FOSTER_GP)}</span></div>`).join(''));
+  push(rels,'Foster grandparents',fosterGrandparentsOf(id).map(ref=>`<div class="rel">${link(ref)} <span class="relnote">${esc(HANS_FOSTER_GP)}</span></div>`).join(''));
+  push(rels,'Foster great-grandfather',fosterGreatOf(id).map(ref=>`<div class="rel">${link(ref)} <span class="relnote">${esc(HANS_FOSTER_GG)}</span></div>`).join(''));
+  const hansForGp=PEOPLE.people.filter(q=>fosterGrandparentsOf(q.id).includes(id)).map(q=>q.id);
+  push(rels,'Relation to Hans Pedersen',hansForGp.map(ref=>`<div class="rel">${link(ref)} <span class="relnote">${esc(HANS_FOSTER_GP)}</span></div>`).join(''));
+  const hansForGg=PEOPLE.people.filter(q=>fosterGreatOf(q.id).includes(id)).map(q=>q.id);
+  push(rels,'Relation to Hans Pedersen',hansForGg.map(ref=>`<div class="rel">${link(ref)} <span class="relnote">${esc(HANS_FOSTER_GG)}</span></div>`).join(''));
   push(rels,'Parent status',esc(p.parentsStatus));
   push(rels,'Danish parents',p.danishParents?`<span class="relnote">${esc(p.danishParents)}</span>`:'');
   push(rels,'Siblings',(p.siblings||[]).map(link).join('<br>'));

@@ -1,6 +1,6 @@
 # Story status
 
-Updated: 2026-11-09 (America/Chicago)
+Updated: 2026-11-23 (America/Chicago)
 
 ## Chapters drafted (v1)
 - chapters/01-hans-pedersen-childhood.md: P18 childhood, 1833–1847
@@ -17,7 +17,7 @@ Updated: 2026-11-09 (America/Chicago)
 - Narrate only facts that are FAMILY-CONFIRMED, VERIFIED, or RECORD-SOURCED, each with a real S# cite from ../sources.md.
 - Omit CANDIDATE, probable, and inference claims, or mark them "Provisional."
 - Leave out open conflicts, or present both sides.
-- Leave out the living household (Tina, Ryder, Jayden, Maryana, Wesley). Donald's living sons (Rick, Mike, Chad, Bill) are named with spouse given names and residences only as of Janice's 2025 obituary (S282); no birth dates.
+- Leave out the living household (Tina, Ryder, Jayden, Maryana, Wesley). Donald's living sons (Rick, Mike, Chad, Bill) may be named. Their spouses' given names and their home towns are not shown. No birth dates.
 - No invented scenes, dialogue, motives, or places. Say what is unknown.
 
 ## Deferred (not narrated as settled)
@@ -34,7 +34,7 @@ Updated: 2026-11-09 (America/Chicago)
 - Hans P. display locked (Alex standing): narrate Hans P. / Hans Peter. Death-name conflict OPEN per MN Pack 10: S145 newspaper "Hans P." vs S274 FS/MNHS index "Hans T." d. 1922-09-06, cert 011514 (image unseen). Alex's possible-typo note logged; no pick. 1922-09-06 CANDIDATE.
 - S273 "Hans R" 12 (1905) = Rudolph / 1900 Hans O.: CANDIDATE, not merged.
 - Jens Nielsen × Kirsten Johansdatter married 30 Oct 1818 at Særløse Kirke (S310): cleared as Hans's foster parents only. Kinship to Ane Marie or Peder Johansen stays unverified. No Særløse, Tølstrup, Jystrup, Taastrup, or Lejre pin.
-- Kirsten's parents are APPROVED HIGH: mother Margrethe (Margrete/Margretha) Johansdatter and father Johan Mathiesen (Mathiasen/Mattisen) of Tolstrup/Tølstrup, Særløse (S377+S379+S380; father also S322/S326). They are Hans's foster grandparents (parents of foster mother Kirsten Johansdatter). They are not his foster parents. Blood kinship to Hans Pedersen is UNVERIFIED — this is the foster-family line. 25 Mar 1795 Jystrup betrothal (S379); forlover KEEP BOTH OPEN. Johan buried 21 Dec 1800 Særløse, age 44 (S380). FT-1801 widow household (S377). Margrete's 18 Oct 1801 remarriage betrothal to Rasmus Jørgensen (S400); he is not a linked person. S401 1769 baptism is CANDIDATE context only; Johan Haagensen, Ingeborg, and that Haagen are not linked people.
+- Kirsten's parents are APPROVED HIGH: mother Margrethe (Margrete/Margretha) Johansdatter and father Johan Mathiesen (Mathiasen/Mattisen) of Tolstrup/Tølstrup, Særløse (S377+S379+S380; father also S322/S326). They are Hans's foster grandparents (parents of foster mother Kirsten Johansdatter). They are not his foster parents. Blood kinship to Hans Pedersen is UNVERIFIED — this is the foster-family line. 25 Mar 1795 Jystrup betrothal (S379); forlover KEEP BOTH OPEN. Johan buried 21 Dec 1800 Særløse, age 44 (S380). FT-1801 widow household (S377). Margrete's 18 Oct 1801 remarriage betrothal to Rasmus Jørgensen (S400); he is not a linked person. S401 1769 baptism of Haagen stays a CANDIDATE context note, not a person. Johan Haagensen (P48) is linked as Margrethe's father, APPROVED HIGH (S406, S379), and is Hans's foster great-grandfather. A 1761 Roskilde bachelor of that name is PROBABLE, not locked. Ingeborg Pedersdatter is probable and is not carded.
 - Ane Marie (P25) was raised by foster parents Erik Rasmussen × Maren Hansdatter of Valsømagle (*Pleiefd.* HIGH, S312). Birth parents still unknown. Dig 25 baptism still missing. Kinship to Erik and Maren unverified. That Maren is not the S222 1797 Maren. Village pin only. Kirsten's 10 Jan 1796 Særløse baptism (S322) is CANDIDATE only, not locked.
 - Haagen, baptized 28 Jul 1799 at Særløse to Johan Mathiesen of Tølstrup, is a CANDIDATE brother of Kirsten only (S326). Not locked. No person card. Johan's unnamed wife buried 11 Feb 1795, age 32, is prior-marriage context only. No kinship to P25 or P34. No new place pin.
 - Rasmus Peter Rasmussen's US death (S84, Find a Grave 229182652, d. 28 Oct 1939 Stanley Twp, Lyon Co MN; Union Cemetery, Evan) is CANDIDATE only: not confirmed; Danish↔US link not sealed. Not narrated as fact.
@@ -43,6 +43,7 @@ Updated: 2026-11-09 (America/Chicago)
 - P18 cause of death (LOW reading): not used. (1920 naturalization 1897 now narrated, S271.)
 
 ## Updates
+- 2026-11-23: Approved record since pull request 28 folded into the open content PR. P49 and P50 are Peder's parents, LOCKED HIGH. P51–P65 are Johan's family, record-sourced as graded. P62's 1902 emigrant identity is CANDIDATE, HIGH, not locked. P48 Johan Haagensen is Margrethe's father, APPROVED HIGH, Hans's foster great-grandfather. Ingeborg is not carded. The 1769 Haagen note stays CANDIDATE. Blood kinship of the foster line stays UNVERIFIED. S84 stays CANDIDATE. Living spouses and their towns are not shown. No new map pins.
 - 2026-11-09: Dig J foster grandparents folded (thin). P46 Margrethe Johansdatter and P47 Johan Mathiesen are P27's parents, APPROVED HIGH (S377+S379+S380; father also S322/S326). Label wherever a relation to Hans is shown: Hans's foster grandparents (parents of foster mother Kirsten Johansdatter). Never his foster parents. Blood kinship UNVERIFIED. Forlover KEEP BOTH OPEN. S401 context only, no new linked people besides the two parents. S84 shown on P21 and in Ch.2/Abridged/Kids as CANDIDATE only — not confirmed; Danish↔US link not sealed. No new map pins. Map page unchanged.
 - 2026-11-05: Dig 58 folded (thin) — Father Heinrich Dohrmann (~1831), husband of Carolina geb. Grote, was alive in Leavenworth Township, Minnesota, by 1875 and still living in 1880 with son Henry (S370, S371). A death in Germany before the spring 1873 Weser sailing is refuted (S369). How and when he crossed, any ship name, the exact arrival day, and a German death stay unknown (S372, S373). Immigration 1873 and 1878 stay open. Carolina, Grote, and Landesbergen unchanged. Kids unchanged. Dig J and Dig 51 stay held. No new map pins. Map page unchanged.
 - 2026-11-04: Dig 57 folded (thin) — Spring 1873 *Weser* to New York: Caroline Dohrmann (37) with Louise (12), Heinrich (8), and Caroline (2), and no adult man (S357, S358). Diedrich Dohrmann (37) on the same page is a different family, not Henry’s father, and no kinship is claimed (S359). A free 1878 search was empty and does not settle the year (S360). Immigration 1873 and 1878 stay open. Kids unchanged. Dig 21, Day B, and Dig J unchanged. No new map pins.

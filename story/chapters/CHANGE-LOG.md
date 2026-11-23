@@ -2,6 +2,18 @@
 
 This log tracks Genealogist-cleared additions and corrections folded into the story chapters, newest first. Each entry gives a short reason and its source. S# cites refer to `sources/SOURCE-KEY.md` and the Genealogist tree.
 
+## 2026-11-23 — Approved record since pull request 28
+
+This is the approved family record as it stood on 23 November 2026, compared with the live site after pull request 28. Pull request 29 stays open. Alex merges it on his own yes. The approved record has 65 people, not 95. Twenty are new since pull request 28. Fifteen people already on the live site have approved changes. A candidate stays a candidate. An open question stays open.
+
+Johan Friderichsen (P49) and Maren Paulsdatter (P50) are the parents of Peder Johansen (P34). Alex locked that identification as high on 10 November 2026. It is a paper identification, not a DNA claim. [LOCKED HIGH; S68, S303, S304, S470, S480] Bodil Olsdatter, who married Peder on 22 May 1835 in Benløse, stays parked. She has no person card. She is not the mother of Hans Pedersen (P18). Ane Marie Hansdatter (P25) remains locked as Hans’s mother. [PARKED]
+
+Johan Pedersen (P51) is locked as a son of this Peder. [LOCKED; S454, S491, S575, S576] His wives Karen Trine Pedersen (P52) and Ane Marie Pedersen (P53), and the children P54–P65, are record-sourced as graded on their cards. Niels Jørgen Pedersen (P62): baptism and place in Johan’s family are record-sourced. His 1902 emigrant identity, the Majestic to Marion, Ohio, is CANDIDATE, HIGH, not a fact and not locked. [CANDIDATE, HIGH; S765, S768]
+
+Margrethe Johansdatter (P46) and Johan Mathiesen (P47) remain Hans’s foster grandparents (parents of foster mother Kirsten Johansdatter). They are not his foster parents. Blood kinship to Hans is UNVERIFIED. Johan Haagensen (P48) is Margrethe’s father, APPROVED HIGH (S406, S379). He is Hans’s foster great-grandfather (parent of the foster grandmother). A 1761 Roskilde bachelor of the same name is PROBABLE, not locked. Ingeborg Pedersdatter is probable and is not carded. The 1769 Jystrup baptism of Haagen stays a candidate context note, not a new person. [CANDIDATE; S401] The earlier line that those S401 people “are not linked” is superseded.
+
+Rasmus Peter Rasmussen (P21): the United States death stays CANDIDATE only (S84). The 1939 Sleepy Eye Herald-Dispatch clip is secondary and high, and still only a candidate that the clip and the memorial are the same man (S384). Prairieville cemetery versus Union Cemetery, Evan, stays open on both sides. [KEEP BOTH OPEN]
+
 ## 2026-11-09 — Dig J foster grandparents (S377–S380, S400) and S84 CANDIDATE
 
 - Ch.1, Abridged, and Kids: Kirsten Johansdatter's parents are Margrethe (Margrete/Margretha) Johansdatter and Johan Mathiesen (Mathiasen/Mattisen) of Tolstrup/Tølstrup, Særløse. APPROVED HIGH (S377+S379+S380; father also S322/S326). They are Hans's foster grandparents (parents of foster mother Kirsten Johansdatter). They are not his foster parents. Foster parents stay Jens Nielsen and Kirsten Johansdatter. Blood kinship to Hans Pedersen is UNVERIFIED — this is the foster-family line.
