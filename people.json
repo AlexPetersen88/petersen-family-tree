@@ -501,10 +501,6 @@
       "id": "P5",
       "name": "Michael Don Petersen",
       "living": true,
-      "birth": {
-        "date": "1961-08-05",
-        "status": "oral S0 only"
-      },
       "parents": [
         "P1",
         "P2"
@@ -517,7 +513,7 @@
         "S2",
         "S282"
       ],
-      "status": "son of Janice per obit; birth date oral"
+      "status": "son of Janice per obit"
     },
     {
       "id": "P13",

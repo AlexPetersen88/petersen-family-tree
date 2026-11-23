@@ -501,10 +501,6 @@ window.PEOPLE={
    "id": "P5",
    "name": "Michael Don Petersen",
    "living": true,
-   "birth": {
-    "date": "1961-08-05",
-    "status": "oral S0 only"
-   },
    "parents": [
     "P1",
     "P2"
@@ -517,7 +513,7 @@ window.PEOPLE={
     "S2",
     "S282"
    ],
-   "status": "son of Janice per obit; birth date oral"
+   "status": "son of Janice per obit"
   },
   {
    "id": "P13",
@@ -4401,7 +4397,7 @@ window.SOURCES={
  "S280": {
   "id": "S280",
   "flag": "HIT HIGH",
-  "text": "Nelson-Hillestad obit, Anna Maye (Hansen) Petersen: https://www.nelson-hillestad.com/obituaries/anna-petersen-3 \u2014 b. 3 Oct 1933 rural Morgan; d. 10 May 2014; m. Darvin Wayne Petersen 27 Jun 1954, Bethany Lutheran; children + spouses (given names): Dwight/Yimei, Dan/Kathy, Diana/Jim, Doug/Lisa, Deb/Bill; parents John & Dora (UNVERIFIED as person cards).",
+  "text": "Nelson-Hillestad obit, Anna Maye (Hansen) Petersen: https://www.nelson-hillestad.com/obituaries/anna-petersen-3 \u2014 b. 3 Oct 1933 rural Morgan; d. 10 May 2014; m. Darvin Wayne Petersen 27 Jun 1954, Bethany Lutheran; children: Dwight, Dan, Diana, Doug, and Deb; parents John & Dora (UNVERIFIED as person cards).",
   "urls": [
    "https://www.nelson-hillestad.com/obituaries/anna-petersen-3"
   ]
@@ -4415,7 +4411,7 @@ window.SOURCES={
  "S282": {
   "id": "S282",
   "flag": "HIT HIGH",
-  "text": "Janice E. Jacobsen obit re-fetch (Stephens; = S1) https://stephensfuneralservice.com/obituaries/janice-e-jacobsen/779/ + KLGR (S4) corroboration: Donald \u00d7 Janice exactly five sons \u2014 Randy (infant), Rick, Mike, Chad, Bill; NO sixth. Survivors 2025: Rick [Kim] Redwood Falls; Mike [Mary] Redwood Falls; Chad [Heather] River Falls WI; Bill [Kimberlee] Hutchinson MN. Stepdaughter Carrie = Loren Jacobsen's, not Donald's.",
+  "text": "Janice E. Jacobsen obit re-fetch (Stephens; = S1) https://stephensfuneralservice.com/obituaries/janice-e-jacobsen/779/ + KLGR (S4) corroboration: Donald \u00d7 Janice exactly five sons \u2014 Randy (infant), Rick, Mike, Chad, Bill; NO sixth. Survivors 2025: Rick, Mike, Chad, and Bill. Stepdaughter Carrie = Loren Jacobsen's, not Donald's.",
   "urls": [
    "https://stephensfuneralservice.com/obituaries/janice-e-jacobsen/779/"
   ]
@@ -4562,7 +4558,7 @@ window.SOURCES={
  "S301": {
   "id": "S301",
   "flag": "HIT HIGH \u2014 multiple obits, re-confirm + new URLs",
-  "text": "Janice E. Jacobsen obits: b. 23 Jul 1938 Sleepy Eye; parents Wesley & Ethel (Gent) Dohrmann [obit wording; maiden = Neubauer per S148/S149, already resolved]; d. 18 Apr 2025 Garnette Gardens, Redwood Falls; bur. Redwood Falls Cemetery; m. Loren Jacobsen 28 Jun 1986 (predeceased); survived by Rick, Mike, Chad, Bill Petersen, brother Richard Dohrmann (Hugo); predeceased by Donald (1980), infant son Randy. https://stephensfuneralservice.com/obituaries/janice-e-jacobsen/779/ ; https://www.marshallindependent.com/obituaries/2025/04/janice-jacobsen/ ; https://www.wctrib.com/obituaries/obits/janice-e-jacobsen-3ubrjenkymyanikmkv0r ; https://www.myklgr.com/obituaries/janice-e-jacobsen/ ; https://www.nujournal.com/obituaries/2025/04/19/janice-jan-e-jacobsen/",
+  "text": "Janice E. Jacobsen obits: b. 23 Jul 1938 Sleepy Eye; parents Wesley & Ethel (Gent) Dohrmann [obit wording; maiden = Neubauer per S148/S149, already resolved]; d. 18 Apr 2025 Garnette Gardens, Redwood Falls; bur. Redwood Falls Cemetery; m. Loren Jacobsen 28 Jun 1986 (predeceased); survived by Rick, Mike, Chad, and Bill Petersen, and brother Richard; predeceased by Donald (1980), infant son Randy. https://stephensfuneralservice.com/obituaries/janice-e-jacobsen/779/ ; https://www.marshallindependent.com/obituaries/2025/04/janice-jacobsen/ ; https://www.wctrib.com/obituaries/obits/janice-e-jacobsen-3ubrjenkymyanikmkv0r ; https://www.myklgr.com/obituaries/janice-e-jacobsen/ ; https://www.nujournal.com/obituaries/2025/04/19/janice-jan-e-jacobsen/",
   "urls": [
    "https://stephensfuneralservice.com/obituaries/janice-e-jacobsen/779/",
    "https://www.marshallindependent.com/obituaries/2025/04/janice-jacobsen/",
@@ -5182,13 +5178,13 @@ window.SOURCES={
  "S394": {
   "id": "S394",
   "flag": null,
-  "text": "Alsted remaining land FT-1901 **CLOSED**: **S389\u2013S394** (+ prior **S375** Bjernede). No P22 HIT.",
+  "text": "FT-1901 Vester Broby sogn (AO epid 16487187, bsid 22574) \u2014 Dig 51c (gated ~10:48 CT 2026-11-05 America/Chicago) \u2014 APPROVED NEG HIGH",
   "urls": []
  },
  "S395": {
   "id": "S395",
   "flag": null,
-  "text": "Dig **51d ACTIVE** \u2192 next **Munke Bjergby Copulerede** (S382 lead) \u2192 **S396+**. **Next free Dig 51d = S396.**",
+  "text": "Slaglille Copulerede/\u00c6gteviede 1889\u20131901 (AO bsid 441568 + 156417) \u2014 Dig 51d (gated ~10:59 CT 2026-11-05 America/Chicago) \u2014 APPROVED NEG HIGH",
   "urls": []
  },
  "S396": {
@@ -5635,7 +5631,7 @@ window.SOURCES={
  "S515": {
   "id": "S515",
   "flag": null,
-  "text": ", **S518 NEG HIGH**, and **S519 NEG**, approved at DK\u2019s read, not a Genealogist eye-read: no third child of Ole \u00d7 Dorthea in Benl\u00f8se 1890\u2013Mar 1892; no Ane marriage in Benl\u00f8se 148275 through 1901; no Clara confirmation in Benl\u00f8se through 6 Apr 1902.",
+  "text": "NEG HIGH, approved at DK\u2019s read, not a Genealogist eye-read: no third child of Ole \u00d7 Dorthea in Benl\u00f8se 1890\u2013Mar 1892.",
   "urls": []
  },
  "S516": {
@@ -5928,8 +5924,11 @@ window.SOURCES={
  "S635": {
   "id": "S635",
   "flag": null,
-  "text": "Maren baptism 12 Nov / 29 Dec 1844 HIT HIGH; FT-1860 and FT-1880 parental/maternal-house absences HIT HIGH; FT-1870 \u201cMaren 23, Datter\u201d HIT HIGH as a record, identity with the 1844 Maren CANDIDATE MED only; NEW OPEN: Maren\u2019s age drift (1844 baptism vs 1865 skifte 18 and FT-1870 23, both imply about 1847; FT-1860 2de Huus Maren Pedersen 13 CANDIDATE LOW, unmerged); NEG HIGH Benl\u00f8se confirmations 1858\u201363, marriages 1870\u201391, burials 1870\u20131938, and assigned FT-1860 neighbour books plus Benl\u00f8se FT-1880/1890/1901; S638 NEG/GAP; 1882 burial of Bodil Olsen, Enke efter Huusm. Peder Johansen, 71 Aar, CANDIDATE HIGH as P34\u2019s widow, not locked; 1874 Bodil Olsdatter 70 kept apart; NEW OPEN: Bodil\u2019s birth year (~1811 vs ~1810 or ~1804) \u2014 Dig R6, DK (gated ~6:18 AM CT 2026-11-11 America/Chicago) \u2014 APPROVED PARTIAL",
-  "urls": []
+  "text": "baptism **12 Nov 1844**, christened **29 Dec 1844**. KMB **148271** id **24491460**; HMB **203207** id **38539191**. https://arkivalieronline.rigsarkivet.dk/da/billedviser?bsid=148271#148271,24491460 ; https://arkivalieronline.rigsarkivet.dk/da/billedviser?bsid=203207#203207,38539191",
+  "urls": [
+   "https://arkivalieronline.rigsarkivet.dk/da/billedviser?bsid=148271#148271,24491460",
+   "https://arkivalieronline.rigsarkivet.dk/da/billedviser?bsid=203207#203207,38539191"
+  ]
  },
  "S639": {
   "id": "S639",
@@ -5996,8 +5995,10 @@ window.SOURCES={
  "S675": {
   "id": "S675",
   "flag": null,
-  "text": "S675 baptism HIT HIGH both copies (148272 id 24492040; 203208 id 38539703), b. 14 Jul, church-baptised 12 Sep 1857, parents Huusm. Peder Johansen \u00d7 Bodil Olsen (46), Beenl\u00f8se; S676 confirmation 1871 no. 5 HIT HIGH both copies (148272 id 24492112; 203208 id 38539783); S677 marriages NEG HIGH for 1871\u201382 and 1884 to Jan 1892 (both copies), NEG MED for 1883, 1892\u20131901 and 1901\u201325 (single copy); DDD Vielse and parishes outside Benl\u00f8se GAP; S678 not opened; S679 FT-1870 Karen Marie 12 HIT HIGH (53362 id 11830883); FT-1860 \u201cHanne Marie\u201d 3 HIT HIGH as a record, identity CANDIDATE HIGH under the existing Karen Marie vs Hanne Marie OPEN; S680 NEG HIGH in mother\u2019s FT-1880 house (55650 id 11993230) and parish-wide Benl\u00f8se FT-1880, DDD 500s GAP; S681 NEG HIGH Benl\u00f8se FT-1890 59507 all 76 images, three LOOKALIKES kept apart; S682 NEG HIGH Benl\u00f8se FT-1901 21178 all pages plus supplements; S683 female burials 1871\u201391 NEG HIGH both copies; NEW OPEN: 25/30 Jul 1878 burial, age 22, CANDIDATE LOW (KMB Kirstine Marie, Datter af Huusm. Peder Pedersen, vs HMB Karen Marie Pedersen, Fattiglem), not merged, Alex\u2019s call; 1882 Bodil Olsen burial confirmed on both copies, Bodil stays PARKED; S684 NEG MED single copy 148275 (1892\u20131903) and 148279 (1903\u201338); GAP / LEAD LOW S\u00f8rbymagle index-only lookalikes (K3206 lbnr 621 and 593); also GAP book 148280 and the 148275 ministerial copy; last seen FT-1870 and 1871 confirmation, gone from Benl\u00f8se by 1880, fate unplaced \u2014 Dig R7, DK (gated ~10:26 AM CT 2026-11-11 America/Chicago) \u2014 APPROVED PARTIAL",
-  "urls": []
+  "text": "baptism on both copies, KMB **148272** id **24492040** and HMB **203208** id **38539703**. Born **14 Jul 1857**, church-baptised **12 Sep 1857**. Parents **Huusm. Peder Johansen** \u00d7 **Bodil Olsen (46)**, Beenl\u00f8se. https://arkivalieronline.rigsarkivet.dk/da/billedviser?bsid=148272#148272,24492040",
+  "urls": [
+   "https://arkivalieronline.rigsarkivet.dk/da/billedviser?bsid=148272#148272,24492040"
+  ]
  },
  "S676": {
   "id": "S676",

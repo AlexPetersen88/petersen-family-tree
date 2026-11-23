@@ -336,7 +336,7 @@ Glosses: Skoleholder = schoolteacher / parish schoolkeeper; Skolemester = school
 - Baptism-cell readings, multi-side display: Dig 15 S51 **Clausdatter** (~80%, SUPERSEDED) · Dig 39 S276 **Larsdatter** (eye-read alternate) · **Hansdatter** LOCK (Alex 2026-11-03). Lock STANDS; Larsdatter not adopted. Soft: optional Alex eye-fold parents-cell.png vs s51_mother_zoom.png.
 
 ## MN Pack 11 (2026-11-03)
-- **P43 Bill Petersen (son of P1, Hutchinson 2025, wife Kimberlee) ≠ S8 William Rudolph Petersen** — do NOT merge; no evidence linking.
+- **P43 Bill Petersen (son of P1) ≠ S8 William Rudolph Petersen** — do NOT merge; no evidence linking.
 - **S284 Iowa Darvin Arthur Petersen 1932–2014 ≠ P11** — closed NEG noise, not a tree conflict.
 - **P41 Rick middle initial "D"** (LinkedIn/USDOT, living) — CANDIDATE only; not locked.
 

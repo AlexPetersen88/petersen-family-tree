@@ -147,7 +147,7 @@ In 1957, Donald married Janice Dohrmann at the Methodist church in Sleepy Eye, M
 
 Their first baby, Randy, was born on July 30, 1958, and died that October, when he was not yet three months old. He is buried in Redwood Falls, and his small stone says he lived 2 1/2 months. Almost a hundred years after Bjernede, the family knew that sorrow again.
 
-Then more boys came. Donald and Janice had five sons in all: Randy, Rick, **Michael**, Chad, and Bill. Michael was born on August 5, 1961.
+Then more boys came. Donald and Janice had five sons in all: Randy, Rick, **Michael**, Chad, and Bill.
 
 Donald died young, at 44, in 1980, and is buried in Redwood Falls. Janice lived to 86 and died in Redwood Falls in 2025; she is buried in the same cemetery as Donald and Randy.
 
