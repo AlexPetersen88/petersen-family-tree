@@ -16,6 +16,12 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
+THUMB = {
+    1: "https://tile.openstreetmap.org/12/2182/1285.png",
+    2: "https://tile.openstreetmap.org/12/2180/1286.png",
+    3: "https://tile.openstreetmap.org/11/484/742.png",
+    4: "https://tile.openstreetmap.org/8/60/92.png",
+}
 CHAPTERS = [
     {
         "md": "chapters/01-hans-pedersen-childhood.md",
@@ -628,13 +634,13 @@ def render_blocks(lines, ids, linked=None, injected=None):
             continue
         if line.startswith("### "):
             heading = apply_maps(line[4:].strip(), linked, injected)
-            html_parts.append(f"<h4>{inline(heading, ids, False)}</h4>")
+            html_parts.append(f"<h3>{inline(heading, ids, False)}</h3>")
             i += 1
             continue
         if line.startswith("## "):
             heading = line[3:].strip()
             mapped = apply_maps(heading, linked, injected)
-            block = [f"<h3>{inline(mapped, ids, False)}</h3>"]
+            block = [f"<h2>{inline(mapped, ids, False)}</h2>"]
             i += 1
             if heading == "What we do not know yet":
                 rest, i = collect_until_heading(lines, i)
@@ -721,7 +727,7 @@ def chrome(current, tools=True):
 </div>""" if tools else ""
     return f"""<div class="sticky-chrome">
 <header>
-<div class="brand"><p class="eyebrow">Redwood County, Minnesota</p><h1><a href="../index.html#start">The Petersen Family</a></h1></div>
+<div class="brand"><p class="eyebrow">Redwood County, Minnesota</p><p class="brand"><a href="../index.html#start">The Petersen Family</a></p></div>
 <nav aria-label="Primary"><a data-nav="tree" href="../index.html#tree">Tree</a><a href="../people.html">People</a><a href="../sources.html">Sources</a><a{story_current} href="index.html">Story</a><a href="../map.html">Map</a></nav>
 </header>
 {tools_html}
@@ -777,8 +783,9 @@ try{{var v=localStorage.getItem("petersen-story-tools");var tight=matchMedia("(m
 <link rel="stylesheet" href="../style.css">
 </head>
 <body class="page story">
+<a class="skip" href="#content">Skip to content</a>
 {chrome(current, tools)}
-<main class="story-wrap">
+<main id="content" class="story-wrap">
 {body}
 </main>
 <script src="../data.js"></script>
@@ -800,7 +807,7 @@ def pager(index):
     if index < len(CHAPTERS) - 1:
         nxt = CHAPTERS[index + 1]
         parts.append(
-            f'<a class="next" href="{nxt["html"]}"><span class="dir">Next</span><span class="label">{html.escape(nxt["short"])}</span></a>'
+            f'<a class="next" href="{nxt["html"]}"><span class="dir">Next</span><span class="label">Next: {html.escape(nxt["short"])} →</span></a>'
         )
     parts.append('<a class="keylink" href="source-key.html">Source key</a>')
     parts.append("</nav>")
@@ -817,7 +824,7 @@ def companion_pager(index):
     if index < len(COMPANIONS) - 1:
         nxt = COMPANIONS[index + 1]
         parts.append(
-            f'<a class="next" href="{nxt["html"]}"><span class="dir">Next</span><span class="label">{html.escape(nxt["short"])}</span></a>'
+            f'<a class="next" href="{nxt["html"]}"><span class="dir">Next</span><span class="label">Next: {html.escape(nxt["short"])} →</span></a>'
         )
     parts.append('<a class="keylink" href="index.html">All chapters</a>')
     parts.append('<a class="keylink" href="source-key.html">Source key</a>')
@@ -980,6 +987,7 @@ def render():
             "<li>"
             f'<a class="chapter-card" href="{chapter["html"]}">'
             f'<span class="chapter-num">{item["n"]}</span>'
+            f'<img class="chapter-thumb" alt="" src="{THUMB[item["n"]]}">'
             "<span class=\"chapter-copy\">"
             f"<span class=\"chapter-title\">{inline(item['title'], ids, False)}</span>"
             f"<span class=\"chapter-sum\">{inline(item['summary'], ids, False)}</span>"
@@ -994,19 +1002,19 @@ def render():
             f'<span class="download-sum">{html.escape(comp["summary"])}</span>'
             "</a>"
         )
-    index_body = """<h2>Story</h2>
+    index_body = """<h1>Story</h1>
 <p class="lede">New here? Start with the <a href="abridged.html">Short version (10 min)</a> or jump to <a href="04-elmer-to-alex.html">Chapter 4: From Elmer to Alex</a>.</p>
 <p class="lede">Four chapters, from Hans Pedersen of Skee to Alex, plus a short version, a kids' telling, and a change log. Uncertain points stay labeled. Living members of the current household are left out on purpose.</p>
 <ol class="chapter-list">
 """ + "\n".join(cards) + """
 </ol>
 <section class="download-block" aria-label="Short versions and change log">
-<h3>Short versions and change log</h3>
+<h2>Short versions and change log</h2>
 """ + "\n".join(companion_cards) + """
 </section>
 <p class="key-row"><a class="keylink" href="source-key.html">Source key</a></p>
 <section class="download-block" aria-label="Downloads">
-<h3>Downloads</h3>
+<h2>Downloads</h2>
 <a class="download-card" href="../downloads/Petersen-Family-Story.pdf"><span class="download-kicker">PDF</span><span class="download-title">Petersen family story</span><span class="download-sum">The four chapters, as a file.</span></a>
 <a class="download-card" href="../downloads/Petersen-Family-Story-Kids.pdf"><span class="download-kicker">PDF</span><span class="download-title">Petersen family story for kids</span><span class="download-sum">The same cleared facts, for ages 9–11.</span></a>
 <a class="download-card" href="../downloads/Denmark-Trip-Itinerary.pdf"><span class="download-kicker">PDF</span><span class="download-title">Denmark trip itinerary</span><span class="download-sum">Genealogist-approved places only.</span></a>
@@ -1029,7 +1037,7 @@ def render():
         dek_html = f'<p class="dek">{inline(dek, ids, True)}</p>\n' if dek else ""
         article = (
             "<article class=\"chapter\">\n"
-            f"<h2>{inline(title, ids, False)}</h2>\n"
+            f"<h1>{inline(title, ids, False)}</h1>\n"
             f"{dek_html}"
             f"{render_blocks(body_lines, ids)}\n"
             "</article>"
@@ -1063,7 +1071,7 @@ def render():
         dek_html = f'<p class="dek">{inline(dek, ids, True)}</p>\n' if dek else ""
         article = (
             "<article class=\"chapter\">\n"
-            f"<h2>{inline(title, ids, False)}</h2>\n"
+            f"<h1>{inline(title, ids, False)}</h1>\n"
             f"{dek_html}"
             f"{render_blocks(body_lines, ids)}\n"
             "</article>"
@@ -1097,11 +1105,11 @@ def render():
             note = f' <span class="flag">{inline(entry["note"], ids, False)}</span>'
         cards.append(
             f'<article class="src-card" id="{entry["id"]}">\n'
-            f'<h3><span class="sid">{entry["id"]}</span>{note}</h3>\n'
+            f'<h2><span class="sid">{entry["id"]}</span>{note}</h2>\n'
             f'<p>{inline(apply_maps(entry["body"], set(), set()), ids, False)}</p>\n'
             "</article>"
         )
-    source_body = """<h2>Source key</h2>
+    source_body = """<h1>Source key</h1>
 <p class="lede">Only sources cited in the chapters.</p>
 <p class="key-row"><a class="keylink" href="../sources.html">Full research log</a></p>
 """ + "\n".join(cards)

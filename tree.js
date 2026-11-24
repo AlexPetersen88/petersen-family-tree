@@ -1265,6 +1265,16 @@ addEventListener('resize',()=>{
 function boot(){
   syncPeek();
   syncChrome();
+  const skip=document.getElementById('skip');
+  if(skip){
+    const home=document.documentElement.classList.contains('home-open');
+    skip.href=home?'#start-title':'#content';
+    skip.textContent=home?'Skip to content':'Skip to tree';
+  }
+  if(location.hash==='#legend'){
+    const legend=document.getElementById('legend');
+    if(legend)legend.open=true;
+  }
   const raw=decodeURIComponent((location.hash||'').replace(/^#/,''));
   let panePref=null;
   try{panePref=localStorage.getItem('petersen-tree-pane')}catch(e){}

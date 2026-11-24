@@ -29,21 +29,26 @@ try{var h=decodeURIComponent((location.hash||"").replace(/^#/,""));if(!h||h==="s
 <link rel="stylesheet" href="style.css">
 </head>
 <body class="tree">
+<a class="skip" id="skip" href="#start-title">Skip to content</a>
 <header>
-<div class="brand"><p class="eyebrow">Redwood County, Minnesota</p><h1><a href="index.html#start">The Petersen Family</a></h1></div>
+<div class="brand"><p class="eyebrow">Redwood County, Minnesota</p><p class="brand"><a href="index.html#start">The Petersen Family</a></p></div>
 <nav aria-label="Primary"><a class="on" data-nav="tree" href="index.html#tree" aria-current="page">Tree</a><a href="people.html">People</a><a href="sources.html">Sources</a><a href="story/index.html">Story</a><a href="map.html">Map</a></nav>
 </header>
 <section id="home" class="start">
 <div class="start-inner">
+<div class="hero" role="img" aria-label="Map tiles of Zealand, Denmark, and Redwood County, Minnesota">
+<img alt="" src="https://tile.openstreetmap.org/8/136/80.png">
+<img alt="" src="https://tile.openstreetmap.org/8/60/92.png">
+</div>
 <p class="eyebrow">Start here</p>
-<h2 id="start-title">From Zealand and Hanover to Redwood County: six generations of the Petersen family.</h2>
+<h1 id="start-title">From Zealand and Hanover to Redwood County: six generations of the Petersen family.</h1>
 <div class="start-actions">
 <button type="button" id="find-person">Find a person</button>
 <a href="#alex-line">Follow Alex's line</a>
 <a href="story/index.html">Read the story</a>
 </div>
 <section id="alex-line" aria-labelledby="alex-line-title">
-<h3 id="alex-line-title">Alex's line</h3>
+<h2 id="alex-line-title">Alex's line</h2>
 <p class="lede">Each step is a parent recorded in the tree. A missing link says Not recorded. Living people, and anyone born in 1920 or later, are shown by name only.</p>
 <div id="ladder-root"><p class="lede">The line loads with the family tree.</p></div>
 </section>
@@ -75,7 +80,7 @@ try{var h=decodeURIComponent((location.hash||"").replace(/^#/,""));if(!h||h==="s
 <button id="panetoggle" class="pane-toggle" type="button" aria-expanded="true" aria-controls="sheet"><span class="when-open">Hide details</span><span class="when-closed">Show details</span></button>
 </div>
 <p class="keystrip" id="keystrip">Confirmed by family · Found in records · Possible match, not proven · Living (private)</p>
-<main class="stage">
+<main id="content" class="stage">
 <div id="treewrap">
 <svg id="svg" aria-label="Petersen family tree"><g id="vp"></g></svg>
 <div id="familylist" class="family-list" hidden></div>
