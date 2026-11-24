@@ -106,14 +106,18 @@ document.addEventListener('DOMContentLoaded',()=>{
   summary.append(title,hint);
   const full=document.createElement('p');
   full.className='banner-full';
-  full.textContent=BANNER;
+  full.textContent='Research in progress. Some facts are still being checked — look for the labels.';
+  const labels=document.createElement('a');
+  labels.href=(/\/story\//.test(location.pathname)?'../':'')+'index.html#legend';
+  labels.textContent='What the labels mean →';
+  full.append(' ', labels);
   details.append(summary,full);
   b.replaceChildren(details);
   const legend=document.getElementById('legendbody');
   if(legend&&!legend.querySelector('.banner-in-key')){
     const note=document.createElement('p');
     note.className='legend-help banner-in-key';
-    note.textContent=BANNER;
+    note.textContent='Research in progress. Some facts are still being checked — look for the labels.';
     legend.appendChild(note);
   }
 });

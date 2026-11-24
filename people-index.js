@@ -28,10 +28,10 @@
         const meta=p.meta?' <span class="finder-meta">'+esc(p.meta)+'</span>':'';
         return '<li><a href="index.html#'+esc(p.id)+'"><span class="finder-name">'+esc(p.name)+'</span>'+meta+'</a></li>';
       }).join('');
-      return '<h4 id="'+id+'">'+esc(g.letter)+'</h4><ul class="people-list">'+items+'</ul>';
+      return '<h3 id="'+id+'">'+esc(g.letter)+'</h3><ul class="people-list">'+items+'</ul>';
     }).join('');
     return '<section id="'+group.id+'" aria-labelledby="'+group.id+'-title">'+
-      '<h3 id="'+group.id+'-title">'+esc(group.title)+'</h3>'+
+      '<h2 id="'+group.id+'-title">'+esc(group.title)+'</h2>'+
       '<nav class="letter-jump" aria-label="'+esc(group.title)+' letters">'+jumps+'</nav>'+
       blocks+
       '</section>';
