@@ -2,6 +2,8 @@
 
 This log tracks Genealogist-cleared additions and corrections folded into the story chapters, newest first. Each entry gives a short reason and its source. S# cites refer to `sources/SOURCE-KEY.md` and the Genealogist tree.
 
+2026-11-24: Michael's birth date kept on the site at Alex's request.
+
 ## 2026-11-23 — Approved record since pull request 28
 
 This is the approved family record as it stood on 23 November 2026, compared with the live site after pull request 28. Pull request 29 stays open. Alex merges it on his own yes. The approved record has 65 people, not 95. Twenty are new since pull request 28. Fifteen people already on the live site have approved changes. A candidate stays a candidate. An open question stays open.
