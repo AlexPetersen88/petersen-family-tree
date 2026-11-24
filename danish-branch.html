@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Danish branch · Petersen Family Tree</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light only">
+<meta name="theme-color" content="#FAF8F4">
+<meta name="description" content="UX mockup. A family group read from the existing Petersen records. Not in the main menu.">
+<meta name="robots" content="noindex">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230C3B2E'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="danish-branch.css">
+</head>
+<body class="page branch-page">
+<div class="sticky-chrome">
+<header>
+<div class="brand"><p class="eyebrow">Redwood County, Minnesota</p><h1>The Petersen Family</h1></div>
+<nav aria-label="Primary"><a href="index.html">Tree</a><a href="sources.html">Sources</a><a href="story/index.html">Story</a><a href="map.html">Map</a></nav>
+</header>
+<div class="banner"></div>
+</div>
+<main class="branch-wrap" id="branch">
+<p class="branch-flag">UX mockup</p>
+<h2>Danish branch</h2>
+<p class="lede">Names, dates, places, and the badge words are copied from the records already on this site. A badge is not a new grade.</p>
+<p class="lede" id="branch-scope"></p>
+<nav class="branch-jumps" id="branch-jumps" aria-label="People in this group"></nav>
+<div id="branch-group"></div>
+</main>
+<div class="branch-drawer" id="srcdrawer" hidden>
+<div class="branch-backdrop" id="srcbackdrop"></div>
+<div class="branch-drawer-sheet" id="srcsheet" role="dialog" aria-modal="true" aria-labelledby="srcdrawer-title" aria-describedby="srcdrawer-desc" tabindex="-1">
+<div class="branch-drawer-bar">
+<div class="branch-drawer-heading">
+<p class="branch-drawer-title" id="srcdrawer-title" role="heading" aria-level="2"></p>
+<p class="branch-drawer-desc" id="srcdrawer-desc"></p>
+</div>
+<button type="button" id="srcdrawer-close">Close</button>
+</div>
+<div class="branch-drawer-body" id="srcdrawer-body"></div>
+</div>
+</div>
+<noscript><p class="branch-wrap">Turn on JavaScript to read this group from the site records.</p></noscript>
+<script src="data.js"></script>
+<script src="common.js"></script>
+<script src="danish-branch.js"></script>
+</body>
+</html>
