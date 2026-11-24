@@ -174,3 +174,21 @@
 - S372: Free solo-ship extract for father’s entry NEG/PARTIAL — does not invent a crossing.
 - S373: Archion Landesbergen Beerdigungen 1870–75 — no adult male Heinrich ~1831 burial found (NEG MED–HIGH); does not prove burial elsewhere.
 - OPEN: how/when father entered the US; imm year 1873 vs 1878 KEEP BOTH OPEN. Carolina LOCKED; Grote LOCKED; Landesbergen HIGH unchanged.
+
+## Dig J foster grandparents — APPROVED HIGH 2026-11-09 (S377–S380, S400) + S401 CANDIDATE context
+- S377 (APPROVED HIT HIGH, household): FT-1801 Særløse, Tølstrup By, 12te Familie. Widow Margrethe Johansdatter, 35, enke efter 1ste ægteskab, in a jordløs huus. Jens Johansen, 9, entered as the dead husband's son. Kirsten, 6, and Haagen, 2, her children. Johan is not named on the sheet. https://arkivalieronline.rigsarkivet.dk/da/billedviser?bsid=26930 https://api.rigsarkivet.dk/ao/v1/images/2911818
+- S378 (APPROVED NEG): This couple is not in the Særløse Copulerede/Trolovede 1794–96 section. https://api.rigsarkivet.dk/ao/v1/images/25945496
+- S379 (APPROVED HIT HIGH; forlover KEEP BOTH OPEN): 25 Mar 1795 betrothal at Jystrup Præstegaard. Widower Johan Mathiesen/Mathiasen, huusmand in Tolstrup, and Margrethe/Margretha Johansdatter of Taastrup. Copul. margin = 20 Sep 1795 by calendar reckoning, not written on the page. Forlover: Johan Haagensen and Johan Jørgensen, both open. http://ao.salldata.dk/vis1.php?bsid=152271&side=274
+- S380 (APPROVED HIT HIGH burial): 21 Dec 1800, 4th Sunday of Advent, Johan Mathiesen of Tølstrup buried at Særløse, age 44. http://ao.salldata.dk/vis1.php?bsid=155316&side=57 https://api.rigsarkivet.dk/ao/v1/images/25945474
+- S400 (APPROVED HIT HIGH): 18 Oct 1801, Særløse. Widow Margrete Johansdatter of Tolstrup betrothed to bachelor Rasmus Jørgensen. His place is only partly read. He is not a linked person. http://ao.salldata.dk/vis1.php?bsid=155316&side=80
+- S401 (CANDIDATE context only): 1769 Jystrup baptism of Haagen, son of gaardmand Johan Haagensen of Taastrup; mother introduced as Ingeborg. The 1769 baptism of Haagen stays a CANDIDATE context note, not a new person. It does not itself lock Margrethe's father (that link is S406). Forlover stays open. http://ao.salldata.dk/vis1.php?bsid=152271&side=32
+- Use: these two are Hans's foster grandparents (parents of foster mother Kirsten Johansdatter). They are not his foster parents. Blood kinship to Hans Pedersen is UNVERIFIED — this is the foster-family line. S322 baptism of Kirsten stays CANDIDATE.
+- S405 (APPROVED PARTIAL HIGH): FT-1787 Taastrup Bye, Jystrup sogn. Johan Haagensen, 56, bonde og gaardbeboer, with Ingeborg Pedersdatter. Margrethe is not in that household. The 1761 Roskilde bachelor is PROBABLE, not locked. https://arkivalieronline.rigsarkivet.dk/da/billedviser?bsid=534369#534369,90281295
+- S406 (APPROVED HIT HIGH): Jystrup–Valsølille confirmations, 1784 Quasimodogeniti, Valsølille Kirke, entry 8: Margrethe Johans Datter, daughter of gaardmand Johan Haagensen in Taastrup. This links P48 as Margrethe's father. Ingeborg Pedersdatter is probable and is not carded. https://arkivalieronline.rigsarkivet.dk/da/billedviser?bsid=627295#627295,94611160
+
+## S384 — P21 obituary clip, still CANDIDATE
+- S384 (CANDIDATE, secondary high): Sleepy Eye Herald-Dispatch, 2 Nov 1939, obituary of Rasmus P. Rasmussen. Same man as the S84 memorial is CANDIDATE only. Burial Prairieville cemetery versus Union Cemetery, Evan, stays KEEP BOTH OPEN. Not a seal of the Danish and American men.
+- S86 (CONFLICT / other person — do not merge with P21 US candidate): MNHS death, Rasmussen, Rasmus Peter, d. 16 Jun 1949, Brown County, cert 1949-MN-001637. A different man from the 1939 death. https://www.mnhs.org/search/people/record?uuid=a6d16d8f-7e4a-4b75-81ff-d0b3bee15dcb&record_type=death-records
+
+## S84 — P21 US death CANDIDATE (not a new serial)
+- S84 (CANDIDATE only): Find a Grave memorial 229182652, Rasmus Peter Rasmussen, d. 28 Oct 1939, Stanley Twp, Lyon Co MN; burial Union Cemetery, Evan. Not confirmed; Danish↔US link not sealed. https://www.findagrave.com/memorial/229182652/rasmus_peter-rasmussen
