@@ -6,10 +6,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="color-scheme" content="light only">
 <meta name="theme-color" content="#FAF8F4">
-<meta name="description" content="Family tree, sources, and story for the Petersens of Redwood County, Minnesota.">
+<meta name="description" content="From Zealand and Hanover to Redwood County. Find a person, follow Alex's line, and read the Petersen family story.">
 <meta property="og:site_name" content="Petersen Family Tree">
 <meta property="og:title" content="Petersen Family Tree">
-<meta property="og:description" content="Family tree, sources, and story for the Petersens of Redwood County, Minnesota.">
+<meta property="og:description" content="From Zealand and Hanover to Redwood County. Find a person, follow Alex's line, and read the Petersen family story.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://alexpetersen88.github.io/petersen-family-tree/">
 <meta property="og:image" content="https://alexpetersen88.github.io/petersen-family-tree/og.png">
@@ -18,20 +18,37 @@
 <meta property="og:image:alt" content="The Petersen Family, Redwood County, Minnesota">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Petersen Family Tree">
-<meta name="twitter:description" content="Family tree, sources, and story for the Petersens of Redwood County, Minnesota.">
+<meta name="twitter:description" content="From Zealand and Hanover to Redwood County. Find a person, follow Alex's line, and read the Petersen family story.">
 <meta name="twitter:image" content="https://alexpetersen88.github.io/petersen-family-tree/og.png">
 <link rel="canonical" href="https://alexpetersen88.github.io/petersen-family-tree/">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230C3B2E'/%3E%3C/svg%3E">
 <script>
 try{if(localStorage.getItem("petersen-tree-pane")==="hidden")document.documentElement.classList.add("tree-pane-hidden")}catch(e){}
+try{var h=decodeURIComponent((location.hash||"").replace(/^#/,""));if(!h||h==="start")document.documentElement.classList.add("home-open")}catch(e){}
 </script>
 <link rel="stylesheet" href="style.css">
 </head>
 <body class="tree">
 <header>
-<div class="brand"><p class="eyebrow">Redwood County, Minnesota</p><h1>The Petersen Family</h1></div>
-<nav aria-label="Primary"><a class="on" href="index.html" aria-current="page">Tree</a><a href="sources.html">Sources</a><a href="story/index.html">Story</a><a href="map.html">Map</a></nav>
+<div class="brand"><p class="eyebrow">Redwood County, Minnesota</p><h1><a href="index.html#start">The Petersen Family</a></h1></div>
+<nav aria-label="Primary"><a class="on" data-nav="tree" href="index.html#tree" aria-current="page">Tree</a><a href="people.html">People</a><a href="sources.html">Sources</a><a href="story/index.html">Story</a><a href="map.html">Map</a></nav>
 </header>
+<section id="home" class="start">
+<div class="start-inner">
+<p class="eyebrow">Start here</p>
+<h2 id="start-title">From Zealand and Hanover to Redwood County: six generations of the Petersen family.</h2>
+<div class="start-actions">
+<button type="button" id="find-person">Find a person</button>
+<a href="#alex-line">Follow Alex's line</a>
+<a href="story/index.html">Read the story</a>
+</div>
+<section id="alex-line" aria-labelledby="alex-line-title">
+<h3 id="alex-line-title">Alex's line</h3>
+<p class="lede">Each step is a parent recorded in the tree. A missing link says Not recorded. Living people, and anyone born in 1920 or later, are shown by name only.</p>
+<div id="ladder-root"><p class="lede">The line loads with the family tree.</p></div>
+</section>
+</div>
+</section>
 <div class="banner"></div>
 <div class="toolbar">
 <div class="scope" role="group" aria-label="Tree scope">
@@ -82,6 +99,9 @@ try{if(localStorage.getItem("petersen-tree-pane")==="hidden")document.documentEl
 <div id="safeprobe" aria-hidden="true"></div>
 <script src="data.js"></script>
 <script src="common.js"></script>
+<script src="lineage.js"></script>
+<script src="finder.js"></script>
+<script src="home.js"></script>
 <script src="tree.js"></script>
 </body>
 </html>

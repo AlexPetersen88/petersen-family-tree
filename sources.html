@@ -20,8 +20,8 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230C3B2E'/%3E%3C/svg%3E">
 <link rel="stylesheet" href="style.css"></head><body class="page">
 <div class="sticky-chrome">
-<header><div class="brand"><p class="eyebrow">Redwood County, Minnesota</p><h1>The Petersen Family</h1></div>
-<nav aria-label="Primary"><a href="index.html">Tree</a><a class="on" href="sources.html" aria-current="page">Sources</a><a href="story/index.html">Story</a><a href="map.html">Map</a></nav></header>
+<header><div class="brand"><p class="eyebrow">Redwood County, Minnesota</p><h1><a href="index.html#start">The Petersen Family</a></h1></div>
+<nav aria-label="Primary"><a data-nav="tree" href="index.html#tree">Tree</a><a href="people.html">People</a><a class="on" href="sources.html" aria-current="page">Sources</a><a href="story/index.html">Story</a><a href="map.html">Map</a></nav></header>
 <div class="banner"></div>
 <a id="return" class="return-tree" hidden href="index.html">Back to the tree</a>
 </div>
@@ -30,7 +30,7 @@
 <p class="lede">Kirsten Johansdatter’s parents, Margrethe Johansdatter and Johan Mathiesen of Tolstrup/Tølstrup, are approved at high confidence (S377, S379, S380; the father also S322 and S326). They are Hans Pedersen’s foster grandparents (parents of foster mother Kirsten Johansdatter), not his foster parents. Johan Haagensen is Margrethe’s father, approved high (S406, S379), and is Hans’s foster great-grandfather. Blood kinship to Hans Pedersen is unverified. Peder Johansen’s parents, Johan Friderichsen and Maren Paulsdatter, are locked high. Rasmus Peter Rasmussen’s 28 Oct 1939 death in Stanley Township, Lyon County, Minnesota, with burial at Union Cemetery, Evan (S84, Find a Grave 229182652), stays a candidate: not confirmed; the Danish–US link is not sealed.</p>
 <p class="lede">Hans Peter Petersen’s origin is <b>family-confirmed</b> (Alex, 2026-11-03, <b>S30</b>): born 28 Feb 1864 in Bjernede, Sorø amt, Denmark. His Danish parents, stepfather, and siblings stay <b>record-sourced only</b>. Ane’s 29 Jun 1883 death is entered as “Ane Marie Rasmussen,” wife for the second time of Hans Rasmussen, and is matched to Ane Rasmusdatter <b>by inference</b> (<b>S45</b>). Hans Rasmussen died about 2 Jul 1883, age 83; the birth year leans 1801 and he is not linked to a ~1833 candidate (<b>S46</b>). Rasmus Peter’s 1885 confirmation is record-sourced (<b>S47</b>); an 18 Jun 1889 emigration to Sleepy Eye, contract 4232 Y, is <b>candidate / unverified</b> (<b>S49</b>). Ane Marie’s 1888 confirmation names a foster father (<b>S48</b>); her fate after 1888 is unknown, and the baptism day is 10 Jan 1875 in one record and 11 Jan 1875 in the other.</p>
 <table><thead><tr><th>ID</th><th>Source</th><th>Cited for</th></tr></thead><tbody id="tb"></tbody></table><div id="notes" class="notes"></div></main>
-<script src="data.js"></script><script src="common.js"></script><script>
+<script src="data.js"></script><script src="common.js"></script><script src="lineage.js"></script><script src="finder.js"></script><script>
 const cites={};PEOPLE.people.forEach(p=>(p.sources||[]).forEach(s=>(cites[s]=cites[s]||[]).push(p)));
 const params=new URLSearchParams(location.search);
 const backId=params.get('person');
