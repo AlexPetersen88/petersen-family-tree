@@ -59,10 +59,10 @@ try{var h=decodeURIComponent((location.hash||"").replace(/^#/,""));if(!h||h==="s
 <details class="legend" id="legend">
 <summary>Key</summary>
 <div class="legend-body" id="legendbody">
-<p><span class="badge badge-family" data-badge="family"><span class="badge-label">Family</span></span> Family-confirmed</p>
-<p><span class="badge badge-records" data-badge="records"><span class="badge-label">Records</span></span> Record-sourced, not confirmed by family</p>
-<p><span class="badge badge-candidate" data-badge="candidate"><span class="badge-label">Candidate</span></span> Candidate, not proven</p>
-<p><span class="badge badge-living" data-badge="living"><span class="badge-label">Living</span></span> Living person</p>
+<p><span class="badge badge-family" data-badge="family"><span class="badge-label">Confirmed by family</span></span> Locked, or confirmed by Alex</p>
+<p><span class="badge badge-records" data-badge="records"><span class="badge-label">Found in records</span></span> Record-sourced, or a hit</p>
+<p><span class="badge badge-candidate" data-badge="candidate"><span class="badge-label">Possible match, not proven</span></span> Candidate, or a lead</p>
+<p><span class="badge badge-living" data-badge="living"><span class="badge-label">Living (private)</span></span> Living, or born after about 1920</p>
 <p class="legend-help">Focus shows parents, spouse, kids, and siblings. Show full tree for everyone else.</p>
 <p class="legend-help">A bar joins a couple. Their children hang under that bar. Drag or pinch to move. On a phone, swipe up for the next generation and down for the previous one. Tap a person for details.</p>
 </div>
@@ -74,12 +74,15 @@ try{var h=decodeURIComponent((location.hash||"").replace(/^#/,""));if(!h||h==="s
 </div>
 <button id="panetoggle" class="pane-toggle" type="button" aria-expanded="true" aria-controls="sheet"><span class="when-open">Hide details</span><span class="when-closed">Show details</span></button>
 </div>
+<p class="keystrip" id="keystrip">Confirmed by family · Found in records · Possible match, not proven · Living (private)</p>
 <main class="stage">
 <div id="treewrap">
 <svg id="svg" aria-label="Petersen family tree"><g id="vp"></g></svg>
+<div id="familylist" class="family-list" hidden></div>
 </div>
 <aside id="sheet" aria-labelledby="sheetlabel">
 <button id="panehide" class="pane-hide" type="button">Hide details</button>
+<p class="keystrip keystrip-sheet">Confirmed by family · Found in records · Possible match, not proven · Living (private)</p>
 <div class="sheetbar" id="sheetbar">
 <button id="sheetclose" class="sheetclose" type="button" aria-expanded="false" aria-controls="panel" aria-label="Show details">
 <span class="handle" aria-hidden="true"></span>

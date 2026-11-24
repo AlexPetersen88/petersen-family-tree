@@ -544,10 +544,26 @@ function nameSize(short){
   while(size>13&&short.length*size*0.62>maxW)size-=0.5;
   return size;
 }
-const isCandidate=p=>/^CANDIDATE\b/i.test(p.status||'');
-function statusKind(p){return isFamily(p)?'family':isCandidate(p)?'candidate':'records'}
-function statusWord(kind){return kind==='family'?'Family':kind==='candidate'?'Candidate':'Records'}
-function statusLong(kind){return kind==='family'?'Family-confirmed':kind==='candidate'?'Candidate, not proven':'Record-sourced, not confirmed by family'}
+const isCandidate=p=>/^CANDIDATE\b/i.test(p.status||'')||/\bLEAD\b/i.test(p.status||'');
+function recentBirth(p){
+  const y=yearOf(p.birth&&p.birth.date);
+  return /^\d{4}$/.test(y)&&Number(y)>=1920;
+}
+function personLabel(p){
+  if(p.living||recentBirth(p))return {kind:'living',label:'Living (private)'};
+  const blob=[p.status||'',p.familyConfirmed||'',p.denmarkOrigin||'',p.parentsStatus||''].join(' ');
+  if(/\bLOCKED\b/i.test(blob)||isFamily(p)||/FAMILY-CONFIRMED/i.test(blob)||/confirmed by Alex/i.test(blob))
+    return {kind:'family',label:'Confirmed by family'};
+  if(isCandidate(p))return {kind:'candidate',label:'Possible match, not proven'};
+  if(/RECORD-SOURCED/i.test(blob)||/\bHIT\b/i.test(blob))
+    return {kind:'records',label:'Found in records'};
+  const head=(p.status||'').split(':')[0].replace(/not confirmed by family/ig,'').trim();
+  if(head&&head.length<=40)return {kind:'records',label:head};
+  return {kind:'records',label:'Found in records'};
+}
+function statusKind(p){return personLabel(p).kind}
+function statusWord(p){return personLabel(p).label}
+function statusLong(p){return personLabel(p).label}
 function iconStroke(extra){return Object.assign({fill:'none',stroke:'currentColor','stroke-width':'1.6','stroke-linecap':'round','stroke-linejoin':'round'},extra)}
 function drawIcon(kind,parent,x,y){
   const g=el('g',{class:'badge-ico',transform:`translate(${x} ${y})`},parent);
@@ -574,7 +590,7 @@ function textWidth(label,size){
   return w>1?w:label.length*size*0.62;
 }
 function addBadges(parent,parts){
-  const icon=16,after=8,between=24,size=13,padX=8;
+  const icon=16,after=8,between=24,size=16,padX=8;
   const widths=parts.map(([,label])=>icon+after+textWidth(label,size));
   const total=widths.reduce((sum,w)=>sum+w,0)+between*(parts.length-1);
   let x=(W-total)/2;
@@ -593,26 +609,27 @@ PEOPLE.people.forEach(p=>{
   const at=pos[p.id]||{x:0,y:0};
   const x=at.x,y=at.y;
   const short=shortName(p.name);
-  const kind=statusKind(p);
-  const parts=[[kind,statusWord(kind)]];
-  if(p.living)parts.push(['living','Living']);
+  const label=personLabel(p);
+  const kind=label.kind;
+  const parts=[[kind,label.label]];
+  const yearLine=p.living?'':yrs(p);
   const g=el('g',{
-    class:'node '+(kind==='family'?'family':'records')+(kind==='candidate'?' candidate':'')+(p.living?' living':''),
+    class:'node '+(kind==='family'?'family':kind==='living'?'living':'records')+(kind==='candidate'?' candidate':''),
     transform:`translate(${x-W/2},${y-H/2})`,
     tabindex:'0',role:'button','aria-pressed':'false','data-id':p.id,
-    'aria-label':`${short}, ${yrs(p)}, ${statusLong(kind)}${p.living?', living person':''}`
+    'aria-label':`${short}${yearLine?', '+yearLine:''}, ${label.label}`
   });
   el('rect',{width:W,height:H,rx:16},g);
   el('text',{class:'nm',x:W/2,y:32,'text-anchor':'middle','font-size':nameSize(short)},g).textContent=short;
-  el('text',{class:'sub',x:W/2,y:52,'text-anchor':'middle','font-size':15},g).textContent=yrs(p);
+  el('text',{class:'sub',x:W/2,y:52,'text-anchor':'middle','font-size':15},g).textContent=yearLine;
   addBadges(g,parts);
   if(!pos[p.id]){
     g.style.display='none';
     g.setAttribute('aria-hidden','true');
     g.tabIndex=-1;
   }
-  g.addEventListener('click',e=>{e.stopPropagation();if(skipClick){skipClick=false;return}show(p.id,{focus:MOBILE()?'sheet':'node'})});
-  g.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();skipClick=true;show(p.id,{focus:true})}});
+  g.addEventListener('click',e=>{e.stopPropagation();if(skipClick){skipClick=false;return}show(p.id,{focus:MOBILE()?'sheet':'node',history:'push'})});
+  g.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();skipClick=true;show(p.id,{focus:true,history:'push'})}});
   nodes[p.id]=g;
 });
 
@@ -737,6 +754,17 @@ function viewPerson(id,opts={}){
   if((box.w<40||box.h<40)&&(opts._try||0)<8){requestAnimationFrame(()=>viewPerson(id,{...opts,_try:(opts._try||0)+1}));return}
   if(box.w<40)return;
   const couple=focusFrame(id);
+  if(fullTree&&!MOBILE()){
+    const all=cardBounds(Object.keys(pos));
+    if(all){
+      const fit=Math.min(1.2, box.w*0.9/all.span, box.h*0.86/all.height);
+      k=Math.max(12/18, fit);
+      tx=box.w/2-k*all.x;
+      ty=box.h/2-k*all.y;
+      apply();
+      return;
+    }
+  }
   if(MOBILE()){
     // One couple at a readable size. If both spouses fit, center them.
     // Otherwise center the selected person; a swipe moves a generation.
@@ -794,7 +822,10 @@ function syncScope(){
   const focusBtn=document.getElementById('scopefocus');
   const fullBtn=document.getElementById('scopefull');
   if(focusBtn)focusBtn.setAttribute('aria-pressed', String(!fullTree));
-  if(fullBtn)fullBtn.setAttribute('aria-pressed', String(fullTree));
+  if(fullBtn){
+    fullBtn.setAttribute('aria-pressed', String(fullTree));
+    fullBtn.textContent=MOBILE()?'Whole family (list)':'Show full tree';
+  }
   const who=selected&&P[selected]?shortName(P[selected].name):'Hans Peter Petersen';
   svg.setAttribute('aria-label', fullTree
     ?'Petersen family tree, full tree'
@@ -811,7 +842,35 @@ function setScope(full){
   const id=selected||ROOT;
   ensureLayout(id);
   syncScope();
+  const list=document.getElementById('familylist');
+  const useList=fullTree&&MOBILE();
+  document.body.classList.toggle('outline-mode', useList);
+  if(list){
+    list.hidden=!useList;
+    if(useList)list.innerHTML=outlineHtml();
+  }
   viewPerson(id,{force:true});
+}
+function outlineHtml(){
+  const ids=Object.keys(pos);
+  const known=new Set(ids);
+  const kidsOf={};
+  ids.forEach(id=>{
+    (P[id].parents||[]).forEach(pid=>{
+      if(!known.has(pid))return;
+      (kidsOf[pid]=kidsOf[pid]||[]);
+      if(!kidsOf[pid].includes(id))kidsOf[pid].push(id);
+    });
+  });
+  const child=new Set(Object.values(kidsOf).flat());
+  const roots=ids.filter(id=>!child.has(id));
+  const item=id=>{
+    const lab=personLabel(P[id]);
+    const years=P[id].living?'':yrs(P[id]);
+    const nested=(kidsOf[id]||[]).map(item).join('');
+    return `<li><button type="button" data-id="${esc(id)}">${esc(shortName(P[id].name))}${years?' · '+esc(years):''} · ${esc(lab.label)}</button>${nested?`<ul>${nested}</ul>`:''}</li>`;
+  };
+  return `<ul class="outline">${roots.map(item).join('')}</ul>`;
 }
 function zoom(f,cx,cy){
   const box=visibleBox();
@@ -888,11 +947,11 @@ function endPointer(e){
   if(id||moved||wasPinch)skipClick=true;
   if(MOBILE()&&moved&&!wasPinch&&Math.abs(dy)>64&&Math.abs(dy)>Math.abs(dx)*1.3){
     const next=generationTarget(dy>0?-1:1);
-    if(next)show(next,{force:true,focus:false,sheet:false});
+    if(next)show(next,{force:true,focus:false,sheet:false,history:'push'});
     return;
   }
   if(!id)return;
-  show(id,{focus:MOBILE()?'sheet':'node'});
+  show(id,{focus:MOBILE()?'sheet':'node',history:'push'});
 }
 svg.addEventListener('pointerup',endPointer);svg.addEventListener('pointercancel',endPointer);
 function bindCtrl(id,fn){
@@ -986,9 +1045,70 @@ function srcHtml(s,personId){
   const urls=(S.urls||[]).map(u=>`<a class="src-url" href="${esc(u)}" target="_blank" rel="noopener">${esc(u)}</a>`).join('');
   return `<div class="src"><a class="src-jump" href="${href}"><span class="src-id">${esc(s)}</span><span class="src-body">${esc(t)}${flag}</span></a>${urls}</div>`;
 }
-function place(o){if(!o)return'';if(typeof o==='string')return esc(o);
- const bits=[o.date,o.place,o.baptism&&('bapt. '+o.baptism),o.burial&&('bur. '+o.burial),o.age&&('age '+o.age),o.placeStatus,o.entry,o.status].filter(Boolean).map(esc);
- let h=bits.join(' · '); if(o.matchNote)h+=`<div class="relnote">${esc(o.matchNote)}</div>`; return h}
+const MONTHS=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+function prettyDates(s){
+  return String(s??'').replace(/\b(\d{4})-(\d{2})-(\d{2})\b/g,(all,y,mo,d)=>{
+    const m=Number(mo);
+    if(m<1||m>12)return all;
+    return String(Number(d))+' '+MONTHS[m-1]+' '+y;
+  });
+}
+function howSure(text){
+  const s=String(text||'');
+  if(/\bOPEN\b|CONFLICT/i.test(s))return 'Records disagree, both shown';
+  if(/\bCANDIDATE\b|\bLEAD\b/i.test(s))return 'Possible match, not proven';
+  if(/\bHIGH\b/i.test(s))return 'Two copies of the record agree';
+  if(/\bMED(?:IUM)?\b/i.test(s))return 'One record';
+  if(/FAMILY-CONFIRMED|\bLOCKED\b|confirmed by Alex/i.test(s))return 'Confirmed by family';
+  if(/RECORD-SOURCED|\bHIT\b/i.test(s))return 'Found in records';
+  return '';
+}
+function isResearchSentence(s){
+  return /dig\s*\d+|shots\/|browser-pass|\.md\b|paid image|NOT ordered|\bFAG\b|\bMOMS\b|\bS\d{1,4}\b/i.test(s);
+}
+function sourceLinks(text,personId){
+  const ids=[...new Set([...String(text).matchAll(/\b(S\d{1,4})\b/g)].map(m=>m[1]))];
+  return ids.map(sid=>{
+    const S=SOURCES[sid];
+    let title=S?S.text.replace(/https?:\/\/\S+/g,'').replace(/\bS\d+\b/g,'').replace(/\s+/g,' ').trim():'';
+    title=(title.split('.')[0]||'').trim().slice(0,90);
+    if(!title)title=sid;
+    const href=`sources.html?person=${encodeURIComponent(personId)}#${encodeURIComponent(sid)}`;
+    return `<a href="${href}">${esc(title)}</a>`;
+  }).join(', ');
+}
+let pendingNotes=[];
+function factHtml(raw,personId){
+  const text=prettyDates(raw);
+  if(!text)return '';
+  const kept=[],notes=[];
+  text.split(/(?<=\.)\s+/).forEach(s=>{(isResearchSentence(s)?notes:kept).push(s)});
+  if(notes.length)pendingNotes.push(notes.join(' '));
+  let publicText=kept.join(' ').replace(/\bS\d{1,4}\b/g,'').replace(/\s{2,}/g,' ').replace(/\s+([,.;])/g,'$1').trim();
+  const sure=howSure(text);
+  const links=sourceLinks(text,personId);
+  if(!publicText&&!sure&&!links)publicText=text;
+  const parts=[];
+  if(publicText)parts.push(esc(publicText));
+  if(sure)parts.push(`<span class="fact-sure">${esc(sure)}</span>`);
+  if(links)parts.push(links);
+  return parts.join(' · ');
+}
+function place(o,personId){
+  if(!o)return '';
+  if(typeof o==='string')return factHtml(o,personId);
+  const date=o.date?prettyDates(o.date):'';
+  const main=[date,o.place].filter(Boolean).join(' · ');
+  const extra=[o.baptism&&('bapt. '+o.baptism),o.burial&&('bur. '+o.burial),o.age&&('age '+o.age),o.placeStatus,o.entry,o.status,o.matchNote].filter(Boolean).join(' ');
+  if(extra)pendingNotes.push(prettyDates(extra));
+  const sure=howSure(extra);
+  const links=sourceLinks(extra,personId);
+  const parts=[];
+  if(main)parts.push(esc(main));
+  if(sure)parts.push(`<span class="fact-sure">${esc(sure)}</span>`);
+  if(links)parts.push(links);
+  return parts.join(' · ');
+}
 function show(id,opts={}){
   const p=P[id];if(!p||!nodes[id])return;
   const wasHome=document.documentElement.classList.contains('home-open');
@@ -1003,42 +1123,45 @@ function show(id,opts={}){
   Object.values(nodes).forEach(n=>{n.classList.remove('sel');n.setAttribute('aria-pressed','false')});
   nodes[id].classList.add('sel');nodes[id].setAttribute('aria-pressed','true');
   const kids=new Set([...(p.children||[])]);PEOPLE.people.forEach(q=>(q.parents||[]).includes(id)&&kids.add(q.id));
-  const kind=statusKind(p);
-  const pills=[badgeHtml(kind,kind==='family'?'Family-confirmed':kind==='candidate'?'Candidate · not proven':'Record-sourced · not confirmed by family')];
-  if(isOrigin(p))pills.push(badgeHtml('family','Family-confirmed origin'));
-  if(p.living)pills.push(badgeHtml('living','Living'));
+  const label=personLabel(p);
+  const pills=[badgeHtml(label.kind,label.label)];
   let h=`<h2 tabindex="-1">${esc(p.name)}</h2><div class="pills">${pills.join('')}</div>`;
+  const storyLinks={
+    P18:[['story/01-hans-pedersen-childhood.html','Read Chapter 1: A Boy Called Hans Pedersen of Skee →'],['story/02-bjernede-parents-and-loss.html','Read Chapter 2: Bjernede: A Marriage, Four Children, and Loss →']],
+    P19:[['story/01-hans-pedersen-childhood.html','Read Chapter 1: A Boy Called Hans Pedersen of Skee →'],['story/02-bjernede-parents-and-loss.html','Read Chapter 2: Bjernede: A Marriage, Four Children, and Loss →']],
+    P6:[['story/02-bjernede-parents-and-loss.html','Read Chapter 2: Bjernede: A Marriage, Four Children, and Loss →'],['story/03-hans-peter-to-minnesota.html','Read Chapter 3: Hans Peter Crosses to Minnesota →']],
+    P3:[['story/04-elmer-to-alex.html','Read Chapter 4: From Elmer to Alex →']],
+    P1:[['story/04-elmer-to-alex.html','Read Chapter 4: From Elmer to Alex →']]
+  };
+  if(storyLinks[p.id])h+=`<div class="story-jumps">${storyLinks[p.id].map(([href,text])=>`<a class="story-jump-btn" href="${href}">${esc(text)}</a>`).join('')}</div>`;
+  pendingNotes=[];
   const facts=[],rels=[];
   const push=(list,t,v)=>{if(v)list.push(`<dt>${t}</dt><dd>${v}</dd>`)};
   if(Array.isArray(p.altNames)&&p.altNames.length)push(facts,'Name variants',p.altNames.map(esc).join('<br>'));
-  push(facts,'Born',place(p.birth)||(p.living?'<span class="muted">Not recorded (living person)</span>':'<span class="muted">unknown</span>'));
-  push(facts,'Baptism',esc(p.baptism));
-  if(!p.living)push(facts,'Died',place(p.death)||'<span class="muted">unknown</span>');
-  push(facts,'Burial',esc(p.burial));
-  push(facts,'Immigration',p.immigration&&[p.immigration.year||'year unknown',p.immigration.status].map(esc).join(' · '));
-  push(facts,'1870 residence',esc(p.residence_1870));
-  push(facts,'1900 residence',esc(p.residence_1900));
-  push(facts,'1910 residence',esc(p.residence_1910));
-  push(facts,'1920 residence',esc(p.residence_1920));
-  if(Array.isArray(p.residences)&&p.residences.length)push(facts,'Residences',p.residences.map(esc).join('<br>'));
-  push(facts,'Notes',esc(p.notes));
-  push(facts,'Research status',esc(p.status));
-  const narrative=[];
-  if(p.familyConfirmed)narrative.push(`<p class="oknote">${esc(p.familyConfirmed)}</p>`);
-  if(p.denmarkOrigin)narrative.push(`<p class="oknote">${esc(p.denmarkOrigin)}</p>`);
-  if(p.danishParents)narrative.push(`<p class="relnote">${esc(p.danishParents)}</p>`);
-  if(p.death&&p.death.matchNote)narrative.push(`<p class="relnote">${esc(p.death.matchNote)}</p>`);
-  if(p.emigrationCandidate)narrative.push(`<p class="relnote">${esc(p.emigrationCandidate)}</p>`);
-  if(p.kinshipNote)narrative.push(`<p class="relnote">${esc(p.kinshipNote)}</p>`);
+  push(facts,'Born',place(p.birth,id)||(p.living?'<span class="muted">Not recorded (living person)</span>':'<span class="muted">unknown</span>'));
+  push(facts,'Baptism',factHtml(p.baptism,id));
+  if(!p.living)push(facts,'Died',place(p.death,id)||'<span class="muted">unknown</span>');
+  push(facts,'Burial',factHtml(p.burial,id));
+  push(facts,'Immigration',p.immigration&&factHtml([p.immigration.year||'year unknown',p.immigration.status].filter(Boolean).join(' · '),id));
+  ['1870','1900','1910','1920'].forEach(y=>{const key='residence_'+y;if(p[key])push(facts,y+' residence',factHtml(p[key],id))});
+  if(Array.isArray(p.residences)&&p.residences.length)push(facts,'Residences',p.residences.map(r=>factHtml(r,id)).join('<br>'));
+  if(p.notes)pendingNotes.push(p.notes);
+  if(p.status)pendingNotes.push(p.status);
+  if(p.familyConfirmed)pendingNotes.push(p.familyConfirmed);
+  if(p.denmarkOrigin)pendingNotes.push(p.denmarkOrigin);
+  if(p.danishParents)pendingNotes.push(p.danishParents);
+  if(p.death&&p.death.matchNote)pendingNotes.push(p.death.matchNote);
+  if(p.emigrationCandidate)pendingNotes.push(p.emigrationCandidate);
+  if(p.kinshipNote)pendingNotes.push(p.kinshipNote);
   if(p.usCandidate){
     const u=p.usCandidate;
     const bits=[u.status,u.fag,u.mnhsDeath,u.conflictOther,u.cemeteryNote,u.wives,u.note].filter(Boolean);
-    narrative.push(`<p class="relnote">${esc(bits.join(' '))}</p>`);
+    if(bits.length)pendingNotes.push(bits.join(' '));
   }
-  push(facts,'Confirmation',esc(p.confirmation));
+  push(facts,'Confirmation',factHtml(p.confirmation,id));
   const streetPin=p.id==='P34'?highMapLinks(HIGH_PINS.find(pin=>pin.id==='sankt-hans-gade')):'';
-  push(facts,'Residence',esc(p.residence)+(p.id==='P34'&&p.residence?streetPin:''));
-  push(facts,'Occupation',esc(p.occupation)+(p.id==='P34'&&!p.residence?streetPin:''));
+  push(facts,'Residence',factHtml(p.residence,id)+(p.id==='P34'&&p.residence?streetPin:''));
+  push(facts,'Occupation',factHtml(p.occupation,id)+(p.id==='P34'&&!p.residence?streetPin:''));
   const HANS_FOSTER_GP="Hans's foster grandparents (parents of foster mother Kirsten Johansdatter).";
   const HANS_FOSTER_GG="Hans's foster great-grandfather (parent of foster grandmother Margrethe).";
   function fosterGrandparentsOf(personId){
@@ -1061,7 +1184,7 @@ function show(id,opts={}){
   push(rels,'Parents',(p.parents||[]).map(ref=>{
     const note=fosterGpIds.has(ref)
       ?` <span class="relnote">${esc(HANS_FOSTER_GP)}</span>`
-      :(P[ref]&&!isFamily(P[ref])?' <span class="relnote">RECORD-SOURCED, not confirmed by family.</span>':'');
+      :(P[ref]&&!isFamily(P[ref])?' <span class="relnote">Found in records.</span>':'');
     return `<div class="rel">${link(ref)}${note}</div>`;
   }).join(''));
   if(p.sameAs&&P[p.sameAs])push(rels,'Same person',`${link(p.sameAs)} <span class="relnote">Census alias. Parent link stays on the named father.</span>`);
@@ -1082,22 +1205,28 @@ function show(id,opts={}){
   push(rels,'Spouse(s)',(p.spouses||[]).map(s=>(s.id?link(s.id):esc(s.name))+(s.marriage?` <span class="muted">m. ${esc(s.marriage)}</span>`:'')).join('<br>'));
   push(rels,'Children',[...kids].map(link).join('<br>'));
   push(rels,'Child count',esc(p.children_count));
-  if(facts.length||narrative.length)h+=`<h3>Facts</h3>${facts.length?`<dl>${facts.join('')}</dl>`:''}${narrative.join('')}`;
+  if(facts.length)h+=`<h3>Facts</h3><dl>${facts.join('')}</dl>`;
   if(rels.length)h+=`<h3>Relatives</h3><dl>${rels.join('')}</dl>`;
   const sources=(p.sources||[]).map(s=>srcHtml(s,id)).join('');
   h+=`<h3>Sources</h3><p class="src-hint">Source IDs open the Sources page. A link there returns to this person.</p>${sources||'<span class="muted">none</span>'}`;
   h+=`<p class="fineprint">ID ${esc(p.id)}. Double-check against primary records before relying on any of this.</p>`;
+  if(pendingNotes.length){
+    const uniq=[...new Set(pendingNotes.map(n=>String(n).trim()).filter(Boolean))];
+    h+=`<details class="research-notes"><summary>Research notes</summary>${uniq.map(n=>`<p>${esc(prettyDates(n))}</p>`).join('')}</details>`;
+  }
   panel.innerHTML=decorateHighPlaces(h);
   sheetLabel.textContent=shortName(p.name);
-  // #id is the person deep link Phase 2 person pages can take over.
-  if(opts.history!==false&&location.hash!=='#'+id)history.replaceState(null,'','#'+id);
+  // #id is the person deep link. A person the reader picks is a history step.
+  if(opts.history==='push'){
+    if(location.hash!=='#'+id)history.pushState({person:id},'','#'+id);
+  }else if(opts.history!==false&&location.hash!=='#'+id)history.replaceState({person:id},'','#'+id);
   if(opts.pane===false)setPaneHidden(true);
   const openSheet=paneIsHidden()?false:(opts.sheet!==undefined?!!opts.sheet:true);
   setSheet(openSheet,{skipView:true,focusSheet:opts.focus==='sheet'||opts.focus===true});
   viewPerson(id,{force:!!opts.force||(!fullTree&&changed)});
   if(opts.focus==='node')nodes[id]?.focus({preventScroll:true});
 }
-panel.addEventListener('click',e=>{const a=e.target.closest('a.p');if(!a)return;e.preventDefault();show(a.dataset.id)});
+panel.addEventListener('click',e=>{const a=e.target.closest('a.p');if(!a)return;e.preventDefault();show(a.dataset.id,{history:'push'})});
 
 document.addEventListener('click',e=>{const legend=document.getElementById('legend');if(legend?.open&&!legend.contains(e.target))legend.open=false});
 addEventListener('keydown',e=>{
@@ -1162,8 +1291,30 @@ function boot(){
 window.showPerson=function(id){
   if(!P[id]||!nodes[id])return;
   if(window.PetersenFinder)window.PetersenFinder.close();
-  show(id,{force:true,sheet:true,focus:MOBILE()?'sheet':'node'});
+  show(id,{force:true,sheet:true,focus:MOBILE()?'sheet':'node',history:'push'});
 };
+function applyHash(){
+  const raw=decodeURIComponent((location.hash||'').replace(/^#/,''));
+  if(!raw||raw==='start'){
+    if(typeof showHome==='function')showHome();
+    return;
+  }
+  if(raw==='tree'){
+    document.documentElement.classList.remove('home-open');
+    const treeNav=document.querySelector('[data-nav="tree"]');
+    if(treeNav){treeNav.classList.add('on');treeNav.setAttribute('aria-current','page')}
+    return;
+  }
+  if(P[raw]&&nodes[raw]&&raw!==selected)show(raw,{history:false,force:true});
+}
+addEventListener('hashchange', applyHash);
+addEventListener('popstate', applyHash);
+document.getElementById('familylist')?.addEventListener('click',e=>{
+  const button=e.target.closest('button[data-id]');
+  if(!button)return;
+  setScope(false);
+  show(button.getAttribute('data-id'),{force:true,history:'push',focus:MOBILE()?'sheet':'node'});
+});
 window.openTree=function(){
   const id=selected||ROOT;
   const back=!!selected;

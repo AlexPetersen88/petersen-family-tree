@@ -89,7 +89,7 @@
       return;
     }
     const bounds=L.latLngBounds(pts.map(pin=>[pin.lat,pin.lng]));
-    map.fitBounds(bounds,{paddingTopLeft:[72,20],paddingBottomRight:[20,36],maxZoom:13,animate:animate&&!reduce});
+    map.fitBounds(bounds,{padding:[40,40],maxZoom:13,animate:animate&&!reduce});
   }
   function clearSelection(){
     current=null;
@@ -110,7 +110,7 @@
     const mn=document.getElementById('regionmn');
     if(dk)dk.setAttribute('aria-pressed',next==='dk'?'true':'false');
     if(mn)mn.setAttribute('aria-pressed',next==='mn'?'true':'false');
-    if(changed&&regionStatus)regionStatus.textContent=next==='dk'?'Showing Denmark.':'Showing Minnesota.';
+    if(changed&&regionStatus)regionStatus.textContent=next==='dk'?'Showing Denmark and Germany.':'Showing Minnesota.';
     const active=document.getElementById(next==='dk'?'places-dk':'places-mn');
     const other=document.getElementById(next==='dk'?'places-mn':'places-dk');
     const side=document.querySelector('.map-side');
@@ -199,6 +199,21 @@
     else select(pin.id);
   }
   function bindList(){
+    document.querySelectorAll('.place-card').forEach(card=>{
+      if(card.querySelector('.people-here'))return;
+      const links=[...card.querySelectorAll('a[href*="#P"]')];
+      if(!links.length)return;
+      const line=document.createElement('p');
+      line.className='people-here';
+      line.append('People here: ');
+      links.forEach((a,i)=>{
+        if(i)line.append(', ');
+        const link=a.cloneNode(true);
+        line.append(link);
+      });
+      const body=card.querySelector('.place-body');
+      if(body)body.prepend(line);
+    });
     document.querySelectorAll('.place-jump').forEach(button=>{
       button.addEventListener('click',()=>{
         const card=button.closest('.place-card');
@@ -222,8 +237,17 @@
       maxZoom:19,
       attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
     }).addTo(map);
+    function spider(pin){
+      const mates=PINS.filter(other=>other.cluster&&other.cluster===pin.cluster);
+      if(mates.length<2)return [pin.lat,pin.lng];
+      const i=mates.findIndex(other=>other.id===pin.id);
+      const angle=(i/mates.length)*Math.PI*2;
+      const dLat=0.0014*Math.sin(angle);
+      const dLng=0.0018*Math.cos(angle);
+      return [pin.lat+dLat,pin.lng+dLng];
+    }
     PINS.forEach(pin=>{
-      const marker=L.marker([pin.lat,pin.lng],{
+      const marker=L.marker(spider(pin),{
         icon:iconFor(pin,false),
         title:pinLabel(pin),
         keyboard:true,

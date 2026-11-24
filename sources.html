@@ -25,24 +25,64 @@
 <div class="banner"></div>
 <a id="return" class="return-tree" hidden href="index.html">Back to the tree</a>
 </div>
-<main class="wrap"><h2>Sources &amp; citation log <span class="muted" style="font-size:.9rem">(updated 2026-11-23)</span></h2>
+<main class="wrap"><h2>Sources &amp; citation log</h2>
+<p class="updated">Updated 23 Nov 2026</p>
+<form class="source-search" role="search" onsubmit="return false">
+<label class="sr" for="source-q">Search sources</label>
+<input id="source-q" type="search" placeholder="Search sources" autocomplete="off" enterkeyhint="search">
+</form>
+<p id="source-head" class="lede" hidden></p>
+<button id="source-all" type="button" hidden>Show all sources</button>
 <p class="lede">Find a Grave and index sites are secondary. Entries marked excluded, unrelated, or unconfirmed are kept for the record and are <b>not</b> linked to anyone.</p>
 <p class="lede">Kirsten Johansdatter’s parents, Margrethe Johansdatter and Johan Mathiesen of Tolstrup/Tølstrup, are approved at high confidence (S377, S379, S380; the father also S322 and S326). They are Hans Pedersen’s foster grandparents (parents of foster mother Kirsten Johansdatter), not his foster parents. Johan Haagensen is Margrethe’s father, approved high (S406, S379), and is Hans’s foster great-grandfather. Blood kinship to Hans Pedersen is unverified. Peder Johansen’s parents, Johan Friderichsen and Maren Paulsdatter, are locked high. Rasmus Peter Rasmussen’s 28 Oct 1939 death in Stanley Township, Lyon County, Minnesota, with burial at Union Cemetery, Evan (S84, Find a Grave 229182652), stays a candidate: not confirmed; the Danish–US link is not sealed.</p>
 <p class="lede">Hans Peter Petersen’s origin is <b>family-confirmed</b> (Alex, 2026-11-03, <b>S30</b>): born 28 Feb 1864 in Bjernede, Sorø amt, Denmark. His Danish parents, stepfather, and siblings stay <b>record-sourced only</b>. Ane’s 29 Jun 1883 death is entered as “Ane Marie Rasmussen,” wife for the second time of Hans Rasmussen, and is matched to Ane Rasmusdatter <b>by inference</b> (<b>S45</b>). Hans Rasmussen died about 2 Jul 1883, age 83; the birth year leans 1801 and he is not linked to a ~1833 candidate (<b>S46</b>). Rasmus Peter’s 1885 confirmation is record-sourced (<b>S47</b>); an 18 Jun 1889 emigration to Sleepy Eye, contract 4232 Y, is <b>candidate / unverified</b> (<b>S49</b>). Ane Marie’s 1888 confirmation names a foster father (<b>S48</b>); her fate after 1888 is unknown, and the baptism day is 10 Jan 1875 in one record and 11 Jan 1875 in the other.</p>
-<table><thead><tr><th>ID</th><th>Source</th><th>Cited for</th></tr></thead><tbody id="tb"></tbody></table><div id="notes" class="notes"></div></main>
+<table><thead><tr><th>ID</th><th>Source</th><th>Cited for</th></tr></thead><tbody id="tb"></tbody></table>
+<details id="ruled" class="ruled">
+<summary>Ruled out (kept for the record)</summary>
+<table><thead><tr><th>ID</th><th>Source</th><th>Cited for</th></tr></thead><tbody id="ruled-body"></tbody></table>
+</details>
+<div id="notes" class="notes"></div></main>
 <script src="data.js"></script><script src="common.js"></script><script src="lineage.js"></script><script src="finder.js"></script><script>
 const cites={};PEOPLE.people.forEach(p=>(p.sources||[]).forEach(s=>(cites[s]=cites[s]||[]).push(p)));
 const params=new URLSearchParams(location.search);
 const backId=params.get('person');
 const back=document.getElementById('return');
 if(back&&backId&&P[backId]){back.href='index.html#'+encodeURIComponent(backId);back.textContent='← Back to '+P[backId].name;back.hidden=false}
-tb.innerHTML=Object.values(SOURCES).map(S=>{
+let showAll=!backId;
+function ruledOut(S){return /excluded|unrelated|unconfirmed/i.test(S.flag||'')}
+function sourceRow(S){
   const text=esc(S.text.replace(/https?:\/\/[^\s)]+/g,'').replace(/:\s*$/,''));
   const urls=(S.urls||[]).map(u=>`<a class="src-url" href="${esc(u)}" target="_blank" rel="noopener">${esc(u)}</a>`).join('')||'<span class="muted">no URL in this file</span>';
   const who=(cites[S.id]||[]).map(p=>`<a class="who" href="index.html#${encodeURIComponent(p.id)}">${esc(p.name)}</a>`).join('')||'<span class="muted">—</span>';
   const flag=S.flag?`<br><span class="flag">${esc(S.flag)}</span>`:'';
   return `<tr id="${S.id}"><td data-label="ID"><b class="sid">${S.id}</b>${flag}</td><td data-label="Source">${text}${urls}</td><td data-label="Cited for">${who}</td></tr>`;
-}).join('');
+}
+function renderSources(){
+  const q=(document.getElementById('source-q').value||'').trim().toLowerCase();
+  let list=Object.values(SOURCES);
+  const head=document.getElementById('source-head');
+  const allBtn=document.getElementById('source-all');
+  if(backId&&P[backId]&&!showAll){
+    const ids=new Set(P[backId].sources||[]);
+    list=list.filter(S=>ids.has(S.id));
+    head.hidden=false;
+    head.textContent='Sources for '+P[backId].name+' ('+list.length+')';
+    allBtn.hidden=false;
+  }else{
+    head.hidden=true;
+    allBtn.hidden=true;
+  }
+  if(q)list=list.filter(S=>(S.id+' '+(S.flag||'')+' '+S.text).toLowerCase().includes(q));
+  const keep=list.filter(S=>!ruledOut(S));
+  const drop=list.filter(ruledOut);
+  tb.innerHTML=keep.map(sourceRow).join('')||'<tr><td data-label="Source">No sources match.</td></tr>';
+  document.getElementById('ruled-body').innerHTML=drop.map(sourceRow).join('');
+  document.getElementById('ruled').hidden=!drop.length;
+  tb.innerHTML=decorateHighPlaces(tb.innerHTML);
+}
+document.getElementById('source-q').addEventListener('input',renderSources);
+document.getElementById('source-all').addEventListener('click',()=>{showAll=true;renderSources()});
+renderSources();
 const direct=PEOPLE.people.flatMap(p=>(p.sources||[]).filter(s=>/^https?:/.test(s)).map(s=>`<li><a href="${esc(s)}" target="_blank" rel="noopener">${esc(s)}</a> — ${esc(p.name)}</li>`));
 notes.innerHTML=SOURCE_NOTES.map(n=>`<p>${esc(n)}</p>`).join('')+(direct.length?`<h3>Direct links cited on people</h3><ul>${direct.join('')}</ul>`:'');
 tb.innerHTML=decorateHighPlaces(tb.innerHTML);

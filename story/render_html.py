@@ -10,6 +10,7 @@ ABRIDGED.md and CHANGE-LOG.md render as companion pages next to the chapters.
 """
 
 import html
+import json
 import re
 import sys
 from pathlib import Path
@@ -519,6 +520,28 @@ def map_widget(pin):
     )
 
 
+def clean_reader_text(text):
+    """Drop internal ids, research file paths, and bare coordinates from reader text, not from tags."""
+    def outside(pattern, repl, source):
+        parts = re.split(r"(<[^>]+>)", source)
+        return "".join(
+            part if part.startswith("<") else re.sub(pattern, repl, part) for part in parts
+        )
+
+    text = outside(r"\(P\d+\)", "", text)
+    text = outside(r"\bP\d+\b", "", text)
+    text = outside(r"\b[\w./-]+\.md\b", "", text)
+    text = outside(r"\(\s*,?\s*-?\d{1,3}\.\d+\s*,\s*-?\d{1,3}\.\d+[^)]*\)", "", text)
+    text = outside(r"(?<![\w./])-?\d{1,2}\.\d{3,}\s*,\s*-?\d{1,3}\.\d{3,}", "", text)
+    text = outside(r"\(\s*[,;]?\s*\)", "", text)
+    text = outside(r"\(\s*([,;])", r"\1", text)
+    text = outside(r"\(\s*;", "(", text)
+    text = outside(r"\s+,", ",", text)
+    text = outside(r"\s+\.", ".", text)
+    text = outside(r" {2,}", " ", text)
+    return text
+
+
 def inline(text, ids, link_chapters):
     urls = URL_RE.findall(text)
     for i, url in enumerate(urls):
@@ -658,7 +681,7 @@ def split_chapter(text):
     return title, dek, lines[i:]
 
 
-def chrome(current):
+def chrome(current, tools=True):
     jump = [
         ("index.html", "All", "All chapters", current == "index"),
     ]
@@ -685,12 +708,7 @@ def chrome(current):
             f'<a href="{comp["html"]}"{current_attr}>{html.escape(comp["short"])}</a>'
         )
     story_current = ' class="on" aria-current="page"'
-    return f"""<div class="sticky-chrome">
-<header>
-<div class="brand"><p class="eyebrow">Redwood County, Minnesota</p><h1><a href="../index.html#start">The Petersen Family</a></h1></div>
-<nav aria-label="Primary"><a data-nav="tree" href="../index.html#tree">Tree</a><a href="../people.html">People</a><a href="../sources.html">Sources</a><a{story_current} href="index.html">Story</a><a href="../map.html">Map</a></nav>
-</header>
-<button type="button" class="story-tools-toggle" id="storytoolstoggle" aria-expanded="true" aria-controls="storytools"><span class="when-open">Hide tools</span><span class="when-closed">Show tools</span></button>
+    tools_html = f"""<button type="button" class="story-tools-toggle" id="storytoolstoggle" aria-expanded="true" aria-controls="storytools"><span class="when-open">Hide tools</span><span class="when-closed">Show tools</span></button>
 <div id="storytools" class="story-tools">
 <div class="banner"></div>
 <nav class="story-jump" aria-label="Chapters">{''.join(links)}</nav>
@@ -700,7 +718,13 @@ def chrome(current):
 <a href="../downloads/Petersen-Family-Story-Kids.pdf">Kids story PDF</a>
 <a href="../downloads/Denmark-Trip-Itinerary.pdf">Denmark trip PDF</a>
 </nav>
-</div>
+</div>""" if tools else ""
+    return f"""<div class="sticky-chrome">
+<header>
+<div class="brand"><p class="eyebrow">Redwood County, Minnesota</p><h1><a href="../index.html#start">The Petersen Family</a></h1></div>
+<nav aria-label="Primary"><a data-nav="tree" href="../index.html#tree">Tree</a><a href="../people.html">People</a><a href="../sources.html">Sources</a><a{story_current} href="index.html">Story</a><a href="../map.html">Map</a></nav>
+</header>
+{tools_html}
 <script>
 (function(){{var c=document.documentElement.classList.contains("story-tools-collapsed"),b=document.getElementById("storytoolstoggle"),t=document.getElementById("storytools");if(b)b.setAttribute("aria-expanded",c?"false":"true");if(t){{if(c)t.setAttribute("hidden","");else t.removeAttribute("hidden")}}}})();
 </script>
@@ -719,7 +743,7 @@ def story_file(current):
     return current
 
 
-def page(title, current, body):
+def page(title, current, body, tools=True):
     url = f"{SITE}/story/{story_file(current)}"
     safe_title = html.escape(title)
     safe_desc = html.escape(SITE_DESC)
@@ -753,7 +777,7 @@ try{{var v=localStorage.getItem("petersen-story-tools");var tight=matchMedia("(m
 <link rel="stylesheet" href="../style.css">
 </head>
 <body class="page story">
-{chrome(current)}
+{chrome(current, tools)}
 <main class="story-wrap">
 {body}
 </main>
@@ -799,6 +823,54 @@ def companion_pager(index):
     parts.append('<a class="keylink" href="source-key.html">Source key</a>')
     parts.append("</nav>")
     return "\n".join(parts)
+
+
+def link_first_people(html_text):
+    """Wrap the first plain-text mention of each unique recorded name. Does not add names."""
+    data = json.loads((ROOT.parent / "people.json").read_text(encoding="utf-8"))
+    by_name = {}
+    for person in data["people"]:
+        name = re.sub(r"\s*\([^)]*\)", "", person.get("name") or "").strip()
+        if len(name.split()) < 2 or len(name) < 10:
+            continue
+        by_name.setdefault(name, []).append(person["id"])
+    pairs = [(name, ids[0]) for name, ids in by_name.items() if len(ids) == 1]
+    pairs.sort(key=lambda item: len(item[0]), reverse=True)
+    for name, pid in pairs:
+        parts = re.split(r"(<[^>]+>)", html_text)
+        in_a = False
+        in_title = False
+        linked = False
+        for i, part in enumerate(parts):
+            if part.startswith("<"):
+                if re.match(r"<a\b", part, re.I):
+                    in_a = True
+                elif part.lower().startswith("</a"):
+                    in_a = False
+                elif part.lower().startswith("<title"):
+                    in_title = True
+                elif part.lower().startswith("</title"):
+                    in_title = False
+                continue
+            if in_a or in_title or not part:
+                continue
+            at = part.find(name)
+            if at < 0:
+                continue
+            before = part[at - 1] if at else " "
+            after = part[at + len(name) : at + len(name) + 1]
+            if before.isalnum() or (after.isalnum() if after else False):
+                continue
+            parts[i] = (
+                part[:at]
+                + f'<a href="../index.html#{pid}">{name}</a>'
+                + part[at + len(name) :]
+            )
+            linked = True
+            break
+        if linked:
+            html_text = "".join(parts)
+    return html_text
 
 
 def plain(text):
@@ -923,6 +995,7 @@ def render():
             "</a>"
         )
     index_body = """<h2>Story</h2>
+<p class="lede">New here? Start with the <a href="abridged.html">Short version (10 min)</a> or jump to <a href="04-elmer-to-alex.html">Chapter 4: From Elmer to Alex</a>.</p>
 <p class="lede">Four chapters, from Hans Pedersen of Skee to Alex, plus a short version, a kids' telling, and a change log. Uncertain points stay labeled. Living members of the current household are left out on purpose.</p>
 <ol class="chapter-list">
 """ + "\n".join(cards) + """
@@ -938,7 +1011,7 @@ def render():
 <a class="download-card" href="../downloads/Petersen-Family-Story-Kids.pdf"><span class="download-kicker">PDF</span><span class="download-title">Petersen family story for kids</span><span class="download-sum">The same cleared facts, for ages 9–11.</span></a>
 <a class="download-card" href="../downloads/Denmark-Trip-Itinerary.pdf"><span class="download-kicker">PDF</span><span class="download-title">Denmark trip itinerary</span><span class="download-sum">Genealogist-approved places only.</span></a>
 </section>"""
-    index_html = page("Story · Petersen Family", "index", index_body)
+    index_html = page("Story · Petersen Family", "index", index_body, tools=False)
     (ROOT / "index.html").write_text(index_html, encoding="utf-8")
 
     for n, chapter in enumerate(CHAPTERS):
@@ -975,6 +1048,7 @@ def render():
             raise SystemExit(f"Text drift in {chapter['html']}\nEXPECTED: {expected}\nGOT: {got}")
         if "*" in article:
             raise SystemExit(f"Unconverted markdown left in {chapter['html']}")
+        document = link_first_people(clean_reader_text(document))
         (ROOT / chapter["html"]).write_text(document, encoding="utf-8")
 
     # The change log names people and sources the chapters keep out. Copy that
