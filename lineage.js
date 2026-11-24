@@ -58,12 +58,18 @@
     if(b==='?'&&d==='?')return 'Not recorded';
     return b+'\u2013'+d;
   }
-  /* Same three labels the person panel already prints. */
   function confidence(p){
     if(restricted(p))return null;
-    if(isFamily(p))return {kind:'family',label:'Family-confirmed'};
-    if(isCandidate(p))return {kind:'candidate',label:'Candidate \u00b7 not proven'};
-    return {kind:'records',label:'Record-sourced \u00b7 not confirmed by family'};
+    const blob=[p.status||'',p.familyConfirmed||'',p.denmarkOrigin||''].join(' ');
+    if(/\bLOCKED\b/i.test(blob)||isFamily(p)||/FAMILY-CONFIRMED/i.test(blob)||/confirmed by Alex/i.test(blob))
+      return {kind:'family',label:'Confirmed by family'};
+    if(/^CANDIDATE\b/i.test(p.status||'')||/\bLEAD\b/i.test(blob))
+      return {kind:'candidate',label:'Possible match, not proven'};
+    if(/RECORD-SOURCED/i.test(blob)||/\bHIT\b/i.test(blob))
+      return {kind:'records',label:'Found in records'};
+    const head=(p.status||'').split(':')[0].replace(/not confirmed by family/ig,'').trim();
+    if(head&&head.length<=40)return {kind:'records',label:head};
+    return {kind:'records',label:'Found in records'};
   }
   function cleanPlace(p){
     const raw=p.birth&&typeof p.birth.place==='string'?p.birth.place:'';
