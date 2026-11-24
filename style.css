@@ -467,3 +467,27 @@ html.home-open [data-nav="tree"].on,html.home-open [data-nav="tree"].on:visited{
 @media (prefers-reduced-motion:reduce){
   .finder-pop,.rung,.start{scroll-behavior:auto}
 }
+
+/* F04 + F06: phone tree stays readable, and the chrome gets out of the way. */
+.banner-in-key{display:none}
+@media (max-width:800px){
+  body.tree .banner{display:none}
+  .banner-in-key{display:block}
+  html:not(.home-open) body.tree header{padding-top:max(4px,env(safe-area-inset-top));padding-bottom:4px;row-gap:4px}
+  html:not(.home-open) body.tree .eyebrow{display:none}
+  html:not(.home-open) body.tree h1{font-size:.95rem;max-width:5.5rem;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  html:not(.home-open) body.tree header nav{flex:1 1 auto;display:flex;width:auto;min-width:0;gap:4px}
+  html:not(.home-open) body.tree header nav a{min-height:44px;min-width:0;padding:0 4px;font-size:.8125rem}
+  html:not(.home-open) body.tree .finder input{min-height:44px;font-size:1rem}
+  body.tree .toolbar{flex-wrap:nowrap;gap:8px;padding:4px 8px;padding-left:max(8px,env(safe-area-inset-left));padding-right:max(8px,env(safe-area-inset-right))}
+  body.tree .scope{flex:1 1 auto;min-width:0;min-height:44px}
+  body.tree .scope button{min-height:44px;padding:0 8px;font-size:.9375rem}
+  body.tree .legend summary{min-height:44px;min-width:44px;padding:0 12px}
+  body.tree .pane-toggle{display:none}
+  body.tree .ctrl{position:fixed;right:max(8px,env(safe-area-inset-right));bottom:calc(var(--peek) + 8px);margin:0;width:48px;flex-direction:column;gap:8px;z-index:6}
+  body.tree .ctrl button{width:48px;min-width:48px;height:48px;min-height:48px;padding:0}
+  body.tree .ctrl-label{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0)}
+  body.tree:has(#sheet.open) .ctrl{bottom:auto;top:calc(var(--chrome, 160px) + 8px)}
+  #sheet{max-height:85dvh}
+  #sheet.open{height:85dvh;max-height:85dvh}
+}

@@ -671,11 +671,16 @@ function focusFrame(id){
   const xs=[p.x,...mateIds(id).map(sid=>pos[sid].x)];
   return {x:(Math.min(...xs)+Math.max(...xs))/2,y:p.y,span:Math.max(...xs)-Math.min(...xs)+W};
 }
+// Phone names are 18px in the SVG and must stay at least 16px on screen
+// at the start (scale ≥ 0.9), and never fall below 12px even when a long
+// name is drawn at the 13px floor.
+function minScale(){return MOBILE()?12/13:0.08}
+function initialScale(){return MOBILE()?Math.max(0.9,minScale()):null}
 function desiredScale(box,id){
   const mobile=MOBILE();
   const span=focusFrame(id).span;
   const fit=(box.w*(mobile?0.92:0.8))/span;
-  return Math.min(mobile?1.15:1.2,Math.max(mobile?0.34:0.42,fit));
+  return Math.min(mobile?1.15:1.2,Math.max(mobile?minScale():0.42,fit));
 }
 function cardBounds(ids){
   let minX=Infinity,maxX=-Infinity,minY=Infinity,maxY=-Infinity,n=0;
@@ -732,10 +737,22 @@ function viewPerson(id,opts={}){
   if((box.w<40||box.h<40)&&(opts._try||0)<8){requestAnimationFrame(()=>viewPerson(id,{...opts,_try:(opts._try||0)+1}));return}
   if(box.w<40)return;
   const couple=focusFrame(id);
+  if(MOBILE()){
+    // One couple at a readable size. If both spouses fit, center them.
+    // Otherwise center the selected person; a swipe moves a generation.
+    k=initialScale();
+    const ppos=pos[id];
+    const fits=!fullTree&&couple.span*k<=box.w*0.98;
+    const x=fits?couple.x:ppos.x;
+    tx=box.w/2-k*x;
+    ty=box.h*0.32-k*ppos.y;
+    apply();
+    return;
+  }
   if(fullTree||!opts.force){
     if(opts.force)k=desiredScale(box,id);
     tx=box.w/2-k*couple.x;
-    ty=box.h*(MOBILE()?0.32:0.34)-k*couple.y;
+    ty=box.h*0.34-k*couple.y;
     apply();
     return;
   }
@@ -799,7 +816,7 @@ function setScope(full){
 function zoom(f,cx,cy){
   const box=visibleBox();
   cx=cx??box.w/2;cy=cy??box.h/2;
-  const nk=Math.min(3.2,Math.max(.08,k*f));
+  const nk=Math.min(3.2,Math.max(minScale(),k*f));
   const s=nk/k;tx=cx-(cx-tx)*s;ty=cy-(cy-ty)*s;k=nk;apply();
 }
 svg.addEventListener('wheel',e=>{e.preventDefault();const r=svg.getBoundingClientRect();zoom(e.deltaY<0?1.12:1/1.12,e.clientX-r.left,e.clientY-r.top)},{passive:false});
@@ -828,7 +845,7 @@ svg.addEventListener('pointermove',e=>{
   if(pts.size>=2&&pinch){
     const [a,b]=[...pts.values()];
     const dist=Math.hypot(a.x-b.x,a.y-b.y)||1;
-    const nk=Math.min(3.2,Math.max(.08,pinch.k*(dist/pinch.dist)));
+    const nk=Math.min(3.2,Math.max(minScale(),pinch.k*(dist/pinch.dist)));
     const r=svg.getBoundingClientRect();
     const px=(a.x+b.x)/2-r.left,py=(a.y+b.y)/2-r.top;
     const s=nk/pinch.k;
@@ -844,16 +861,36 @@ svg.addEventListener('pointermove',e=>{
     tx=e.clientX-drag.x;ty=e.clientY-drag.y;apply();
   }
 });
+function generationTarget(dir){
+  const id=selected||ROOT;
+  if(!P[id])return null;
+  if(dir<0){
+    const parents=listedParents(id).filter(pid=>pos[pid]);
+    return parents[0]||null;
+  }
+  const kids=[];
+  (P[id].children||[]).forEach(cid=>{if(P[cid]&&pos[cid]&&!kids.includes(cid))kids.push(cid)});
+  PEOPLE.people.forEach(q=>{
+    if((q.parents||[]).includes(id)&&pos[q.id]&&!kids.includes(q.id))kids.push(q.id);
+  });
+  return kids[0]||null;
+}
 function endPointer(e){
   if(!pts.has(e.pointerId))return;
   pts.delete(e.pointerId);
   if(pts.size<2)pinch=null;
   if(pts.size)return;
   const moved=!!drag?.moved,wasPinch=pinched;
+  const dx=drag?e.clientX-drag.ox:0,dy=drag?e.clientY-drag.oy:0;
   const id=e.type==='pointerup'&&!moved&&!wasPinch?pressId:null;
   drag=null;pressId=null;pinched=false;
   wrap.classList.remove('grabbing');
   if(id||moved||wasPinch)skipClick=true;
+  if(MOBILE()&&moved&&!wasPinch&&Math.abs(dy)>64&&Math.abs(dy)>Math.abs(dx)*1.3){
+    const next=generationTarget(dy>0?-1:1);
+    if(next)show(next,{force:true,focus:false,sheet:false});
+    return;
+  }
   if(!id)return;
   show(id,{focus:MOBILE()?'sheet':'node'});
 }
@@ -1081,7 +1118,14 @@ addEventListener('keydown',e=>{
   else if(e.key==='ArrowUp'){ty+=48;apply();e.preventDefault()}
   else if(e.key==='ArrowDown'){ty-=48;apply();e.preventDefault()}
 });
+function syncChrome(){
+  const header=document.querySelector('header');
+  const toolbar=document.querySelector('.toolbar');
+  const h=(header?header.offsetHeight:0)+(toolbar?toolbar.offsetHeight:0);
+  document.documentElement.style.setProperty('--chrome',h+'px');
+}
 addEventListener('resize',()=>{
+  syncChrome();
   if(document.documentElement.classList.contains('home-open'))return;
   syncPeek();syncInert();
   const w=svg.getBoundingClientRect().width;
@@ -1091,6 +1135,7 @@ addEventListener('resize',()=>{
 });
 function boot(){
   syncPeek();
+  syncChrome();
   const raw=decodeURIComponent((location.hash||'').replace(/^#/,''));
   let panePref=null;
   try{panePref=localStorage.getItem('petersen-tree-pane')}catch(e){}
