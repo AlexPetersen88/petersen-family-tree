@@ -30,8 +30,8 @@ try{var v=localStorage.getItem("petersen-story-tools");var tight=matchMedia("(ma
 <body class="page story">
 <div class="sticky-chrome">
 <header>
-<div class="brand"><p class="eyebrow">Redwood County, Minnesota</p><h1>The Petersen Family</h1></div>
-<nav aria-label="Primary"><a href="../index.html">Tree</a><a href="../sources.html">Sources</a><a class="on" aria-current="page" href="index.html">Story</a><a href="../map.html">Map</a></nav>
+<div class="brand"><p class="eyebrow">Redwood County, Minnesota</p><h1><a href="../index.html#start">The Petersen Family</a></h1></div>
+<nav aria-label="Primary"><a data-nav="tree" href="../index.html#tree">Tree</a><a href="../people.html">People</a><a href="../sources.html">Sources</a><a class="on" aria-current="page" href="index.html">Story</a><a href="../map.html">Map</a></nav>
 </header>
 <button type="button" class="story-tools-toggle" id="storytoolstoggle" aria-expanded="true" aria-controls="storytools"><span class="when-open">Hide tools</span><span class="when-closed">Show tools</span></button>
 <div id="storytools" class="story-tools">
@@ -91,5 +91,7 @@ try{var v=localStorage.getItem("petersen-story-tools");var tight=matchMedia("(ma
 </main>
 <script src="../data.js"></script>
 <script src="../common.js"></script>
+<script src="../lineage.js"></script>
+<script src="../finder.js"></script>
 </body>
 </html>
