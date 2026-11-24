@@ -109,6 +109,13 @@ document.addEventListener('DOMContentLoaded',()=>{
   full.textContent=BANNER;
   details.append(summary,full);
   b.replaceChildren(details);
+  const legend=document.getElementById('legendbody');
+  if(legend&&!legend.querySelector('.banner-in-key')){
+    const note=document.createElement('p');
+    note.className='legend-help banner-in-key';
+    note.textContent=BANNER;
+    legend.appendChild(note);
+  }
 });
 const STORY_TOOLS_KEY='petersen-story-tools';
 function storyToolsTight(){return matchMedia('(max-width:800px), (max-height:700px)').matches}
