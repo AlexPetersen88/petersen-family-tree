@@ -501,6 +501,10 @@
       "id": "P5",
       "name": "Michael Don Petersen",
       "living": true,
+      "birth": {
+        "date": "1961-08-05",
+        "status": "oral S0 only"
+      },
       "parents": [
         "P1",
         "P2"
