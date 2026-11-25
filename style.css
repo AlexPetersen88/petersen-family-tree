@@ -559,7 +559,7 @@ a.cite{display:inline-flex;align-items:center;min-height:32px;padding:6px 8px;ma
 .place-jump{min-height:56px}
 .people-here{font:600 1rem/1.4 var(--sans)}
 .node .status{font-size:16px}
-.hero{display:grid;grid-template-columns:1fr 1fr;aspect-ratio:16/9;overflow:hidden;border-radius:16px;margin:0 0 16px;background:var(--card-2)}
+.hero{display:block;aspect-ratio:16/9;overflow:hidden;border-radius:16px;margin:0 0 16px;background:var(--card-2)}
 .hero img{width:100%;height:100%;object-fit:cover;display:block}
 .chapter-thumb{width:72px;height:48px;object-fit:cover;border-radius:8px;flex:none;background:var(--card-2)}
 .chapter-card{align-items:center}

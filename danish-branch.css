@@ -1,10 +1,12 @@
 /* Danish-branch mockup. Light only. Scoped to this page. */
-.branch-page{background:#FAF8F4;color:#1F2328}
+.branch-page{background:#FAF8F4;color:#1F2328;overflow-x:clip}
+.branch-page header,.branch-page header nav{min-width:0}
+.branch-page header nav{flex-wrap:wrap}
 .branch-wrap{width:100%;max-width:1080px;margin:0 auto;padding:16px;padding-left:max(16px,env(safe-area-inset-left));padding-right:max(16px,env(safe-area-inset-right));padding-bottom:calc(32px + env(safe-area-inset-bottom,0px));min-width:0}
 .branch-flag{display:inline-flex;align-items:center;min-height:32px;margin:8px 0;padding:4px 12px;border-radius:999px;background:var(--records-soft);color:var(--records);font:700 .8125rem/1.3 var(--sans);letter-spacing:.06em;text-transform:uppercase}
-.branch-wrap h2{margin:0 0 8px;font-size:clamp(1.75rem,7vw,2.125rem);line-height:1.15}
+.branch-wrap h1{margin:0 0 8px;font-size:clamp(1.75rem,7vw,2.125rem);line-height:1.15}
 .branch-wrap .lede{margin:0 0 12px}
-.branch-jumps{display:flex;gap:8px;margin:0 0 16px;overflow-x:auto;overscroll-behavior-x:contain;-webkit-overflow-scrolling:touch;scroll-snap-type:x proximity;width:100%;min-width:0;max-width:100%}
+.branch-jumps{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 16px;width:100%;min-width:0;max-width:100%}
 .branch-jumps a{flex:0 0 auto;scroll-snap-align:start;display:flex;flex-direction:column;justify-content:center;gap:2px;min-height:var(--tap);max-width:16rem;padding:8px 16px;border-radius:12px;border:1px solid var(--control);background:var(--card);color:var(--ink);text-decoration:none;font:700 .9375rem/1.25 var(--sans);touch-action:manipulation}
 .branch-jumps a:visited{color:var(--ink)}
 .branch-jump-id{font:700 .75rem/1.2 var(--sans);letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
@@ -21,7 +23,7 @@
 .branch-card-main{padding:16px 16px 8px}
 .branch-id{margin:0;font:700 .75rem/1.2 var(--sans);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
 .branch-card h3{margin:4px 0 8px;font-size:clamp(1.35rem,5vw,1.75rem);line-height:1.2}
-.branch-card .pills{margin:0 0 8px}
+.branch-card .pills,.branch-page .pills{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 8px}
 .branch-src,.branch-fact-src,.branch-more summary{touch-action:manipulation;cursor:pointer}
 .branch-src{display:flex;align-items:center;justify-content:space-between;gap:8px;width:calc(100% - 32px);margin:8px 16px 16px;min-height:var(--tap);padding:8px 16px;border-radius:8px;border:1px solid var(--accent);background:var(--accent);color:var(--on-accent);font:700 1rem/1.2 var(--sans);text-align:left}
 .branch-src:active{background:var(--accent-press)}
