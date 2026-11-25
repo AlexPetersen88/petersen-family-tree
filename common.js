@@ -95,7 +95,7 @@ document.addEventListener('DOMContentLoaded',()=>{
   if(!b)return;
   const details=document.createElement('details');
   details.className='banner-details';
-  details.open=!matchMedia('(max-width:800px)').matches;
+  details.open=!document.body.classList.contains('tree')&&!matchMedia('(max-width:800px)').matches;
   const summary=document.createElement('summary');
   const title=document.createElement('span');
   title.className='banner-title';

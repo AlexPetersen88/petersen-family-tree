@@ -1216,6 +1216,8 @@ function show(id,opts={}){
   }
   panel.innerHTML=decorateHighPlaces(h);
   sheetLabel.textContent=shortName(p.name);
+  const treeTitle=document.getElementById('tree-title');
+  if(treeTitle)treeTitle.textContent='Family tree — '+shortName(p.name);
   // #id is the person deep link. A person the reader picks is a history step.
   if(opts.history==='push'){
     if(location.hash!=='#'+id)history.pushState({person:id},'','#'+id);
