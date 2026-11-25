@@ -557,6 +557,8 @@ function personLabel(p){
   if(isCandidate(p))return {kind:'candidate',label:'Possible match, not proven'};
   if(/RECORD-SOURCED/i.test(blob)||/\bHIT\b/i.test(blob))
     return {kind:'records',label:'Found in records'};
+  // "VERIFIED 1900 census only so far" is a research note, not a family-facing grade.
+  if(/^VERIFIED\b/i.test(p.status||''))return {kind:'records',label:'Found in records'};
   const head=(p.status||'').split(':')[0].replace(/not confirmed by family/ig,'').trim();
   if(head&&head.length<=40)return {kind:'records',label:head};
   return {kind:'records',label:'Found in records'};
@@ -766,14 +768,31 @@ function viewPerson(id,opts={}){
     }
   }
   if(MOBILE()){
-    // One couple at a readable size. If both spouses fit, center them.
-    // Otherwise center the selected person; a swipe moves a generation.
+    // Keep the parent row, the couple, and one child row inside the canvas.
+    // Names stay at the readable floor. A swipe still moves a generation.
     k=initialScale();
-    const ppos=pos[id];
-    const fits=!fullTree&&couple.span*k<=box.w*0.98;
-    const x=fits?couple.x:ppos.x;
-    tx=box.w/2-k*x;
-    ty=box.h*0.32-k*ppos.y;
+    const parents=listedParents(id).filter(pid=>pos[pid]);
+    const kids=Object.keys(pos).filter(qid=>(P[qid].parents||[]).includes(id)&&pos[qid].y>pos[id].y);
+    let child=null;
+    kids.forEach(qid=>{
+      if(!child||Math.abs(pos[qid].x-couple.x)<Math.abs(pos[child].x-couple.x))child=qid;
+    });
+    const vertical=[id,...mateIds(id),...parents];
+    if(child)vertical.push(child);
+    let minY=Infinity,maxY=-Infinity;
+    vertical.forEach(qid=>{
+      minY=Math.min(minY,pos[qid].y-H/2);
+      maxY=Math.max(maxY,pos[qid].y+H/2);
+    });
+    const padY=12;
+    const zoomPad=sheet.classList.contains('open')?16:64;
+    const usableW=Math.max(160,box.w-zoomPad);
+    const contentH=(maxY-minY)*k+padY*2;
+    if(contentH<=box.h)ty=(box.h-contentH)/2+padY-k*minY;
+    else ty=padY-k*minY;
+    const fits=!fullTree&&couple.span*k<=usableW;
+    const x=fits?couple.x:pos[id].x;
+    tx=(box.w-zoomPad)/2-k*x;
     apply();
     return;
   }
@@ -847,30 +866,33 @@ function setScope(full){
   document.body.classList.toggle('outline-mode', useList);
   if(list){
     list.hidden=!useList;
-    if(useList)list.innerHTML=outlineHtml();
+    if(useList){
+      list.innerHTML=outlineHtml();
+      const target=list.querySelector('[data-id="P6"]');
+      const jump=list.querySelector('.list-jump');
+      if(target){
+        const top=target.getBoundingClientRect().top-list.getBoundingClientRect().top+list.scrollTop;
+        list.scrollTop=Math.max(0,top-(jump?jump.offsetHeight:0)-8);
+      }
+    }
   }
   viewPerson(id,{force:true});
 }
 function outlineHtml(){
-  const ids=Object.keys(pos);
-  const known=new Set(ids);
-  const kidsOf={};
-  ids.forEach(id=>{
-    (P[id].parents||[]).forEach(pid=>{
-      if(!known.has(pid))return;
-      (kidsOf[pid]=kidsOf[pid]||[]);
-      if(!kidsOf[pid].includes(id))kidsOf[pid].push(id);
-    });
-  });
-  const child=new Set(Object.values(kidsOf).flat());
-  const roots=ids.filter(id=>!child.has(id));
-  const item=id=>{
-    const lab=personLabel(P[id]);
-    const years=P[id].living?'':yrs(P[id]);
-    const nested=(kidsOf[id]||[]).map(item).join('');
-    return `<li><button type="button" data-id="${esc(id)}">${esc(shortName(P[id].name))}${years?' · '+esc(years):''} · ${esc(lab.label)}</button>${nested?`<ul>${nested}</ul>`:''}</li>`;
-  };
-  return `<ul class="outline">${roots.map(item).join('')}</ul>`;
+  const view=window.PetersenLineage?window.PetersenLineage(PEOPLE):null;
+  const groups=view?view.groups():[{id:'family',title:'Family',people:PEOPLE.people.map(p=>({id:p.id,name:shortName(p.name)}))}];
+  const jump=groups.map(g=>`<a href="#list-${esc(g.id)}">${esc(g.title)}</a>`).join('');
+  const sections=groups.map(g=>{
+    const items=g.people.map(card=>{
+      const person=P[card.id];
+      if(!person)return '';
+      const lab=personLabel(person);
+      const years=person.living||recentBirth(person)?'':yrs(person);
+      return `<li><button type="button" data-id="${esc(card.id)}">${esc(shortName(person.name))}${years?' · '+esc(years):''} · ${esc(lab.label)}</button></li>`;
+    }).join('');
+    return `<section id="list-${esc(g.id)}"><h2>${esc(g.title)}</h2><ul class="outline">${items}</ul></section>`;
+  }).join('');
+  return `<nav class="list-jump" aria-label="Family groups">${jump}</nav>${sections}`;
 }
 function zoom(f,cx,cy){
   const box=visibleBox();
@@ -1320,6 +1342,18 @@ function applyHash(){
 addEventListener('hashchange', applyHash);
 addEventListener('popstate', applyHash);
 document.getElementById('familylist')?.addEventListener('click',e=>{
+  const jump=e.target.closest('.list-jump a');
+  if(jump){
+    const section=document.getElementById(jump.getAttribute('href').slice(1));
+    const list=document.getElementById('familylist');
+    if(section&&list){
+      e.preventDefault();
+      const bar=list.querySelector('.list-jump');
+      const top=section.getBoundingClientRect().top-list.getBoundingClientRect().top+list.scrollTop;
+      list.scrollTop=Math.max(0,top-(bar?bar.offsetHeight:0));
+    }
+    return;
+  }
   const button=e.target.closest('button[data-id]');
   if(!button)return;
   setScope(false);
