@@ -596,6 +596,40 @@ def inline(text, ids, link_chapters):
     return re.sub(r"\x00MAP([a-z0-9-]+)\x00", maps, text)
 
 
+def source_title(body):
+    text = re.sub(r"https?://\S+", " ", body)
+    text = re.sub(r"\s+", " ", text).strip(" .")
+    cut = text.find(". ")
+    if 24 <= cut <= 120:
+        text = text[:cut]
+    if len(text) > 120:
+        text = text[:117].rstrip() + "…"
+    return text or "Source"
+
+
+def group_cites(html_text, titles):
+    """Turn a run of source chips into one control that opens their titles."""
+    pattern = re.compile(
+        r'(?:<a class="cite" href="source-key\.html#([SK]\d+)">\1</a>(?:\s*,\s*)?)+'
+    )
+
+    def repl(match):
+        sids = re.findall(r'href="source-key\.html#([SK]\d+)"', match.group(0))
+        if len(sids) < 2:
+            return match.group(0)
+        items = "".join(
+            f'<li><a href="source-key.html#{sid}">{html.escape(titles.get(sid, sid))}</a></li>'
+            for sid in sids
+        )
+        word = "source" if len(sids) == 1 else "sources"
+        return (
+            f'<details class="cite-group"><summary>{len(sids)} {word}</summary>'
+            f"<ul>{items}</ul></details>"
+        )
+
+    return pattern.sub(repl, html_text)
+
+
 def paragraph_class(raw):
     stripped = raw.lstrip("- ").strip()
     if stripped.startswith(("**Provisional:**", "**Open question (provisional):**", "**Open conflict:**")):
@@ -976,6 +1010,7 @@ def assert_high_maps():
 def render():
     entries = parse_sources((ROOT / "sources" / "SOURCE-KEY.md").read_text(encoding="utf-8"))
     ids = known_ids(entries)
+    source_titles = {entry["id"]: source_title(entry["body"]) for entry in entries}
     index_items = parse_index((ROOT / "chapters" / "INDEX.md").read_text(encoding="utf-8"))
     forbidden = ("P29", "P30", "Tina", "Ryder", "Jayden", "Maryana")
 
@@ -1057,6 +1092,11 @@ def render():
         if "*" in article:
             raise SystemExit(f"Unconverted markdown left in {chapter['html']}")
         document = link_first_people(clean_reader_text(document))
+        # Chapter 1 is the page with a long run of separate source chips.
+        # Group each run into one "N sources" control. The short version and
+        # the kids' telling have no source chips to group.
+        if chapter["html"].startswith("01-"):
+            document = group_cites(document, source_titles)
         (ROOT / chapter["html"]).write_text(document, encoding="utf-8")
 
     # The change log names people and sources the chapters keep out. Copy that

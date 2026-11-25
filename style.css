@@ -499,9 +499,15 @@ html.home-open [data-nav="tree"].on,html.home-open [data-nav="tree"].on:visited{
 .ruled{margin:16px 0}
 .ruled summary{min-height:44px;display:flex;align-items:center;font:700 1rem/1.3 var(--sans);cursor:pointer}
 a.cite{display:inline-flex;align-items:center;min-height:32px;padding:6px 8px;margin:0 4px}
+.cite-group{display:inline-block;margin:0 4px;vertical-align:baseline}
+.cite-group summary{display:inline-flex;align-items:center;min-height:44px;padding:6px 12px;border:1px solid var(--line);border-radius:999px;background:var(--card);color:var(--accent);font:700 1rem/1 var(--sans);cursor:pointer}
+.cite-group ul{margin:8px 0 12px;padding-left:18px}
+.cite-group li{margin:4px 0}
+.cite-group a{display:inline-flex;align-items:center;min-height:44px}
 .place-card:not(.is-current) .place-body{display:none}
 .place-jump{min-height:56px}
-.people-here{font:600 1rem/1.4 var(--sans)}
+.people-here{margin:0;padding:8px 16px 12px;font:600 1rem/1.4 var(--sans)}
+.people-here a{color:var(--accent);font-weight:700}
 .node .status{font-size:16px}
 
 /* F04 + F06: phone tree stays readable, and the chrome gets out of the way. */
@@ -555,9 +561,15 @@ a.cite{display:inline-flex;align-items:center;min-height:32px;padding:6px 8px;ma
 .ruled{margin:16px 0}
 .ruled summary{min-height:44px;display:flex;align-items:center;font:700 1rem/1.3 var(--sans);cursor:pointer}
 a.cite{display:inline-flex;align-items:center;min-height:32px;padding:6px 8px;margin:0 4px}
+.cite-group{display:inline-block;margin:0 4px;vertical-align:baseline}
+.cite-group summary{display:inline-flex;align-items:center;min-height:44px;padding:6px 12px;border:1px solid var(--line);border-radius:999px;background:var(--card);color:var(--accent);font:700 1rem/1 var(--sans);cursor:pointer}
+.cite-group ul{margin:8px 0 12px;padding-left:18px}
+.cite-group li{margin:4px 0}
+.cite-group a{display:inline-flex;align-items:center;min-height:44px}
 .place-card:not(.is-current) .place-body{display:none}
 .place-jump{min-height:56px}
-.people-here{font:600 1rem/1.4 var(--sans)}
+.people-here{margin:0;padding:8px 16px 12px;font:600 1rem/1.4 var(--sans)}
+.people-here a{color:var(--accent);font-weight:700}
 .node .status{font-size:16px}
 .hero{display:grid;grid-template-columns:1fr 1fr;aspect-ratio:16/9;overflow:hidden;border-radius:16px;margin:0 0 16px;background:var(--card-2)}
 .hero img{width:100%;height:100%;object-fit:cover;display:block}

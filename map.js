@@ -201,7 +201,7 @@
   function bindList(){
     document.querySelectorAll('.place-card').forEach(card=>{
       if(card.querySelector('.people-here'))return;
-      const links=[...card.querySelectorAll('a[href*="#P"]')];
+      const links=[...card.querySelectorAll('a[href*="index.html#P"]')];
       if(!links.length)return;
       const line=document.createElement('p');
       line.className='people-here';
@@ -209,10 +209,12 @@
       links.forEach((a,i)=>{
         if(i)line.append(', ');
         const link=a.cloneNode(true);
+        link.className='';
         line.append(link);
       });
       const body=card.querySelector('.place-body');
-      if(body)body.prepend(line);
+      if(body)card.insertBefore(line, body);
+      else card.appendChild(line);
     });
     document.querySelectorAll('.place-jump').forEach(button=>{
       button.addEventListener('click',()=>{
