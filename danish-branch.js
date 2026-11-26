@@ -285,12 +285,27 @@
     parent.append(badge);
   }
 
-  function appendBadges(parent, labels, kind) {
+  function publicBadge(label) {
+    if (label === 'Living') return { kind: 'living', label: 'Living (private)' };
+    if (/^LOCKED\b/.test(label)) return { kind: 'family', label: 'Confirmed by family' };
+    if (/^CANDIDATE\b/.test(label)) return { kind: 'candidate', label: 'Possible match, not proven' };
+    if (/^HIT\b/.test(label)) return { kind: 'records', label: 'Found in records' };
+    if (label === 'OPEN' || label === 'KEEP BOTH OPEN') return { kind: 'records', label: 'Records disagree, both shown' };
+    return { kind: 'records', label: label };
+  }
+
+  function appendBadges(parent, labels) {
     if (!labels || !labels.length) return;
     const pills = document.createElement('div');
     pills.className = 'pills';
-    labels.forEach(function (label) { appendBadge(pills, label, kind); });
-    parent.append(pills);
+    const seen = new Set();
+    labels.forEach(function (label) {
+      const pub = publicBadge(label);
+      if (seen.has(pub.label)) return;
+      seen.add(pub.label);
+      appendBadge(pills, pub.label, pub.kind);
+    });
+    if (pills.childElementCount) parent.append(pills);
   }
 
   function renderFact(parent, person, fact, openDrawer) {

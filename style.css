@@ -595,7 +595,7 @@ a.cite{display:inline-flex;align-items:center;min-height:32px;padding:6px 8px;ma
 .people-here{margin:0;padding:8px 16px 12px;font:600 1rem/1.4 var(--sans)}
 .people-here a{color:var(--accent);font-weight:700}
 .node .status{font-size:16px}
-.hero{display:grid;grid-template-columns:1fr 1fr;aspect-ratio:16/9;overflow:hidden;border-radius:16px;margin:0 0 16px;background:var(--card-2)}
+.hero{display:block;aspect-ratio:16/9;overflow:hidden;border-radius:16px;margin:0 0 16px;background:var(--card-2)}
 .hero img{width:100%;height:100%;object-fit:cover;display:block}
 .chapter-thumb{width:72px;height:48px;object-fit:cover;border-radius:8px;flex:none;background:var(--card-2)}
 .chapter-card{align-items:center}
