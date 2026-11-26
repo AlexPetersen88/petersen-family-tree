@@ -67,6 +67,7 @@
       return {kind:'candidate',label:'Possible match, not proven'};
     if(/RECORD-SOURCED/i.test(blob)||/\bHIT\b/i.test(blob))
       return {kind:'records',label:'Found in records'};
+    if(/^VERIFIED\b/i.test(p.status||''))return {kind:'records',label:'Found in records'};
     const head=(p.status||'').split(':')[0].replace(/not confirmed by family/ig,'').trim();
     if(head&&head.length<=40)return {kind:'records',label:head};
     return {kind:'records',label:'Found in records'};
@@ -126,16 +127,23 @@
     P6:{href:'story/03-hans-peter-to-minnesota.html',title:'Chapter 3: Hans Peter Crosses to Minnesota'},
     P3:{href:'story/04-elmer-to-alex.html',title:'Chapter 4: From Elmer to Alex'}
   };
+  function birthPlaceMissing(p){
+    if(restricted(p))return false;
+    const raw=(p.birth&&p.birth.place)||'';
+    return !String(raw).trim()||/unverif|unknown|not found|not stated/i.test(raw);
+  }
   function present(p){
     const parts=rowParts(p);
+    const missingPlace=birthPlaceMissing(p);
+    const where=country(p);
     const rung={
       missing:false,
       id:p.id,
       label:parts.name,
       meta:parts.meta,
       years:years(p),
-      place:placeLine(p),
-      country:country(p),
+      place:placeLine(p)||(missingPlace?'Place not recorded':''),
+      country:(missingPlace||where==='Not recorded')?'':where,
       confidence:confidence(p),
       chapter:null
     };
