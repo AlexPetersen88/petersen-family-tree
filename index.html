@@ -79,8 +79,9 @@ try{var h=decodeURIComponent((location.hash||"").replace(/^#/,""));if(!h||h==="s
 </div>
 <button id="panetoggle" class="pane-toggle" type="button" aria-expanded="true" aria-controls="sheet"><span class="when-open">Hide details</span><span class="when-closed">Show details</span></button>
 </div>
-<p class="keystrip" id="keystrip">Confirmed by family · Found in records · Possible match, not proven · Living (private)</p>
+<p class="keystrip" id="keystrip"><span>Confirmed by family · Found in records · Possible match, not proven · Living (private)</span> <a href="#legend">Research in progress · What the labels mean →</a></p>
 <main id="content" class="stage">
+<h1 id="tree-title" class="tree-title">Family tree</h1>
 <div id="treewrap">
 <svg id="svg" aria-label="Petersen family tree"><g id="vp"></g></svg>
 <div id="familylist" class="family-list" hidden></div>
